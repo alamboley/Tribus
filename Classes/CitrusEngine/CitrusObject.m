@@ -18,7 +18,7 @@
 @implementation CitrusObject
 
 @synthesize ce, name, graphic;
-@synthesize parallax, widthBody, heightBody;
+@synthesize group, parallax, widthBody, heightBody;
 
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params {
     
@@ -97,7 +97,13 @@
 }
 
 - (void) parallax:(NSString *)value {
+    
     self.parallax = [value floatValue];
+}
+
+- (void) group:(NSString *) value {
+    
+    self.group = [value intValue];
 }
 
 /** Width & height ne marchent pas si pas de graph associé, et dans tous les cas ne marchent pas ici **/

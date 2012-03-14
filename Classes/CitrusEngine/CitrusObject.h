@@ -16,6 +16,7 @@
     NSString *name;
     SPSprite *graphic;
     
+    int group;
     float widthBody;
     float heightBody;
     float parallax;
@@ -24,6 +25,7 @@
 @property (nonatomic) CitrusEngine *ce;
 @property (nonatomic) NSString *name;
 @property (nonatomic) SPDisplayObject *graphic;
+@property int group;
 @property float widthBody, heightBody, parallax;
 
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params;
@@ -37,5 +39,6 @@
 - (void) width:(NSString *) value;
 - (void) height:(NSString *) value;
 - (void) parallax:(NSString *) value;
+- (void) group:(NSString *) value;
 
 @end

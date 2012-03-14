@@ -20,7 +20,7 @@
     
 	if (self = [super init]) {
         
-        [self showHideDebugDraw];
+        //[self showHideDebugDraw];
         
         /** DEBUT A SUPPR **/
         

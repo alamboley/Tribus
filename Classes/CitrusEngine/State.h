@@ -47,6 +47,8 @@
 
 - (void) setupCamera:(PhysicsObject *) target andOffset:(CGPoint) offset andBounds:(CGRect) bounds andEasing:(CGPoint) easing;
 
+- (void) updateGroupForSprite:(CitrusObject *) object;
+
 - (void)update;
 
 @end

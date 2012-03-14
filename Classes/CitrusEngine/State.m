@@ -24,6 +24,8 @@
 
 // --- Class implementation ------------------------------------------------------------------------
 
+#import "SPDebugDraw.h"
+
 @implementation State
 
 @synthesize delegate = mDelegate;
@@ -61,10 +63,14 @@
          }*/
 		
 		debugDraw = [[SPDebugDraw alloc] initWithManager:space];
-		[self addChild:debugDraw];
+		//[self addChild:[[SPSprite alloc] init]];
+        //[(SPDisplayObjectContainer *)[self childAtIndex:0] addChild:debugDraw];
         [debugDraw setVisible:FALSE];
         [debugDraw setTouchable:FALSE];
         
+        [self.stage addChild:debugDraw];
+        debugDraw.rotation = SP_D2R(90);
+        debugDraw.x = 320;
         cameraLensWidth = 480;
 	}
     
@@ -76,12 +82,18 @@
     [objects addObject:object];
     
     if (object.graphic) {
-        [self addChild:object];
-        object.x = object.y = 0;
         
-        //if ([debugDraw visible])
-          //  [self swapChild:debugDraw withChild:object];
+        [self updateGroupForSprite:object];
     }
+}
+
+- (void) updateGroupForSprite:(CitrusObject *) object {
+    
+    while (object.group >= [self numChildren])
+        [self addChild:[[SPSprite alloc] init]];
+    
+    [(SPDisplayObjectContainer *)[self childAtIndex:object.group] addChild:object];
+    object.x = object.y = 0;
 }
 
 - (void)showHideDebugDraw {
@@ -129,6 +141,8 @@
         } else if (-self.y + cameraLensWidth >= cameraBounds.size.width) {
             self.y = -cameraBounds.size.width + cameraLensWidth;
         }
+        
+        debugDraw.y = self.y;
     }
     
 }
