@@ -18,7 +18,7 @@
 @implementation CitrusObject
 
 @synthesize ce, name, graphic;
-@synthesize group, parallax, widthBody, heightBody;
+@synthesize group, parallax;
 
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params {
     
@@ -70,7 +70,7 @@
     for (NSString *param in object) {
         
         @try {
-            
+
             SEL selector = NSSelectorFromString(param);
             [self performSelector: selector withObject:[object objectForKey:param]];
         }
@@ -106,15 +106,18 @@
     self.group = [value intValue];
 }
 
-/** Width & height ne marchent pas si pas de graph associé, et dans tous les cas ne marchent pas ici **/
+/** 
+ * Width & height ne marchent pas si pas de graph associé, donc utilisation de widthBody & heightBody
+ * requiert une valeur plutôt grande.
+ **/
 - (void) width:(NSString *) value {
 
-    self.widthBody = [value floatValue];
+    widthBody = [value floatValue];
 }
 
 - (void) height:(NSString *) value {
     
-    self.heightBody = [value floatValue];
+    heightBody = [value floatValue];
 }
 
 - (void) dealloc {

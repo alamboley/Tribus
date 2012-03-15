@@ -13,6 +13,7 @@
 #import "Hero.h"
 #import "AnimationSequence.h"
 #import "BigPicture.h"
+#import "Sensor.h"
 
 @implementation GameState
 
@@ -20,7 +21,7 @@
     
 	if (self = [super init]) {
         
-        //[self showHideDebugDraw];
+        [self showHideDebugDraw];
         
         //SPImage *backgroundImage = 
         
@@ -43,6 +44,12 @@
         
         Hero *hero = [[Hero alloc] initWithName:@"hero" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"20", @"50", @"20", @"20", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:mc];
         [self addObject:hero];
+        
+       // Sensor *sensor = [[Sensor alloc] initWithName:@"sensor" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"250", @"50", @"50", @"20", @"TRUE", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", @"isStatic:", nil]]];
+        //[self addObject:sensor];
+        
+        Sensor *sensor = [[Sensor alloc] initWithName:@"sensor" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"250", @"150", @"50", @"30", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]]];
+        [self addObject:sensor];
         
         /*CitrusObject *parallaxe3 = [[CitrusObject alloc] initWithName:@"bg" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"0", @"0", @"1", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"parallax:", nil]] andGraphic:[SPImage imageWithContentsOfFile:@"parallaxe3.png"]];
         [self addObject:parallaxe3];

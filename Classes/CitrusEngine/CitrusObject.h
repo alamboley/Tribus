@@ -26,7 +26,7 @@
 @property (nonatomic) NSString *name;
 @property (nonatomic) SPDisplayObject *graphic;
 @property int group;
-@property float widthBody, heightBody, parallax;
+@property float parallax;
 
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params;
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params andGraphic:(SPDisplayObject *)displayObject;

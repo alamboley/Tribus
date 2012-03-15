@@ -77,7 +77,9 @@
     
     [body setAngle:self.rotation];
     [body setPositionUsingVect:cpv(self.x, self.y)];
-    [body setData:self.graphic];
+    
+    if (self.graphic)
+        [body setData:self.graphic];
 }
 
 - (void) createShape {

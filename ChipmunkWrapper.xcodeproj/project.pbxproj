@@ -126,6 +126,7 @@
 		B0375B07150FCD8D005D61BC /* parallaxe2-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0375B04150FCD8D005D61BC /* parallaxe2-2@2x.png */; };
 		B0375B08150FCD8D005D61BC /* parallaxe2-3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0375B05150FCD8D005D61BC /* parallaxe2-3@2x.png */; };
 		B0375B0B150FCE3C005D61BC /* BigPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = B0375B0A150FCE3C005D61BC /* BigPicture.m */; };
+		B0949A721512761D00BDB1DD /* Sensor.m in Sources */ = {isa = PBXBuildFile; fileRef = B0949A711512761D00BDB1DD /* Sensor.m */; };
 		B0A64C0E1504FA4C00B2BFBA /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A64C0D1504FA4C00B2BFBA /* Hero.m */; };
 		B0A64C111504FF8900B2BFBA /* Platform.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A64C101504FF8800B2BFBA /* Platform.m */; };
 		B0C1B43914FE247C00E10833 /* CitrusEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C1B42D14FE247C00E10833 /* CitrusEngine.m */; };
@@ -394,6 +395,8 @@
 		B0375B05150FCD8D005D61BC /* parallaxe2-3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parallaxe2-3@2x.png"; sourceTree = "<group>"; };
 		B0375B09150FCE3C005D61BC /* BigPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigPicture.h; sourceTree = "<group>"; };
 		B0375B0A150FCE3C005D61BC /* BigPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigPicture.m; sourceTree = "<group>"; };
+		B0949A701512761D00BDB1DD /* Sensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sensor.h; sourceTree = "<group>"; };
+		B0949A711512761D00BDB1DD /* Sensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sensor.m; sourceTree = "<group>"; };
 		B0A64C0C1504FA4C00B2BFBA /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
 		B0A64C0D1504FA4C00B2BFBA /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
 		B0A64C0F1504FF8800B2BFBA /* Platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Platform.h; sourceTree = "<group>"; };
@@ -880,6 +883,8 @@
 				B0EEB09015063D0B009AD303 /* AnimationSequence.m */,
 				B0375B09150FCE3C005D61BC /* BigPicture.h */,
 				B0375B0A150FCE3C005D61BC /* BigPicture.m */,
+				B0949A701512761D00BDB1DD /* Sensor.h */,
+				B0949A711512761D00BDB1DD /* Sensor.m */,
 			);
 			path = CitrusEngine;
 			sourceTree = "<group>";
@@ -1111,6 +1116,7 @@
 				B0A64C111504FF8900B2BFBA /* Platform.m in Sources */,
 				B0EEB09115063D0B009AD303 /* AnimationSequence.m in Sources */,
 				B0375B0B150FCE3C005D61BC /* BigPicture.m in Sources */,
+				B0949A721512761D00BDB1DD /* Sensor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
