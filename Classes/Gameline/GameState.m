@@ -22,32 +22,6 @@
         
         //[self showHideDebugDraw];
         
-        /** DEBUT A SUPPR **/
-        
-        /*CMBody *platform = [space addStaticBody];
-        [platform setPositionUsingVect:cpv(250, 200)];
-        
-        CMShape *platformShape = [platform addRectangleWithWidth:200 height:10];
-        [platformShape addToSpace];
-        [platformShape setElasticity:0.7];
-        [platformShape setFriction:0.7];
-        [platformShape setCollisionType:@"platform"];
-        
-        int posX = arc4random() % 450;
-        
-        CMBody *block = [space addBodyWithMass:10.0 moment:INFINITY];
-        [block addToSpace];
-        [block setAngle:45];
-        [block setPositionUsingVect:cpv(posX, 100)];
-        
-        CMShape *blockShape = [block addRectangleWithWidth:20 height:20];
-        [blockShape setElasticity:0.7];
-        [blockShape setFriction:0.7];
-        [blockShape addToSpace];
-        [blockShape setCollisionType:@"ball"];*/
-        
-        /** FIN A SUPPR **/
-        
         //SPImage *backgroundImage = 
         
         /*CitrusObject *parallaxe1 = [[CitrusObject alloc] initWithName:@"bg" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"0", @"0", @"1", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"parallax:", nil]] andGraphic:[SPImage imageWithContentsOfFile:@"parallaxe1.jpg"]];
@@ -65,15 +39,6 @@
         Platform *platform2 = [[Platform alloc] initWithName:@"platform" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"200", @"0", @"2000", @"10", @"TRUE", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", @"isStatic:", nil]]];
         [self addObject:platform2];
         
-        SPQuad *quad = [SPQuad quadWithWidth:30 height:30 color:0xFF0000];
-        SPImage *ballImage = [SPImage imageWithContentsOfFile:@"flash.png"];
-        
-        /*SPTextureAtlas *atlas = [SPTextureAtlas atlasWithContentsOfFile:@"Hero.xml"];
-        NSArray *frames = [atlas texturesStartingWith:@"walk"];
-         
-        SPMovieClip *tiit = [[SPMovieClip alloc] initWithFrames:frames fps:25];*/
-        
-        
         AnimationSequence *mc = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"Hero.xml"] andAnimations:[NSArray arrayWithObjects:@"walk", @"jump", @"idle", nil] andFirstAnimation:@"idle"];
         
         Hero *hero = [[Hero alloc] initWithName:@"hero" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"20", @"50", @"20", @"20", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:mc];
@@ -86,8 +51,6 @@
         [self addObject:parallaxe4];*/
         
         [self setupCamera:hero andOffset:CGPointMake(hero.width / 2, 0) andBounds:CGRectMake(0, 0, 2868, 1000) andEasing:CGPointMake(0.25, 0.05)];
-        
-        [self addEventListener:@selector(touched:) atObject:hero forType:SP_EVENT_TYPE_TOUCH];
 	}
     
 	return self;
