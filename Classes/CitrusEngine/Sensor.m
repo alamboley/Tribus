@@ -49,11 +49,14 @@
 }
 
 - (void) collisionStart {
-
+    
+    
+    NSLog(@"pok");
 }
 
 - (void) collisionEnd {
     
+    NSLog(@"ook");
 }
 
 @end
