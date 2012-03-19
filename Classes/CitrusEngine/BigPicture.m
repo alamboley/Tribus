@@ -34,4 +34,11 @@
     return self;
 }
 
+- (void) destroy {
+    
+    [graphic removeAllChildren];
+    
+    [super destroy];
+}
+
 @end

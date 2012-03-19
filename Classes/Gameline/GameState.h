@@ -11,6 +11,10 @@
 @interface GameState : State {
     
     float gameWidth;
+    
+    SPSprite *graphismEcranSoutenance;
 }
+
+- (void) touchedFake:(SPTouchEvent *) event;
 
 @end
