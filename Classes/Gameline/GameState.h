@@ -8,6 +8,9 @@
 
 #import "State.h"
 
-@interface GameState : State
+@interface GameState : State {
+    
+    float gameWidth;
+}
 
 @end

@@ -124,9 +124,6 @@
 		A1FC3D9E1312D4AC00C7D1E1 /* FollowPath.png in Resources */ = {isa = PBXBuildFile; fileRef = A1FC3D9D1312D4AC00C7D1E1 /* FollowPath.png */; };
 		B012E3E315148F52008B9157 /* SXNSDataExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B012E3E215148F52008B9157 /* SXNSDataExtensions.m */; };
 		B012E3E615148F8B008B9157 /* SXParticleSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = B012E3E515148F8B008B9157 /* SXParticleSystem.m */; };
-		B0375B06150FCD8D005D61BC /* parallaxe2-1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0375B03150FCD8D005D61BC /* parallaxe2-1@2x.png */; };
-		B0375B07150FCD8D005D61BC /* parallaxe2-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0375B04150FCD8D005D61BC /* parallaxe2-2@2x.png */; };
-		B0375B08150FCD8D005D61BC /* parallaxe2-3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0375B05150FCD8D005D61BC /* parallaxe2-3@2x.png */; };
 		B0375B0B150FCE3C005D61BC /* BigPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = B0375B0A150FCE3C005D61BC /* BigPicture.m */; };
 		B0949A721512761D00BDB1DD /* Sensor.m in Sources */ = {isa = PBXBuildFile; fileRef = B0949A711512761D00BDB1DD /* Sensor.m */; };
 		B0A64C0E1504FA4C00B2BFBA /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A64C0D1504FA4C00B2BFBA /* Hero.m */; };
@@ -140,13 +137,22 @@
 		B0C1B44914FE248F00E10833 /* GameState.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C1B44414FE248F00E10833 /* GameState.m */; };
 		B0C1B44A14FE248F00E10833 /* Main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C1B44614FE248F00E10833 /* Main.m */; };
 		B0D4EDFC14FD7714008366B6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D4EDFB14FD7714008366B6 /* libz.dylib */; };
+		B0EA9A1715173567002D31CB /* parallaxe1_1.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EA9A1415173567002D31CB /* parallaxe1_1.png */; };
+		B0EA9A1815173567002D31CB /* parallaxe1_2.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EA9A1515173567002D31CB /* parallaxe1_2.png */; };
+		B0EA9A1915173567002D31CB /* parallaxe1_3.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EA9A1615173567002D31CB /* parallaxe1_3.png */; };
+		B0EA9A1D1517356F002D31CB /* parallaxe1_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EA9A1A1517356F002D31CB /* parallaxe1_1@2x.png */; };
+		B0EA9A1E1517356F002D31CB /* parallaxe1_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EA9A1B1517356F002D31CB /* parallaxe1_2@2x.png */; };
+		B0EA9A1F1517356F002D31CB /* parallaxe1_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EA9A1C1517356F002D31CB /* parallaxe1_3@2x.png */; };
+		B0EA9A2115173778002D31CB /* parallaxe2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EA9A2015173778002D31CB /* parallaxe2@2x.png */; };
+		B0EA9A231517377D002D31CB /* parallaxe2.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EA9A221517377D002D31CB /* parallaxe2.png */; };
+		B0EA9A3915174966002D31CB /* jauneParticle.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EA9A3815174966002D31CB /* jauneParticle.png */; };
+		B0EA9A3F1517568D002D31CB /* jauneParticle.pex in Resources */ = {isa = PBXBuildFile; fileRef = B0EA9A3E1517568D002D31CB /* jauneParticle.pex */; };
+		B0EA9A4315175A44002D31CB /* Particle.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EA9A4215175A44002D31CB /* Particle.m */; };
+		B0EA9A4615175FD1002D31CB /* ParticleJaune.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EA9A4515175FD1002D31CB /* ParticleJaune.m */; };
 		B0EEB08A15061547009AD303 /* flash.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EEB08915061547009AD303 /* flash.png */; };
 		B0EEB08D150617ED009AD303 /* Hero.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EEB08B150617ED009AD303 /* Hero.png */; };
 		B0EEB08E150617ED009AD303 /* Hero.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0EEB08C150617ED009AD303 /* Hero.xml */; };
 		B0EEB09115063D0B009AD303 /* AnimationSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EEB09015063D0B009AD303 /* AnimationSequence.m */; };
-		B0EF56BD150FEA8D006EAC13 /* parallaxe2-1.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EF56BA150FEA8D006EAC13 /* parallaxe2-1.png */; };
-		B0EF56BE150FEA8D006EAC13 /* parallaxe2-2.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EF56BB150FEA8D006EAC13 /* parallaxe2-2.png */; };
-		B0EF56BF150FEA8D006EAC13 /* parallaxe2-3.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EF56BC150FEA8D006EAC13 /* parallaxe2-3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -396,9 +402,6 @@
 		B012E3E215148F52008B9157 /* SXNSDataExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SXNSDataExtensions.m; path = SparrowExtensions/SXNSDataExtensions.m; sourceTree = "<group>"; };
 		B012E3E415148F8B008B9157 /* SXParticleSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SXParticleSystem.h; path = SparrowExtensions/SXParticleSystem.h; sourceTree = "<group>"; };
 		B012E3E515148F8B008B9157 /* SXParticleSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SXParticleSystem.m; path = SparrowExtensions/SXParticleSystem.m; sourceTree = "<group>"; };
-		B0375B03150FCD8D005D61BC /* parallaxe2-1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parallaxe2-1@2x.png"; sourceTree = "<group>"; };
-		B0375B04150FCD8D005D61BC /* parallaxe2-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parallaxe2-2@2x.png"; sourceTree = "<group>"; };
-		B0375B05150FCD8D005D61BC /* parallaxe2-3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parallaxe2-3@2x.png"; sourceTree = "<group>"; };
 		B0375B09150FCE3C005D61BC /* BigPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigPicture.h; sourceTree = "<group>"; };
 		B0375B0A150FCE3C005D61BC /* BigPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigPicture.m; sourceTree = "<group>"; };
 		B0949A701512761D00BDB1DD /* Sensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sensor.h; sourceTree = "<group>"; };
@@ -424,14 +427,25 @@
 		B0C1B44514FE248F00E10833 /* Main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Main.h; sourceTree = "<group>"; };
 		B0C1B44614FE248F00E10833 /* Main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Main.m; sourceTree = "<group>"; };
 		B0D4EDFB14FD7714008366B6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		B0EA9A1415173567002D31CB /* parallaxe1_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = parallaxe1_1.png; sourceTree = "<group>"; };
+		B0EA9A1515173567002D31CB /* parallaxe1_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = parallaxe1_2.png; sourceTree = "<group>"; };
+		B0EA9A1615173567002D31CB /* parallaxe1_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = parallaxe1_3.png; sourceTree = "<group>"; };
+		B0EA9A1A1517356F002D31CB /* parallaxe1_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parallaxe1_1@2x.png"; sourceTree = "<group>"; };
+		B0EA9A1B1517356F002D31CB /* parallaxe1_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parallaxe1_2@2x.png"; sourceTree = "<group>"; };
+		B0EA9A1C1517356F002D31CB /* parallaxe1_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parallaxe1_3@2x.png"; sourceTree = "<group>"; };
+		B0EA9A2015173778002D31CB /* parallaxe2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parallaxe2@2x.png"; sourceTree = "<group>"; };
+		B0EA9A221517377D002D31CB /* parallaxe2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = parallaxe2.png; sourceTree = "<group>"; };
+		B0EA9A3815174966002D31CB /* jauneParticle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jauneParticle.png; sourceTree = "<group>"; };
+		B0EA9A3E1517568D002D31CB /* jauneParticle.pex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jauneParticle.pex; sourceTree = "<group>"; };
+		B0EA9A4115175A44002D31CB /* Particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Particle.h; sourceTree = "<group>"; };
+		B0EA9A4215175A44002D31CB /* Particle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Particle.m; sourceTree = "<group>"; };
+		B0EA9A4415175FD1002D31CB /* ParticleJaune.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleJaune.h; sourceTree = "<group>"; };
+		B0EA9A4515175FD1002D31CB /* ParticleJaune.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParticleJaune.m; sourceTree = "<group>"; };
 		B0EEB08915061547009AD303 /* flash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flash.png; sourceTree = "<group>"; };
 		B0EEB08B150617ED009AD303 /* Hero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hero.png; sourceTree = "<group>"; };
 		B0EEB08C150617ED009AD303 /* Hero.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Hero.xml; sourceTree = "<group>"; };
 		B0EEB08F15063D0B009AD303 /* AnimationSequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationSequence.h; sourceTree = "<group>"; };
 		B0EEB09015063D0B009AD303 /* AnimationSequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationSequence.m; sourceTree = "<group>"; };
-		B0EF56BA150FEA8D006EAC13 /* parallaxe2-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parallaxe2-1.png"; sourceTree = "<group>"; };
-		B0EF56BB150FEA8D006EAC13 /* parallaxe2-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parallaxe2-2.png"; sourceTree = "<group>"; };
-		B0EF56BC150FEA8D006EAC13 /* parallaxe2-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parallaxe2-3.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -774,12 +788,16 @@
 		A1C70AD912DCE430003C506C /* images */ = {
 			isa = PBXGroup;
 			children = (
-				B0375B03150FCD8D005D61BC /* parallaxe2-1@2x.png */,
-				B0EF56BA150FEA8D006EAC13 /* parallaxe2-1.png */,
-				B0EF56BB150FEA8D006EAC13 /* parallaxe2-2.png */,
-				B0EF56BC150FEA8D006EAC13 /* parallaxe2-3.png */,
-				B0375B04150FCD8D005D61BC /* parallaxe2-2@2x.png */,
-				B0375B05150FCD8D005D61BC /* parallaxe2-3@2x.png */,
+				B0EA9A3E1517568D002D31CB /* jauneParticle.pex */,
+				B0EA9A3815174966002D31CB /* jauneParticle.png */,
+				B0EA9A221517377D002D31CB /* parallaxe2.png */,
+				B0EA9A2015173778002D31CB /* parallaxe2@2x.png */,
+				B0EA9A1A1517356F002D31CB /* parallaxe1_1@2x.png */,
+				B0EA9A1B1517356F002D31CB /* parallaxe1_2@2x.png */,
+				B0EA9A1C1517356F002D31CB /* parallaxe1_3@2x.png */,
+				B0EA9A1415173567002D31CB /* parallaxe1_1.png */,
+				B0EA9A1515173567002D31CB /* parallaxe1_2.png */,
+				B0EA9A1615173567002D31CB /* parallaxe1_3.png */,
 				B0EEB08B150617ED009AD303 /* Hero.png */,
 				B0EEB08C150617ED009AD303 /* Hero.xml */,
 				B0EEB08915061547009AD303 /* flash.png */,
@@ -918,6 +936,10 @@
 				B0C1B44414FE248F00E10833 /* GameState.m */,
 				B0C1B44514FE248F00E10833 /* Main.h */,
 				B0C1B44614FE248F00E10833 /* Main.m */,
+				B0EA9A4115175A44002D31CB /* Particle.h */,
+				B0EA9A4215175A44002D31CB /* Particle.m */,
+				B0EA9A4415175FD1002D31CB /* ParticleJaune.h */,
+				B0EA9A4515175FD1002D31CB /* ParticleJaune.m */,
 			);
 			path = Gameline;
 			sourceTree = "<group>";
@@ -1038,12 +1060,16 @@
 				B0EEB08A15061547009AD303 /* flash.png in Resources */,
 				B0EEB08D150617ED009AD303 /* Hero.png in Resources */,
 				B0EEB08E150617ED009AD303 /* Hero.xml in Resources */,
-				B0375B06150FCD8D005D61BC /* parallaxe2-1@2x.png in Resources */,
-				B0375B07150FCD8D005D61BC /* parallaxe2-2@2x.png in Resources */,
-				B0375B08150FCD8D005D61BC /* parallaxe2-3@2x.png in Resources */,
-				B0EF56BD150FEA8D006EAC13 /* parallaxe2-1.png in Resources */,
-				B0EF56BE150FEA8D006EAC13 /* parallaxe2-2.png in Resources */,
-				B0EF56BF150FEA8D006EAC13 /* parallaxe2-3.png in Resources */,
+				B0EA9A1715173567002D31CB /* parallaxe1_1.png in Resources */,
+				B0EA9A1815173567002D31CB /* parallaxe1_2.png in Resources */,
+				B0EA9A1915173567002D31CB /* parallaxe1_3.png in Resources */,
+				B0EA9A1D1517356F002D31CB /* parallaxe1_1@2x.png in Resources */,
+				B0EA9A1E1517356F002D31CB /* parallaxe1_2@2x.png in Resources */,
+				B0EA9A1F1517356F002D31CB /* parallaxe1_3@2x.png in Resources */,
+				B0EA9A2115173778002D31CB /* parallaxe2@2x.png in Resources */,
+				B0EA9A231517377D002D31CB /* parallaxe2.png in Resources */,
+				B0EA9A3915174966002D31CB /* jauneParticle.png in Resources */,
+				B0EA9A3F1517568D002D31CB /* jauneParticle.pex in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1137,6 +1163,8 @@
 				B0949A721512761D00BDB1DD /* Sensor.m in Sources */,
 				B012E3E315148F52008B9157 /* SXNSDataExtensions.m in Sources */,
 				B012E3E615148F8B008B9157 /* SXParticleSystem.m in Sources */,
+				B0EA9A4315175A44002D31CB /* Particle.m in Sources */,
+				B0EA9A4615175FD1002D31CB /* ParticleJaune.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

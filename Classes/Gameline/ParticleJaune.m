@@ -1,59 +1,51 @@
 //
-//  Sensor.m
+//  ParticleJaune.m
 //  ChipmunkWrapper
 //
-//  Created by Aymeric Lamboley on 15/03/12.
+//  Created by Aymeric Lamboley on 19/03/12.
 //  Copyright (c) 2012 Sodeso. All rights reserved.
 //
 
-#import "Sensor.h"
+#import "ParticleJaune.h"
 
-@implementation Sensor
+@implementation ParticleJaune
 
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params {
-
+    
     if (self = [super initWithName:paramName params:params]) {
         
-        [self simpleInit];
     }
     
     return self;
 }
 
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params andGraphic:(SPDisplayObject *)displayObject {
-
+    
     if (self = [super initWithName:paramName params:params andGraphic:displayObject]) {
         
-        [self simpleInit];
     }
     
     return self;
-}
-
-- (void) createBody {
-    
-    body = [space addStaticBody];
 }
 
 - (void) defineShape {
     
     [super defineShape];
     
-    [shape setSensor:YES];
-    [shape setCollisionType:@"sensor"];
+    [shape setCollisionType:@"particleJaune"];
 }
+
 
 - (void) simpleInit {
     
-     [super.space addCollisionHandlerBetween:@"hero" andTypeB:@"sensor" target:self begin:@selector(collisionStart) preSolve:NULL postSolve:NULL separate:@selector(collisionEnd)];
+    [super.space addCollisionHandlerBetween:@"hero" andTypeB:@"particleJaune" target:self begin:@selector(collisionStart) preSolve:NULL postSolve:NULL separate:NULL];
 }
 
 - (void) collisionStart {
     
-}
-
-- (void) collisionEnd {
+    [super collisionStart];
     
+    NSLog(@"particleJauneTouched");
 }
 
 @end

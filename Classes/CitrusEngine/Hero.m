@@ -43,7 +43,9 @@
 
 - (void) simpleInit {
     
-    self.velocityX = 20;
+    [body setMoment:INFINITY];
+    
+    self.velocityX = 25;
     
     [ce.state addEventListener:@selector(touched:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
     
