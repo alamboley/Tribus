@@ -29,7 +29,7 @@
 @implementation State
 
 @synthesize delegate = mDelegate;
-@synthesize objects;
+@synthesize objects, garbageObjects;
 @synthesize space;
 @synthesize cameraTarget;
 
@@ -48,6 +48,7 @@
 		}
         
         objects = [[NSMutableArray alloc] init];
+        garbageObjects = [[NSMutableArray alloc] init];
         
         inverseGravity = NO;
 		
@@ -63,8 +64,6 @@
          }*/
 		
 		debugDraw = [[SPDebugDraw alloc] initWithManager:space];
-		//[self addChild:[[SPSprite alloc] init]];
-        //[(SPDisplayObjectContainer *)[self childAtIndex:0] addChild:debugDraw];
         [debugDraw setVisible:FALSE];
         [debugDraw setTouchable:FALSE];
         
@@ -125,13 +124,25 @@
     
     [space step:1.0f / 15.0f];
 	[space updateShapes];
-
+    
     for (CitrusObject *object in objects) {
-        [object update];
+        
+        if (object.kill == YES) {
+            [garbageObjects addObject:object];
+        } else {
+            [object update];
+        }
+    }
+    
+    for (CitrusObject *objectToDestroy in garbageObjects) {
+        
+        [objects removeObject:objectToDestroy];
+        [space addPostStepCallback:objectToDestroy selector:@selector(destroy) data: NULL];
+        [garbageObjects removeObject:objectToDestroy];
     }
     
     if (cameraTarget) {
-
+        
         float diffX = (-cameraTarget.body.position.x + cameraOffset.x) - self.y;
         float velocityX = diffX * cameraEasing.x;
         self.y += velocityX;
@@ -151,7 +162,7 @@
     
 	UIAccelerometer *accelerometer = [UIAccelerometer sharedAccelerometer];
 	accelerometer.delegate = nil;
-
+    
     
     
     

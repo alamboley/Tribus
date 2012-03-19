@@ -35,7 +35,6 @@
     [shape setCollisionType:@"particleJaune"];
 }
 
-
 - (void) simpleInit {
     
     [super.space addCollisionHandlerBetween:@"hero" andTypeB:@"particleJaune" target:self begin:@selector(collisionStart) preSolve:NULL postSolve:NULL separate:NULL];

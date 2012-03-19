@@ -33,6 +33,17 @@
     return self;
 }
 
+- (void) destroy {
+    
+    [super destroy];
+    
+    if ([graphic isKindOfClass:[SXParticleSystem class]]) {
+        
+        [(SXParticleSystem *)graphic stop];
+        [[SPStage mainStage].juggler removeObject:(SXParticleSystem *)graphic];
+    }
+}
+
 - (void) defineShape {
     
     [super defineShape];
@@ -49,16 +60,10 @@
 - (void) collisionStart {
     
     //kill + ajout score
-    NSLog(@"particle touched");
-}
-
-- (void) dealloc {
     
-    if ([graphic isKindOfClass:[SXParticleSystem class]]) {
-        
-        [(SXParticleSystem *)graphic stop];
-        [[SPStage mainStage].juggler removeObject:(SXParticleSystem *)graphic];
-    }
+    kill = YES;
+    
+    NSLog(@"particle touched");
 }
 
 @end

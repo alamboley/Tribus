@@ -54,6 +54,16 @@
     [super update];
 }
 
+- (void) destroy {
+    
+    [super destroy];
+    
+    [body removeShape:shape];
+    [body removeFromSpace];
+    shape = nil;
+    body = nil;
+}
+
 - (void) isStatic:(BOOL) staticBody {
     
     isStatic = staticBody;
@@ -98,6 +108,7 @@
     [shape setElasticity:0.7];
     [shape setFriction:0.7];
 }
+
 
 
 @end

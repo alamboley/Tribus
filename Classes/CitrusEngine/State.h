@@ -31,10 +31,12 @@
     BOOL inverseGravity;
     
     NSMutableArray *objects;
+    NSMutableArray *garbageObjects;
 }
 
 @property (nonatomic) id delegate;
 @property (nonatomic) NSMutableArray *objects;
+@property (nonatomic) NSMutableArray *garbageObjects;
 
 @property (nonatomic) CMSpace *space;
 @property (nonatomic) PhysicsObject *cameraTarget;

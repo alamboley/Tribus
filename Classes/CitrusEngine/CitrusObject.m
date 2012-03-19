@@ -19,6 +19,7 @@
 
 @synthesize ce, name, graphic;
 @synthesize group, parallax;
+@synthesize kill;
 
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params {
     
@@ -63,6 +64,14 @@
     
         self.graphic.x = self.x - ce.state.y * (1 - self.parallax);
     }
+}
+
+- (void) destroy {
+    
+    if (graphic != nil) {
+        [self removeChild:graphic];
+    }
+    
 }
 
 - (void) setParams:(NSDictionary *) object {
@@ -118,15 +127,6 @@
 - (void) height:(NSString *) value {
     
     heightBody = [value floatValue];
-}
-
-- (void) dealloc {
-    
-    
-    if (graphic != nil) {
-        [self removeChild:graphic];
-    }
-    
 }
 
 @end

@@ -20,6 +20,7 @@
     float widthBody;
     float heightBody;
     float parallax;
+    BOOL kill;
 }
 
 @property (nonatomic) CitrusEngine *ce;
@@ -27,11 +28,13 @@
 @property (nonatomic) SPDisplayObject *graphic;
 @property int group;
 @property float parallax;
+@property BOOL kill;
 
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params;
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params andGraphic:(SPDisplayObject *)displayObject;
 
 - (void) update;
+- (void) destroy;
 
 - (void) x:(NSString *) value;
 - (void) y:(NSString *) value;
