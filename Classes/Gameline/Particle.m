@@ -59,9 +59,7 @@
 
 - (void) collisionStart {
     
-    //kill + ajout score
-    
-    kill = YES;
+
 }
 
 @end

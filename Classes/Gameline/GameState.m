@@ -20,13 +20,17 @@
 
 @implementation GameState
 
+@synthesize couleurs;
+
 - (id) init {
     
 	if (self = [super init]) {
         
         gameWidth = 2868;
         
-        //[self showHideDebugDraw];
+        couleurs = [[Couleurs alloc] initWithRouge:130 andBleu:20 andJaune:45 andOrange:12 andVert:8 andViolet:58];
+        
+        [self showHideDebugDraw];
         
         CitrusObject *parallaxe1 = [[CitrusObject alloc] initWithName:@"bg" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"0", @"0", @"0.1", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"parallax:", nil]] andGraphic:[SPImage imageWithContentsOfFile:@"parallaxe2.png"]];
         [self addObject:parallaxe1];
@@ -42,11 +46,20 @@
         
         AnimationSequence *mc = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"Hero.xml"] andAnimations:[NSArray arrayWithObjects:@"walk", @"jump", @"idle", nil] andFirstAnimation:@"idle"];
         
-        Hero *hero = [[Hero alloc] initWithName:@"hero" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"20", @"50", @"20", @"20", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:mc];
+        Hero *hero = [[Hero alloc] initWithName:@"hero" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"20", @"50", @"40", @"110", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:mc];
         [self addObject:hero];
         
-        ParticleJaune *particle3 = [[ParticleJaune alloc] initWithName:@"particle" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"500", @"50", @"20", @"20", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[SXParticleSystem particleSystemWithContentsOfFile:@"jauneParticle.pex"]];
+        ParticleJaune *particle1 = [[ParticleJaune alloc] initWithName:@"particle" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"300", @"150", @"20", @"20", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[SXParticleSystem particleSystemWithContentsOfFile:@"jauneParticle.pex"]];
+        [self addObject:particle1];
+        
+        ParticleJaune *particle2 = [[ParticleJaune alloc] initWithName:@"particle" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"400", @"100", @"20", @"20", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[SXParticleSystem particleSystemWithContentsOfFile:@"jauneParticle.pex"]];
+        [self addObject:particle2];
+        
+        ParticleJaune *particle3 = [[ParticleJaune alloc] initWithName:@"particle3" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"500", @"50", @"20", @"20", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[SXParticleSystem particleSystemWithContentsOfFile:@"jauneParticle.pex"]];
         [self addObject:particle3];
+        
+        ParticleJaune *particle0 = [[ParticleJaune alloc] initWithName:@"particle0" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"200", @"250", @"20", @"20", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[SXParticleSystem particleSystemWithContentsOfFile:@"jauneParticle.pex"]];
+        [self addObject:particle0];
         
         Sensor *sensor = [[Sensor alloc] initWithName:@"sensor" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"250", @"150", @"50", @"30", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]]];
         [self addObject:sensor];
@@ -56,14 +69,6 @@
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(colorPicked:) name:@"colorJaune" object:nil];
         
         //[self graphismSoutenance:[NSArray arrayWithObjects:@"soutenance1.png", @"soutenance2.png", @"soutenance3.png", nil]]; 
-        /*
-         Rouge = Orange - Jaune = Violet - Bleu
-         Bleu = Vert - Jaune = Violet -Rouge
-         Jaune = Orange - Rouge = Vert - Bleu
-         Orange = Rouge + Jaune
-         Vert = Jaune + Bleu
-         Violet = Bleu + Rouge
-         */
 	}
     
 	return self;
@@ -71,10 +76,7 @@
 
 - (void) colorPicked:(NSNotification *) notification {
     
-    if ([notification.name isEqualToString:@"colorJaune"]) {
-        [ui.tfJaune setText:@"250"];
-    }
-    
+    [couleurs addColor:notification.name];
 }
 
 - (void) graphismSoutenance:(NSArray *) pictures {

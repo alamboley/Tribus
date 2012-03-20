@@ -8,6 +8,7 @@
 
 #import "ParticleJaune.h"
 #import "CitrusEngine.h"
+#import "CitrusObject.h"
 
 @implementation ParticleJaune
 
@@ -23,7 +24,7 @@
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params andGraphic:(SPDisplayObject *)displayObject {
     
     if (self = [super initWithName:paramName params:params andGraphic:displayObject]) {
-        
+
     }
     
     return self;
@@ -38,14 +39,18 @@
 
 - (void) simpleInit {
     
-    [super.space addCollisionHandlerBetween:@"hero" andTypeB:@"particleJaune" target:self begin:@selector(collisionStart) preSolve:NULL postSolve:NULL separate:NULL];
+    [super.space addCollisionHandlerBetween:@"hero" andTypeB:@"particleJaune" target:self begin:@selector(collisionStart: space:) preSolve:NULL postSolve:NULL separate:NULL];
 }
 
-- (void) collisionStart {
-    
+- (BOOL) collisionStart:(CMArbiter*) arbiter space:(CMSpace*) space {
+        
     [super collisionStart];
     
+    ((CitrusObject *)arbiter.shapeB.body.data).kill = YES;
+
     [[NSNotificationCenter defaultCenter] postNotificationName:@"colorJaune" object:nil];
+    
+    return YES;
 }
 
 @end

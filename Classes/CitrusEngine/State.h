@@ -43,6 +43,8 @@
 @property (nonatomic) CMSpace *space;
 @property (nonatomic) PhysicsObject *cameraTarget;
 
+@property (nonatomic) Hud *ui;
+
 - (id) init;
 
 - (void)showHideDebugDraw;

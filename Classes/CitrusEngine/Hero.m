@@ -45,7 +45,7 @@
     
     [body setMoment:INFINITY];
     
-    self.velocityX = 25;
+    self.velocityX = 50;
     
     [ce.state addEventListener:@selector(touched:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
     

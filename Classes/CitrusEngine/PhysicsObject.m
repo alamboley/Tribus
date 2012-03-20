@@ -88,17 +88,20 @@
     [body setAngle:self.rotation];
     [body setPositionUsingVect:cpv(self.x, self.y)];
     
-    if (self.graphic)
-        [body setData:self.graphic];
+    [body setData:self];
+    
+    if (self.graphic) {
+        
+       graphic.x = [body position].x - widthBody /2;
+       graphic.y = [body position].y - heightBody /2;
+    }
+    
+    
 }
 
 - (void) createShape {
-    
-    if (self.width == 0) {
-        shape = [body addRectangleWithWidth:widthBody height:heightBody];
-    } else {
-        shape = [body addRectangleWithWidth:self.width height:self.height];
-    }
+
+    shape = [body addRectangleWithWidth:widthBody height:heightBody];
     
     [shape addToSpace];
 }

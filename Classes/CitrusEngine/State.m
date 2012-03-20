@@ -30,7 +30,7 @@
 
 @synthesize delegate = mDelegate;
 @synthesize objects, garbageObjects;
-@synthesize space;
+@synthesize space, ui;
 @synthesize cameraTarget;
 
 - (id) init {
@@ -132,7 +132,7 @@
 	[space updateShapes];
     
     for (CitrusObject *object in objects) {
-        
+
         if (object.kill == YES) {
             [garbageObjects addObject:object];
         } else {

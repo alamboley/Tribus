@@ -7,13 +7,18 @@
 //
 
 #import "State.h"
+#import "Couleurs.h"
 
 @interface GameState : State {
     
     float gameWidth;
     
     SPSprite *graphismEcranSoutenance;
+    
+    Couleurs *couleurs;
 }
+
+@property (nonatomic) Couleurs *couleurs;
 
 - (void) touchedFake:(SPTouchEvent *) event;
 

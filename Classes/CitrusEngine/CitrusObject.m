@@ -51,8 +51,8 @@
         //graphic.rotation = self.rotation;
         
         //can't modif the size of the graphic after its creation
-        self.width = graphic.width;
-        self.height = graphic.height;
+        //self.width = graphic.width;
+        //self.height = graphic.height;
     }
 
     return self;
