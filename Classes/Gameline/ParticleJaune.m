@@ -44,8 +44,8 @@
 - (void) collisionStart {
     
     [super collisionStart];
-
-    NSLog(@"particleJauneTouched");
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"colorJaune" object:nil];
 }
 
 @end

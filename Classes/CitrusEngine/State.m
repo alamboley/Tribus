@@ -30,7 +30,6 @@
 
 @synthesize delegate = mDelegate;
 @synthesize objects, garbageObjects;
-@synthesize ui;
 @synthesize space;
 @synthesize cameraTarget;
 

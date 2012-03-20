@@ -19,6 +19,8 @@
 				<string>Default.png</string>
 				<string>icone@2x.png</string>
 				<string>icone.png</string>
+				<string>Default.png</string>
+				<string>Default@2x.png</string>
 			</array>
 			<key>UIPrerenderedIcon</key>
 			<true/>

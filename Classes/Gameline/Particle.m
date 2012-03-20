@@ -62,8 +62,6 @@
     //kill + ajout score
     
     kill = YES;
-    
-    NSLog(@"particle touched");
 }
 
 @end

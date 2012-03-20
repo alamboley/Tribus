@@ -17,4 +17,6 @@
 
 - (void) touchedFake:(SPTouchEvent *) event;
 
+- (void) colorPicked:(NSNotification *) notification;
+
 @end

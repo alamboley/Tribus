@@ -40,7 +40,6 @@
 @property (nonatomic) NSMutableArray *objects;
 @property (nonatomic) NSMutableArray *garbageObjects;
 
-@property (nonatomic) Hud *ui;
 @property (nonatomic) CMSpace *space;
 @property (nonatomic) PhysicsObject *cameraTarget;
 

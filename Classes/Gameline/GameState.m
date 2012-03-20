@@ -53,10 +53,9 @@
         
         [self setupCamera:hero andOffset:CGPointMake(hero.width / 2, 0) andBounds:CGRectMake(0, 0, gameWidth, 1000) andEasing:CGPointMake(0.25, 0.05)];
         
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(colorPicked:) name:@"colorJaune" object:nil];
         
-        
-        //[self graphismSoutenance:[NSArray arrayWithObjects:@"soutenance1.png", @"soutenance2.png", @"soutenance3.png", nil]];
-        
+        //[self graphismSoutenance:[NSArray arrayWithObjects:@"soutenance1.png", @"soutenance2.png", @"soutenance3.png", nil]]; 
         /*
          Rouge = Orange - Jaune = Violet - Bleu
          Bleu = Vert - Jaune = Violet -Rouge
@@ -68,6 +67,14 @@
 	}
     
 	return self;
+}
+
+- (void) colorPicked:(NSNotification *) notification {
+    
+    if ([notification.name isEqualToString:@"colorJaune"]) {
+        [ui.tfJaune setText:@"250"];
+    }
+    
 }
 
 - (void) graphismSoutenance:(NSArray *) pictures {
