@@ -15,7 +15,7 @@
 #import "BigPicture.h"
 #import "Sensor.h"
 #import "SXParticleSystem.h"
-#import "Particle.h"
+#import "Piege.h"
 #import "ParticleJaune.h"
 
 @implementation GameState
@@ -26,11 +26,11 @@
     
 	if (self = [super init]) {
         
+       [self showHideDebugDraw];
+        
         gameWidth = 2868;
         
         couleurs = [[Couleurs alloc] initWithRouge:130 andBleu:20 andJaune:45 andOrange:12 andVert:8 andViolet:58];
-        
-        [self showHideDebugDraw];
         
         CitrusObject *parallaxe1 = [[CitrusObject alloc] initWithName:@"bg" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"0", @"0", @"0.1", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"parallax:", nil]] andGraphic:[SPImage imageWithContentsOfFile:@"parallaxe2.png"]];
         [self addObject:parallaxe1];
@@ -46,27 +46,37 @@
         
         AnimationSequence *mc = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"Hero.xml"] andAnimations:[NSArray arrayWithObjects:@"walk", @"jump", @"idle", nil] andFirstAnimation:@"idle"];
         
-        Hero *hero = [[Hero alloc] initWithName:@"hero" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"20", @"50", @"40", @"110", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:mc];
+        Hero *hero = [[Hero alloc] initWithName:@"hero" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"20", @"150", @"40", @"110", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:mc];
         [self addObject:hero];
         
-        ParticleJaune *particle1 = [[ParticleJaune alloc] initWithName:@"particle" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"300", @"150", @"20", @"20", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[SXParticleSystem particleSystemWithContentsOfFile:@"jauneParticle.pex"]];
-        [self addObject:particle1];
-        
-        ParticleJaune *particle2 = [[ParticleJaune alloc] initWithName:@"particle" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"400", @"100", @"20", @"20", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[SXParticleSystem particleSystemWithContentsOfFile:@"jauneParticle.pex"]];
-        [self addObject:particle2];
-        
-        ParticleJaune *particle3 = [[ParticleJaune alloc] initWithName:@"particle3" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"500", @"50", @"20", @"20", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[SXParticleSystem particleSystemWithContentsOfFile:@"jauneParticle.pex"]];
-        [self addObject:particle3];
-        
-        ParticleJaune *particle0 = [[ParticleJaune alloc] initWithName:@"particle0" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"200", @"250", @"20", @"20", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[SXParticleSystem particleSystemWithContentsOfFile:@"jauneParticle.pex"]];
+        ParticleJaune *particle0 = [[ParticleJaune alloc] initWithName:@"particle0" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"300", @"250", @"20", @"20", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[SXParticleSystem particleSystemWithContentsOfFile:@"jauneParticle.pex"]];
         [self addObject:particle0];
         
-        Sensor *sensor = [[Sensor alloc] initWithName:@"sensor" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"250", @"150", @"50", @"30", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]]];
-        [self addObject:sensor];
+        ParticleJaune *particle1 = [[ParticleJaune alloc] initWithName:@"particle" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"500", @"50", @"20", @"20", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[SXParticleSystem particleSystemWithContentsOfFile:@"jauneParticle.pex"]];
+        [self addObject:particle1];
+        
+        ParticleJaune *particle2 = [[ParticleJaune alloc] initWithName:@"particle" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"650", @"150", @"20", @"20", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[SXParticleSystem particleSystemWithContentsOfFile:@"jauneParticle.pex"]];
+        [self addObject:particle2];
+        
+        ParticleJaune *particle3 = [[ParticleJaune alloc] initWithName:@"particle3" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"900", @"250", @"20", @"20", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[SXParticleSystem particleSystemWithContentsOfFile:@"jauneParticle.pex"]];
+        [self addObject:particle3];
+        
+        ParticleJaune *particle4 = [[ParticleJaune alloc] initWithName:@"particle3" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"1200", @"250", @"20", @"20", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[SXParticleSystem particleSystemWithContentsOfFile:@"jauneParticle.pex"]];
+        [self addObject:particle4];
+        
+        ParticleJaune *particle5 = [[ParticleJaune alloc] initWithName:@"particle3" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"1300", @"250", @"20", @"20", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[SXParticleSystem particleSystemWithContentsOfFile:@"jauneParticle.pex"]];
+        [self addObject:particle5];
+        
+        ParticleJaune *particle6 = [[ParticleJaune alloc] initWithName:@"particle3" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"1500", @"200", @"20", @"20", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[SXParticleSystem particleSystemWithContentsOfFile:@"jauneParticle.pex"]];
+        [self addObject:particle6];
+        
+        Piege *piege = [[Piege alloc] initWithName:@"piege" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"500", @"200", @"20", @"100", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[SPImage imageWithContentsOfFile:@"piege.png"]];
+        [self addObject:piege];
         
         [self setupCamera:hero andOffset:CGPointMake(hero.width / 2, 0) andBounds:CGRectMake(0, 0, gameWidth, 1000) andEasing:CGPointMake(0.25, 0.05)];
         
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(colorPicked:) name:@"colorJaune" object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(colorPicked:) name:@"piege" object:nil];
         
         //[self graphismSoutenance:[NSArray arrayWithObjects:@"soutenance1.png", @"soutenance2.png", @"soutenance3.png", nil]]; 
 	}
@@ -76,7 +86,12 @@
 
 - (void) colorPicked:(NSNotification *) notification {
     
-    [couleurs addColor:notification.name];
+    if ([notification.name isEqualToString:@"piege"]) {
+        [couleurs piegeColor:@"colorJaune"];
+    } else {
+        [couleurs addColor:notification.name];
+    }
+    
 }
 
 - (void) graphismSoutenance:(NSArray *) pictures {

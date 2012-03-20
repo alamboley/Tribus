@@ -17,12 +17,12 @@
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params {
     
     if (self = [super initWithName:paramName params:params]) {
-
+        
         space = ce.state.space;
         
         [self createBody];
         [self defineBody];
-
+        
         [self createShape];
         [self defineShape];
     }
@@ -31,7 +31,7 @@
 }
 
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params andGraphic:(SPDisplayObject *)displayObject {
-
+    
     if (self = [super initWithName:paramName params:params andGraphic:displayObject]) {
         
         space = ce.state.space;
@@ -70,14 +70,14 @@
 }
 
 - (void) createBody {
-
-    if (isStatic == 0) {
     
+    if (isStatic == 0) {
+        
         body = [space addBodyWithMass:5.0 moment:INFINITY];
         [body addToSpace];
         
     } else {
-
+        
         body = [space addStaticBody];
     }
     
@@ -90,17 +90,16 @@
     
     [body setData:self];
     
-    if (self.graphic) {
+    if (self.graphic && isStatic == 0) {
         
-       graphic.x = [body position].x - widthBody /2;
-       graphic.y = [body position].y - heightBody /2;
+        graphic.x = 0;
+        graphic.y = 0;
     }
-    
     
 }
 
 - (void) createShape {
-
+    
     shape = [body addRectangleWithWidth:widthBody height:heightBody];
     
     [shape addToSpace];

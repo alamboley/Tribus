@@ -1,61 +1,56 @@
 //
-//  Sensor.m
+//  Piege.m
 //  ChipmunkWrapper
 //
-//  Created by Aymeric Lamboley on 15/03/12.
+//  Created by Aymeric Lamboley on 20/03/12.
 //  Copyright (c) 2012 Sodeso. All rights reserved.
 //
 
-#import "Sensor.h"
+#import "Piege.h"
 
-@implementation Sensor
+@implementation Piege
 
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params {
-
+    
     if (self = [super initWithName:paramName params:params]) {
         
-        [self simpleInit];
     }
     
     return self;
 }
 
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params andGraphic:(SPDisplayObject *)displayObject {
-
+    
     if (self = [super initWithName:paramName params:params andGraphic:displayObject]) {
         
-        [self simpleInit];
     }
     
     return self;
 }
 
-- (void) createBody {
+- (void) destroy {
     
-    isStatic = YES;
-    
-    body = [space addStaticBody];
+    [super destroy];
 }
 
 - (void) defineShape {
     
     [super defineShape];
     
-    [shape setSensor:YES];
-    [shape setCollisionType:@"sensor"];
+    [shape setCollisionType:@"piege"];
 }
+
 
 - (void) simpleInit {
-    
-     [super.space addCollisionHandlerBetween:@"hero" andTypeB:@"sensor" target:self begin:@selector(collisionStart) preSolve:NULL postSolve:NULL separate:@selector(collisionEnd)];
+
+    [super.space addCollisionHandlerBetween:@"hero" andTypeB:@"piege" target:self begin:@selector(collisionStart: space:) preSolve:NULL postSolve:NULL separate:NULL];
 }
 
-- (void) collisionStart {
+- (BOOL) collisionStart:(CMArbiter*) arbiter space:(CMSpace*) space {
 
-}
-
-- (void) collisionEnd {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"piege" object:nil];
     
+    return YES;
 }
 
 @end

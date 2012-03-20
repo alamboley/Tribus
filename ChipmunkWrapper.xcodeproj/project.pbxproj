@@ -125,6 +125,7 @@
 		B012E3E315148F52008B9157 /* SXNSDataExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B012E3E215148F52008B9157 /* SXNSDataExtensions.m */; };
 		B012E3E615148F8B008B9157 /* SXParticleSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = B012E3E515148F8B008B9157 /* SXParticleSystem.m */; };
 		B0375B0B150FCE3C005D61BC /* BigPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = B0375B0A150FCE3C005D61BC /* BigPicture.m */; };
+		B073FFF715190A4D00AE2BD7 /* Piege.m in Sources */ = {isa = PBXBuildFile; fileRef = B073FFF615190A4D00AE2BD7 /* Piege.m */; };
 		B07BA0AE1518760B0047D9C4 /* Hud.m in Sources */ = {isa = PBXBuildFile; fileRef = B07BA0AD1518760B0047D9C4 /* Hud.m */; };
 		B07BA0D415188B380047D9C4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B07BA0D315188B380047D9C4 /* Default.png */; };
 		B07BA0D615188B440047D9C4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B07BA0D515188B440047D9C4 /* Default@2x.png */; };
@@ -430,6 +431,8 @@
 		B012E3E515148F8B008B9157 /* SXParticleSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SXParticleSystem.m; path = SparrowExtensions/SXParticleSystem.m; sourceTree = "<group>"; };
 		B0375B09150FCE3C005D61BC /* BigPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigPicture.h; sourceTree = "<group>"; };
 		B0375B0A150FCE3C005D61BC /* BigPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigPicture.m; sourceTree = "<group>"; };
+		B073FFF515190A4D00AE2BD7 /* Piege.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Piege.h; sourceTree = "<group>"; };
+		B073FFF615190A4D00AE2BD7 /* Piege.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Piege.m; sourceTree = "<group>"; };
 		B07BA0AC1518760B0047D9C4 /* Hud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hud.h; sourceTree = "<group>"; };
 		B07BA0AD1518760B0047D9C4 /* Hud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hud.m; sourceTree = "<group>"; };
 		B07BA0D315188B380047D9C4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -1038,6 +1041,8 @@
 				B07BA0AD1518760B0047D9C4 /* Hud.m */,
 				B0A2F2CB1518B02C00EBAA2B /* Couleurs.h */,
 				B0A2F2CC1518B02C00EBAA2B /* Couleurs.m */,
+				B073FFF515190A4D00AE2BD7 /* Piege.h */,
+				B073FFF615190A4D00AE2BD7 /* Piege.m */,
 			);
 			path = Gameline;
 			sourceTree = "<group>";
@@ -1289,6 +1294,7 @@
 				B0EA9A4615175FD1002D31CB /* ParticleJaune.m in Sources */,
 				B07BA0AE1518760B0047D9C4 /* Hud.m in Sources */,
 				B0A2F2CD1518B02C00EBAA2B /* Couleurs.m in Sources */,
+				B073FFF715190A4D00AE2BD7 /* Piege.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
