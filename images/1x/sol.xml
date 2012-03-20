@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:0561c7a798d5174e645357d7456ba60e$ -->
+<TextureAtlas imagePath="sol.png">
+    <SubTexture name="sol1@x2" x="2" y="94" width="144" height="30"/>
+    <SubTexture name="sol2@x2" x="2" y="48" width="421" height="44"/>
+    <SubTexture name="sol3@x2" x="699" y="2" width="292" height="28"/>
+    <SubTexture name="sol4@x2" x="425" y="48" width="256" height="36"/>
+    <SubTexture name="sol5@x2" x="148" y="94" width="467" height="28"/>
+    <SubTexture name="sol6@x2" x="2" y="2" width="695" height="44"/>
+</TextureAtlas>
