@@ -17,6 +17,8 @@
     SPSprite *graphic;
     
     int group;
+    float posX;
+    float posY;
     float widthBody;
     float heightBody;
     float parallax;

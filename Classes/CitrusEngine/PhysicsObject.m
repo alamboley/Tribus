@@ -86,7 +86,7 @@
 - (void) defineBody {
     
     [body setAngle:self.rotation];
-    [body setPositionUsingVect:cpv(self.x, self.y)];
+    [body setPositionUsingVect:cpv(posX, posY)];
     
     [body setData:self];
     

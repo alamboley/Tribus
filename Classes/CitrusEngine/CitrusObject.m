@@ -45,9 +45,9 @@
         
         graphic = displayObject;
         [self addChild:graphic];
-        
-        graphic.x = self.x;
-        graphic.y = self.y;
+
+        graphic.x = posX;
+        graphic.y = posY;
     }
 
     return self;
@@ -56,8 +56,8 @@
 - (void) update {
     
     if (parallax && graphic) {
-    
-        self.graphic.x = self.x - ce.state.y * (1 - self.parallax);
+        
+        graphic.x = posX - ce.state.y * (1 - self.parallax);
     }
 }
 
@@ -87,12 +87,13 @@
 
 - (void) x:(NSString *) value {
     
-    self.x = [value floatValue];
+    posX = [value floatValue];
+    
 }
 
 - (void) y:(NSString *) value {
     
-    self.y = [value floatValue];
+    posY = [value floatValue];
 }
 
 - (void) rotation:(NSString *) value {
