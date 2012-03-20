@@ -55,7 +55,16 @@
         
         
         
-       // [self graphismSoutenance:[NSArray arrayWithObjects:@"soutenance1.png", @"soutenance2.png", @"soutenance3.png", nil]];
+        //[self graphismSoutenance:[NSArray arrayWithObjects:@"soutenance1.png", @"soutenance2.png", @"soutenance3.png", nil]];
+        
+        /*
+         Rouge = Orange - Jaune = Violet - Bleu
+         Bleu = Vert - Jaune = Violet -Rouge
+         Jaune = Orange - Rouge = Vert - Bleu
+         Orange = Rouge + Jaune
+         Vert = Jaune + Bleu
+         Violet = Bleu + Rouge
+         */
 	}
     
 	return self;
@@ -92,11 +101,9 @@
     SPTouch *begin = [[event touchesWithTarget:graphismEcranSoutenance andPhase:SPTouchPhaseBegan] anyObject];
     
     if (begin) {
-       // graphismEcranSoutenance.y -= 480;
         
-        
-       SPTween *tween = [SPTween tweenWithTarget:graphismEcranSoutenance time:0.7f];
-       [tween animateProperty:@"y" targetValue:graphismEcranSoutenance.y - 480];
+        SPTween *tween = [SPTween tweenWithTarget:graphismEcranSoutenance time:0.7f];
+        [tween animateProperty:@"y" targetValue:graphismEcranSoutenance.y - 480];
         [self.stage.juggler addObject:tween];
     }
     

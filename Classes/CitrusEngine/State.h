@@ -10,6 +10,7 @@
 #import "SPDebugDraw.h"
 #import "CitrusObject.h"
 #import "PhysicsObject.h"
+#import "Hud.h"
 
 @interface State : SPSprite <UIAccelerometerDelegate> {
     
@@ -18,6 +19,7 @@
 	id mDelegate;
     
     SPDebugDraw *debugDraw;
+    Hud *ui;
     
     CMSpace *space;
     
@@ -38,6 +40,7 @@
 @property (nonatomic) NSMutableArray *objects;
 @property (nonatomic) NSMutableArray *garbageObjects;
 
+@property (nonatomic) Hud *ui;
 @property (nonatomic) CMSpace *space;
 @property (nonatomic) PhysicsObject *cameraTarget;
 

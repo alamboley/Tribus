@@ -27,7 +27,7 @@
         
         [super setUpState:game];
         
-        frameRateTextField.visible = TRUE;
+        //frameRateTextField.visible = TRUE;
     }
     
     return self;

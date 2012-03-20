@@ -7,6 +7,7 @@
 //
 
 #import "ParticleJaune.h"
+#import "CitrusEngine.h"
 
 @implementation ParticleJaune
 
@@ -43,7 +44,7 @@
 - (void) collisionStart {
     
     [super collisionStart];
-    
+
     NSLog(@"particleJauneTouched");
 }
 
