@@ -17,16 +17,14 @@
     
     CMShape *sensorOnGround;
     
-    float velocityX;
-    float velocityY;
+    float jumpHeight, jumpAcceleration, jumpDeceleration;
+    float velocityX, velocityY;
     
     BOOL touchScreen;
 }
 
 @property (nonatomic) NSString *animation;
 @property (nonatomic) CMShape *sensorOnGround;
-
-@property float velocityX, velocityY;
 
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params;
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params andGraphic:(SPDisplayObject *)displayObject;

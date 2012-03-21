@@ -16,17 +16,23 @@
     
     if (self = [super init]) {
         
-        [self setUpTextField:tfBleu = [SPTextField textFieldWithWidth:50 height:20 text:@"" fontName:@"Arial" fontSize:12 color:0x00dadf] withPosX:10 andPosY:50];
+        SPImage *imgFond = [SPImage imageWithContentsOfFile:@"pigments-ingame.png"];
+        imgFond.x = 3;
+        imgFond.y = 3;
         
-        [self setUpTextField:tfRouge = [SPTextField textFieldWithWidth:50 height:20 text:@"" fontName:@"Arial" fontSize:12 color:0xef2c2c] withPosX:50 andPosY:50];
+        [self addChild:imgFond];
         
-        [self setUpTextField:tfJaune = [SPTextField textFieldWithWidth:50 height:20 text:@"" fontName:@"Arial" fontSize:12 color:0xfffd00] withPosX:90 andPosY:50];
+        [self setUpTextField:tfBleu = [SPTextField textFieldWithWidth:50 height:20 text:@"" fontName:@"Tw Cen MT" fontSize:14 color:0xFFFFFF] withPosX:-5 andPosY:14];
         
-        [self setUpTextField:tfVert = [SPTextField textFieldWithWidth:50 height:20 text:@"" fontName:@"Arial" fontSize:12 color:0x92d208] withPosX:130 andPosY:50];
+        [self setUpTextField:tfRouge = [SPTextField textFieldWithWidth:50 height:20 text:@"" fontName:@"Tw Cen MT" fontSize:14 color:0xFFFFFF] withPosX:30 andPosY:14];
+
+        [self setUpTextField:tfJaune = [SPTextField textFieldWithWidth:50 height:20 text:@"" fontName:@"Tw Cen MT" fontSize:14 color:0xFFFFFF] withPosX:65 andPosY:14];
         
-        [self setUpTextField:tfOrange = [SPTextField textFieldWithWidth:50 height:20 text:@"" fontName:@"Arial" fontSize:12 color:0xff8400] withPosX:170 andPosY:50];
+        [self setUpTextField:tfVert = [SPTextField textFieldWithWidth:50 height:20 text:@"" fontName:@"Tw Cen MT" fontSize:14 color:0xFFFFFF] withPosX:103 andPosY:14];
         
-        [self setUpTextField:tfViolet = [SPTextField textFieldWithWidth:50 height:20 text:@"" fontName:@"Arial" fontSize:12 color:0xa808c8] withPosX:210 andPosY:50];
+        [self setUpTextField:tfOrange = [SPTextField textFieldWithWidth:50 height:20 text:@"" fontName:@"Tw Cen MT" fontSize:14 color:0xFFFFFF] withPosX:137 andPosY:14];
+        
+        [self setUpTextField:tfViolet = [SPTextField textFieldWithWidth:50 height:20 text:@"" fontName:@"Tw Cen MT" fontSize:14 color:0xFFFFFF] withPosX:172 andPosY:14];
     }
     
     return self;

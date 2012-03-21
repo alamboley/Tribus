@@ -178,6 +178,10 @@
 		B0EA41AF1519E7D20076DAA6 /* hero@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EA41AD1519E7D20076DAA6 /* hero@2x.png */; };
 		B0EA41B21519E8090076DAA6 /* hero.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0EA41B01519E8090076DAA6 /* hero.xml */; };
 		B0EA41B31519E8090076DAA6 /* hero.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EA41B11519E8090076DAA6 /* hero.png */; };
+		B0EA41BF151A34250076DAA6 /* Tw Cen MT Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B0EA41BD151A34250076DAA6 /* Tw Cen MT Bold.ttf */; };
+		B0EA41C0151A34250076DAA6 /* Tw Cen MT.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B0EA41BE151A34250076DAA6 /* Tw Cen MT.ttf */; };
+		B0EA41C4151A34E60076DAA6 /* pigments-ingame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EA41C3151A34E50076DAA6 /* pigments-ingame@2x.png */; };
+		B0EA41C6151A34ED0076DAA6 /* pigments-ingame.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EA41C5151A34EB0076DAA6 /* pigments-ingame.png */; };
 		B0EA9A3915174966002D31CB /* jauneParticle.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EA9A3815174966002D31CB /* jauneParticle.png */; };
 		B0EA9A3F1517568D002D31CB /* jauneParticle.pex in Resources */ = {isa = PBXBuildFile; fileRef = B0EA9A3E1517568D002D31CB /* jauneParticle.pex */; };
 		B0EA9A4315175A44002D31CB /* Particle.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EA9A4215175A44002D31CB /* Particle.m */; };
@@ -505,6 +509,10 @@
 		B0EA41AD1519E7D20076DAA6 /* hero@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hero@2x.png"; sourceTree = "<group>"; };
 		B0EA41B01519E8090076DAA6 /* hero.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = hero.xml; sourceTree = "<group>"; };
 		B0EA41B11519E8090076DAA6 /* hero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero.png; sourceTree = "<group>"; };
+		B0EA41BD151A34250076DAA6 /* Tw Cen MT Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tw Cen MT Bold.ttf"; sourceTree = "<group>"; };
+		B0EA41BE151A34250076DAA6 /* Tw Cen MT.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tw Cen MT.ttf"; sourceTree = "<group>"; };
+		B0EA41C3151A34E50076DAA6 /* pigments-ingame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pigments-ingame@2x.png"; sourceTree = "<group>"; };
+		B0EA41C5151A34EB0076DAA6 /* pigments-ingame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pigments-ingame.png"; sourceTree = "<group>"; };
 		B0EA9A3815174966002D31CB /* jauneParticle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jauneParticle.png; sourceTree = "<group>"; };
 		B0EA9A3E1517568D002D31CB /* jauneParticle.pex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jauneParticle.pex; sourceTree = "<group>"; };
 		B0EA9A4115175A44002D31CB /* Particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Particle.h; sourceTree = "<group>"; };
@@ -600,6 +608,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B0EA41BC151A33D30076DAA6 /* fonts */,
 				A189F085131EA57B001B7C6F /* PhysicsEditor.plist */,
 				A1906EAF12FF119800FFF013 /* Demo.plist */,
 				A1C70AD912DCE430003C506C /* images */,
@@ -981,6 +990,7 @@
 				B07BA11D1518930A0047D9C4 /* 1erplan2.png */,
 				B07BA1211518930A0047D9C4 /* parallaxe2.png */,
 				B07BA1221518930B0047D9C4 /* piege.png */,
+				B0EA41C5151A34EB0076DAA6 /* pigments-ingame.png */,
 				B07BA1231518930B0047D9C4 /* portail_bleu.png */,
 				B07BA1241518930B0047D9C4 /* portail_vert.png */,
 				B07BA1251518930B0047D9C4 /* sol.png */,
@@ -1004,6 +1014,7 @@
 				B07BA13A1518940B0047D9C4 /* 1erplan2@2x.png */,
 				B07BA13E1518940B0047D9C4 /* parallaxe2@2x.png */,
 				B07BA13F1518940B0047D9C4 /* piege@2x.png */,
+				B0EA41C3151A34E50076DAA6 /* pigments-ingame@2x.png */,
 				B07BA1401518940B0047D9C4 /* portail_bleu@2x.png */,
 				B07BA1411518940B0047D9C4 /* portail_vert@2x.png */,
 				B07BA1421518940B0047D9C4 /* sol@2x.png */,
@@ -1065,6 +1076,15 @@
 				B0965B06151934C700E20290 /* Sol.m */,
 			);
 			path = Gameline;
+			sourceTree = "<group>";
+		};
+		B0EA41BC151A33D30076DAA6 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B0EA41BD151A34250076DAA6 /* Tw Cen MT Bold.ttf */,
+				B0EA41BE151A34250076DAA6 /* Tw Cen MT.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1222,6 +1242,10 @@
 				B0EA41AF1519E7D20076DAA6 /* hero@2x.png in Resources */,
 				B0EA41B21519E8090076DAA6 /* hero.xml in Resources */,
 				B0EA41B31519E8090076DAA6 /* hero.png in Resources */,
+				B0EA41BF151A34250076DAA6 /* Tw Cen MT Bold.ttf in Resources */,
+				B0EA41C0151A34250076DAA6 /* Tw Cen MT.ttf in Resources */,
+				B0EA41C4151A34E60076DAA6 /* pigments-ingame@2x.png in Resources */,
+				B0EA41C6151A34ED0076DAA6 /* pigments-ingame.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

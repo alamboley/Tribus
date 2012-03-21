@@ -14,7 +14,6 @@
 
 @synthesize animation;
 @synthesize sensorOnGround;
-@synthesize velocityX, velocityY;
 
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params {
     
@@ -59,9 +58,13 @@
     
     [body setMoment:INFINITY];
     
-    self.velocityX = 100;
+    velocityX = 100;
     
     isOnGround = FALSE;
+    
+    jumpHeight = -175;
+    jumpAcceleration = 5;
+    jumpDeceleration = 7;
     
     [ce.state addEventListener:@selector(touched:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
     
@@ -123,15 +126,15 @@
 
         if (isOnGround) {
             
-            velocity.y = -165;
+            velocity.y = jumpHeight;
             
         } else if (velocity.y < 0) {
             
-            velocity.y -= 5;
+            velocity.y -= jumpAcceleration;
             
         } else {
             
-            velocity.y -= 7;
+            velocity.y -= jumpDeceleration;
         }
     }
     
