@@ -12,6 +12,7 @@
 
 @implementation Hero
 
+@synthesize animation;
 @synthesize velocityX, velocityY;
 
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params {
@@ -51,7 +52,7 @@
     
     //[super.space addCollisionHandlerBetween:@"hero" andTypeB:@"platform" target:self begin:@selector(collisionAmoi) preSolve:NULL postSolve:NULL separate:NULL];
     
-    [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(changeAnimation) userInfo:nil repeats:NO];
+    //[NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(changeAnimation) userInfo:nil repeats:NO];
 }
 
 - (void) touched:(SPTouchEvent *) event {
@@ -71,10 +72,27 @@
     
 }
 
-- (void) changeAnimation {
+- (void) updateAnimation {
     
-    if ([graphic isKindOfClass:[AnimationSequence class]]) {
-        [(AnimationSequence *)graphic changeAnimation:@"walk" withLoop:YES];
+    NSString *prevAnim = animation;
+
+    if (body.velocity.x > 0) {
+        
+        animation = @"walk";
+        loopAnimation = YES;
+        
+    } else {
+        
+        animation = @"idle";
+        loopAnimation = FALSE;
+    }
+    
+    //change animation :
+    if (![prevAnim isEqualToString:animation]) {
+        
+        if ([graphic isKindOfClass:[AnimationSequence class]]) {
+            [(AnimationSequence *)graphic changeAnimation:animation withLoop:loopAnimation];
+        }
     }
 }
 
@@ -92,7 +110,15 @@
             velocity.y -= 20;
         
     }
+    
     [body setVelocity:velocity];
+    
+    if (body.position.x > 2600) {
+
+        velocityX = 0;
+    }
+    
+    [self updateAnimation];
 }
 
 @end

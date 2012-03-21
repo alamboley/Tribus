@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:c8bf50b82ba9590448a4023785dfe11f$ -->
+<TextureAtlas imagePath="hero@2x.png">
+    <SubTexture name="idle" x="91" y="2" width="104" height="147"/>
+    <SubTexture name="walk" x="2" y="2" width="87" height="153"/>
+</TextureAtlas>

@@ -10,11 +10,16 @@
 
 @interface Hero : PhysicsObject {
     
+    NSString *animation;
+    BOOL loopAnimation;
+    
     float velocityX;
     float velocityY;
     
     BOOL touchScreen;
 }
+
+@property (nonatomic) NSString *animation;
 
 @property float velocityX, velocityY;
 
