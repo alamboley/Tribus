@@ -35,25 +35,6 @@
     return self;
 }
 
-- (void) createShape {
-    
-    [super createShape];
-    
-    sensorOnGround = [body addRectangleWithWidth:10 height:10 offset:cpv(0, heightBody / 2)];
-    
-    [sensorOnGround addToSpace];
-}
-
-- (void) defineShape {
-    
-    [super defineShape];
-    
-    [shape setCollisionType:@"hero"];
-    
-    [sensorOnGround setSensor:YES];
-    [sensorOnGround setCollisionType:@"sensorGround"];
-}
-
 - (void) simpleInit {
     
     [body setMoment:INFINITY];
@@ -71,6 +52,14 @@
     //[super.space addCollisionHandlerBetween:@"hero" andTypeB:@"platform" target:self begin:@selector(collisionAmoi) preSolve:NULL postSolve:NULL separate:NULL];
     [super.space addCollisionHandlerBetween:@"sensorGround" andTypeB:@"platform" target:self begin:@selector(onGround) preSolve:NULL postSolve:NULL separate:@selector(endGround)];
     //[NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(changeAnimation) userInfo:nil repeats:NO];
+}
+
+- (void) destroy {
+    
+    [body removeShape:sensorOnGround];
+    sensorOnGround = nil;
+    
+    [super destroy];
 }
 
 - (void) touched:(SPTouchEvent *) event {
@@ -146,6 +135,25 @@
     }
     
     [self updateAnimation];
+}
+
+- (void) createShape {
+    
+    [super createShape];
+    
+    sensorOnGround = [body addRectangleWithWidth:10 height:10 offset:cpv(0, heightBody / 2)];
+    
+    [sensorOnGround addToSpace];
+}
+
+- (void) defineShape {
+    
+    [super defineShape];
+    
+    [shape setCollisionType:@"hero"];
+    
+    [sensorOnGround setSensor:YES];
+    [sensorOnGround setCollisionType:@"sensorGround"];
 }
 
 - (void) onGround {

@@ -56,12 +56,13 @@
 
 - (void) destroy {
     
-    [super destroy];
-    
     [body removeShape:shape];
     [body removeFromSpace];
+    
     shape = nil;
     body = nil;
+    
+    [super destroy];
 }
 
 - (void) isStatic:(BOOL) staticBody {
