@@ -30,7 +30,7 @@
 
 - (void) defineShape {
     
-    [shape setElasticity:0.5];
+    [shape setElasticity:0];
     [shape setFriction:0];
     [shape setCollisionType:@"platform"];
 }

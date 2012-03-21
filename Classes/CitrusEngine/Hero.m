@@ -13,6 +13,7 @@
 @implementation Hero
 
 @synthesize animation;
+@synthesize sensorOnGround;
 @synthesize velocityX, velocityY;
 
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params {
@@ -35,23 +36,37 @@
     return self;
 }
 
+- (void) createShape {
+    
+    [super createShape];
+    
+    sensorOnGround = [body addRectangleWithWidth:10 height:10 offset:cpv(0, heightBody / 2)];
+    
+    [sensorOnGround addToSpace];
+}
+
 - (void) defineShape {
     
     [super defineShape];
     
     [shape setCollisionType:@"hero"];
+    
+    [sensorOnGround setSensor:YES];
+    [sensorOnGround setCollisionType:@"sensorGround"];
 }
 
 - (void) simpleInit {
     
     [body setMoment:INFINITY];
     
-    self.velocityX = 50;
+    self.velocityX = 100;
+    
+    isOnGround = FALSE;
     
     [ce.state addEventListener:@selector(touched:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
     
     //[super.space addCollisionHandlerBetween:@"hero" andTypeB:@"platform" target:self begin:@selector(collisionAmoi) preSolve:NULL postSolve:NULL separate:NULL];
-    
+    [super.space addCollisionHandlerBetween:@"sensorGround" andTypeB:@"platform" target:self begin:@selector(onGround) preSolve:NULL postSolve:NULL separate:@selector(endGround)];
     //[NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(changeAnimation) userInfo:nil repeats:NO];
 }
 
@@ -105,10 +120,19 @@
     velocity.x = velocityX;
     
     if (touchScreen) {
-        
-        if (velocity.y > -150)
-            velocity.y -= 20;
-        
+
+        if (isOnGround) {
+            
+            velocity.y = -165;
+            
+        } else if (velocity.y < 0) {
+            
+            velocity.y -= 5;
+            
+        } else {
+            
+            velocity.y -= 7;
+        }
     }
     
     [body setVelocity:velocity];
@@ -119,6 +143,14 @@
     }
     
     [self updateAnimation];
+}
+
+- (void) onGround {
+    isOnGround = YES;
+}
+
+- (void) endGround {
+    isOnGround = FALSE;
 }
 
 @end

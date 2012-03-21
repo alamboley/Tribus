@@ -13,6 +13,10 @@
     NSString *animation;
     BOOL loopAnimation;
     
+    BOOL isOnGround;
+    
+    CMShape *sensorOnGround;
+    
     float velocityX;
     float velocityY;
     
@@ -20,6 +24,7 @@
 }
 
 @property (nonatomic) NSString *animation;
+@property (nonatomic) CMShape *sensorOnGround;
 
 @property float velocityX, velocityY;
 
