@@ -24,7 +24,12 @@
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params andGraphic:(SPDisplayObject *)displayObject {
     
     if (self = [super initWithName:paramName params:params andGraphic:displayObject]) {
-
+        
+        imgFond = [SPImage imageWithContentsOfFile:@"particleFondJaune.png"];
+       [self addChild:imgFond atIndex:0];
+        
+        imgFond.x = posX - imgFond.width / 2;
+        imgFond.y = posY - imgFond.height / 2;
     }
     
     return self;

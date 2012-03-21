@@ -42,6 +42,10 @@
         [(SXParticleSystem *)graphic stop];
         [[SPStage mainStage].juggler removeObject:(SXParticleSystem *)graphic];
     }
+    
+    if (imgFond) {
+        [self removeChild:imgFond];
+    }
 }
 
 - (void) defineShape {

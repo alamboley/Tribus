@@ -8,7 +8,10 @@
 
 #import "Sensor.h"
 
-@interface Particle : Sensor
+@interface Particle : Sensor {
+    
+    SPImage *imgFond;
+}
 
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params;
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params andGraphic:(SPDisplayObject *)displayObject;
