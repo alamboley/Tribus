@@ -56,7 +56,7 @@
     graphismEcranSoutenance.rotation = SP_D2R(90);
     graphismEcranSoutenance.x = 320;
     
-        canSlideSoutenance = YES;
+    canSlideSoutenance = YES;
     
     [graphismEcranSoutenance addEventListener:@selector(touchedFake:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
 }

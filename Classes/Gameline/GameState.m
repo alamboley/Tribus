@@ -110,7 +110,8 @@
 
 - (void) showSoutenance:(NSNotification *) notification {
     
-    [self graphismSoutenance:[NSArray arrayWithObjects:@"score.png", nil]];
+    [self graphismSoutenance:[NSArray arrayWithObjects:@"score.png", @"missions.png", nil]];
+    [self.stage removeChild:ui];
 }
 
 - (void) graphismSoutenance:(NSArray *) pictures {
@@ -134,6 +135,34 @@
     
     graphismEcranSoutenance.rotation = SP_D2R(90);
     graphismEcranSoutenance.x = 320;
+    
+    canSlideSoutenance = YES;
+    
+    [graphismEcranSoutenance addEventListener:@selector(touchedFake:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
+}
+
+- (void) touchedFake:(SPTouchEvent *) event {
+    
+    SPTouch *begin = [[event touchesWithTarget:graphismEcranSoutenance andPhase:SPTouchPhaseBegan] anyObject];
+    
+    if (begin) {
+        
+        if (canSlideSoutenance == 1) {
+            
+            SPTween *tween = [SPTween tweenWithTarget:graphismEcranSoutenance time:0.7f];
+            [tween animateProperty:@"y" targetValue:graphismEcranSoutenance.y - 480];
+            [tween addEventListener:@selector(onTweenCompleted:) atObject:self forType:SP_EVENT_TYPE_TWEEN_COMPLETED];
+            [self.stage.juggler addObject:tween];
+            
+            canSlideSoutenance = NO;
+        }
+    }
+    
+}
+
+- (void) onTweenCompleted:(SPEvent *) event {
+    
+    canSlideSoutenance = YES;
 }
 
 @end
