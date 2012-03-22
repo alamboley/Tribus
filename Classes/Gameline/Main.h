@@ -7,7 +7,15 @@
 //
 
 #import "CitrusEngine.h"
+#import "GameState.h"
 
-@interface Main : CitrusEngine
+@interface Main : CitrusEngine {
+    
+    GameState *game;
+    
+    SPSprite *graphismEcranSoutenance;
+    
+    BOOL canSlideSoutenance;
+}
 
 @end

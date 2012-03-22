@@ -39,7 +39,7 @@
     
     [body setMoment:INFINITY];
     
-    velocityX = 100;
+    velocityX = 50;
     
     isOnGround = FALSE;
     
@@ -49,8 +49,7 @@
     
     [ce.state addEventListener:@selector(touched:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
     
-    //[super.space addCollisionHandlerBetween:@"hero" andTypeB:@"platform" target:self begin:@selector(collisionAmoi) preSolve:NULL postSolve:NULL separate:NULL];
-    [super.space addCollisionHandlerBetween:@"sensorGround" andTypeB:@"platform" target:self begin:@selector(onGround) preSolve:NULL postSolve:NULL separate:@selector(endGround)];
+    [space addCollisionHandlerBetween:@"sensorGround" andTypeB:@"platform" target:self begin:@selector(onGround) preSolve:NULL postSolve:NULL separate:@selector(endGround)];
     //[NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(changeAnimation) userInfo:nil repeats:NO];
 }
 
@@ -58,6 +57,8 @@
     
     [body removeShape:sensorOnGround];
     sensorOnGround = nil;
+    
+    [space removeCollisionHandlerFor:@"sensorGround" andTypeB:@"platform"];
     
     [super destroy];
 }
@@ -132,6 +133,13 @@
     if (body.position.x > 2600) {
 
         velocityX = 0;
+        
+        if (persoArrive == 0) {
+            
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"persoArrive" object:nil];
+            persoArrive = YES;
+        } 
+        
     }
     
     [self updateAnimation];

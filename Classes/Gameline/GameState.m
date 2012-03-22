@@ -91,7 +91,7 @@
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(colorPicked:) name:@"colorJaune" object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(colorPicked:) name:@"piege" object:nil];
         
-        //[self graphismSoutenance:[NSArray arrayWithObjects:@"soutenance1.png", @"soutenance2.png", @"soutenance3.png", nil]]; 
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showSoutenance:) name:@"persoArrive" object:nil];
 	}
     
 	return self;
@@ -106,6 +106,11 @@
         [couleurs addColor:notification.name];
     }
     
+}
+
+- (void) showSoutenance:(NSNotification *) notification {
+    
+    [self graphismSoutenance:[NSArray arrayWithObjects:@"score.png", nil]];
 }
 
 - (void) graphismSoutenance:(NSArray *) pictures {
@@ -129,22 +134,6 @@
     
     graphismEcranSoutenance.rotation = SP_D2R(90);
     graphismEcranSoutenance.x = 320;
-    
-    
-    [graphismEcranSoutenance addEventListener:@selector(touchedFake:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
-}
-
-- (void) touchedFake:(SPTouchEvent *) event {
-    
-    SPTouch *begin = [[event touchesWithTarget:graphismEcranSoutenance andPhase:SPTouchPhaseBegan] anyObject];
-    
-    if (begin) {
-        
-        SPTween *tween = [SPTween tweenWithTarget:graphismEcranSoutenance time:0.7f];
-        [tween animateProperty:@"y" targetValue:graphismEcranSoutenance.y - 480];
-        [self.stage.juggler addObject:tween];
-    }
-    
 }
 
 @end
