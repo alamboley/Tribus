@@ -16,8 +16,6 @@
     SPSprite *graphismEcranSoutenance;
     
     Couleurs *couleurs;
-    
-    BOOL canSlideSoutenance;
 }
 
 @property (nonatomic) Couleurs *couleurs;

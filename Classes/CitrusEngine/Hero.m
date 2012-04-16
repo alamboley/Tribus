@@ -134,12 +134,6 @@
 
         velocityX = 0;
         
-        if (persoArrive == 0) {
-            
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"persoArrive" object:nil];
-            persoArrive = YES;
-        } 
-        
     }
     
     [self updateAnimation];

@@ -21,8 +21,6 @@
     float velocityX, velocityY;
     
     BOOL touchScreen;
-    
-    BOOL persoArrive;
 }
 
 @property (nonatomic) NSString *animation;
