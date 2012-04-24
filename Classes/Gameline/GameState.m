@@ -29,24 +29,14 @@
         
         [self showHideDebugDraw];
         
-        gameWidth = 2868;
-        
-        //chargement XML :
-        NSBundle *bundle = [NSBundle mainBundle];
-        NSString *plistChemin = [bundle pathForResource:@"DonneesAleatoires" ofType:@"plist"];
-        NSDictionary *dictionnaire = [[NSDictionary alloc] initWithContentsOfFile:plistChemin];
-        NSArray *niveauUn = [NSArray arrayWithObject:[dictionnaire valueForKey:@"Root"]];
-        
-        niveauUn = [niveauUn valueForKey:@"WorldRed"];
-        
-        NSLog(@"%@", [[niveauUn objectAtIndex:0] objectAtIndex:1]);
+        gameWidth = 28680;
         
         couleurs = [[Couleurs alloc] initWithRouge:130 andBleu:20 andJaune:45 andOrange:12 andVert:8 andViolet:58];
         
         CitrusObject *parallaxe1 = [[CitrusObject alloc] initWithName:@"bg" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"0", @"0", @"0.1", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"parallax:", nil]] andGraphic:[SPImage imageWithContentsOfFile:@"parallaxe2.png"]];
         [self addObject:parallaxe1];
         
-        BigPicture *parallaxe2 = [[BigPicture alloc] initWithName:@"bg" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"0", @"0", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", nil]] andPictures:[NSArray arrayWithObjects:@"parallaxe1_1.png", @"parallaxe1_2.png", @"parallaxe1_3.png", nil]];
+        BigPicture *parallaxe2 = [[BigPicture alloc] initWithName:@"bg" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"0", @"0", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", nil]] andWorld:@"WorldYellow"];
         [self addObject:parallaxe2];
         
         Platform *platformBot = [[Platform alloc] initWithName:@"platform" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", gameWidth / 2], @"320", [NSString stringWithFormat:@"%f", gameWidth], @"10", @"TRUE", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", @"isStatic:", nil]]];
@@ -87,13 +77,8 @@
         CitrusObject *firstPlan2 = [[CitrusObject alloc] initWithName:@"firstPlan2" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"3000", @"200", @"2", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"parallax:", nil]] andGraphic:[SPImage imageWithContentsOfFile:@"1erplan2.png"]];
         [self addObject:firstPlan2];
         
-        CitrusObject *portal1 = [[CitrusObject alloc] initWithName:@"portal1" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"2800", @"170", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", nil]] andGraphic:[SPImage imageWithContentsOfFile:@"portail_bleu.png"]];
-        [self addObject:portal1];
-        
-        CitrusObject *portal2 = [[CitrusObject alloc] initWithName:@"portal2" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"2800", @"20", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", nil]] andGraphic:[SPImage imageWithContentsOfFile:@"portail_vert.png"]];
-        [self addObject:portal2];
-        
         [self setupCamera:hero andOffset:CGPointMake(hero.width / 2, 0) andBounds:CGRectMake(0, 0, gameWidth, 1000) andEasing:CGPointMake(0.25, 0.05)];
+        
         
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(colorPicked:) name:@"colorJaune" object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(colorPicked:) name:@"piege" object:nil];

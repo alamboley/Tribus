@@ -39,7 +39,7 @@
     
     [body setMoment:INFINITY];
     
-    velocityX = 50;
+    velocityX = 80;
     
     isOnGround = FALSE;
     
@@ -130,11 +130,8 @@
     
     [body setVelocity:velocity];
     
-    if (body.position.x > 2600) {
-
-        velocityX = 0;
-        
-    }
+    //if (body.position.x > 2600)
+      //      velocityX = 0;
     
     [self updateAnimation];
 }

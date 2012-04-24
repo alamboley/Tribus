@@ -47,7 +47,7 @@
 
 - (id) init;
 
-- (void)showHideDebugDraw;
+- (void) showHideDebugDraw;
 
 - (void) addObject:(CitrusObject *) object;
 
@@ -55,6 +55,8 @@
 
 - (void) updateGroupForSprite:(CitrusObject *) object;
 
-- (void)update;
+- (void) update;
+
+- (CitrusObject *) getObjectByName:(NSString *) objectName;
 
 @end

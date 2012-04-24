@@ -20,6 +20,7 @@
 @synthesize ce, name, graphic;
 @synthesize group, parallax;
 @synthesize kill;
+@synthesize posX, posY;
 
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params {
     

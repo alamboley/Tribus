@@ -31,6 +31,7 @@
 @property int group;
 @property float parallax;
 @property BOOL kill;
+@property float posX, posY;
 
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params;
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params andGraphic:(SPDisplayObject *)displayObject;

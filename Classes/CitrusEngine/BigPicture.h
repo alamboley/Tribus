@@ -8,8 +8,11 @@
 
 #import "CitrusObject.h"
 
-@interface BigPicture : CitrusObject
+@interface BigPicture : CitrusObject {
+    
+    CitrusObject *hero;
+}
 
-- (id) initWithName:(NSString *)paramName params:(NSDictionary *)params andPictures:(NSArray *)pictures;
+- (id) initWithName:(NSString *)paramName params:(NSDictionary *)params andWorld:(NSString *)world;
 
 @end

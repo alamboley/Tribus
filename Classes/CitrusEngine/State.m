@@ -164,6 +164,16 @@
     
 }
 
+- (CitrusObject *) getObjectByName:(NSString *) objectName {
+    
+    for (CitrusObject *object in objects) {
+        if (object.name == objectName)
+            return object;
+    }
+    
+    return nil;
+}
+
 - (void) dealloc {
     
 	UIAccelerometer *accelerometer = [UIAccelerometer sharedAccelerometer];

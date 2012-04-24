@@ -4,7 +4,7 @@
 <dict>
 	<key>Root</key>
 	<dict>
-		<key>WorldRed</key>
+		<key>WorldYellow</key>
 		<array>
 			<string>parallaxe1_1.png</string>
 			<string>parallaxe1_2.png</string>
