@@ -27,20 +27,27 @@
     
 	if (self = [super init]) {
         
-        // [self showHideDebugDraw];
+        [self showHideDebugDraw];
         
         gameWidth = 2868;
+        
+        //chargement XML :
+        NSBundle *bundle = [NSBundle mainBundle];
+        NSString *plistChemin = [bundle pathForResource:@"DonneesAleatoires" ofType:@"plist"];
+        NSDictionary *dictionnaire = [[NSDictionary alloc] initWithContentsOfFile:plistChemin];
+        NSArray *niveauUn = [NSArray arrayWithObject:[dictionnaire valueForKey:@"Root"]];
+        
+        niveauUn = [niveauUn valueForKey:@"WorldRed"];
+        
+        NSLog(@"%@", [[niveauUn objectAtIndex:0] objectAtIndex:1]);
         
         couleurs = [[Couleurs alloc] initWithRouge:130 andBleu:20 andJaune:45 andOrange:12 andVert:8 andViolet:58];
         
         CitrusObject *parallaxe1 = [[CitrusObject alloc] initWithName:@"bg" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"0", @"0", @"0.1", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"parallax:", nil]] andGraphic:[SPImage imageWithContentsOfFile:@"parallaxe2.png"]];
         [self addObject:parallaxe1];
         
-        BigPicture *parallaxe2 = [[BigPicture alloc] initWithName:@"bg" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"0", @"0", @"1", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"parallax:", nil]] andPictures:[NSArray arrayWithObjects:@"parallaxe1_1.png", @"parallaxe1_2.png", @"parallaxe1_3.png", nil]];
+        BigPicture *parallaxe2 = [[BigPicture alloc] initWithName:@"bg" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"0", @"0", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", nil]] andPictures:[NSArray arrayWithObjects:@"parallaxe1_1.png", @"parallaxe1_2.png", @"parallaxe1_3.png", nil]];
         [self addObject:parallaxe2];
-        
-        //Sol *sol = [[Sol alloc] initWithName:@"sol" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"0", @"250", [NSString stringWithFormat:@"%f", gameWidth], nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", nil]]];
-        //[self addObject:sol];
         
         Platform *platformBot = [[Platform alloc] initWithName:@"platform" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", gameWidth / 2], @"320", [NSString stringWithFormat:@"%f", gameWidth], @"10", @"TRUE", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", @"isStatic:", nil]]];
         [self addObject:platformBot];

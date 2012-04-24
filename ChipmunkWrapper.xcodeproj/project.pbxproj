@@ -184,6 +184,7 @@
 		B0EEB08D150617ED009AD303 /* Hero.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EEB08B150617ED009AD303 /* Hero.png */; };
 		B0EEB08E150617ED009AD303 /* Hero.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0EEB08C150617ED009AD303 /* Hero.xml */; };
 		B0EEB09115063D0B009AD303 /* AnimationSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EEB09015063D0B009AD303 /* AnimationSequence.m */; };
+		B0F2003E1545D05F0030C190 /* DonneesAleatoires.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0F2003D1545D05F0030C190 /* DonneesAleatoires.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -512,6 +513,7 @@
 		B0EEB08C150617ED009AD303 /* Hero.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Hero.xml; sourceTree = "<group>"; };
 		B0EEB08F15063D0B009AD303 /* AnimationSequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationSequence.h; sourceTree = "<group>"; };
 		B0EEB09015063D0B009AD303 /* AnimationSequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationSequence.m; sourceTree = "<group>"; };
+		B0F2003D1545D05F0030C190 /* DonneesAleatoires.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DonneesAleatoires.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1056,6 +1058,7 @@
 				B073FFF615190A4D00AE2BD7 /* Piege.m */,
 				B0965B05151934C700E20290 /* Sol.h */,
 				B0965B06151934C700E20290 /* Sol.m */,
+				B0F2003D1545D05F0030C190 /* DonneesAleatoires.plist */,
 			);
 			path = Gameline;
 			sourceTree = "<group>";
@@ -1222,6 +1225,7 @@
 				B0EA41C0151A34250076DAA6 /* Tw Cen MT.ttf in Resources */,
 				B0EA41C4151A34E60076DAA6 /* pigments-ingame@2x.png in Resources */,
 				B0EA41C6151A34ED0076DAA6 /* pigments-ingame.png in Resources */,
+				B0F2003E1545D05F0030C190 /* DonneesAleatoires.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
