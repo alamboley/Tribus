@@ -23,12 +23,12 @@
         
         niveauUn = [niveauUn valueForKey:world];
         
-        NSArray *imgWorldRed = [NSArray arrayWithArray:[niveauUn objectAtIndex:0]];
+        NSArray *imgWorld = [NSArray arrayWithArray:[niveauUn objectAtIndex:0]];
         
         graphic = [[SPSprite alloc] init];
         [self addChild:graphic];
         
-        for (NSString *picture in imgWorldRed) {
+        for (NSString *picture in imgWorld) {
             
             SPImage *img = [SPImage imageWithContentsOfFile:picture];
             [graphic addChild:img];
@@ -63,13 +63,15 @@
 
         if (hero.x > self.width - 480) {
             
-            SPImage *img = [SPImage imageWithContentsOfFile:@"parallaxe1_1.png"];
-            [graphic addChild:img];
+            SPDisplayObject *img = [graphic childAtIndex:arc4random() % graphic.numChildren];
             
-            img.x = self.posX;
-            img.y = self.y;
-            
-            self.posX += img.width;
+            if ((img.x + img.width + 50) < hero.x) {
+
+                img.x = self.posX;
+                img.y = self.y;
+
+                self.posX += img.width;
+            }
         }
     }
 }

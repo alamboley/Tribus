@@ -39,7 +39,7 @@
     
     [body setMoment:INFINITY];
     
-    velocityX = 80;
+    velocityX = 100;
     
     isOnGround = FALSE;
     
