@@ -40,6 +40,35 @@
     [shape setCollisionType:@"piege"];
 }
 
+- (void) createBody {
+    
+    if (isStatic == 0) {
+        
+        body = [space addBodyWithMass:5.0 moment:INFINITY];
+        [body addToSpace];
+        
+    } else {
+        
+        body = [space addStaticBody];
+    }
+    
+}
+
+- (void) update {
+    
+    [super update];
+    
+    cpVect velocity = [body velocity];
+    
+    if (body.position.y > 130) {
+        velocity.y -= 12;
+    } else {
+        velocity.y += 12;
+    }
+    
+    [body setVelocity:velocity];
+}
+
 
 - (void) simpleInit {
 
