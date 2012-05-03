@@ -18,6 +18,7 @@
 #import "Piege.h"
 #import "ParticleJaune.h"
 #import "Sol.h"
+#import "SBJson.h"
 
 @implementation GameState
 
@@ -27,7 +28,22 @@
     
 	if (self = [super init]) {
         
-        [self showHideDebugDraw];
+        //[self showHideDebugDraw];
+        
+        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"DonneesBus" ofType:@"json"];
+        NSString *fileContent = [[NSString alloc] initWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
+        SBJsonParser *parser = [[SBJsonParser alloc] init];
+        NSString *jsonString = [[NSString alloc] initWithString:fileContent];
+        
+        NSDictionary *status = [parser objectWithString:jsonString];
+        NSArray* travel = [status objectForKey:@"travel"];
+        
+        NSDictionary* travelFirstElement;
+
+        for (id obj in travel) {
+            travelFirstElement = [obj objectForKey:@"coords"];
+            NSLog(@"%f", [[travelFirstElement objectForKey:@"speed"]floatValue]);
+        }
         
         gameWidth = 28680;
         
