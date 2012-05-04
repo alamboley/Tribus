@@ -123,10 +123,10 @@
 		A1FC3D631312D3C000C7D1E1 /* Planet.png in Resources */ = {isa = PBXBuildFile; fileRef = A1FC3D621312D3C000C7D1E1 /* Planet.png */; };
 		A1FC3D9E1312D4AC00C7D1E1 /* FollowPath.png in Resources */ = {isa = PBXBuildFile; fileRef = A1FC3D9D1312D4AC00C7D1E1 /* FollowPath.png */; };
 		B0113DDF1553C06A0005F1AB /* BusManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = B0113DDE1553C06A0005F1AB /* BusManagement.m */; };
-		B0113DEA1554035B0005F1AB /* hero@2x.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0113DE81554035B0005F1AB /* hero@2x.xml */; };
-		B0113DEB1554035B0005F1AB /* hero@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0113DE91554035B0005F1AB /* hero@2x.png */; };
-		B0113DEE155403880005F1AB /* hero.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0113DEC155403880005F1AB /* hero.xml */; };
-		B0113DEF155403880005F1AB /* hero.png in Resources */ = {isa = PBXBuildFile; fileRef = B0113DED155403880005F1AB /* hero.png */; };
+		B0113DFA15541C8D0005F1AB /* hero@2x.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0113DF815541C8D0005F1AB /* hero@2x.xml */; };
+		B0113DFB15541C8D0005F1AB /* hero@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0113DF915541C8D0005F1AB /* hero@2x.png */; };
+		B0113DFE15541CA00005F1AB /* hero.png in Resources */ = {isa = PBXBuildFile; fileRef = B0113DFC15541CA00005F1AB /* hero.png */; };
+		B0113DFF15541CA00005F1AB /* hero.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0113DFD15541CA00005F1AB /* hero.xml */; };
 		B012E3E315148F52008B9157 /* SXNSDataExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B012E3E215148F52008B9157 /* SXNSDataExtensions.m */; };
 		B012E3E615148F8B008B9157 /* SXParticleSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = B012E3E515148F8B008B9157 /* SXParticleSystem.m */; };
 		B0375B0B150FCE3C005D61BC /* BigPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = B0375B0A150FCE3C005D61BC /* BigPicture.m */; };
@@ -446,10 +446,10 @@
 		A1FC3D9D1312D4AC00C7D1E1 /* FollowPath.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FollowPath.png; sourceTree = "<group>"; };
 		B0113DDD1553C0690005F1AB /* BusManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusManagement.h; sourceTree = "<group>"; };
 		B0113DDE1553C06A0005F1AB /* BusManagement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusManagement.m; sourceTree = "<group>"; };
-		B0113DE81554035B0005F1AB /* hero@2x.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "hero@2x.xml"; sourceTree = "<group>"; };
-		B0113DE91554035B0005F1AB /* hero@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hero@2x.png"; sourceTree = "<group>"; };
-		B0113DEC155403880005F1AB /* hero.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = hero.xml; sourceTree = "<group>"; };
-		B0113DED155403880005F1AB /* hero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero.png; sourceTree = "<group>"; };
+		B0113DF815541C8D0005F1AB /* hero@2x.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "hero@2x.xml"; sourceTree = "<group>"; };
+		B0113DF915541C8D0005F1AB /* hero@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hero@2x.png"; sourceTree = "<group>"; };
+		B0113DFC15541CA00005F1AB /* hero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero.png; sourceTree = "<group>"; };
+		B0113DFD15541CA00005F1AB /* hero.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = hero.xml; sourceTree = "<group>"; };
 		B012E3E115148F52008B9157 /* SXNSDataExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SXNSDataExtensions.h; path = SparrowExtensions/SXNSDataExtensions.h; sourceTree = "<group>"; };
 		B012E3E215148F52008B9157 /* SXNSDataExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SXNSDataExtensions.m; path = SparrowExtensions/SXNSDataExtensions.m; sourceTree = "<group>"; };
 		B012E3E415148F8B008B9157 /* SXParticleSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SXParticleSystem.h; path = SparrowExtensions/SXParticleSystem.h; sourceTree = "<group>"; };
@@ -1046,8 +1046,8 @@
 		B07BA11B151892F40047D9C4 /* 1x */ = {
 			isa = PBXGroup;
 			children = (
-				B0113DEC155403880005F1AB /* hero.xml */,
-				B0113DED155403880005F1AB /* hero.png */,
+				B0113DFC15541CA00005F1AB /* hero.png */,
+				B0113DFD15541CA00005F1AB /* hero.xml */,
 				B0EA41961519CE8F0076DAA6 /* parallaxe1_1.png */,
 				B0EA41971519CE8F0076DAA6 /* parallaxe1_2.png */,
 				B0EA41981519CE8F0076DAA6 /* parallaxe1_3.png */,
@@ -1067,8 +1067,8 @@
 		B07BA1381518931A0047D9C4 /* 2x */ = {
 			isa = PBXGroup;
 			children = (
-				B0113DE81554035B0005F1AB /* hero@2x.xml */,
-				B0113DE91554035B0005F1AB /* hero@2x.png */,
+				B0113DF815541C8D0005F1AB /* hero@2x.xml */,
+				B0113DF915541C8D0005F1AB /* hero@2x.png */,
 				B0EA41901519CE880076DAA6 /* parallaxe1_1@2x.png */,
 				B0EA41911519CE880076DAA6 /* parallaxe1_2@2x.png */,
 				B0EA41921519CE880076DAA6 /* parallaxe1_3@2x.png */,
@@ -1301,10 +1301,10 @@
 				B0EA41C6151A34ED0076DAA6 /* pigments-ingame.png in Resources */,
 				B0F2003E1545D05F0030C190 /* DonneesAleatoires.plist in Resources */,
 				B06FF2251552A75C00733B84 /* DonneesBus.json in Resources */,
-				B0113DEA1554035B0005F1AB /* hero@2x.xml in Resources */,
-				B0113DEB1554035B0005F1AB /* hero@2x.png in Resources */,
-				B0113DEE155403880005F1AB /* hero.xml in Resources */,
-				B0113DEF155403880005F1AB /* hero.png in Resources */,
+				B0113DFA15541C8D0005F1AB /* hero@2x.xml in Resources */,
+				B0113DFB15541C8D0005F1AB /* hero@2x.png in Resources */,
+				B0113DFE15541CA00005F1AB /* hero.png in Resources */,
+				B0113DFF15541CA00005F1AB /* hero.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

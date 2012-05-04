@@ -85,7 +85,7 @@
 
     if (body.velocity.x > 0) {
         
-        animation = @"acc";
+        animation = @"normal";
         loopAnimation = YES;
         
     } else {
