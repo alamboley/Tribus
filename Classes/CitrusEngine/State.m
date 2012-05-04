@@ -142,9 +142,12 @@
     
     for (CitrusObject *objectToDestroy in garbageObjects) {
         
-        [objects removeObject:objectToDestroy];
+        /*[objects removeObject:objectToDestroy];
         [space addPostStepCallback:objectToDestroy selector:@selector(destroy) data: NULL];
-        [garbageObjects removeObject:objectToDestroy];
+        [garbageObjects removeObject:objectToDestroy];*/
+        
+        objectToDestroy.kill = NO;
+        objectToDestroy.graphic.x += 30;
     }
     
     if (cameraTarget) {

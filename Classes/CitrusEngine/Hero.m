@@ -85,12 +85,12 @@
 
     if (body.velocity.x > 0) {
         
-        animation = @"walk";
+        animation = @"acc";
         loopAnimation = YES;
         
     } else {
         
-        animation = @"idle";
+        //animation = @"idle";
         loopAnimation = FALSE;
     }
     

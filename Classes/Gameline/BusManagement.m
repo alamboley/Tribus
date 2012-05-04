@@ -53,7 +53,7 @@
     
     indice = (indice >= travel.count) ? 0 : indice + 1;
     
-    NSLog(@"%f %f", hero.velocityX, [[travelFirstElement objectForKey:@"speed"]floatValue]);
+    //NSLog(@"%f %f", hero.velocityX, [[travelFirstElement objectForKey:@"speed"]floatValue]);
 }
 
 @end

@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker http://texturepacker.com-->
-<!-- $TexturePacker:SmartUpdate:0eae715cd3c0ac082585bc8c1dfadaf7$ -->
+<!-- $TexturePacker:SmartUpdate:711a1ac75716dba7a5383c612939265e$ -->
 <TextureAtlas imagePath="hero.png">
-    <SubTexture name="idle" x="48" y="2" width="52" height="74"/>
-    <SubTexture name="walk" x="2" y="2" width="44" height="77"/>
+    <SubTexture name="acceleration/0000" x="2" y="2" width="133" height="76" frameX="-69" frameY="-60" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="acceleration/0001" x="2" y="2" width="133" height="76" frameX="-69" frameY="-60" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="acceleration/0002" x="2" y="2" width="133" height="76" frameX="-69" frameY="-60" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="acceleration/0003" x="2" y="2" width="133" height="76" frameX="-69" frameY="-60" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="acceleration/0004" x="2" y="2" width="133" height="76" frameX="-69" frameY="-60" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="acceleration/0005" x="93" y="208" width="83" height="68" frameX="-84" frameY="-64" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="acceleration/0006" x="93" y="208" width="83" height="68" frameX="-84" frameY="-64" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="acceleration/0007" x="93" y="208" width="83" height="68" frameX="-84" frameY="-64" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="acceleration/0008" x="93" y="208" width="83" height="68" frameX="-84" frameY="-64" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="acceleration/0009" x="93" y="208" width="83" height="68" frameX="-84" frameY="-64" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="acceleration/0010" x="178" y="208" width="69" height="64" frameX="-82" frameY="-67" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="acceleration/0011" x="178" y="208" width="69" height="64" frameX="-82" frameY="-67" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="acceleration/0012" x="178" y="208" width="69" height="64" frameX="-82" frameY="-67" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="acceleration/0013" x="178" y="208" width="69" height="64" frameX="-82" frameY="-67" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="acceleration/0014" x="178" y="208" width="69" height="64" frameX="-82" frameY="-67" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="passageobstacle/0000" x="2" y="80" width="123" height="64" frameX="-77" frameY="-69" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="passageobstacle/0001" x="2" y="80" width="123" height="64" frameX="-77" frameY="-69" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="passageobstacle/0002" x="2" y="146" width="89" height="80" frameX="-78" frameY="-54" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="passageobstacle/0003" x="2" y="146" width="89" height="80" frameX="-78" frameY="-54" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="passageobstacle/0004" x="2" y="146" width="89" height="80" frameX="-78" frameY="-54" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="passageobstacle/0005" x="2" y="146" width="89" height="80" frameX="-78" frameY="-54" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="passageobstacle/0006" x="127" y="132" width="91" height="74" frameX="-80" frameY="-59" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="passageobstacle/0007" x="127" y="132" width="91" height="74" frameX="-80" frameY="-59" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="passageobstacle/0008" x="137" y="2" width="107" height="72" frameX="-76" frameY="-62" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="passageobstacle/0009" x="137" y="2" width="107" height="72" frameX="-76" frameY="-62" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="passageobstacle/0010" x="137" y="76" width="105" height="54" frameX="-76" frameY="-80" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="passageobstacle/0011" x="137" y="76" width="105" height="54" frameX="-76" frameY="-80" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="passageobstacle/0012" x="137" y="76" width="105" height="54" frameX="-76" frameY="-80" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="passageobstacle/0013" x="137" y="76" width="105" height="54" frameX="-76" frameY="-80" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="passageobstacle/0014" x="137" y="76" width="105" height="54" frameX="-76" frameY="-80" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="passageobstacle/0015" x="137" y="76" width="105" height="54" frameX="-76" frameY="-80" frameWidth="275" frameHeight="200"/>
 </TextureAtlas>

@@ -11,7 +11,7 @@
 @interface ParticleJaune : Particle
 
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params;
-- (id) initWithName:(NSString *)paramName params:(NSDictionary *)params andGraphic:(SPDisplayObject *)displayObject;
+- (id) initWithName:(NSString *)paramName params:(NSDictionary *)params andGraphic:(SPSprite *)displayObject;
 - (void) simpleInit;
 
 @end

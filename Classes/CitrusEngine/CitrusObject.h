@@ -27,7 +27,7 @@
 
 @property (nonatomic) CitrusEngine *ce;
 @property (nonatomic) NSString *name;
-@property (nonatomic) SPDisplayObject *graphic;
+@property (nonatomic) SPSprite *graphic;
 @property int group;
 @property float parallax;
 @property BOOL kill;
