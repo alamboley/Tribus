@@ -122,6 +122,7 @@
 		A1FC3D601312D37300C7D1E1 /* Sensor.png in Resources */ = {isa = PBXBuildFile; fileRef = A1FC3D5F1312D37300C7D1E1 /* Sensor.png */; };
 		A1FC3D631312D3C000C7D1E1 /* Planet.png in Resources */ = {isa = PBXBuildFile; fileRef = A1FC3D621312D3C000C7D1E1 /* Planet.png */; };
 		A1FC3D9E1312D4AC00C7D1E1 /* FollowPath.png in Resources */ = {isa = PBXBuildFile; fileRef = A1FC3D9D1312D4AC00C7D1E1 /* FollowPath.png */; };
+		B0113DDF1553C06A0005F1AB /* BusManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = B0113DDE1553C06A0005F1AB /* BusManagement.m */; };
 		B012E3E315148F52008B9157 /* SXNSDataExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B012E3E215148F52008B9157 /* SXNSDataExtensions.m */; };
 		B012E3E615148F8B008B9157 /* SXParticleSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = B012E3E515148F8B008B9157 /* SXParticleSystem.m */; };
 		B0375B0B150FCE3C005D61BC /* BigPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = B0375B0A150FCE3C005D61BC /* BigPicture.m */; };
@@ -443,6 +444,8 @@
 		A1FC3D5F1312D37300C7D1E1 /* Sensor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sensor.png; sourceTree = "<group>"; };
 		A1FC3D621312D3C000C7D1E1 /* Planet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Planet.png; sourceTree = "<group>"; };
 		A1FC3D9D1312D4AC00C7D1E1 /* FollowPath.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FollowPath.png; sourceTree = "<group>"; };
+		B0113DDD1553C0690005F1AB /* BusManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusManagement.h; sourceTree = "<group>"; };
+		B0113DDE1553C06A0005F1AB /* BusManagement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusManagement.m; sourceTree = "<group>"; };
 		B012E3E115148F52008B9157 /* SXNSDataExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SXNSDataExtensions.h; path = SparrowExtensions/SXNSDataExtensions.h; sourceTree = "<group>"; };
 		B012E3E215148F52008B9157 /* SXNSDataExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SXNSDataExtensions.m; path = SparrowExtensions/SXNSDataExtensions.m; sourceTree = "<group>"; };
 		B012E3E415148F8B008B9157 /* SXParticleSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SXParticleSystem.h; path = SparrowExtensions/SXParticleSystem.h; sourceTree = "<group>"; };
@@ -1132,6 +1135,8 @@
 				B0965B06151934C700E20290 /* Sol.m */,
 				B0F2003D1545D05F0030C190 /* DonneesAleatoires.plist */,
 				B06FF2241552A75B00733B84 /* DonneesBus.json */,
+				B0113DDD1553C0690005F1AB /* BusManagement.h */,
+				B0113DDE1553C06A0005F1AB /* BusManagement.m */,
 			);
 			path = Gameline;
 			sourceTree = "<group>";
@@ -1411,6 +1416,7 @@
 				B06FF24B1552ACCB00733B84 /* SBJsonTokeniser.m in Sources */,
 				B06FF24C1552ACCB00733B84 /* SBJsonUTF8Stream.m in Sources */,
 				B06FF24D1552ACCB00733B84 /* SBJsonWriter.m in Sources */,
+				B0113DDF1553C06A0005F1AB /* BusManagement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

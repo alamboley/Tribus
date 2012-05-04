@@ -12,8 +12,7 @@
 
 @implementation Hero
 
-@synthesize animation;
-@synthesize sensorOnGround;
+@synthesize animation, sensorOnGround, velocityX;
 
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params {
     
@@ -39,7 +38,7 @@
     
     [body setMoment:INFINITY];
     
-    velocityX = 100;
+    velocityX = 30;
     
     isOnGround = FALSE;
     
