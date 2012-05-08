@@ -61,7 +61,7 @@
         
     } else {
 
-        if (hero.x > self.width - 480) {
+        if (hero.x > self.width - 480 - 150) {
             
             SPDisplayObject *img = [graphic childAtIndex:arc4random() % graphic.numChildren];
             

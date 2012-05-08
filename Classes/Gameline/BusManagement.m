@@ -48,7 +48,7 @@
     travelFirstElement = [travelFirstElement objectForKey:@"coords"];
     
     SPTween *tween = [SPTween tweenWithTarget:hero time:2.0f];
-    [tween animateProperty:@"velocityX" targetValue:30 + 15 * [[travelFirstElement objectForKey:@"speed"]floatValue]];
+    [tween animateProperty:@"velocityX" targetValue:35 + 12 * [[travelFirstElement objectForKey:@"speed"]floatValue]];
     [[SPStage mainStage].juggler addObject:tween];
     
     indice = (indice >= travel.count) ? 0 : indice + 1;

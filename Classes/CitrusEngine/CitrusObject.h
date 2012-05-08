@@ -39,6 +39,8 @@
 - (void) update;
 - (void) destroy;
 
+- (void) movePosition:(float) newPosX;
+
 - (void) x:(NSString *) value;
 - (void) y:(NSString *) value;
 - (void) rotation:(NSString *) value;

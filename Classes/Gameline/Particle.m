@@ -8,6 +8,7 @@
 
 #import "Particle.h"
 #import "SXParticleSystem.h"
+#import "CitrusEngine.h"
 
 @implementation Particle
 
@@ -45,6 +46,23 @@
     
     if (imgFond) {
         [self removeChild:imgFond];
+    }
+}
+
+- (void) update {
+    
+    [super update];
+    
+    if (!hero) {
+        
+        hero = [ce.state getObjectByName:@"hero"];
+        
+    } else {
+        
+        if (hero.x - hero.width > body.position.x) {
+            
+            self.kill = YES;
+        }
     }
 }
 

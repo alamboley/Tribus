@@ -7,6 +7,7 @@
 //
 
 #import "Piege.h"
+#import "CitrusEngine.h"
 
 @implementation Piege
 
@@ -67,6 +68,20 @@
     }
     
     [body setVelocity:velocity];
+    
+    
+    if (!hero) {
+        
+        hero = [ce.state getObjectByName:@"hero"];
+        
+    } else {
+        
+        if (hero.x - hero.width > body.position.x) {
+            
+            self.kill = YES;
+        }
+    }
+    
 }
 
 

@@ -65,6 +65,15 @@
     [super destroy];
 }
 
+- (void) movePosition:(float) newPosX {
+    
+    [super movePosition:newPosX];
+    
+    if (graphic != nil) {
+        [body setPositionUsingVect:cpv(newPosX, body.position.y)];
+    }
+}
+
 - (void) isStatic:(BOOL) staticBody {
     
     isStatic = staticBody;

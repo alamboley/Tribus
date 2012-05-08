@@ -8,7 +8,10 @@
 
 #import "Sensor.h"
 
-@interface Piege : Sensor
+@interface Piege : Sensor {
+    
+    CitrusObject *hero;
+}
 
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params;
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params andGraphic:(SPDisplayObject *)displayObject;

@@ -86,6 +86,13 @@
     }
 }
 
+- (void) movePosition:(float) newPosX {
+    
+    if (graphic != nil) {
+        graphic.x = newPosX;
+    }
+}
+
 - (void) x:(NSString *) value {
     
     posX = [value floatValue];

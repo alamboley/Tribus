@@ -7,10 +7,12 @@
 //
 
 #import "Sensor.h"
+#import "CitrusObject.h"
 
 @interface Particle : Sensor {
     
     SPImage *imgFond;
+    CitrusObject *hero;
 }
 
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params;
