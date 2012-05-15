@@ -14,6 +14,7 @@
     
     NSTimer *timerParticle;
     NSTimer *timerPiege;
+    NSTimer *timerDecor;
     NSString *world;
     
     CitrusEngine *ce;

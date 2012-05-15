@@ -82,10 +82,26 @@
 - (void) updateAnimation {
     
     NSString *prevAnim = animation;
-
-    if (body.velocity.x > 0) {
+    
+    if (touchScreen) {
         
-        animation = @"normal";
+        if ([body velocity].y < 0) {
+            
+            animation = @"saut";
+            loopAnimation = YES;
+        } else {
+            animation = @"haut";
+            loopAnimation = FALSE;
+        }
+        
+    } else if (body.velocity.y > 0) {
+        
+        animation = @"descente";
+        loopAnimation = YES;
+        
+    } else if (body.velocity.x > 0) {
+        
+        animation = @"base";
         loopAnimation = YES;
         
     } else {
