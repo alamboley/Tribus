@@ -10,6 +10,14 @@
 			<string>parallaxe1_2.png</string>
 			<string>parallaxe1_3.png</string>
 		</array>
+		<key>WorldRed</key>
+		<array>
+			<string>rouge1.png</string>
+			<string>rouge2.png</string>
+			<string>rouge3.png</string>
+			<string>rouge4.png</string>
+			<string>rouge5.png</string>
+		</array>
 	</dict>
 </dict>
 </plist>

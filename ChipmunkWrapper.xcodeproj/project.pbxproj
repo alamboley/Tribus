@@ -130,6 +130,18 @@
 		B012E3E315148F52008B9157 /* SXNSDataExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B012E3E215148F52008B9157 /* SXNSDataExtensions.m */; };
 		B012E3E615148F8B008B9157 /* SXParticleSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = B012E3E515148F8B008B9157 /* SXParticleSystem.m */; };
 		B0375B0B150FCE3C005D61BC /* BigPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = B0375B0A150FCE3C005D61BC /* BigPicture.m */; };
+		B03DE0C4156143FA006AAA5B /* rouge_fond.png in Resources */ = {isa = PBXBuildFile; fileRef = B03DE0BE156143FA006AAA5B /* rouge_fond.png */; };
+		B03DE0C5156143FA006AAA5B /* rouge1.png in Resources */ = {isa = PBXBuildFile; fileRef = B03DE0BF156143FA006AAA5B /* rouge1.png */; };
+		B03DE0C6156143FA006AAA5B /* rouge2.png in Resources */ = {isa = PBXBuildFile; fileRef = B03DE0C0156143FA006AAA5B /* rouge2.png */; };
+		B03DE0C7156143FA006AAA5B /* rouge3.png in Resources */ = {isa = PBXBuildFile; fileRef = B03DE0C1156143FA006AAA5B /* rouge3.png */; };
+		B03DE0C8156143FA006AAA5B /* rouge4.png in Resources */ = {isa = PBXBuildFile; fileRef = B03DE0C2156143FA006AAA5B /* rouge4.png */; };
+		B03DE0C9156143FA006AAA5B /* rouge5.png in Resources */ = {isa = PBXBuildFile; fileRef = B03DE0C3156143FA006AAA5B /* rouge5.png */; };
+		B03DE0D015614408006AAA5B /* rouge_fond@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03DE0CA15614408006AAA5B /* rouge_fond@2x.png */; };
+		B03DE0D115614408006AAA5B /* rouge1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03DE0CB15614408006AAA5B /* rouge1@2x.png */; };
+		B03DE0D215614408006AAA5B /* rouge2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03DE0CC15614408006AAA5B /* rouge2@2x.png */; };
+		B03DE0D315614408006AAA5B /* rouge3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03DE0CD15614408006AAA5B /* rouge3@2x.png */; };
+		B03DE0D415614408006AAA5B /* rouge4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03DE0CE15614408006AAA5B /* rouge4@2x.png */; };
+		B03DE0D515614408006AAA5B /* rouge5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03DE0CF15614408006AAA5B /* rouge5@2x.png */; };
 		B054E6121557D54600E84D8F /* CreationRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = B054E6111557D54600E84D8F /* CreationRuntime.m */; };
 		B06FF2251552A75C00733B84 /* DonneesBus.json in Resources */ = {isa = PBXBuildFile; fileRef = B06FF2241552A75B00733B84 /* DonneesBus.json */; };
 		B06FF2421552ACCB00733B84 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = B06FF22A1552ACCB00733B84 /* NSObject+SBJson.m */; };
@@ -144,6 +156,17 @@
 		B06FF24B1552ACCB00733B84 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = B06FF23D1552ACCB00733B84 /* SBJsonTokeniser.m */; };
 		B06FF24C1552ACCB00733B84 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = B06FF23F1552ACCB00733B84 /* SBJsonUTF8Stream.m */; };
 		B06FF24D1552ACCB00733B84 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = B06FF2411552ACCB00733B84 /* SBJsonWriter.m */; };
+		B07029F415624E1600833D24 /* lampions1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B07029F015624E1600833D24 /* lampions1@2x.png */; };
+		B07029F515624E1600833D24 /* lampions2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B07029F115624E1600833D24 /* lampions2@2x.png */; };
+		B07029F615624E1600833D24 /* rougeSol1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B07029F215624E1600833D24 /* rougeSol1@2x.png */; };
+		B07029F715624E1600833D24 /* rougeSol2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B07029F315624E1600833D24 /* rougeSol2@2x.png */; };
+		B07029FC15624E2600833D24 /* lampions1.png in Resources */ = {isa = PBXBuildFile; fileRef = B07029F815624E2600833D24 /* lampions1.png */; };
+		B07029FD15624E2600833D24 /* lampions2.png in Resources */ = {isa = PBXBuildFile; fileRef = B07029F915624E2600833D24 /* lampions2.png */; };
+		B07029FE15624E2600833D24 /* rougeSol1.png in Resources */ = {isa = PBXBuildFile; fileRef = B07029FA15624E2600833D24 /* rougeSol1.png */; };
+		B07029FF15624E2600833D24 /* rougeSol2.png in Resources */ = {isa = PBXBuildFile; fileRef = B07029FB15624E2600833D24 /* rougeSol2.png */; };
+		B0702A0215624EFD00833D24 /* rougeParticle.png in Resources */ = {isa = PBXBuildFile; fileRef = B0702A0015624EFD00833D24 /* rougeParticle.png */; };
+		B0702A0315624EFD00833D24 /* rougeParticle.pex in Resources */ = {isa = PBXBuildFile; fileRef = B0702A0115624EFD00833D24 /* rougeParticle.pex */; };
+		B0702A0515624FD300833D24 /* particleFondRouge.png in Resources */ = {isa = PBXBuildFile; fileRef = B0702A0415624FD300833D24 /* particleFondRouge.png */; };
 		B073FFF715190A4D00AE2BD7 /* Piege.m in Sources */ = {isa = PBXBuildFile; fileRef = B073FFF615190A4D00AE2BD7 /* Piege.m */; };
 		B07BA0AE1518760B0047D9C4 /* Hud.m in Sources */ = {isa = PBXBuildFile; fileRef = B07BA0AD1518760B0047D9C4 /* Hud.m */; };
 		B07BA0D415188B380047D9C4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B07BA0D315188B380047D9C4 /* Default.png */; };
@@ -194,7 +217,6 @@
 		B0EA9A3915174966002D31CB /* jauneParticle.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EA9A3815174966002D31CB /* jauneParticle.png */; };
 		B0EA9A3F1517568D002D31CB /* jauneParticle.pex in Resources */ = {isa = PBXBuildFile; fileRef = B0EA9A3E1517568D002D31CB /* jauneParticle.pex */; };
 		B0EA9A4315175A44002D31CB /* Particle.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EA9A4215175A44002D31CB /* Particle.m */; };
-		B0EA9A4615175FD1002D31CB /* ParticleJaune.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EA9A4515175FD1002D31CB /* ParticleJaune.m */; };
 		B0EEB08A15061547009AD303 /* flash.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EEB08915061547009AD303 /* flash.png */; };
 		B0EEB08D150617ED009AD303 /* Hero.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EEB08B150617ED009AD303 /* Hero.png */; };
 		B0EEB08E150617ED009AD303 /* Hero.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0EEB08C150617ED009AD303 /* Hero.xml */; };
@@ -457,6 +479,18 @@
 		B012E3E515148F8B008B9157 /* SXParticleSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SXParticleSystem.m; path = SparrowExtensions/SXParticleSystem.m; sourceTree = "<group>"; };
 		B0375B09150FCE3C005D61BC /* BigPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigPicture.h; sourceTree = "<group>"; };
 		B0375B0A150FCE3C005D61BC /* BigPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigPicture.m; sourceTree = "<group>"; };
+		B03DE0BE156143FA006AAA5B /* rouge_fond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rouge_fond.png; sourceTree = "<group>"; };
+		B03DE0BF156143FA006AAA5B /* rouge1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rouge1.png; sourceTree = "<group>"; };
+		B03DE0C0156143FA006AAA5B /* rouge2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rouge2.png; sourceTree = "<group>"; };
+		B03DE0C1156143FA006AAA5B /* rouge3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rouge3.png; sourceTree = "<group>"; };
+		B03DE0C2156143FA006AAA5B /* rouge4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rouge4.png; sourceTree = "<group>"; };
+		B03DE0C3156143FA006AAA5B /* rouge5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rouge5.png; sourceTree = "<group>"; };
+		B03DE0CA15614408006AAA5B /* rouge_fond@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rouge_fond@2x.png"; sourceTree = "<group>"; };
+		B03DE0CB15614408006AAA5B /* rouge1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rouge1@2x.png"; sourceTree = "<group>"; };
+		B03DE0CC15614408006AAA5B /* rouge2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rouge2@2x.png"; sourceTree = "<group>"; };
+		B03DE0CD15614408006AAA5B /* rouge3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rouge3@2x.png"; sourceTree = "<group>"; };
+		B03DE0CE15614408006AAA5B /* rouge4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rouge4@2x.png"; sourceTree = "<group>"; };
+		B03DE0CF15614408006AAA5B /* rouge5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rouge5@2x.png"; sourceTree = "<group>"; };
 		B054E6101557D54600E84D8F /* CreationRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreationRuntime.h; sourceTree = "<group>"; };
 		B054E6111557D54600E84D8F /* CreationRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreationRuntime.m; sourceTree = "<group>"; };
 		B06FF2241552A75B00733B84 /* DonneesBus.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DonneesBus.json; sourceTree = "<group>"; };
@@ -485,6 +519,17 @@
 		B06FF23F1552ACCB00733B84 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
 		B06FF2401552ACCB00733B84 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		B06FF2411552ACCB00733B84 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		B07029F015624E1600833D24 /* lampions1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lampions1@2x.png"; sourceTree = "<group>"; };
+		B07029F115624E1600833D24 /* lampions2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lampions2@2x.png"; sourceTree = "<group>"; };
+		B07029F215624E1600833D24 /* rougeSol1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rougeSol1@2x.png"; sourceTree = "<group>"; };
+		B07029F315624E1600833D24 /* rougeSol2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rougeSol2@2x.png"; sourceTree = "<group>"; };
+		B07029F815624E2600833D24 /* lampions1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lampions1.png; sourceTree = "<group>"; };
+		B07029F915624E2600833D24 /* lampions2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lampions2.png; sourceTree = "<group>"; };
+		B07029FA15624E2600833D24 /* rougeSol1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rougeSol1.png; sourceTree = "<group>"; };
+		B07029FB15624E2600833D24 /* rougeSol2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rougeSol2.png; sourceTree = "<group>"; };
+		B0702A0015624EFD00833D24 /* rougeParticle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rougeParticle.png; sourceTree = "<group>"; };
+		B0702A0115624EFD00833D24 /* rougeParticle.pex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rougeParticle.pex; sourceTree = "<group>"; };
+		B0702A0415624FD300833D24 /* particleFondRouge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particleFondRouge.png; sourceTree = "<group>"; };
 		B073FFF515190A4D00AE2BD7 /* Piege.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Piege.h; sourceTree = "<group>"; };
 		B073FFF615190A4D00AE2BD7 /* Piege.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Piege.m; sourceTree = "<group>"; };
 		B07BA0AC1518760B0047D9C4 /* Hud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hud.h; sourceTree = "<group>"; };
@@ -551,8 +596,6 @@
 		B0EA9A3E1517568D002D31CB /* jauneParticle.pex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jauneParticle.pex; sourceTree = "<group>"; };
 		B0EA9A4115175A44002D31CB /* Particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Particle.h; sourceTree = "<group>"; };
 		B0EA9A4215175A44002D31CB /* Particle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Particle.m; sourceTree = "<group>"; };
-		B0EA9A4415175FD1002D31CB /* ParticleJaune.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleJaune.h; sourceTree = "<group>"; };
-		B0EA9A4515175FD1002D31CB /* ParticleJaune.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParticleJaune.m; sourceTree = "<group>"; };
 		B0EEB08915061547009AD303 /* flash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flash.png; sourceTree = "<group>"; };
 		B0EEB08B150617ED009AD303 /* Hero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hero.png; sourceTree = "<group>"; };
 		B0EEB08C150617ED009AD303 /* Hero.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Hero.xml; sourceTree = "<group>"; };
@@ -911,7 +954,10 @@
 				B07BA1381518931A0047D9C4 /* 2x */,
 				B0EA9A3E1517568D002D31CB /* jauneParticle.pex */,
 				B0EA9A3815174966002D31CB /* jauneParticle.png */,
+				B0702A0015624EFD00833D24 /* rougeParticle.png */,
+				B0702A0115624EFD00833D24 /* rougeParticle.pex */,
 				B0EA41A21519D69C0076DAA6 /* particleFondJaune.png */,
+				B0702A0415624FD300833D24 /* particleFondRouge.png */,
 				B0EEB08B150617ED009AD303 /* Hero.png */,
 				B0EEB08C150617ED009AD303 /* Hero.xml */,
 				B0EEB08915061547009AD303 /* flash.png */,
@@ -1063,6 +1109,16 @@
 				B07BA1241518930B0047D9C4 /* portail_vert.png */,
 				B07BA1251518930B0047D9C4 /* sol.png */,
 				B07BA1261518930B0047D9C4 /* sol.xml */,
+				B03DE0BE156143FA006AAA5B /* rouge_fond.png */,
+				B03DE0BF156143FA006AAA5B /* rouge1.png */,
+				B03DE0C0156143FA006AAA5B /* rouge2.png */,
+				B03DE0C1156143FA006AAA5B /* rouge3.png */,
+				B03DE0C2156143FA006AAA5B /* rouge4.png */,
+				B03DE0C3156143FA006AAA5B /* rouge5.png */,
+				B07029F815624E2600833D24 /* lampions1.png */,
+				B07029F915624E2600833D24 /* lampions2.png */,
+				B07029FA15624E2600833D24 /* rougeSol1.png */,
+				B07029FB15624E2600833D24 /* rougeSol2.png */,
 			);
 			path = 1x;
 			sourceTree = "<group>";
@@ -1084,6 +1140,16 @@
 				B07BA1411518940B0047D9C4 /* portail_vert@2x.png */,
 				B07BA1421518940B0047D9C4 /* sol@2x.png */,
 				B07BA1431518940B0047D9C4 /* sol@2x.xml */,
+				B03DE0CA15614408006AAA5B /* rouge_fond@2x.png */,
+				B03DE0CB15614408006AAA5B /* rouge1@2x.png */,
+				B03DE0CC15614408006AAA5B /* rouge2@2x.png */,
+				B03DE0CD15614408006AAA5B /* rouge3@2x.png */,
+				B03DE0CE15614408006AAA5B /* rouge4@2x.png */,
+				B03DE0CF15614408006AAA5B /* rouge5@2x.png */,
+				B07029F015624E1600833D24 /* lampions1@2x.png */,
+				B07029F115624E1600833D24 /* lampions2@2x.png */,
+				B07029F215624E1600833D24 /* rougeSol1@2x.png */,
+				B07029F315624E1600833D24 /* rougeSol2@2x.png */,
 			);
 			path = 2x;
 			sourceTree = "<group>";
@@ -1126,8 +1192,6 @@
 				B0C1B44614FE248F00E10833 /* Main.m */,
 				B0EA9A4115175A44002D31CB /* Particle.h */,
 				B0EA9A4215175A44002D31CB /* Particle.m */,
-				B0EA9A4415175FD1002D31CB /* ParticleJaune.h */,
-				B0EA9A4515175FD1002D31CB /* ParticleJaune.m */,
 				B07BA0AC1518760B0047D9C4 /* Hud.h */,
 				B07BA0AD1518760B0047D9C4 /* Hud.m */,
 				B0A2F2CB1518B02C00EBAA2B /* Couleurs.h */,
@@ -1310,6 +1374,29 @@
 				B0113DFB15541C8D0005F1AB /* hero@2x.png in Resources */,
 				B0113DFE15541CA00005F1AB /* hero.png in Resources */,
 				B0113DFF15541CA00005F1AB /* hero.xml in Resources */,
+				B03DE0C4156143FA006AAA5B /* rouge_fond.png in Resources */,
+				B03DE0C5156143FA006AAA5B /* rouge1.png in Resources */,
+				B03DE0C6156143FA006AAA5B /* rouge2.png in Resources */,
+				B03DE0C7156143FA006AAA5B /* rouge3.png in Resources */,
+				B03DE0C8156143FA006AAA5B /* rouge4.png in Resources */,
+				B03DE0C9156143FA006AAA5B /* rouge5.png in Resources */,
+				B03DE0D015614408006AAA5B /* rouge_fond@2x.png in Resources */,
+				B03DE0D115614408006AAA5B /* rouge1@2x.png in Resources */,
+				B03DE0D215614408006AAA5B /* rouge2@2x.png in Resources */,
+				B03DE0D315614408006AAA5B /* rouge3@2x.png in Resources */,
+				B03DE0D415614408006AAA5B /* rouge4@2x.png in Resources */,
+				B03DE0D515614408006AAA5B /* rouge5@2x.png in Resources */,
+				B07029F415624E1600833D24 /* lampions1@2x.png in Resources */,
+				B07029F515624E1600833D24 /* lampions2@2x.png in Resources */,
+				B07029F615624E1600833D24 /* rougeSol1@2x.png in Resources */,
+				B07029F715624E1600833D24 /* rougeSol2@2x.png in Resources */,
+				B07029FC15624E2600833D24 /* lampions1.png in Resources */,
+				B07029FD15624E2600833D24 /* lampions2.png in Resources */,
+				B07029FE15624E2600833D24 /* rougeSol1.png in Resources */,
+				B07029FF15624E2600833D24 /* rougeSol2.png in Resources */,
+				B0702A0215624EFD00833D24 /* rougeParticle.png in Resources */,
+				B0702A0315624EFD00833D24 /* rougeParticle.pex in Resources */,
+				B0702A0515624FD300833D24 /* particleFondRouge.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1404,7 +1491,6 @@
 				B012E3E315148F52008B9157 /* SXNSDataExtensions.m in Sources */,
 				B012E3E615148F8B008B9157 /* SXParticleSystem.m in Sources */,
 				B0EA9A4315175A44002D31CB /* Particle.m in Sources */,
-				B0EA9A4615175FD1002D31CB /* ParticleJaune.m in Sources */,
 				B07BA0AE1518760B0047D9C4 /* Hud.m in Sources */,
 				B0A2F2CD1518B02C00EBAA2B /* Couleurs.m in Sources */,
 				B073FFF715190A4D00AE2BD7 /* Piege.m in Sources */,

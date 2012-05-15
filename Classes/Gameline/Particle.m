@@ -21,13 +21,27 @@
     return self;
 }
 
-- (id) initWithName:(NSString *)paramName params:(NSDictionary *)params andGraphic:(SPDisplayObject *)displayObject {
+- (id) initWithName:(NSString *)paramName params:(NSDictionary *)params andGraphic:(SPDisplayObject *)displayObject withWorld:(NSString *)world {
     
     if (self = [super initWithName:paramName params:params andGraphic:displayObject]) {
+        
+        worldColor = world;
         
         if ([graphic isKindOfClass:[SXParticleSystem class]]) {
             [(SXParticleSystem *)graphic start];
             [[SPStage mainStage].juggler addObject:(SXParticleSystem *)graphic];
+            
+            if (worldColor == @"jaune") {
+                imgFond = [SPImage imageWithContentsOfFile:@"particleFondJaune.png"];
+            } else if (worldColor == @"rouge") {
+                imgFond = [SPImage imageWithContentsOfFile:@"particleFondRouge.png"];
+            }
+            
+
+            [self addChild:imgFond atIndex:0];
+            
+            imgFond.x = posX - imgFond.width / 2;
+            imgFond.y = posY - imgFond.height / 2;
         }
     }
     
@@ -76,11 +90,20 @@
 
 - (void) simpleInit {
     
-    [super.space addCollisionHandlerBetween:@"hero" andTypeB:@"particle" target:self begin:@selector(collisionStart) preSolve:NULL postSolve:NULL separate:NULL];
+    [super.space addCollisionHandlerBetween:@"hero" andTypeB:@"particle" target:self begin:@selector(collisionStart: space:) preSolve:NULL postSolve:NULL separate:NULL];
 }
 
-- (void) collisionStart {
+- (BOOL) collisionStart:(CMArbiter*) arbiter space:(CMSpace*) space {
     
+    ((CitrusObject *)arbiter.shapeB.body.data).kill = YES;
+    
+    if (worldColor == @"jaune") {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"colorJaune" object:nil];
+    } else if (worldColor == @"rouge") {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"colorRouge" object:nil];
+    }
+    
+    return YES;
 
 }
 

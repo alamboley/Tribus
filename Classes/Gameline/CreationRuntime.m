@@ -7,7 +7,7 @@
 //
 
 #import "CreationRuntime.h"
-#import "ParticleJaune.h"
+#import "Particle.h"
 #import "SXParticleSystem.h"
 #import "Piege.h"
 
@@ -27,7 +27,7 @@
 - (void) start {
     
     timerParticle = [NSTimer scheduledTimerWithTimeInterval:0.7 target:self selector:@selector(onTickParticle:) userInfo:nil repeats:YES];
-    timerPiege = [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(onTickPiege:) userInfo:nil repeats:YES];
+    timerPiege = [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(onTickPiege:) userInfo:nil repeats:YES];
     hero = [ce.state getObjectByName:@"hero"];
     
 }
@@ -45,9 +45,9 @@
     if (random > 0) {
     
         float positionX = hero.x + 500 + arc4random() % 300;
-        float positionY = 50 + arc4random() % 330;
+        float positionY = 50 + arc4random() % 250;
     
-        ParticleJaune *particleRandom = [[ParticleJaune alloc] initWithName:@"particleRandom" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"20", @"20", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[SXParticleSystem particleSystemWithContentsOfFile:@"jauneParticle.pex"]];
+        Particle *particleRandom = [[Particle alloc] initWithName:@"particleRandom" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"20", @"20", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[SXParticleSystem particleSystemWithContentsOfFile:@"rougeParticle.pex"] withWorld:@"rouge"];
         [ce.state addObject:particleRandom];
     }
 }
@@ -59,7 +59,7 @@
     if (random > 1) {
         
         float positionX = hero.x + 500 + arc4random() % 300;
-        float positionY = 50 + arc4random() % 330;
+        float positionY = 50 + arc4random() % 250;
     
         Piege *piege = [[Piege alloc] initWithName:@"piege" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"20", @"100", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[SPImage imageWithContentsOfFile:@"piege.png"]];
         [ce.state addObject:piege];

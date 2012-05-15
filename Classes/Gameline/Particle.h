@@ -13,10 +13,11 @@
     
     SPImage *imgFond;
     CitrusObject *hero;
+    NSString *worldColor;
 }
 
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params;
-- (id) initWithName:(NSString *)paramName params:(NSDictionary *)params andGraphic:(SPDisplayObject *)displayObject;
+- (id) initWithName:(NSString *)paramName params:(NSDictionary *)params andGraphic:(SPDisplayObject *)displayObject withWorld:(NSString *)world;
 - (void) simpleInit;
 
 @end

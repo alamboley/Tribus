@@ -36,7 +36,7 @@
             img.x = self.posX;
             img.y = self.y;
 
-            self.posX += img.width;
+            self.posX += img.width - 2;
         }
         
     }
@@ -70,7 +70,7 @@
                 img.x = self.posX;
                 img.y = self.y;
 
-                self.posX += img.width;
+                self.posX += img.width - 2;
             }
         }
     }

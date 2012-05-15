@@ -47,6 +47,14 @@
     NSDictionary *travelFirstElement = [travel objectAtIndex:indice];
     travelFirstElement = [travelFirstElement objectForKey:@"coords"];
     
+    NSDictionary *arretBus = [travel objectAtIndex:indice];
+    
+    if ([[arretBus objectForKey:@"type"] isEqualToString:@"abribus"]) {
+        NSLog(@"%@", @"fin game");
+        [self stop];
+    }
+        
+    
     SPTween *tween = [SPTween tweenWithTarget:hero time:2.0f];
     [tween animateProperty:@"velocityX" targetValue:35 + 12 * [[travelFirstElement objectForKey:@"speed"]floatValue]];
     [[SPStage mainStage].juggler addObject:tween];
