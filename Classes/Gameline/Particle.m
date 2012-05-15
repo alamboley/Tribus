@@ -97,11 +97,7 @@
     
     ((CitrusObject *)arbiter.shapeB.body.data).kill = YES;
     
-    if (worldColor == @"jaune") {
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"colorJaune" object:nil];
-    } else if (worldColor == @"rouge") {
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"colorRouge" object:nil];
-    }
+    [[NSNotificationCenter defaultCenter] postNotificationName:worldColor object:nil];
     
     return YES;
 

@@ -29,6 +29,8 @@
         
        // [self showHideDebugDraw];
         
+        worldColor = @"rouge";
+        
         gameWidth = 500680;
         
         couleurs = [[Couleurs alloc] initWithRouge:130 andBleu:20 andJaune:45 andOrange:12 andVert:8 andViolet:58];
@@ -36,7 +38,7 @@
         CitrusObject *parallaxe1 = [[CitrusObject alloc] initWithName:@"bg" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"0", @"0", @"0.01", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"parallax:", nil]] andGraphic:[SPImage imageWithContentsOfFile:@"rouge_fond.png"]];
         [self addObject:parallaxe1];
         
-        BigPicture *parallaxe2 = [[BigPicture alloc] initWithName:@"bg" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"0", @"0", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", nil]] andWorld:@"WorldRed"];
+        BigPicture *parallaxe2 = [[BigPicture alloc] initWithName:@"bg" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"0", @"0", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", nil]] andWorld:worldColor];
         [self addObject:parallaxe2];
         
         Platform *platformBot = [[Platform alloc] initWithName:@"platform" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", gameWidth / 2], @"320", [NSString stringWithFormat:@"%f", gameWidth], @"10", @"TRUE", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", @"isStatic:", nil]]];
@@ -60,10 +62,11 @@
         BusManagement *bus = [[BusManagement alloc] initWithData:@"DonneesBus" andHero:hero];
         [bus start];
         
-        CreationRuntime *creationRuntime = [[CreationRuntime alloc] initWithWorld:@"WorldJaune"];
+        CreationRuntime *creationRuntime = [[CreationRuntime alloc] initWithWorld:worldColor];
         [creationRuntime start];
         
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(colorPicked:) name:@"colorJaune" object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(colorPicked:) name:@"jaune" object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(colorPicked:) name:@"rouge" object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(colorPicked:) name:@"piege" object:nil];
 	}
     
@@ -73,7 +76,7 @@
 - (void) colorPicked:(NSNotification *) notification {
     
     if ([notification.name isEqualToString:@"piege"]) {
-        [couleurs piegeColor:@"colorJaune"];
+        [couleurs piegeColor:worldColor];
     } else {
         [couleurs addColor:notification.name];
     }

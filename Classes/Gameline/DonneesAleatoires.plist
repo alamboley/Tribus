@@ -4,13 +4,13 @@
 <dict>
 	<key>Root</key>
 	<dict>
-		<key>WorldYellow</key>
+		<key>jaune</key>
 		<array>
 			<string>parallaxe1_1.png</string>
 			<string>parallaxe1_2.png</string>
 			<string>parallaxe1_3.png</string>
 		</array>
-		<key>WorldRed</key>
+		<key>rouge</key>
 		<array>
 			<string>rouge1.png</string>
 			<string>rouge2.png</string>

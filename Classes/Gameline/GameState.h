@@ -16,6 +16,8 @@
     SPSprite *graphismEcranSoutenance;
     
     Couleurs *couleurs;
+    
+    NSString *worldColor;
 }
 
 @property (nonatomic) Couleurs *couleurs;

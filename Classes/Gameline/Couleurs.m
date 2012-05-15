@@ -45,9 +45,14 @@
 
 - (void) addColor:(NSString *) color {
 
-    if ([color isEqualToString:@"colorJaune"]) {
+    if ([color isEqualToString:@"jaune"]) {
         
         jaune += gains;
+    }
+    
+    if ([color isEqualToString:@"rouge"]) {
+        
+        rouge += gains;
     }
     
     [self refreshScore];
@@ -55,9 +60,14 @@
 
 - (void) piegeColor:(NSString *) color {
     
-    if ([color isEqualToString:@"colorJaune"]) {
+    if ([color isEqualToString:@"jaune"]) {
         
         jaune -= 50;
+    }
+    
+    if ([color isEqualToString:@"rouge"]) {
+        
+        rouge -= 50;
     }
     
     [self refreshScore];
