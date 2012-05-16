@@ -29,7 +29,7 @@
         
        //[self showHideDebugDraw];
         
-        worldColor = @"jaune";
+        worldColor = @"rouge";
         
         gameWidth = 500680;
         

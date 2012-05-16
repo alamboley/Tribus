@@ -15,7 +15,7 @@
     
     if (self = [super initWithName:paramName params:params]) {
         
-        //chargement XML :
+        //chargement PLIST :
         NSBundle *bundle = [NSBundle mainBundle];
         NSString *plistChemin = [bundle pathForResource:@"DonneesAleatoires" ofType:@"plist"];
         NSDictionary *dictionnaire = [[NSDictionary alloc] initWithContentsOfFile:plistChemin];

@@ -49,7 +49,6 @@
     [ce.state addEventListener:@selector(touched:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
     
     [space addCollisionHandlerBetween:@"sensorGround" andTypeB:@"platform" target:self begin:@selector(onGround) preSolve:NULL postSolve:NULL separate:@selector(endGround)];
-    //[NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(changeAnimation) userInfo:nil repeats:NO];
 }
 
 - (void) destroy {
