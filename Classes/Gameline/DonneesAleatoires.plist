@@ -6,9 +6,9 @@
 	<dict>
 		<key>jaune</key>
 		<array>
-			<string>parallaxe1_1.png</string>
-			<string>parallaxe1_2.png</string>
-			<string>parallaxe1_3.png</string>
+			<string>jaune1.png</string>
+			<string>jaune2.png</string>
+			<string>jaune3.png</string>
 		</array>
 		<key>rouge</key>
 		<array>

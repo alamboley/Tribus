@@ -79,9 +79,7 @@
     float positionX = (hero.x + 500 + arc4random() % 300) * 2;
     float positionY = 50 + arc4random() % 250;
     
-    if (random) {
-        
-        NSLog(@"%f hero: %f", positionX, hero.x);
+    if (random == 1) {
         
         GraphismTmp *firstPlan1 = [[GraphismTmp alloc] initWithName:@"firstPlan1" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], @"200", @"2", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"parallax:", nil]] andGraphic:[SPImage imageWithContentsOfFile:@"lampions1.png"]];
         [ce.state addObject:firstPlan1];
