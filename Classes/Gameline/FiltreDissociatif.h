@@ -11,6 +11,8 @@
 @interface FiltreDissociatif : Sensor {
     
     NSString *color;
+    
+    CitrusObject *hero;
 }
 
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params andGraphic:(SPDisplayObject *)displayObject andColor:(NSString *) worldColor;

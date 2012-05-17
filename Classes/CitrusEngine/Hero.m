@@ -67,7 +67,7 @@
     
     if (begin) {
         touchScreen = TRUE;
-
+        
     }
     
     SPTouch *end = [[event touchesWithTarget:ce.state andPhase:SPTouchPhaseEnded] anyObject];
@@ -81,8 +81,14 @@
 - (void) updateAnimation {
     
     NSString *prevAnim = animation;
-    
-    if (touchScreen) {
+
+    if ([animation isEqualToString:@"passage_piege"]) {
+        
+        prevAnim = @"pasImportant";
+        animation = @"passage_piege";
+        loopAnimation = NO;
+        
+    } else if (touchScreen) {
         
         if ([body velocity].y < 0) {
             
@@ -111,7 +117,7 @@
     
     //change animation :
     if (![prevAnim isEqualToString:animation]) {
-        
+
         if ([graphic isKindOfClass:[AnimationSequence class]]) {
             [(AnimationSequence *)graphic changeAnimation:animation withLoop:loopAnimation];
         }
@@ -127,7 +133,7 @@
     velocity.x = velocityX;
     
     if (touchScreen) {
-
+        
         if (isOnGround) {
             
             velocity.y = jumpHeight;
@@ -145,7 +151,7 @@
     [body setVelocity:velocity];
     
     //if (body.position.x > 2600)
-      //      velocityX = 0;
+    //      velocityX = 0;
     
     [self updateAnimation];
 }

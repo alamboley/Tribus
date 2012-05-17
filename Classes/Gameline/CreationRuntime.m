@@ -7,10 +7,12 @@
 //
 
 #import "CreationRuntime.h"
+#import "AnimationSequence.h"
 #import "Particle.h"
 #import "SXParticleSystem.h"
 #import "Piege.h"
 #import "GraphismTmp.h"
+#import "FiltreDissociatif.h"
 
 @implementation CreationRuntime
 
@@ -62,13 +64,19 @@
     
     int random = arc4random() % 4;
     
+    float positionX = hero.x + 500 + arc4random() % 300;
+    float positionY = 50 + arc4random() % 250;
+    
     if (random > 1) {
-        
-        float positionX = hero.x + 500 + arc4random() % 300;
-        float positionY = 50 + arc4random() % 250;
         
         Piege *piege = [[Piege alloc] initWithName:@"piege" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"20", @"100", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[SPImage imageWithContentsOfFile:@"piege.png"]];
         [ce.state addObject:piege];
+        
+    } else {
+        
+        AnimationSequence *anim = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"filtreDissociatifVert.xml"] andAnimations:[NSArray arrayWithObjects:@"filtre", nil] andFirstAnimation:@"filtre"];
+        FiltreDissociatif *filtreVert = [[FiltreDissociatif alloc] initWithName:@"filtreVert" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"40", @"80", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:anim andColor:@"vert"];
+        [ce.state addObject:filtreVert];
     }
 }
 
@@ -83,9 +91,8 @@
         
         GraphismTmp *firstPlan1 = [[GraphismTmp alloc] initWithName:@"firstPlan1" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], @"200", @"2", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"parallax:", nil]] andGraphic:[SPImage imageWithContentsOfFile:@"lampions1.png"]];
         [ce.state addObject:firstPlan1];
-    }
-    
-    if (random == 2) {
+        
+    } else if (random == 2) {
 
         GraphismTmp *firstPlan2 = [[GraphismTmp alloc] initWithName:@"firstPlan2" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], @"200", @"2", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"parallax:", nil]] andGraphic:[SPImage imageWithContentsOfFile:@"lampions2.png"]];
         [ce.state addObject:firstPlan2];

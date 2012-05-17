@@ -8,6 +8,8 @@
 //
 
 #import "FiltreDissociatif.h"
+#import "CitrusEngine.h"
+#import "Hero.h"
 
 @implementation FiltreDissociatif
 
@@ -17,16 +19,6 @@
         
         color = worldColor;
         
-        //[(AnimationSequence *)graphic changeAnimation:animation withLoop:loopAnimation];
-        
-        SPTextureAtlas *atlas = [SPTextureAtlas atlasWithContentsOfFile:@"filtreDissociatifVert.xml"];
-        
-        //atlas 
-        
-        //[(SPMovieClip *)graphic addFrame:<#(SPTexture *)#> ]
-        //graphic = [[SPMovieClip alloc] initWithFrames:[atlas texturesStartingWith:@""] fps:25];
-        
-        //[[SPStage mainStage].juggler addObject:mc];
     }
     
     return self;
@@ -34,7 +26,55 @@
 
 - (void) destroy {
     
-    //[[SPStage mainStage].juggler removeObject:mc];
+    [super destroy];
+}
+
+- (void) update {
+    
+    [super update];
+    
+    
+    if (!hero) {
+        
+        hero = [ce.state getObjectByName:@"hero"];
+        
+    } else {
+        
+        if (hero.x - hero.width > body.position.x) {
+            
+            self.kill = YES;
+        }
+    }
+    
+}
+
+- (void) defineShape {
+    
+    [super defineShape];
+    
+    [shape setCollisionType:@"filtreDissociatif"];
+}
+
+- (void) simpleInit {
+    
+    [super.space addCollisionHandlerBetween:@"hero" andTypeB:@"filtreDissociatif" target:self begin:@selector(collisionStart: space:) preSolve:NULL postSolve:NULL separate:@selector(collisionEnd: space:)];
+
+}
+
+- (BOOL) collisionStart:(CMArbiter*) arbiter space:(CMSpace*) space {
+    
+    ((Hero *)arbiter.shapeA.body.data).animation = @"passage_piege";
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"filtreDissociatif" object:nil];
+    
+    return YES;
+}
+
+- (BOOL) collisionEnd:(CMArbiter*) arbiter space:(CMSpace*) space {
+    
+    ((Hero *)arbiter.shapeA.body.data).animation = @"base";
+    
+    return YES;
 }
 
 @end
