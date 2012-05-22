@@ -76,7 +76,7 @@
     [USave initSettingsDefaults];
 
     [ColorManager initManager];
-    [ColorManager addPoints:50 forColorId:@"blue"];
+    //[ColorManager addPoints:50 forColorId:@"blue"];
     // Override point for customization after application launch.
     return YES;
 }

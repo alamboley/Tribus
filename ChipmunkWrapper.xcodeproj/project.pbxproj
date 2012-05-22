@@ -475,6 +475,8 @@
 		B002DD65156C085C003F5C78 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1527AF711BD8F9000995392 /* AVFoundation.framework */; };
 		B002DD66156C085C003F5C78 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1527AFB11BD8F9900995392 /* AudioToolbox.framework */; };
 		B002DD67156C085C003F5C78 /* libChipmunk-iPhone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1AF685212EA2916006322AF /* libChipmunk-iPhone.a */; };
+		B002DD6F156C0EFC003F5C78 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B002DD6E156C0EFC003F5C78 /* Settings.bundle */; };
+		B002DD73156C1188003F5C78 /* GameUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DD72156C1188003F5C78 /* GameUIViewController.m */; };
 		B0113DDF1553C06A0005F1AB /* BusManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = B0113DDE1553C06A0005F1AB /* BusManagement.m */; };
 		B012E3E315148F52008B9157 /* SXNSDataExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B012E3E215148F52008B9157 /* SXNSDataExtensions.m */; };
 		B012E3E615148F8B008B9157 /* SXParticleSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = B012E3E515148F8B008B9157 /* SXParticleSystem.m */; };
@@ -922,6 +924,9 @@
 		B002DC42156C0804003F5C78 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B002DD6B156C085C003F5C78 /* ChipmunkWrapper copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ChipmunkWrapper copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B002DD6D156C085C003F5C78 /* ChipmunkWrapper copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ChipmunkWrapper copy-Info.plist"; path = "/Users/Aymeric/Documents/Workspace/Objective-c/2012/Tribus/ChipmunkWrapper copy-Info.plist"; sourceTree = "<absolute>"; };
+		B002DD6E156C0EFC003F5C78 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		B002DD71156C1188003F5C78 /* GameUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameUIViewController.h; sourceTree = "<group>"; };
+		B002DD72156C1188003F5C78 /* GameUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameUIViewController.m; sourceTree = "<group>"; };
 		B0113DDD1553C0690005F1AB /* BusManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusManagement.h; sourceTree = "<group>"; };
 		B0113DDE1553C06A0005F1AB /* BusManagement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusManagement.m; sourceTree = "<group>"; };
 		B012E3E115148F52008B9157 /* SXNSDataExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SXNSDataExtensions.h; path = SparrowExtensions/SXNSDataExtensions.h; sourceTree = "<group>"; };
@@ -1147,6 +1152,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				B002DD6E156C0EFC003F5C78 /* Settings.bundle */,
 				B002DC3F156C0658003F5C78 /* CoreText.framework */,
 				B002DC3D156C0652003F5C78 /* CoreData.framework */,
 				B07BA0D515188B440047D9C4 /* Default@2x.png */,
@@ -1579,6 +1585,7 @@
 		B002DB87156C041F003F5C78 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				B002DD70156C1108003F5C78 /* game */,
 				B002DB88156C041F003F5C78 /* color */,
 				B002DB90156C041F003F5C78 /* GenericUIViewController.h */,
 				B002DB91156C041F003F5C78 /* GenericUIViewController.m */,
@@ -1756,6 +1763,15 @@
 				B002DC19156C04AC003F5C78 /* tribus-bg@2x.png */,
 			);
 			path = app;
+			sourceTree = "<group>";
+		};
+		B002DD70156C1108003F5C78 /* game */ = {
+			isa = PBXGroup;
+			children = (
+				B002DD71156C1188003F5C78 /* GameUIViewController.h */,
+				B002DD72156C1188003F5C78 /* GameUIViewController.m */,
+			);
+			path = game;
 			sourceTree = "<group>";
 		};
 		B012E3D715148E1C008B9157 /* SparrowExtensions */ = {
@@ -2343,6 +2359,7 @@
 				B002DCD7156C085C003F5C78 /* triboard-customization@2x.png in Resources */,
 				B002DCD8156C085C003F5C78 /* tribus-bg@2x.png in Resources */,
 				B002DCD9156C085C003F5C78 /* MainStoryboard.storyboard in Resources */,
+				B002DD6F156C0EFC003F5C78 /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2614,6 +2631,7 @@
 				B002DD57156C085C003F5C78 /* USave.m in Sources */,
 				B002DD58156C085C003F5C78 /* CoreDataBase.xcdatamodeld in Sources */,
 				B002DD59156C085C003F5C78 /* AppDelegate.m in Sources */,
+				B002DD73156C1188003F5C78 /* GameUIViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
