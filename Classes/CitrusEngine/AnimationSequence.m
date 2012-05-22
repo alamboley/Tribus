@@ -52,8 +52,10 @@
     [self.stage.juggler addObject:[mcSequences objectForKey:animation]];
     ((SPMovieClip *)[mcSequences objectForKey:animation]).loop = animLoop;
     
-    if (animLoop == 1)
+    if (animLoop == 0) {
         ((SPMovieClip *)[mcSequences objectForKey:animation]).currentFrame = 0;
+        [((SPMovieClip *)[mcSequences objectForKey:animation]) play];
+    }
     
     previousAnimation = animation;
 }
