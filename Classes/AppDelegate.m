@@ -71,7 +71,7 @@
  */
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    NSLog(@"MAIN");
+    NSLog(@"MAIN -> IT WORKS");
     // Set the application defaults from the Settings.bundle
     [USave initSettingsDefaults];
 
