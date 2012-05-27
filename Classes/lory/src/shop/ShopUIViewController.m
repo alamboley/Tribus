@@ -9,7 +9,6 @@
 #import "ShopUIViewController.h"
 #import "SBJson.h"
 #import "ShopItemUIController.h"
-#import "ColorUIViewController.h"
 #import "ColorManager.h"
 
 @implementation ShopUIViewController
@@ -17,6 +16,7 @@
 @synthesize productDetail;
 @synthesize icarousel;
 @synthesize itemDatas;
+@synthesize colorUIViewController;
 
 - (void)awakeFromNib
 {
@@ -48,7 +48,7 @@
             //NSLog(@"%@ : %@", key, value);
         }
         [itemDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
-         [[NSArray alloc] initWithObjects:[obj objectForKey:@"title"], [obj objectForKey:@"description"],@"item2.png",[obj objectForKey:@"price"],nil] forKeys:
+         [[NSArray alloc] initWithObjects:[obj objectForKey:@"title"], [obj objectForKey:@"description"],[obj objectForKey:@"image-url"],[obj objectForKey:@"price"],nil] forKeys:
          [[NSArray alloc] initWithObjects:@"title", @"description",@"path",@"colors",nil]]
          forKey:[obj objectForKey:@"id"]];
     }
@@ -63,20 +63,20 @@
     
     //configure carousel
     icarousel.type = iCarouselTypeRotary;
-    [icarousel.currentItemView addSubview:self.productDetail];
-    [productDetail setFrame:icarousel.currentItemView.frame];
-    [productDetail setHidden:YES];
+    //[icarousel.currentItemView addSubview:self.productDetail];
+    //[productDetail setFrame:icarousel.currentItemView.frame];
+    //[productDetail setHidden:YES];
     //[icarousel setContentOffset:CGSizeMake(-100, 0)];
     
-    ColorUIViewController *colorUIViewController = [[ColorUIViewController alloc] initWithNibName:@"ColorUIViewController" bundle:nil andType:big];
+    colorUIViewController = [[ColorUIViewController alloc] initWithNibName:@"ColorUIViewController" bundle:nil andType:big];
     [self.view addSubview:colorUIViewController.view];
     
     CGFloat x = ([self view].bounds.size.height - [colorUIViewController view].bounds.size.width) / 2;
-    CGFloat y = [self view].bounds.size.width  - 60;
+    CGFloat y = [self view].bounds.size.width  - 50;
     colorUIViewController.view.frame = CGRectMake(x, y, colorUIViewController.view.frame.size.width, colorUIViewController.view.frame.size.height);
-    //colorUIViewController.view.center = self.view.center;
 
     [ColorManager addPoints:10 forColorId:@"red"];
+    [[[self navigationUIViewController] pageTitle] setText:@"échoppe"];
 }
 
 - (void)viewDidUnload
@@ -89,9 +89,12 @@
     [itemDatas removeAllObjects];
     itemDatas = nil;
     
+    [self setColorUIViewController:nil];
+    
     [self setProductDetail:nil];
     [super viewDidUnload];
 }
+
 
 #pragma mark -
 #pragma mark iCarousel methods
@@ -101,7 +104,7 @@
     {
         case iCarouselTranformOptionArc:
         {
-            return 2 * M_PI * 1;
+            return 2 * M_PI * 0.5;
         }
         case iCarouselTranformOptionRadius:
         {
@@ -164,7 +167,8 @@
 
         [viewController.titleLabel setText:[currentItem valueForKey:@"title"]];
         [viewController.descLabel setText:[currentItem valueForKey:@"description"]];
-        [viewController.imageView setImage:[UIImage imageNamed:[currentItem valueForKey:@"path"]]];
+        [viewController.motifImage setImage:[UIImage imageNamed:[currentItem valueForKey:@"path"]]];
+        NSLog(@"%@",[UIImage imageNamed:[currentItem valueForKey:@"path"]]);
         //view = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[currentItem valueForKey:@"path"]]];
         view.layer.doubleSided = NO; //prevent back side of view from showing
     }

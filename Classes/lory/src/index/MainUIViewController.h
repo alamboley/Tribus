@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import "ColorUIViewController.h"
 
 @interface MainUIViewController : UIViewController
+@property (nonatomic, retain) ColorUIViewController *colorUIViewController;
+
 @end

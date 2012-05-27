@@ -12,5 +12,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UILabel *descLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *motifImage;
+@property (weak, nonatomic) IBOutlet UIButton *buyButton;
+- (IBAction)buyAction:(id)sender;
 
 @end

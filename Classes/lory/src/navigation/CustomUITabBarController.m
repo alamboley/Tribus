@@ -78,6 +78,7 @@
         [UIView commitAnimations];
         [button setSelected:YES];
         self.selectedIndex = controllerIndex;
+        [self.navigationItem setTitle: self.title];
     }
 
 }

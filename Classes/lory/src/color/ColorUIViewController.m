@@ -11,7 +11,7 @@
 #import "ColorManager.h"
 
 @implementation ColorUIViewController
-@synthesize bigColorView, smallColorView,currentView;
+@synthesize bigColorView, smallColorView,currentView,textFields;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andType:(SizeType)sizeType
 {
@@ -32,7 +32,10 @@
 
 -(void)eventHandler: (NSNotification *) notification
 {
-    NSLog(@"event triggered");
+    Color *color = [[notification userInfo] valueForKey:@"color"];
+    NSNumber *points = [[notification userInfo] valueForKey:@"points"];
+    UILabel * tf = [textFields valueForKey:color.colorId];
+    [tf setText:[color.colorValue stringValue]];
 }
 
 #pragma mark - View lifecycle
@@ -59,26 +62,26 @@
 }
 - (void) initializeTextfields{
     int i = 0;
+    textFields = [[NSMutableDictionary alloc] init];
     for (id key in [ColorManager getColors]) {
         Color *color = [[ColorManager getColors] objectForKey:key];
-        UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(i * 47 - 13, 15, 77, 77)];
-        [textField setFont:[UIFont fontWithName:@"TwCenMT-Bold" size:20]];
-        textField.returnKeyType = UIReturnKeyDone;
-        textField.placeholder = @"NA";
-        textField.textColor = [[UIColor alloc] initWithWhite:1 alpha:1];
-        textField.autocapitalizationType = UITextAutocapitalizationTypeWords;
+        UILabel *textField = [[UILabel alloc] initWithFrame:CGRectMake(i * 36.5 + 4, 6, 25, 25)];
+        [textField setBackgroundColor:[UIColor clearColor]];
+        [textField setFont:[UIFont fontWithName:@"TwCenMT-Bold" size:15]];
+        textField.textColor = [Color colorWithHexString:@"0X333330"];
         textField.adjustsFontSizeToFitWidth = TRUE;
         textField.textAlignment = UITextAlignmentCenter;
-        [textField addTarget:self 
-                      action:@selector(textFieldDone:) 
-            forControlEvents:UIControlEventEditingDidEndOnExit];     
         [self.view addSubview:textField]; 
         textField.text = [color.colorValue stringValue];
+        [textFields setObject:textField forKey:color.colorId];
         i++;
     }
 }
 - (void)viewDidUnload
 {
+    [[self textFields] removeAllObjects];
+    [self setTextFields:nil];
+    [[self currentView] removeFromSuperview];
     [self setBigColorView:nil];
     [self setSmallColorView:nil];
     [self setCurrentView:nil];

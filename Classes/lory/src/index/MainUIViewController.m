@@ -9,6 +9,8 @@
 #import "MainUIViewController.h"
 
 @implementation MainUIViewController
+@synthesize colorUIViewController;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -45,11 +47,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    colorUIViewController = [[ColorUIViewController alloc] initWithNibName:@"ColorUIViewController" bundle:nil andType:big];
+    [self.view addSubview:colorUIViewController.view];
+    
+    CGFloat x = ([self view].bounds.size.height - [colorUIViewController view].bounds.size.width) / 2;
+    CGFloat y = [self view].bounds.size.width  - 50;
+    colorUIViewController.view.frame = CGRectMake(x, y, colorUIViewController.view.frame.size.width, colorUIViewController.view.frame.size.height);
 }
 
 
 - (void)viewDidUnload
 {
+    [colorUIViewController.view removeFromSuperview];
+    [self setColorUIViewController:nil];
     [super viewDidUnload];
 
     // Release any retained subviews of the main view.
