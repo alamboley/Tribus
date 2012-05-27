@@ -2,30 +2,36 @@
  "id":"green",
  "code":"0x445132",
  "label":"Vert",
- "defaultValue":20
+ "defaultValue":20,
+ "order":4
  },{
  "id":"orange",
  "code":"0xA8510C",
  "label":"Orange",
- "defaultValue":12
+ "defaultValue":12,
+ "order":5
  },{
  "id":"yellow",
  "code":"0x8D5D2E",
  "label":"Jaune",
- "defaultValue":35
+ "defaultValue":35,
+ "order":0
  },{
  "id":"red",
  "code":"0x8D5D2E",
  "label":"Rouge",
- "defaultValue":9
+ "defaultValue":9,
+ "order":2
  },{
  "id":"blue",
  "code":"0x3B4444",
  "label":"Bleu",
- "defaultValue":5
+ "defaultValue":1,
+ "order":1
  },{
  "id":"purple",
  "code":"0x582E97",
  "label":"Violet",
- "defaultValue":40
+ "defaultValue":40,
+ "order":3
  }]

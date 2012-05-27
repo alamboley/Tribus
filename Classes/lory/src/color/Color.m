@@ -13,6 +13,7 @@
 @synthesize color;
 @synthesize colorId;
 @synthesize colorValue;
+@synthesize order;
 
 - (id)initWithId:(NSString *)colorId andCode:(NSString *)code andLabel:(NSString *)label{
     self = [super init];

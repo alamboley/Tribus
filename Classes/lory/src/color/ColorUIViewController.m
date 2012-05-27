@@ -21,8 +21,13 @@
     }
     [[NSNotificationCenter defaultCenter]
      addObserver:self
-     selector:@selector(eventHandler:)
+     selector:@selector(changedPointsHandler:)
      name:@"addedPoints"
+     object:nil ];
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self
+     selector:@selector(changedPointsHandler:)
+     name:@"removedPoints"
      object:nil ];
     
     [self initializeTextfields];
@@ -30,13 +35,52 @@
     return self;
 }
 
--(void)eventHandler: (NSNotification *) notification
+-(void)changedPointsHandler: (NSNotification *) notification
 {
+    bool added = [notification name] == @"addedPoints";
+
     Color *color = [[notification userInfo] valueForKey:@"color"];
     NSNumber *points = [[notification userInfo] valueForKey:@"points"];
     UILabel * tf = [textFields valueForKey:color.colorId];
+    
+    // TF for tween points
+    UILabel *textField = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+    textField.userInteractionEnabled = NO;
+    CGRect frame = [textField frame];
+    frame.origin.x = tf.frame.origin.x + 5;
+    frame.origin.y = -10;
+    textField.frame = frame;
+    textField.alpha = 0;
+    [textField setBackgroundColor:[UIColor clearColor]];
+    [textField setFont:[UIFont fontWithName:@"TwCenMT-Bold" size:20]];
+    textField.textColor = [Color colorWithHexString:@"0XFFFFFF"];
+    textField.adjustsFontSizeToFitWidth = TRUE;
+    textField.textAlignment = UITextAlignmentCenter;
+    [self.view addSubview:textField];
+    NSString *s = added ? @"+ " : @"- ";
+    s = [s stringByAppendingString:[points stringValue]];
+    textField.text = s;
     [tf setText:[color.colorValue stringValue]];
+    // Tween for when we add points
+    
+    // alpha...
+    [PRTween tween:textField property:@"alpha" from:1 to:0 duration:2].completeBlock = ^{
+        [textField removeFromSuperview];
+    };
+    [PRTween tween:tf property:@"alpha" from:0 to:1 duration:1].timingFunction = &PRTweenTimingFunctionExpoOut;;
+
+    // ...and position of changing points TF
+    frame.origin.y = -40; // end of easing
+    [PRTweenCGRectLerp lerp:textField property: @"frame" from: textField.frame to: frame duration:3].timingFunction = &PRTweenTimingFunctionExpoOut;
+    
+    // value of actual textfield
+    /*[PRTween tween:points property:@"intValue" from:[color.colorValue intValue] to:[color.colorValue intValue] - [points intValue] duration:1].updateBlock = ^(PRTweenPeriod *period){
+        [tf setText:[NSString stringWithFormat: @"%d", (int)period.tweenedValue]];
+    };*/
+    
+
 }
+
 
 #pragma mark - View lifecycle
 
@@ -61,11 +105,10 @@
     //[self.view setCenter:[currentView center]];
 }
 - (void) initializeTextfields{
-    int i = 0;
     textFields = [[NSMutableDictionary alloc] init];
     for (id key in [ColorManager getColors]) {
         Color *color = [[ColorManager getColors] objectForKey:key];
-        UILabel *textField = [[UILabel alloc] initWithFrame:CGRectMake(i * 36.5 + 4, 6, 25, 25)];
+        UILabel *textField = [[UILabel alloc] initWithFrame:CGRectMake([color.order intValue] * 36.5 + 4, 6, 25, 25)];
         [textField setBackgroundColor:[UIColor clearColor]];
         [textField setFont:[UIFont fontWithName:@"TwCenMT-Bold" size:15]];
         textField.textColor = [Color colorWithHexString:@"0X333330"];
@@ -74,11 +117,20 @@
         [self.view addSubview:textField]; 
         textField.text = [color.colorValue stringValue];
         [textFields setObject:textField forKey:color.colorId];
-        i++;
     }
 }
+
 - (void)viewDidUnload
 {
+    [[NSNotificationCenter defaultCenter]
+     removeObserver:self
+     name:@"addedPoints"
+     object:nil ];
+    [[NSNotificationCenter defaultCenter]
+     removeObserver:self
+     name:@"removedPoints"
+     object:nil ];
+    
     [[self textFields] removeAllObjects];
     [self setTextFields:nil];
     [[self currentView] removeFromSuperview];

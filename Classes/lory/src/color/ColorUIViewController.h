@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PRTween.h"
 
 typedef enum 
 {

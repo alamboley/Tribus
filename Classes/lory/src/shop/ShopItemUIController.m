@@ -7,6 +7,7 @@
 //
 
 #import "ShopItemUIController.h"
+#import "ColorManager.h"
 
 @implementation ShopItemUIController
 @synthesize titleLabel;
@@ -14,6 +15,7 @@
 @synthesize descLabel;
 @synthesize motifImage;
 @synthesize buyButton;
+@synthesize color;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,6 +36,7 @@
 
 - (IBAction)buyAction:(id)sender {
     NSLog(@"BUY");
+    [ColorManager removePoints:10 forColorId:@"green"];
 }
 
 #pragma mark - View lifecycle

@@ -63,10 +63,6 @@
     
     //configure carousel
     icarousel.type = iCarouselTypeRotary;
-    //[icarousel.currentItemView addSubview:self.productDetail];
-    //[productDetail setFrame:icarousel.currentItemView.frame];
-    //[productDetail setHidden:YES];
-    //[icarousel setContentOffset:CGSizeMake(-100, 0)];
     
     colorUIViewController = [[ColorUIViewController alloc] initWithNibName:@"ColorUIViewController" bundle:nil andType:big];
     [self.view addSubview:colorUIViewController.view];
@@ -75,7 +71,6 @@
     CGFloat y = [self view].bounds.size.width  - 50;
     colorUIViewController.view.frame = CGRectMake(x, y, colorUIViewController.view.frame.size.width, colorUIViewController.view.frame.size.height);
 
-    [ColorManager addPoints:10 forColorId:@"red"];
     [[[self navigationUIViewController] pageTitle] setText:@"échoppe"];
 }
 

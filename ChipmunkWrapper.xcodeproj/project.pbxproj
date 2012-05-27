@@ -584,6 +584,10 @@
 		C8DEB11615728D3A00017A64 /* shop-item-board-3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8DEB0D815728D3A00017A64 /* shop-item-board-3@2x.png */; };
 		C8DEB11715728D3A00017A64 /* triboard-customization@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8DEB0D915728D3A00017A64 /* triboard-customization@2x.png */; };
 		C8DEB11815728D3A00017A64 /* tribus-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8DEB0DA15728D3A00017A64 /* tribus-bg@2x.png */; };
+		C8DEB11E1572A79900017A64 /* PRTween.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DEB11B1572A79900017A64 /* PRTween.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C8DEB11F1572A79900017A64 /* PRTween.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DEB11B1572A79900017A64 /* PRTween.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C8DEB1201572A79900017A64 /* PRTweenTimingFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DEB11D1572A79900017A64 /* PRTweenTimingFunctions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C8DEB1211572A79900017A64 /* PRTweenTimingFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DEB11D1572A79900017A64 /* PRTweenTimingFunctions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1102,6 +1106,10 @@
 		C8DEB0D815728D3A00017A64 /* shop-item-board-3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shop-item-board-3@2x.png"; sourceTree = "<group>"; };
 		C8DEB0D915728D3A00017A64 /* triboard-customization@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "triboard-customization@2x.png"; sourceTree = "<group>"; };
 		C8DEB0DA15728D3A00017A64 /* tribus-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tribus-bg@2x.png"; sourceTree = "<group>"; };
+		C8DEB11A1572A79900017A64 /* PRTween.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRTween.h; sourceTree = "<group>"; };
+		C8DEB11B1572A79900017A64 /* PRTween.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRTween.m; sourceTree = "<group>"; };
+		C8DEB11C1572A79900017A64 /* PRTweenTimingFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRTweenTimingFunctions.h; sourceTree = "<group>"; };
+		C8DEB11D1572A79900017A64 /* PRTweenTimingFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRTweenTimingFunctions.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1594,6 +1602,7 @@
 		B002DB66156C041F003F5C78 /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				C8DEB1191572A79900017A64 /* PRTween */,
 				B002DB67156C041F003F5C78 /* custom */,
 				B002DB6A156C041F003F5C78 /* iCarousel */,
 			);
@@ -2040,6 +2049,17 @@
 				C8DEB0BB15728D3A00017A64 /* tribus-bg.png */,
 			);
 			path = 1x;
+			sourceTree = "<group>";
+		};
+		C8DEB1191572A79900017A64 /* PRTween */ = {
+			isa = PBXGroup;
+			children = (
+				C8DEB11A1572A79900017A64 /* PRTween.h */,
+				C8DEB11B1572A79900017A64 /* PRTween.m */,
+				C8DEB11C1572A79900017A64 /* PRTweenTimingFunctions.h */,
+				C8DEB11D1572A79900017A64 /* PRTweenTimingFunctions.m */,
+			);
+			path = PRTween;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2577,6 +2597,8 @@
 				B002DBE7156C041F003F5C78 /* USave.m in Sources */,
 				B002DBF6156C044F003F5C78 /* CoreDataBase.xcdatamodeld in Sources */,
 				B002DC43156C0804003F5C78 /* AppDelegate.m in Sources */,
+				C8DEB11E1572A79900017A64 /* PRTween.m in Sources */,
+				C8DEB1201572A79900017A64 /* PRTweenTimingFunctions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2712,6 +2734,8 @@
 				B002DD58156C085C003F5C78 /* CoreDataBase.xcdatamodeld in Sources */,
 				B002DD59156C085C003F5C78 /* AppDelegate.m in Sources */,
 				B002DD73156C1188003F5C78 /* GameUIViewController.m in Sources */,
+				C8DEB11F1572A79900017A64 /* PRTween.m in Sources */,
+				C8DEB1211572A79900017A64 /* PRTweenTimingFunctions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

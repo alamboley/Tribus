@@ -13,6 +13,7 @@
 @property (strong, nonatomic) NSString *label;
 @property (strong, nonatomic) UIColor *color;
 @property (strong, nonatomic) NSNumber *colorValue;
+@property (strong, nonatomic) NSNumber *order;
 
 - (id)initWithId:(NSString *)colorId andCode:(NSString *)code andLabel:(NSString *)label;
 

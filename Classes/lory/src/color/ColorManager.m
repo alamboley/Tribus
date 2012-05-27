@@ -36,7 +36,9 @@ static bool inited = NO;
     for (NSDictionary *obj in res){
 
         Color *color = [[Color alloc] initWithId:[obj valueForKey:@"id"] andCode:[obj valueForKey:@"code"] andLabel:[obj valueForKey:@"label"]];
-
+        
+        color.order = [obj valueForKey:@"order"];
+        
         if([pref boolForKey:@"resetApp"] || [pref valueForKey:color.colorId] == nil){
             [pref setValue:[obj valueForKey:@"defaultValue"] forKey:color.colorId];            
             [pref synchronize];
@@ -68,21 +70,25 @@ static bool inited = NO;
 
 + (void) removePoints:(int) points forColorId:(NSString*) colorId{
     Color *color = [colorDictionnary valueForKey:colorId];
+    int oldValue = color.colorValue.integerValue;
     // 0 security
-    if(color.colorValue.integerValue - points >= 0)
+    if(oldValue - points >= 0)
         color.colorValue = [NSNumber numberWithInt:(color.colorValue.integerValue - points)];
     else
         color.colorValue = [NSNumber numberWithInt:0];
     
-    // DISPATCH l'event addedPoints avec les objets color et points en paramètre
-    NSDictionary* dict = [NSDictionary dictionaryWithObjectsAndKeys:
-                          color, @"color", [[NSNumber alloc] initWithInt:points], @"points", nil];
-    [[NSNotificationCenter defaultCenter]
-     postNotificationName:@"removedPoints"
-     object:nil
-     userInfo:dict];
     
-    [self saveColorId:colorId];
+    if (oldValue != 0) {
+        // DISPATCH l'event addedPoints avec les objets color et points en paramètre
+        NSDictionary* dict = [NSDictionary dictionaryWithObjectsAndKeys:
+                              color, @"color", [[NSNumber alloc] initWithInt:points], @"points", nil];
+        [[NSNotificationCenter defaultCenter]
+         postNotificationName:@"removedPoints"
+         object:nil
+         userInfo:dict];
+        
+        [self saveColorId:colorId];
+    }
 }
 
 + (void) saveColorId:(NSString*) colorId{
