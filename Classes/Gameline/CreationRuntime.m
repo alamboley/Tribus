@@ -7,7 +7,6 @@
 //
 
 #import "CreationRuntime.h"
-#import "AnimationSequence.h"
 #import "Particle.h"
 #import "SXParticleSystem.h"
 #import "Piege.h"
@@ -22,6 +21,8 @@
         
         ce = [CitrusEngine getInstance];
         world = worldColor;
+        
+        animFiltreVert = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"filtreDissociatifVert.xml"] andAnimations:[NSArray arrayWithObjects:@"filtre", nil] andFirstAnimation:@"filtre"];
     }
     
     return self;
@@ -74,8 +75,7 @@
         
     } else {
         
-        AnimationSequence *anim = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"filtreDissociatifVert.xml"] andAnimations:[NSArray arrayWithObjects:@"filtre", nil] andFirstAnimation:@"filtre"];
-        FiltreDissociatif *filtreVert = [[FiltreDissociatif alloc] initWithName:@"filtreVert" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"40", @"80", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:anim andColor:@"vert"];
+        FiltreDissociatif *filtreVert = [[FiltreDissociatif alloc] initWithName:@"filtreVert" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"40", @"80", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:animFiltreVert andColor:@"vert"];
         [ce.state addObject:filtreVert];
     }
 }

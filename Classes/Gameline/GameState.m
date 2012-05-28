@@ -77,8 +77,6 @@
         
     } else if ([notification.name isEqualToString:@"filtreDissociatif"]) {
         
-        //NSLog(@"ok filtre touché");
-        
     } else {
         [couleurs addColor:notification.name];
     }

@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "CitrusEngine.h"
 #import "CitrusObject.h"
+#import "AnimationSequence.h"
 
 @interface CreationRuntime : NSObject {
     
@@ -19,6 +20,8 @@
     
     CitrusEngine *ce;
     CitrusObject *hero;
+    
+    AnimationSequence *animFiltreVert;
 }
 
 - (id) initWithWorld:(NSString *) worldColor;
