@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:8f54bb6af2ffbb9a0b20c3d4523f034b$ -->
+<TextureAtlas imagePath="jauneParticulesJauge@2x.png">
+    <SubTexture name="jauneParticulesJauge/0000" x="56" y="296" width="52" height="78" frameX="-249" frameY="-230" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0001" x="56" y="296" width="52" height="78" frameX="-249" frameY="-230" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0002" x="56" y="296" width="52" height="78" frameX="-249" frameY="-230" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0003" x="56" y="296" width="52" height="78" frameX="-249" frameY="-230" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0004" x="2" y="206" width="52" height="90" frameX="-249" frameY="-228" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0005" x="2" y="206" width="52" height="90" frameX="-249" frameY="-228" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0006" x="2" y="206" width="52" height="90" frameX="-249" frameY="-228" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0007" x="2" y="206" width="52" height="90" frameX="-249" frameY="-228" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0008" x="164" y="2" width="52" height="100" frameX="-249" frameY="-223" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0009" x="164" y="2" width="52" height="100" frameX="-249" frameY="-223" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0010" x="164" y="2" width="52" height="100" frameX="-249" frameY="-223" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0011" x="164" y="2" width="52" height="100" frameX="-249" frameY="-223" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0012" x="110" y="106" width="52" height="98" frameX="-249" frameY="-227" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0013" x="110" y="106" width="52" height="98" frameX="-249" frameY="-227" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0014" x="110" y="106" width="52" height="98" frameX="-249" frameY="-227" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0015" x="110" y="106" width="52" height="98" frameX="-249" frameY="-227" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0016" x="110" y="206" width="52" height="88" frameX="-249" frameY="-226" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0017" x="110" y="206" width="52" height="88" frameX="-249" frameY="-226" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0018" x="110" y="206" width="52" height="88" frameX="-249" frameY="-226" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0019" x="110" y="206" width="52" height="88" frameX="-249" frameY="-226" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0020" x="56" y="110" width="52" height="94" frameX="-249" frameY="-221" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0021" x="56" y="110" width="52" height="94" frameX="-249" frameY="-221" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0022" x="56" y="110" width="52" height="94" frameX="-249" frameY="-221" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0023" x="56" y="110" width="52" height="94" frameX="-249" frameY="-221" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0024" x="164" y="104" width="52" height="98" frameX="-249" frameY="-215" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0025" x="164" y="104" width="52" height="98" frameX="-249" frameY="-215" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0026" x="164" y="104" width="52" height="98" frameX="-249" frameY="-215" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0027" x="164" y="104" width="52" height="98" frameX="-249" frameY="-215" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0028" x="2" y="110" width="52" height="94" frameX="-249" frameY="-219" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0029" x="2" y="110" width="52" height="94" frameX="-249" frameY="-219" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0030" x="2" y="110" width="52" height="94" frameX="-249" frameY="-219" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0031" x="2" y="110" width="52" height="94" frameX="-249" frameY="-219" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0032" x="164" y="204" width="52" height="96" frameX="-249" frameY="-216" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0033" x="164" y="204" width="52" height="96" frameX="-249" frameY="-216" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0034" x="164" y="204" width="52" height="96" frameX="-249" frameY="-216" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0035" x="164" y="204" width="52" height="96" frameX="-249" frameY="-216" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0036" x="56" y="206" width="52" height="88" frameX="-249" frameY="-229" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0037" x="56" y="206" width="52" height="88" frameX="-249" frameY="-229" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0038" x="56" y="206" width="52" height="88" frameX="-249" frameY="-229" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0039" x="56" y="206" width="52" height="88" frameX="-249" frameY="-229" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0040" x="110" y="2" width="52" height="102" frameX="-249" frameY="-214" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0041" x="110" y="2" width="52" height="102" frameX="-249" frameY="-214" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0042" x="110" y="2" width="52" height="102" frameX="-249" frameY="-214" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0043" x="110" y="2" width="52" height="102" frameX="-249" frameY="-214" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0044" x="56" y="2" width="52" height="106" frameX="-249" frameY="-218" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0045" x="56" y="2" width="52" height="106" frameX="-249" frameY="-218" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0046" x="56" y="2" width="52" height="106" frameX="-249" frameY="-218" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0047" x="56" y="2" width="52" height="106" frameX="-249" frameY="-218" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0048" x="2" y="2" width="52" height="106" frameX="-249" frameY="-219" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0049" x="2" y="2" width="52" height="106" frameX="-249" frameY="-219" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0050" x="2" y="2" width="52" height="106" frameX="-249" frameY="-219" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="jauneParticulesJauge/0051" x="2" y="2" width="52" height="106" frameX="-249" frameY="-219" frameWidth="550" frameHeight="400"/>
+</TextureAtlas>
