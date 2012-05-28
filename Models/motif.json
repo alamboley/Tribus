@@ -9,29 +9,29 @@
  "title":"motif guerrier",
  "description": "ça envoi le paté !",
  "image-url": "shop-item-board-2.png",
- "price":{"blue":14,"yellow":60}
+ "price":{"yellow":60}
  },{
  "id":"2",
  "title":"motif guerrier",
  "description": "Attend-toi à une explosion  fnjkdslnjl njnjlnjde puissance ,klnklnjdlfknjhglhflhfjin kqdfj hfjdhjhinfjdkhjhjk lorem ipsbn, jkjhjkhk khk khk",
  "image-url": "shop-item-board-3.png",
- "price":{"blue":14,"yellow":60}
+ "price":{"green":14}
  },{
  "id":"3",
  "title":"motif guerrier",
  "description": "ça envoi le paté !",
  "image-url": "shop-item-board-1.png",
- "price":{"blue":14,"yellow":60}
+ "price":{"blue":14}
  },{
  "id":"4",
  "title":"motif guerrier",
  "description": "ça envoi le paté !",
  "image-url": "shop-item-board-2.png",
- "price":{"blue":14,"yellow":60}
+ "price":{"yellow":60}
  },{
  "id":"5",
  "title":"motif guerrier",
  "description": "ça envoi le paté !",
  "image-url": "shop-item-board-3.png",
- "price":{"blue":14,"yellow":60}
+ "price":{"red":5}
  }]

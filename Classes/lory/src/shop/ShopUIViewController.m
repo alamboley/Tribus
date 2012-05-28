@@ -89,7 +89,15 @@
     [self setProductDetail:nil];
     [super viewDidUnload];
 }
+-(void)viewDidAppear:(BOOL)animated { 
+    [super viewDidAppear:animated];
+    [colorUIViewController viewDidAppear:YES];
+}
 
+-(void)viewDidDisappear:(BOOL)animated { 
+    [super viewDidDisappear:animated];
+    [colorUIViewController viewDidDisappear:YES];
+}
 
 #pragma mark -
 #pragma mark iCarousel methods
@@ -158,12 +166,12 @@
     {
         ShopItemUIController *viewController =[[ShopItemUIController alloc] initWithNibName:@"ShopItemUIController" bundle:nil];
         [currentItem setValue:viewController forKey:@"controller"];
+        viewController.colors = [currentItem objectForKey:@"colors"];
         view = viewController.view;
 
         [viewController.titleLabel setText:[currentItem valueForKey:@"title"]];
         [viewController.descLabel setText:[currentItem valueForKey:@"description"]];
         [viewController.motifImage setImage:[UIImage imageNamed:[currentItem valueForKey:@"path"]]];
-        NSLog(@"%@",[UIImage imageNamed:[currentItem valueForKey:@"path"]]);
         //view = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[currentItem valueForKey:@"path"]]];
         view.layer.doubleSided = NO; //prevent back side of view from showing
     }

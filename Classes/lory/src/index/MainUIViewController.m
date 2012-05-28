@@ -49,7 +49,6 @@
     [super viewDidLoad];
     colorUIViewController = [[ColorUIViewController alloc] initWithNibName:@"ColorUIViewController" bundle:nil andType:big];
     [self.view addSubview:colorUIViewController.view];
-    
     CGFloat x = ([self view].bounds.size.height - [colorUIViewController view].bounds.size.width) / 2;
     CGFloat y = [self view].bounds.size.width  - 50;
     colorUIViewController.view.frame = CGRectMake(x, y, colorUIViewController.view.frame.size.width, colorUIViewController.view.frame.size.height);
@@ -64,6 +63,15 @@
 
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+}
+-(void)viewDidAppear:(BOOL)animated { 
+    [super viewDidAppear:animated];
+    [colorUIViewController viewDidAppear:YES];
+}
+
+-(void)viewDidDisappear:(BOOL)animated { 
+    [super viewDidDisappear:animated];
+    [colorUIViewController viewDidDisappear:YES];
 }
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {

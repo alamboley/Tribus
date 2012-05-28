@@ -34,7 +34,7 @@ static bool inited = NO;
     // on parse la reponse JSON
     NSArray *res = [parser objectWithString:json_string error:nil];
     for (NSDictionary *obj in res){
-
+        
         Color *color = [[Color alloc] initWithId:[obj valueForKey:@"id"] andCode:[obj valueForKey:@"code"] andLabel:[obj valueForKey:@"label"]];
         
         color.order = [obj valueForKey:@"order"];
@@ -72,23 +72,28 @@ static bool inited = NO;
     Color *color = [colorDictionnary valueForKey:colorId];
     int oldValue = color.colorValue.integerValue;
     // 0 security
-    if(oldValue - points >= 0)
-        color.colorValue = [NSNumber numberWithInt:(color.colorValue.integerValue - points)];
-    else
-        color.colorValue = [NSNumber numberWithInt:0];
-    
-    
-    if (oldValue != 0) {
+    if(oldValue - points < 0){
         // DISPATCH l'event addedPoints avec les objets color et points en paramètre
         NSDictionary* dict = [NSDictionary dictionaryWithObjectsAndKeys:
-                              color, @"color", [[NSNumber alloc] initWithInt:points], @"points", nil];
+                              color, @"color", [[NSNumber alloc] initWithInt:abs(points - oldValue)], @"points", nil];
         [[NSNotificationCenter defaultCenter]
-         postNotificationName:@"removedPoints"
+         postNotificationName:@"notEnoughPoints"
          object:nil
          userInfo:dict];
-        
-        [self saveColorId:colorId];
+        return; 
     }
+    
+    color.colorValue = [NSNumber numberWithInt:(color.colorValue.integerValue - points)];
+    
+    // DISPATCH l'event addedPoints avec les objets color et points en paramètre
+    NSDictionary* dict = [NSDictionary dictionaryWithObjectsAndKeys:
+                          color, @"color", [[NSNumber alloc] initWithInt:points], @"points", nil];
+    [[NSNotificationCenter defaultCenter]
+     postNotificationName:@"removedPoints"
+     object:nil
+     userInfo:dict];
+    
+    [self saveColorId:colorId];
 }
 
 + (void) saveColorId:(NSString*) colorId{

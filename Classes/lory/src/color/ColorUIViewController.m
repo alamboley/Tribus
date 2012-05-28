@@ -19,22 +19,19 @@
     if (self) {
         type = sizeType;
     }
-    [[NSNotificationCenter defaultCenter]
-     addObserver:self
-     selector:@selector(changedPointsHandler:)
-     name:@"addedPoints"
-     object:nil ];
-    [[NSNotificationCenter defaultCenter]
-     addObserver:self
-     selector:@selector(changedPointsHandler:)
-     name:@"removedPoints"
-     object:nil ];
     
     [self initializeTextfields];
 
     return self;
 }
-
+-(void)notEnoughPointsHandler: (NSNotification *) notification
+{
+    Color *color = [[notification userInfo] valueForKey:@"color"];
+    NSNumber *points = [[notification userInfo] valueForKey:@"points"];
+    
+    UIAlertView *someError = [[UIAlertView alloc] initWithTitle: @"Achat" message: [NSString stringWithFormat:@"Il te manque : %@ pigments \"%@\" pour acheter ce motif", [points stringValue], color.label] delegate: self cancelButtonTitle: @"Ok" otherButtonTitles: nil];
+    [someError show];
+}
 -(void)changedPointsHandler: (NSNotification *) notification
 {
     bool added = [notification name] == @"addedPoints";
@@ -122,14 +119,6 @@
 
 - (void)viewDidUnload
 {
-    [[NSNotificationCenter defaultCenter]
-     removeObserver:self
-     name:@"addedPoints"
-     object:nil ];
-    [[NSNotificationCenter defaultCenter]
-     removeObserver:self
-     name:@"removedPoints"
-     object:nil ];
     
     [[self textFields] removeAllObjects];
     [self setTextFields:nil];
@@ -140,6 +129,40 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+}
+-(void)viewDidAppear:(BOOL)animated { 
+    [super viewDidAppear:animated];
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self
+     selector:@selector(changedPointsHandler:)
+     name:@"addedPoints"
+     object:nil ];
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self
+     selector:@selector(changedPointsHandler:)
+     name:@"removedPoints"
+     object:nil ];
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self
+     selector:@selector(notEnoughPointsHandler:)
+     name:@"notEnoughPoints"
+     object:nil ];
+}
+
+-(void)viewDidDisappear:(BOOL)animated { 
+    [super viewDidDisappear:animated];
+    [[NSNotificationCenter defaultCenter]
+     removeObserver:self
+     name:@"addedPoints"
+     object:nil ];
+    [[NSNotificationCenter defaultCenter]
+     removeObserver:self
+     name:@"removedPoints"
+     object:nil ];
+    [[NSNotificationCenter defaultCenter]
+     removeObserver:self
+     name:@"notEnoughPoints"
+     object:nil ];
 }
 
 @end
