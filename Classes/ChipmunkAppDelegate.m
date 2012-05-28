@@ -41,7 +41,7 @@ void onUncaughtException(NSException *exception) {
 	// where the exception occured
 	NSSetUncaughtExceptionHandler(&onUncaughtException);
 	
-    Main *game = [[Main alloc] initWithWidth:320 height:480 rotation:YES];        
+    Main *game = [[Main alloc] initWithWidth:320 height:480 rotation:YES];
     sparrowView.stage = game;
     sparrowView.frameRate = SPARROW_FRAMERATE_ACTIVE;
     [sparrowView start];
