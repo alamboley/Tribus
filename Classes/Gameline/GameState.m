@@ -18,10 +18,9 @@
 #import "SBJson.h"
 #import "BusManagement.h"
 #import "CreationRuntime.h"
+#import "ColorManager.h"
 
 @implementation GameState
-
-@synthesize couleurs;
 
 - (id) init {
     
@@ -32,8 +31,6 @@
         worldColor = @"rouge";
         
         gameWidth = 500680;
-        
-        couleurs = [[Couleurs alloc] initWithRouge:130 andBleu:20 andJaune:45 andOrange:12 andVert:8 andViolet:58];
         
         CitrusObject *parallaxe1 = [[CitrusObject alloc] initWithName:@"bg" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"0", @"0", @"0.01", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"parallax:", nil]] andGraphic:[SPImage imageWithContentsOfFile:[worldColor stringByAppendingString:@"_fond.png"]]];
         [self addObject:parallaxe1];
@@ -49,8 +46,8 @@
         Hero *hero = [[Hero alloc] initWithName:@"hero" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"20", @"150", @"40", @"80", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:mc];
         [self addObject:hero];
         
-        /*CitrusObject *firstPlan1 = [[CitrusObject alloc] initWithName:@"firstPlan1" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"0", @"250", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", nil]] andGraphic:[SPImage imageWithContentsOfFile:@"rougeSol1.png"]];
-        [self addObject:firstPlan1];*/
+        CitrusObject *firstPlan1 = [[CitrusObject alloc] initWithName:@"firstPlan1" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"0", @"250", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", nil]] andGraphic:[SPImage imageWithContentsOfFile:@"rougeSol1.png"]];
+        [self addObject:firstPlan1];
         
         [self setupCamera:hero andOffset:CGPointMake(hero.width / 2 - 80, 0) andBounds:CGRectMake(0, 0, gameWidth, 1000) andEasing:CGPointMake(0.25, 0.05)];
         
@@ -73,12 +70,13 @@
     
     if ([notification.name isEqualToString:@"piege"]) {
         
-        [couleurs piegeColor:worldColor];
+        [ColorManager removePoints:-50 forColorId:worldColor];
         
     } else if ([notification.name isEqualToString:@"filtreDissociatif"]) {
         
     } else {
-        [couleurs addColor:notification.name];
+        
+        [ColorManager addPoints:10 forColorId:notification.name];
     }
     
 }

@@ -7,7 +7,6 @@
 //
 
 #import "State.h"
-#import "Couleurs.h"
 
 @interface GameState : State {
     
@@ -15,12 +14,8 @@
     
     SPSprite *graphismEcranSoutenance;
     
-    Couleurs *couleurs;
-    
     NSString *worldColor;
 }
-
-@property (nonatomic) Couleurs *couleurs;
 
 - (void) colorPicked:(NSNotification *) notification;
 

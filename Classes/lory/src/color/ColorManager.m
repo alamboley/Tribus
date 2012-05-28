@@ -64,7 +64,7 @@ static bool inited = NO;
      postNotificationName:@"addedPoints"
      object:self
      userInfo:dict];
-    
+
     [ColorManager saveColorId:colorId];
 }
 

@@ -1,5 +1,5 @@
 [{
- "id":"green",
+ "id":"vert",
  "code":"0x445132",
  "label":"Vert",
  "defaultValue":20,
@@ -11,25 +11,25 @@
  "defaultValue":12,
  "order":5
  },{
- "id":"yellow",
+ "id":"jaune",
  "code":"0x8D5D2E",
  "label":"Jaune",
  "defaultValue":35,
  "order":0
  },{
- "id":"red",
+ "id":"rouge",
  "code":"0x8D5D2E",
  "label":"Rouge",
  "defaultValue":9,
  "order":2
  },{
- "id":"blue",
+ "id":"bleu",
  "code":"0x3B4444",
  "label":"Bleu",
  "defaultValue":1,
  "order":1
  },{
- "id":"purple",
+ "id":"violet",
  "code":"0x582E97",
  "label":"Violet",
  "defaultValue":40,

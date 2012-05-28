@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ColorUIViewController.h"
 
-@interface GameUIViewController : UIViewController
+@interface GameUIViewController : UIViewController {
+    
+    ColorUIViewController *colorUIViewController;
+}
 @property (weak, nonatomic) IBOutlet SPView *sparrowView;
 
 @end

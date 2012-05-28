@@ -34,32 +34,32 @@
     self.itemDatas = [[NSMutableDictionary alloc] init];
     
     [itemDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
-                          [[NSArray alloc] initWithObjects:[[Color alloc] initWithId:@"blue" andCode:@"0x445132" andLabel:@"Verte"], @"ile_verte.png",@"<b>Hilja</b>, l'île dansante",nil] forKeys:
+                          [[NSArray alloc] initWithObjects:[[Color alloc] initWithId:@"vert" andCode:@"0x445132" andLabel:@"Verte"], @"ile_verte.png",@"<b>Hilja</b>, l'île dansante",nil] forKeys:
                           [[NSArray alloc] initWithObjects:@"color", @"path",@"title",nil]]
                   forKey:[items objectAtIndex:0]];
     
     [itemDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
-                          [[NSArray alloc] initWithObjects:[[Color alloc]  initWithId:@"blue" andCode:@"0xA8510C" andLabel:@"Orange"], @"ile_orange.png",@"<b>Oren</b>, l'île dormante",nil] forKeys:
+                          [[NSArray alloc] initWithObjects:[[Color alloc]  initWithId:@"orange" andCode:@"0xA8510C" andLabel:@"Orange"], @"ile_orange.png",@"<b>Oren</b>, l'île dormante",nil] forKeys:
                           [[NSArray alloc] initWithObjects:@"color", @"path",@"title",nil]]
                   forKey:[items objectAtIndex:1]];
     
     [itemDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
-                          [[NSArray alloc] initWithObjects:[[Color alloc]  initWithId:@"blue" andCode:@"0x8D5D2E" andLabel:@"Jaune"], @"ile_jaune.png",@"<b>Isfar</b>, l'île sablonneuse",nil] forKeys:
+                          [[NSArray alloc] initWithObjects:[[Color alloc]  initWithId:@"jaune" andCode:@"0x8D5D2E" andLabel:@"Jaune"], @"ile_jaune.png",@"<b>Isfar</b>, l'île sablonneuse",nil] forKeys:
                           [[NSArray alloc] initWithObjects:@"color", @"path",@"title",nil]]
                   forKey:[items objectAtIndex:2]];
     
     [itemDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
-                          [[NSArray alloc] initWithObjects:[[Color alloc]  initWithId:@"blue" andCode:@"0x8D5D2E" andLabel:@"Rouge"], @"ile_rouge.png",@"<b>Tneera</b>, l'île fumante",nil] forKeys:
+                          [[NSArray alloc] initWithObjects:[[Color alloc]  initWithId:@"rouge" andCode:@"0x8D5D2E" andLabel:@"Rouge"], @"ile_rouge.png",@"<b>Tneera</b>, l'île fumante",nil] forKeys:
                           [[NSArray alloc] initWithObjects:@"color", @"path",@"title",nil]]
                   forKey:[items objectAtIndex:3]];
     
     [itemDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
-                          [[NSArray alloc] initWithObjects:[[Color alloc]  initWithId:@"blue" andCode:@"0x3B4444" andLabel:@"Rouge"], @"ile_bleue.png",@"<b>Pancada</b>, l'île cristaline",nil] forKeys:
+                          [[NSArray alloc] initWithObjects:[[Color alloc]  initWithId:@"bleu" andCode:@"0x3B4444" andLabel:@"Bleu"], @"ile_bleue.png",@"<b>Pancada</b>, l'île cristaline",nil] forKeys:
                           [[NSArray alloc] initWithObjects:@"color", @"path",@"title",nil]]
                   forKey:[items objectAtIndex:4]];
     
     [itemDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
-                          [[NSArray alloc] initWithObjects:[[Color alloc]  initWithId:@"blue" andCode:@"0x582E97" andLabel:@"Rouge"], @"ile_violette.png",@"<b>Bahlû</b>, l'île sombre",nil] forKeys:
+                          [[NSArray alloc] initWithObjects:[[Color alloc]  initWithId:@"violet" andCode:@"0x582E97" andLabel:@"Violet"], @"ile_violette.png",@"<b>Bahlû</b>, l'île sombre",nil] forKeys:
                           [[NSArray alloc] initWithObjects:@"color", @"path",@"title",nil]]
                   forKey:[items objectAtIndex:5]];
 }

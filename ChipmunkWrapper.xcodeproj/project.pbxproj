@@ -359,7 +359,6 @@
 		B002DD2B156C085C003F5C78 /* SXParticleSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = B012E3E515148F8B008B9157 /* SXParticleSystem.m */; };
 		B002DD2C156C085C003F5C78 /* Particle.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EA9A4215175A44002D31CB /* Particle.m */; };
 		B002DD2D156C085C003F5C78 /* Hud.m in Sources */ = {isa = PBXBuildFile; fileRef = B07BA0AD1518760B0047D9C4 /* Hud.m */; };
-		B002DD2E156C085C003F5C78 /* Couleurs.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A2F2CC1518B02C00EBAA2B /* Couleurs.m */; };
 		B002DD2F156C085C003F5C78 /* Piege.m in Sources */ = {isa = PBXBuildFile; fileRef = B073FFF615190A4D00AE2BD7 /* Piege.m */; };
 		B002DD30156C085C003F5C78 /* Sol.m in Sources */ = {isa = PBXBuildFile; fileRef = B0965B06151934C700E20290 /* Sol.m */; };
 		B002DD31156C085C003F5C78 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = B06FF22A1552ACCB00733B84 /* NSObject+SBJson.m */; };
@@ -497,7 +496,6 @@
 		B07BA1511518940B0047D9C4 /* sol@2x.xml in Resources */ = {isa = PBXBuildFile; fileRef = B07BA1431518940B0047D9C4 /* sol@2x.xml */; };
 		B0949A721512761D00BDB1DD /* Sensor.m in Sources */ = {isa = PBXBuildFile; fileRef = B0949A711512761D00BDB1DD /* Sensor.m */; };
 		B0965B07151934C700E20290 /* Sol.m in Sources */ = {isa = PBXBuildFile; fileRef = B0965B06151934C700E20290 /* Sol.m */; };
-		B0A2F2CD1518B02C00EBAA2B /* Couleurs.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A2F2CC1518B02C00EBAA2B /* Couleurs.m */; };
 		B0A64C0E1504FA4C00B2BFBA /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A64C0D1504FA4C00B2BFBA /* Hero.m */; };
 		B0A64C111504FF8900B2BFBA /* Platform.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A64C101504FF8800B2BFBA /* Platform.m */; };
 		B0C1B43914FE247C00E10833 /* CitrusEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C1B42D14FE247C00E10833 /* CitrusEngine.m */; };
@@ -1008,8 +1006,6 @@
 		B0949A711512761D00BDB1DD /* Sensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sensor.m; sourceTree = "<group>"; };
 		B0965B05151934C700E20290 /* Sol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sol.h; sourceTree = "<group>"; };
 		B0965B06151934C700E20290 /* Sol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sol.m; sourceTree = "<group>"; };
-		B0A2F2CB1518B02C00EBAA2B /* Couleurs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Couleurs.h; sourceTree = "<group>"; };
-		B0A2F2CC1518B02C00EBAA2B /* Couleurs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Couleurs.m; sourceTree = "<group>"; };
 		B0A64C0C1504FA4C00B2BFBA /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
 		B0A64C0D1504FA4C00B2BFBA /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
 		B0A64C0F1504FF8800B2BFBA /* Platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Platform.h; sourceTree = "<group>"; };
@@ -1983,8 +1979,6 @@
 				B0EA9A4215175A44002D31CB /* Particle.m */,
 				B07BA0AC1518760B0047D9C4 /* Hud.h */,
 				B07BA0AD1518760B0047D9C4 /* Hud.m */,
-				B0A2F2CB1518B02C00EBAA2B /* Couleurs.h */,
-				B0A2F2CC1518B02C00EBAA2B /* Couleurs.m */,
 				B073FFF515190A4D00AE2BD7 /* Piege.h */,
 				B073FFF615190A4D00AE2BD7 /* Piege.m */,
 				B0965B05151934C700E20290 /* Sol.h */,
@@ -2554,7 +2548,6 @@
 				B012E3E615148F8B008B9157 /* SXParticleSystem.m in Sources */,
 				B0EA9A4315175A44002D31CB /* Particle.m in Sources */,
 				B07BA0AE1518760B0047D9C4 /* Hud.m in Sources */,
-				B0A2F2CD1518B02C00EBAA2B /* Couleurs.m in Sources */,
 				B073FFF715190A4D00AE2BD7 /* Piege.m in Sources */,
 				B0965B07151934C700E20290 /* Sol.m in Sources */,
 				B06FF2421552ACCB00733B84 /* NSObject+SBJson.m in Sources */,
@@ -2689,7 +2682,6 @@
 				B002DD2B156C085C003F5C78 /* SXParticleSystem.m in Sources */,
 				B002DD2C156C085C003F5C78 /* Particle.m in Sources */,
 				B002DD2D156C085C003F5C78 /* Hud.m in Sources */,
-				B002DD2E156C085C003F5C78 /* Couleurs.m in Sources */,
 				B002DD2F156C085C003F5C78 /* Piege.m in Sources */,
 				B002DD30156C085C003F5C78 /* Sol.m in Sources */,
 				B002DD31156C085C003F5C78 /* NSObject+SBJson.m in Sources */,
