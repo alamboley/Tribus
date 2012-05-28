@@ -26,7 +26,7 @@
     
 	if (self = [super init]) {
         
-       //[self showHideDebugDraw];
+        //[self showHideDebugDraw];
         
         worldColor = @"rouge";
         
@@ -70,13 +70,15 @@
     
     if ([notification.name isEqualToString:@"piege"]) {
         
-        [ColorManager removePoints:-50 forColorId:worldColor];
+        [ColorManager removePoints:10 forColorId:worldColor];
         
     } else if ([notification.name isEqualToString:@"filtreDissociatif"]) {
         
+        [ColorManager filterDissociateForColorId:[[notification userInfo] valueForKey:@"colorId"]];
+        
     } else {
         
-        [ColorManager addPoints:10 forColorId:notification.name];
+        [ColorManager addPoints:1 forColorId:notification.name];
     }
     
 }

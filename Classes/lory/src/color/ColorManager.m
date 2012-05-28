@@ -64,11 +64,11 @@ static bool inited = NO;
      postNotificationName:@"addedPoints"
      object:self
      userInfo:dict];
-
+    
     [ColorManager saveColorId:colorId];
 }
 
-+ (void) removePoints:(int) points forColorId:(NSString*) colorId{
++ (BOOL) removePoints:(int) points forColorId:(NSString*) colorId{
     Color *color = [colorDictionnary valueForKey:colorId];
     int oldValue = color.colorValue.integerValue;
     // 0 security
@@ -80,7 +80,7 @@ static bool inited = NO;
          postNotificationName:@"notEnoughPoints"
          object:nil
          userInfo:dict];
-        return; 
+        return NO; 
     }
     
     color.colorValue = [NSNumber numberWithInt:(color.colorValue.integerValue - points)];
@@ -94,6 +94,29 @@ static bool inited = NO;
      userInfo:dict];
     
     [self saveColorId:colorId];
+    
+    return YES;
+}
+
++ (void) filterDissociateForColorId:(NSString*) colorId {
+    
+    int removePoints = 10;
+    int addPoints = 5;
+    
+    NSString *compl1;
+    NSString *compl2;
+    
+    
+    if ([colorId isEqualToString:@"vert"]) {
+        
+        compl1 = @"jaune";
+        compl2 = @"bleu";
+    }
+    
+    if ([ColorManager removePoints:removePoints forColorId:colorId]) {
+        [ColorManager addPoints:addPoints forColorId:compl1];
+        [ColorManager addPoints:addPoints forColorId:compl2];
+    }
 }
 
 + (void) saveColorId:(NSString*) colorId{

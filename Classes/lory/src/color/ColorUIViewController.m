@@ -24,14 +24,7 @@
 
     return self;
 }
--(void)notEnoughPointsHandler: (NSNotification *) notification
-{
-    Color *color = [[notification userInfo] valueForKey:@"color"];
-    NSNumber *points = [[notification userInfo] valueForKey:@"points"];
-    
-    UIAlertView *someError = [[UIAlertView alloc] initWithTitle: @"Achat" message: [NSString stringWithFormat:@"Il te manque : %@ pigments \"%@\" pour acheter ce motif", [points stringValue], color.label] delegate: self cancelButtonTitle: @"Ok" otherButtonTitles: nil];
-    [someError show];
-}
+
 -(void)changedPointsHandler: (NSNotification *) notification
 {
     bool added = [notification name] == @"addedPoints";
@@ -142,11 +135,6 @@
      selector:@selector(changedPointsHandler:)
      name:@"removedPoints"
      object:nil ];
-    [[NSNotificationCenter defaultCenter]
-     addObserver:self
-     selector:@selector(notEnoughPointsHandler:)
-     name:@"notEnoughPoints"
-     object:nil ];
 }
 
 -(void)viewDidDisappear:(BOOL)animated { 
@@ -158,10 +146,6 @@
     [[NSNotificationCenter defaultCenter]
      removeObserver:self
      name:@"removedPoints"
-     object:nil ];
-    [[NSNotificationCenter defaultCenter]
-     removeObserver:self
-     name:@"notEnoughPoints"
      object:nil ];
 }
 

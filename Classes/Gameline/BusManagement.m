@@ -48,7 +48,7 @@
     travelFirstElement = [travelFirstElement objectForKey:@"coords"];
     
     NSDictionary *arretBus = [travel objectAtIndex:indice];
-    
+
     if ([[arretBus objectForKey:@"type"] isEqualToString:@"abribus"]) {
         NSLog(@"%@", @"fin game");
         [self stop];

@@ -65,7 +65,9 @@
     
     ((Hero *)arbiter.shapeA.body.data).animation = @"passage_piege";
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"filtreDissociatif" object:nil];
+    NSDictionary* dict = [NSDictionary dictionaryWithObjectsAndKeys:
+                          color, @"colorId", nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"filtreDissociatif" object:nil userInfo:dict];
     
     return YES;
 }

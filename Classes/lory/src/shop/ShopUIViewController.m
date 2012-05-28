@@ -92,13 +92,31 @@
 -(void)viewDidAppear:(BOOL)animated { 
     [super viewDidAppear:animated];
     [colorUIViewController viewDidAppear:YES];
+    
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self
+     selector:@selector(notEnoughPointsHandler:)
+     name:@"notEnoughPoints"
+     object:nil ];
 }
 
 -(void)viewDidDisappear:(BOOL)animated { 
     [super viewDidDisappear:animated];
     [colorUIViewController viewDidDisappear:YES];
+    
+    [[NSNotificationCenter defaultCenter]
+     removeObserver:self
+     name:@"notEnoughPoints"
+     object:nil ];
 }
-
+-(void)notEnoughPointsHandler: (NSNotification *) notification
+{
+    Color *color = [[notification userInfo] valueForKey:@"color"];
+    NSNumber *points = [[notification userInfo] valueForKey:@"points"];
+    
+    UIAlertView *someError = [[UIAlertView alloc] initWithTitle: @"Achat" message: [NSString stringWithFormat:@"Il te manque : %@ pigments \"%@\" pour acheter ce motif", [points stringValue], color.label] delegate: self cancelButtonTitle: @"Ok" otherButtonTitles: nil];
+    [someError show];
+}
 #pragma mark -
 #pragma mark iCarousel methods
 - (CGFloat)carousel:(iCarousel *)carousel valueForTransformOption:(iCarouselTranformOption)option withDefault:(CGFloat)value
