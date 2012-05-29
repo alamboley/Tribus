@@ -30,7 +30,7 @@
 
 @synthesize delegate = mDelegate;
 @synthesize objects, garbageObjects;
-@synthesize space, ui;
+@synthesize space;
 @synthesize cameraTarget;
 
 - (id) init {
@@ -62,11 +62,6 @@
         /*if (![self disableWindowContainment]) {
          [mSpace addWindowContainmentWithWidth:480 height:320 elasticity:0.0 friction:1.0];
          }*/
-        
-        ui = [[Hud alloc] init];
-        [self.stage addChild:ui];
-        ui.rotation = SP_D2R(90);
-        ui.x = 320;
         
 		debugDraw = [[SPDebugDraw alloc] initWithManager:space];
         [debugDraw setVisible:FALSE];

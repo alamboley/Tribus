@@ -19,6 +19,7 @@
 #import "BusManagement.h"
 #import "CreationRuntime.h"
 #import "ColorManager.h"
+#import "Jauge.h"
 
 @implementation GameState
 
@@ -56,6 +57,11 @@
         
         CreationRuntime *creationRuntime = [[CreationRuntime alloc] initWithWorld:worldColor];
         [creationRuntime start];
+        
+        Jauge *jauge = [[Jauge alloc] initWithColor:@"jaune"];
+        [self addChild:jauge];
+        jauge.x = 350;
+        jauge.y = 100;
         
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(colorPicked:) name:@"jaune" object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(colorPicked:) name:@"rouge" object:nil];

@@ -190,8 +190,6 @@
 		B002DC80156C085C003F5C78 /* particleFondJaune.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EA41A21519D69C0076DAA6 /* particleFondJaune.png */; };
 		B002DC81156C085C003F5C78 /* Tw Cen MT Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B0EA41BD151A34250076DAA6 /* Tw Cen MT Bold.ttf */; };
 		B002DC82156C085C003F5C78 /* Tw Cen MT.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B0EA41BE151A34250076DAA6 /* Tw Cen MT.ttf */; };
-		B002DC83156C085C003F5C78 /* pigments-ingame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EA41C3151A34E50076DAA6 /* pigments-ingame@2x.png */; };
-		B002DC84156C085C003F5C78 /* pigments-ingame.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EA41C5151A34EB0076DAA6 /* pigments-ingame.png */; };
 		B002DC85156C085C003F5C78 /* DonneesAleatoires.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0F2003D1545D05F0030C190 /* DonneesAleatoires.plist */; };
 		B002DC86156C085C003F5C78 /* DonneesBus.json in Resources */ = {isa = PBXBuildFile; fileRef = B06FF2241552A75B00733B84 /* DonneesBus.json */; };
 		B002DC87156C085C003F5C78 /* rouge_fond.png in Resources */ = {isa = PBXBuildFile; fileRef = B03DE0BE156143FA006AAA5B /* rouge_fond.png */; };
@@ -324,7 +322,6 @@
 		B002DD2A156C085C003F5C78 /* SXNSDataExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B012E3E215148F52008B9157 /* SXNSDataExtensions.m */; };
 		B002DD2B156C085C003F5C78 /* SXParticleSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = B012E3E515148F8B008B9157 /* SXParticleSystem.m */; };
 		B002DD2C156C085C003F5C78 /* Particle.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EA9A4215175A44002D31CB /* Particle.m */; };
-		B002DD2D156C085C003F5C78 /* Hud.m in Sources */ = {isa = PBXBuildFile; fileRef = B07BA0AD1518760B0047D9C4 /* Hud.m */; };
 		B002DD2F156C085C003F5C78 /* Piege.m in Sources */ = {isa = PBXBuildFile; fileRef = B073FFF615190A4D00AE2BD7 /* Piege.m */; };
 		B002DD30156C085C003F5C78 /* Sol.m in Sources */ = {isa = PBXBuildFile; fileRef = B0965B06151934C700E20290 /* Sol.m */; };
 		B002DD31156C085C003F5C78 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = B06FF22A1552ACCB00733B84 /* NSObject+SBJson.m */; };
@@ -423,7 +420,6 @@
 		B0702A0F1562958200833D24 /* hero.png in Resources */ = {isa = PBXBuildFile; fileRef = B0702A0D1562958200833D24 /* hero.png */; };
 		B0702A101562958200833D24 /* hero.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0702A0E1562958200833D24 /* hero.xml */; };
 		B073FFF715190A4D00AE2BD7 /* Piege.m in Sources */ = {isa = PBXBuildFile; fileRef = B073FFF615190A4D00AE2BD7 /* Piege.m */; };
-		B07BA0AE1518760B0047D9C4 /* Hud.m in Sources */ = {isa = PBXBuildFile; fileRef = B07BA0AD1518760B0047D9C4 /* Hud.m */; };
 		B07BA0D415188B380047D9C4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B07BA0D315188B380047D9C4 /* Default.png */; };
 		B07BA0D615188B440047D9C4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B07BA0D515188B440047D9C4 /* Default@2x.png */; };
 		B07BA1301518930B0047D9C4 /* piege.png in Resources */ = {isa = PBXBuildFile; fileRef = B07BA1221518930B0047D9C4 /* piege.png */; };
@@ -509,6 +505,8 @@
 		B0BB61231574AE8D001BB2CB /* buy-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BB61211574AE8D001BB2CB /* buy-btn@2x.png */; };
 		B0BB61251574AE9E001BB2CB /* buy-btn-step-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BB61241574AE9E001BB2CB /* buy-btn-step-2@2x.png */; };
 		B0BB61261574AE9E001BB2CB /* buy-btn-step-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BB61241574AE9E001BB2CB /* buy-btn-step-2@2x.png */; };
+		B0BB61291574B853001BB2CB /* Jauge.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB61281574B853001BB2CB /* Jauge.m */; };
+		B0BB612A1574B853001BB2CB /* Jauge.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB61281574B853001BB2CB /* Jauge.m */; };
 		B0C1B43914FE247C00E10833 /* CitrusEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C1B42D14FE247C00E10833 /* CitrusEngine.m */; };
 		B0C1B43A14FE247C00E10833 /* CitrusObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C1B42F14FE247C00E10833 /* CitrusObject.m */; };
 		B0C1B43C14FE247C00E10833 /* PhysicsObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C1B43414FE247C00E10833 /* PhysicsObject.m */; };
@@ -521,8 +519,6 @@
 		B0EA41A31519D69C0076DAA6 /* particleFondJaune.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EA41A21519D69C0076DAA6 /* particleFondJaune.png */; };
 		B0EA41BF151A34250076DAA6 /* Tw Cen MT Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B0EA41BD151A34250076DAA6 /* Tw Cen MT Bold.ttf */; };
 		B0EA41C0151A34250076DAA6 /* Tw Cen MT.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B0EA41BE151A34250076DAA6 /* Tw Cen MT.ttf */; };
-		B0EA41C4151A34E60076DAA6 /* pigments-ingame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EA41C3151A34E50076DAA6 /* pigments-ingame@2x.png */; };
-		B0EA41C6151A34ED0076DAA6 /* pigments-ingame.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EA41C5151A34EB0076DAA6 /* pigments-ingame.png */; };
 		B0EA9A3915174966002D31CB /* jauneParticle.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EA9A3815174966002D31CB /* jauneParticle.png */; };
 		B0EA9A3F1517568D002D31CB /* jauneParticle.pex in Resources */ = {isa = PBXBuildFile; fileRef = B0EA9A3E1517568D002D31CB /* jauneParticle.pex */; };
 		B0EA9A4315175A44002D31CB /* Particle.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EA9A4215175A44002D31CB /* Particle.m */; };
@@ -962,8 +958,6 @@
 		B0702A0E1562958200833D24 /* hero.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = hero.xml; sourceTree = "<group>"; };
 		B073FFF515190A4D00AE2BD7 /* Piege.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Piege.h; sourceTree = "<group>"; };
 		B073FFF615190A4D00AE2BD7 /* Piege.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Piege.m; sourceTree = "<group>"; };
-		B07BA0AC1518760B0047D9C4 /* Hud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hud.h; sourceTree = "<group>"; };
-		B07BA0AD1518760B0047D9C4 /* Hud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hud.m; sourceTree = "<group>"; };
 		B07BA0D315188B380047D9C4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		B07BA0D515188B440047D9C4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		B07BA1221518930B0047D9C4 /* piege.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = piege.png; sourceTree = "<group>"; };
@@ -1043,6 +1037,8 @@
 		B0BB611C1574ACA3001BB2CB /* pouvoirs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pouvoirs.json; sourceTree = "<group>"; };
 		B0BB61211574AE8D001BB2CB /* buy-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buy-btn@2x.png"; sourceTree = "<group>"; };
 		B0BB61241574AE9E001BB2CB /* buy-btn-step-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buy-btn-step-2@2x.png"; sourceTree = "<group>"; };
+		B0BB61271574B853001BB2CB /* Jauge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jauge.h; sourceTree = "<group>"; };
+		B0BB61281574B853001BB2CB /* Jauge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jauge.m; sourceTree = "<group>"; };
 		B0C1B42C14FE247C00E10833 /* CitrusEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitrusEngine.h; sourceTree = "<group>"; };
 		B0C1B42D14FE247C00E10833 /* CitrusEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitrusEngine.m; sourceTree = "<group>"; };
 		B0C1B42E14FE247C00E10833 /* CitrusObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitrusObject.h; sourceTree = "<group>"; };
@@ -1061,8 +1057,6 @@
 		B0EA41A21519D69C0076DAA6 /* particleFondJaune.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particleFondJaune.png; sourceTree = "<group>"; };
 		B0EA41BD151A34250076DAA6 /* Tw Cen MT Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tw Cen MT Bold.ttf"; sourceTree = "<group>"; };
 		B0EA41BE151A34250076DAA6 /* Tw Cen MT.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tw Cen MT.ttf"; sourceTree = "<group>"; };
-		B0EA41C3151A34E50076DAA6 /* pigments-ingame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pigments-ingame@2x.png"; sourceTree = "<group>"; };
-		B0EA41C5151A34EB0076DAA6 /* pigments-ingame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pigments-ingame.png"; sourceTree = "<group>"; };
 		B0EA9A3815174966002D31CB /* jauneParticle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jauneParticle.png; sourceTree = "<group>"; };
 		B0EA9A3E1517568D002D31CB /* jauneParticle.pex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jauneParticle.pex; sourceTree = "<group>"; };
 		B0EA9A4115175A44002D31CB /* Particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Particle.h; sourceTree = "<group>"; };
@@ -1756,7 +1750,6 @@
 			children = (
 				B044812E1563E1B7005BC009 /* animations */,
 				B07BA1221518930B0047D9C4 /* piege.png */,
-				B0EA41C5151A34EB0076DAA6 /* pigments-ingame.png */,
 				B07BA1231518930B0047D9C4 /* portail_bleu.png */,
 				B07BA1241518930B0047D9C4 /* portail_vert.png */,
 				B07BA1251518930B0047D9C4 /* sol.png */,
@@ -1787,7 +1780,6 @@
 			children = (
 				B044812D1563E185005BC009 /* animations */,
 				B07BA13F1518940B0047D9C4 /* piege@2x.png */,
-				B0EA41C3151A34E50076DAA6 /* pigments-ingame@2x.png */,
 				B07BA1401518940B0047D9C4 /* portail_bleu@2x.png */,
 				B07BA1411518940B0047D9C4 /* portail_vert@2x.png */,
 				B07BA1421518940B0047D9C4 /* sol@2x.png */,
@@ -2038,8 +2030,6 @@
 				B0C1B44614FE248F00E10833 /* Main.m */,
 				B0EA9A4115175A44002D31CB /* Particle.h */,
 				B0EA9A4215175A44002D31CB /* Particle.m */,
-				B07BA0AC1518760B0047D9C4 /* Hud.h */,
-				B07BA0AD1518760B0047D9C4 /* Hud.m */,
 				B073FFF515190A4D00AE2BD7 /* Piege.h */,
 				B073FFF615190A4D00AE2BD7 /* Piege.m */,
 				B0965B05151934C700E20290 /* Sol.h */,
@@ -2054,6 +2044,8 @@
 				B054E6111557D54600E84D8F /* CreationRuntime.m */,
 				B04481371563EDEE005BC009 /* FiltreDissociatif.h */,
 				B04481381563EDEF005BC009 /* FiltreDissociatif.m */,
+				B0BB61271574B853001BB2CB /* Jauge.h */,
+				B0BB61281574B853001BB2CB /* Jauge.m */,
 			);
 			path = Gameline;
 			sourceTree = "<group>";
@@ -2260,8 +2252,6 @@
 				B0EA41A31519D69C0076DAA6 /* particleFondJaune.png in Resources */,
 				B0EA41BF151A34250076DAA6 /* Tw Cen MT Bold.ttf in Resources */,
 				B0EA41C0151A34250076DAA6 /* Tw Cen MT.ttf in Resources */,
-				B0EA41C4151A34E60076DAA6 /* pigments-ingame@2x.png in Resources */,
-				B0EA41C6151A34ED0076DAA6 /* pigments-ingame.png in Resources */,
 				B0F2003E1545D05F0030C190 /* DonneesAleatoires.plist in Resources */,
 				B06FF2251552A75C00733B84 /* DonneesBus.json in Resources */,
 				B03DE0C4156143FA006AAA5B /* rouge_fond.png in Resources */,
@@ -2397,8 +2387,6 @@
 				B002DC80156C085C003F5C78 /* particleFondJaune.png in Resources */,
 				B002DC81156C085C003F5C78 /* Tw Cen MT Bold.ttf in Resources */,
 				B002DC82156C085C003F5C78 /* Tw Cen MT.ttf in Resources */,
-				B002DC83156C085C003F5C78 /* pigments-ingame@2x.png in Resources */,
-				B002DC84156C085C003F5C78 /* pigments-ingame.png in Resources */,
 				B002DC85156C085C003F5C78 /* DonneesAleatoires.plist in Resources */,
 				B002DC86156C085C003F5C78 /* DonneesBus.json in Resources */,
 				B002DC87156C085C003F5C78 /* rouge_fond.png in Resources */,
@@ -2622,7 +2610,6 @@
 				B012E3E315148F52008B9157 /* SXNSDataExtensions.m in Sources */,
 				B012E3E615148F8B008B9157 /* SXParticleSystem.m in Sources */,
 				B0EA9A4315175A44002D31CB /* Particle.m in Sources */,
-				B07BA0AE1518760B0047D9C4 /* Hud.m in Sources */,
 				B073FFF715190A4D00AE2BD7 /* Piege.m in Sources */,
 				B0965B07151934C700E20290 /* Sol.m in Sources */,
 				B06FF2421552ACCB00733B84 /* NSObject+SBJson.m in Sources */,
@@ -2669,6 +2656,7 @@
 				B0BB61151574AC14001BB2CB /* TriboardUIViewController.m in Sources */,
 				B0BB61171574AC14001BB2CB /* TribuUIViewController.m in Sources */,
 				B0BB61191574AC14001BB2CB /* USave.m in Sources */,
+				B0BB61291574B853001BB2CB /* Jauge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2758,7 +2746,6 @@
 				B002DD2A156C085C003F5C78 /* SXNSDataExtensions.m in Sources */,
 				B002DD2B156C085C003F5C78 /* SXParticleSystem.m in Sources */,
 				B002DD2C156C085C003F5C78 /* Particle.m in Sources */,
-				B002DD2D156C085C003F5C78 /* Hud.m in Sources */,
 				B002DD2F156C085C003F5C78 /* Piege.m in Sources */,
 				B002DD30156C085C003F5C78 /* Sol.m in Sources */,
 				B002DD31156C085C003F5C78 /* NSObject+SBJson.m in Sources */,
@@ -2804,6 +2791,7 @@
 				B0BB61161574AC14001BB2CB /* TriboardUIViewController.m in Sources */,
 				B0BB61181574AC14001BB2CB /* TribuUIViewController.m in Sources */,
 				B0BB611A1574AC14001BB2CB /* USave.m in Sources */,
+				B0BB612A1574B853001BB2CB /* Jauge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
