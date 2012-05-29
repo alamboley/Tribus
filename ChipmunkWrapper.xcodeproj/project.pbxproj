@@ -554,6 +554,8 @@
 		B0ED549015743201008E0B05 /* jauneParticulesJauge.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0ED548815743201008E0B05 /* jauneParticulesJauge.xml */; };
 		B0ED549215743225008E0B05 /* jauneFondJauge.png in Resources */ = {isa = PBXBuildFile; fileRef = B0ED549115743225008E0B05 /* jauneFondJauge.png */; };
 		B0ED549315743225008E0B05 /* jauneFondJauge.png in Resources */ = {isa = PBXBuildFile; fileRef = B0ED549115743225008E0B05 /* jauneFondJauge.png */; };
+		B0EDC0C8157590DE00F6A823 /* TaedioFumee.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EDC0C7157590DE00F6A823 /* TaedioFumee.m */; };
+		B0EDC0C9157590DE00F6A823 /* TaedioFumee.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EDC0C7157590DE00F6A823 /* TaedioFumee.m */; };
 		B0EEB08A15061547009AD303 /* flash.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EEB08915061547009AD303 /* flash.png */; };
 		B0EEB08D150617ED009AD303 /* Hero.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EEB08B150617ED009AD303 /* Hero.png */; };
 		B0EEB08E150617ED009AD303 /* Hero.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0EEB08C150617ED009AD303 /* Hero.xml */; };
@@ -1109,6 +1111,8 @@
 		B0ED548715743201008E0B05 /* jauneParticulesJauge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jauneParticulesJauge.png; sourceTree = "<group>"; };
 		B0ED548815743201008E0B05 /* jauneParticulesJauge.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = jauneParticulesJauge.xml; sourceTree = "<group>"; };
 		B0ED549115743225008E0B05 /* jauneFondJauge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jauneFondJauge.png; sourceTree = "<group>"; };
+		B0EDC0C6157590DE00F6A823 /* TaedioFumee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaedioFumee.h; sourceTree = "<group>"; };
+		B0EDC0C7157590DE00F6A823 /* TaedioFumee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaedioFumee.m; sourceTree = "<group>"; };
 		B0EEB08915061547009AD303 /* flash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flash.png; sourceTree = "<group>"; };
 		B0EEB08B150617ED009AD303 /* Hero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hero.png; sourceTree = "<group>"; };
 		B0EEB08C150617ED009AD303 /* Hero.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Hero.xml; sourceTree = "<group>"; };
@@ -2101,6 +2105,8 @@
 				B04481381563EDEF005BC009 /* FiltreDissociatif.m */,
 				B0BB61271574B853001BB2CB /* Jauge.h */,
 				B0BB61281574B853001BB2CB /* Jauge.m */,
+				B0EDC0C6157590DE00F6A823 /* TaedioFumee.h */,
+				B0EDC0C7157590DE00F6A823 /* TaedioFumee.m */,
 			);
 			path = Gameline;
 			sourceTree = "<group>";
@@ -2743,6 +2749,7 @@
 				B0BB61291574B853001BB2CB /* Jauge.m in Sources */,
 				C8011547157584F400F279CC /* UIButtonCustomFontKohicle25.m in Sources */,
 				C801154B1575873A00F279CC /* UIButtonCustomFontTwCenMT.m in Sources */,
+				B0EDC0C8157590DE00F6A823 /* TaedioFumee.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2880,6 +2887,7 @@
 				B0BB612A1574B853001BB2CB /* Jauge.m in Sources */,
 				C8011548157584F400F279CC /* UIButtonCustomFontKohicle25.m in Sources */,
 				C801154C1575873A00F279CC /* UIButtonCustomFontTwCenMT.m in Sources */,
+				B0EDC0C9157590DE00F6A823 /* TaedioFumee.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
