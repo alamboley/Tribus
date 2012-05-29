@@ -103,7 +103,7 @@
         colorsId = key;
         
         NSNumber *value = [colors valueForKey:key];
-        [[self priceImage] setImage:[UIImage imageNamed:[NSString stringWithFormat:@"b_%@.png",key]]];
+        [[self priceImage] setImage:[UIImage imageNamed:[NSString stringWithFormat:@"store_pigment_%@.png",key]]];
         [[self priceLabel] setText:[NSString stringWithFormat:@"%@ x",[value stringValue]]];
     }
     //NSLog(@"%@ : ", colors);

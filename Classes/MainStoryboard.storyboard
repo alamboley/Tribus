@@ -229,12 +229,13 @@
                                     <accessibilityTraits key="traits" none="YES" image="YES" notEnabled="YES"/>
                                 </accessibility>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HXl-RN-i4b">
-                                <rect key="frame" x="46" y="171" width="85" height="37"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="HXl-RN-i4b" customClass="UIButtonCustomFontTwCenMT">
+                                <rect key="frame" x="25" y="132" width="150" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="triboard">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <inset key="contentEdgeInsets" minX="-6" minY="0.0" maxX="0.0" maxY="-4"/>
+                                <state key="normal" title="TRIBOARD" backgroundImage="main-button-big-normal.png">
+                                    <color key="titleColor" red="0.22745098039215686" green="0.12549019607843137" blue="0.035294117647058823" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -244,12 +245,13 @@
                                     <segue destination="3b7-YK-AVH" kind="push" id="mJ8-PQ-fF7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xmc-T3-pKJ">
-                                <rect key="frame" x="195" y="171" width="90" height="37"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xmc-T3-pKJ" customClass="UIButtonCustomFontTwCenMT">
+                                <rect key="frame" x="172" y="132" width="150" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="missions">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <inset key="contentEdgeInsets" minX="-6" minY="0.0" maxX="0.0" maxY="-4"/>
+                                <state key="normal" title="MISSIONS" backgroundImage="main-button-big-normal.png">
+                                    <color key="titleColor" red="0.2274509804" green="0.12549019610000001" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -259,12 +261,13 @@
                                     <segue destination="Ipr-IN-cRL" kind="push" id="hgu-RU-RZs"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cGl-mf-K3G">
-                                <rect key="frame" x="341" y="171" width="89" height="37"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cGl-mf-K3G" customClass="UIButtonCustomFontTwCenMT">
+                                <rect key="frame" x="320" y="132" width="150" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="échoppe">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <inset key="contentEdgeInsets" minX="-6" minY="0.0" maxX="0.0" maxY="-4"/>
+                                <state key="normal" title="SHOP" backgroundImage="main-button-big-normal.png">
+                                    <color key="titleColor" red="0.2274509804" green="0.12549019610000001" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -274,12 +277,12 @@
                                     <segue destination="vQD-VQ-q2c" kind="push" id="fRv-e8-gsx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="I1L-rL-D8j">
-                                <rect key="frame" x="20" y="263" width="89" height="37"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="I1L-rL-D8j" customClass="UIButtonCustomFontKohicle25">
+                                <rect key="frame" x="29" y="273" width="89" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <state key="normal" title="tribu">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -305,7 +308,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mAI-jZ-bGg">
-                                <rect key="frame" x="377" y="263" width="76" height="37"/>
+                                <rect key="frame" x="230" y="243" width="76" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="îles">
@@ -332,6 +335,21 @@
                                 </state>
                                 <connections>
                                     <segue destination="eX8-49-Z58" kind="push" id="j9D-qY-XSJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="i6u-zV-zfB">
+                                <rect key="frame" x="399" y="278" width="81" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Options">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YgA-Ma-fwJ" kind="modal" modalTransitionStyle="crossDissolve" id="wKq-r3-kUW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -367,7 +385,22 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="568" y="167.5"/>
+            <point key="canvasLocation" x="238" y="173.5"/>
+        </scene>
+        <!--GenericUI View Controller-->
+        <scene sceneID="PMz-zN-O98">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cMl-hL-pz2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="YgA-Ma-fwJ" customClass="GenericUIViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YV0-r6-xT0">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="742" y="174"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gUZ-yC-Rvq">
@@ -426,6 +459,7 @@
                     <connections>
                         <segue destination="qch-cS-jYk" kind="relationship" relationship="viewControllers" id="aRp-lC-1uO"/>
                         <segue destination="PpJ-tL-cPg" kind="relationship" relationship="viewControllers" id="Acv-4c-CAW"/>
+                        <segue destination="d4G-fU-I9z" kind="relationship" relationship="viewControllers" id="hjT-Ql-8Cq"/>
                     </connections>
                 </tabBarController>
             </objects>
@@ -466,11 +500,47 @@
             </objects>
             <point key="canvasLocation" x="2096" y="-825"/>
         </scene>
+        <!--ShopUI View Controller - coupons-->
+        <scene sceneID="aY9-SM-vQL">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fxl-oo-W6X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController title="coupons" id="d4G-fU-I9z" customClass="ShopUIViewController" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="eRd-2h-y47">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="271"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="fond2@2x.png" id="Bv7-0z-DhF">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="FSo-Bb-mPg" customClass="iCarousel">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="d4G-fU-I9z" id="j5c-Wn-SMj"/>
+                                    <outlet property="delegate" destination="d4G-fU-I9z" id="y1i-yL-BhN"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="YkG-SM-CiH"/>
+                    <navigationItem key="navigationItem" id="x9N-ty-z3N"/>
+                    <connections>
+                        <outlet property="icarousel" destination="FSo-Bb-mPg" id="Bhs-jI-sqJ"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2096" y="-1243"/>
+        </scene>
     </scenes>
     <resources>
         <image name="fond2@2x.png" width="960" height="640"/>
         <image name="fond3@2x.png" width="960" height="640"/>
         <image name="main-bg@2x.jpg" width="960" height="640"/>
+        <image name="main-button-big-normal.png" width="150" height="56"/>
         <image name="triboard-customization@2x.png" width="71" height="310"/>
         <image name="tribus-bg@2x.png" width="954" height="401"/>
     </resources>
@@ -526,6 +596,12 @@
         </class>
         <class className="TribuUIViewController" superclassName="GenericUIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TribuUIViewController.h"/>
+        </class>
+        <class className="UIButtonCustomFontKohicle25" superclassName="UIButton">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIButtonCustomFontKohicle25.h"/>
+        </class>
+        <class className="UIButtonCustomFontTwCenMT" superclassName="UIButton">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIButtonCustomFontTwCenMT.h"/>
         </class>
         <class className="iCarousel" superclassName="UIView">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/iCarousel.h"/>

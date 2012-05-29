@@ -46,6 +46,7 @@
         [aButton setTitle:item.title forState:UIControlStateNormal];
         [aButton setTag:i];
         [aButton addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
+        [aButton setContentEdgeInsets:UIEdgeInsetsMake(4, -4, 0, 0)];
         [self.view addSubview:aButton];
         
         

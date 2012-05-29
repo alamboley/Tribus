@@ -35,6 +35,7 @@
 
 - (IBAction)goBackInStack:(id)sender {
     [[self navigationController] popViewControllerAnimated:YES];
+    [self dismissModalViewControllerAnimated:YES];
 }
 /*
 // Implement loadView to create a view hierarchy programmatically, without using a nib.
