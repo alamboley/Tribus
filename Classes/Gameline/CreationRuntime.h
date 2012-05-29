@@ -21,7 +21,8 @@
     CitrusEngine *ce;
     CitrusObject *hero;
     
-    AnimationSequence *animFiltreVert;
+    AnimationSequence *animFiltreVertFront;
+    SPImage *filtreBack;
 }
 
 - (id) initWithWorld:(NSString *) worldColor;

@@ -22,7 +22,9 @@
         ce = [CitrusEngine getInstance];
         world = worldColor;
         
-        animFiltreVert = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"filtreDissociatifVert.xml"] andAnimations:[NSArray arrayWithObjects:@"filtre", nil] andFirstAnimation:@"filtre"];
+        animFiltreVertFront = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"filtreDissociatifVertFront.xml"] andAnimations:[NSArray arrayWithObjects:@"filtre", nil] andFirstAnimation:@"filtre"];
+        
+        filtreBack = [SPImage imageWithContentsOfFile:@"filtreBack.png"];
     }
     
     return self;
@@ -75,7 +77,10 @@
         
     } else {
         
-        FiltreDissociatif *filtreVert = [[FiltreDissociatif alloc] initWithName:@"filtreVert" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"40", @"80", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:animFiltreVert andColor:@"vert"];
+        GraphismTmp *filtrefake = [[GraphismTmp alloc] initWithName:@"filtreVert" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX - 235], [NSString stringWithFormat:@"%f", positionY - 180], @"40", @"80", @"0", @"1", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", @"group:", @"parallax:", nil]] andGraphic:filtreBack];
+        [ce.state addObject:filtrefake];
+        
+        FiltreDissociatif *filtreVert = [[FiltreDissociatif alloc] initWithName:@"filtreVert" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"40", @"80", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:animFiltreVertFront andColor:@"vert"];
         [ce.state addObject:filtreVert];
     }
 }
