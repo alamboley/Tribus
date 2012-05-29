@@ -152,7 +152,7 @@
 		B002DBF4156C044F003F5C78 /* color.json in Resources */ = {isa = PBXBuildFile; fileRef = B002DBED156C044F003F5C78 /* color.json */; };
 		B002DBF6156C044F003F5C78 /* CoreDataBase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B002DBEF156C044F003F5C78 /* CoreDataBase.xcdatamodeld */; };
 		B002DBF7156C044F003F5C78 /* mission.json in Resources */ = {isa = PBXBuildFile; fileRef = B002DBF1156C044F003F5C78 /* mission.json */; };
-		B002DBF8156C044F003F5C78 /* motifs.json in Resources */ = {isa = PBXBuildFile; fileRef = B002DBF2156C044F003F5C78 /* motifs.json */; };
+		B002DBF8156C044F003F5C78 /* motif.json in Resources */ = {isa = PBXBuildFile; fileRef = B002DBF2156C044F003F5C78 /* motif.json */; };
 		B002DBF9156C044F003F5C78 /* triboard.json in Resources */ = {isa = PBXBuildFile; fileRef = B002DBF3156C044F003F5C78 /* triboard.json */; };
 		B002DBFB156C0485003F5C78 /* Kohicle25.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B002DBFA156C0485003F5C78 /* Kohicle25.ttf */; };
 		B002DC38156C051B003F5C78 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B002DC37156C051B003F5C78 /* MainStoryboard.storyboard */; };
@@ -272,7 +272,7 @@
 		B002DCB6156C085C003F5C78 /* TriboardItemUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B002DBB7156C041F003F5C78 /* TriboardItemUIViewController.xib */; };
 		B002DCB7156C085C003F5C78 /* color.json in Resources */ = {isa = PBXBuildFile; fileRef = B002DBED156C044F003F5C78 /* color.json */; };
 		B002DCB8156C085C003F5C78 /* mission.json in Resources */ = {isa = PBXBuildFile; fileRef = B002DBF1156C044F003F5C78 /* mission.json */; };
-		B002DCB9156C085C003F5C78 /* motifs.json in Resources */ = {isa = PBXBuildFile; fileRef = B002DBF2156C044F003F5C78 /* motifs.json */; };
+		B002DCB9156C085C003F5C78 /* motif.json in Resources */ = {isa = PBXBuildFile; fileRef = B002DBF2156C044F003F5C78 /* motif.json */; };
 		B002DCBA156C085C003F5C78 /* triboard.json in Resources */ = {isa = PBXBuildFile; fileRef = B002DBF3156C044F003F5C78 /* triboard.json */; };
 		B002DCBB156C085C003F5C78 /* Kohicle25.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B002DBFA156C0485003F5C78 /* Kohicle25.ttf */; };
 		B002DCD9156C085C003F5C78 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B002DC37156C051B003F5C78 /* MainStoryboard.storyboard */; };
@@ -540,8 +540,6 @@
 		B0EEB08E150617ED009AD303 /* Hero.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0EEB08C150617ED009AD303 /* Hero.xml */; };
 		B0EEB09115063D0B009AD303 /* AnimationSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EEB09015063D0B009AD303 /* AnimationSequence.m */; };
 		B0F2003E1545D05F0030C190 /* DonneesAleatoires.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0F2003D1545D05F0030C190 /* DonneesAleatoires.plist */; };
-		C8384EBD157407120039875E /* buy-btn-step-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8384EBC157407120039875E /* buy-btn-step-2@2x.png */; };
-		C8384EBF15741E6A0039875E /* pouvoirs.json in Resources */ = {isa = PBXBuildFile; fileRef = C8384EBE15741E6A0039875E /* pouvoirs.json */; };
 		C8DEB0DB15728D3A00017A64 /* b_bleu.png in Resources */ = {isa = PBXBuildFile; fileRef = C8DEB09D15728D3A00017A64 /* b_bleu.png */; };
 		C8DEB0DC15728D3A00017A64 /* b_jaune.png in Resources */ = {isa = PBXBuildFile; fileRef = C8DEB09E15728D3A00017A64 /* b_jaune.png */; };
 		C8DEB0DD15728D3A00017A64 /* b_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = C8DEB09F15728D3A00017A64 /* b_orange.png */; };
@@ -912,7 +910,7 @@
 		B002DBED156C044F003F5C78 /* color.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = color.json; sourceTree = "<group>"; };
 		B002DBF0156C044F003F5C78 /* CoreDataBase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataBase.xcdatamodel; sourceTree = "<group>"; };
 		B002DBF1156C044F003F5C78 /* mission.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mission.json; sourceTree = "<group>"; };
-		B002DBF2156C044F003F5C78 /* motifs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = motifs.json; sourceTree = "<group>"; };
+		B002DBF2156C044F003F5C78 /* motif.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = motif.json; sourceTree = "<group>"; };
 		B002DBF3156C044F003F5C78 /* triboard.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = triboard.json; sourceTree = "<group>"; };
 		B002DBFA156C0485003F5C78 /* Kohicle25.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kohicle25.ttf; sourceTree = "<group>"; };
 		B002DC37156C051B003F5C78 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
@@ -1072,8 +1070,6 @@
 		B0EEB08F15063D0B009AD303 /* AnimationSequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationSequence.h; sourceTree = "<group>"; };
 		B0EEB09015063D0B009AD303 /* AnimationSequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationSequence.m; sourceTree = "<group>"; };
 		B0F2003D1545D05F0030C190 /* DonneesAleatoires.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DonneesAleatoires.plist; sourceTree = "<group>"; };
-		C8384EBC157407120039875E /* buy-btn-step-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buy-btn-step-2@2x.png"; sourceTree = "<group>"; };
-		C8384EBE15741E6A0039875E /* pouvoirs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pouvoirs.json; sourceTree = "<group>"; };
 		C8DEB09D15728D3A00017A64 /* b_bleu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b_bleu.png; sourceTree = "<group>"; };
 		C8DEB09E15728D3A00017A64 /* b_jaune.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b_jaune.png; sourceTree = "<group>"; };
 		C8DEB09F15728D3A00017A64 /* b_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b_orange.png; sourceTree = "<group>"; };
@@ -1794,12 +1790,11 @@
 		B002DBEB156C044F003F5C78 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B002DBF2156C044F003F5C78 /* motifs.json */,
 				B002DBED156C044F003F5C78 /* color.json */,
 				B002DBEF156C044F003F5C78 /* CoreDataBase.xcdatamodeld */,
 				B002DBF1156C044F003F5C78 /* mission.json */,
+				B002DBF2156C044F003F5C78 /* motif.json */,
 				B002DBF3156C044F003F5C78 /* triboard.json */,
-				C8384EBE15741E6A0039875E /* pouvoirs.json */,
 			);
 			name = Models;
 			path = ../Models;
@@ -1810,7 +1805,6 @@
 			children = (
 				C8DEB09C15728D3A00017A64 /* 1x */,
 				C8DEB0BC15728D3A00017A64 /* b_bleu@2x.png */,
-				C8384EBC157407120039875E /* buy-btn-step-2@2x.png */,
 				C8DEB0BD15728D3A00017A64 /* b_jaune@2x.png */,
 				C8DEB0BE15728D3A00017A64 /* b_orange@2x.png */,
 				C8DEB0BF15728D3A00017A64 /* b_rouge@2x.png */,
@@ -2310,7 +2304,7 @@
 				B002DBE4156C041F003F5C78 /* TriboardItemUIViewController.xib in Resources */,
 				B002DBF4156C044F003F5C78 /* color.json in Resources */,
 				B002DBF7156C044F003F5C78 /* mission.json in Resources */,
-				B002DBF8156C044F003F5C78 /* motifs.json in Resources */,
+				B002DBF8156C044F003F5C78 /* motif.json in Resources */,
 				B002DBF9156C044F003F5C78 /* triboard.json in Resources */,
 				B002DBFB156C0485003F5C78 /* Kohicle25.ttf in Resources */,
 				B002DC38156C051B003F5C78 /* MainStoryboard.storyboard in Resources */,
@@ -2444,7 +2438,7 @@
 				B002DCB6156C085C003F5C78 /* TriboardItemUIViewController.xib in Resources */,
 				B002DCB7156C085C003F5C78 /* color.json in Resources */,
 				B002DCB8156C085C003F5C78 /* mission.json in Resources */,
-				B002DCB9156C085C003F5C78 /* motifs.json in Resources */,
+				B002DCB9156C085C003F5C78 /* motif.json in Resources */,
 				B002DCBA156C085C003F5C78 /* triboard.json in Resources */,
 				B002DCBB156C085C003F5C78 /* Kohicle25.ttf in Resources */,
 				B002DCD9156C085C003F5C78 /* MainStoryboard.storyboard in Resources */,
@@ -2511,7 +2505,6 @@
 				C8DEB11615728D3A00017A64 /* shop-item-board-3@2x.png in Resources */,
 				C8DEB11715728D3A00017A64 /* triboard-customization@2x.png in Resources */,
 				C8DEB11815728D3A00017A64 /* tribus-bg@2x.png in Resources */,
-<<<<<<< HEAD
 				B0ED547B157431CD008E0B05 /* jauneParticulesJauge@2x.png in Resources */,
 				B0ED547D157431CD008E0B05 /* jauneParticulesJauge@2x.xml in Resources */,
 				B0ED547F157431CD008E0B05 /* jauneJauge@2x.xml in Resources */,
@@ -2522,10 +2515,6 @@
 				B0ED548E15743201008E0B05 /* jauneParticulesJauge.png in Resources */,
 				B0ED549015743201008E0B05 /* jauneParticulesJauge.xml in Resources */,
 				B0ED549315743225008E0B05 /* jauneFondJauge.png in Resources */,
-=======
-				C8384EBD157407120039875E /* buy-btn-step-2@2x.png in Resources */,
-				C8384EBF15741E6A0039875E /* pouvoirs.json in Resources */,
->>>>>>> save bought items OK
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

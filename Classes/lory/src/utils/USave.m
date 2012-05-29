@@ -42,7 +42,7 @@
 		{
 			// Obtain the specifier's key value.
 			NSString *keyValue = [item objectForKey:@"Key"];
-
+            
 			// Using the key, return the DefaultValue if specified in the plist.
 			// Note: We won't know the object type until after loading it.
 			id defaultValue = [item objectForKey:@"DefaultValue"];
@@ -69,33 +69,6 @@
 	// with the persistent copy on disk.
 	[standardUserDefaults registerDefaults:preferencesDictionary];
 	[standardUserDefaults synchronize];
-    
-    NSLog(@"RESET APP : %@",[standardUserDefaults valueForKey:@"resetApp"]);
-    if([standardUserDefaults boolForKey:@"resetApp"]){
-        NSString *appDomain = [[NSBundle mainBundle] bundleIdentifier];
-        [[NSUserDefaults standardUserDefaults] removePersistentDomainForName:appDomain];        
-    }
-
 }
 
-+ (void) saveItemId:(NSString*) itemId forType: (NSString*) type{
-    NSUserDefaults *pref = [NSUserDefaults standardUserDefaults];
-    
-    NSMutableDictionary *items;
-    if([pref dictionaryForKey:type] == nil) items = [[NSMutableDictionary alloc] initWithObjectsAndKeys:[NSNumber numberWithBool:YES], itemId, nil];
-    else items = [[NSMutableDictionary alloc] initWithDictionary:[pref dictionaryForKey:type]];
-    
-    [items setValue:[NSNumber numberWithBool:YES] forKey:itemId];
-    
-    [pref setValue:items forKey:type];            
-    [pref synchronize];
-}
-+ (NSDictionary*)getItemIdsforType:(NSString*) type{
-    NSUserDefaults *pref = [NSUserDefaults standardUserDefaults];
-    
-    NSDictionary *items;
-    if([pref dictionaryForKey:type] == nil) items = [[NSDictionary alloc] init];
-    else items = [[NSDictionary alloc] initWithDictionary:[pref dictionaryForKey:type]];
-    return items;
-}
 @end

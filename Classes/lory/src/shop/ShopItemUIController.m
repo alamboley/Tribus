@@ -8,20 +8,16 @@
 
 #import "ShopItemUIController.h"
 #import "ColorManager.h"
-#import "USave.h"
 
 @implementation ShopItemUIController
 @synthesize priceLabel;
 @synthesize priceImage;
-@synthesize step1UIView;
-@synthesize step2UIView;
-@synthesize step3UIView;
 @synthesize titleLabel;
 @synthesize imageView;
 @synthesize descLabel;
 @synthesize motifImage;
 @synthesize buyButton;
-@synthesize colors,colorsId,itemId,bought;
+@synthesize colors,colorsId;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -41,41 +37,16 @@
 }
 
 - (IBAction)buyAction:(id)sender {
-    [self switchStep:step];
-}
-- (void) switchStep:(int)theStep{
-    switch (theStep) {
-        case 0:
-            [step2UIView setHidden:YES];
-            [step3UIView setHidden:YES];
-            step++;
-            break;
-        case 1:
-            [step1UIView setHidden:YES];
-            [step2UIView setHidden:NO];
-            step++;
-            break;
-        case 2:
-            if([ColorManager removePoints:[priceLabel.text intValue] forColorId:colorsId]){
-                [step2UIView setHidden:YES];
-                [step3UIView setHidden:NO];
-                [USave saveItemId:itemId forType:self.title];
-                step++;
-            }
-            else {
-                step = 1;
-                [step2UIView setHidden:YES];
-                [step1UIView setHidden:NO];
-            }
-            break;
-        case 3:
-            [step1UIView setHidden:YES];
-            [step2UIView setHidden:YES];
-            [step3UIView setHidden:NO];
-            break;
-            
-        default:
-            break;
+    if(clicked){
+        NSLog(@"bought");
+        [ColorManager removePoints:[priceLabel.text intValue] forColorId:colorsId];
+        clicked = NO;        
+    }
+    else{
+        [[self priceImage] setHidden:NO];
+        [[self priceLabel] setHidden:NO];
+        [[self buyButton] setTitle:@"" forState:UIControlStateNormal];
+        clicked = YES;
     }
 }
 
@@ -87,24 +58,14 @@
     [titleLabel setFont:[UIFont fontWithName:@"Kohicle25" size:35]];
     [descLabel setFont:[UIFont fontWithName:@"TwCenMT-Regular" size:15]];
     [buyButton.titleLabel setFont:[UIFont fontWithName:@"TwCenMT-Regular" size:13]];
-
-    if([bought boolValue]){
-        step = 3;
-        [self switchStep:step];
-        NSLog(@"bought : %@", bought);
-    }
-    else {
-        step = 0;
-        [self switchStep:step];      
-    }
-
+    clicked = NO;
+    [[self priceImage] setHidden:YES];
+    [[self priceLabel] setHidden:YES];
     for (id key in colors)
     {
         colorsId = key;
-        
         NSNumber *value = [colors valueForKey:key];
-        [[self priceImage] setImage:[UIImage imageNamed:[NSString stringWithFormat:@"b_%@.png",key]]];
-        [[self priceLabel] setText:[NSString stringWithFormat:@"%@ x",[value stringValue]]];
+        [[self priceLabel] setText:[[value stringValue] stringByAppendingString:key]];
     }
     //NSLog(@"%@ : ", colors);
     [priceLabel setFont:[UIFont fontWithName:@"TwCenMT-Regular" size:15]];
@@ -120,9 +81,6 @@
     [self setBuyButton:nil];
     [self setPriceLabel:nil];
     [self setPriceImage:nil];
-    [self setStep1UIView:nil];
-    [self setStep2UIView:nil];
-    [self setStep3UIView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

@@ -10,7 +10,6 @@
 #import "SBJson.h"
 #import "ShopItemUIController.h"
 #import "ColorManager.h"
-#import "USave.h"
 
 @implementation ShopUIViewController
 
@@ -23,7 +22,8 @@
 {
     // Creation du parser
     SBJsonParser *parser = [[SBJsonParser alloc] init];
-    NSString *jsonPath = [[NSBundle mainBundle] pathForResource:self.title ofType:@"json"];
+    
+    NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"motif" ofType:@"json"];
     NSData *jsonData = [NSData dataWithContentsOfFile:jsonPath];
     
     // On récupère le JSON en NSString depuis la réponse
@@ -48,11 +48,10 @@
             //NSLog(@"%@ : %@", key, value);
         }
         [itemDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
-         [[NSArray alloc] initWithObjects:[obj objectForKey:@"id"],[obj objectForKey:@"title"], [obj objectForKey:@"description"],[obj objectForKey:@"image-url"],[obj objectForKey:@"price"],nil] forKeys:
-         [[NSArray alloc] initWithObjects:@"id", @"title", @"description",@"path",@"colors",nil]]
+         [[NSArray alloc] initWithObjects:[obj objectForKey:@"title"], [obj objectForKey:@"description"],[obj objectForKey:@"image-url"],[obj objectForKey:@"price"],nil] forKeys:
+         [[NSArray alloc] initWithObjects:@"title", @"description",@"path",@"colors",nil]]
          forKey:[obj objectForKey:@"id"]];
     }
-
 }
 
 #pragma mark -
@@ -64,8 +63,6 @@
     
     //configure carousel
     icarousel.type = iCarouselTypeRotary;
-    icarousel.bounceDistance = 0.5;
-
     
     colorUIViewController = [[ColorUIViewController alloc] initWithNibName:@"ColorUIViewController" bundle:nil andType:big];
     [self.view addSubview:colorUIViewController.view];
@@ -117,7 +114,7 @@
     Color *color = [[notification userInfo] valueForKey:@"color"];
     NSNumber *points = [[notification userInfo] valueForKey:@"points"];
     
-    UIAlertView *someError = [[UIAlertView alloc] initWithTitle: @"Achat" message: [NSString stringWithFormat:@"Il te manque : %@ pigments \"%@\" pour l'acheter", [points stringValue], color.label] delegate: self cancelButtonTitle: @"Ok" otherButtonTitles: nil];
+    UIAlertView *someError = [[UIAlertView alloc] initWithTitle: @"Achat" message: [NSString stringWithFormat:@"Il te manque : %@ pigments \"%@\" pour acheter ce motif", [points stringValue], color.label] delegate: self cancelButtonTitle: @"Ok" otherButtonTitles: nil];
     [someError show];
 }
 #pragma mark -
@@ -140,9 +137,7 @@
         }
     }
 }
-- (BOOL)carouselShouldWrap:(iCarousel *)carousel{
-    return NO;
-}
+
 - (void)carouselWillBeginScrollingAnimation:(iCarousel *)carousel{
     
     //[productDetail removeFromSuperview];
@@ -184,25 +179,17 @@
 - (UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSUInteger)index reusingView:(UIView *)view
 {    
     NSMutableDictionary *currentItem = [itemDatas objectForKey:[NSString stringWithFormat:@"%d", index]];
-    
     //create new view if no view is available for recycling
     if (view == nil)
     {
         ShopItemUIController *viewController =[[ShopItemUIController alloc] initWithNibName:@"ShopItemUIController" bundle:nil];
         [currentItem setValue:viewController forKey:@"controller"];
         viewController.colors = [currentItem objectForKey:@"colors"];
-        viewController.itemId = [currentItem valueForKey:@"id"];
-        viewController.bought = [[USave getItemIdsforType:self.title] valueForKey:viewController.itemId];
-        
         view = viewController.view;
 
         [viewController.titleLabel setText:[currentItem valueForKey:@"title"]];
         [viewController.descLabel setText:[currentItem valueForKey:@"description"]];
         [viewController.motifImage setImage:[UIImage imageNamed:[currentItem valueForKey:@"path"]]];
-        viewController.title = self.title;
-
-        //NSLog(@"Items for page : %@ %@", self.title,[USave getItemIdsforType:self.title]);
-        
         //view = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[currentItem valueForKey:@"path"]]];
         view.layer.doubleSided = NO; //prevent back side of view from showing
     }
