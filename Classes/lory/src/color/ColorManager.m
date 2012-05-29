@@ -39,7 +39,7 @@ static bool inited = NO;
         
         color.order = [obj valueForKey:@"order"];
         
-        if([pref boolForKey:@"resetApp"] || [pref valueForKey:color.colorId] == nil){
+        if([pref valueForKey:color.colorId] == nil){
             [pref setValue:[obj valueForKey:@"defaultValue"] forKey:color.colorId];            
             [pref synchronize];
         }

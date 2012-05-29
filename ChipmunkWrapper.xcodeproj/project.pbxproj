@@ -122,37 +122,9 @@
 		A1FC3D601312D37300C7D1E1 /* Sensor.png in Resources */ = {isa = PBXBuildFile; fileRef = A1FC3D5F1312D37300C7D1E1 /* Sensor.png */; };
 		A1FC3D631312D3C000C7D1E1 /* Planet.png in Resources */ = {isa = PBXBuildFile; fileRef = A1FC3D621312D3C000C7D1E1 /* Planet.png */; };
 		A1FC3D9E1312D4AC00C7D1E1 /* FollowPath.png in Resources */ = {isa = PBXBuildFile; fileRef = A1FC3D9D1312D4AC00C7D1E1 /* FollowPath.png */; };
-		B002DBC0156C041F003F5C78 /* NMCustomLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DB69156C041F003F5C78 /* NMCustomLabel.m */; };
-		B002DBC1156C041F003F5C78 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DB6C156C041F003F5C78 /* iCarousel.m */; };
-		B002DBCE156C041F003F5C78 /* Color.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DB8A156C041F003F5C78 /* Color.m */; };
-		B002DBCF156C041F003F5C78 /* ColorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DB8C156C041F003F5C78 /* ColorManager.m */; };
-		B002DBD0156C041F003F5C78 /* ColorUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DB8E156C041F003F5C78 /* ColorUIViewController.m */; };
-		B002DBD1156C041F003F5C78 /* ColorUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B002DB8F156C041F003F5C78 /* ColorUIViewController.xib */; };
-		B002DBD2156C041F003F5C78 /* GenericUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DB91156C041F003F5C78 /* GenericUIViewController.m */; };
-		B002DBD3156C041F003F5C78 /* MainUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DB94156C041F003F5C78 /* MainUIViewController.m */; };
-		B002DBD5156C041F003F5C78 /* IslandUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DB98156C041F003F5C78 /* IslandUIViewController.m */; };
-		B002DBD6156C041F003F5C78 /* MissionItemUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DB9B156C041F003F5C78 /* MissionItemUIViewController.m */; };
-		B002DBD7156C041F003F5C78 /* MissionItemUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B002DB9C156C041F003F5C78 /* MissionItemUIViewController.xib */; };
-		B002DBD8156C041F003F5C78 /* MissionUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DB9E156C041F003F5C78 /* MissionUIViewController.m */; };
-		B002DBD9156C041F003F5C78 /* CustomUITabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DBA1156C041F003F5C78 /* CustomUITabBarController.m */; };
-		B002DBDA156C041F003F5C78 /* FromTopReplaceSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DBA3156C041F003F5C78 /* FromTopReplaceSegue.m */; };
-		B002DBDB156C041F003F5C78 /* NavigationUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DBA5156C041F003F5C78 /* NavigationUIViewController.m */; };
-		B002DBDC156C041F003F5C78 /* NavigationUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B002DBA6156C041F003F5C78 /* NavigationUIViewController.xib */; };
-		B002DBDD156C041F003F5C78 /* UntouchableUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DBA8156C041F003F5C78 /* UntouchableUIView.m */; };
-		B002DBDE156C041F003F5C78 /* ShopItemUIController.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DBAB156C041F003F5C78 /* ShopItemUIController.m */; };
-		B002DBDF156C041F003F5C78 /* ShopItemUIController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B002DBAC156C041F003F5C78 /* ShopItemUIController.xib */; };
-		B002DBE0156C041F003F5C78 /* ShopUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DBAE156C041F003F5C78 /* ShopUIViewController.m */; };
-		B002DBE1156C041F003F5C78 /* TravelUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DBB1156C041F003F5C78 /* TravelUIViewController.m */; };
-		B002DBE2156C041F003F5C78 /* BagUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DBB4156C041F003F5C78 /* BagUIViewController.m */; };
-		B002DBE3156C041F003F5C78 /* TriboardItemUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DBB6156C041F003F5C78 /* TriboardItemUIViewController.m */; };
-		B002DBE4156C041F003F5C78 /* TriboardItemUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B002DBB7156C041F003F5C78 /* TriboardItemUIViewController.xib */; };
-		B002DBE5156C041F003F5C78 /* TriboardUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DBB9156C041F003F5C78 /* TriboardUIViewController.m */; };
-		B002DBE6156C041F003F5C78 /* TribuUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DBBC156C041F003F5C78 /* TribuUIViewController.m */; };
-		B002DBE7156C041F003F5C78 /* USave.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DBBF156C041F003F5C78 /* USave.m */; };
 		B002DBF4156C044F003F5C78 /* color.json in Resources */ = {isa = PBXBuildFile; fileRef = B002DBED156C044F003F5C78 /* color.json */; };
 		B002DBF6156C044F003F5C78 /* CoreDataBase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B002DBEF156C044F003F5C78 /* CoreDataBase.xcdatamodeld */; };
 		B002DBF7156C044F003F5C78 /* mission.json in Resources */ = {isa = PBXBuildFile; fileRef = B002DBF1156C044F003F5C78 /* mission.json */; };
-		B002DBF8156C044F003F5C78 /* motif.json in Resources */ = {isa = PBXBuildFile; fileRef = B002DBF2156C044F003F5C78 /* motif.json */; };
 		B002DBF9156C044F003F5C78 /* triboard.json in Resources */ = {isa = PBXBuildFile; fileRef = B002DBF3156C044F003F5C78 /* triboard.json */; };
 		B002DBFB156C0485003F5C78 /* Kohicle25.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B002DBFA156C0485003F5C78 /* Kohicle25.ttf */; };
 		B002DC38156C051B003F5C78 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B002DC37156C051B003F5C78 /* MainStoryboard.storyboard */; };
@@ -265,14 +237,8 @@
 		B002DCAF156C085C003F5C78 /* filtreDissociatifVert.xml in Resources */ = {isa = PBXBuildFile; fileRef = B04481301563E1DF005BC009 /* filtreDissociatifVert.xml */; };
 		B002DCB0156C085C003F5C78 /* filtreDissociatifVert@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B04481331563E1F0005BC009 /* filtreDissociatifVert@2x.png */; };
 		B002DCB1156C085C003F5C78 /* filtreDissociatifVert@2x.xml in Resources */ = {isa = PBXBuildFile; fileRef = B04481341563E1F0005BC009 /* filtreDissociatifVert@2x.xml */; };
-		B002DCB2156C085C003F5C78 /* ColorUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B002DB8F156C041F003F5C78 /* ColorUIViewController.xib */; };
-		B002DCB3156C085C003F5C78 /* MissionItemUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B002DB9C156C041F003F5C78 /* MissionItemUIViewController.xib */; };
-		B002DCB4156C085C003F5C78 /* NavigationUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B002DBA6156C041F003F5C78 /* NavigationUIViewController.xib */; };
-		B002DCB5156C085C003F5C78 /* ShopItemUIController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B002DBAC156C041F003F5C78 /* ShopItemUIController.xib */; };
-		B002DCB6156C085C003F5C78 /* TriboardItemUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B002DBB7156C041F003F5C78 /* TriboardItemUIViewController.xib */; };
 		B002DCB7156C085C003F5C78 /* color.json in Resources */ = {isa = PBXBuildFile; fileRef = B002DBED156C044F003F5C78 /* color.json */; };
 		B002DCB8156C085C003F5C78 /* mission.json in Resources */ = {isa = PBXBuildFile; fileRef = B002DBF1156C044F003F5C78 /* mission.json */; };
-		B002DCB9156C085C003F5C78 /* motif.json in Resources */ = {isa = PBXBuildFile; fileRef = B002DBF2156C044F003F5C78 /* motif.json */; };
 		B002DCBA156C085C003F5C78 /* triboard.json in Resources */ = {isa = PBXBuildFile; fileRef = B002DBF3156C044F003F5C78 /* triboard.json */; };
 		B002DCBB156C085C003F5C78 /* Kohicle25.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B002DBFA156C0485003F5C78 /* Kohicle25.ttf */; };
 		B002DCD9156C085C003F5C78 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B002DC37156C051B003F5C78 /* MainStoryboard.storyboard */; };
@@ -377,29 +343,6 @@
 		B002DD3E156C085C003F5C78 /* CreationRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = B054E6111557D54600E84D8F /* CreationRuntime.m */; };
 		B002DD3F156C085C003F5C78 /* GraphismTmp.m in Sources */ = {isa = PBXBuildFile; fileRef = B0702A0715627E8E00833D24 /* GraphismTmp.m */; };
 		B002DD40156C085C003F5C78 /* FiltreDissociatif.m in Sources */ = {isa = PBXBuildFile; fileRef = B04481381563EDEF005BC009 /* FiltreDissociatif.m */; };
-		B002DD41156C085C003F5C78 /* NMCustomLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DB69156C041F003F5C78 /* NMCustomLabel.m */; };
-		B002DD42156C085C003F5C78 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DB6C156C041F003F5C78 /* iCarousel.m */; };
-		B002DD43156C085C003F5C78 /* Color.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DB8A156C041F003F5C78 /* Color.m */; };
-		B002DD44156C085C003F5C78 /* ColorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DB8C156C041F003F5C78 /* ColorManager.m */; };
-		B002DD45156C085C003F5C78 /* ColorUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DB8E156C041F003F5C78 /* ColorUIViewController.m */; };
-		B002DD46156C085C003F5C78 /* GenericUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DB91156C041F003F5C78 /* GenericUIViewController.m */; };
-		B002DD47156C085C003F5C78 /* MainUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DB94156C041F003F5C78 /* MainUIViewController.m */; };
-		B002DD48156C085C003F5C78 /* IslandModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B002DB96156C041F003F5C78 /* IslandModel.xcdatamodeld */; };
-		B002DD49156C085C003F5C78 /* IslandUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DB98156C041F003F5C78 /* IslandUIViewController.m */; };
-		B002DD4A156C085C003F5C78 /* MissionItemUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DB9B156C041F003F5C78 /* MissionItemUIViewController.m */; };
-		B002DD4B156C085C003F5C78 /* MissionUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DB9E156C041F003F5C78 /* MissionUIViewController.m */; };
-		B002DD4C156C085C003F5C78 /* CustomUITabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DBA1156C041F003F5C78 /* CustomUITabBarController.m */; };
-		B002DD4D156C085C003F5C78 /* FromTopReplaceSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DBA3156C041F003F5C78 /* FromTopReplaceSegue.m */; };
-		B002DD4E156C085C003F5C78 /* NavigationUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DBA5156C041F003F5C78 /* NavigationUIViewController.m */; };
-		B002DD4F156C085C003F5C78 /* UntouchableUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DBA8156C041F003F5C78 /* UntouchableUIView.m */; };
-		B002DD50156C085C003F5C78 /* ShopItemUIController.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DBAB156C041F003F5C78 /* ShopItemUIController.m */; };
-		B002DD51156C085C003F5C78 /* ShopUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DBAE156C041F003F5C78 /* ShopUIViewController.m */; };
-		B002DD52156C085C003F5C78 /* TravelUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DBB1156C041F003F5C78 /* TravelUIViewController.m */; };
-		B002DD53156C085C003F5C78 /* BagUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DBB4156C041F003F5C78 /* BagUIViewController.m */; };
-		B002DD54156C085C003F5C78 /* TriboardItemUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DBB6156C041F003F5C78 /* TriboardItemUIViewController.m */; };
-		B002DD55156C085C003F5C78 /* TriboardUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DBB9156C041F003F5C78 /* TriboardUIViewController.m */; };
-		B002DD56156C085C003F5C78 /* TribuUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DBBC156C041F003F5C78 /* TribuUIViewController.m */; };
-		B002DD57156C085C003F5C78 /* USave.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DBBF156C041F003F5C78 /* USave.m */; };
 		B002DD58156C085C003F5C78 /* CoreDataBase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B002DBEF156C044F003F5C78 /* CoreDataBase.xcdatamodeld */; };
 		B002DD59156C085C003F5C78 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DC42156C0804003F5C78 /* AppDelegate.m */; };
 		B002DD5B156C085C003F5C78 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B002DC3F156C0658003F5C78 /* CoreText.framework */; };
@@ -416,7 +359,6 @@
 		B002DD66156C085C003F5C78 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1527AFB11BD8F9900995392 /* AudioToolbox.framework */; };
 		B002DD67156C085C003F5C78 /* libChipmunk-iPhone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1AF685212EA2916006322AF /* libChipmunk-iPhone.a */; };
 		B002DD6F156C0EFC003F5C78 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B002DD6E156C0EFC003F5C78 /* Settings.bundle */; };
-		B002DD73156C1188003F5C78 /* GameUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B002DD72156C1188003F5C78 /* GameUIViewController.m */; };
 		B0113DDF1553C06A0005F1AB /* BusManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = B0113DDE1553C06A0005F1AB /* BusManagement.m */; };
 		B012E3E315148F52008B9157 /* SXNSDataExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B012E3E215148F52008B9157 /* SXNSDataExtensions.m */; };
 		B012E3E615148F8B008B9157 /* SXParticleSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = B012E3E515148F8B008B9157 /* SXParticleSystem.m */; };
@@ -498,6 +440,75 @@
 		B0965B07151934C700E20290 /* Sol.m in Sources */ = {isa = PBXBuildFile; fileRef = B0965B06151934C700E20290 /* Sol.m */; };
 		B0A64C0E1504FA4C00B2BFBA /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A64C0D1504FA4C00B2BFBA /* Hero.m */; };
 		B0A64C111504FF8900B2BFBA /* Platform.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A64C101504FF8800B2BFBA /* Platform.m */; };
+		B0BB60DD1574AC14001BB2CB /* NMCustomLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60981574AC14001BB2CB /* NMCustomLabel.m */; };
+		B0BB60DE1574AC14001BB2CB /* NMCustomLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60981574AC14001BB2CB /* NMCustomLabel.m */; };
+		B0BB60DF1574AC14001BB2CB /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB609B1574AC14001BB2CB /* iCarousel.m */; };
+		B0BB60E01574AC14001BB2CB /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB609B1574AC14001BB2CB /* iCarousel.m */; };
+		B0BB60E11574AC14001BB2CB /* PRTween.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB609E1574AC14001BB2CB /* PRTween.m */; };
+		B0BB60E21574AC14001BB2CB /* PRTween.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB609E1574AC14001BB2CB /* PRTween.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B0BB60E31574AC14001BB2CB /* PRTweenTimingFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60A01574AC14001BB2CB /* PRTweenTimingFunctions.m */; };
+		B0BB60E41574AC14001BB2CB /* PRTweenTimingFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60A01574AC14001BB2CB /* PRTweenTimingFunctions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B0BB60E51574AC14001BB2CB /* Color.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60A41574AC14001BB2CB /* Color.m */; };
+		B0BB60E61574AC14001BB2CB /* Color.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60A41574AC14001BB2CB /* Color.m */; };
+		B0BB60E71574AC14001BB2CB /* ColorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60A61574AC14001BB2CB /* ColorManager.m */; };
+		B0BB60E81574AC14001BB2CB /* ColorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60A61574AC14001BB2CB /* ColorManager.m */; };
+		B0BB60E91574AC14001BB2CB /* ColorUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60A81574AC14001BB2CB /* ColorUIViewController.m */; };
+		B0BB60EA1574AC14001BB2CB /* ColorUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60A81574AC14001BB2CB /* ColorUIViewController.m */; };
+		B0BB60EB1574AC14001BB2CB /* ColorUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0BB60A91574AC14001BB2CB /* ColorUIViewController.xib */; };
+		B0BB60EC1574AC14001BB2CB /* ColorUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0BB60A91574AC14001BB2CB /* ColorUIViewController.xib */; };
+		B0BB60ED1574AC14001BB2CB /* GameUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60AC1574AC14001BB2CB /* GameUIViewController.m */; };
+		B0BB60EE1574AC14001BB2CB /* GameUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60AC1574AC14001BB2CB /* GameUIViewController.m */; };
+		B0BB60EF1574AC14001BB2CB /* GenericUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60AE1574AC14001BB2CB /* GenericUIViewController.m */; };
+		B0BB60F01574AC14001BB2CB /* GenericUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60AE1574AC14001BB2CB /* GenericUIViewController.m */; };
+		B0BB60F11574AC14001BB2CB /* MainUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60B11574AC14001BB2CB /* MainUIViewController.m */; };
+		B0BB60F21574AC14001BB2CB /* MainUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60B11574AC14001BB2CB /* MainUIViewController.m */; };
+		B0BB60F31574AC14001BB2CB /* IslandModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60B31574AC14001BB2CB /* IslandModel.xcdatamodeld */; };
+		B0BB60F51574AC14001BB2CB /* IslandUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60B51574AC14001BB2CB /* IslandUIViewController.m */; };
+		B0BB60F61574AC14001BB2CB /* IslandUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60B51574AC14001BB2CB /* IslandUIViewController.m */; };
+		B0BB60F71574AC14001BB2CB /* MissionItemUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60B81574AC14001BB2CB /* MissionItemUIViewController.m */; };
+		B0BB60F81574AC14001BB2CB /* MissionItemUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60B81574AC14001BB2CB /* MissionItemUIViewController.m */; };
+		B0BB60F91574AC14001BB2CB /* MissionItemUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0BB60B91574AC14001BB2CB /* MissionItemUIViewController.xib */; };
+		B0BB60FA1574AC14001BB2CB /* MissionItemUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0BB60B91574AC14001BB2CB /* MissionItemUIViewController.xib */; };
+		B0BB60FB1574AC14001BB2CB /* MissionUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60BB1574AC14001BB2CB /* MissionUIViewController.m */; };
+		B0BB60FC1574AC14001BB2CB /* MissionUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60BB1574AC14001BB2CB /* MissionUIViewController.m */; };
+		B0BB60FD1574AC14001BB2CB /* CustomUITabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60BE1574AC14001BB2CB /* CustomUITabBarController.m */; };
+		B0BB60FE1574AC14001BB2CB /* CustomUITabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60BE1574AC14001BB2CB /* CustomUITabBarController.m */; };
+		B0BB60FF1574AC14001BB2CB /* FromTopReplaceSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60C01574AC14001BB2CB /* FromTopReplaceSegue.m */; };
+		B0BB61001574AC14001BB2CB /* FromTopReplaceSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60C01574AC14001BB2CB /* FromTopReplaceSegue.m */; };
+		B0BB61011574AC14001BB2CB /* NavigationUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60C21574AC14001BB2CB /* NavigationUIViewController.m */; };
+		B0BB61021574AC14001BB2CB /* NavigationUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60C21574AC14001BB2CB /* NavigationUIViewController.m */; };
+		B0BB61031574AC14001BB2CB /* NavigationUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0BB60C31574AC14001BB2CB /* NavigationUIViewController.xib */; };
+		B0BB61041574AC14001BB2CB /* NavigationUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0BB60C31574AC14001BB2CB /* NavigationUIViewController.xib */; };
+		B0BB61051574AC14001BB2CB /* UntouchableUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60C51574AC14001BB2CB /* UntouchableUIView.m */; };
+		B0BB61061574AC14001BB2CB /* UntouchableUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60C51574AC14001BB2CB /* UntouchableUIView.m */; };
+		B0BB61071574AC14001BB2CB /* ShopItemUIController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60C81574AC14001BB2CB /* ShopItemUIController.m */; };
+		B0BB61081574AC14001BB2CB /* ShopItemUIController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60C81574AC14001BB2CB /* ShopItemUIController.m */; };
+		B0BB61091574AC14001BB2CB /* ShopItemUIController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0BB60C91574AC14001BB2CB /* ShopItemUIController.xib */; };
+		B0BB610A1574AC14001BB2CB /* ShopItemUIController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0BB60C91574AC14001BB2CB /* ShopItemUIController.xib */; };
+		B0BB610B1574AC14001BB2CB /* ShopUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60CB1574AC14001BB2CB /* ShopUIViewController.m */; };
+		B0BB610C1574AC14001BB2CB /* ShopUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60CB1574AC14001BB2CB /* ShopUIViewController.m */; };
+		B0BB610D1574AC14001BB2CB /* TravelUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60CE1574AC14001BB2CB /* TravelUIViewController.m */; };
+		B0BB610E1574AC14001BB2CB /* TravelUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60CE1574AC14001BB2CB /* TravelUIViewController.m */; };
+		B0BB610F1574AC14001BB2CB /* BagUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60D11574AC14001BB2CB /* BagUIViewController.m */; };
+		B0BB61101574AC14001BB2CB /* BagUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60D11574AC14001BB2CB /* BagUIViewController.m */; };
+		B0BB61111574AC14001BB2CB /* TriboardItemUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60D31574AC14001BB2CB /* TriboardItemUIViewController.m */; };
+		B0BB61121574AC14001BB2CB /* TriboardItemUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60D31574AC14001BB2CB /* TriboardItemUIViewController.m */; };
+		B0BB61131574AC14001BB2CB /* TriboardItemUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0BB60D41574AC14001BB2CB /* TriboardItemUIViewController.xib */; };
+		B0BB61141574AC14001BB2CB /* TriboardItemUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0BB60D41574AC14001BB2CB /* TriboardItemUIViewController.xib */; };
+		B0BB61151574AC14001BB2CB /* TriboardUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60D61574AC14001BB2CB /* TriboardUIViewController.m */; };
+		B0BB61161574AC14001BB2CB /* TriboardUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60D61574AC14001BB2CB /* TriboardUIViewController.m */; };
+		B0BB61171574AC14001BB2CB /* TribuUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60D91574AC14001BB2CB /* TribuUIViewController.m */; };
+		B0BB61181574AC14001BB2CB /* TribuUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60D91574AC14001BB2CB /* TribuUIViewController.m */; };
+		B0BB61191574AC14001BB2CB /* USave.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60DC1574AC14001BB2CB /* USave.m */; };
+		B0BB611A1574AC14001BB2CB /* USave.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60DC1574AC14001BB2CB /* USave.m */; };
+		B0BB611D1574ACA3001BB2CB /* motifs.json in Resources */ = {isa = PBXBuildFile; fileRef = B0BB611B1574ACA3001BB2CB /* motifs.json */; };
+		B0BB611E1574ACA3001BB2CB /* motifs.json in Resources */ = {isa = PBXBuildFile; fileRef = B0BB611B1574ACA3001BB2CB /* motifs.json */; };
+		B0BB611F1574ACA3001BB2CB /* pouvoirs.json in Resources */ = {isa = PBXBuildFile; fileRef = B0BB611C1574ACA3001BB2CB /* pouvoirs.json */; };
+		B0BB61201574ACA3001BB2CB /* pouvoirs.json in Resources */ = {isa = PBXBuildFile; fileRef = B0BB611C1574ACA3001BB2CB /* pouvoirs.json */; };
+		B0BB61221574AE8D001BB2CB /* buy-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BB61211574AE8D001BB2CB /* buy-btn@2x.png */; };
+		B0BB61231574AE8D001BB2CB /* buy-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BB61211574AE8D001BB2CB /* buy-btn@2x.png */; };
+		B0BB61251574AE9E001BB2CB /* buy-btn-step-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BB61241574AE9E001BB2CB /* buy-btn-step-2@2x.png */; };
+		B0BB61261574AE9E001BB2CB /* buy-btn-step-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BB61241574AE9E001BB2CB /* buy-btn-step-2@2x.png */; };
 		B0C1B43914FE247C00E10833 /* CitrusEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C1B42D14FE247C00E10833 /* CitrusEngine.m */; };
 		B0C1B43A14FE247C00E10833 /* CitrusObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C1B42F14FE247C00E10833 /* CitrusObject.m */; };
 		B0C1B43C14FE247C00E10833 /* PhysicsObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C1B43414FE247C00E10833 /* PhysicsObject.m */; };
@@ -578,7 +589,6 @@
 		C8DEB0FE15728D3A00017A64 /* b_vert@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8DEB0C015728D3A00017A64 /* b_vert@2x.png */; };
 		C8DEB0FF15728D3A00017A64 /* b_violet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8DEB0C115728D3A00017A64 /* b_violet@2x.png */; };
 		C8DEB10015728D3A00017A64 /* back-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8DEB0C215728D3A00017A64 /* back-btn@2x.png */; };
-		C8DEB10115728D3A00017A64 /* buy-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8DEB0C315728D3A00017A64 /* buy-btn@2x.png */; };
 		C8DEB10215728D3A00017A64 /* colors_big@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8DEB0C415728D3A00017A64 /* colors_big@2x.png */; };
 		C8DEB10315728D3A00017A64 /* fond@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8DEB0C515728D3A00017A64 /* fond@2x.png */; };
 		C8DEB10415728D3A00017A64 /* fond1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8DEB0C615728D3A00017A64 /* fond1@2x.png */; };
@@ -602,10 +612,6 @@
 		C8DEB11615728D3A00017A64 /* shop-item-board-3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8DEB0D815728D3A00017A64 /* shop-item-board-3@2x.png */; };
 		C8DEB11715728D3A00017A64 /* triboard-customization@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8DEB0D915728D3A00017A64 /* triboard-customization@2x.png */; };
 		C8DEB11815728D3A00017A64 /* tribus-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8DEB0DA15728D3A00017A64 /* tribus-bg@2x.png */; };
-		C8DEB11E1572A79900017A64 /* PRTween.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DEB11B1572A79900017A64 /* PRTween.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		C8DEB11F1572A79900017A64 /* PRTween.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DEB11B1572A79900017A64 /* PRTween.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		C8DEB1201572A79900017A64 /* PRTweenTimingFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DEB11D1572A79900017A64 /* PRTweenTimingFunctions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		C8DEB1211572A79900017A64 /* PRTweenTimingFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DEB11D1572A79900017A64 /* PRTweenTimingFunctions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -858,59 +864,9 @@
 		A1FC3D5F1312D37300C7D1E1 /* Sensor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sensor.png; sourceTree = "<group>"; };
 		A1FC3D621312D3C000C7D1E1 /* Planet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Planet.png; sourceTree = "<group>"; };
 		A1FC3D9D1312D4AC00C7D1E1 /* FollowPath.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FollowPath.png; sourceTree = "<group>"; };
-		B002DB68156C041F003F5C78 /* NMCustomLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMCustomLabel.h; sourceTree = "<group>"; };
-		B002DB69156C041F003F5C78 /* NMCustomLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMCustomLabel.m; sourceTree = "<group>"; };
-		B002DB6B156C041F003F5C78 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
-		B002DB6C156C041F003F5C78 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
-		B002DB89156C041F003F5C78 /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
-		B002DB8A156C041F003F5C78 /* Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Color.m; sourceTree = "<group>"; };
-		B002DB8B156C041F003F5C78 /* ColorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorManager.h; sourceTree = "<group>"; };
-		B002DB8C156C041F003F5C78 /* ColorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorManager.m; sourceTree = "<group>"; };
-		B002DB8D156C041F003F5C78 /* ColorUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorUIViewController.h; sourceTree = "<group>"; };
-		B002DB8E156C041F003F5C78 /* ColorUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorUIViewController.m; sourceTree = "<group>"; };
-		B002DB8F156C041F003F5C78 /* ColorUIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorUIViewController.xib; sourceTree = "<group>"; };
-		B002DB90156C041F003F5C78 /* GenericUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericUIViewController.h; sourceTree = "<group>"; };
-		B002DB91156C041F003F5C78 /* GenericUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericUIViewController.m; sourceTree = "<group>"; };
-		B002DB93156C041F003F5C78 /* MainUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainUIViewController.h; sourceTree = "<group>"; };
-		B002DB94156C041F003F5C78 /* MainUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainUIViewController.m; sourceTree = "<group>"; };
-		B002DB97156C041F003F5C78 /* IslandUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IslandUIViewController.h; sourceTree = "<group>"; };
-		B002DB98156C041F003F5C78 /* IslandUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IslandUIViewController.m; sourceTree = "<group>"; };
-		B002DB9A156C041F003F5C78 /* MissionItemUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MissionItemUIViewController.h; sourceTree = "<group>"; };
-		B002DB9B156C041F003F5C78 /* MissionItemUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MissionItemUIViewController.m; sourceTree = "<group>"; };
-		B002DB9C156C041F003F5C78 /* MissionItemUIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MissionItemUIViewController.xib; sourceTree = "<group>"; };
-		B002DB9D156C041F003F5C78 /* MissionUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MissionUIViewController.h; sourceTree = "<group>"; };
-		B002DB9E156C041F003F5C78 /* MissionUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MissionUIViewController.m; sourceTree = "<group>"; };
-		B002DBA0156C041F003F5C78 /* CustomUITabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUITabBarController.h; sourceTree = "<group>"; };
-		B002DBA1156C041F003F5C78 /* CustomUITabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomUITabBarController.m; sourceTree = "<group>"; };
-		B002DBA2156C041F003F5C78 /* FromTopReplaceSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FromTopReplaceSegue.h; sourceTree = "<group>"; };
-		B002DBA3156C041F003F5C78 /* FromTopReplaceSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FromTopReplaceSegue.m; sourceTree = "<group>"; };
-		B002DBA4156C041F003F5C78 /* NavigationUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationUIViewController.h; sourceTree = "<group>"; };
-		B002DBA5156C041F003F5C78 /* NavigationUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationUIViewController.m; sourceTree = "<group>"; };
-		B002DBA6156C041F003F5C78 /* NavigationUIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigationUIViewController.xib; sourceTree = "<group>"; };
-		B002DBA7156C041F003F5C78 /* UntouchableUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UntouchableUIView.h; sourceTree = "<group>"; };
-		B002DBA8156C041F003F5C78 /* UntouchableUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UntouchableUIView.m; sourceTree = "<group>"; };
-		B002DBAA156C041F003F5C78 /* ShopItemUIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopItemUIController.h; sourceTree = "<group>"; };
-		B002DBAB156C041F003F5C78 /* ShopItemUIController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopItemUIController.m; sourceTree = "<group>"; };
-		B002DBAC156C041F003F5C78 /* ShopItemUIController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopItemUIController.xib; sourceTree = "<group>"; };
-		B002DBAD156C041F003F5C78 /* ShopUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopUIViewController.h; sourceTree = "<group>"; };
-		B002DBAE156C041F003F5C78 /* ShopUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopUIViewController.m; sourceTree = "<group>"; };
-		B002DBB0156C041F003F5C78 /* TravelUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelUIViewController.h; sourceTree = "<group>"; };
-		B002DBB1156C041F003F5C78 /* TravelUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelUIViewController.m; sourceTree = "<group>"; };
-		B002DBB3156C041F003F5C78 /* BagUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BagUIViewController.h; sourceTree = "<group>"; };
-		B002DBB4156C041F003F5C78 /* BagUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BagUIViewController.m; sourceTree = "<group>"; };
-		B002DBB5156C041F003F5C78 /* TriboardItemUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriboardItemUIViewController.h; sourceTree = "<group>"; };
-		B002DBB6156C041F003F5C78 /* TriboardItemUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriboardItemUIViewController.m; sourceTree = "<group>"; };
-		B002DBB7156C041F003F5C78 /* TriboardItemUIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TriboardItemUIViewController.xib; sourceTree = "<group>"; };
-		B002DBB8156C041F003F5C78 /* TriboardUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriboardUIViewController.h; sourceTree = "<group>"; };
-		B002DBB9156C041F003F5C78 /* TriboardUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriboardUIViewController.m; sourceTree = "<group>"; };
-		B002DBBB156C041F003F5C78 /* TribuUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TribuUIViewController.h; sourceTree = "<group>"; };
-		B002DBBC156C041F003F5C78 /* TribuUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TribuUIViewController.m; sourceTree = "<group>"; };
-		B002DBBE156C041F003F5C78 /* USave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USave.h; sourceTree = "<group>"; };
-		B002DBBF156C041F003F5C78 /* USave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USave.m; sourceTree = "<group>"; };
 		B002DBED156C044F003F5C78 /* color.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = color.json; sourceTree = "<group>"; };
 		B002DBF0156C044F003F5C78 /* CoreDataBase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataBase.xcdatamodel; sourceTree = "<group>"; };
 		B002DBF1156C044F003F5C78 /* mission.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mission.json; sourceTree = "<group>"; };
-		B002DBF2156C044F003F5C78 /* motif.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = motif.json; sourceTree = "<group>"; };
 		B002DBF3156C044F003F5C78 /* triboard.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = triboard.json; sourceTree = "<group>"; };
 		B002DBFA156C0485003F5C78 /* Kohicle25.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kohicle25.ttf; sourceTree = "<group>"; };
 		B002DC37156C051B003F5C78 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
@@ -921,8 +877,6 @@
 		B002DD6B156C085C003F5C78 /* ChipmunkWrapper copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ChipmunkWrapper copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B002DD6D156C085C003F5C78 /* ChipmunkWrapper copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChipmunkWrapper copy-Info.plist"; sourceTree = "<group>"; };
 		B002DD6E156C0EFC003F5C78 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		B002DD71156C1188003F5C78 /* GameUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameUIViewController.h; sourceTree = "<group>"; };
-		B002DD72156C1188003F5C78 /* GameUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameUIViewController.m; sourceTree = "<group>"; };
 		B0113DDD1553C0690005F1AB /* BusManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusManagement.h; sourceTree = "<group>"; };
 		B0113DDE1553C06A0005F1AB /* BusManagement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusManagement.m; sourceTree = "<group>"; };
 		B012E3E115148F52008B9157 /* SXNSDataExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SXNSDataExtensions.h; path = SparrowExtensions/SXNSDataExtensions.h; sourceTree = "<group>"; };
@@ -1030,6 +984,65 @@
 		B0A64C0D1504FA4C00B2BFBA /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
 		B0A64C0F1504FF8800B2BFBA /* Platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Platform.h; sourceTree = "<group>"; };
 		B0A64C101504FF8800B2BFBA /* Platform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Platform.m; sourceTree = "<group>"; };
+		B0BB60971574AC14001BB2CB /* NMCustomLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMCustomLabel.h; sourceTree = "<group>"; };
+		B0BB60981574AC14001BB2CB /* NMCustomLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMCustomLabel.m; sourceTree = "<group>"; };
+		B0BB609A1574AC14001BB2CB /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		B0BB609B1574AC14001BB2CB /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		B0BB609D1574AC14001BB2CB /* PRTween.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRTween.h; sourceTree = "<group>"; };
+		B0BB609E1574AC14001BB2CB /* PRTween.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRTween.m; sourceTree = "<group>"; };
+		B0BB609F1574AC14001BB2CB /* PRTweenTimingFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRTweenTimingFunctions.h; sourceTree = "<group>"; };
+		B0BB60A01574AC14001BB2CB /* PRTweenTimingFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRTweenTimingFunctions.m; sourceTree = "<group>"; };
+		B0BB60A31574AC14001BB2CB /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
+		B0BB60A41574AC14001BB2CB /* Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Color.m; sourceTree = "<group>"; };
+		B0BB60A51574AC14001BB2CB /* ColorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorManager.h; sourceTree = "<group>"; };
+		B0BB60A61574AC14001BB2CB /* ColorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorManager.m; sourceTree = "<group>"; };
+		B0BB60A71574AC14001BB2CB /* ColorUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorUIViewController.h; sourceTree = "<group>"; };
+		B0BB60A81574AC14001BB2CB /* ColorUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorUIViewController.m; sourceTree = "<group>"; };
+		B0BB60A91574AC14001BB2CB /* ColorUIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorUIViewController.xib; sourceTree = "<group>"; };
+		B0BB60AB1574AC14001BB2CB /* GameUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameUIViewController.h; sourceTree = "<group>"; };
+		B0BB60AC1574AC14001BB2CB /* GameUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameUIViewController.m; sourceTree = "<group>"; };
+		B0BB60AD1574AC14001BB2CB /* GenericUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericUIViewController.h; sourceTree = "<group>"; };
+		B0BB60AE1574AC14001BB2CB /* GenericUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericUIViewController.m; sourceTree = "<group>"; };
+		B0BB60B01574AC14001BB2CB /* MainUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainUIViewController.h; sourceTree = "<group>"; };
+		B0BB60B11574AC14001BB2CB /* MainUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainUIViewController.m; sourceTree = "<group>"; };
+		B0BB60B41574AC14001BB2CB /* IslandUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IslandUIViewController.h; sourceTree = "<group>"; };
+		B0BB60B51574AC14001BB2CB /* IslandUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IslandUIViewController.m; sourceTree = "<group>"; };
+		B0BB60B71574AC14001BB2CB /* MissionItemUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MissionItemUIViewController.h; sourceTree = "<group>"; };
+		B0BB60B81574AC14001BB2CB /* MissionItemUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MissionItemUIViewController.m; sourceTree = "<group>"; };
+		B0BB60B91574AC14001BB2CB /* MissionItemUIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MissionItemUIViewController.xib; sourceTree = "<group>"; };
+		B0BB60BA1574AC14001BB2CB /* MissionUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MissionUIViewController.h; sourceTree = "<group>"; };
+		B0BB60BB1574AC14001BB2CB /* MissionUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MissionUIViewController.m; sourceTree = "<group>"; };
+		B0BB60BD1574AC14001BB2CB /* CustomUITabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUITabBarController.h; sourceTree = "<group>"; };
+		B0BB60BE1574AC14001BB2CB /* CustomUITabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomUITabBarController.m; sourceTree = "<group>"; };
+		B0BB60BF1574AC14001BB2CB /* FromTopReplaceSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FromTopReplaceSegue.h; sourceTree = "<group>"; };
+		B0BB60C01574AC14001BB2CB /* FromTopReplaceSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FromTopReplaceSegue.m; sourceTree = "<group>"; };
+		B0BB60C11574AC14001BB2CB /* NavigationUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationUIViewController.h; sourceTree = "<group>"; };
+		B0BB60C21574AC14001BB2CB /* NavigationUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationUIViewController.m; sourceTree = "<group>"; };
+		B0BB60C31574AC14001BB2CB /* NavigationUIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigationUIViewController.xib; sourceTree = "<group>"; };
+		B0BB60C41574AC14001BB2CB /* UntouchableUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UntouchableUIView.h; sourceTree = "<group>"; };
+		B0BB60C51574AC14001BB2CB /* UntouchableUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UntouchableUIView.m; sourceTree = "<group>"; };
+		B0BB60C71574AC14001BB2CB /* ShopItemUIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopItemUIController.h; sourceTree = "<group>"; };
+		B0BB60C81574AC14001BB2CB /* ShopItemUIController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopItemUIController.m; sourceTree = "<group>"; };
+		B0BB60C91574AC14001BB2CB /* ShopItemUIController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopItemUIController.xib; sourceTree = "<group>"; };
+		B0BB60CA1574AC14001BB2CB /* ShopUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopUIViewController.h; sourceTree = "<group>"; };
+		B0BB60CB1574AC14001BB2CB /* ShopUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopUIViewController.m; sourceTree = "<group>"; };
+		B0BB60CD1574AC14001BB2CB /* TravelUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelUIViewController.h; sourceTree = "<group>"; };
+		B0BB60CE1574AC14001BB2CB /* TravelUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelUIViewController.m; sourceTree = "<group>"; };
+		B0BB60D01574AC14001BB2CB /* BagUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BagUIViewController.h; sourceTree = "<group>"; };
+		B0BB60D11574AC14001BB2CB /* BagUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BagUIViewController.m; sourceTree = "<group>"; };
+		B0BB60D21574AC14001BB2CB /* TriboardItemUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriboardItemUIViewController.h; sourceTree = "<group>"; };
+		B0BB60D31574AC14001BB2CB /* TriboardItemUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriboardItemUIViewController.m; sourceTree = "<group>"; };
+		B0BB60D41574AC14001BB2CB /* TriboardItemUIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TriboardItemUIViewController.xib; sourceTree = "<group>"; };
+		B0BB60D51574AC14001BB2CB /* TriboardUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriboardUIViewController.h; sourceTree = "<group>"; };
+		B0BB60D61574AC14001BB2CB /* TriboardUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriboardUIViewController.m; sourceTree = "<group>"; };
+		B0BB60D81574AC14001BB2CB /* TribuUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TribuUIViewController.h; sourceTree = "<group>"; };
+		B0BB60D91574AC14001BB2CB /* TribuUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TribuUIViewController.m; sourceTree = "<group>"; };
+		B0BB60DB1574AC14001BB2CB /* USave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USave.h; sourceTree = "<group>"; };
+		B0BB60DC1574AC14001BB2CB /* USave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USave.m; sourceTree = "<group>"; };
+		B0BB611B1574ACA3001BB2CB /* motifs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = motifs.json; sourceTree = "<group>"; };
+		B0BB611C1574ACA3001BB2CB /* pouvoirs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pouvoirs.json; sourceTree = "<group>"; };
+		B0BB61211574AE8D001BB2CB /* buy-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buy-btn@2x.png"; sourceTree = "<group>"; };
+		B0BB61241574AE9E001BB2CB /* buy-btn-step-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buy-btn-step-2@2x.png"; sourceTree = "<group>"; };
 		B0C1B42C14FE247C00E10833 /* CitrusEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitrusEngine.h; sourceTree = "<group>"; };
 		B0C1B42D14FE247C00E10833 /* CitrusEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitrusEngine.m; sourceTree = "<group>"; };
 		B0C1B42E14FE247C00E10833 /* CitrusObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitrusObject.h; sourceTree = "<group>"; };
@@ -1108,7 +1121,6 @@
 		C8DEB0C015728D3A00017A64 /* b_vert@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "b_vert@2x.png"; sourceTree = "<group>"; };
 		C8DEB0C115728D3A00017A64 /* b_violet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "b_violet@2x.png"; sourceTree = "<group>"; };
 		C8DEB0C215728D3A00017A64 /* back-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-btn@2x.png"; sourceTree = "<group>"; };
-		C8DEB0C315728D3A00017A64 /* buy-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buy-btn@2x.png"; sourceTree = "<group>"; };
 		C8DEB0C415728D3A00017A64 /* colors_big@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "colors_big@2x.png"; sourceTree = "<group>"; };
 		C8DEB0C515728D3A00017A64 /* fond@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fond@2x.png"; sourceTree = "<group>"; };
 		C8DEB0C615728D3A00017A64 /* fond1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fond1@2x.png"; sourceTree = "<group>"; };
@@ -1132,10 +1144,6 @@
 		C8DEB0D815728D3A00017A64 /* shop-item-board-3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shop-item-board-3@2x.png"; sourceTree = "<group>"; };
 		C8DEB0D915728D3A00017A64 /* triboard-customization@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "triboard-customization@2x.png"; sourceTree = "<group>"; };
 		C8DEB0DA15728D3A00017A64 /* tribus-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tribus-bg@2x.png"; sourceTree = "<group>"; };
-		C8DEB11A1572A79900017A64 /* PRTween.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRTween.h; sourceTree = "<group>"; };
-		C8DEB11B1572A79900017A64 /* PRTween.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRTween.m; sourceTree = "<group>"; };
-		C8DEB11C1572A79900017A64 /* PRTweenTimingFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRTweenTimingFunctions.h; sourceTree = "<group>"; };
-		C8DEB11D1572A79900017A64 /* PRTweenTimingFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRTweenTimingFunctions.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1185,7 +1193,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				B002DB65156C041F003F5C78 /* lory */,
+				B0BB60941574AC14001BB2CB /* lory */,
 				B06FF2281552ACCB00733B84 /* json */,
 				B012E3D715148E1C008B9157 /* SparrowExtensions */,
 				B0C1B43E14FE248F00E10833 /* Gameline */,
@@ -1616,184 +1624,14 @@
 			name = options;
 			sourceTree = "<group>";
 		};
-		B002DB65156C041F003F5C78 /* lory */ = {
-			isa = PBXGroup;
-			children = (
-				B002DB66156C041F003F5C78 /* libs */,
-				B002DB87156C041F003F5C78 /* src */,
-			);
-			path = lory;
-			sourceTree = "<group>";
-		};
-		B002DB66156C041F003F5C78 /* libs */ = {
-			isa = PBXGroup;
-			children = (
-				C8DEB1191572A79900017A64 /* PRTween */,
-				B002DB67156C041F003F5C78 /* custom */,
-				B002DB6A156C041F003F5C78 /* iCarousel */,
-			);
-			path = libs;
-			sourceTree = "<group>";
-		};
-		B002DB67156C041F003F5C78 /* custom */ = {
-			isa = PBXGroup;
-			children = (
-				B002DB68156C041F003F5C78 /* NMCustomLabel.h */,
-				B002DB69156C041F003F5C78 /* NMCustomLabel.m */,
-			);
-			path = custom;
-			sourceTree = "<group>";
-		};
-		B002DB6A156C041F003F5C78 /* iCarousel */ = {
-			isa = PBXGroup;
-			children = (
-				B002DB6B156C041F003F5C78 /* iCarousel.h */,
-				B002DB6C156C041F003F5C78 /* iCarousel.m */,
-			);
-			path = iCarousel;
-			sourceTree = "<group>";
-		};
-		B002DB87156C041F003F5C78 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				B002DD70156C1108003F5C78 /* game */,
-				B002DB88156C041F003F5C78 /* color */,
-				B002DB90156C041F003F5C78 /* GenericUIViewController.h */,
-				B002DB91156C041F003F5C78 /* GenericUIViewController.m */,
-				B002DB92156C041F003F5C78 /* index */,
-				B002DB95156C041F003F5C78 /* island */,
-				B002DB99156C041F003F5C78 /* mission */,
-				B002DB9F156C041F003F5C78 /* navigation */,
-				B002DBA9156C041F003F5C78 /* shop */,
-				B002DBAF156C041F003F5C78 /* travel */,
-				B002DBB2156C041F003F5C78 /* triboard */,
-				B002DBBA156C041F003F5C78 /* tribu */,
-				B002DBBD156C041F003F5C78 /* utils */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
-		B002DB88156C041F003F5C78 /* color */ = {
-			isa = PBXGroup;
-			children = (
-				B002DB89156C041F003F5C78 /* Color.h */,
-				B002DB8A156C041F003F5C78 /* Color.m */,
-				B002DB8B156C041F003F5C78 /* ColorManager.h */,
-				B002DB8C156C041F003F5C78 /* ColorManager.m */,
-				B002DB8D156C041F003F5C78 /* ColorUIViewController.h */,
-				B002DB8E156C041F003F5C78 /* ColorUIViewController.m */,
-				B002DB8F156C041F003F5C78 /* ColorUIViewController.xib */,
-			);
-			path = color;
-			sourceTree = "<group>";
-		};
-		B002DB92156C041F003F5C78 /* index */ = {
-			isa = PBXGroup;
-			children = (
-				B002DB93156C041F003F5C78 /* MainUIViewController.h */,
-				B002DB94156C041F003F5C78 /* MainUIViewController.m */,
-			);
-			path = index;
-			sourceTree = "<group>";
-		};
-		B002DB95156C041F003F5C78 /* island */ = {
-			isa = PBXGroup;
-			children = (
-				B002DB96156C041F003F5C78 /* IslandModel.xcdatamodeld */,
-				B002DB97156C041F003F5C78 /* IslandUIViewController.h */,
-				B002DB98156C041F003F5C78 /* IslandUIViewController.m */,
-			);
-			path = island;
-			sourceTree = "<group>";
-		};
-		B002DB99156C041F003F5C78 /* mission */ = {
-			isa = PBXGroup;
-			children = (
-				B002DB9A156C041F003F5C78 /* MissionItemUIViewController.h */,
-				B002DB9B156C041F003F5C78 /* MissionItemUIViewController.m */,
-				B002DB9C156C041F003F5C78 /* MissionItemUIViewController.xib */,
-				B002DB9D156C041F003F5C78 /* MissionUIViewController.h */,
-				B002DB9E156C041F003F5C78 /* MissionUIViewController.m */,
-			);
-			path = mission;
-			sourceTree = "<group>";
-		};
-		B002DB9F156C041F003F5C78 /* navigation */ = {
-			isa = PBXGroup;
-			children = (
-				B002DBA0156C041F003F5C78 /* CustomUITabBarController.h */,
-				B002DBA1156C041F003F5C78 /* CustomUITabBarController.m */,
-				B002DBA2156C041F003F5C78 /* FromTopReplaceSegue.h */,
-				B002DBA3156C041F003F5C78 /* FromTopReplaceSegue.m */,
-				B002DBA4156C041F003F5C78 /* NavigationUIViewController.h */,
-				B002DBA5156C041F003F5C78 /* NavigationUIViewController.m */,
-				B002DBA6156C041F003F5C78 /* NavigationUIViewController.xib */,
-				B002DBA7156C041F003F5C78 /* UntouchableUIView.h */,
-				B002DBA8156C041F003F5C78 /* UntouchableUIView.m */,
-			);
-			path = navigation;
-			sourceTree = "<group>";
-		};
-		B002DBA9156C041F003F5C78 /* shop */ = {
-			isa = PBXGroup;
-			children = (
-				B002DBAA156C041F003F5C78 /* ShopItemUIController.h */,
-				B002DBAB156C041F003F5C78 /* ShopItemUIController.m */,
-				B002DBAC156C041F003F5C78 /* ShopItemUIController.xib */,
-				B002DBAD156C041F003F5C78 /* ShopUIViewController.h */,
-				B002DBAE156C041F003F5C78 /* ShopUIViewController.m */,
-			);
-			path = shop;
-			sourceTree = "<group>";
-		};
-		B002DBAF156C041F003F5C78 /* travel */ = {
-			isa = PBXGroup;
-			children = (
-				B002DBB0156C041F003F5C78 /* TravelUIViewController.h */,
-				B002DBB1156C041F003F5C78 /* TravelUIViewController.m */,
-			);
-			path = travel;
-			sourceTree = "<group>";
-		};
-		B002DBB2156C041F003F5C78 /* triboard */ = {
-			isa = PBXGroup;
-			children = (
-				B002DBB3156C041F003F5C78 /* BagUIViewController.h */,
-				B002DBB4156C041F003F5C78 /* BagUIViewController.m */,
-				B002DBB5156C041F003F5C78 /* TriboardItemUIViewController.h */,
-				B002DBB6156C041F003F5C78 /* TriboardItemUIViewController.m */,
-				B002DBB7156C041F003F5C78 /* TriboardItemUIViewController.xib */,
-				B002DBB8156C041F003F5C78 /* TriboardUIViewController.h */,
-				B002DBB9156C041F003F5C78 /* TriboardUIViewController.m */,
-			);
-			path = triboard;
-			sourceTree = "<group>";
-		};
-		B002DBBA156C041F003F5C78 /* tribu */ = {
-			isa = PBXGroup;
-			children = (
-				B002DBBB156C041F003F5C78 /* TribuUIViewController.h */,
-				B002DBBC156C041F003F5C78 /* TribuUIViewController.m */,
-			);
-			path = tribu;
-			sourceTree = "<group>";
-		};
-		B002DBBD156C041F003F5C78 /* utils */ = {
-			isa = PBXGroup;
-			children = (
-				B002DBBE156C041F003F5C78 /* USave.h */,
-				B002DBBF156C041F003F5C78 /* USave.m */,
-			);
-			path = utils;
-			sourceTree = "<group>";
-		};
 		B002DBEB156C044F003F5C78 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B0BB611B1574ACA3001BB2CB /* motifs.json */,
+				B0BB611C1574ACA3001BB2CB /* pouvoirs.json */,
 				B002DBED156C044F003F5C78 /* color.json */,
 				B002DBEF156C044F003F5C78 /* CoreDataBase.xcdatamodeld */,
 				B002DBF1156C044F003F5C78 /* mission.json */,
-				B002DBF2156C044F003F5C78 /* motif.json */,
 				B002DBF3156C044F003F5C78 /* triboard.json */,
 			);
 			name = Models;
@@ -1811,7 +1649,8 @@
 				C8DEB0C015728D3A00017A64 /* b_vert@2x.png */,
 				C8DEB0C115728D3A00017A64 /* b_violet@2x.png */,
 				C8DEB0C215728D3A00017A64 /* back-btn@2x.png */,
-				C8DEB0C315728D3A00017A64 /* buy-btn@2x.png */,
+				B0BB61211574AE8D001BB2CB /* buy-btn@2x.png */,
+				B0BB61241574AE9E001BB2CB /* buy-btn-step-2@2x.png */,
 				C8DEB0C415728D3A00017A64 /* colors_big@2x.png */,
 				C8DEB0C515728D3A00017A64 /* fond@2x.png */,
 				C8DEB0C615728D3A00017A64 /* fond1@2x.png */,
@@ -1837,15 +1676,6 @@
 				C8DEB0DA15728D3A00017A64 /* tribus-bg@2x.png */,
 			);
 			path = app;
-			sourceTree = "<group>";
-		};
-		B002DD70156C1108003F5C78 /* game */ = {
-			isa = PBXGroup;
-			children = (
-				B002DD71156C1188003F5C78 /* GameUIViewController.h */,
-				B002DD72156C1188003F5C78 /* GameUIViewController.m */,
-			);
-			path = game;
 			sourceTree = "<group>";
 		};
 		B012E3D715148E1C008B9157 /* SparrowExtensions */ = {
@@ -1983,6 +1813,197 @@
 			path = 2x;
 			sourceTree = "<group>";
 		};
+		B0BB60941574AC14001BB2CB /* lory */ = {
+			isa = PBXGroup;
+			children = (
+				B0BB60951574AC14001BB2CB /* libs */,
+				B0BB60A11574AC14001BB2CB /* src */,
+			);
+			path = lory;
+			sourceTree = "<group>";
+		};
+		B0BB60951574AC14001BB2CB /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				B0BB60961574AC14001BB2CB /* custom */,
+				B0BB60991574AC14001BB2CB /* iCarousel */,
+				B0BB609C1574AC14001BB2CB /* PRTween */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		B0BB60961574AC14001BB2CB /* custom */ = {
+			isa = PBXGroup;
+			children = (
+				B0BB60971574AC14001BB2CB /* NMCustomLabel.h */,
+				B0BB60981574AC14001BB2CB /* NMCustomLabel.m */,
+			);
+			path = custom;
+			sourceTree = "<group>";
+		};
+		B0BB60991574AC14001BB2CB /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				B0BB609A1574AC14001BB2CB /* iCarousel.h */,
+				B0BB609B1574AC14001BB2CB /* iCarousel.m */,
+			);
+			path = iCarousel;
+			sourceTree = "<group>";
+		};
+		B0BB609C1574AC14001BB2CB /* PRTween */ = {
+			isa = PBXGroup;
+			children = (
+				B0BB609D1574AC14001BB2CB /* PRTween.h */,
+				B0BB609E1574AC14001BB2CB /* PRTween.m */,
+				B0BB609F1574AC14001BB2CB /* PRTweenTimingFunctions.h */,
+				B0BB60A01574AC14001BB2CB /* PRTweenTimingFunctions.m */,
+			);
+			path = PRTween;
+			sourceTree = "<group>";
+		};
+		B0BB60A11574AC14001BB2CB /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B0BB60A21574AC14001BB2CB /* color */,
+				B0BB60AA1574AC14001BB2CB /* game */,
+				B0BB60AD1574AC14001BB2CB /* GenericUIViewController.h */,
+				B0BB60AE1574AC14001BB2CB /* GenericUIViewController.m */,
+				B0BB60AF1574AC14001BB2CB /* index */,
+				B0BB60B21574AC14001BB2CB /* island */,
+				B0BB60B61574AC14001BB2CB /* mission */,
+				B0BB60BC1574AC14001BB2CB /* navigation */,
+				B0BB60C61574AC14001BB2CB /* shop */,
+				B0BB60CC1574AC14001BB2CB /* travel */,
+				B0BB60CF1574AC14001BB2CB /* triboard */,
+				B0BB60D71574AC14001BB2CB /* tribu */,
+				B0BB60DA1574AC14001BB2CB /* utils */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		B0BB60A21574AC14001BB2CB /* color */ = {
+			isa = PBXGroup;
+			children = (
+				B0BB60A31574AC14001BB2CB /* Color.h */,
+				B0BB60A41574AC14001BB2CB /* Color.m */,
+				B0BB60A51574AC14001BB2CB /* ColorManager.h */,
+				B0BB60A61574AC14001BB2CB /* ColorManager.m */,
+				B0BB60A71574AC14001BB2CB /* ColorUIViewController.h */,
+				B0BB60A81574AC14001BB2CB /* ColorUIViewController.m */,
+				B0BB60A91574AC14001BB2CB /* ColorUIViewController.xib */,
+			);
+			path = color;
+			sourceTree = "<group>";
+		};
+		B0BB60AA1574AC14001BB2CB /* game */ = {
+			isa = PBXGroup;
+			children = (
+				B0BB60AB1574AC14001BB2CB /* GameUIViewController.h */,
+				B0BB60AC1574AC14001BB2CB /* GameUIViewController.m */,
+			);
+			path = game;
+			sourceTree = "<group>";
+		};
+		B0BB60AF1574AC14001BB2CB /* index */ = {
+			isa = PBXGroup;
+			children = (
+				B0BB60B01574AC14001BB2CB /* MainUIViewController.h */,
+				B0BB60B11574AC14001BB2CB /* MainUIViewController.m */,
+			);
+			path = index;
+			sourceTree = "<group>";
+		};
+		B0BB60B21574AC14001BB2CB /* island */ = {
+			isa = PBXGroup;
+			children = (
+				B0BB60B31574AC14001BB2CB /* IslandModel.xcdatamodeld */,
+				B0BB60B41574AC14001BB2CB /* IslandUIViewController.h */,
+				B0BB60B51574AC14001BB2CB /* IslandUIViewController.m */,
+			);
+			path = island;
+			sourceTree = "<group>";
+		};
+		B0BB60B61574AC14001BB2CB /* mission */ = {
+			isa = PBXGroup;
+			children = (
+				B0BB60B71574AC14001BB2CB /* MissionItemUIViewController.h */,
+				B0BB60B81574AC14001BB2CB /* MissionItemUIViewController.m */,
+				B0BB60B91574AC14001BB2CB /* MissionItemUIViewController.xib */,
+				B0BB60BA1574AC14001BB2CB /* MissionUIViewController.h */,
+				B0BB60BB1574AC14001BB2CB /* MissionUIViewController.m */,
+			);
+			path = mission;
+			sourceTree = "<group>";
+		};
+		B0BB60BC1574AC14001BB2CB /* navigation */ = {
+			isa = PBXGroup;
+			children = (
+				B0BB60BD1574AC14001BB2CB /* CustomUITabBarController.h */,
+				B0BB60BE1574AC14001BB2CB /* CustomUITabBarController.m */,
+				B0BB60BF1574AC14001BB2CB /* FromTopReplaceSegue.h */,
+				B0BB60C01574AC14001BB2CB /* FromTopReplaceSegue.m */,
+				B0BB60C11574AC14001BB2CB /* NavigationUIViewController.h */,
+				B0BB60C21574AC14001BB2CB /* NavigationUIViewController.m */,
+				B0BB60C31574AC14001BB2CB /* NavigationUIViewController.xib */,
+				B0BB60C41574AC14001BB2CB /* UntouchableUIView.h */,
+				B0BB60C51574AC14001BB2CB /* UntouchableUIView.m */,
+			);
+			path = navigation;
+			sourceTree = "<group>";
+		};
+		B0BB60C61574AC14001BB2CB /* shop */ = {
+			isa = PBXGroup;
+			children = (
+				B0BB60C71574AC14001BB2CB /* ShopItemUIController.h */,
+				B0BB60C81574AC14001BB2CB /* ShopItemUIController.m */,
+				B0BB60C91574AC14001BB2CB /* ShopItemUIController.xib */,
+				B0BB60CA1574AC14001BB2CB /* ShopUIViewController.h */,
+				B0BB60CB1574AC14001BB2CB /* ShopUIViewController.m */,
+			);
+			path = shop;
+			sourceTree = "<group>";
+		};
+		B0BB60CC1574AC14001BB2CB /* travel */ = {
+			isa = PBXGroup;
+			children = (
+				B0BB60CD1574AC14001BB2CB /* TravelUIViewController.h */,
+				B0BB60CE1574AC14001BB2CB /* TravelUIViewController.m */,
+			);
+			path = travel;
+			sourceTree = "<group>";
+		};
+		B0BB60CF1574AC14001BB2CB /* triboard */ = {
+			isa = PBXGroup;
+			children = (
+				B0BB60D01574AC14001BB2CB /* BagUIViewController.h */,
+				B0BB60D11574AC14001BB2CB /* BagUIViewController.m */,
+				B0BB60D21574AC14001BB2CB /* TriboardItemUIViewController.h */,
+				B0BB60D31574AC14001BB2CB /* TriboardItemUIViewController.m */,
+				B0BB60D41574AC14001BB2CB /* TriboardItemUIViewController.xib */,
+				B0BB60D51574AC14001BB2CB /* TriboardUIViewController.h */,
+				B0BB60D61574AC14001BB2CB /* TriboardUIViewController.m */,
+			);
+			path = triboard;
+			sourceTree = "<group>";
+		};
+		B0BB60D71574AC14001BB2CB /* tribu */ = {
+			isa = PBXGroup;
+			children = (
+				B0BB60D81574AC14001BB2CB /* TribuUIViewController.h */,
+				B0BB60D91574AC14001BB2CB /* TribuUIViewController.m */,
+			);
+			path = tribu;
+			sourceTree = "<group>";
+		};
+		B0BB60DA1574AC14001BB2CB /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				B0BB60DB1574AC14001BB2CB /* USave.h */,
+				B0BB60DC1574AC14001BB2CB /* USave.m */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
 		B0C1B42714FE247C00E10833 /* CitrusEngine */ = {
 			isa = PBXGroup;
 			children = (
@@ -2083,17 +2104,6 @@
 				C8DEB0BB15728D3A00017A64 /* tribus-bg.png */,
 			);
 			path = 1x;
-			sourceTree = "<group>";
-		};
-		C8DEB1191572A79900017A64 /* PRTween */ = {
-			isa = PBXGroup;
-			children = (
-				C8DEB11A1572A79900017A64 /* PRTween.h */,
-				C8DEB11B1572A79900017A64 /* PRTween.m */,
-				C8DEB11C1572A79900017A64 /* PRTweenTimingFunctions.h */,
-				C8DEB11D1572A79900017A64 /* PRTweenTimingFunctions.m */,
-			);
-			path = PRTween;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2297,14 +2307,8 @@
 				B04481321563E1DF005BC009 /* filtreDissociatifVert.xml in Resources */,
 				B04481351563E1F0005BC009 /* filtreDissociatifVert@2x.png in Resources */,
 				B04481361563E1F0005BC009 /* filtreDissociatifVert@2x.xml in Resources */,
-				B002DBD1156C041F003F5C78 /* ColorUIViewController.xib in Resources */,
-				B002DBD7156C041F003F5C78 /* MissionItemUIViewController.xib in Resources */,
-				B002DBDC156C041F003F5C78 /* NavigationUIViewController.xib in Resources */,
-				B002DBDF156C041F003F5C78 /* ShopItemUIController.xib in Resources */,
-				B002DBE4156C041F003F5C78 /* TriboardItemUIViewController.xib in Resources */,
 				B002DBF4156C044F003F5C78 /* color.json in Resources */,
 				B002DBF7156C044F003F5C78 /* mission.json in Resources */,
-				B002DBF8156C044F003F5C78 /* motif.json in Resources */,
 				B002DBF9156C044F003F5C78 /* triboard.json in Resources */,
 				B002DBFB156C0485003F5C78 /* Kohicle25.ttf in Resources */,
 				B002DC38156C051B003F5C78 /* MainStoryboard.storyboard in Resources */,
@@ -2318,6 +2322,15 @@
 				B0ED548D15743201008E0B05 /* jauneParticulesJauge.png in Resources */,
 				B0ED548F15743201008E0B05 /* jauneParticulesJauge.xml in Resources */,
 				B0ED549215743225008E0B05 /* jauneFondJauge.png in Resources */,
+				B0BB60EB1574AC14001BB2CB /* ColorUIViewController.xib in Resources */,
+				B0BB60F91574AC14001BB2CB /* MissionItemUIViewController.xib in Resources */,
+				B0BB61031574AC14001BB2CB /* NavigationUIViewController.xib in Resources */,
+				B0BB61091574AC14001BB2CB /* ShopItemUIController.xib in Resources */,
+				B0BB61131574AC14001BB2CB /* TriboardItemUIViewController.xib in Resources */,
+				B0BB611D1574ACA3001BB2CB /* motifs.json in Resources */,
+				B0BB611F1574ACA3001BB2CB /* pouvoirs.json in Resources */,
+				B0BB61221574AE8D001BB2CB /* buy-btn@2x.png in Resources */,
+				B0BB61251574AE9E001BB2CB /* buy-btn-step-2@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2431,14 +2444,8 @@
 				B002DCAF156C085C003F5C78 /* filtreDissociatifVert.xml in Resources */,
 				B002DCB0156C085C003F5C78 /* filtreDissociatifVert@2x.png in Resources */,
 				B002DCB1156C085C003F5C78 /* filtreDissociatifVert@2x.xml in Resources */,
-				B002DCB2156C085C003F5C78 /* ColorUIViewController.xib in Resources */,
-				B002DCB3156C085C003F5C78 /* MissionItemUIViewController.xib in Resources */,
-				B002DCB4156C085C003F5C78 /* NavigationUIViewController.xib in Resources */,
-				B002DCB5156C085C003F5C78 /* ShopItemUIController.xib in Resources */,
-				B002DCB6156C085C003F5C78 /* TriboardItemUIViewController.xib in Resources */,
 				B002DCB7156C085C003F5C78 /* color.json in Resources */,
 				B002DCB8156C085C003F5C78 /* mission.json in Resources */,
-				B002DCB9156C085C003F5C78 /* motif.json in Resources */,
 				B002DCBA156C085C003F5C78 /* triboard.json in Resources */,
 				B002DCBB156C085C003F5C78 /* Kohicle25.ttf in Resources */,
 				B002DCD9156C085C003F5C78 /* MainStoryboard.storyboard in Resources */,
@@ -2481,7 +2488,6 @@
 				C8DEB0FE15728D3A00017A64 /* b_vert@2x.png in Resources */,
 				C8DEB0FF15728D3A00017A64 /* b_violet@2x.png in Resources */,
 				C8DEB10015728D3A00017A64 /* back-btn@2x.png in Resources */,
-				C8DEB10115728D3A00017A64 /* buy-btn@2x.png in Resources */,
 				C8DEB10215728D3A00017A64 /* colors_big@2x.png in Resources */,
 				C8DEB10315728D3A00017A64 /* fond@2x.png in Resources */,
 				C8DEB10415728D3A00017A64 /* fond1@2x.png in Resources */,
@@ -2515,6 +2521,15 @@
 				B0ED548E15743201008E0B05 /* jauneParticulesJauge.png in Resources */,
 				B0ED549015743201008E0B05 /* jauneParticulesJauge.xml in Resources */,
 				B0ED549315743225008E0B05 /* jauneFondJauge.png in Resources */,
+				B0BB60EC1574AC14001BB2CB /* ColorUIViewController.xib in Resources */,
+				B0BB60FA1574AC14001BB2CB /* MissionItemUIViewController.xib in Resources */,
+				B0BB61041574AC14001BB2CB /* NavigationUIViewController.xib in Resources */,
+				B0BB610A1574AC14001BB2CB /* ShopItemUIController.xib in Resources */,
+				B0BB61141574AC14001BB2CB /* TriboardItemUIViewController.xib in Resources */,
+				B0BB611E1574ACA3001BB2CB /* motifs.json in Resources */,
+				B0BB61201574ACA3001BB2CB /* pouvoirs.json in Resources */,
+				B0BB61231574AE8D001BB2CB /* buy-btn@2x.png in Resources */,
+				B0BB61261574AE9E001BB2CB /* buy-btn-step-2@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2626,32 +2641,34 @@
 				B054E6121557D54600E84D8F /* CreationRuntime.m in Sources */,
 				B0702A0815627E8E00833D24 /* GraphismTmp.m in Sources */,
 				B04481391563EDEF005BC009 /* FiltreDissociatif.m in Sources */,
-				B002DBC0156C041F003F5C78 /* NMCustomLabel.m in Sources */,
-				B002DBC1156C041F003F5C78 /* iCarousel.m in Sources */,
-				B002DBCE156C041F003F5C78 /* Color.m in Sources */,
-				B002DBCF156C041F003F5C78 /* ColorManager.m in Sources */,
-				B002DBD0156C041F003F5C78 /* ColorUIViewController.m in Sources */,
-				B002DBD2156C041F003F5C78 /* GenericUIViewController.m in Sources */,
-				B002DBD3156C041F003F5C78 /* MainUIViewController.m in Sources */,
-				B002DBD5156C041F003F5C78 /* IslandUIViewController.m in Sources */,
-				B002DBD6156C041F003F5C78 /* MissionItemUIViewController.m in Sources */,
-				B002DBD8156C041F003F5C78 /* MissionUIViewController.m in Sources */,
-				B002DBD9156C041F003F5C78 /* CustomUITabBarController.m in Sources */,
-				B002DBDA156C041F003F5C78 /* FromTopReplaceSegue.m in Sources */,
-				B002DBDB156C041F003F5C78 /* NavigationUIViewController.m in Sources */,
-				B002DBDD156C041F003F5C78 /* UntouchableUIView.m in Sources */,
-				B002DBDE156C041F003F5C78 /* ShopItemUIController.m in Sources */,
-				B002DBE0156C041F003F5C78 /* ShopUIViewController.m in Sources */,
-				B002DBE1156C041F003F5C78 /* TravelUIViewController.m in Sources */,
-				B002DBE2156C041F003F5C78 /* BagUIViewController.m in Sources */,
-				B002DBE3156C041F003F5C78 /* TriboardItemUIViewController.m in Sources */,
-				B002DBE5156C041F003F5C78 /* TriboardUIViewController.m in Sources */,
-				B002DBE6156C041F003F5C78 /* TribuUIViewController.m in Sources */,
-				B002DBE7156C041F003F5C78 /* USave.m in Sources */,
 				B002DBF6156C044F003F5C78 /* CoreDataBase.xcdatamodeld in Sources */,
 				B002DC43156C0804003F5C78 /* AppDelegate.m in Sources */,
-				C8DEB11E1572A79900017A64 /* PRTween.m in Sources */,
-				C8DEB1201572A79900017A64 /* PRTweenTimingFunctions.m in Sources */,
+				B0BB60DD1574AC14001BB2CB /* NMCustomLabel.m in Sources */,
+				B0BB60DF1574AC14001BB2CB /* iCarousel.m in Sources */,
+				B0BB60E11574AC14001BB2CB /* PRTween.m in Sources */,
+				B0BB60E31574AC14001BB2CB /* PRTweenTimingFunctions.m in Sources */,
+				B0BB60E51574AC14001BB2CB /* Color.m in Sources */,
+				B0BB60E71574AC14001BB2CB /* ColorManager.m in Sources */,
+				B0BB60E91574AC14001BB2CB /* ColorUIViewController.m in Sources */,
+				B0BB60ED1574AC14001BB2CB /* GameUIViewController.m in Sources */,
+				B0BB60EF1574AC14001BB2CB /* GenericUIViewController.m in Sources */,
+				B0BB60F11574AC14001BB2CB /* MainUIViewController.m in Sources */,
+				B0BB60F31574AC14001BB2CB /* IslandModel.xcdatamodeld in Sources */,
+				B0BB60F51574AC14001BB2CB /* IslandUIViewController.m in Sources */,
+				B0BB60F71574AC14001BB2CB /* MissionItemUIViewController.m in Sources */,
+				B0BB60FB1574AC14001BB2CB /* MissionUIViewController.m in Sources */,
+				B0BB60FD1574AC14001BB2CB /* CustomUITabBarController.m in Sources */,
+				B0BB60FF1574AC14001BB2CB /* FromTopReplaceSegue.m in Sources */,
+				B0BB61011574AC14001BB2CB /* NavigationUIViewController.m in Sources */,
+				B0BB61051574AC14001BB2CB /* UntouchableUIView.m in Sources */,
+				B0BB61071574AC14001BB2CB /* ShopItemUIController.m in Sources */,
+				B0BB610B1574AC14001BB2CB /* ShopUIViewController.m in Sources */,
+				B0BB610D1574AC14001BB2CB /* TravelUIViewController.m in Sources */,
+				B0BB610F1574AC14001BB2CB /* BagUIViewController.m in Sources */,
+				B0BB61111574AC14001BB2CB /* TriboardItemUIViewController.m in Sources */,
+				B0BB61151574AC14001BB2CB /* TriboardUIViewController.m in Sources */,
+				B0BB61171574AC14001BB2CB /* TribuUIViewController.m in Sources */,
+				B0BB61191574AC14001BB2CB /* USave.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2760,34 +2777,33 @@
 				B002DD3E156C085C003F5C78 /* CreationRuntime.m in Sources */,
 				B002DD3F156C085C003F5C78 /* GraphismTmp.m in Sources */,
 				B002DD40156C085C003F5C78 /* FiltreDissociatif.m in Sources */,
-				B002DD41156C085C003F5C78 /* NMCustomLabel.m in Sources */,
-				B002DD42156C085C003F5C78 /* iCarousel.m in Sources */,
-				B002DD43156C085C003F5C78 /* Color.m in Sources */,
-				B002DD44156C085C003F5C78 /* ColorManager.m in Sources */,
-				B002DD45156C085C003F5C78 /* ColorUIViewController.m in Sources */,
-				B002DD46156C085C003F5C78 /* GenericUIViewController.m in Sources */,
-				B002DD47156C085C003F5C78 /* MainUIViewController.m in Sources */,
-				B002DD48156C085C003F5C78 /* IslandModel.xcdatamodeld in Sources */,
-				B002DD49156C085C003F5C78 /* IslandUIViewController.m in Sources */,
-				B002DD4A156C085C003F5C78 /* MissionItemUIViewController.m in Sources */,
-				B002DD4B156C085C003F5C78 /* MissionUIViewController.m in Sources */,
-				B002DD4C156C085C003F5C78 /* CustomUITabBarController.m in Sources */,
-				B002DD4D156C085C003F5C78 /* FromTopReplaceSegue.m in Sources */,
-				B002DD4E156C085C003F5C78 /* NavigationUIViewController.m in Sources */,
-				B002DD4F156C085C003F5C78 /* UntouchableUIView.m in Sources */,
-				B002DD50156C085C003F5C78 /* ShopItemUIController.m in Sources */,
-				B002DD51156C085C003F5C78 /* ShopUIViewController.m in Sources */,
-				B002DD52156C085C003F5C78 /* TravelUIViewController.m in Sources */,
-				B002DD53156C085C003F5C78 /* BagUIViewController.m in Sources */,
-				B002DD54156C085C003F5C78 /* TriboardItemUIViewController.m in Sources */,
-				B002DD55156C085C003F5C78 /* TriboardUIViewController.m in Sources */,
-				B002DD56156C085C003F5C78 /* TribuUIViewController.m in Sources */,
-				B002DD57156C085C003F5C78 /* USave.m in Sources */,
 				B002DD58156C085C003F5C78 /* CoreDataBase.xcdatamodeld in Sources */,
 				B002DD59156C085C003F5C78 /* AppDelegate.m in Sources */,
-				B002DD73156C1188003F5C78 /* GameUIViewController.m in Sources */,
-				C8DEB11F1572A79900017A64 /* PRTween.m in Sources */,
-				C8DEB1211572A79900017A64 /* PRTweenTimingFunctions.m in Sources */,
+				B0BB60DE1574AC14001BB2CB /* NMCustomLabel.m in Sources */,
+				B0BB60E01574AC14001BB2CB /* iCarousel.m in Sources */,
+				B0BB60E21574AC14001BB2CB /* PRTween.m in Sources */,
+				B0BB60E41574AC14001BB2CB /* PRTweenTimingFunctions.m in Sources */,
+				B0BB60E61574AC14001BB2CB /* Color.m in Sources */,
+				B0BB60E81574AC14001BB2CB /* ColorManager.m in Sources */,
+				B0BB60EA1574AC14001BB2CB /* ColorUIViewController.m in Sources */,
+				B0BB60EE1574AC14001BB2CB /* GameUIViewController.m in Sources */,
+				B0BB60F01574AC14001BB2CB /* GenericUIViewController.m in Sources */,
+				B0BB60F21574AC14001BB2CB /* MainUIViewController.m in Sources */,
+				B0BB60F61574AC14001BB2CB /* IslandUIViewController.m in Sources */,
+				B0BB60F81574AC14001BB2CB /* MissionItemUIViewController.m in Sources */,
+				B0BB60FC1574AC14001BB2CB /* MissionUIViewController.m in Sources */,
+				B0BB60FE1574AC14001BB2CB /* CustomUITabBarController.m in Sources */,
+				B0BB61001574AC14001BB2CB /* FromTopReplaceSegue.m in Sources */,
+				B0BB61021574AC14001BB2CB /* NavigationUIViewController.m in Sources */,
+				B0BB61061574AC14001BB2CB /* UntouchableUIView.m in Sources */,
+				B0BB61081574AC14001BB2CB /* ShopItemUIController.m in Sources */,
+				B0BB610C1574AC14001BB2CB /* ShopUIViewController.m in Sources */,
+				B0BB610E1574AC14001BB2CB /* TravelUIViewController.m in Sources */,
+				B0BB61101574AC14001BB2CB /* BagUIViewController.m in Sources */,
+				B0BB61121574AC14001BB2CB /* TriboardItemUIViewController.m in Sources */,
+				B0BB61161574AC14001BB2CB /* TriboardUIViewController.m in Sources */,
+				B0BB61181574AC14001BB2CB /* TribuUIViewController.m in Sources */,
+				B0BB611A1574AC14001BB2CB /* USave.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2965,14 +2981,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		B002DB96156C041F003F5C78 /* IslandModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-			);
-			path = IslandModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
 		B002DBEF156C044F003F5C78 /* CoreDataBase.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
@@ -2980,6 +2988,14 @@
 			);
 			currentVersion = B002DBF0156C044F003F5C78 /* CoreDataBase.xcdatamodel */;
 			path = CoreDataBase.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		B0BB60B31574AC14001BB2CB /* IslandModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+			);
+			path = IslandModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

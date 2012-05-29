@@ -43,7 +43,7 @@
     textField.alpha = 0;
     [textField setBackgroundColor:[UIColor clearColor]];
     [textField setFont:[UIFont fontWithName:@"TwCenMT-Bold" size:20]];
-    textField.textColor = [Color colorWithHexString:@"0XFFFFFF"];
+    textField.textColor = [Color colorWithHexString:@"0X333330"];
     textField.adjustsFontSizeToFitWidth = TRUE;
     textField.textAlignment = UITextAlignmentCenter;
     [self.view addSubview:textField];
