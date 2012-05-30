@@ -61,12 +61,10 @@
     [super.space addCollisionHandlerBetween:@"hero" andTypeB:@"taedioFumee" target:self begin:@selector(collisionStart) preSolve:NULL postSolve:NULL separate:@selector(collisionEnd)];
 }
 
-- (BOOL) collisionStart:(CMArbiter*) arbiter space:(CMSpace*) space {
+- (void) collisionStart {
     
-    
-    
-    return YES;
-    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"ecranFumee" object:nil];
+      
 }
 
 @end

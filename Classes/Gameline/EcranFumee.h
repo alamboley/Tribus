@@ -17,7 +17,7 @@
     SPPoint *previousPointTouched;
 }
 
-- (id) initWithXML:(NSString *) atlasXML;
+- (id) initWithAnimationSequence:(AnimationSequence *) animationSequence;
 
 - (void) destroy;
 

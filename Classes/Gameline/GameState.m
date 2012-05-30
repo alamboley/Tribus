@@ -11,7 +11,6 @@
 #import "PhysicsObject.h"
 #import "Platform.h"
 #import "Hero.h"
-#import "AnimationSequence.h"
 #import "BigPicture.h"
 #import "Sensor.h"
 #import "Sol.h"
@@ -30,7 +29,7 @@
         
         //[USave saveItemId:[obj objectForKey:@"id"] forType:self.title];
         
-        [self showHideDebugDraw];
+        //[self showHideDebugDraw];
         
         worldColor = @"rouge";
         
@@ -66,13 +65,14 @@
         jauge.x = 350;
         jauge.y = 100;
         
-        EcranFumee *ecranFumee = [[EcranFumee alloc] initWithXML:@"ecranNoir.xml"];
-        [self.stage addChild:ecranFumee];
+        animEcranNoir = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"ecranNoir.xml"] andAnimations:[NSArray arrayWithObjects:@"noirDisparition", @"noirExplosion", nil] andFirstAnimation:@"noirExplosion"];
         
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(colorPicked:) name:@"jaune" object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(colorPicked:) name:@"rouge" object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(colorPicked:) name:@"piege" object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(colorPicked:) name:@"filtreDissociatif" object:nil];
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(baddyManagement:) name:@"ecranFumee" object:nil];
 	}
     
 	return self;
@@ -93,6 +93,12 @@
         [ColorManager addPoints:1 forColorId:notification.name];
     }
     
+}
+
+- (void) baddyManagement:(NSNotification *) notification {
+
+    EcranFumee *ecranFumee = [[EcranFumee alloc] initWithAnimationSequence:animEcranNoir];
+    [self.stage addChild:ecranFumee];
 }
 
 @end

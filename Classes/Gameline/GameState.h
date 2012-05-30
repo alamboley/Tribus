@@ -7,12 +7,15 @@
 //
 
 #import "State.h"
+#import "AnimationSequence.h"
 
 @interface GameState : State {
     
     float gameWidth;
     
     SPSprite *graphismEcranSoutenance;
+    
+    AnimationSequence *animEcranNoir;
     
     NSString *worldColor;
 }

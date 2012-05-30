@@ -10,12 +10,12 @@
 
 @implementation EcranFumee
 
-- (id) initWithXML:(NSString *) atlasXML {
+- (id) initWithAnimationSequence:(AnimationSequence *) animationSequence {
     
     if (self = [super init]) {
         
         
-        animEcranNoir = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:atlasXML] andAnimations:[NSArray arrayWithObjects:@"noirDisparition", @"noirExplosion", nil] andFirstAnimation:@"noirExplosion"];
+        animEcranNoir = animationSequence;
         
         animEcranNoir.scaleX = 2;
         animEcranNoir.scaleY = 2;
@@ -59,7 +59,6 @@
         if (!previousPointTouched)
             previousPointTouched = [touchPhaseMoved locationInSpace:self];
         
-        
         SPPoint *touchPosition = [touchPhaseMoved locationInSpace:self];
         
         if ((touchPosition.y > previousPointTouched.y + 50) || (touchPosition.y < previousPointTouched.y - 50)) {
@@ -68,7 +67,6 @@
         } else {
             [animDisparition pause];
         }
-        
         
         if (animDisparition.currentFrame + 1 == animDisparition.numFrames) {
             [self destroy];
