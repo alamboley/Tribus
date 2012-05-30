@@ -20,6 +20,7 @@
 #import "CreationRuntime.h"
 #import "ColorManager.h"
 #import "Jauge.h"
+#import "EcranFumee.h"
 
 @implementation GameState
 
@@ -64,6 +65,9 @@
         [self addChild:jauge];
         jauge.x = 350;
         jauge.y = 100;
+        
+        EcranFumee *ecranFumee = [[EcranFumee alloc] initWithXML:@"ecranNoir.xml"];
+        [self.stage addChild:ecranFumee];
         
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(colorPicked:) name:@"jaune" object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(colorPicked:) name:@"rouge" object:nil];

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:1646aa36baf929ca101eee1153cfb088$ -->
+<TextureAtlas imagePath="ecranNoir.png">
+    <SubTexture name="noirDisparition/0000" x="2" y="324" width="478" height="320" frameX="0" frameY="0" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirDisparition/0001" x="438" y="938" width="430" height="320" frameX="-50" frameY="0" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirDisparition/0002" x="2" y="1222" width="428" height="296" frameX="-46" frameY="-24" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirDisparition/0003" x="448" y="646" width="438" height="290" frameX="-42" frameY="-30" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirDisparition/0004" x="2" y="932" width="434" height="288" frameX="-40" frameY="-32" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirDisparition/0005" x="2" y="646" width="444" height="284" frameX="-34" frameY="-36" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirDisparition/0006" x="688" y="1260" width="278" height="170" frameX="-33" frameY="-38" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirDisparition/0007" x="432" y="1260" width="254" height="172" frameX="-30" frameY="-40" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirDisparition/0008" x="318" y="1520" width="256" height="172" frameX="-30" frameY="-43" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirDisparition/0009" x="260" y="1830" width="256" height="176" frameX="-30" frameY="-41" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirDisparition/0010" x="2" y="1830" width="256" height="182" frameX="-30" frameY="-35" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirDisparition/0011" x="688" y="1432" width="184" height="170" frameX="-102" frameY="-47" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirDisparition/0012" x="966" y="2" width="0" height="0" frameX="0" frameY="0" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirExplosion/0000" x="888" y="646" width="116" height="138" frameX="-174" frameY="-139" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirExplosion/0001" x="888" y="646" width="116" height="138" frameX="-174" frameY="-139" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirExplosion/0002" x="888" y="646" width="116" height="138" frameX="-174" frameY="-139" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirExplosion/0003" x="2" y="1520" width="314" height="308" frameX="-60" frameY="-12" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirExplosion/0004" x="2" y="1520" width="314" height="308" frameX="-60" frameY="-12" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirExplosion/0005" x="2" y="1520" width="314" height="308" frameX="-60" frameY="-12" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirExplosion/0006" x="484" y="2" width="480" height="320"/>
+    <SubTexture name="noirExplosion/0007" x="484" y="2" width="480" height="320"/>
+    <SubTexture name="noirExplosion/0008" x="484" y="2" width="480" height="320"/>
+    <SubTexture name="noirExplosion/0009" x="2" y="2" width="480" height="320"/>
+    <SubTexture name="noirExplosion/0010" x="2" y="2" width="480" height="320"/>
+    <SubTexture name="noirExplosion/0011" x="2" y="2" width="480" height="320"/>
+    <SubTexture name="noirExplosion/0012" x="482" y="324" width="472" height="320" frameX="0" frameY="0" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirExplosion/0013" x="482" y="324" width="472" height="320" frameX="0" frameY="0" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirExplosion/0014" x="482" y="324" width="472" height="320" frameX="0" frameY="0" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirExplosion/0015" x="482" y="324" width="472" height="320" frameX="0" frameY="0" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirExplosion/0016" x="482" y="324" width="472" height="320" frameX="0" frameY="0" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirExplosion/0017" x="482" y="324" width="472" height="320" frameX="0" frameY="0" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirExplosion/0018" x="482" y="324" width="472" height="320" frameX="0" frameY="0" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirExplosion/0019" x="482" y="324" width="472" height="320" frameX="0" frameY="0" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirExplosion/0020" x="482" y="324" width="472" height="320" frameX="0" frameY="0" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirExplosion/0021" x="482" y="324" width="472" height="320" frameX="0" frameY="0" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirExplosion/0022" x="482" y="324" width="472" height="320" frameX="0" frameY="0" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirExplosion/0023" x="482" y="324" width="472" height="320" frameX="0" frameY="0" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirExplosion/0024" x="482" y="324" width="472" height="320" frameX="0" frameY="0" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirExplosion/0025" x="482" y="324" width="472" height="320" frameX="0" frameY="0" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirExplosion/0026" x="482" y="324" width="472" height="320" frameX="0" frameY="0" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirExplosion/0027" x="482" y="324" width="472" height="320" frameX="0" frameY="0" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirExplosion/0028" x="482" y="324" width="472" height="320" frameX="0" frameY="0" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirExplosion/0029" x="482" y="324" width="472" height="320" frameX="0" frameY="0" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirExplosion/0030" x="482" y="324" width="472" height="320" frameX="0" frameY="0" frameWidth="480" frameHeight="320"/>
+    <SubTexture name="noirExplosion/0031" x="482" y="324" width="472" height="320" frameX="0" frameY="0" frameWidth="480" frameHeight="320"/>
+</TextureAtlas>
