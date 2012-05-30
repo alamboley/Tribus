@@ -8,6 +8,7 @@
 
 #import "BusManagement.h"
 #import "SBJsonParser.h"
+#import "TaedioFumee.h"
 
 @implementation BusManagement
 
@@ -23,9 +24,13 @@
         NSDictionary *status = [parser objectWithString:jsonString];
         travel = [status objectForKey:@"travel"];
         
+        ce = [CitrusEngine getInstance];
+        
         hero = heroParam;
         
         indice = 0;
+        
+        animTaedioFumee = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"taedioFumee.xml"] andAnimations:[NSArray arrayWithObjects:@"taedioFumee", nil] andFirstAnimation:@"taedioFumee"];
     }
     
     return self;
@@ -53,7 +58,11 @@
         NSLog(@"%@", @"fin game");
         [self stop];
     }
+    
+    if (35 + 12 * [[travelFirstElement objectForKey:@"speed"]floatValue] - hero.velocityX < 0) {
         
+        [self creerEnnemi];
+    }
     
     SPTween *tween = [SPTween tweenWithTarget:hero time:2.0f];
     [tween animateProperty:@"velocityX" targetValue:35 + 12 * [[travelFirstElement objectForKey:@"speed"]floatValue]];
@@ -62,6 +71,18 @@
     indice = (indice >= travel.count) ? 0 : indice + 1;
     
     //NSLog(@"%f %f", hero.velocityX, [[travelFirstElement objectForKey:@"speed"]floatValue]);
+}
+
+- (void) creerEnnemi {
+    
+    float positionX = hero.x + 500 + arc4random() % 300;
+    float positionY = 50 + arc4random() % 250;
+    
+//    AnimationSequence *animTaedioFumeeCopy = [animTaedioFumee copy];
+    
+    TaedioFumee *taedioFumee = [[TaedioFumee alloc] initWithName:@"filtreVert" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"120", @"70", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[animTaedioFumee copy]];
+    [ce.state addObject:taedioFumee];
+    
 }
 
 @end

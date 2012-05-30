@@ -27,7 +27,7 @@
     
 	if (self = [super init]) {
         
-        //[self showHideDebugDraw];
+        [self showHideDebugDraw];
         
         worldColor = @"rouge";
         

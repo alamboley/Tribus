@@ -66,4 +66,9 @@
     [self.stage.juggler removeObject:[mcSequences objectForKey:previousAnimation]];
 }
 
+- (AnimationSequence *) copy {
+    
+    return [[AnimationSequence alloc] initWithTextureAtlas:textureAtlas andAnimations:animations andFirstAnimation:previousAnimation];
+}
+
 @end

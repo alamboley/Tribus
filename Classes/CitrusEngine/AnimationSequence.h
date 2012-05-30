@@ -24,6 +24,8 @@
 
 - (id) initWithTextureAtlas:(SPTextureAtlas *) textAtlas andAnimations:(NSArray *) multiAnimations andFirstAnimation:(NSString *) firstAnim;
 
+- (AnimationSequence *) copy;
+
 - (void) changeAnimation:(NSString *) animation withLoop:(BOOL)animLoop;
 
 @end

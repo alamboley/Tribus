@@ -7,22 +7,31 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CitrusEngine.h"
+#import "CitrusObject.h"
 #import "Hero.h"
+#import "AnimationSequence.h"
 
 @interface BusManagement : NSObject {
     
+    CitrusEngine *ce;
+    
     Hero *hero;
     
-    NSArray* travel;
+    NSArray *travel;
     
     NSTimer *timer;
     
     int indice;
+    
+    AnimationSequence *animTaedioFumee;
 }
 
 - (id) initWithData:(NSString *) pathForResource andHero:(Hero *) heroParam;
 
 - (void) start;
 - (void) stop;
+
+- (void) creerEnnemi;
 
 @end

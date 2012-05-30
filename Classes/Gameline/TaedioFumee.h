@@ -8,6 +8,9 @@
 
 #import "Sensor.h"
 
-@interface TaedioFumee : Sensor
+@interface TaedioFumee : Sensor {
+    
+    CitrusObject *hero;
+}
 
 @end
