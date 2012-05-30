@@ -15,7 +15,7 @@
     if (self = [super init]) {
         
         
-        AnimationSequence *animEcranNoir = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:atlasXML] andAnimations:[NSArray arrayWithObjects:@"noirDisparition", @"noirExplosion", nil] andFirstAnimation:@"noirExplosion"];
+        animEcranNoir = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:atlasXML] andAnimations:[NSArray arrayWithObjects:@"noirDisparition", @"noirExplosion", nil] andFirstAnimation:@"noirExplosion"];
         
         animEcranNoir.scaleX = 2;
         animEcranNoir.scaleY = 2;
@@ -29,21 +29,51 @@
         
         [self addChild:animEcranNoir];
         
-        
-        [self addEventListener:@selector(onTouch:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
+        [animEcranNoir addEventListener:@selector(onTouch:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
     }
     
     return self;
 }
 
-- (void)onTouch:(SPTouchEvent*)event
-{
-    SPTouch *touch = [[event touchesWithTarget:self andPhase:SPTouchPhaseBegan] anyObject];
-    if (touch)
-    {
-        SPPoint *touchPosition = [touch locationInSpace:self];
-        NSLog(@"Touched position (%f, %f)",
-              touchPosition.x, touchPosition.y);
+- (void) destroy {
+    
+    [self removeChild:animEcranNoir];
+    
+    [animEcranNoir removeEventListener:@selector(onTouch:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
+}
+
+- (void) onTouch:(SPTouchEvent *) event {
+    
+    SPTouch *touchPhaseMoved = [[event touchesWithTarget:self andPhase:SPTouchPhaseMoved] anyObject];
+    SPTouch *touchBegan = [[event touchesWithTarget:self andPhase:SPTouchPhaseBegan] anyObject];
+    
+    if (touchBegan && animDisparition == nil) {
+        
+        [animEcranNoir changeAnimation:@"noirDisparition" withLoop:NO];
+        animDisparition = [animEcranNoir getCurrentAnimaiton];
+        [animDisparition pause];
+    }
+    
+    if (touchPhaseMoved) {
+        
+        if (!previousPointTouched)
+            previousPointTouched = [touchPhaseMoved locationInSpace:self];
+        
+        
+        SPPoint *touchPosition = [touchPhaseMoved locationInSpace:self];
+        
+        if ((touchPosition.y > previousPointTouched.y + 50) || (touchPosition.y < previousPointTouched.y - 50)) {
+            [animDisparition play];
+            previousPointTouched = touchPosition;
+        } else {
+            [animDisparition pause];
+        }
+        
+        
+        if (animDisparition.currentFrame + 1 == animDisparition.numFrames) {
+            [self destroy];
+        }
+        
     }
 }
 

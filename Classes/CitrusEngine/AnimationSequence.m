@@ -60,6 +60,11 @@
     previousAnimation = animation;
 }
 
+- (SPMovieClip *) getCurrentAnimaiton {
+    
+    return ((SPMovieClip *)[mcSequences objectForKey:previousAnimation]);
+}
+
 - (void) dealloc {
     
     [self removeChild:[mcSequences objectForKey:previousAnimation]];

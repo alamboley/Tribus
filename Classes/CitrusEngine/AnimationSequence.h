@@ -27,5 +27,6 @@
 - (AnimationSequence *) copy;
 
 - (void) changeAnimation:(NSString *) animation withLoop:(BOOL)animLoop;
+- (SPMovieClip *) getCurrentAnimaiton;
 
 @end

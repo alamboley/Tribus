@@ -11,9 +11,14 @@
 
 @interface EcranFumee : SPSprite {
     
-    AnimationSequence *anim;
+    AnimationSequence *animEcranNoir;
+    
+    SPMovieClip *animDisparition;
+    SPPoint *previousPointTouched;
 }
 
 - (id) initWithXML:(NSString *) atlasXML;
+
+- (void) destroy;
 
 @end
