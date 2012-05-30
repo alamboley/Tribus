@@ -20,6 +20,7 @@
 #import "ColorManager.h"
 #import "Jauge.h"
 #import "EcranFumee.h"
+#import "PouvoirExchange.h"
 
 @implementation GameState
 
@@ -73,8 +74,12 @@
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(colorPicked:) name:@"filtreDissociatif" object:nil];
         
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(baddyManagement:) name:@"ecranFumee" object:nil];
-	}
-    
+	
+        PouvoirExchange *pv = [[PouvoirExchange alloc]initWithImage:@"pouvoir1.png"];
+        [self addChild:pv];
+        [pv start];
+    }
+
 	return self;
 }
 

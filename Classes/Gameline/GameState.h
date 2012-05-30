@@ -18,6 +18,7 @@
     AnimationSequence *animEcranNoir;
     
     NSString *worldColor;
+
 }
 
 - (void) colorPicked:(NSNotification *) notification;

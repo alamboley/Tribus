@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043B2EAB1576D5CE00C09BBF /* PouvoirExchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 043B2EAA1576D5CE00C09BBF /* PouvoirExchange.m */; };
+		043B2EAC1576D5CE00C09BBF /* PouvoirExchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 043B2EAA1576D5CE00C09BBF /* PouvoirExchange.m */; };
 		0497E88F15761260005CDC2E /* UILabelCustomFontKohicle25.m in Sources */ = {isa = PBXBuildFile; fileRef = 0497E88E15761260005CDC2E /* UILabelCustomFontKohicle25.m */; };
 		0497E89015761260005CDC2E /* UILabelCustomFontKohicle25.m in Sources */ = {isa = PBXBuildFile; fileRef = 0497E88E15761260005CDC2E /* UILabelCustomFontKohicle25.m */; };
 		0497E89815761631005CDC2E /* UIImage+Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 0497E89715761631005CDC2E /* UIImage+Sprite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -15,6 +17,12 @@
 		0497E89C1576166A005CDC2E /* explosion_4_39_128.png in Resources */ = {isa = PBXBuildFile; fileRef = 0497E89A1576166A005CDC2E /* explosion_4_39_128.png */; };
 		04CD341A15767BE3009B6513 /* NotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CD341915767BE3009B6513 /* NotificationManager.m */; };
 		04CD341B15767BE3009B6513 /* NotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CD341915767BE3009B6513 /* NotificationManager.m */; };
+		04CD342A1576BEF2009B6513 /* pouvoir1.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CD34271576BEF2009B6513 /* pouvoir1.png */; };
+		04CD342B1576BEF2009B6513 /* pouvoir1.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CD34271576BEF2009B6513 /* pouvoir1.png */; };
+		04CD342C1576BEF2009B6513 /* pouvoir2.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CD34281576BEF2009B6513 /* pouvoir2.png */; };
+		04CD342D1576BEF2009B6513 /* pouvoir2.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CD34281576BEF2009B6513 /* pouvoir2.png */; };
+		04CD342E1576BEF2009B6513 /* pouvoir3.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CD34291576BEF2009B6513 /* pouvoir3.png */; };
+		04CD342F1576BEF2009B6513 /* pouvoir3.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CD34291576BEF2009B6513 /* pouvoir3.png */; };
 		04ECFFCC15765350002B4B15 /* pouvoir1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04ECFFC91576534F002B4B15 /* pouvoir1@2x.png */; };
 		04ECFFCD15765350002B4B15 /* pouvoir1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04ECFFC91576534F002B4B15 /* pouvoir1@2x.png */; };
 		04ECFFCE15765350002B4B15 /* pouvoir2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04ECFFCA15765350002B4B15 /* pouvoir2@2x.png */; };
@@ -696,6 +704,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		043B2EA91576D5CE00C09BBF /* PouvoirExchange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PouvoirExchange.h; sourceTree = "<group>"; };
+		043B2EAA1576D5CE00C09BBF /* PouvoirExchange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PouvoirExchange.m; sourceTree = "<group>"; };
 		0497E88D15761260005CDC2E /* UILabelCustomFontKohicle25.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelCustomFontKohicle25.h; sourceTree = "<group>"; };
 		0497E88E15761260005CDC2E /* UILabelCustomFontKohicle25.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelCustomFontKohicle25.m; sourceTree = "<group>"; };
 		0497E89615761631005CDC2E /* UIImage+Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Sprite.h"; sourceTree = "<group>"; };
@@ -703,6 +713,9 @@
 		0497E89A1576166A005CDC2E /* explosion_4_39_128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = explosion_4_39_128.png; sourceTree = "<group>"; };
 		04CD341815767BE3009B6513 /* NotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationManager.h; sourceTree = "<group>"; };
 		04CD341915767BE3009B6513 /* NotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationManager.m; sourceTree = "<group>"; };
+		04CD34271576BEF2009B6513 /* pouvoir1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pouvoir1.png; sourceTree = "<group>"; };
+		04CD34281576BEF2009B6513 /* pouvoir2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pouvoir2.png; sourceTree = "<group>"; };
+		04CD34291576BEF2009B6513 /* pouvoir3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pouvoir3.png; sourceTree = "<group>"; };
 		04ECFFC91576534F002B4B15 /* pouvoir1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir1@2x.png"; sourceTree = "<group>"; };
 		04ECFFCA15765350002B4B15 /* pouvoir2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir2@2x.png"; sourceTree = "<group>"; };
 		04ECFFCB15765350002B4B15 /* pouvoir3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir3@2x.png"; sourceTree = "<group>"; };
@@ -2173,6 +2186,8 @@
 				B0EDC0C7157590DE00F6A823 /* TaedioFumee.m */,
 				B0B5E46C15764C2800568EFA /* EcranFumee.h */,
 				B0B5E46D15764C2800568EFA /* EcranFumee.m */,
+				043B2EA91576D5CE00C09BBF /* PouvoirExchange.h */,
+				043B2EAA1576D5CE00C09BBF /* PouvoirExchange.m */,
 			);
 			path = Gameline;
 			sourceTree = "<group>";
@@ -2190,6 +2205,9 @@
 		C8DEB09C15728D3A00017A64 /* 1x */ = {
 			isa = PBXGroup;
 			children = (
+				04CD34271576BEF2009B6513 /* pouvoir1.png */,
+				04CD34281576BEF2009B6513 /* pouvoir2.png */,
+				04CD34291576BEF2009B6513 /* pouvoir3.png */,
 				C80115421575810100F279CC /* main-button-big-normal.png */,
 				C801152D15757D0D00F279CC /* store_pigment_bleu.png */,
 				C801152E15757D0D00F279CC /* store_pigment_jaune.png */,
@@ -2474,6 +2492,9 @@
 				04ECFFCE15765350002B4B15 /* pouvoir2@2x.png in Resources */,
 				04ECFFD015765350002B4B15 /* pouvoir3@2x.png in Resources */,
 				04ECFFD8157660BD002B4B15 /* NotificationUIControllerViewController.xib in Resources */,
+				04CD342A1576BEF2009B6513 /* pouvoir1.png in Resources */,
+				04CD342C1576BEF2009B6513 /* pouvoir2.png in Resources */,
+				04CD342E1576BEF2009B6513 /* pouvoir3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2684,6 +2705,9 @@
 				04ECFFCF15765350002B4B15 /* pouvoir2@2x.png in Resources */,
 				04ECFFD115765350002B4B15 /* pouvoir3@2x.png in Resources */,
 				04ECFFD9157660BD002B4B15 /* NotificationUIControllerViewController.xib in Resources */,
+				04CD342B1576BEF2009B6513 /* pouvoir1.png in Resources */,
+				04CD342D1576BEF2009B6513 /* pouvoir2.png in Resources */,
+				04CD342F1576BEF2009B6513 /* pouvoir3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2831,6 +2855,7 @@
 				B0B5E46E15764C2800568EFA /* EcranFumee.m in Sources */,
 				04ECFFD6157660BD002B4B15 /* NotificationUIControllerViewController.m in Sources */,
 				04CD341A15767BE3009B6513 /* NotificationManager.m in Sources */,
+				043B2EAB1576D5CE00C09BBF /* PouvoirExchange.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2974,6 +2999,7 @@
 				B0B5E46F15764C2800568EFA /* EcranFumee.m in Sources */,
 				04ECFFD7157660BD002B4B15 /* NotificationUIControllerViewController.m in Sources */,
 				04CD341B15767BE3009B6513 /* NotificationManager.m in Sources */,
+				043B2EAC1576D5CE00C09BBF /* PouvoirExchange.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
