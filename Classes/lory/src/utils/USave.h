@@ -10,6 +10,6 @@
 
 @interface USave : NSObject
 + (void)initSettingsDefaults;
-+ (void) saveItemId:(NSString*) itemId forType: (NSString*) type;
++ (void) saveValue:(id) value forItemId:(NSString*) itemId forCategory: (NSString*) category;
 + (NSDictionary*)getItemIdsforType:(NSString*) type;
 @end

@@ -77,17 +77,21 @@
     }
 
 }
-
-+ (void) saveItemId:(NSString*) itemId forType: (NSString*) type{
+/**
+ * value : la valeur à sauvegarder (wrapper les "int" "float" "bool" dans un NSNumber)
+ * itemId : l'id à enregistrer (à récupérer du JSON la plupart du temps
+ * type : l'identifiant de la categorie
+ */
++ (void) saveValue:(id) value forItemId:(NSString*) itemId forCategory: (NSString*) category{
     NSUserDefaults *pref = [NSUserDefaults standardUserDefaults];
     
     NSMutableDictionary *items;
-    if([pref dictionaryForKey:type] == nil) items = [[NSMutableDictionary alloc] initWithObjectsAndKeys:[NSNumber numberWithBool:YES], itemId, nil];
-    else items = [[NSMutableDictionary alloc] initWithDictionary:[pref dictionaryForKey:type]];
+    if([pref dictionaryForKey:category] == nil) items = [[NSMutableDictionary alloc] initWithObjectsAndKeys:value, itemId, nil];
+    else items = [[NSMutableDictionary alloc] initWithDictionary:[pref dictionaryForKey:category]];
     
     [items setValue:[NSNumber numberWithBool:YES] forKey:itemId];
     
-    [pref setValue:items forKey:type];            
+    [pref setValue:items forKey:category];            
     [pref synchronize];
 }
 + (NSDictionary*)getItemIdsforType:(NSString*) type{

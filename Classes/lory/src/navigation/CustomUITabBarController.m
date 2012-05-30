@@ -37,16 +37,16 @@
         UIImage *buttonImageSelected = [UIImage imageNamed:@"main-button-selected.png"];
         
         UIButton* aButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        aButton.frame = CGRectMake(5 + i * 120.0, 5.0, buttonImageNormal.size.width,buttonImageNormal.size.height);
+        aButton.frame = CGRectMake(5 + i * 110.0, 5.0, buttonImageNormal.size.width,buttonImageNormal.size.height);
         UIViewController *item = [self.viewControllers objectAtIndex:i];
-        aButton.titleLabel.font = [UIFont fontWithName:@"Kohicle25" size:25];
+        aButton.titleLabel.font = [UIFont fontWithName:@"TwCenMT-Regular" size:17];
         [aButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [aButton setBackgroundImage:buttonImageNormal forState:UIControlStateNormal];
         [aButton setBackgroundImage:buttonImageSelected forState:UIControlStateSelected];
-        [aButton setTitle:item.title forState:UIControlStateNormal];
+        [aButton setTitle:[item.title uppercaseString] forState:UIControlStateNormal];
         [aButton setTag:i];
         [aButton addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
-        [aButton setContentEdgeInsets:UIEdgeInsetsMake(4, -4, 0, 0)];
+        [aButton setContentEdgeInsets:UIEdgeInsetsMake(0, -4, 0, 0)];
         [self.view addSubview:aButton];
         
         

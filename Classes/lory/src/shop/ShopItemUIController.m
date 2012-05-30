@@ -59,7 +59,9 @@
             if([ColorManager removePoints:[priceLabel.text intValue] forColorId:colorsId]){
                 [step2UIView setHidden:YES];
                 [step3UIView setHidden:NO];
-                [USave saveItemId:itemId forType:self.title];
+                
+                [USave saveValue:[NSNumber numberWithBool:YES] forItemId:itemId forCategory:self.title];
+                [USave saveValue:[NSNumber numberWithBool:YES] forItemId:itemId forCategory:@"inventory"];
                 step++;
             }
             else {

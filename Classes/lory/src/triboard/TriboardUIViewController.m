@@ -7,11 +7,12 @@
 //
 
 #import "TriboardUIViewController.h"
+#import "USave.h"
+#import "SBJsonParser.h"
 
 @implementation TriboardUIViewController
 
 - (id)init {
-    NSLog(@"init");
 	if (self = [super init]) {
         
 	}
@@ -19,8 +20,22 @@
 }
 - (void)awakeFromNib
 {
-    NSLog(@"awakeFromNib");
-    self.hidesBottomBarWhenPushed = YES;
+    // Creation du parser
+    SBJsonParser *parser = [[SBJsonParser alloc] init];
+    
+    NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"missions" ofType:@"json"];
+    NSData *jsonData = [NSData dataWithContentsOfFile:jsonPath];
+    
+    // On récupère le JSON en NSString depuis la réponse
+    NSString *json_string = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    
+    // on parse la reponse JSON
+    NSArray *res = [parser objectWithString:json_string error:nil];
+
+    for (NSDictionary *obj in [USave getItemIdsforType:@"inventory"])
+    {
+        NSLog(@"Inventory item : %@",obj);
+    }
 }
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

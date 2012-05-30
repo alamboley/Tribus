@@ -44,7 +44,8 @@
                               [[NSArray alloc] initWithObjects:@"title", @"description", @"done", nil]]
                       forKey:[obj objectForKey:@"id"]];
         
-        //[USave saveItemId:[obj objectForKey:@"id"] forType:self.title]; // save mission
+        //[USave saveItemId:[obj objectForKey:@"id"] forType:self.title];
+        //[USave saveValue:[NSNumber numberWithBool:YES] forItemId:[obj objectForKey:@"id"] forCategory:self.title]; // save mission
     }
 }
 
