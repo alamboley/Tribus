@@ -2,3 +2,5 @@
 ChipmunkWrapper.xcodeproj/project.xcworkspace/xcuserdata/Aymeric.xcuserdatad/UserInterfaceState.xcuserstate
 
 ChipmunkWrapper.xcodeproj/xcuserdata/Aymeric.xcuserdatad/xcschemes/ChipmunkWrapper copy.xcscheme
+
+*.DS_Store

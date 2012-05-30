@@ -13,6 +13,12 @@
 		0497E89915761631005CDC2E /* UIImage+Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 0497E89715761631005CDC2E /* UIImage+Sprite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0497E89B1576166A005CDC2E /* explosion_4_39_128.png in Resources */ = {isa = PBXBuildFile; fileRef = 0497E89A1576166A005CDC2E /* explosion_4_39_128.png */; };
 		0497E89C1576166A005CDC2E /* explosion_4_39_128.png in Resources */ = {isa = PBXBuildFile; fileRef = 0497E89A1576166A005CDC2E /* explosion_4_39_128.png */; };
+		04ECFFCC15765350002B4B15 /* pouvoir1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04ECFFC91576534F002B4B15 /* pouvoir1@2x.png */; };
+		04ECFFCD15765350002B4B15 /* pouvoir1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04ECFFC91576534F002B4B15 /* pouvoir1@2x.png */; };
+		04ECFFCE15765350002B4B15 /* pouvoir2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04ECFFCA15765350002B4B15 /* pouvoir2@2x.png */; };
+		04ECFFCF15765350002B4B15 /* pouvoir2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04ECFFCA15765350002B4B15 /* pouvoir2@2x.png */; };
+		04ECFFD015765350002B4B15 /* pouvoir3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04ECFFCB15765350002B4B15 /* pouvoir3@2x.png */; };
+		04ECFFD115765350002B4B15 /* pouvoir3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04ECFFCB15765350002B4B15 /* pouvoir3@2x.png */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
@@ -689,6 +695,9 @@
 		0497E89615761631005CDC2E /* UIImage+Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Sprite.h"; sourceTree = "<group>"; };
 		0497E89715761631005CDC2E /* UIImage+Sprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Sprite.m"; sourceTree = "<group>"; };
 		0497E89A1576166A005CDC2E /* explosion_4_39_128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = explosion_4_39_128.png; sourceTree = "<group>"; };
+		04ECFFC91576534F002B4B15 /* pouvoir1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir1@2x.png"; sourceTree = "<group>"; };
+		04ECFFCA15765350002B4B15 /* pouvoir2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir2@2x.png"; sourceTree = "<group>"; };
+		04ECFFCB15765350002B4B15 /* pouvoir3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir3@2x.png"; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* ChipmunkWrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChipmunkWrapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -1707,6 +1716,9 @@
 		B002DBFC156C04AC003F5C78 /* app */ = {
 			isa = PBXGroup;
 			children = (
+				04ECFFC91576534F002B4B15 /* pouvoir1@2x.png */,
+				04ECFFCA15765350002B4B15 /* pouvoir2@2x.png */,
+				04ECFFCB15765350002B4B15 /* pouvoir3@2x.png */,
 				C801153F157580F400F279CC /* main-button-big-normal@2x.png */,
 				C801151B15757CE100F279CC /* store_pigment_bleu@2x.png */,
 				C801151C15757CE100F279CC /* store_pigment_jaune@2x.png */,
@@ -2434,6 +2446,9 @@
 				0497E89B1576166A005CDC2E /* explosion_4_39_128.png in Resources */,
 				B0B5E4681576449400568EFA /* ecranNoir.xml in Resources */,
 				B0B5E46A1576449400568EFA /* ecranNoir.png in Resources */,
+				04ECFFCC15765350002B4B15 /* pouvoir1@2x.png in Resources */,
+				04ECFFCE15765350002B4B15 /* pouvoir2@2x.png in Resources */,
+				04ECFFD015765350002B4B15 /* pouvoir3@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2640,6 +2655,9 @@
 				0497E89C1576166A005CDC2E /* explosion_4_39_128.png in Resources */,
 				B0B5E4691576449400568EFA /* ecranNoir.xml in Resources */,
 				B0B5E46B1576449400568EFA /* ecranNoir.png in Resources */,
+				04ECFFCD15765350002B4B15 /* pouvoir1@2x.png in Resources */,
+				04ECFFCF15765350002B4B15 /* pouvoir2@2x.png in Resources */,
+				04ECFFD115765350002B4B15 /* pouvoir3@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
