@@ -27,6 +27,8 @@
     
 	if (self = [super init]) {
         
+        //[USave saveItemId:[obj objectForKey:@"id"] forType:self.title];
+        
         [self showHideDebugDraw];
         
         worldColor = @"rouge";

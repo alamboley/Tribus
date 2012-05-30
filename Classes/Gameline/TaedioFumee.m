@@ -63,7 +63,7 @@
 
 - (BOOL) collisionStart:(CMArbiter*) arbiter space:(CMSpace*) space {
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"ok" object:nil];
+    
     
     return YES;
     
