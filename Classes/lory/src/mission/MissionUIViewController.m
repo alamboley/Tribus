@@ -9,17 +9,20 @@
 #import "MissionUIViewController.h"
 #import "SBJsonParser.h"
 #import "MissionItemUIViewController.h"
+#import "UIImage+Sprite.h"
+#import "USave.h"
 
 @implementation MissionUIViewController
 @synthesize itemDatas;
 @synthesize icarousel;
+@synthesize uiImageView;
 
 - (void)awakeFromNib
 {
     // Creation du parser
     SBJsonParser *parser = [[SBJsonParser alloc] init];
     
-    NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"mission" ofType:@"json"];
+    NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"missions" ofType:@"json"];
     NSData *jsonData = [NSData dataWithContentsOfFile:jsonPath];
     
     // On récupère le JSON en NSString depuis la réponse
@@ -32,10 +35,16 @@
     
     for (NSDictionary *obj in res)
     {
+        NSNumber *done = [NSNumber numberWithBool:NO];
+        if([[[USave getItemIdsforType:self.title] valueForKey:[obj objectForKey:@"id"]] boolValue]){
+            done = [NSNumber numberWithBool:YES];
+        }
         [itemDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
-                              [[NSArray alloc] initWithObjects:[obj objectForKey:@"title"], [obj objectForKey:@"description"], [obj objectForKey:@"done"],nil] forKeys:
+                              [[NSArray alloc] initWithObjects:[obj objectForKey:@"title"], [obj objectForKey:@"description"], done,nil] forKeys:
                               [[NSArray alloc] initWithObjects:@"title", @"description", @"done", nil]]
                       forKey:[obj objectForKey:@"id"]];
+        
+        //[USave saveItemId:[obj objectForKey:@"id"] forType:self.title]; // save mission
     }
 }
 
@@ -56,6 +65,17 @@
     icarousel.type = iCarouselTypeLinear;
     icarousel.vertical = YES;
     icarousel.viewpointOffset = CGSizeMake(0, 70);
+    UIImage *spriteSheet = [UIImage imageNamed:@"explosion_4_39_128"];
+
+    NSArray *arrayWithSprites = [spriteSheet spritesWithSpriteSheetImage:spriteSheet 
+                                                              spriteSize:CGSizeMake(128, 128)];
+    [uiImageView setAnimationImages:arrayWithSprites];
+    float animationDuration = [uiImageView.animationImages count] * 0.010; // 100ms per frame
+    
+    [uiImageView setAnimationRepeatCount:0];
+    [uiImageView setAnimationDuration:animationDuration]; 
+    [uiImageView startAnimating];
+    
 }
 
 
@@ -70,6 +90,7 @@
     itemDatas = nil;
     
     [self setIcarousel:nil];
+    [self setUiImageView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

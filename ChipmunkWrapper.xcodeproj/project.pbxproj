@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0497E88F15761260005CDC2E /* UILabelCustomFontKohicle25.m in Sources */ = {isa = PBXBuildFile; fileRef = 0497E88E15761260005CDC2E /* UILabelCustomFontKohicle25.m */; };
+		0497E89015761260005CDC2E /* UILabelCustomFontKohicle25.m in Sources */ = {isa = PBXBuildFile; fileRef = 0497E88E15761260005CDC2E /* UILabelCustomFontKohicle25.m */; };
+		0497E89815761631005CDC2E /* UIImage+Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 0497E89715761631005CDC2E /* UIImage+Sprite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0497E89915761631005CDC2E /* UIImage+Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 0497E89715761631005CDC2E /* UIImage+Sprite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0497E89B1576166A005CDC2E /* explosion_4_39_128.png in Resources */ = {isa = PBXBuildFile; fileRef = 0497E89A1576166A005CDC2E /* explosion_4_39_128.png */; };
+		0497E89C1576166A005CDC2E /* explosion_4_39_128.png in Resources */ = {isa = PBXBuildFile; fileRef = 0497E89A1576166A005CDC2E /* explosion_4_39_128.png */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
@@ -124,7 +130,7 @@
 		A1FC3D9E1312D4AC00C7D1E1 /* FollowPath.png in Resources */ = {isa = PBXBuildFile; fileRef = A1FC3D9D1312D4AC00C7D1E1 /* FollowPath.png */; };
 		B002DBF4156C044F003F5C78 /* color.json in Resources */ = {isa = PBXBuildFile; fileRef = B002DBED156C044F003F5C78 /* color.json */; };
 		B002DBF6156C044F003F5C78 /* CoreDataBase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B002DBEF156C044F003F5C78 /* CoreDataBase.xcdatamodeld */; };
-		B002DBF7156C044F003F5C78 /* mission.json in Resources */ = {isa = PBXBuildFile; fileRef = B002DBF1156C044F003F5C78 /* mission.json */; };
+		B002DBF7156C044F003F5C78 /* missions.json in Resources */ = {isa = PBXBuildFile; fileRef = B002DBF1156C044F003F5C78 /* missions.json */; };
 		B002DBF9156C044F003F5C78 /* triboard.json in Resources */ = {isa = PBXBuildFile; fileRef = B002DBF3156C044F003F5C78 /* triboard.json */; };
 		B002DBFB156C0485003F5C78 /* Kohicle25.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B002DBFA156C0485003F5C78 /* Kohicle25.ttf */; };
 		B002DC38156C051B003F5C78 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B002DC37156C051B003F5C78 /* MainStoryboard.storyboard */; };
@@ -232,7 +238,7 @@
 		B002DCAC156C085C003F5C78 /* rouge1erplan1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B04481291563D9D7005BC009 /* rouge1erplan1@2x.png */; };
 		B002DCAD156C085C003F5C78 /* rouge1erplan2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B044812A1563D9D7005BC009 /* rouge1erplan2@2x.png */; };
 		B002DCB7156C085C003F5C78 /* color.json in Resources */ = {isa = PBXBuildFile; fileRef = B002DBED156C044F003F5C78 /* color.json */; };
-		B002DCB8156C085C003F5C78 /* mission.json in Resources */ = {isa = PBXBuildFile; fileRef = B002DBF1156C044F003F5C78 /* mission.json */; };
+		B002DCB8156C085C003F5C78 /* missions.json in Resources */ = {isa = PBXBuildFile; fileRef = B002DBF1156C044F003F5C78 /* missions.json */; };
 		B002DCBA156C085C003F5C78 /* triboard.json in Resources */ = {isa = PBXBuildFile; fileRef = B002DBF3156C044F003F5C78 /* triboard.json */; };
 		B002DCBB156C085C003F5C78 /* Kohicle25.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B002DBFA156C0485003F5C78 /* Kohicle25.ttf */; };
 		B002DCD9156C085C003F5C78 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B002DC37156C051B003F5C78 /* MainStoryboard.storyboard */; };
@@ -676,6 +682,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0497E88D15761260005CDC2E /* UILabelCustomFontKohicle25.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelCustomFontKohicle25.h; sourceTree = "<group>"; };
+		0497E88E15761260005CDC2E /* UILabelCustomFontKohicle25.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelCustomFontKohicle25.m; sourceTree = "<group>"; };
+		0497E89615761631005CDC2E /* UIImage+Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Sprite.h"; sourceTree = "<group>"; };
+		0497E89715761631005CDC2E /* UIImage+Sprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Sprite.m"; sourceTree = "<group>"; };
+		0497E89A1576166A005CDC2E /* explosion_4_39_128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = explosion_4_39_128.png; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* ChipmunkWrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChipmunkWrapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -896,7 +907,7 @@
 		A1FC3D9D1312D4AC00C7D1E1 /* FollowPath.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FollowPath.png; sourceTree = "<group>"; };
 		B002DBED156C044F003F5C78 /* color.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = color.json; sourceTree = "<group>"; };
 		B002DBF0156C044F003F5C78 /* CoreDataBase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataBase.xcdatamodel; sourceTree = "<group>"; };
-		B002DBF1156C044F003F5C78 /* mission.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mission.json; sourceTree = "<group>"; };
+		B002DBF1156C044F003F5C78 /* missions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = missions.json; sourceTree = "<group>"; };
 		B002DBF3156C044F003F5C78 /* triboard.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = triboard.json; sourceTree = "<group>"; };
 		B002DBFA156C0485003F5C78 /* Kohicle25.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kohicle25.ttf; sourceTree = "<group>"; };
 		B002DC37156C051B003F5C78 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
@@ -1232,6 +1243,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0497E89515761631005CDC2E /* spritesheet */ = {
+			isa = PBXGroup;
+			children = (
+				0497E89615761631005CDC2E /* UIImage+Sprite.h */,
+				0497E89715761631005CDC2E /* UIImage+Sprite.m */,
+			);
+			path = spritesheet;
+			sourceTree = "<group>";
+		};
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -1673,7 +1693,7 @@
 				B0BB611C1574ACA3001BB2CB /* pouvoirs.json */,
 				B002DBED156C044F003F5C78 /* color.json */,
 				B002DBEF156C044F003F5C78 /* CoreDataBase.xcdatamodeld */,
-				B002DBF1156C044F003F5C78 /* mission.json */,
+				B002DBF1156C044F003F5C78 /* missions.json */,
 				B002DBF3156C044F003F5C78 /* triboard.json */,
 			);
 			name = Models;
@@ -1692,6 +1712,7 @@
 				C801152015757CE100F279CC /* store_pigment_violet@2x.png */,
 				C8DEB09C15728D3A00017A64 /* 1x */,
 				C8DEB0C215728D3A00017A64 /* back-btn@2x.png */,
+				0497E89A1576166A005CDC2E /* explosion_4_39_128.png */,
 				B0BB61211574AE8D001BB2CB /* buy-btn@2x.png */,
 				B0BB61241574AE9E001BB2CB /* buy-btn-step-2@2x.png */,
 				C8DEB0C415728D3A00017A64 /* colors_big@2x.png */,
@@ -1872,6 +1893,7 @@
 		B0BB60951574AC14001BB2CB /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				0497E89515761631005CDC2E /* spritesheet */,
 				B0BB60961574AC14001BB2CB /* custom */,
 				B0BB60991574AC14001BB2CB /* iCarousel */,
 				B0BB609C1574AC14001BB2CB /* PRTween */,
@@ -1998,6 +2020,8 @@
 				C80115491575873A00F279CC /* UIButtonCustomFontTwCenMT.h */,
 				C801154A1575873A00F279CC /* UIButtonCustomFontTwCenMT.m */,
 				C8011546157584F300F279CC /* UIButtonCustomFontKohicle25.m */,
+				0497E88D15761260005CDC2E /* UILabelCustomFontKohicle25.h */,
+				0497E88E15761260005CDC2E /* UILabelCustomFontKohicle25.m */,
 			);
 			path = navigation;
 			sourceTree = "<group>";
@@ -2356,7 +2380,7 @@
 				B044812B1563D9D7005BC009 /* rouge1erplan1@2x.png in Resources */,
 				B044812C1563D9D7005BC009 /* rouge1erplan2@2x.png in Resources */,
 				B002DBF4156C044F003F5C78 /* color.json in Resources */,
-				B002DBF7156C044F003F5C78 /* mission.json in Resources */,
+				B002DBF7156C044F003F5C78 /* missions.json in Resources */,
 				B002DBF9156C044F003F5C78 /* triboard.json in Resources */,
 				B002DBFB156C0485003F5C78 /* Kohicle25.ttf in Resources */,
 				B002DC38156C051B003F5C78 /* MainStoryboard.storyboard in Resources */,
@@ -2403,6 +2427,7 @@
 				C801153D15757D0D00F279CC /* store_pigment_violet.png in Resources */,
 				C8011540157580F400F279CC /* main-button-big-normal@2x.png in Resources */,
 				C80115431575810100F279CC /* main-button-big-normal.png in Resources */,
+				0497E89B1576166A005CDC2E /* explosion_4_39_128.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2511,7 +2536,7 @@
 				B002DCAC156C085C003F5C78 /* rouge1erplan1@2x.png in Resources */,
 				B002DCAD156C085C003F5C78 /* rouge1erplan2@2x.png in Resources */,
 				B002DCB7156C085C003F5C78 /* color.json in Resources */,
-				B002DCB8156C085C003F5C78 /* mission.json in Resources */,
+				B002DCB8156C085C003F5C78 /* missions.json in Resources */,
 				B002DCBA156C085C003F5C78 /* triboard.json in Resources */,
 				B002DCBB156C085C003F5C78 /* Kohicle25.ttf in Resources */,
 				B002DCD9156C085C003F5C78 /* MainStoryboard.storyboard in Resources */,
@@ -2608,6 +2633,7 @@
 				C801153E15757D0D00F279CC /* store_pigment_violet.png in Resources */,
 				C8011541157580F400F279CC /* main-button-big-normal@2x.png in Resources */,
 				C80115441575810100F279CC /* main-button-big-normal.png in Resources */,
+				0497E89C1576166A005CDC2E /* explosion_4_39_128.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2750,6 +2776,8 @@
 				C8011547157584F400F279CC /* UIButtonCustomFontKohicle25.m in Sources */,
 				C801154B1575873A00F279CC /* UIButtonCustomFontTwCenMT.m in Sources */,
 				B0EDC0C8157590DE00F6A823 /* TaedioFumee.m in Sources */,
+				0497E88F15761260005CDC2E /* UILabelCustomFontKohicle25.m in Sources */,
+				0497E89815761631005CDC2E /* UIImage+Sprite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2888,6 +2916,8 @@
 				C8011548157584F400F279CC /* UIButtonCustomFontKohicle25.m in Sources */,
 				C801154C1575873A00F279CC /* UIButtonCustomFontTwCenMT.m in Sources */,
 				B0EDC0C9157590DE00F6A823 /* TaedioFumee.m in Sources */,
+				0497E89015761260005CDC2E /* UILabelCustomFontKohicle25.m in Sources */,
+				0497E89915761631005CDC2E /* UIImage+Sprite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

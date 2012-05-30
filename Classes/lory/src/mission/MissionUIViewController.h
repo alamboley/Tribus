@@ -12,5 +12,6 @@
 @interface MissionUIViewController : GenericUIViewController<iCarouselDataSource,iCarouselDelegate>;
 @property (nonatomic, retain) NSMutableDictionary *itemDatas;
 @property (weak, nonatomic) IBOutlet iCarousel *icarousel;
+@property (weak, nonatomic) IBOutlet UIImageView *uiImageView;
 
 @end
