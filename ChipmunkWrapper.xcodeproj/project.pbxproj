@@ -13,6 +13,8 @@
 		0497E89915761631005CDC2E /* UIImage+Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 0497E89715761631005CDC2E /* UIImage+Sprite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0497E89B1576166A005CDC2E /* explosion_4_39_128.png in Resources */ = {isa = PBXBuildFile; fileRef = 0497E89A1576166A005CDC2E /* explosion_4_39_128.png */; };
 		0497E89C1576166A005CDC2E /* explosion_4_39_128.png in Resources */ = {isa = PBXBuildFile; fileRef = 0497E89A1576166A005CDC2E /* explosion_4_39_128.png */; };
+		04CD341A15767BE3009B6513 /* NotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CD341915767BE3009B6513 /* NotificationManager.m */; };
+		04CD341B15767BE3009B6513 /* NotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CD341915767BE3009B6513 /* NotificationManager.m */; };
 		04ECFFCC15765350002B4B15 /* pouvoir1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04ECFFC91576534F002B4B15 /* pouvoir1@2x.png */; };
 		04ECFFCD15765350002B4B15 /* pouvoir1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04ECFFC91576534F002B4B15 /* pouvoir1@2x.png */; };
 		04ECFFCE15765350002B4B15 /* pouvoir2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04ECFFCA15765350002B4B15 /* pouvoir2@2x.png */; };
@@ -699,6 +701,8 @@
 		0497E89615761631005CDC2E /* UIImage+Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Sprite.h"; sourceTree = "<group>"; };
 		0497E89715761631005CDC2E /* UIImage+Sprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Sprite.m"; sourceTree = "<group>"; };
 		0497E89A1576166A005CDC2E /* explosion_4_39_128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = explosion_4_39_128.png; sourceTree = "<group>"; };
+		04CD341815767BE3009B6513 /* NotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationManager.h; sourceTree = "<group>"; };
+		04CD341915767BE3009B6513 /* NotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationManager.m; sourceTree = "<group>"; };
 		04ECFFC91576534F002B4B15 /* pouvoir1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir1@2x.png"; sourceTree = "<group>"; };
 		04ECFFCA15765350002B4B15 /* pouvoir2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir2@2x.png"; sourceTree = "<group>"; };
 		04ECFFCB15765350002B4B15 /* pouvoir3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir3@2x.png"; sourceTree = "<group>"; };
@@ -1278,6 +1282,8 @@
 				04ECFFD3157660BD002B4B15 /* NotificationUIControllerViewController.h */,
 				04ECFFD4157660BD002B4B15 /* NotificationUIControllerViewController.m */,
 				04ECFFD5157660BD002B4B15 /* NotificationUIControllerViewController.xib */,
+				04CD341815767BE3009B6513 /* NotificationManager.h */,
+				04CD341915767BE3009B6513 /* NotificationManager.m */,
 			);
 			path = notification;
 			sourceTree = "<group>";
@@ -2824,6 +2830,7 @@
 				0497E89815761631005CDC2E /* UIImage+Sprite.m in Sources */,
 				B0B5E46E15764C2800568EFA /* EcranFumee.m in Sources */,
 				04ECFFD6157660BD002B4B15 /* NotificationUIControllerViewController.m in Sources */,
+				04CD341A15767BE3009B6513 /* NotificationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2966,6 +2973,7 @@
 				0497E89915761631005CDC2E /* UIImage+Sprite.m in Sources */,
 				B0B5E46F15764C2800568EFA /* EcranFumee.m in Sources */,
 				04ECFFD7157660BD002B4B15 /* NotificationUIControllerViewController.m in Sources */,
+				04CD341B15767BE3009B6513 /* NotificationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

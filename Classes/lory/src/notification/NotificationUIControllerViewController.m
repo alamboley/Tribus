@@ -13,6 +13,7 @@
 @end
 
 @implementation NotificationUIControllerViewController
+@synthesize notificationUILabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -22,7 +23,12 @@
     }
     return self;
 }
-
+-(id) initWithText: (NSString*) text andLifeTime:(int) timeInMilliseconds{
+    self = [super init];
+    if (self) {
+    }
+    return self;
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -31,6 +37,7 @@
 
 - (void)viewDidUnload
 {
+    [self setNotificationUILabel:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

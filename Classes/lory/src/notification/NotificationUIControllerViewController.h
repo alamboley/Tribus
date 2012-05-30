@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface NotificationUIControllerViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UILabel *notificationUILabel;
+-(id) initWithText: (NSString*) text andLifeTime:(int) timeInMilliseconds;
 @end
