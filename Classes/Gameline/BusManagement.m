@@ -8,6 +8,7 @@
 
 #import "BusManagement.h"
 #import "SBJsonParser.h"
+#import "TaedioAspire.h"
 #import "TaedioFumee.h"
 
 @implementation BusManagement
@@ -29,6 +30,8 @@
         hero = heroParam;
         
         indice = 0;
+        
+        animTaedioAspire = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"taedioAspire.xml"] andAnimations:[NSArray arrayWithObjects:@"taedioAspire", @"taedioBase", nil] andFirstAnimation:@"taedioBase"];
         
         animTaedioFumee = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"taedioFumee.xml"] andAnimations:[NSArray arrayWithObjects:@"taedioFumee", nil] andFirstAnimation:@"taedioFumee"];
     }
@@ -78,10 +81,11 @@
     float positionX = hero.x + 500 + arc4random() % 300;
     float positionY = 50 + arc4random() % 250;
     
-//    AnimationSequence *animTaedioFumeeCopy = [animTaedioFumee copy];
+    TaedioAspire *taedioAspire = [[TaedioAspire alloc] initWithName:@"taedioAspire" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"60", @"80", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[animTaedioAspire copy]];
+    [ce.state addObject:taedioAspire];
     
-    TaedioFumee *taedioFumee = [[TaedioFumee alloc] initWithName:@"filtreVert" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"120", @"70", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[animTaedioFumee copy]];
-    [ce.state addObject:taedioFumee];
+    /*TaedioFumee *taedioFumee = [[TaedioFumee alloc] initWithName:@"taedioFumee" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"120", @"70", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[animTaedioFumee copy]];
+    [ce.state addObject:taedioFumee];*/
     
 }
 

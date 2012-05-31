@@ -24,6 +24,7 @@
     
     int indice;
     
+    AnimationSequence *animTaedioAspire;
     AnimationSequence *animTaedioFumee;
 }
 

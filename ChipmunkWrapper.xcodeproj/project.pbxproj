@@ -549,14 +549,16 @@
 		B0C1B44A14FE248F00E10833 /* Main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C1B44614FE248F00E10833 /* Main.m */; };
 		B0C780D81517A7D30075592B /* icone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0C780D71517A7D30075592B /* icone@2x.png */; };
 		B0C780DA1517A7D70075592B /* icone.png in Resources */ = {isa = PBXBuildFile; fileRef = B0C780D91517A7D70075592B /* icone.png */; };
-		B0D23C21157762110014F0DB /* taedioAspire@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D23C1F157762110014F0DB /* taedioAspire@2x.png */; };
-		B0D23C22157762110014F0DB /* taedioAspire@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D23C1F157762110014F0DB /* taedioAspire@2x.png */; };
-		B0D23C23157762110014F0DB /* taedioAspire@2x.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0D23C20157762110014F0DB /* taedioAspire@2x.xml */; };
-		B0D23C24157762110014F0DB /* taedioAspire@2x.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0D23C20157762110014F0DB /* taedioAspire@2x.xml */; };
-		B0D23C27157762210014F0DB /* taedioAspire.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D23C25157762210014F0DB /* taedioAspire.png */; };
-		B0D23C28157762210014F0DB /* taedioAspire.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D23C25157762210014F0DB /* taedioAspire.png */; };
-		B0D23C29157762210014F0DB /* taedioAspire.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0D23C26157762210014F0DB /* taedioAspire.xml */; };
-		B0D23C2A157762210014F0DB /* taedioAspire.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0D23C26157762210014F0DB /* taedioAspire.xml */; };
+		B0D23C2D157763100014F0DB /* TaedioAspire.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D23C2C157763100014F0DB /* TaedioAspire.m */; };
+		B0D23C2E157763100014F0DB /* TaedioAspire.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D23C2C157763100014F0DB /* TaedioAspire.m */; };
+		B0D23C3115776BBF0014F0DB /* taedioAspire@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D23C2F15776BBF0014F0DB /* taedioAspire@2x.png */; };
+		B0D23C3215776BBF0014F0DB /* taedioAspire@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D23C2F15776BBF0014F0DB /* taedioAspire@2x.png */; };
+		B0D23C3315776BBF0014F0DB /* taedioAspire@2x.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0D23C3015776BBF0014F0DB /* taedioAspire@2x.xml */; };
+		B0D23C3415776BBF0014F0DB /* taedioAspire@2x.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0D23C3015776BBF0014F0DB /* taedioAspire@2x.xml */; };
+		B0D23C3715776BD50014F0DB /* taedioAspire.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D23C3515776BD50014F0DB /* taedioAspire.png */; };
+		B0D23C3815776BD50014F0DB /* taedioAspire.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D23C3515776BD50014F0DB /* taedioAspire.png */; };
+		B0D23C3915776BD50014F0DB /* taedioAspire.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0D23C3615776BD50014F0DB /* taedioAspire.xml */; };
+		B0D23C3A15776BD50014F0DB /* taedioAspire.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0D23C3615776BD50014F0DB /* taedioAspire.xml */; };
 		B0D4EDFC14FD7714008366B6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D4EDFB14FD7714008366B6 /* libz.dylib */; };
 		B0DF399A15753DBF00FD0956 /* taedioFumee.png in Resources */ = {isa = PBXBuildFile; fileRef = B0DF399815753DBF00FD0956 /* taedioFumee.png */; };
 		B0DF399B15753DBF00FD0956 /* taedioFumee.png in Resources */ = {isa = PBXBuildFile; fileRef = B0DF399815753DBF00FD0956 /* taedioFumee.png */; };
@@ -1147,10 +1149,12 @@
 		B0C1B44614FE248F00E10833 /* Main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Main.m; sourceTree = "<group>"; };
 		B0C780D71517A7D30075592B /* icone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icone@2x.png"; sourceTree = "<group>"; };
 		B0C780D91517A7D70075592B /* icone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icone.png; sourceTree = "<group>"; };
-		B0D23C1F157762110014F0DB /* taedioAspire@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "taedioAspire@2x.png"; sourceTree = "<group>"; };
-		B0D23C20157762110014F0DB /* taedioAspire@2x.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "taedioAspire@2x.xml"; sourceTree = "<group>"; };
-		B0D23C25157762210014F0DB /* taedioAspire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = taedioAspire.png; sourceTree = "<group>"; };
-		B0D23C26157762210014F0DB /* taedioAspire.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = taedioAspire.xml; sourceTree = "<group>"; };
+		B0D23C2B1577630F0014F0DB /* TaedioAspire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaedioAspire.h; sourceTree = "<group>"; };
+		B0D23C2C157763100014F0DB /* TaedioAspire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaedioAspire.m; sourceTree = "<group>"; };
+		B0D23C2F15776BBF0014F0DB /* taedioAspire@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "taedioAspire@2x.png"; sourceTree = "<group>"; };
+		B0D23C3015776BBF0014F0DB /* taedioAspire@2x.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "taedioAspire@2x.xml"; sourceTree = "<group>"; };
+		B0D23C3515776BD50014F0DB /* taedioAspire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = taedioAspire.png; sourceTree = "<group>"; };
+		B0D23C3615776BD50014F0DB /* taedioAspire.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = taedioAspire.xml; sourceTree = "<group>"; };
 		B0D4EDFB14FD7714008366B6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		B0DF399815753DBF00FD0956 /* taedioFumee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = taedioFumee.png; sourceTree = "<group>"; };
 		B0DF399915753DBF00FD0956 /* taedioFumee.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = taedioFumee.xml; sourceTree = "<group>"; };
@@ -1822,8 +1826,8 @@
 			children = (
 				B0702A091562951E00833D24 /* hero@2x.png */,
 				B0702A0A1562951E00833D24 /* hero@2x.xml */,
-				B0D23C1F157762110014F0DB /* taedioAspire@2x.png */,
-				B0D23C20157762110014F0DB /* taedioAspire@2x.xml */,
+				B0D23C2F15776BBF0014F0DB /* taedioAspire@2x.png */,
+				B0D23C3015776BBF0014F0DB /* taedioAspire@2x.xml */,
 				B0DF399E15753DCB00FD0956 /* taedioFumee@2x.png */,
 				B0DF399F15753DCB00FD0956 /* taedioFumee@2x.xml */,
 				B084F10E157511E4008C8899 /* filtreDissociatifVertFront@2x.pvr */,
@@ -1841,8 +1845,8 @@
 			children = (
 				B0702A0D1562958200833D24 /* hero.png */,
 				B0702A0E1562958200833D24 /* hero.xml */,
-				B0D23C25157762210014F0DB /* taedioAspire.png */,
-				B0D23C26157762210014F0DB /* taedioAspire.xml */,
+				B0D23C3515776BD50014F0DB /* taedioAspire.png */,
+				B0D23C3615776BD50014F0DB /* taedioAspire.xml */,
 				B0DF399815753DBF00FD0956 /* taedioFumee.png */,
 				B0DF399915753DBF00FD0956 /* taedioFumee.xml */,
 				B084F108157511DA008C8899 /* filtreDissociatifVertFront.pvr */,
@@ -2198,6 +2202,8 @@
 				B04481381563EDEF005BC009 /* FiltreDissociatif.m */,
 				B0BB61271574B853001BB2CB /* Jauge.h */,
 				B0BB61281574B853001BB2CB /* Jauge.m */,
+				B0D23C2B1577630F0014F0DB /* TaedioAspire.h */,
+				B0D23C2C157763100014F0DB /* TaedioAspire.m */,
 				B0EDC0C6157590DE00F6A823 /* TaedioFumee.h */,
 				B0EDC0C7157590DE00F6A823 /* TaedioFumee.m */,
 				B0B5E46C15764C2800568EFA /* EcranFumee.h */,
@@ -2511,10 +2517,10 @@
 				04CD342A1576BEF2009B6513 /* pouvoir1.png in Resources */,
 				04CD342C1576BEF2009B6513 /* pouvoir2.png in Resources */,
 				04CD342E1576BEF2009B6513 /* pouvoir3.png in Resources */,
-				B0D23C21157762110014F0DB /* taedioAspire@2x.png in Resources */,
-				B0D23C23157762110014F0DB /* taedioAspire@2x.xml in Resources */,
-				B0D23C27157762210014F0DB /* taedioAspire.png in Resources */,
-				B0D23C29157762210014F0DB /* taedioAspire.xml in Resources */,
+				B0D23C3115776BBF0014F0DB /* taedioAspire@2x.png in Resources */,
+				B0D23C3315776BBF0014F0DB /* taedioAspire@2x.xml in Resources */,
+				B0D23C3715776BD50014F0DB /* taedioAspire.png in Resources */,
+				B0D23C3915776BD50014F0DB /* taedioAspire.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2728,10 +2734,10 @@
 				04CD342B1576BEF2009B6513 /* pouvoir1.png in Resources */,
 				04CD342D1576BEF2009B6513 /* pouvoir2.png in Resources */,
 				04CD342F1576BEF2009B6513 /* pouvoir3.png in Resources */,
-				B0D23C22157762110014F0DB /* taedioAspire@2x.png in Resources */,
-				B0D23C24157762110014F0DB /* taedioAspire@2x.xml in Resources */,
-				B0D23C28157762210014F0DB /* taedioAspire.png in Resources */,
-				B0D23C2A157762210014F0DB /* taedioAspire.xml in Resources */,
+				B0D23C3215776BBF0014F0DB /* taedioAspire@2x.png in Resources */,
+				B0D23C3415776BBF0014F0DB /* taedioAspire@2x.xml in Resources */,
+				B0D23C3815776BD50014F0DB /* taedioAspire.png in Resources */,
+				B0D23C3A15776BD50014F0DB /* taedioAspire.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2880,6 +2886,7 @@
 				04ECFFD6157660BD002B4B15 /* NotificationUIControllerViewController.m in Sources */,
 				04CD341A15767BE3009B6513 /* NotificationManager.m in Sources */,
 				043B2EAB1576D5CE00C09BBF /* PouvoirExchange.m in Sources */,
+				B0D23C2D157763100014F0DB /* TaedioAspire.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3024,6 +3031,7 @@
 				04ECFFD7157660BD002B4B15 /* NotificationUIControllerViewController.m in Sources */,
 				04CD341B15767BE3009B6513 /* NotificationManager.m in Sources */,
 				043B2EAC1576D5CE00C09BBF /* PouvoirExchange.m in Sources */,
+				B0D23C2E157763100014F0DB /* TaedioAspire.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
