@@ -11,6 +11,8 @@
 @interface TaedioAspire : Sensor {
     
     CitrusObject *hero;
+    
+    CMShape *sensorDetectionHero;
 }
 
 @end

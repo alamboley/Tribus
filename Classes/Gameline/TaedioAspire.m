@@ -8,6 +8,7 @@
 
 #import "TaedioAspire.h"
 #import "CitrusEngine.h"
+#import "AnimationSequence.h"
 
 @implementation TaedioAspire
 
@@ -31,6 +32,13 @@
     return self;
 }
 
+- (void) destroy {
+    
+    [body removeShape:sensorDetectionHero];
+    
+    [super destroy];
+}
+
 - (void) update {
     
     [super update];
@@ -48,23 +56,33 @@
     }
 }
 
+- (void) createShape {
+    
+    [super createShape];
+    
+    sensorDetectionHero = [body addRectangleWithWidth:150 height:heightBody offset:cpv(-150 / 2, 0)];
+    
+    [sensorDetectionHero addToSpace];
+}
+
 - (void) defineShape {
     
     [super defineShape];
     
-    [shape setSensor:YES];
-    [shape setCollisionType:@"taedioAspire"];
+    [sensorDetectionHero setSensor:YES];
+    [sensorDetectionHero setCollisionType:@"taedioAspire"];
 }
 
 - (void) simpleInit {
     
-    [super.space addCollisionHandlerBetween:@"hero" andTypeB:@"taedioAspire" target:self begin:@selector(collisionStart) preSolve:NULL postSolve:NULL separate:@selector(collisionEnd)];
+    [super.space addCollisionHandlerBetween:@"hero" andTypeB:@"taedioAspire" target:self begin:@selector(collisionStart: space:) preSolve:NULL postSolve:NULL separate:NULL];
 }
 
-- (void) collisionStart {
+- (BOOL) collisionStart:(CMArbiter*) arbiter space:(CMSpace*) space {
     
-    //[[NSNotificationCenter defaultCenter] postNotificationName:@"ecranFumee" object:nil];
+    [(AnimationSequence *)((CitrusObject *)arbiter.shapeB.body.data).graphic changeAnimation:@"taedioAspire" withLoop:NO];
     
+    return YES;
 }
 
 @end
