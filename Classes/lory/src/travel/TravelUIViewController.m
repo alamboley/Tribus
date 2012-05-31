@@ -7,6 +7,7 @@
 //
 
 #import "TravelUIViewController.h"
+#import "UImage.h"
 
 @implementation TravelUIViewController
 @synthesize uiPickerView;
@@ -37,7 +38,7 @@
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
     NSLog(@"%d", row);
-    [self image: [UIImage imageNamed:@"back-btn.png"] WithTint: [UIColor colorWithWhite:1.0 alpha:1.0]];
+    [self.view addSubview:[[UImage alloc] image: [UIImage imageNamed:@"back-btn.png"] WithTint: [UIColor colorWithWhite:1.0 alpha:1.0]]];
 }
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component;
@@ -49,24 +50,7 @@
 {
     return @"Row Name";
 }
-// Tint the image
-- (void)image:(UIImage*)image WithTint:(UIColor *)tintColor {
-        
-    UIImageView *originalImageView = [[UIImageView alloc] initWithImage:image];
-    [originalImageView setFrame:CGRectMake(0.0f, 0.0f, image.size.width, image.size.height)];
-    [self.view addSubview:originalImageView];
-    
-    UIView *overlay = [[UIView alloc] initWithFrame:[originalImageView frame]];
-    
-    UIImageView *maskImageView = [[UIImageView alloc] initWithImage:image];
-    [maskImageView setFrame:[overlay bounds]];
-    
-    [[overlay layer] setMask:[maskImageView layer]];
-    
-    [overlay setBackgroundColor:[UIColor redColor]];
-    
-    [self.view addSubview:overlay];
-}
+
 
 #pragma mark - View lifecycle
 

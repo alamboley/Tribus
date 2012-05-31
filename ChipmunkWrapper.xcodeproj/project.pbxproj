@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0401D316157773DF000B3534 /* UImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0401D315157773DF000B3534 /* UImage.m */; };
+		0401D317157773ED000B3534 /* UImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0401D315157773DF000B3534 /* UImage.m */; };
 		043B2EAB1576D5CE00C09BBF /* PouvoirExchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 043B2EAA1576D5CE00C09BBF /* PouvoirExchange.m */; };
 		043B2EAC1576D5CE00C09BBF /* PouvoirExchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 043B2EAA1576D5CE00C09BBF /* PouvoirExchange.m */; };
 		0497E88F15761260005CDC2E /* UILabelCustomFontKohicle25.m in Sources */ = {isa = PBXBuildFile; fileRef = 0497E88E15761260005CDC2E /* UILabelCustomFontKohicle25.m */; };
@@ -714,6 +716,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0401D314157773DF000B3534 /* UImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UImage.h; sourceTree = "<group>"; };
+		0401D315157773DF000B3534 /* UImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UImage.m; sourceTree = "<group>"; };
 		043B2EA91576D5CE00C09BBF /* PouvoirExchange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PouvoirExchange.h; sourceTree = "<group>"; };
 		043B2EAA1576D5CE00C09BBF /* PouvoirExchange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PouvoirExchange.m; sourceTree = "<group>"; };
 		0497E88D15761260005CDC2E /* UILabelCustomFontKohicle25.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelCustomFontKohicle25.h; sourceTree = "<group>"; };
@@ -2148,6 +2152,8 @@
 			children = (
 				B0BB60DB1574AC14001BB2CB /* USave.h */,
 				B0BB60DC1574AC14001BB2CB /* USave.m */,
+				0401D314157773DF000B3534 /* UImage.h */,
+				0401D315157773DF000B3534 /* UImage.m */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -2887,6 +2893,7 @@
 				04CD341A15767BE3009B6513 /* NotificationManager.m in Sources */,
 				043B2EAB1576D5CE00C09BBF /* PouvoirExchange.m in Sources */,
 				B0D23C2D157763100014F0DB /* TaedioAspire.m in Sources */,
+				0401D316157773DF000B3534 /* UImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3032,6 +3039,7 @@
 				04CD341B15767BE3009B6513 /* NotificationManager.m in Sources */,
 				043B2EAC1576D5CE00C09BBF /* PouvoirExchange.m in Sources */,
 				B0D23C2E157763100014F0DB /* TaedioAspire.m in Sources */,
+				0401D317157773ED000B3534 /* UImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
