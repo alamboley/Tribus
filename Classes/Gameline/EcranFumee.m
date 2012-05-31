@@ -17,8 +17,12 @@
         
         animEcranNoir = animationSequence;
         
-        animEcranNoir.scaleX = 2;
-        animEcranNoir.scaleY = 2;
+        if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)] && [[UIScreen mainScreen] scale] == 2.0) {
+            
+            animEcranNoir.scaleX = 2;
+            animEcranNoir.scaleY = 2;
+        }
+        
         
         animEcranNoir.rotation = SP_D2R(90);
         
