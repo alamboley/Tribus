@@ -24,7 +24,7 @@
                                             repeats:YES];
     timerCount = PI;
 }
-- (void)timerAction{	
+- (void)timerAction{
     image.y = (self.stage.width * 0.5) + cos(timerCount) * self.stage.width * 0.5 - (image.width * 0.5);
     //    image.x = (self.stage.height * 0.5) + sin(timerCount) * self.stage.height * 0.5 - (image.height * 0.5);
     image.x = image.height + self.stage.height - (timerCount * 30);

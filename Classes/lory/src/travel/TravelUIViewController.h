@@ -9,5 +9,6 @@
 #import "GenericUIViewController.h"
 
 @interface TravelUIViewController : GenericUIViewController
+@property (weak, nonatomic) IBOutlet UIPickerView *uiPickerView;
 
 @end

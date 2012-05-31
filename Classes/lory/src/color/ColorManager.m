@@ -45,7 +45,6 @@ static bool inited = NO;
         }
         
         color.colorValue = [pref valueForKey:color.colorId];
-        NSLog(@"%@",color.colorValue);
         
         [colorDictionnary setValue:color forKey:color.colorId];
     }

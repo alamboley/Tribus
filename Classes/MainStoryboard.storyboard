@@ -177,11 +177,22 @@
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <pickerView contentMode="scaleToFill" id="ush-Iu-Efg">
+                                <rect key="frame" x="0.0" y="104" width="480" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="pa0-oe-nky" id="kLp-kn-8an"/>
+                                    <outlet property="delegate" destination="pa0-oe-nky" id="816-hs-eXv"/>
+                                </connections>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="f8T-RL-Krx"/>
+                    <connections>
+                        <outlet property="uiPickerView" destination="ush-Iu-Efg" id="EJd-oR-e0D"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1410" y="463"/>
