@@ -13,6 +13,7 @@
     
     AnimationSequence *animEcranNoir;
     
+    SPMovieClip *animApparition;
     SPMovieClip *animDisparition;
     SPPoint *previousPointTouched;
 }

@@ -30,8 +30,11 @@
         animEcranNoir.y = 0;
         
         [animEcranNoir changeAnimation:@"noirExplosion" withLoop:NO];
+        animApparition = [animEcranNoir getCurrentAnimation];
+        [animApparition play];
         
         [self addChild:animEcranNoir];
+        [[SPStage mainStage].juggler addObject:animApparition];
         
         [animEcranNoir addEventListener:@selector(onTouch:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
     }
@@ -42,6 +45,7 @@
 - (void) destroy {
     
     [self removeChild:animEcranNoir];
+    [[SPStage mainStage].juggler removeObject:animApparition];
     
     [animEcranNoir removeEventListener:@selector(onTouch:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
 }
@@ -54,7 +58,7 @@
     if (touchBegan && animDisparition == nil) {
         
         [animEcranNoir changeAnimation:@"noirDisparition" withLoop:NO];
-        animDisparition = [animEcranNoir getCurrentAnimaiton];
+        animDisparition = [animEcranNoir getCurrentAnimation];
         [animDisparition pause];
     }
     
