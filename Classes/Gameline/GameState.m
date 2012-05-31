@@ -30,13 +30,13 @@
         
         //[USave saveItemId:[obj objectForKey:@"id"] forType:self.title];
         
-        [self showHideDebugDraw];
+        //[self showHideDebugDraw];
         
         worldColor = @"rouge";
         
         gameWidth = 500680;
         
-        CitrusObject *parallaxe1 = [[CitrusObject alloc] initWithName:@"bg" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"0", @"0", @"0.4", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"parallax:", nil]] andGraphic:[SPImage imageWithContentsOfFile:[worldColor stringByAppendingString:@"_fond.png"]]];
+        CitrusObject *parallaxe1 = [[CitrusObject alloc] initWithName:@"bg" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"0", @"0", @"0.1", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"parallax:", nil]] andGraphic:[SPImage imageWithContentsOfFile:[worldColor stringByAppendingString:@"_fond.png"]]];
         [self addObject:parallaxe1];
         
         BigPicture *parallaxe2 = [[BigPicture alloc] initWithName:@"bg" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"0", @"0", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", nil]] andWorld:worldColor];
@@ -75,11 +75,11 @@
         
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(baddyManagement:) name:@"ecranFumee" object:nil];
         
-        PouvoirExchange *pv = [[PouvoirExchange alloc]initWithImage:@"pouvoir1.png"];
+        /*PouvoirExchange *pv = [[PouvoirExchange alloc]initWithImage:@"pouvoir1.png"];
         [self addChild:pv];
         [pv start];
         
-        [pv addEventListener:@selector(onPowerTouched:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
+        [pv addEventListener:@selector(onPowerTouched:) atObject:self forType:SP_EVENT_TYPE_TOUCH];*/
     }
     
 	return self;
