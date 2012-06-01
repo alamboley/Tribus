@@ -76,7 +76,7 @@
     [uiImageView setAnimationRepeatCount:0];
     [uiImageView setAnimationDuration:animationDuration]; 
     [uiImageView startAnimating];
-    
+
 }
 
 

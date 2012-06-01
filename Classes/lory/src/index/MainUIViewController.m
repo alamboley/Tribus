@@ -52,6 +52,7 @@
     CGFloat x = ([self view].bounds.size.height - [colorUIViewController view].bounds.size.width) / 2;
     CGFloat y = [self view].bounds.size.width  - 50;
     colorUIViewController.view.frame = CGRectMake(x, y, colorUIViewController.view.frame.size.width, colorUIViewController.view.frame.size.height);
+    // toast with duration, title, and position
 }
 
 
