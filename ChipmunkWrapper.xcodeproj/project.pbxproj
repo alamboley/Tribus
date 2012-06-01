@@ -551,6 +551,8 @@
 		B0C1B44A14FE248F00E10833 /* Main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C1B44614FE248F00E10833 /* Main.m */; };
 		B0C780D81517A7D30075592B /* icone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0C780D71517A7D30075592B /* icone@2x.png */; };
 		B0C780DA1517A7D70075592B /* icone.png in Resources */ = {isa = PBXBuildFile; fileRef = B0C780D91517A7D70075592B /* icone.png */; };
+		B0CE6B191578A74100C0346B /* FondParallax.m in Sources */ = {isa = PBXBuildFile; fileRef = B0CE6B181578A74100C0346B /* FondParallax.m */; };
+		B0CE6B1A1578A74100C0346B /* FondParallax.m in Sources */ = {isa = PBXBuildFile; fileRef = B0CE6B181578A74100C0346B /* FondParallax.m */; };
 		B0D23C2D157763100014F0DB /* TaedioAspire.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D23C2C157763100014F0DB /* TaedioAspire.m */; };
 		B0D23C2E157763100014F0DB /* TaedioAspire.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D23C2C157763100014F0DB /* TaedioAspire.m */; };
 		B0D23C3115776BBF0014F0DB /* taedioAspire@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D23C2F15776BBF0014F0DB /* taedioAspire@2x.png */; };
@@ -1153,6 +1155,8 @@
 		B0C1B44614FE248F00E10833 /* Main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Main.m; sourceTree = "<group>"; };
 		B0C780D71517A7D30075592B /* icone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icone@2x.png"; sourceTree = "<group>"; };
 		B0C780D91517A7D70075592B /* icone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icone.png; sourceTree = "<group>"; };
+		B0CE6B171578A74100C0346B /* FondParallax.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FondParallax.h; sourceTree = "<group>"; };
+		B0CE6B181578A74100C0346B /* FondParallax.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FondParallax.m; sourceTree = "<group>"; };
 		B0D23C2B1577630F0014F0DB /* TaedioAspire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaedioAspire.h; sourceTree = "<group>"; };
 		B0D23C2C157763100014F0DB /* TaedioAspire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaedioAspire.m; sourceTree = "<group>"; };
 		B0D23C2F15776BBF0014F0DB /* taedioAspire@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "taedioAspire@2x.png"; sourceTree = "<group>"; };
@@ -2216,6 +2220,8 @@
 				B0B5E46D15764C2800568EFA /* EcranFumee.m */,
 				043B2EA91576D5CE00C09BBF /* PouvoirExchange.h */,
 				043B2EAA1576D5CE00C09BBF /* PouvoirExchange.m */,
+				B0CE6B171578A74100C0346B /* FondParallax.h */,
+				B0CE6B181578A74100C0346B /* FondParallax.m */,
 			);
 			path = Gameline;
 			sourceTree = "<group>";
@@ -2894,6 +2900,7 @@
 				043B2EAB1576D5CE00C09BBF /* PouvoirExchange.m in Sources */,
 				B0D23C2D157763100014F0DB /* TaedioAspire.m in Sources */,
 				0401D316157773DF000B3534 /* UImage.m in Sources */,
+				B0CE6B191578A74100C0346B /* FondParallax.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3040,6 +3047,7 @@
 				043B2EAC1576D5CE00C09BBF /* PouvoirExchange.m in Sources */,
 				B0D23C2E157763100014F0DB /* TaedioAspire.m in Sources */,
 				0401D317157773ED000B3534 /* UImage.m in Sources */,
+				B0CE6B1A1578A74100C0346B /* FondParallax.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

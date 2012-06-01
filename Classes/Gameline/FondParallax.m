@@ -1,44 +1,36 @@
 //
-//  BigPicture.m
+//  FondParallax.m
 //  ChipmunkWrapper
 //
-//  Created by Aymeric Lamboley on 13/03/12.
+//  Created by Aymeric Lamboley on 01/06/12.
 //  Copyright (c) 2012 Sodeso. All rights reserved.
 //
 
-#import "BigPicture.h"
+#import "FondParallax.h"
 #import "CitrusEngine.h"
 
-@implementation BigPicture
+@implementation FondParallax
 
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params andWorld:(NSString *)world {
     
     if (self = [super initWithName:paramName params:params]) {
         
-        //chargement PLIST :
-        NSBundle *bundle = [NSBundle mainBundle];
-        NSString *plistChemin = [bundle pathForResource:@"DonneesAleatoires" ofType:@"plist"];
-        NSDictionary *dictionnaire = [[NSDictionary alloc] initWithContentsOfFile:plistChemin];
-        NSArray *niveauUn = [NSArray arrayWithObject:[dictionnaire valueForKey:@"Root"]];
-        
-        niveauUn = [niveauUn valueForKey:world];
-        
-        NSArray *imgWorld = [NSArray arrayWithArray:[niveauUn objectAtIndex:0]];
-        
         graphic = [[SPSprite alloc] init];
         [self addChild:graphic];
         
-        for (NSString *picture in imgWorld) {
+        
+        for (int i = 0; i < 2; ++i) {
             
-            SPImage *img = [SPImage imageWithContentsOfFile:picture];
+            SPImage *img = [SPImage imageWithContentsOfFile:[world stringByAppendingString:@"_fond.png"]];
             [graphic addChild:img];
             
             img.x = self.posX;
             img.y = self.y;
-
-            self.posX += img.width - 2;
+            
+            self.posX += img.width;
         }
         
+        index = 0;
     }
     
     return self;
@@ -60,18 +52,22 @@
         hero = [ce.state getObjectByName:@"hero"];
         
     } else {
-
+        
         if (hero.x > self.width - 480 - 150) {
             
-            SPDisplayObject *img = [graphic childAtIndex:arc4random() % graphic.numChildren];
+            NSLog(@"ici");
+            
+            SPDisplayObject *img = [graphic childAtIndex:index];
             
             if ((img.x + img.width + 50) < hero.x) {
-
+                
                 img.x = self.posX;
                 img.y = self.y;
-
+                
                 self.posX += img.width - 2;
             }
+            
+            index = (index == 0) ? 1 : 0;
         }
     }
 }
