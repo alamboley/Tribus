@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0401D316157773DF000B3534 /* UImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0401D315157773DF000B3534 /* UImage.m */; };
 		0401D317157773ED000B3534 /* UImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0401D315157773DF000B3534 /* UImage.m */; };
+		0401D32A1578B2DD000B3534 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0401D3291578B2DD000B3534 /* Toast+UIView.m */; };
+		0401D32B1578B2DD000B3534 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0401D3291578B2DD000B3534 /* Toast+UIView.m */; };
 		043B2EAB1576D5CE00C09BBF /* PouvoirExchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 043B2EAA1576D5CE00C09BBF /* PouvoirExchange.m */; };
 		043B2EAC1576D5CE00C09BBF /* PouvoirExchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 043B2EAA1576D5CE00C09BBF /* PouvoirExchange.m */; };
 		0497E88F15761260005CDC2E /* UILabelCustomFontKohicle25.m in Sources */ = {isa = PBXBuildFile; fileRef = 0497E88E15761260005CDC2E /* UILabelCustomFontKohicle25.m */; };
@@ -17,8 +19,6 @@
 		0497E89915761631005CDC2E /* UIImage+Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 0497E89715761631005CDC2E /* UIImage+Sprite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0497E89B1576166A005CDC2E /* explosion_4_39_128.png in Resources */ = {isa = PBXBuildFile; fileRef = 0497E89A1576166A005CDC2E /* explosion_4_39_128.png */; };
 		0497E89C1576166A005CDC2E /* explosion_4_39_128.png in Resources */ = {isa = PBXBuildFile; fileRef = 0497E89A1576166A005CDC2E /* explosion_4_39_128.png */; };
-		04CD341A15767BE3009B6513 /* NotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CD341915767BE3009B6513 /* NotificationManager.m */; };
-		04CD341B15767BE3009B6513 /* NotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CD341915767BE3009B6513 /* NotificationManager.m */; };
 		04CD342A1576BEF2009B6513 /* pouvoir1.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CD34271576BEF2009B6513 /* pouvoir1.png */; };
 		04CD342B1576BEF2009B6513 /* pouvoir1.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CD34271576BEF2009B6513 /* pouvoir1.png */; };
 		04CD342C1576BEF2009B6513 /* pouvoir2.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CD34281576BEF2009B6513 /* pouvoir2.png */; };
@@ -31,10 +31,6 @@
 		04ECFFCF15765350002B4B15 /* pouvoir2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04ECFFCA15765350002B4B15 /* pouvoir2@2x.png */; };
 		04ECFFD015765350002B4B15 /* pouvoir3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04ECFFCB15765350002B4B15 /* pouvoir3@2x.png */; };
 		04ECFFD115765350002B4B15 /* pouvoir3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04ECFFCB15765350002B4B15 /* pouvoir3@2x.png */; };
-		04ECFFD6157660BD002B4B15 /* NotificationUIControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ECFFD4157660BD002B4B15 /* NotificationUIControllerViewController.m */; };
-		04ECFFD7157660BD002B4B15 /* NotificationUIControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ECFFD4157660BD002B4B15 /* NotificationUIControllerViewController.m */; };
-		04ECFFD8157660BD002B4B15 /* NotificationUIControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04ECFFD5157660BD002B4B15 /* NotificationUIControllerViewController.xib */; };
-		04ECFFD9157660BD002B4B15 /* NotificationUIControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04ECFFD5157660BD002B4B15 /* NotificationUIControllerViewController.xib */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
@@ -720,6 +716,8 @@
 /* Begin PBXFileReference section */
 		0401D314157773DF000B3534 /* UImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UImage.h; sourceTree = "<group>"; };
 		0401D315157773DF000B3534 /* UImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UImage.m; sourceTree = "<group>"; };
+		0401D3281578B2DD000B3534 /* Toast+UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Toast+UIView.h"; sourceTree = "<group>"; };
+		0401D3291578B2DD000B3534 /* Toast+UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Toast+UIView.m"; sourceTree = "<group>"; };
 		043B2EA91576D5CE00C09BBF /* PouvoirExchange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PouvoirExchange.h; sourceTree = "<group>"; };
 		043B2EAA1576D5CE00C09BBF /* PouvoirExchange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PouvoirExchange.m; sourceTree = "<group>"; };
 		0497E88D15761260005CDC2E /* UILabelCustomFontKohicle25.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelCustomFontKohicle25.h; sourceTree = "<group>"; };
@@ -727,17 +725,12 @@
 		0497E89615761631005CDC2E /* UIImage+Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Sprite.h"; sourceTree = "<group>"; };
 		0497E89715761631005CDC2E /* UIImage+Sprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Sprite.m"; sourceTree = "<group>"; };
 		0497E89A1576166A005CDC2E /* explosion_4_39_128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = explosion_4_39_128.png; sourceTree = "<group>"; };
-		04CD341815767BE3009B6513 /* NotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationManager.h; sourceTree = "<group>"; };
-		04CD341915767BE3009B6513 /* NotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationManager.m; sourceTree = "<group>"; };
 		04CD34271576BEF2009B6513 /* pouvoir1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pouvoir1.png; sourceTree = "<group>"; };
 		04CD34281576BEF2009B6513 /* pouvoir2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pouvoir2.png; sourceTree = "<group>"; };
 		04CD34291576BEF2009B6513 /* pouvoir3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pouvoir3.png; sourceTree = "<group>"; };
 		04ECFFC91576534F002B4B15 /* pouvoir1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir1@2x.png"; sourceTree = "<group>"; };
 		04ECFFCA15765350002B4B15 /* pouvoir2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir2@2x.png"; sourceTree = "<group>"; };
 		04ECFFCB15765350002B4B15 /* pouvoir3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir3@2x.png"; sourceTree = "<group>"; };
-		04ECFFD3157660BD002B4B15 /* NotificationUIControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationUIControllerViewController.h; sourceTree = "<group>"; };
-		04ECFFD4157660BD002B4B15 /* NotificationUIControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationUIControllerViewController.m; sourceTree = "<group>"; };
-		04ECFFD5157660BD002B4B15 /* NotificationUIControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationUIControllerViewController.xib; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* ChipmunkWrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChipmunkWrapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -1304,6 +1297,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0401D3271578B2DD000B3534 /* toast */ = {
+			isa = PBXGroup;
+			children = (
+				0401D3281578B2DD000B3534 /* Toast+UIView.h */,
+				0401D3291578B2DD000B3534 /* Toast+UIView.m */,
+			);
+			path = toast;
+			sourceTree = "<group>";
+		};
 		0497E89515761631005CDC2E /* spritesheet */ = {
 			isa = PBXGroup;
 			children = (
@@ -1311,18 +1313,6 @@
 				0497E89715761631005CDC2E /* UIImage+Sprite.m */,
 			);
 			path = spritesheet;
-			sourceTree = "<group>";
-		};
-		04ECFFD215766016002B4B15 /* notification */ = {
-			isa = PBXGroup;
-			children = (
-				04ECFFD3157660BD002B4B15 /* NotificationUIControllerViewController.h */,
-				04ECFFD4157660BD002B4B15 /* NotificationUIControllerViewController.m */,
-				04ECFFD5157660BD002B4B15 /* NotificationUIControllerViewController.xib */,
-				04CD341815767BE3009B6513 /* NotificationManager.h */,
-				04CD341915767BE3009B6513 /* NotificationManager.m */,
-			);
-			path = notification;
 			sourceTree = "<group>";
 		};
 		080E96DDFE201D6D7F000001 /* Classes */ = {
@@ -1973,6 +1963,7 @@
 		B0BB60951574AC14001BB2CB /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				0401D3271578B2DD000B3534 /* toast */,
 				0497E89515761631005CDC2E /* spritesheet */,
 				B0BB60961574AC14001BB2CB /* custom */,
 				B0BB60991574AC14001BB2CB /* iCarousel */,
@@ -2013,7 +2004,6 @@
 		B0BB60A11574AC14001BB2CB /* src */ = {
 			isa = PBXGroup;
 			children = (
-				04ECFFD215766016002B4B15 /* notification */,
 				B0BB60A21574AC14001BB2CB /* color */,
 				B0BB60AA1574AC14001BB2CB /* game */,
 				B0BB60AD1574AC14001BB2CB /* GenericUIViewController.h */,
@@ -2525,7 +2515,6 @@
 				04ECFFCC15765350002B4B15 /* pouvoir1@2x.png in Resources */,
 				04ECFFCE15765350002B4B15 /* pouvoir2@2x.png in Resources */,
 				04ECFFD015765350002B4B15 /* pouvoir3@2x.png in Resources */,
-				04ECFFD8157660BD002B4B15 /* NotificationUIControllerViewController.xib in Resources */,
 				04CD342A1576BEF2009B6513 /* pouvoir1.png in Resources */,
 				04CD342C1576BEF2009B6513 /* pouvoir2.png in Resources */,
 				04CD342E1576BEF2009B6513 /* pouvoir3.png in Resources */,
@@ -2742,7 +2731,6 @@
 				04ECFFCD15765350002B4B15 /* pouvoir1@2x.png in Resources */,
 				04ECFFCF15765350002B4B15 /* pouvoir2@2x.png in Resources */,
 				04ECFFD115765350002B4B15 /* pouvoir3@2x.png in Resources */,
-				04ECFFD9157660BD002B4B15 /* NotificationUIControllerViewController.xib in Resources */,
 				04CD342B1576BEF2009B6513 /* pouvoir1.png in Resources */,
 				04CD342D1576BEF2009B6513 /* pouvoir2.png in Resources */,
 				04CD342F1576BEF2009B6513 /* pouvoir3.png in Resources */,
@@ -2895,12 +2883,11 @@
 				0497E88F15761260005CDC2E /* UILabelCustomFontKohicle25.m in Sources */,
 				0497E89815761631005CDC2E /* UIImage+Sprite.m in Sources */,
 				B0B5E46E15764C2800568EFA /* EcranFumee.m in Sources */,
-				04ECFFD6157660BD002B4B15 /* NotificationUIControllerViewController.m in Sources */,
-				04CD341A15767BE3009B6513 /* NotificationManager.m in Sources */,
 				043B2EAB1576D5CE00C09BBF /* PouvoirExchange.m in Sources */,
 				B0D23C2D157763100014F0DB /* TaedioAspire.m in Sources */,
 				0401D316157773DF000B3534 /* UImage.m in Sources */,
 				B0CE6B191578A74100C0346B /* FondParallax.m in Sources */,
+				0401D32A1578B2DD000B3534 /* Toast+UIView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3042,12 +3029,11 @@
 				0497E89015761260005CDC2E /* UILabelCustomFontKohicle25.m in Sources */,
 				0497E89915761631005CDC2E /* UIImage+Sprite.m in Sources */,
 				B0B5E46F15764C2800568EFA /* EcranFumee.m in Sources */,
-				04ECFFD7157660BD002B4B15 /* NotificationUIControllerViewController.m in Sources */,
-				04CD341B15767BE3009B6513 /* NotificationManager.m in Sources */,
 				043B2EAC1576D5CE00C09BBF /* PouvoirExchange.m in Sources */,
 				B0D23C2E157763100014F0DB /* TaedioAspire.m in Sources */,
 				0401D317157773ED000B3534 /* UImage.m in Sources */,
 				B0CE6B1A1578A74100C0346B /* FondParallax.m in Sources */,
+				0401D32B1578B2DD000B3534 /* Toast+UIView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
