@@ -55,8 +55,6 @@
         
         if (hero.x > self.width - 480 - 150) {
             
-            NSLog(@"ici");
-            
             SPDisplayObject *img = [graphic childAtIndex:index];
             
             if ((img.x + img.width + 50) < hero.x) {
