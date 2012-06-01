@@ -70,7 +70,7 @@ static CitrusEngine *instance;
     if (aNewState) {
         
         if (state) {
-            // on suppr l'ancien state
+            [state destroy];
         }
         
         state = aNewState;

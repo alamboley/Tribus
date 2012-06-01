@@ -12,8 +12,7 @@
 @interface Main : CitrusEngine {
     
     GameState *game;
-    
-    SPSprite *graphismEcranSoutenance;
+    BOOL rotate;
     
     BOOL canSlideSoutenance;
 }

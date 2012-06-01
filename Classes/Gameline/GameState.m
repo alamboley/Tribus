@@ -33,8 +33,6 @@
         
         //[self showHideDebugDraw];
         
-        worldColor = @"rouge";
-        
         gameWidth = 500680;
         
         //FondParallax *parallaxe1 = [[FondParallax alloc] initWithName:@"bg" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"0", @"0", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", nil]] andWorld:worldColor];

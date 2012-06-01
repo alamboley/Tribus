@@ -58,7 +58,9 @@
     NSDictionary *arretBus = [travel objectAtIndex:indice];
 
     if ([[arretBus objectForKey:@"type"] isEqualToString:@"abribus"]) {
-        NSLog(@"%@", @"fin game");
+        
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"finNiveau" object:nil];
+        
         [self stop];
     }
     
@@ -72,8 +74,6 @@
     [[SPStage mainStage].juggler addObject:tween];
     
     indice = (indice >= travel.count) ? 0 : indice + 1;
-    
-    //NSLog(@"%f %f", hero.velocityX, [[travelFirstElement objectForKey:@"speed"]floatValue]);
 }
 
 - (void) creerEnnemi {

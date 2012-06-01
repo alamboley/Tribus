@@ -43,6 +43,8 @@
 
 - (id) init;
 
+- (void) destroy;
+
 - (void) showHideDebugDraw;
 
 - (void) addObject:(CitrusObject *) object;

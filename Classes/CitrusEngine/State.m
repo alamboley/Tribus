@@ -121,6 +121,19 @@
     cameraEasing = easing;
 }
 
+- (void) destroy {
+    
+    int n = objects.count;
+    
+    while (n-- > 0) {
+        
+        CitrusObject *object = [objects objectAtIndex:n];
+        [object destroy];
+    }
+    
+    objects = nil;
+}
+
 - (void) update {
     
     [space step:1.0f / 15.0f];
@@ -174,11 +187,6 @@
     
 	UIAccelerometer *accelerometer = [UIAccelerometer sharedAccelerometer];
 	accelerometer.delegate = nil;
-    
-    
-    
-    
-	
 }
 
 @end

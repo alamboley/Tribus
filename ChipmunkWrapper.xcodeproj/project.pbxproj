@@ -374,6 +374,10 @@
 		B002DD66156C085C003F5C78 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1527AFB11BD8F9900995392 /* AudioToolbox.framework */; };
 		B002DD67156C085C003F5C78 /* libChipmunk-iPhone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1AF685212EA2916006322AF /* libChipmunk-iPhone.a */; };
 		B002DD6F156C0EFC003F5C78 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B002DD6E156C0EFC003F5C78 /* Settings.bundle */; };
+		B00C46091578BBFC00745D28 /* WorldRed.m in Sources */ = {isa = PBXBuildFile; fileRef = B00C46081578BBFC00745D28 /* WorldRed.m */; };
+		B00C460A1578BBFC00745D28 /* WorldRed.m in Sources */ = {isa = PBXBuildFile; fileRef = B00C46081578BBFC00745D28 /* WorldRed.m */; };
+		B00C460D1578BC0B00745D28 /* WorldYellow.m in Sources */ = {isa = PBXBuildFile; fileRef = B00C460C1578BC0B00745D28 /* WorldYellow.m */; };
+		B00C460E1578BC0B00745D28 /* WorldYellow.m in Sources */ = {isa = PBXBuildFile; fileRef = B00C460C1578BC0B00745D28 /* WorldYellow.m */; };
 		B0113DDF1553C06A0005F1AB /* BusManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = B0113DDE1553C06A0005F1AB /* BusManagement.m */; };
 		B012E3E315148F52008B9157 /* SXNSDataExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B012E3E215148F52008B9157 /* SXNSDataExtensions.m */; };
 		B012E3E615148F8B008B9157 /* SXParticleSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = B012E3E515148F8B008B9157 /* SXParticleSystem.m */; };
@@ -962,6 +966,10 @@
 		B002DD6B156C085C003F5C78 /* ChipmunkWrapper copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ChipmunkWrapper copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B002DD6D156C085C003F5C78 /* ChipmunkWrapper copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChipmunkWrapper copy-Info.plist"; sourceTree = "<group>"; };
 		B002DD6E156C0EFC003F5C78 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		B00C46071578BBFC00745D28 /* WorldRed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorldRed.h; sourceTree = "<group>"; };
+		B00C46081578BBFC00745D28 /* WorldRed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorldRed.m; sourceTree = "<group>"; };
+		B00C460B1578BC0B00745D28 /* WorldYellow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorldYellow.h; sourceTree = "<group>"; };
+		B00C460C1578BC0B00745D28 /* WorldYellow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorldYellow.m; sourceTree = "<group>"; };
 		B0113DDD1553C0690005F1AB /* BusManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusManagement.h; sourceTree = "<group>"; };
 		B0113DDE1553C06A0005F1AB /* BusManagement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusManagement.m; sourceTree = "<group>"; };
 		B012E3E115148F52008B9157 /* SXNSDataExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SXNSDataExtensions.h; path = SparrowExtensions/SXNSDataExtensions.h; sourceTree = "<group>"; };
@@ -2212,6 +2220,10 @@
 				043B2EAA1576D5CE00C09BBF /* PouvoirExchange.m */,
 				B0CE6B171578A74100C0346B /* FondParallax.h */,
 				B0CE6B181578A74100C0346B /* FondParallax.m */,
+				B00C46071578BBFC00745D28 /* WorldRed.h */,
+				B00C46081578BBFC00745D28 /* WorldRed.m */,
+				B00C460B1578BC0B00745D28 /* WorldYellow.h */,
+				B00C460C1578BC0B00745D28 /* WorldYellow.m */,
 			);
 			path = Gameline;
 			sourceTree = "<group>";
@@ -2888,6 +2900,8 @@
 				0401D316157773DF000B3534 /* UImage.m in Sources */,
 				B0CE6B191578A74100C0346B /* FondParallax.m in Sources */,
 				0401D32A1578B2DD000B3534 /* Toast+UIView.m in Sources */,
+				B00C46091578BBFC00745D28 /* WorldRed.m in Sources */,
+				B00C460D1578BC0B00745D28 /* WorldYellow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3034,6 +3048,8 @@
 				0401D317157773ED000B3534 /* UImage.m in Sources */,
 				B0CE6B1A1578A74100C0346B /* FondParallax.m in Sources */,
 				0401D32B1578B2DD000B3534 /* Toast+UIView.m in Sources */,
+				B00C460A1578BBFC00745D28 /* WorldRed.m in Sources */,
+				B00C460E1578BC0B00745D28 /* WorldYellow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
