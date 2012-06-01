@@ -11,6 +11,7 @@
 #import "ShopItemUIController.h"
 #import "ColorManager.h"
 #import "USave.h"
+#import "Toast+UIView.h"
 
 @implementation ShopUIViewController
 
@@ -75,6 +76,10 @@
     colorUIViewController.view.frame = CGRectMake(x, y, colorUIViewController.view.frame.size.width, colorUIViewController.view.frame.size.height);
 
     [[[self navigationUIViewController] pageTitle] setText:@"échoppe"];
+    [self.view makeToast:@"This is a piece of toast" 
+                duration:3.0
+                position:@"top right"
+                   title:@"Toast Title"];
 }
 
 - (void)viewDidUnload

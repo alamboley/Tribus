@@ -11,6 +11,7 @@
 #import "MissionItemUIViewController.h"
 #import "UIImage+Sprite.h"
 #import "USave.h"
+#import "Toast+UIView.h"
 
 @implementation MissionUIViewController
 @synthesize itemDatas;
@@ -76,7 +77,10 @@
     [uiImageView setAnimationRepeatCount:0];
     [uiImageView setAnimationDuration:animationDuration]; 
     [uiImageView startAnimating];
-
+    [self.view makeToast:@"This is a piece of toast with a title. DFJSKSDK dsfk sdfklsghsdkfjhds kdfshkjsdgf hgfdsgjf sfhsdjhf sdgfjsdg dsgkjf shdsf jhsdk fdshds kjfhs" 
+                duration:3.0
+                position:@"top right"
+                   title:@"Toast Title"];
 }
 
 

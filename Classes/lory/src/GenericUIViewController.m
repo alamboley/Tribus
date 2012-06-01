@@ -54,11 +54,6 @@
     [self addChildViewController:navigationUIViewController];
     [[self view] addSubview:navigationUIViewController.view];
     [navigationUIViewController setTitle:[self title]];
-    
-    [self.view makeToast:@"This is a piece of toast with a title." 
-                duration:3.0
-                position:[NSValue valueWithCGPoint:CGPointMake(480, 320)]
-                   title:@"Toast Title"];
 }
 - (void)viewDidUnload
 {

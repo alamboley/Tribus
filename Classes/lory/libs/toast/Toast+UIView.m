@@ -90,6 +90,8 @@ static NSString *kDurationKey = @"CSToastDurationKey";
     // use an associative reference to associate the toast view with the display interval
     objc_setAssociatedObject (toast, &kDurationKey, [NSNumber numberWithFloat:interval], OBJC_ASSOCIATION_RETAIN);
     
+    toastPoint.x = 480 - kHorizontalPadding - toast.frame.size.width / 2; // center to left
+
     [toast setCenter:toastPoint];
     [toast setAlpha:0.0];
     [self addSubview:toast];
@@ -201,6 +203,8 @@ static NSString *kDurationKey = @"CSToastDurationKey";
         
         if( [point caseInsensitiveCompare:@"top"] == NSOrderedSame ) {
             return CGPointMake(self.bounds.size.width/2, (toast.frame.size.height / 2) + kVerticalPadding);
+        } else if( [point caseInsensitiveCompare:@"top right"] == NSOrderedSame ) {
+            return CGPointMake(480 - self.bounds.size.width * 0.5 - kHorizontalPadding, (toast.frame.size.height / 2) + kVerticalPadding);
         } else if( [point caseInsensitiveCompare:@"bottom"] == NSOrderedSame ) {
             return CGPointMake(self.bounds.size.width/2, (self.bounds.size.height - (toast.frame.size.height / 2)) - kVerticalPadding);
         } else if( [point caseInsensitiveCompare:@"center"] == NSOrderedSame ) {
