@@ -9,10 +9,10 @@
 #import "NotificationManager.h"
 #import "NotificationUIControllerViewController.h"
 @implementation NotificationManager
-static NSMutableDictionary *notifications = nil;
+static NSMutableArray *notifications = nil;
 
 + (void)initManager{
-    notifications = [[NSMutableDictionary alloc] init];
+    notifications = [[NSMutableArray alloc] init];
 }
 + (void)destroyManager{
     [notifications removeAllObjects];
@@ -20,10 +20,10 @@ static NSMutableDictionary *notifications = nil;
 }
 
 + (void)addNotificationWithText: (NSString*) text andLifeTime: (int) timeInMilliseconds{
-    NotificationUIControllerViewController *notif = [[NotificationUIControllerViewController alloc] init];
-    [notifications setValue:notif forKey:[NSString stringWithFormat:@"%d",rand()]];
+    NotificationUIControllerViewController *notif = [[NotificationUIControllerViewController alloc] initWithText:text andLifeTime:timeInMilliseconds];
+    [notifications addObject:notif];
 }
-+ (NSMutableDictionary*) getNotifications{
++ (NSMutableArray*) getNotifications{
     return notifications;
 }
 

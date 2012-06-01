@@ -14,5 +14,5 @@
 + (void)addNotificationWithText: (NSString*) text andLifeTime: (int) timeInMilliseconds;
 + (void)destroyManager;
 
-+ (NSMutableDictionary*) getNotifications;
++ (NSMutableArray*) getNotifications;
 @end
