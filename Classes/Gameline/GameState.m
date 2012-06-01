@@ -88,6 +88,10 @@
     [bus destroy];
     [creationRuntime destroy];
     
+    animEcranNoir = nil;
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    
     [super destroy];
 }
 
