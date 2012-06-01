@@ -8,15 +8,11 @@
 
 #import "GameState.h"
 #import "CitrusObject.h"
-#import "PhysicsObject.h"
 #import "Platform.h"
 #import "Hero.h"
 #import "BigPicture.h"
 #import "Sensor.h"
 #import "Sol.h"
-#import "SBJson.h"
-#import "BusManagement.h"
-#import "CreationRuntime.h"
 #import "ColorManager.h"
 #import "Jauge.h"
 #import "EcranFumee.h"
@@ -57,16 +53,16 @@
         
         [self setupCamera:hero andOffset:CGPointMake(hero.width / 2 - 80, 0) andBounds:CGRectMake(0, 0, gameWidth, 1000) andEasing:CGPointMake(0.25, 0.05)];
         
-        BusManagement *bus = [[BusManagement alloc] initWithData:@"DonneesBus" andHero:hero];
+        bus = [[BusManagement alloc] initWithData:@"DonneesBus" andHero:hero];
         [bus start];
         
-        CreationRuntime *creationRuntime = [[CreationRuntime alloc] initWithWorld:worldColor];
+        creationRuntime = [[CreationRuntime alloc] initWithWorld:worldColor];
         [creationRuntime start];
         
-        Jauge *jauge = [[Jauge alloc] initWithColor:@"jaune"];
+        /*Jauge *jauge = [[Jauge alloc] initWithColor:@"jaune"];
         [self addChild:jauge];
         jauge.x = 350;
-        jauge.y = 100;
+        jauge.y = 100;*/
         
         animEcranNoir = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"ecranNoir.xml"] andAnimations:[NSArray arrayWithObjects:@"noirDisparition", @"noirExplosion", nil] andFirstAnimation:@"noirExplosion"];
         
@@ -85,6 +81,14 @@
     }
     
 	return self;
+}
+
+- (void) destroy {
+    
+    [bus destroy];
+    [creationRuntime destroy];
+    
+    [super destroy];
 }
 
 - (void) onPowerTouched:(SPTouchEvent *) event {

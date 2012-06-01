@@ -30,6 +30,8 @@
 
 - (id) initWithData:(NSString *) pathForResource andHero:(Hero *) heroParam;
 
+- (void) destroy;
+
 - (void) start;
 - (void) stop;
 

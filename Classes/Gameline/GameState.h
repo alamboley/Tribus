@@ -8,6 +8,8 @@
 
 #import "State.h"
 #import "AnimationSequence.h"
+#import "BusManagement.h"
+#import "CreationRuntime.h"
 
 @interface GameState : State {
     
@@ -18,7 +20,9 @@
     AnimationSequence *animEcranNoir;
     
     NSString *worldColor;
-
+    
+    BusManagement *bus;
+    CreationRuntime *creationRuntime;
 }
 
 - (void) colorPicked:(NSNotification *) notification;

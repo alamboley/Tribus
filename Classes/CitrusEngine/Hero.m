@@ -58,6 +58,8 @@
     
     [space removeCollisionHandlerFor:@"sensorGround" andTypeB:@"platform"];
     
+    [ce.state removeEventListener:@selector(touched:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
+    
     [super destroy];
 }
 

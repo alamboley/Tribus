@@ -30,6 +30,14 @@
     return self;
 }
 
+- (void) destroy {
+    
+    [self stop];
+    
+    animFiltreVertFront = nil;
+    filtreBack = nil;
+}
+
 - (void) start {
     
     timerParticle = [NSTimer scheduledTimerWithTimeInterval:0.7 target:self selector:@selector(onTickParticle:) userInfo:nil repeats:YES];

@@ -132,6 +132,8 @@
     }
     
     objects = nil;
+    
+    space = nil;
 }
 
 - (void) update {

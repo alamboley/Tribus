@@ -39,6 +39,14 @@
     return self;
 }
 
+- (void) destroy {
+    
+    animTaedioAspire = nil;
+    animTaedioFumee = nil;
+    
+    
+}
+
 - (void) start {
     
     timer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(onTick:) userInfo:nil repeats:YES];
@@ -59,9 +67,9 @@
 
     if ([[arretBus objectForKey:@"type"] isEqualToString:@"abribus"]) {
         
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"finNiveau" object:nil];
-        
         [self stop];
+        
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"finNiveau" object:nil];
     }
     
     if (35 + 12 * [[travelFirstElement objectForKey:@"speed"]floatValue] - hero.velocityX < 0) {

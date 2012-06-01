@@ -27,6 +27,8 @@
 
 - (id) initWithWorld:(NSString *) worldColor;
 
+- (void) destroy;
+
 - (void) start;
 - (void) stop;
 
