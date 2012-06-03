@@ -9,8 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 #import "ColorUIViewController.h"
+#import "NotificationUIViewControllerViewController.h"
 
-@interface MainUIViewController : UIViewController
+@interface MainUIViewController : UIViewController{
+    NotificationUIViewControllerViewController *notif;
+}
 @property (nonatomic, retain) ColorUIViewController *colorUIViewController;
 
 @end

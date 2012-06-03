@@ -7,6 +7,7 @@
 //
 
 #import "MainUIViewController.h"
+#import "PRTween.h"
 
 @implementation MainUIViewController
 @synthesize colorUIViewController;
@@ -53,8 +54,16 @@
     CGFloat y = [self view].bounds.size.width  - 50;
     colorUIViewController.view.frame = CGRectMake(x, y, colorUIViewController.view.frame.size.width, colorUIViewController.view.frame.size.height);
     // toast with duration, title, and position
+    
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self
+     selector:@selector(startGameHandler:)
+     name:@"startGame"
+     object:nil ];
 }
-
+-(void)startGameHandler: (NSNotification *) notification{
+    [self performSegueWithIdentifier:@"island" sender:self];    
+}
 
 - (void)viewDidUnload
 {

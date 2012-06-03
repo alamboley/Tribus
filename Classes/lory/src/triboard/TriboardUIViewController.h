@@ -9,5 +9,6 @@
 #import "GenericUIViewController.h"
 
 @interface TriboardUIViewController : GenericUIViewController
-
+@property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *gestureOutlet;
+-(IBAction)busIncoming:(UIGestureRecognizer *)sender;
 @end

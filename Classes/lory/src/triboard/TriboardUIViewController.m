@@ -11,6 +11,7 @@
 #import "SBJsonParser.h"
 
 @implementation TriboardUIViewController
+@synthesize gestureOutlet;
 
 - (id)init {
 	if (self = [super init]) {
@@ -36,6 +37,9 @@
     {
         NSLog(@"Inventory item : %@",obj);
     }
+}
+-(IBAction)busIncoming:(UIGestureRecognizer *)sender{
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"busIncoming" object:nil];    
 }
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -83,15 +87,10 @@
 
 - (void)viewDidUnload
 {
+    [self setGestureOutlet:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
 @end

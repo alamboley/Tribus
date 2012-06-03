@@ -13,6 +13,7 @@
 @end
 
 @implementation NotificationUIViewControllerViewController
+@synthesize busButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,6 +32,7 @@
 
 - (void)viewDidUnload
 {
+    [self setBusButton:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -41,4 +43,8 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (IBAction)busIsComing:(id)sender {
+    [self.view setHidden:YES];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"startGame" object:nil];
+}
 @end

@@ -11,6 +11,8 @@
 		0401D317157773ED000B3534 /* UImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0401D315157773DF000B3534 /* UImage.m */; };
 		0401D32A1578B2DD000B3534 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0401D3291578B2DD000B3534 /* Toast+UIView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0401D32B1578B2DD000B3534 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0401D3291578B2DD000B3534 /* Toast+UIView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		04060C00157B9A4B00CCAB4A /* MainUINavigationControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04060BFF157B9A4B00CCAB4A /* MainUINavigationControllerViewController.m */; };
+		04060C01157B9A4B00CCAB4A /* MainUINavigationControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04060BFF157B9A4B00CCAB4A /* MainUINavigationControllerViewController.m */; };
 		0417F10A1579080E00A48C0F /* NotificationUIViewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0417F1081579080E00A48C0F /* NotificationUIViewControllerViewController.m */; };
 		0417F10B1579080E00A48C0F /* NotificationUIViewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0417F1081579080E00A48C0F /* NotificationUIViewControllerViewController.m */; };
 		0417F10C1579080E00A48C0F /* NotificationUIViewControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0417F1091579080E00A48C0F /* NotificationUIViewControllerViewController.xib */; };
@@ -19,6 +21,8 @@
 		0417F1101579086A00A48C0F /* notif_bus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0417F10E1579086A00A48C0F /* notif_bus@2x.png */; };
 		043B2EAB1576D5CE00C09BBF /* PouvoirExchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 043B2EAA1576D5CE00C09BBF /* PouvoirExchange.m */; };
 		043B2EAC1576D5CE00C09BBF /* PouvoirExchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 043B2EAA1576D5CE00C09BBF /* PouvoirExchange.m */; };
+		0448AB7F157B86F0000D9A22 /* UILabelCustomFontTwCenMT.m in Sources */ = {isa = PBXBuildFile; fileRef = 0448AB7E157B86F0000D9A22 /* UILabelCustomFontTwCenMT.m */; };
+		0448AB80157B86F0000D9A22 /* UILabelCustomFontTwCenMT.m in Sources */ = {isa = PBXBuildFile; fileRef = 0448AB7E157B86F0000D9A22 /* UILabelCustomFontTwCenMT.m */; };
 		0497E88F15761260005CDC2E /* UILabelCustomFontKohicle25.m in Sources */ = {isa = PBXBuildFile; fileRef = 0497E88E15761260005CDC2E /* UILabelCustomFontKohicle25.m */; };
 		0497E89015761260005CDC2E /* UILabelCustomFontKohicle25.m in Sources */ = {isa = PBXBuildFile; fileRef = 0497E88E15761260005CDC2E /* UILabelCustomFontKohicle25.m */; };
 		0497E89815761631005CDC2E /* UIImage+Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 0497E89715761631005CDC2E /* UIImage+Sprite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -728,12 +732,16 @@
 		0401D315157773DF000B3534 /* UImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UImage.m; sourceTree = "<group>"; };
 		0401D3281578B2DD000B3534 /* Toast+UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Toast+UIView.h"; sourceTree = "<group>"; };
 		0401D3291578B2DD000B3534 /* Toast+UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Toast+UIView.m"; sourceTree = "<group>"; };
+		04060BFE157B9A4B00CCAB4A /* MainUINavigationControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainUINavigationControllerViewController.h; sourceTree = "<group>"; };
+		04060BFF157B9A4B00CCAB4A /* MainUINavigationControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainUINavigationControllerViewController.m; sourceTree = "<group>"; };
 		0417F1071579080E00A48C0F /* NotificationUIViewControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationUIViewControllerViewController.h; sourceTree = "<group>"; };
 		0417F1081579080E00A48C0F /* NotificationUIViewControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationUIViewControllerViewController.m; sourceTree = "<group>"; };
 		0417F1091579080E00A48C0F /* NotificationUIViewControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationUIViewControllerViewController.xib; sourceTree = "<group>"; };
 		0417F10E1579086A00A48C0F /* notif_bus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "notif_bus@2x.png"; sourceTree = "<group>"; };
 		043B2EA91576D5CE00C09BBF /* PouvoirExchange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PouvoirExchange.h; sourceTree = "<group>"; };
 		043B2EAA1576D5CE00C09BBF /* PouvoirExchange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PouvoirExchange.m; sourceTree = "<group>"; };
+		0448AB7D157B86F0000D9A22 /* UILabelCustomFontTwCenMT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelCustomFontTwCenMT.h; sourceTree = "<group>"; };
+		0448AB7E157B86F0000D9A22 /* UILabelCustomFontTwCenMT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelCustomFontTwCenMT.m; sourceTree = "<group>"; };
 		0497E88D15761260005CDC2E /* UILabelCustomFontKohicle25.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelCustomFontKohicle25.h; sourceTree = "<group>"; };
 		0497E88E15761260005CDC2E /* UILabelCustomFontKohicle25.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelCustomFontKohicle25.m; sourceTree = "<group>"; };
 		0497E89615761631005CDC2E /* UIImage+Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Sprite.h"; sourceTree = "<group>"; };
@@ -2123,6 +2131,10 @@
 				C8011546157584F300F279CC /* UIButtonCustomFontKohicle25.m */,
 				0497E88D15761260005CDC2E /* UILabelCustomFontKohicle25.h */,
 				0497E88E15761260005CDC2E /* UILabelCustomFontKohicle25.m */,
+				0448AB7D157B86F0000D9A22 /* UILabelCustomFontTwCenMT.h */,
+				0448AB7E157B86F0000D9A22 /* UILabelCustomFontTwCenMT.m */,
+				04060BFE157B9A4B00CCAB4A /* MainUINavigationControllerViewController.h */,
+				04060BFF157B9A4B00CCAB4A /* MainUINavigationControllerViewController.m */,
 			);
 			path = navigation;
 			sourceTree = "<group>";
@@ -2929,6 +2941,8 @@
 				B00C46091578BBFC00745D28 /* WorldRed.m in Sources */,
 				B00C460D1578BC0B00745D28 /* WorldYellow.m in Sources */,
 				0417F10A1579080E00A48C0F /* NotificationUIViewControllerViewController.m in Sources */,
+				0448AB7F157B86F0000D9A22 /* UILabelCustomFontTwCenMT.m in Sources */,
+				04060C00157B9A4B00CCAB4A /* MainUINavigationControllerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3078,6 +3092,8 @@
 				B00C460A1578BBFC00745D28 /* WorldRed.m in Sources */,
 				B00C460E1578BC0B00745D28 /* WorldYellow.m in Sources */,
 				0417F10B1579080E00A48C0F /* NotificationUIViewControllerViewController.m in Sources */,
+				0448AB80157B86F0000D9A22 /* UILabelCustomFontTwCenMT.m in Sources */,
+				04060C01157B9A4B00CCAB4A /* MainUINavigationControllerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

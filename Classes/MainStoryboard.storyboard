@@ -127,6 +127,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="tribus-bg@2x.png" id="FHb-wg-u48">
                                 <rect key="frame" x="3" y="81" width="477" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="triboard-customization@2x.png" id="cDh-uF-faJ">
                                 <rect key="frame" x="30" y="92" width="35" height="155"/>
@@ -134,11 +135,23 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="mKg-t8-lN0" appends="YES" id="HEY-S1-Q7N"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="19s-bk-RVu"/>
                     <navigationItem key="navigationItem" id="u3Y-ZN-H8f"/>
+                    <connections>
+                        <outlet property="gestureOutlet" destination="mKg-t8-lN0" id="e2l-bj-wuX"/>
+                    </connections>
                 </viewController>
+                <swipeGestureRecognizer direction="down" id="mKg-t8-lN0">
+                    <connections>
+                        <action selector="busIncoming:" destination="XAb-BW-iNc" id="ORU-Nw-DmJ"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2096" y="35"/>
         </scene>
@@ -337,7 +350,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="jyL-8o-Pm5" kind="push" id="bA2-vf-pD1"/>
+                                    <segue destination="jyL-8o-Pm5" kind="push" identifier="island" id="bA2-vf-pD1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bqY-uG-PQV">
@@ -352,7 +365,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="eX8-49-Z58" kind="push" id="j9D-qY-XSJ"/>
+                                    <segue destination="eX8-49-Z58" kind="push" identifier="game" id="j9D-qY-XSJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="i6u-zV-zfB">
@@ -420,11 +433,11 @@
             </objects>
             <point key="canvasLocation" x="742" y="174"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--MainUI Navigation Controller View Controller-->
         <scene sceneID="gUZ-yC-Rvq">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1WF-ff-nck" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController wantsFullScreenLayout="YES" navigationBarHidden="YES" id="CVS-00-h2A" sceneMemberID="viewController">
+                <navigationController wantsFullScreenLayout="YES" navigationBarHidden="YES" id="CVS-00-h2A" customClass="MainUINavigationControllerViewController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="nh2-Js-pCO">
@@ -562,6 +575,84 @@
         <image name="triboard-customization@2x.png" width="71" height="310"/>
         <image name="tribus-bg@2x.png" width="954" height="401"/>
     </resources>
+    <classes>
+        <class className="BagUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BagUIViewController.h"/>
+        </class>
+        <class className="CustomUITabBarController" superclassName="UITabBarController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomUITabBarController.h"/>
+        </class>
+        <class className="GameUIViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GameUIViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="sparrowView" candidateClass="SPView"/>
+            </relationships>
+        </class>
+        <class className="GenericUIViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GenericUIViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="viewTitleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="IslandUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IslandUIViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
+            </relationships>
+        </class>
+        <class className="MainUINavigationControllerViewController" superclassName="UINavigationController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainUINavigationControllerViewController.h"/>
+        </class>
+        <class className="MainUIViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainUIViewController.h"/>
+        </class>
+        <class className="MissionUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MissionUIViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
+                <relationship kind="outlet" name="uiImageView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="SPView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SPView.h"/>
+        </class>
+        <class className="ShopUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ShopUIViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
+                <relationship kind="outlet" name="productDetail" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="TravelUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TravelUIViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="uiPickerView" candidateClass="UIPickerView"/>
+            </relationships>
+        </class>
+        <class className="TriboardUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TriboardUIViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="busIncoming:" candidateClass="UIGestureRecognizer"/>
+                <relationship kind="outlet" name="gestureOutlet" candidateClass="UISwipeGestureRecognizer"/>
+            </relationships>
+        </class>
+        <class className="TribuUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TribuUIViewController.h"/>
+        </class>
+        <class className="UIButtonCustomFontKohicle25" superclassName="UIButton">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIButtonCustomFontKohicle25.h"/>
+        </class>
+        <class className="UIButtonCustomFontTwCenMT" superclassName="UIButton">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIButtonCustomFontTwCenMT.h"/>
+        </class>
+        <class className="iCarousel" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iCarousel.h"/>
+            <relationships>
+                <relationship kind="outlet" name="dataSource"/>
+                <relationship kind="outlet" name="delegate"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <nil key="statusBar"/>
         <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>

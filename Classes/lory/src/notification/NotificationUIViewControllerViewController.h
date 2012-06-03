@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface NotificationUIViewControllerViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UIButton *busButton;
+- (IBAction)busIsComing:(id)sender;
 
 @end
