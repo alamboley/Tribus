@@ -226,12 +226,36 @@
                             <view contentMode="scaleToFill" id="CJs-rT-oCI" customClass="iCarousel">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="choisis ton île" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="GSg-R0-G06" customClass="UILabelCustomFontKohicle25">
+                                        <rect key="frame" x="104" y="0.0" width="272" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="jyL-8o-Pm5" id="Etp-Hl-Hwe"/>
                                     <outlet property="delegate" destination="jyL-8o-Pm5" id="iAP-NW-j9S"/>
                                 </connections>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7rS-e2-whF">
+                                <rect key="frame" x="420" y="266" width="53" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="ok-btn@2x.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="eX8-49-Z58" kind="push" id="6v0-i8-aSA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -336,21 +360,6 @@
                                 </state>
                                 <connections>
                                     <segue destination="pa0-oe-nky" kind="push" id="31l-H5-oOA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mAI-jZ-bGg">
-                                <rect key="frame" x="230" y="243" width="76" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="îles">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="jyL-8o-Pm5" kind="push" identifier="island" id="bA2-vf-pD1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bqY-uG-PQV">
@@ -572,6 +581,7 @@
         <image name="fond3@2x.png" width="960" height="640"/>
         <image name="main-bg@2x.jpg" width="960" height="640"/>
         <image name="main-button-big-normal.png" width="150" height="56"/>
+        <image name="ok-btn@2x.png" width="107" height="98"/>
         <image name="triboard-customization@2x.png" width="71" height="310"/>
         <image name="tribus-bg@2x.png" width="954" height="401"/>
     </resources>
@@ -645,6 +655,9 @@
         <class className="UIButtonCustomFontTwCenMT" superclassName="UIButton">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UIButtonCustomFontTwCenMT.h"/>
         </class>
+        <class className="UILabelCustomFontKohicle25" superclassName="UILabel">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UILabelCustomFontKohicle25.h"/>
+        </class>
         <class className="iCarousel" superclassName="UIView">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/iCarousel.h"/>
             <relationships>
@@ -658,4 +671,7 @@
         <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="6v0-i8-aSA"/>
+    </inferredMetricsTieBreakers>
 </document>
