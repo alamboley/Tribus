@@ -125,14 +125,19 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="tribus-bg@2x.png" id="FHb-wg-u48">
-                                <rect key="frame" x="3" y="81" width="477" height="200"/>
+                                <rect key="frame" x="3" y="100" width="477" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="triboard-customization@2x.png" id="cDh-uF-faJ">
-                                <rect key="frame" x="30" y="92" width="35" height="155"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="triboard_character@2x.png" id="cDh-uF-faJ">
+                                <rect key="frame" x="121" y="49" width="240" height="242"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <view contentMode="scaleToFill" id="sSS-Br-eIa">
+                                <rect key="frame" x="3" y="100" width="470" height="209"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -145,6 +150,7 @@
                     <navigationItem key="navigationItem" id="u3Y-ZN-H8f"/>
                     <connections>
                         <outlet property="gestureOutlet" destination="mKg-t8-lN0" id="e2l-bj-wuX"/>
+                        <outlet property="itemsContainer" destination="sSS-Br-eIa" id="ers-MQ-MIL"/>
                     </connections>
                 </viewController>
                 <swipeGestureRecognizer direction="down" id="mKg-t8-lN0">
@@ -597,90 +603,9 @@
         <image name="main-bg@2x.jpg" width="960" height="640"/>
         <image name="main-button-big-normal.png" width="150" height="56"/>
         <image name="ok-btn@2x.png" width="107" height="98"/>
-        <image name="triboard-customization@2x.png" width="71" height="310"/>
+        <image name="triboard_character@2x.png" width="480" height="484"/>
         <image name="tribus-bg@2x.png" width="954" height="401"/>
     </resources>
-    <classes>
-        <class className="BagUIViewController" superclassName="GenericUIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BagUIViewController.h"/>
-        </class>
-        <class className="CustomUITabBarController" superclassName="UITabBarController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomUITabBarController.h"/>
-        </class>
-        <class className="GameUIViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GameUIViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="sparrowView" candidateClass="SPView"/>
-            </relationships>
-        </class>
-        <class className="GenericUIViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GenericUIViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="viewTitleLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="IslandUIViewController" superclassName="GenericUIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/IslandUIViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
-            </relationships>
-        </class>
-        <class className="MainUINavigationControllerViewController" superclassName="UINavigationController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainUINavigationControllerViewController.h"/>
-        </class>
-        <class className="MainUIViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainUIViewController.h"/>
-        </class>
-        <class className="MissionUIViewController" superclassName="GenericUIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MissionUIViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
-                <relationship kind="outlet" name="uiImageView" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="SPView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SPView.h"/>
-        </class>
-        <class className="ShopUIViewController" superclassName="GenericUIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ShopUIViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
-                <relationship kind="outlet" name="productDetail" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="TravelUIViewController" superclassName="GenericUIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TravelUIViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="uiPickerView" candidateClass="UIPickerView"/>
-            </relationships>
-        </class>
-        <class className="TriboardUIViewController" superclassName="GenericUIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TriboardUIViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="busIncoming:" candidateClass="UIGestureRecognizer"/>
-                <relationship kind="outlet" name="gestureOutlet" candidateClass="UISwipeGestureRecognizer"/>
-            </relationships>
-        </class>
-        <class className="TribuUIViewController" superclassName="GenericUIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TribuUIViewController.h"/>
-        </class>
-        <class className="UIButtonCustomFontKohicle25" superclassName="UIButton">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIButtonCustomFontKohicle25.h"/>
-        </class>
-        <class className="UIButtonCustomFontTwCenMT" superclassName="UIButton">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIButtonCustomFontTwCenMT.h"/>
-        </class>
-        <class className="UILabelCustomFontKohicle25" superclassName="UILabel">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UILabelCustomFontKohicle25.h"/>
-        </class>
-        <class className="iCarousel" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iCarousel.h"/>
-            <relationships>
-                <relationship kind="outlet" name="dataSource"/>
-                <relationship kind="outlet" name="delegate"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <nil key="statusBar"/>
         <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>

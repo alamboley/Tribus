@@ -9,8 +9,10 @@
 #import "TriboardUIViewController.h"
 #import "USave.h"
 #import "SBJsonParser.h"
+#import "TriboardItemUIViewController.h"
 
 @implementation TriboardUIViewController
+@synthesize itemsContainer;
 @synthesize gestureOutlet;
 
 - (id)init {
@@ -71,12 +73,15 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
-    
     [super viewDidLoad];
     [[NSNotificationCenter defaultCenter] addObserver:self 
                                              selector:@selector(itemFromBagUsed:) 
                                                  name:@"itemFromBagUsed" 
                                                object:nil];
+    for (int i = 0; i < 6; i++) {
+        TriboardItemUIViewController *item = [[TriboardItemUIViewController alloc] initWithNibName:@"TriboardItemUIViewController" bundle:nil];
+        [itemsContainer addSubview:item.view];
+    }
 }
 - (void)itemFromBagUsed:(NSNotification *)notification {
     NSObject *foo;
@@ -88,6 +93,7 @@
 - (void)viewDidUnload
 {
     [self setGestureOutlet:nil];
+    [self setItemsContainer:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

@@ -11,4 +11,5 @@
 @interface TriboardUIViewController : GenericUIViewController
 @property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *gestureOutlet;
 -(IBAction)busIncoming:(UIGestureRecognizer *)sender;
+@property (weak, nonatomic) IBOutlet UIView *itemsContainer;
 @end
