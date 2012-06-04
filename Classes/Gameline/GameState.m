@@ -27,7 +27,8 @@
         
         //[USave saveItemId:[obj objectForKey:@"id"] forType:self.title];
         
-        //[self showHideDebugDraw];
+        [self showHideDebugDraw];
+        [self showHideDebugDraw];
         
         gameWidth = 500680;
         

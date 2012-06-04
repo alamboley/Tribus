@@ -18,7 +18,7 @@
         
         rotate = rotation;
         
-        game = [WorldRed alloc];
+        game = [WorldYellow alloc];
         [game setDelegate:self];
         [game setWidth:320];
         [game setHeight:480];
@@ -41,7 +41,7 @@
 - (void) finNiveau:(NSNotification *) notification {
     
     
-     game = [WorldYellow alloc];
+     game = [WorldRed alloc];
     [game setDelegate:self];
     [game setWidth:320];
     [game setHeight:480];
