@@ -52,8 +52,6 @@
     }
     
     [self setUpState:game];
-    
-    NSLog(@"fin niveau");
 }
 
 @end

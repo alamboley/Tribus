@@ -60,7 +60,7 @@
     
     [super createShape];
     
-    sensorDetectionHero = [body addRectangleWithWidth:150 height:heightBody offset:cpv(-150 / 2, 0)];
+    sensorDetectionHero = [body addRectangleWithWidth:120 height:heightBody offset:cpv(-120 / 2, 0)];
     
     [sensorDetectionHero addToSpace];
 }
