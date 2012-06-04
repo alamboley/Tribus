@@ -10,6 +10,8 @@
 
 @interface BigPicture : CitrusObject {
     
+    NSString *worldColor;
+    int index;
     CitrusObject *hero;
 }
 

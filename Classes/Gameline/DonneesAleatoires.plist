@@ -7,11 +7,11 @@
 		<key>jaune</key>
 		<array>
 			<string>jaune1.png</string>
-			<string>jaune1b.png</string>
 			<string>jaune2.png</string>
-			<string>jaune2b.png</string>
-			<string>jaune2c.png</string>
+			<!--<string>jaune2c.png</string>-->
 			<string>jaune3.png</string>
+			<string>jaune1b.png</string>
+			<string>jaune2b.png</string>
 			<string>jaune3b.png</string>
 		</array>
 		<key>rouge</key>

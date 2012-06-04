@@ -41,7 +41,7 @@
 - (void) finNiveau:(NSNotification *) notification {
     
     
-     game = [WorldRed alloc];
+    game = [WorldRed alloc];
     [game setDelegate:self];
     [game setWidth:320];
     [game setHeight:480];

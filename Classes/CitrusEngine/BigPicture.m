@@ -15,6 +15,8 @@
     
     if (self = [super initWithName:paramName params:params]) {
         
+        worldColor = world;
+        
         //chargement PLIST :
         NSBundle *bundle = [NSBundle mainBundle];
         NSString *plistChemin = [bundle pathForResource:@"DonneesAleatoires" ofType:@"plist"];
@@ -35,9 +37,11 @@
             
             img.x = self.posX;
             img.y = self.y;
-
+            
             self.posX += img.width - 2;
         }
+        
+        index = 0;
         
     }
     
@@ -60,16 +64,26 @@
         hero = [ce.state getObjectByName:@"hero"];
         
     } else {
-
+        
         if (hero.x > self.width - 480 - 150) {
             
-            SPDisplayObject *img = [graphic childAtIndex:arc4random() % graphic.numChildren];
+            SPDisplayObject *img;
+            
+            if ([worldColor isEqualToString:@"jaune"]) {
+                
+                img = [graphic childAtIndex:index];
+                index = (index == 5) ? 0 : index+1;
+                
+            } else {
+                
+                img = [graphic childAtIndex:arc4random() % graphic.numChildren];
+            }
             
             if ((img.x + img.width + 50) < hero.x) {
-
+                
                 img.x = self.posX;
                 img.y = self.y;
-
+                
                 self.posX += img.width - 2;
             }
         }
