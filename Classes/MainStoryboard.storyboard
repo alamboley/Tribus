@@ -159,6 +159,32 @@
                             <view contentMode="scaleToFill" id="sSS-Br-eIa">
                                 <rect key="frame" x="3" y="100" width="470" height="209"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="store_pigment_bleu@2x.png" id="f41-wd-3aJ">
+                                        <rect key="frame" x="58" y="10" width="70" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="store_pigment_jaune@2x.png" id="1i8-kG-God">
+                                        <rect key="frame" x="30" y="65" width="70" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="store_pigment_orange@2x.png" id="mQk-C6-bWY">
+                                        <rect key="frame" x="54" y="128" width="70" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="store_pigment_violet@2x.png" id="4ig-m3-H8P">
+                                        <rect key="frame" x="324" y="0.0" width="70" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="store_pigment_rouge@2x.png" id="YHE-9A-fjO">
+                                        <rect key="frame" x="351" y="55" width="70" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="store_pigment_vert@2x.png" id="34A-4e-fgm">
+                                        <rect key="frame" x="320" y="118" width="70" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -631,6 +657,12 @@
         <image name="main-bg@2x.jpg" width="960" height="640"/>
         <image name="main-button-big-normal.png" width="150" height="56"/>
         <image name="ok-btn@2x.png" width="107" height="98"/>
+        <image name="store_pigment_bleu@2x.png" width="56" height="56"/>
+        <image name="store_pigment_jaune@2x.png" width="56" height="56"/>
+        <image name="store_pigment_orange@2x.png" width="56" height="56"/>
+        <image name="store_pigment_rouge@2x.png" width="56" height="56"/>
+        <image name="store_pigment_vert@2x.png" width="56" height="56"/>
+        <image name="store_pigment_violet@2x.png" width="56" height="56"/>
         <image name="tribus-bg@2x.png" width="954" height="401"/>
     </resources>
     <classes>

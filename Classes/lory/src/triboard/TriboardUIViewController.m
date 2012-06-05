@@ -10,10 +10,12 @@
 #import "USave.h"
 #import "SBJsonParser.h"
 #import "TriboardItemUIViewController.h"
+#import "UImage.h"
 
 @implementation TriboardUIViewController
 @synthesize itemsContainer;
 @synthesize gestureOutlet;
+@synthesize itemDatas;
 
 - (id)init {
 	if (self = [super init]) {
@@ -25,8 +27,7 @@
 {
     // Creation du parser
     SBJsonParser *parser = [[SBJsonParser alloc] init];
-    
-    NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"missions" ofType:@"json"];
+    NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"triboard" ofType:@"json"];
     NSData *jsonData = [NSData dataWithContentsOfFile:jsonPath];
     
     // On récupère le JSON en NSString depuis la réponse
@@ -34,6 +35,28 @@
     
     // on parse la reponse JSON
     NSArray *res = [parser objectWithString:json_string error:nil];
+    
+    self.itemDatas = [[NSMutableDictionary alloc] init];
+    
+    for (NSDictionary *obj in res)
+    {
+        NSInteger i = [(NSString*)[obj objectForKey:@"id"]integerValue];
+        [self.itemDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
+                                   [[NSArray alloc] initWithObjects:[obj objectForKey:@"id"],[obj objectForKey:@"title"],nil] forKeys:
+                                   [[NSArray alloc] initWithObjects:@"id", @"title",nil]]
+                           forKey:[obj objectForKey:@"id"]];
+        
+        UIImageView *view = [[itemsContainer subviews] objectAtIndex:i];
+        
+        TriboardItemUIViewController *item = [[TriboardItemUIViewController alloc] initWithNibName:@"TriboardItemUIViewController" bundle:nil];
+        item.image = view;
+        UIView *coloredView = [[UImage alloc] image: view.image WithTint: [UIColor colorWithWhite:1.0 alpha:1.0]];
+        //item.del
+        [itemsContainer addSubview:item.view];
+        //coloredView.frame.origin = CGPointMake(0.0f, 0.0f);
+        item.view.frame = view.frame;
+        [self.view addSubview:coloredView];
+    }
 
     for (NSDictionary *obj in [USave getItemIdsforType:@"inventory"])
     {
@@ -78,9 +101,13 @@
                                              selector:@selector(itemFromBagUsed:) 
                                                  name:@"itemFromBagUsed" 
                                                object:nil];
-    for (int i = 0; i < 6; i++) {
+    
+    for (UIImageView * view in [itemsContainer subviews]) {
+         
         TriboardItemUIViewController *item = [[TriboardItemUIViewController alloc] initWithNibName:@"TriboardItemUIViewController" bundle:nil];
+        item.image = view;
         [itemsContainer addSubview:item.view];
+        item.view.frame = view.frame;
     }
 }
 - (void)itemFromBagUsed:(NSNotification *)notification {

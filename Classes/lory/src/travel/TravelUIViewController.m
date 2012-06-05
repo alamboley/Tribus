@@ -38,7 +38,7 @@
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
     NSLog(@"%d", row);
-    [self.view addSubview:[[UImage alloc] image: [UIImage imageNamed:@"back-btn.png"] WithTint: [UIColor colorWithWhite:1.0 alpha:1.0]]];
+
 }
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component;
