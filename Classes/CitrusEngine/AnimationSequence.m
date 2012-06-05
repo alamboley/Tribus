@@ -63,6 +63,36 @@
     return ((SPMovieClip *)[mcSequences objectForKey:previousAnimation]);
 }
 
+- (void) colorClignote {
+
+    for (NSString *key1 in mcSequences) {
+        SPTween *tween1 = [SPTween tweenWithTarget:((SPMovieClip *)[mcSequences objectForKey:key1]) time:0.2];
+        [tween1 animateProperty:@"color" targetValue:0x000000];
+        [[SPStage mainStage].juggler addObject:tween1];
+    }
+    
+    for (NSString *key2 in mcSequences) {
+        SPTween *tween2 = [SPTween tweenWithTarget:((SPMovieClip *)[mcSequences objectForKey:key2]) time:0.2];
+        [tween2 animateProperty:@"color" targetValue:0xffffff];
+        tween2.delay = 0.3;
+        [[SPStage mainStage].juggler addObject:tween2];
+    }
+    
+    for (NSString *key3 in mcSequences) {
+        SPTween *tween3 = [SPTween tweenWithTarget:((SPMovieClip *)[mcSequences objectForKey:key3]) time:0.2];
+        [tween3 animateProperty:@"color" targetValue:0x000000];
+        tween3.delay = 0.6;
+        [[SPStage mainStage].juggler addObject:tween3];
+    }
+    
+    for (NSString *key4 in mcSequences) {
+        SPTween *tween4 = [SPTween tweenWithTarget:((SPMovieClip *)[mcSequences objectForKey:key4]) time:0.2];
+        [tween4 animateProperty:@"color" targetValue:0xffffff];
+        tween4.delay = 0.9;
+        [[SPStage mainStage].juggler addObject:tween4];
+    }
+}
+
 - (void) dealloc {
     
     [self removeChild:[mcSequences objectForKey:previousAnimation]];

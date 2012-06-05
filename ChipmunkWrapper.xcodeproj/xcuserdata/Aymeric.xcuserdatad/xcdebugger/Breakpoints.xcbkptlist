@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Classes/Gameline/TaedioAspire.m"
-         timestampString = "360155844.490342"
+         timestampString = "360624321.485214"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "87"
-         endingLineNumber = "87"
+         startingLineNumber = "90"
+         endingLineNumber = "90"
          landmarkName = "@implementation TaedioAspire"
          landmarkType = "3">
       </FileBreakpoint>

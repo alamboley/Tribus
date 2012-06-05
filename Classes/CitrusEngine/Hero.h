@@ -31,4 +31,6 @@
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params andGraphic:(SPDisplayObject *)displayObject;
 - (void) simpleInit;
 
+- (void) hurt;
+
 @end

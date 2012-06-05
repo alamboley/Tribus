@@ -63,6 +63,11 @@
     [super destroy];
 }
 
+- (void) hurt {
+    
+    [(AnimationSequence *)graphic colorClignote];
+}
+
 - (void) touched:(SPTouchEvent *) event {
     
     SPTouch *begin = [[event touchesWithTarget:ce.state andPhase:SPTouchPhaseBegan] anyObject];

@@ -8,6 +8,7 @@
 
 #import "Piege.h"
 #import "CitrusEngine.h"
+#import "Hero.h"
 
 @implementation Piege
 
@@ -91,6 +92,8 @@
 }
 
 - (BOOL) collisionStart:(CMArbiter*) arbiter space:(CMSpace*) space {
+    
+    [((Hero *)arbiter.shapeB.body.data) hurt];
 
     [[NSNotificationCenter defaultCenter] postNotificationName:@"piege" object:nil];
     

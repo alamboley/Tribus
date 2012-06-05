@@ -72,7 +72,7 @@
             if ([worldColor isEqualToString:@"jaune"]) {
                 
                 img = [graphic childAtIndex:index];
-                index = (index == 5) ? 0 : index+1;
+                index = (index == 5) ? 0 : index + 1;
                 
             } else {
                 

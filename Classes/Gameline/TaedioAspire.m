@@ -9,6 +9,7 @@
 #import "TaedioAspire.h"
 #import "CitrusEngine.h"
 #import "AnimationSequence.h"
+#import "Hero.h"
 
 @implementation TaedioAspire
 
@@ -79,6 +80,8 @@
 }
 
 - (BOOL) collisionStart:(CMArbiter*) arbiter space:(CMSpace*) space {
+    
+    [((Hero *)arbiter.shapeA.body.data) hurt];
     
     [(AnimationSequence *)((CitrusObject *)arbiter.shapeB.body.data).graphic changeAnimation:@"taedioAspire" withLoop:NO];
     

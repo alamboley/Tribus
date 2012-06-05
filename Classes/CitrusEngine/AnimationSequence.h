@@ -29,4 +29,6 @@
 - (void) changeAnimation:(NSString *) animation withLoop:(BOOL)animLoop;
 - (SPMovieClip *) getCurrentAnimation;
 
+- (void) colorClignote;
+
 @end
