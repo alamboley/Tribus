@@ -93,7 +93,11 @@
 
 - (BOOL) collisionStart:(CMArbiter*) arbiter space:(CMSpace*) space {
     
-    [((Hero *)arbiter.shapeB.body.data) hurt];
+    if ([((CitrusObject *)arbiter.shapeA.body.data).name isEqualToString:@"hero"]) {
+        [((Hero *)arbiter.shapeA.body.data) hurt];
+    } else {
+        [((Hero *)arbiter.shapeB.body.data) hurt];
+    }
 
     [[NSNotificationCenter defaultCenter] postNotificationName:@"piege" object:nil];
     
