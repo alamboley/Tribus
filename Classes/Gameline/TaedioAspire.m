@@ -85,6 +85,8 @@
     
     [(AnimationSequence *)((CitrusObject *)arbiter.shapeB.body.data).graphic changeAnimation:@"taedioAspire" withLoop:NO];
     
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"piege" object:nil];
+    
     return YES;
 }
 
