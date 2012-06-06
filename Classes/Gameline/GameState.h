@@ -8,6 +8,7 @@
 
 #import "State.h"
 #import "AnimationSequence.h"
+#import "Hero.h"
 #import "BusManagement.h"
 #import "CreationRuntime.h"
 
@@ -21,10 +22,13 @@
     
     NSString *worldColor;
     
+    Hero *hero;
     BusManagement *bus;
     CreationRuntime *creationRuntime;
 }
 
 - (void) colorPicked:(NSNotification *) notification;
+
+- (void) finNiveau:(NSNotification *) notification;
 
 @end

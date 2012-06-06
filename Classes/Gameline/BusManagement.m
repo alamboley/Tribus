@@ -41,10 +41,8 @@
 
 - (void) destroy {
     
-    animTaedioAspire = nil;
-    animTaedioFumee = nil;
-    
-    
+//    animTaedioAspire = nil;
+//    animTaedioFumee = nil;
 }
 
 - (void) start {
@@ -64,12 +62,18 @@
     travelFirstElement = [travelFirstElement objectForKey:@"coords"];
     
     NSDictionary *arretBus = [travel objectAtIndex:indice];
+    
+    NSDictionary *arretBusEnAvance = [travel objectAtIndex:indice + 5];   
 
     if ([[arretBus objectForKey:@"type"] isEqualToString:@"abribus"]) {
         
         [self stop];
         
         [[NSNotificationCenter defaultCenter] postNotificationName:@"finNiveau" object:nil];
+    }
+    
+    if ([[arretBusEnAvance objectForKey:@"type"] isEqualToString:@"abribus"]) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"prochainArret" object:nil];
     }
     
     if (35 + 12 * [[travelFirstElement objectForKey:@"speed"]floatValue] - hero.velocityX < 0) {

@@ -21,11 +21,13 @@
     float velocityX, velocityY;
     
     BOOL touchScreen;
+    BOOL move;
 }
 
 @property (nonatomic) NSString *animation;
 @property (nonatomic) CMShape *sensorOnGround;
 @property (nonatomic) float velocityX;
+@property (nonatomic) BOOL move;
 
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params;
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params andGraphic:(SPDisplayObject *)displayObject;

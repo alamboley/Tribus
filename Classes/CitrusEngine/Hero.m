@@ -12,7 +12,7 @@
 
 @implementation Hero
 
-@synthesize animation, sensorOnGround, velocityX;
+@synthesize animation, sensorOnGround, velocityX, move;
 
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params {
     
@@ -37,6 +37,8 @@
 - (void) simpleInit {
     
     [body setMoment:INFINITY];
+    
+    move = TRUE;
     
     velocityX = 30;
     
@@ -118,7 +120,7 @@
         
     } else {
         
-        //animation = @"idle";
+        animation = @"fin";
         loopAnimation = FALSE;
     }
     
@@ -155,11 +157,11 @@
         }
     }
     
+    if (move == 0)
+      velocityX = 0;
+    
     [body setVelocity:velocity];
-    
-    //if (body.position.x > 2600)
-    //      velocityX = 0;
-    
+
     [self updateAnimation];
 }
 

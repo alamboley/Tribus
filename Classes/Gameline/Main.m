@@ -33,7 +33,7 @@
         frameRateTextField.visible = TRUE;
     }
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(finNiveau:) name:@"finNiveau" object:nil];
+    //[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(finNiveau:) name:@"finNiveau" object:nil];
     
     return self;
 }
