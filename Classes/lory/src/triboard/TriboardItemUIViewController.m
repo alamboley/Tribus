@@ -1,7 +1,7 @@
 #import "TriboardItemUIViewController.h"
 
 @implementation TriboardItemUIViewController
-@synthesize image;
+@synthesize button;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,7 +30,7 @@
 
 - (void)viewDidUnload
 {
-    [self setImage:nil];
+    [self setButton:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

@@ -13,11 +13,21 @@
 @synthesize buttons;
 
 #pragma mark - View lifecycle
+- (id) init
+{
+    self = [super init];
+    if (self) 
+    {
+        self.delegate = self;
+    }
+
+    return self;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    self.delegate = self;
     buttons = [NSMutableArray arrayWithObjects:nil];
     
     // Remove the tabBar
@@ -39,6 +49,7 @@
         UIButton* aButton = [UIButton buttonWithType:UIButtonTypeCustom];
         aButton.frame = CGRectMake(5 + i * 110.0, 5.0, buttonImageNormal.size.width,buttonImageNormal.size.height);
         UIViewController *item = [self.viewControllers objectAtIndex:i];
+        
         aButton.titleLabel.font = [UIFont fontWithName:@"TwCenMT-Regular" size:17];
         [aButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [aButton setBackgroundImage:buttonImageNormal forState:UIControlStateNormal];
@@ -48,7 +59,6 @@
         [aButton addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
         [aButton setContentEdgeInsets:UIEdgeInsetsMake(0, -4, 0, 0)];
         [self.view addSubview:aButton];
-        
         
         int controllerIndex = (int)[aButton tag];
         if(controllerIndex == self.selectedIndex){
@@ -62,26 +72,37 @@
 
 - (void)buttonClicked:(UIButton*)button
 {
+    [self setSelectedIndex:(int)[button tag]];
+}
+
+-(void)setSelectedIndex:(NSUInteger)index{
+    [super setSelectedIndex:index];
+    [self updateButtons:index];
+}
+-(void)updateButtons:(NSUInteger)index{
     // Get views. controllerIndex is passed in as the controller we want to go to. 
     // Get the views.
-    int controllerIndex = (int)[button tag];
-    if(controllerIndex != self.selectedIndex){
-        for( int i = 0; i < [self.buttons count]; i++ ) {
-            UIButton* aButton = [self.buttons objectAtIndex:i];
-            [aButton setSelected:NO];
-        }
-        
+    for( int i = 0; i < [self.buttons count]; i++ ) {
+        UIButton* aButton = [self.buttons objectAtIndex:i];
+        [aButton setSelected:NO];
+        if(index == (int)[aButton tag])
+            [aButton setSelected:YES];
+    }
+    if(index != self.selectedIndex){
         //Transition
         [UIView beginAnimations:@"animation" context:nil];
         //[myNavigationController pushViewController:myViewController animated:NO];
         [UIView setAnimationTransition:UIViewAnimationTransitionNone forView:self.navigationController.view cache:NO];
         [UIView setAnimationDuration:0.5];
         [UIView commitAnimations];
-        [button setSelected:YES];
-        self.selectedIndex = controllerIndex;
+        //self.selectedIndex = index;
         [self.navigationItem setTitle: self.title];
     }
-
+}
+// User tapped on an item...
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+{
+    NSLog(@"ESSAI");
 }
 
 - (void)viewDidUnload

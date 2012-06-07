@@ -2,7 +2,7 @@
 @class TribuUIViewController;
 
 @interface TriboardItemUIViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIImageView *image;
+@property (weak, nonatomic) IBOutlet UIButton *button;
 //@property (nonatomic, weak) id <TribuUIViewController> delegate;
 
 @end

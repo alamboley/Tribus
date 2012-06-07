@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CustomUITabBarController : UITabBarController
+@interface CustomUITabBarController : UITabBarController <UITabBarControllerDelegate>
 @property (nonatomic, retain) NSMutableArray *buttons;
 
 @end
