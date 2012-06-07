@@ -16,6 +16,7 @@
 @synthesize itemsContainer;
 @synthesize gestureOutlet;
 @synthesize itemDatas;
+@synthesize colorUIViewController;
 
 - (id)init {
 	if (self = [super init]) {
@@ -101,9 +102,14 @@
                                              selector:@selector(itemFromBagUsed:) 
                                                  name:@"itemFromBagUsed" 
                                                object:nil];
+    colorUIViewController = [[ColorUIViewController alloc] initWithNibName:@"ColorUIViewController" bundle:nil andType:big];
+    [self.view addSubview:colorUIViewController.view];
+    CGFloat x = ([self view].bounds.size.height - [colorUIViewController view].bounds.size.width) / 2;
+    CGFloat y = [self view].bounds.size.width  - 50;
+    colorUIViewController.view.frame = CGRectMake(x, y, colorUIViewController.view.frame.size.width, colorUIViewController.view.frame.size.height);
     
     for (UIImageView * view in [itemsContainer subviews]) {
-         
+
         TriboardItemUIViewController *item = [[TriboardItemUIViewController alloc] initWithNibName:@"TriboardItemUIViewController" bundle:nil];
         item.image = view;
         [itemsContainer addSubview:item.view];
@@ -121,6 +127,7 @@
 {
     [self setGestureOutlet:nil];
     [self setItemsContainer:nil];
+    [self setColorUIViewController:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

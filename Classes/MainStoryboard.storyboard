@@ -124,19 +124,15 @@
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="tribus-bg@2x.png" id="FHb-wg-u48">
-                                <rect key="frame" x="3" y="100" width="477" height="200"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="triboard-customization_bg@2x.png" id="FHb-wg-u48">
+                                <rect key="frame" x="43" y="50" width="394" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                             </imageView>
                             <view contentMode="scaleToFill" id="Zsd-Hp-Tu7">
-                                <rect key="frame" x="120" y="70" width="240" height="242"/>
+                                <rect key="frame" x="48" y="50" width="372" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="boardillu@2x.png" id="cDh-uF-faJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="242"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="boardillu_motifsbleu@2x.png" id="pf3-Ec-Wcz">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="242"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -146,7 +142,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="boardillu_motifsjaune1@2x.png" id="yc2-Tg-aqy">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="242"/>
+                                        <rect key="frame" x="60" y="44" width="240" height="242"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="boardillu_motiforange@2x.png" id="2oO-sI-Oh4">
@@ -157,36 +153,52 @@
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" id="sSS-Br-eIa">
-                                <rect key="frame" x="3" y="100" width="470" height="209"/>
+                                <rect key="frame" x="3" y="50" width="470" height="209"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="store_pigment_bleu@2x.png" id="f41-wd-3aJ">
-                                        <rect key="frame" x="58" y="10" width="70" height="70"/>
+                                        <rect key="frame" x="77" y="43" width="37" height="37"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="store_pigment_jaune@2x.png" id="1i8-kG-God">
-                                        <rect key="frame" x="30" y="65" width="70" height="70"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="store_pigment_orange@2x.png" id="1i8-kG-God">
+                                        <rect key="frame" x="76" y="100" width="37" height="37"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="store_pigment_orange@2x.png" id="mQk-C6-bWY">
-                                        <rect key="frame" x="54" y="128" width="70" height="70"/>
+                                        <rect key="frame" x="76" y="152" width="37" height="37"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="store_pigment_violet@2x.png" id="4ig-m3-H8P">
-                                        <rect key="frame" x="324" y="0.0" width="70" height="70"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="store_pigment_bleu@2x.png" id="4ig-m3-H8P">
+                                        <rect key="frame" x="355" y="46" width="37" height="37"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="store_pigment_rouge@2x.png" id="YHE-9A-fjO">
-                                        <rect key="frame" x="351" y="55" width="70" height="70"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="store_pigment_orange@2x.png" id="YHE-9A-fjO">
+                                        <rect key="frame" x="355" y="98" width="37" height="37"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="store_pigment_vert@2x.png" id="34A-4e-fgm">
-                                        <rect key="frame" x="320" y="118" width="70" height="70"/>
+                                        <rect key="frame" x="355" y="151" width="37" height="37"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="rUJ-tv-FfW" customClass="UILabelCustomFontTwCenMT">
+                                <rect key="frame" x="49" y="52" width="366" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Améliore ta triboard en ajoutant des motifsde couleurs pour booster ses performances !  </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="traits@2x.png" id="pSf-Jp-rq1">
+                                <rect key="frame" x="114" y="109" width="245" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="power-none@2x.png" id="41f-mn-sJK">
+                                <rect key="frame" x="429" y="265" width="42" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -647,7 +659,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="boardillu@2x.png" width="577" height="640"/>
         <image name="boardillu_motiforange@2x.png" width="577" height="640"/>
         <image name="boardillu_motifsbleu@2x.png" width="577" height="640"/>
         <image name="boardillu_motifsjaune1@2x.png" width="577" height="640"/>
@@ -657,96 +668,13 @@
         <image name="main-bg@2x.jpg" width="960" height="640"/>
         <image name="main-button-big-normal.png" width="150" height="56"/>
         <image name="ok-btn@2x.png" width="107" height="98"/>
-        <image name="store_pigment_bleu@2x.png" width="56" height="56"/>
-        <image name="store_pigment_jaune@2x.png" width="56" height="56"/>
-        <image name="store_pigment_orange@2x.png" width="56" height="56"/>
-        <image name="store_pigment_rouge@2x.png" width="56" height="56"/>
-        <image name="store_pigment_vert@2x.png" width="56" height="56"/>
-        <image name="store_pigment_violet@2x.png" width="56" height="56"/>
-        <image name="tribus-bg@2x.png" width="954" height="401"/>
+        <image name="power-none@2x.png" width="84" height="84"/>
+        <image name="store_pigment_bleu@2x.png" width="75" height="74"/>
+        <image name="store_pigment_orange@2x.png" width="74" height="74"/>
+        <image name="store_pigment_vert@2x.png" width="75" height="74"/>
+        <image name="traits@2x.png" width="519" height="268"/>
+        <image name="triboard-customization_bg@2x.png" width="787" height="479"/>
     </resources>
-    <classes>
-        <class className="BagUIViewController" superclassName="GenericUIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BagUIViewController.h"/>
-        </class>
-        <class className="CustomUITabBarController" superclassName="UITabBarController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomUITabBarController.h"/>
-        </class>
-        <class className="GameUIViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GameUIViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="sparrowView" candidateClass="SPView"/>
-            </relationships>
-        </class>
-        <class className="GenericUIViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GenericUIViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="viewTitleLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="IslandUIViewController" superclassName="GenericUIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/IslandUIViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
-            </relationships>
-        </class>
-        <class className="MainUINavigationControllerViewController" superclassName="UINavigationController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainUINavigationControllerViewController.h"/>
-        </class>
-        <class className="MainUIViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainUIViewController.h"/>
-        </class>
-        <class className="MissionUIViewController" superclassName="GenericUIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MissionUIViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
-                <relationship kind="outlet" name="uiImageView" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="SPView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SPView.h"/>
-        </class>
-        <class className="ShopUIViewController" superclassName="GenericUIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ShopUIViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
-                <relationship kind="outlet" name="productDetail" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="TravelUIViewController" superclassName="GenericUIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TravelUIViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="uiPickerView" candidateClass="UIPickerView"/>
-            </relationships>
-        </class>
-        <class className="TriboardUIViewController" superclassName="GenericUIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TriboardUIViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="busIncoming:" candidateClass="UIGestureRecognizer"/>
-                <relationship kind="outlet" name="gestureOutlet" candidateClass="UISwipeGestureRecognizer"/>
-                <relationship kind="outlet" name="itemsContainer" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="TribuUIViewController" superclassName="GenericUIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TribuUIViewController.h"/>
-        </class>
-        <class className="UIButtonCustomFontKohicle25" superclassName="UIButton">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIButtonCustomFontKohicle25.h"/>
-        </class>
-        <class className="UIButtonCustomFontTwCenMT" superclassName="UIButton">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIButtonCustomFontTwCenMT.h"/>
-        </class>
-        <class className="UILabelCustomFontKohicle25" superclassName="UILabel">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UILabelCustomFontKohicle25.h"/>
-        </class>
-        <class className="iCarousel" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iCarousel.h"/>
-            <relationships>
-                <relationship kind="outlet" name="dataSource"/>
-                <relationship kind="outlet" name="delegate"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <nil key="statusBar"/>
         <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>
