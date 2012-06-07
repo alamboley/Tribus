@@ -79,7 +79,7 @@
                 img = [graphic childAtIndex:arc4random() % graphic.numChildren];
             }
             
-            if ((img.x + img.width + 50) < hero.x) {
+            if ((img.x + img.width + 150) < hero.x) {
                 
                 img.x = self.posX;
                 img.y = self.y;

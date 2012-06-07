@@ -24,9 +24,13 @@
     
     int indice;
     
+    BOOL creerEnnemis;
+    
     AnimationSequence *animTaedioAspire;
     AnimationSequence *animTaedioFumee;
 }
+
+@property (nonatomic) BOOL creerEnnemis;
 
 - (id) initWithData:(NSString *) pathForResource andHero:(Hero *) heroParam;
 

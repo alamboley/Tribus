@@ -12,6 +12,7 @@
 #import "TaedioFumee.h"
 
 @implementation BusManagement
+@synthesize creerEnnemis;
 
 - (id) initWithData:(NSString *) pathForResource andHero:(Hero *) heroParam {
     
@@ -31,6 +32,8 @@
         
         indice = 0;
         
+        creerEnnemis = YES;
+        
         animTaedioAspire = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"taedioAspire.xml"] andAnimations:[NSArray arrayWithObjects:@"taedioAspire", @"taedioBase", nil] andFirstAnimation:@"taedioBase"];
         
         animTaedioFumee = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"taedioFumee.xml"] andAnimations:[NSArray arrayWithObjects:@"taedioFumee", nil] andFirstAnimation:@"taedioFumee"];
@@ -41,8 +44,8 @@
 
 - (void) destroy {
     
-//    animTaedioAspire = nil;
-//    animTaedioFumee = nil;
+    //    animTaedioAspire = nil;
+    //    animTaedioFumee = nil;
 }
 
 - (void) start {
@@ -64,7 +67,7 @@
     NSDictionary *arretBus = [travel objectAtIndex:indice];
     
     NSDictionary *arretBusEnAvance = [travel objectAtIndex:indice + 5];   
-
+    
     if ([[arretBus objectForKey:@"type"] isEqualToString:@"abribus"]) {
         
         [self stop];
@@ -90,22 +93,24 @@
 
 - (void) creerEnnemi {
     
-    float positionX = hero.x + 500 + arc4random() % 300;
-    float positionY = 50 + arc4random() % 250;
-    
-    if (arc4random() % 2 > 0) {
+    if (creerEnnemis) {
         
-        positionY = 270;
+        float positionX = hero.x + 500 + arc4random() % 300;
+        float positionY = 50 + arc4random() % 250;
         
-        TaedioAspire *taedioAspire = [[TaedioAspire alloc] initWithName:@"taedioAspire" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"60", @"80", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[animTaedioAspire copy]];
-        [ce.state addObject:taedioAspire];
-        
-    } else {
-        
-        TaedioFumee *taedioFumee = [[TaedioFumee alloc] initWithName:@"taedioFumee" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"120", @"70", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[animTaedioFumee copy]];
-        [ce.state addObject:taedioFumee];
+        if (arc4random() % 2 > 0) {
+            
+            positionY = 270;
+            
+            TaedioAspire *taedioAspire = [[TaedioAspire alloc] initWithName:@"taedioAspire" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"60", @"80", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[animTaedioAspire copy]];
+            [ce.state addObject:taedioAspire];
+            
+        } else {
+            
+            TaedioFumee *taedioFumee = [[TaedioFumee alloc] initWithName:@"taedioFumee" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"120", @"60", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[animTaedioFumee copy]];
+            [ce.state addObject:taedioFumee];
+        }
     }
-    
 }
 
 @end
