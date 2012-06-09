@@ -86,14 +86,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [titleLabel setFont:[UIFont fontWithName:@"Kohicle25" size:35]];
-    [descLabel setFont:[UIFont fontWithName:@"TwCenMT-Regular" size:15]];
-    [buyButton.titleLabel setFont:[UIFont fontWithName:@"TwCenMT-Regular" size:13]];
+    //[titleLabel setFont:[UIFont fontWithName:@"Kohicle25" size:35]];
+    //[descLabel setFont:[UIFont fontWithName:@"TwCenMT-Regular" size:15]];
+    //[buyButton.titleLabel setFont:[UIFont fontWithName:@"TwCenMT-Regular" size:13]];
 
     if([bought boolValue]){
         step = 3;
         [self switchStep:step];
-        NSLog(@"bought : %@", bought);
     }
     else {
         step = 0;

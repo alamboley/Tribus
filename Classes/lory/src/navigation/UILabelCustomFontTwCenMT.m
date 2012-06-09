@@ -20,5 +20,6 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     self.font = [UIFont fontWithName:@"TwCenMT-Regular" size:self.font.pointSize];
+    //[self sizeToFit];
 }
 @end

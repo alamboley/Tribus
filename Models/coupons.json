@@ -1,0 +1,19 @@
+[{
+ "id":"0",
+ "title":"duo gagnant",
+ "description": "une bonne base sans aucun doute",
+ "image-url": "shop-item-board-1.png",
+ "price":{"violet":10}
+ },{
+ "id":"1",
+ "title":"cinéma décavision",
+ "description": "Réduction à valoir sur l'achat d'une place de cinéma hors 3D. Réduction faite en caisse grâce au code donné après l’achat.",
+ "image-url": "shop-item-coupon-2.png",
+ "price":{"jaune":60}
+ },{
+ "id":"2",
+ "title":"dur à cuire",
+ "description": "Attend-toi \n à une explosion",
+ "image-url": "shop-item-board-3.png",
+ "price":{"vert":14}
+ }]

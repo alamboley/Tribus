@@ -21,6 +21,7 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     self.font = [UIFont fontWithName:@"Kohicle25" size:self.font.pointSize];
+    //[self sizeToFit];
 }
 /*
 // Only override drawRect: if you perform custom drawing.

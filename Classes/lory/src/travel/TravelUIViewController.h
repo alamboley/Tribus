@@ -7,8 +7,10 @@
 //
 
 #import "GenericUIViewController.h"
+#import "iCarousel.h"
 
 @interface TravelUIViewController : GenericUIViewController
 @property (weak, nonatomic) IBOutlet UIPickerView *uiPickerView;
-
+@property (nonatomic, retain) NSMutableDictionary *itemDatas;
+@property (weak, nonatomic) IBOutlet iCarousel *icarousel;
 @end
