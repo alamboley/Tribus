@@ -13,7 +13,6 @@
 #import "Sensor.h"
 #import "Sol.h"
 #import "ColorManager.h"
-#import "Jauge.h"
 #import "EcranFumee.h"
 #import "PouvoirExchange.h"
 #import "FondParallax.h"
@@ -25,9 +24,6 @@
 	if (self = [super init]) {
         
         //[USave saveItemId:[obj objectForKey:@"id"] forType:self.title];
-        
-        [self showHideDebugDraw];
-        [self showHideDebugDraw];
         
         gameWidth = 500680;
         
@@ -58,11 +54,6 @@
         
         creationRuntime = [[CreationRuntime alloc] initWithWorld:worldColor];
         [creationRuntime start];
-        
-        /*Jauge *jauge = [[Jauge alloc] initWithColor:@"jaune"];
-        [self addChild:jauge];
-        jauge.x = 350;
-        jauge.y = 100;*/
         
         animEcranNoir = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"ecranNoir.xml"] andAnimations:[NSArray arrayWithObjects:@"noirDisparition", @"noirExplosion", nil] andFirstAnimation:@"noirExplosion"];
         
