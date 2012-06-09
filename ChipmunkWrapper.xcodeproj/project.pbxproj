@@ -153,6 +153,14 @@
 		0497E89C1576166A005CDC2E /* explosion_4_39_128.png in Resources */ = {isa = PBXBuildFile; fileRef = 0497E89A1576166A005CDC2E /* explosion_4_39_128.png */; };
 		04BF13431583BA2A00E1DDBC /* trajets.json in Resources */ = {isa = PBXBuildFile; fileRef = 04BF13421583BA2A00E1DDBC /* trajets.json */; };
 		04BF13441583BA2A00E1DDBC /* trajets.json in Resources */ = {isa = PBXBuildFile; fileRef = 04BF13421583BA2A00E1DDBC /* trajets.json */; };
+		04BF13481583BD0F00E1DDBC /* TravelItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF13461583BD0F00E1DDBC /* TravelItemViewController.m */; };
+		04BF13491583BD0F00E1DDBC /* TravelItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF13461583BD0F00E1DDBC /* TravelItemViewController.m */; };
+		04BF134A1583BD0F00E1DDBC /* TravelItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BF13471583BD0F00E1DDBC /* TravelItemViewController.xib */; };
+		04BF134B1583BD0F00E1DDBC /* TravelItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BF13471583BD0F00E1DDBC /* TravelItemViewController.xib */; };
+		04BF134D1583BE4E00E1DDBC /* travel-item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04BF134C1583BE4E00E1DDBC /* travel-item@2x.png */; };
+		04BF134E1583BE4E00E1DDBC /* travel-item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04BF134C1583BE4E00E1DDBC /* travel-item@2x.png */; };
+		04BF13501583BE6000E1DDBC /* travel-item.png in Resources */ = {isa = PBXBuildFile; fileRef = 04BF134F1583BE6000E1DDBC /* travel-item.png */; };
+		04BF13511583BE6000E1DDBC /* travel-item.png in Resources */ = {isa = PBXBuildFile; fileRef = 04BF134F1583BE6000E1DDBC /* travel-item.png */; };
 		04DC6201157BB58800FD994C /* ok-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04DC6200157BB58800FD994C /* ok-btn@2x.png */; };
 		04DC6202157BB58800FD994C /* ok-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04DC6200157BB58800FD994C /* ok-btn@2x.png */; };
 		04ECFFCC15765350002B4B15 /* pouvoir1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04ECFFC91576534F002B4B15 /* pouvoir1@2x.png */; };
@@ -922,6 +930,11 @@
 		0497E89715761631005CDC2E /* UIImage+Sprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Sprite.m"; sourceTree = "<group>"; };
 		0497E89A1576166A005CDC2E /* explosion_4_39_128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = explosion_4_39_128.png; sourceTree = "<group>"; };
 		04BF13421583BA2A00E1DDBC /* trajets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = trajets.json; sourceTree = "<group>"; };
+		04BF13451583BD0F00E1DDBC /* TravelItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelItemViewController.h; sourceTree = "<group>"; };
+		04BF13461583BD0F00E1DDBC /* TravelItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelItemViewController.m; sourceTree = "<group>"; };
+		04BF13471583BD0F00E1DDBC /* TravelItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TravelItemViewController.xib; sourceTree = "<group>"; };
+		04BF134C1583BE4E00E1DDBC /* travel-item@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "travel-item@2x.png"; sourceTree = "<group>"; };
+		04BF134F1583BE6000E1DDBC /* travel-item.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "travel-item.png"; sourceTree = "<group>"; };
 		04DC6200157BB58800FD994C /* ok-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ok-btn@2x.png"; sourceTree = "<group>"; };
 		04ECFFC91576534F002B4B15 /* pouvoir1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir1@2x.png"; sourceTree = "<group>"; };
 		04ECFFCA15765350002B4B15 /* pouvoir2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir2@2x.png"; sourceTree = "<group>"; };
@@ -1508,6 +1521,7 @@
 				043612A91583AC5F00140353 /* boardillu_motifsbleu.png */,
 				043612AA1583AC5F00140353 /* boardillu_motifsjaune1.png */,
 				043612AB1583AC5F00140353 /* boardillu_motifsjaune2.png */,
+				04BF134F1583BE6000E1DDBC /* travel-item.png */,
 				043612AC1583AC5F00140353 /* buy-btn-step-2.png */,
 				043612AD1583AC5F00140353 /* buy-btn.png */,
 				043612AE1583AC5F00140353 /* colors_big.png */,
@@ -2048,6 +2062,7 @@
 				C8DEB0C615728D3A00017A64 /* fond1@2x.png */,
 				C8DEB0C715728D3A00017A64 /* fond2@2x.png */,
 				C8DEB0C815728D3A00017A64 /* fond3@2x.png */,
+				04BF134C1583BE4E00E1DDBC /* travel-item@2x.png */,
 				C8DEB0C915728D3A00017A64 /* ile_bleue@2x.png */,
 				C8DEB0CA15728D3A00017A64 /* ile_jaune@2x.png */,
 				C8DEB0CB15728D3A00017A64 /* ile_orange@2x.png */,
@@ -2399,6 +2414,9 @@
 			children = (
 				B0BB60CD1574AC14001BB2CB /* TravelUIViewController.h */,
 				B0BB60CE1574AC14001BB2CB /* TravelUIViewController.m */,
+				04BF13451583BD0F00E1DDBC /* TravelItemViewController.h */,
+				04BF13461583BD0F00E1DDBC /* TravelItemViewController.m */,
+				04BF13471583BD0F00E1DDBC /* TravelItemViewController.xib */,
 			);
 			path = travel;
 			sourceTree = "<group>";
@@ -2840,6 +2858,9 @@
 				043613351583AC5F00140353 /* triboard-customization_bg.png in Resources */,
 				043613371583AC5F00140353 /* tribus-bg.png in Resources */,
 				04BF13431583BA2A00E1DDBC /* trajets.json in Resources */,
+				04BF134A1583BD0F00E1DDBC /* TravelItemViewController.xib in Resources */,
+				04BF134D1583BE4E00E1DDBC /* travel-item@2x.png in Resources */,
+				04BF13501583BE6000E1DDBC /* travel-item.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3102,6 +3123,9 @@
 				043613361583AC5F00140353 /* triboard-customization_bg.png in Resources */,
 				043613381583AC5F00140353 /* tribus-bg.png in Resources */,
 				04BF13441583BA2A00E1DDBC /* trajets.json in Resources */,
+				04BF134B1583BD0F00E1DDBC /* TravelItemViewController.xib in Resources */,
+				04BF134E1583BE4E00E1DDBC /* travel-item@2x.png in Resources */,
+				04BF13511583BE6000E1DDBC /* travel-item.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3257,6 +3281,7 @@
 				0417F10A1579080E00A48C0F /* NotificationUIViewControllerViewController.m in Sources */,
 				0448AB7F157B86F0000D9A22 /* UILabelCustomFontTwCenMT.m in Sources */,
 				04060C00157B9A4B00CCAB4A /* MainUINavigationControllerViewController.m in Sources */,
+				04BF13481583BD0F00E1DDBC /* TravelItemViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3408,6 +3433,7 @@
 				0417F10B1579080E00A48C0F /* NotificationUIViewControllerViewController.m in Sources */,
 				0448AB80157B86F0000D9A22 /* UILabelCustomFontTwCenMT.m in Sources */,
 				04060C01157B9A4B00CCAB4A /* MainUINavigationControllerViewController.m in Sources */,
+				04BF13491583BD0F00E1DDBC /* TravelItemViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

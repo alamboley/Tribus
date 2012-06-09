@@ -1,7 +1,7 @@
 //
 //  iCarousel.m
 //
-//  Version 1.6.3 beta
+//  Version 1.6.4 beta
 //
 //  Created by Nick Lockwood on 01/04/2011.
 //  Copyright 2010 Charcoal Design
@@ -294,6 +294,14 @@ CVReturn displayLinkCallback(CVDisplayLinkRef displayLink,
     }
 }
 
+- (void)setCurrentItemIndex:(NSInteger)_currentItemIndex
+{
+    if (self.currentItemIndex != _currentItemIndex)
+    {
+        [self scrollToItemAtIndex:_currentItemIndex animated:NO];
+    }
+}
+
 - (void)setViewpointOffset:(CGSize)_viewpointOffset
 {
     if (!CGSizeEqualToSize(viewpointOffset, _viewpointOffset))
@@ -303,7 +311,7 @@ CVReturn displayLinkCallback(CVDisplayLinkRef displayLink,
     }
 }
 
-- (void)setUseDisplayLinkIfAvailable:(BOOL)_useDisplayLink
+- (void)setUseDisplayLink:(BOOL)_useDisplayLink
 {
     if (useDisplayLink != _useDisplayLink)
     {
@@ -490,13 +498,6 @@ CVReturn displayLinkCallback(CVDisplayLinkRef displayLink,
             if ([delegate respondsToSelector:@selector(carousel:itemTransformForOffset:baseTransform:)])
             {
                 return [delegate carousel:self itemTransformForOffset:offset baseTransform:transform];
-            }
-            
-            //deprecated code path
-            else if ([delegate respondsToSelector:@selector(carousel:transformForItemView:withOffset:)])
-            {
-                NSLog(@"Delegate method carousel:transformForItemView:withOffset: is deprecated, use carousel:transformForItemAtIndex:withOffset:baseTransform: instead.");
-                return [delegate carousel:self transformForItemView:view withOffset:offset];
             }
             
             //else, fall through to linear transform
@@ -709,7 +710,7 @@ NSComparisonResult compareViewDepth(UIView *view1, UIView *view2, iCarousel *sel
 
 - (void)depthSortViews
 {
-    for (UIView *view in [[itemViews allValues] sortedArrayUsingFunction:(NSInteger (*)(id, id, void *))compareViewDepth context:(__bridge void *)self])
+    for (UIView *view in [[itemViews allValues] sortedArrayUsingFunction:(NSInteger (*)(id, id, void *))compareViewDepth context:(__AH_BRIDGE void *)self])
     {
         [contentView addSubview:view.superview];
     }
@@ -1032,42 +1033,15 @@ NSComparisonResult compareViewDepth(UIView *view1, UIView *view2, iCarousel *sel
     UIView *view = nil;
     if (index < 0)
     {
-        if ([dataSource respondsToSelector:@selector(carousel:placeholderViewAtIndex:reusingView:)])
-        {
-            view = [dataSource carousel:self placeholderViewAtIndex:(int)ceilf((CGFloat)numberOfPlaceholdersToShow/2.0f) + index reusingView:[self dequeuePlaceholderView]];
-        }
-        
-        //deprecated code path
-        else if ([dataSource respondsToSelector:@selector(carousel:placeholderViewAtIndex:)])
-        {
-            NSLog(@"DataSource method carousel:placeholderViewAtIndex: is deprecated, use carousel:placeholderViewAtIndex:reusingView: instead.");
-            view = [dataSource carousel:self placeholderViewAtIndex:(int)ceilf((CGFloat)numberOfPlaceholdersToShow/2.0f) + index];
-        }
+        view = [dataSource carousel:self placeholderViewAtIndex:(int)ceilf((CGFloat)numberOfPlaceholdersToShow/2.0f) + index reusingView:[self dequeuePlaceholderView]];
     }
     else if (index >= numberOfItems)
     {
-        if ([dataSource respondsToSelector:@selector(carousel:placeholderViewAtIndex:reusingView:)])
-        {
-            view = [dataSource carousel:self placeholderViewAtIndex:numberOfPlaceholdersToShow/2.0f + index - numberOfItems reusingView:[self dequeuePlaceholderView]];
-        }
-        
-        //deprecated code path
-        else if ([dataSource respondsToSelector:@selector(carousel:placeholderViewAtIndex:)])
-        {
-            NSLog(@"DataSource method carousel:placeholderViewAtIndex: is deprecated, use carousel:placeholderViewAtIndex:reusingView: instead.");
-            view = [dataSource carousel:self placeholderViewAtIndex:numberOfPlaceholdersToShow/2.0f + index - numberOfItems];
-        }
+        view = [dataSource carousel:self placeholderViewAtIndex:numberOfPlaceholdersToShow/2.0f + index - numberOfItems reusingView:[self dequeuePlaceholderView]];
     }
-    else if ([dataSource respondsToSelector:@selector(carousel:viewForItemAtIndex:reusingView:)])
-    {
-        view = [dataSource carousel:self viewForItemAtIndex:index reusingView:[self dequeueItemView]];
-    }
-    
-    //deprecated code path
     else
     {
-        NSLog(@"DataSource method carousel:viewForItemAtIndex: is deprecated, use carousel:viewForItemAtIndex:reusingView: instead.");
-        view = [dataSource carousel:self viewForItemAtIndex:index];
+        view = [dataSource carousel:self viewForItemAtIndex:index reusingView:[self dequeueItemView]];
     }
     
     if (view == nil)
@@ -1080,14 +1054,14 @@ NSComparisonResult compareViewDepth(UIView *view1, UIView *view2, iCarousel *sel
         UIView *oldItemView = [containerView.subviews lastObject];
         if (index < 0 || index >= numberOfItems)
         {
-            [self queuePlaceholderView:view];
+            [self queuePlaceholderView:oldItemView];
         }
         else
         {
-            [self queueItemView:view];
+            [self queueItemView:oldItemView];
         }
+        view.frame = oldItemView.frame;
         [oldItemView removeFromSuperview];
-        containerView.frame = view.frame;
         [containerView addSubview:view];
     }
     else
@@ -1161,7 +1135,7 @@ NSComparisonResult compareViewDepth(UIView *view1, UIView *view2, iCarousel *sel
 - (void)reloadData
 {    
     //remove old views
-    for (UIView *view in [self.itemViews allValues])
+    for (UIView *view in [itemViews allValues])
     {
         [view.superview removeFromSuperview];
     }
@@ -1314,8 +1288,8 @@ NSComparisonResult compareViewDepth(UIView *view1, UIView *view2, iCarousel *sel
         decelerating = NO;
         [self disableAnimation];
         scrollOffset = itemWidth * [self clampedIndex:previousItemIndex + itemCount];
-        previousItemIndex = previousItemIndex + itemCount;
         [self didScroll];
+        previousItemIndex = previousItemIndex + itemCount;
         [self depthSortViews];
         [self enableAnimation];
     }
@@ -1518,7 +1492,7 @@ NSComparisonResult compareViewDepth(UIView *view1, UIView *view2, iCarousel *sel
             
             //support for Chameleon
             timer = [CADisplayLink displayLinkWithTarget:self selector:@selector(step)];
-            [timer addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
+            [timer addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
 #endif
 #else
             CVDisplayLinkCreateWithActiveCGDisplays((void *)&timer); 
@@ -1537,7 +1511,7 @@ NSComparisonResult compareViewDepth(UIView *view1, UIView *view2, iCarousel *sel
                                           userInfo:nil
                                            repeats:YES];
             
-            [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+            [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
         }
     }
 }

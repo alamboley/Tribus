@@ -10,7 +10,8 @@
 #import "UImage.h"
 #import "SBJsonParser.h"
 #import "USave.h"
-#import "MissionItemUIViewController.h"
+#import "TravelItemViewController.h"
+
 @implementation TravelUIViewController
 @synthesize uiPickerView;
 @synthesize itemDatas;
@@ -64,7 +65,7 @@
     // Release any cached data, images, etc that aren't in use.
 }
 -(CGFloat)carouselItemWidth:(iCarousel *)carousel{
-    return 70.0;
+    return 100.0;
 }
 - (NSUInteger)numberOfItemsInCarousel:(iCarousel *)carousel
 {
@@ -77,7 +78,7 @@
     //create new view if no view is available for recycling
     if (view == nil)
     {
-        MissionItemUIViewController *viewController =[[MissionItemUIViewController alloc] initWithNibName:@"MissionItemUIViewController" bundle:nil];
+        TravelItemViewController *viewController =[[TravelItemViewController alloc] initWithNibName:@"TravelItemViewController" bundle:nil];
         [currentItem setValue:viewController forKey:@"controller"];
         view = viewController.view;
         

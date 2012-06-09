@@ -1,7 +1,21 @@
-#import "TriboardItemUIViewController.h"
+//
+//  TravelItemViewController.m
+//  ChipmunkWrapper
+//
+//  Created by Mac on 09/06/12.
+//  Copyright (c) 2012 Sodeso. All rights reserved.
+//
 
-@implementation TriboardItemUIViewController
-@synthesize button;
+#import "TravelItemViewController.h"
+
+@interface TravelItemViewController ()
+
+@end
+
+@implementation TravelItemViewController
+@synthesize titleLabel;
+@synthesize descLabel;
+@synthesize okImage;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -12,15 +26,10 @@
     return self;
 }
 
-- (void)didReceiveMemoryWarning
+- (void)displayDone
 {
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc that aren't in use.
+    [okImage setHidden:YES];
 }
-
-#pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
@@ -30,10 +39,11 @@
 
 - (void)viewDidUnload
 {
-    [self setButton:nil];
+    [self setTitleLabel:nil];
+    [self setDescLabel:nil];
+    [self setOkImage:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
-
 @end
