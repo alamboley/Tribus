@@ -721,6 +721,10 @@
 		B0C1B44A14FE248F00E10833 /* Main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C1B44614FE248F00E10833 /* Main.m */; };
 		B0C780D81517A7D30075592B /* icone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0C780D71517A7D30075592B /* icone@2x.png */; };
 		B0C780DA1517A7D70075592B /* icone.png in Resources */ = {isa = PBXBuildFile; fileRef = B0C780D91517A7D70075592B /* icone.png */; };
+		B0C95C891583D4ED008AF972 /* jauneArrivee.png in Resources */ = {isa = PBXBuildFile; fileRef = B0C95C881583D4ED008AF972 /* jauneArrivee.png */; };
+		B0C95C8A1583D4ED008AF972 /* jauneArrivee.png in Resources */ = {isa = PBXBuildFile; fileRef = B0C95C881583D4ED008AF972 /* jauneArrivee.png */; };
+		B0C95C8C1583D4FA008AF972 /* jauneArrivee@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0C95C8B1583D4FA008AF972 /* jauneArrivee@2x.png */; };
+		B0C95C8D1583D4FA008AF972 /* jauneArrivee@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0C95C8B1583D4FA008AF972 /* jauneArrivee@2x.png */; };
 		B0CE6B191578A74100C0346B /* FondParallax.m in Sources */ = {isa = PBXBuildFile; fileRef = B0CE6B181578A74100C0346B /* FondParallax.m */; };
 		B0CE6B1A1578A74100C0346B /* FondParallax.m in Sources */ = {isa = PBXBuildFile; fileRef = B0CE6B181578A74100C0346B /* FondParallax.m */; };
 		B0D23C2D157763100014F0DB /* TaedioAspire.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D23C2C157763100014F0DB /* TaedioAspire.m */; };
@@ -1376,6 +1380,8 @@
 		B0C1B44614FE248F00E10833 /* Main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Main.m; sourceTree = "<group>"; };
 		B0C780D71517A7D30075592B /* icone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icone@2x.png"; sourceTree = "<group>"; };
 		B0C780D91517A7D70075592B /* icone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icone.png; sourceTree = "<group>"; };
+		B0C95C881583D4ED008AF972 /* jauneArrivee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jauneArrivee.png; sourceTree = "<group>"; };
+		B0C95C8B1583D4FA008AF972 /* jauneArrivee@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jauneArrivee@2x.png"; sourceTree = "<group>"; };
 		B0CE6B171578A74100C0346B /* FondParallax.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FondParallax.h; sourceTree = "<group>"; };
 		B0CE6B181578A74100C0346B /* FondParallax.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FondParallax.m; sourceTree = "<group>"; };
 		B0D23C2B1577630F0014F0DB /* TaedioAspire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaedioAspire.h; sourceTree = "<group>"; };
@@ -2189,6 +2195,7 @@
 				B0B67061157D366600799F43 /* jaune2c.png */,
 				B0B67062157D366600799F43 /* jaune3.png */,
 				B0B67063157D366600799F43 /* jaune3b.png */,
+				B0C95C881583D4ED008AF972 /* jauneArrivee.png */,
 				B044810D1563D3B4005BC009 /* jaune_fond.png */,
 				B044811D1563D999005BC009 /* jaune1erplan1.png */,
 				B044811E1563D999005BC009 /* jaune1erplan2.png */,
@@ -2228,6 +2235,7 @@
 				B0B6704C157D365200799F43 /* jaune2c@2x.png */,
 				B0B6704D157D365200799F43 /* jaune3@2x.png */,
 				B0B6704E157D365200799F43 /* jaune3b@2x.png */,
+				B0C95C8B1583D4FA008AF972 /* jauneArrivee@2x.png */,
 				B04481181563D3CC005BC009 /* jaune_fond@2x.png */,
 				B04481251563D9C7005BC009 /* jaune1erplan1@2x.png */,
 				B04481261563D9C7005BC009 /* jaune1erplan2@2x.png */,
@@ -2861,6 +2869,8 @@
 				04BF134A1583BD0F00E1DDBC /* TravelItemViewController.xib in Resources */,
 				04BF134D1583BE4E00E1DDBC /* travel-item@2x.png in Resources */,
 				04BF13501583BE6000E1DDBC /* travel-item.png in Resources */,
+				B0C95C891583D4ED008AF972 /* jauneArrivee.png in Resources */,
+				B0C95C8C1583D4FA008AF972 /* jauneArrivee@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3126,6 +3136,8 @@
 				04BF134B1583BD0F00E1DDBC /* TravelItemViewController.xib in Resources */,
 				04BF134E1583BE4E00E1DDBC /* travel-item@2x.png in Resources */,
 				04BF13511583BE6000E1DDBC /* travel-item.png in Resources */,
+				B0C95C8A1583D4ED008AF972 /* jauneArrivee.png in Resources */,
+				B0C95C8D1583D4FA008AF972 /* jauneArrivee@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
