@@ -331,7 +331,7 @@ de couleurs pour booster ses performances !  </string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="eX8-49-Z58" kind="push" id="6v0-i8-aSA"/>
+                                    <action selector="gotoGame:" destination="jyL-8o-Pm5" eventType="touchUpInside" id="Hm3-Vg-2hy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -341,6 +341,7 @@ de couleurs pour booster ses performances !  </string>
                     <navigationItem key="navigationItem" id="Rn8-p1-HZT"/>
                     <connections>
                         <outlet property="icarousel" destination="CJs-rT-oCI" id="ihg-ja-bS5"/>
+                        <segue destination="eX8-49-Z58" kind="push" identifier="PushGameViewController" id="AMI-En-7y9"/>
                     </connections>
                 </viewController>
             </objects>
@@ -452,7 +453,7 @@ de couleurs pour booster ses performances !  </string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="jyL-8o-Pm5" kind="push" identifier="island" id="bA2-vf-pD1"/>
+                                    <segue destination="jyL-8o-Pm5" kind="push" identifier="island" id="dJh-7N-1Bd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bqY-uG-PQV">
@@ -692,6 +693,6 @@ de couleurs pour booster ses performances !  </string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="6v0-i8-aSA"/>
+        <segue reference="AMI-En-7y9"/>
     </inferredMetricsTieBreakers>
 </document>

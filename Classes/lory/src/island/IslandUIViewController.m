@@ -8,6 +8,8 @@
 
 #import "IslandUIViewController.h"
 #import "Color.h"
+#import "GameUIViewController.h"
+
 @implementation IslandUIViewController
 
 @synthesize islandTitle;
@@ -63,7 +65,20 @@
                           [[NSArray alloc] initWithObjects:@"color", @"path",@"title",nil]]
                   forKey:[items objectAtIndex:5]];
 }
-
+-(IBAction)gotoGame:(id)sender{
+    if(currentColorId == @"jaune" || currentColorId == @"rouge"){
+        [self performSegueWithIdentifier:@"PushGameViewController" sender:sender];
+    }else{
+        UIAlertView *someError = [[UIAlertView alloc] initWithTitle: @"Attention" message: [NSString stringWithFormat:@"Cette île sera bientôt disponible"] delegate: self cancelButtonTitle: @"Ok" otherButtonTitles: nil];
+        [someError show];        
+    }
+}
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    GameUIViewController *vc = [segue destinationViewController];
+    vc.startingColorId = currentColorId;
+    //vc.title = button.titleLabel.text;
+}
 #pragma mark -
 #pragma mark View lifecycle
 
@@ -143,6 +158,7 @@
     NSMutableDictionary *currentItem = [itemDatas objectForKey:[items objectAtIndex:carousel.currentItemIndex]];
     islandTitle.text = [currentItem valueForKey:@"title"];
     islandTitle.textColor = [(Color *)[currentItem valueForKey:@"color"] color];
+    currentColorId = [(Color *)[currentItem valueForKey:@"color"] colorId];
 }
 
 - (NSUInteger)numberOfItemsInCarousel:(iCarousel *)carousel

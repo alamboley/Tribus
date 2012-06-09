@@ -10,7 +10,9 @@
 #import "NMCustomLabel.h"
 #import "iCarousel.h"
 
-@interface IslandUIViewController : GenericUIViewController<iCarouselDataSource,iCarouselDelegate>;
+@interface IslandUIViewController : GenericUIViewController<iCarouselDataSource,iCarouselDelegate>{
+    NSString *currentColorId;
+}
 @property (retain, nonatomic) NMCustomLabel *islandTitle;
 @property (weak, nonatomic) IBOutlet iCarousel *icarousel;
 @property (nonatomic, retain) NSMutableArray *items;

@@ -36,7 +36,7 @@
     for (NSDictionary *obj in res)
     {
         NSNumber *done = [NSNumber numberWithBool:NO];
-        if([[[USave getItemIdsforType:self.title] valueForKey:[obj objectForKey:@"id"]] boolValue]){
+        if([[obj objectForKey:@"done"] boolValue]){
             done = [NSNumber numberWithBool:YES];
         }
         [itemDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
@@ -46,6 +46,7 @@
         
         //[USave saveItemId:[obj objectForKey:@"id"] forType:self.title];
         //[USave saveValue:[NSNumber numberWithBool:YES] forItemId:[obj objectForKey:@"id"] forCategory:self.title]; // save mission
+        NSLog(@"%@",done);
     }
 }
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -56,7 +57,25 @@
     }
     return self;
 }
-
+- (void)carousel:(iCarousel *)carousel didSelectItemAtIndex:(NSInteger)index{
+    
+    // now add animation
+   /* [UIView beginAnimations:@"View Flip" context:nil];
+     [UIView setAnimationDuration:0.5];
+     [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+     if(index == carousel.currentItemIndex){
+     
+     [UIView setAnimationTransition: UIViewAnimationTransitionFlipFromRight 
+     forView:carousel.currentItemView cache:YES];
+     
+     [travelDetail removeFromSuperview];
+     [carousel.currentItemView addSubview:self.productDetail];
+     [travelDetail setHidden:NO];
+     [travelDetail setFrame:carousel.currentItemView.frame];
+     } else {
+     }
+     [UIView commitAnimations];*/
+}
 - (void)didReceiveMemoryWarning
 {
     // Releases the view if it doesn't have a superview.

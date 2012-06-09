@@ -15,7 +15,7 @@
 @end
 
 @implementation GameUIViewController
-@synthesize sparrowView;
+@synthesize sparrowView,startingColorId;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -46,6 +46,9 @@
     CGFloat x = 280;
     CGFloat y = 0;
     colorUIViewController.view.frame = CGRectMake(x, y, colorUIViewController.view.frame.size.width, colorUIViewController.view.frame.size.height);
+    
+    if(startingColorId == nil) startingColorId = @"jaune";
+    NSLog(@"start with color : %@",startingColorId);
 }
 
 - (void)viewDidUnload
