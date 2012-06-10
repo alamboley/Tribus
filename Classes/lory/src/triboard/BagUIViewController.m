@@ -16,6 +16,7 @@
 @synthesize itemDatas;
 @synthesize colorUIViewController;
 @synthesize icarousel;
+@synthesize okButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -113,13 +114,17 @@
         }
     }
 }
+- (void)carousel:(iCarousel *)carousel didSelectItemAtIndex:(NSInteger)index{
+    if(index == carousel.currentItemIndex){
+        [okButton setHidden:NO];
+    }
+}
 - (BOOL)carouselShouldWrap:(iCarousel *)carousel{
     return NO;
 }
 - (void)carouselDidScroll:(iCarousel *)carousel{
-    
     NSMutableDictionary *currentItem = [itemDatas objectForKey:[NSString stringWithFormat:@"%d", carousel.currentItemIndex]];
-    
+    [okButton setHidden:YES];
 }
 -(CGFloat)carouselItemWidth:(iCarousel *)carousel{
     return 250.0;
@@ -176,10 +181,14 @@
     icarousel = nil;
     [itemDatas removeAllObjects];
     itemDatas = nil;
+    [self setOkButton:nil];
     [super viewDidUnload];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:@"itemSelectedFromTriboard" object:nil];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
 
+- (IBAction)itemForTriboardSelected:(id)sender {
+    self.tabBarController.selectedIndex = 0;
+}
 @end

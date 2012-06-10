@@ -17,5 +17,7 @@
 @property (nonatomic, retain) NSMutableDictionary *itemDatas;
 @property (nonatomic, retain) ColorUIViewController *colorUIViewController;
 @property (weak, nonatomic) IBOutlet iCarousel *icarousel;
+@property (weak, nonatomic) IBOutlet UIButton *okButton;
+- (IBAction)itemForTriboardSelected:(id)sender;
 
 @end
