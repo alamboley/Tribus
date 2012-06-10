@@ -122,6 +122,8 @@
 
 - (IBAction)itemSelected:(id)sender {
     //NSLog(@"index %@", self.tabBarController.selectedIndex);
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"itemSelectedFromTriboard" 
+     object:[NSNumber numberWithInt:1]];
     self.tabBarController.selectedIndex = 1;
 }
 
@@ -131,7 +133,15 @@
     NSLog(@"Object received : %@",foo);
     //do something else
 }
+-(void)viewDidAppear:(BOOL)animated { 
+    [super viewDidAppear:animated];
+    [colorUIViewController viewDidAppear:YES];
+}
 
+-(void)viewDidDisappear:(BOOL)animated { 
+    [super viewDidDisappear:animated];
+    [colorUIViewController viewDidDisappear:YES];
+}
 - (void)viewDidUnload
 {
     [self setGestureOutlet:nil];

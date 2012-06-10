@@ -3,4 +3,9 @@
   "title":"emplacement 0",
   "image-url": "shop-item-board-1.png",
   "items":["1","2"]
+  },{
+  "id":"1",
+  "title":"emplacement 1",
+  "image-url": "shop-item-board-1.png",
+  "items":["1","2"]
   }]
