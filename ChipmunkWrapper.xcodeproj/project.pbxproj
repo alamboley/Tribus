@@ -163,6 +163,10 @@
 		04BF13511583BE6000E1DDBC /* travel-item.png in Resources */ = {isa = PBXBuildFile; fileRef = 04BF134F1583BE6000E1DDBC /* travel-item.png */; };
 		04BF137015850C9400E1DDBC /* inventaire.json in Resources */ = {isa = PBXBuildFile; fileRef = 04BF136F15850C9400E1DDBC /* inventaire.json */; };
 		04BF137115850C9400E1DDBC /* inventaire.json in Resources */ = {isa = PBXBuildFile; fileRef = 04BF136F15850C9400E1DDBC /* inventaire.json */; };
+		04BF13921585161000E1DDBC /* BagItemUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF13901585160F00E1DDBC /* BagItemUIViewController.m */; };
+		04BF13931585161000E1DDBC /* BagItemUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF13901585160F00E1DDBC /* BagItemUIViewController.m */; };
+		04BF13941585161000E1DDBC /* BagItemUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BF13911585160F00E1DDBC /* BagItemUIViewController.xib */; };
+		04BF13951585161000E1DDBC /* BagItemUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BF13911585160F00E1DDBC /* BagItemUIViewController.xib */; };
 		04DC6201157BB58800FD994C /* ok-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04DC6200157BB58800FD994C /* ok-btn@2x.png */; };
 		04DC6202157BB58800FD994C /* ok-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04DC6200157BB58800FD994C /* ok-btn@2x.png */; };
 		04ECFFCC15765350002B4B15 /* pouvoir1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04ECFFC91576534F002B4B15 /* pouvoir1@2x.png */; };
@@ -942,6 +946,9 @@
 		04BF134C1583BE4E00E1DDBC /* travel-item@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "travel-item@2x.png"; sourceTree = "<group>"; };
 		04BF134F1583BE6000E1DDBC /* travel-item.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "travel-item.png"; sourceTree = "<group>"; };
 		04BF136F15850C9400E1DDBC /* inventaire.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = inventaire.json; sourceTree = "<group>"; };
+		04BF138F1585160E00E1DDBC /* BagItemUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BagItemUIViewController.h; sourceTree = "<group>"; };
+		04BF13901585160F00E1DDBC /* BagItemUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BagItemUIViewController.m; sourceTree = "<group>"; };
+		04BF13911585160F00E1DDBC /* BagItemUIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BagItemUIViewController.xib; sourceTree = "<group>"; };
 		04DC6200157BB58800FD994C /* ok-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ok-btn@2x.png"; sourceTree = "<group>"; };
 		04ECFFC91576534F002B4B15 /* pouvoir1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir1@2x.png"; sourceTree = "<group>"; };
 		04ECFFCA15765350002B4B15 /* pouvoir2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir2@2x.png"; sourceTree = "<group>"; };
@@ -2443,6 +2450,9 @@
 				B0BB60D41574AC14001BB2CB /* TriboardItemUIViewController.xib */,
 				B0BB60D51574AC14001BB2CB /* TriboardUIViewController.h */,
 				B0BB60D61574AC14001BB2CB /* TriboardUIViewController.m */,
+				04BF138F1585160E00E1DDBC /* BagItemUIViewController.h */,
+				04BF13901585160F00E1DDBC /* BagItemUIViewController.m */,
+				04BF13911585160F00E1DDBC /* BagItemUIViewController.xib */,
 			);
 			path = triboard;
 			sourceTree = "<group>";
@@ -2876,6 +2886,7 @@
 				B0C95C891583D4ED008AF972 /* jauneArrivee.png in Resources */,
 				B0C95C8C1583D4FA008AF972 /* jauneArrivee@2x.png in Resources */,
 				04BF137015850C9400E1DDBC /* inventaire.json in Resources */,
+				04BF13941585161000E1DDBC /* BagItemUIViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3144,6 +3155,7 @@
 				B0C95C8A1583D4ED008AF972 /* jauneArrivee.png in Resources */,
 				B0C95C8D1583D4FA008AF972 /* jauneArrivee@2x.png in Resources */,
 				04BF137115850C9400E1DDBC /* inventaire.json in Resources */,
+				04BF13951585161000E1DDBC /* BagItemUIViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3300,6 +3312,7 @@
 				0448AB7F157B86F0000D9A22 /* UILabelCustomFontTwCenMT.m in Sources */,
 				04060C00157B9A4B00CCAB4A /* MainUINavigationControllerViewController.m in Sources */,
 				04BF13481583BD0F00E1DDBC /* TravelItemViewController.m in Sources */,
+				04BF13921585161000E1DDBC /* BagItemUIViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3452,6 +3465,7 @@
 				0448AB80157B86F0000D9A22 /* UILabelCustomFontTwCenMT.m in Sources */,
 				04060C01157B9A4B00CCAB4A /* MainUINavigationControllerViewController.m in Sources */,
 				04BF13491583BD0F00E1DDBC /* TravelItemViewController.m in Sources */,
+				04BF13931585161000E1DDBC /* BagItemUIViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

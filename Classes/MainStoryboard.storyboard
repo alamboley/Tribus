@@ -236,11 +236,23 @@ de couleurs pour booster ses performances !  </string>
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="271"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <view contentMode="scaleToFill" id="uMd-3t-hDm" customClass="iCarousel">
+                                <rect key="frame" x="0.0" y="-24" width="480" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="8wW-hU-t5F" id="VZ9-Gp-3oE"/>
+                                    <outlet property="delegate" destination="8wW-hU-t5F" id="QUe-yV-48q"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="o8u-ql-jMA"/>
+                    <connections>
+                        <outlet property="icarousel" destination="uMd-3t-hDm" id="Kt1-yq-pH1"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="2096" y="435"/>
