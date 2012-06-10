@@ -18,7 +18,13 @@
         
         rotate = rotation;
         
-        game = [WorldYellow alloc];
+        if (startingColor == nil) startingColor = @"jaune";
+        
+        if ([startingColor isEqualToString:@"jaune"])
+            game = [WorldYellow alloc];
+        else 
+            game = [WorldRed alloc];
+        
         [game setDelegate:self];
         [game setWidth:320];
         [game setHeight:480];
@@ -38,10 +44,24 @@
     return self;
 }
 
+- (id)initWithWidth:(float)width height:(float)height rotation:(BOOL)rotation andStartingColor:(NSString *) startingColorId {
+    
+    startingColor = startingColorId;
+
+     if (self = [self initWithWidth:width height:height rotation:rotation]) {
+         
+     }
+    
+    return self;
+}
+
 - (void) finNiveau:(NSNotification *) notification {
     
-    
-    game = [WorldRed alloc];
+    if ([startingColor isEqualToString:@"jaune"])
+        game = [WorldRed alloc];
+    else 
+        game = [WorldYellow alloc];
+
     [game setDelegate:self];
     [game setWidth:320];
     [game setHeight:480];

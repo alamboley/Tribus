@@ -34,8 +34,10 @@
     
     self.view.layer.transform = CATransform3DMakeRotation(-M_PI * 0.5, 0, 0.0, 1.0);
     
+    if(startingColorId == nil) startingColorId = @"jaune";
+    
     [SPStage setSupportHighResolutions:YES];
-    Main *game = [[Main alloc] initWithWidth:320 height:480 rotation:YES];        
+    Main *game = [[Main alloc] initWithWidth:320 height:480 rotation:YES andStartingColor:startingColorId];        
     sparrowView.stage = game;
     sparrowView.frameRate = SPARROW_FRAMERATE_ACTIVE;
     [sparrowView start];
@@ -46,9 +48,6 @@
     CGFloat x = 280;
     CGFloat y = 0;
     colorUIViewController.view.frame = CGRectMake(x, y, colorUIViewController.view.frame.size.width, colorUIViewController.view.frame.size.height);
-    
-    if(startingColorId == nil) startingColorId = @"jaune";
-    NSLog(@"start with color : %@",startingColorId);
 }
 
 - (void)viewDidUnload
