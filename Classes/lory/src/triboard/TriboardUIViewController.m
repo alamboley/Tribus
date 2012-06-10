@@ -88,15 +88,15 @@
     
     for (NSDictionary *obj in res)
     {
+        TriboardItemUIViewController *item = [[TriboardItemUIViewController alloc] initWithNibName:@"TriboardItemUIViewController" bundle:nil];
+        
         NSInteger i = [(NSString*)[obj objectForKey:@"id"]integerValue];
         [self.itemDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
-                                   [[NSArray alloc] initWithObjects:[obj objectForKey:@"id"],[obj objectForKey:@"title"],nil] forKeys:
-                                   [[NSArray alloc] initWithObjects:@"id", @"title",nil]]
+                                   [[NSArray alloc] initWithObjects:[obj objectForKey:@"id"],[obj objectForKey:@"title"],item,nil] forKeys:
+                                   [[NSArray alloc] initWithObjects:@"id", @"title", @"item", nil]]
                            forKey:[obj objectForKey:@"id"]];
         
         UIImageView *view = [[itemsContainer subviews] objectAtIndex:i];
-        
-        TriboardItemUIViewController *item = [[TriboardItemUIViewController alloc] initWithNibName:@"TriboardItemUIViewController" bundle:nil];
         
         //NSLog(@"%@",(NSString *)[obj objectForKey:@"itemId"]);
 
@@ -105,6 +105,8 @@
         //coloredView.frame.origin = CGPointMake(0.0f, 0.0f);
         [itemsContainer addSubview:item.view];
         item.view.frame = view.frame;
+        
+        [item.button setTitle:(NSString*)[obj objectForKey:@"id"] forState:UIControlStateNormal];
         
         if((NSString *)[obj objectForKey:@"itemId"] == @"none"){
             [item.button setImage:[UIImage imageNamed:@"store_pigment_none@2x.png"] forState:UIControlStateNormal];
@@ -122,8 +124,18 @@
 
 - (IBAction)itemSelected:(id)sender {
     //NSLog(@"index %@", self.tabBarController.selectedIndex);
+    int i = 0;
+    /*for (NSDictionary *obj in itemDatas)
+    {
+        NSLog(@"dafuq %@",obj);
+        /*TriboardItemUIViewController *item = [obj objectForKey:@"item"];
+        if(item.button == sender){
+            break;
+        }*/
+        /*i++;
+    }*/
     [[NSNotificationCenter defaultCenter] postNotificationName:@"itemSelectedFromTriboard" 
-     object:[NSNumber numberWithInt:1]];
+     object:[NSNumber numberWithInt:[[((UIButton*)sender).titleLabel text] intValue]]];
     self.tabBarController.selectedIndex = 1;
 }
 

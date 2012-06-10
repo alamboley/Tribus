@@ -8,4 +8,24 @@
   "title":"emplacement 1",
   "image-url": "shop-item-board-1.png",
   "items":["1","2"]
+  },{
+  "id":"2",
+  "title":"emplacement 2",
+  "image-url": "shop-item-board-1.png",
+  "items":["1","2"]
+  },{
+  "id":"3",
+  "title":"emplacement 3",
+  "image-url": "shop-item-board-1.png",
+  "items":["1","2"]
+  },{
+  "id":"4",
+  "title":"emplacement 4",
+  "image-url": "shop-item-board-1.png",
+  "items":["1","2"]
+  },{
+  "id":"5",
+  "title":"emplacement 5",
+  "image-url": "shop-item-board-1.png",
+  "items":["1","2"]
   }]

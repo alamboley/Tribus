@@ -89,7 +89,8 @@
     colorUIViewController.view.frame = CGRectMake(x, y, colorUIViewController.view.frame.size.width, colorUIViewController.view.frame.size.height);
 }
 - (void)itemSelectedFromTriboard:(NSNotification *)notification {
-    currentIndex = (int)notification.object;
+    NSLog(@"%@",notification.object);
+    currentIndex = [(NSNumber *)notification.object intValue];
     [icarousel scrollToItemAtIndex: currentIndex animated:YES];
 }
 #pragma mark -
