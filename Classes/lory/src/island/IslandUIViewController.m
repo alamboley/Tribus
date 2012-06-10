@@ -121,6 +121,8 @@
     [itemDatas removeAllObjects];
     itemDatas = nil;
     
+    currentColorId = nil;
+    
     [super viewDidUnload];
 }
 
