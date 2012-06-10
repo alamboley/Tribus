@@ -11,7 +11,9 @@
 #import "ColorUIViewController.h"
 #import "iCarousel.h"
 
-@interface BagUIViewController : GenericUIViewController
+@interface BagUIViewController : GenericUIViewController{
+    int currentIndex;
+}
 @property (nonatomic, retain) NSMutableDictionary *itemDatas;
 @property (nonatomic, retain) ColorUIViewController *colorUIViewController;
 @property (weak, nonatomic) IBOutlet iCarousel *icarousel;
