@@ -21,7 +21,8 @@
     CitrusEngine *ce;
     CitrusObject *hero;
     
-    AnimationSequence *animFiltreVertFront;
+    AnimationSequence *animFiltreVertFrontDiss;
+    AnimationSequence *animFiltreVertFrontAsso;
     SPImage *filtreBack;
 }
 

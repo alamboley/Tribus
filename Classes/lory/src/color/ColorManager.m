@@ -97,6 +97,24 @@ static bool inited = NO;
     return YES;
 }
 
++ (void) filterAssociateForColorId:(NSString*) colorId {
+    
+    int removePoints = 5;
+    int addPoints = 10;
+    
+    NSString *compl1;
+    NSString *compl2;
+    
+    if ([colorId isEqualToString:@"vert"]) {
+        compl1 = @"jaune";
+        compl2 = @"bleu";
+    }
+    
+    if ([ColorManager removePoints:removePoints forColorId:compl1] && [ColorManager removePoints:removePoints forColorId:compl2]) {
+        [ColorManager addPoints:addPoints forColorId:colorId];
+    }
+}
+
 + (void) filterDissociateForColorId:(NSString*) colorId {
     
     int removePoints = 10;

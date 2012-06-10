@@ -13,6 +13,7 @@
 + (void) addPoints:(int) points forColorId:(NSString*) colorId;
 + (BOOL) removePoints:(int) points forColorId:(NSString*) colorId;
 + (void) filterDissociateForColorId:(NSString*) colorId;
++ (void) filterAssociateForColorId:(NSString*) colorId;
 + (void) saveColorId:(NSString*) colorId;
 + (NSMutableDictionary*) getColors;
 + (void)initManager;

@@ -63,6 +63,7 @@
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(colorPicked:) name:@"rouge" object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(colorPicked:) name:@"piege" object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(colorPicked:) name:@"filtreDissociatif" object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(colorPicked:) name:@"filtreAssociatif" object:nil];
         
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(baddyManagement:) name:@"ecranFumee" object:nil];
         
@@ -115,6 +116,10 @@
     } else if ([notification.name isEqualToString:@"filtreDissociatif"]) {
         
         [ColorManager filterDissociateForColorId:[[notification userInfo] valueForKey:@"colorId"]];
+        
+    } else if ([notification.name isEqualToString:@"filtreAssociatif"]) {
+        
+        [ColorManager filterAssociateForColorId:[[notification userInfo] valueForKey:@"colorId"]];
         
     } else {
         

@@ -12,6 +12,7 @@
 #import "Piege.h"
 #import "GraphismTmp.h"
 #import "FiltreDissociatif.h"
+#import "FiltreAssociatif.h"
 
 @implementation CreationRuntime
 
@@ -22,7 +23,8 @@
         ce = [CitrusEngine getInstance];
         world = worldColor;
         
-        animFiltreVertFront = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"filtreDissociatifVertFront.xml"] andAnimations:[NSArray arrayWithObjects:@"filtre", nil] andFirstAnimation:@"filtre"];
+        animFiltreVertFrontDiss = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"filtreDissociatifVertFront.xml"] andAnimations:[NSArray arrayWithObjects:@"filtre", nil] andFirstAnimation:@"filtre"];
+        animFiltreVertFrontAsso = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"filtreAssociatifVertFront.xml"] andAnimations:[NSArray arrayWithObjects:@"filtre", nil] andFirstAnimation:@"filtre"];
         
         filtreBack = [SPImage imageWithContentsOfFile:@"filtreBack.png"];
     }
@@ -34,7 +36,8 @@
     
     [self stop];
     
-    animFiltreVertFront = nil;
+    animFiltreVertFrontDiss = nil;
+    animFiltreVertFrontAsso = nil;
     filtreBack = nil;
 }
 
@@ -78,7 +81,7 @@
     float positionX = hero.x + 500 + arc4random() % 300;
     float positionY = 50 + arc4random() % 250;
     
-    if (random > 1) {
+    if (random > 2) {
         
         Piege *piege = [[Piege alloc] initWithName:@"piege" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"20", @"100", @"3", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", @"group:", nil]] andGraphic:[SPImage imageWithContentsOfFile:@"piege.png"]];
         [ce.state addObject:piege];
@@ -88,8 +91,16 @@
         GraphismTmp *filtrefake = [[GraphismTmp alloc] initWithName:@"filtreVert" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX - 235], [NSString stringWithFormat:@"%f", positionY - 180], @"40", @"80", @"1", @"1", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", @"group:", @"parallax:", nil]] andGraphic:filtreBack];
         [ce.state addObject:filtrefake];
         
-        FiltreDissociatif *filtreVert = [[FiltreDissociatif alloc] initWithName:@"filtreVert" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"40", @"80", @"3", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", @"group:", nil]] andGraphic:[animFiltreVertFront copy] andColor:@"vert"];
-        [ce.state addObject:filtreVert];
+        if (random > 1) {
+            
+            FiltreDissociatif *filtreDissVert = [[FiltreDissociatif alloc] initWithName:@"filtreVert" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"40", @"80", @"3", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", @"group:", nil]] andGraphic:[animFiltreVertFrontDiss copy] andColor:@"vert"];
+            [ce.state addObject:filtreDissVert];
+            
+        } else {
+            
+            FiltreAssociatif *filtreAssoVert = [[FiltreAssociatif alloc] initWithName:@"filtreVert" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"40", @"80", @"3", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", @"group:", nil]] andGraphic:[animFiltreVertFrontAsso copy] andColor:@"vert"];
+            [ce.state addObject:filtreAssoVert];
+        }
     }
 }
 

@@ -571,6 +571,8 @@
 		B04F3A6C15853C16004ED1B7 /* filtreAssociatifVertFront.pvr in Resources */ = {isa = PBXBuildFile; fileRef = B04F3A6915853C15004ED1B7 /* filtreAssociatifVertFront.pvr */; };
 		B04F3A6D15853C16004ED1B7 /* filtreAssociatifVertFront.xml in Resources */ = {isa = PBXBuildFile; fileRef = B04F3A6A15853C16004ED1B7 /* filtreAssociatifVertFront.xml */; };
 		B04F3A6E15853C16004ED1B7 /* filtreAssociatifVertFront.xml in Resources */ = {isa = PBXBuildFile; fileRef = B04F3A6A15853C16004ED1B7 /* filtreAssociatifVertFront.xml */; };
+		B04F3A7115853CA1004ED1B7 /* FiltreAssociatif.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F3A7015853CA1004ED1B7 /* FiltreAssociatif.m */; };
+		B04F3A7215853CA1004ED1B7 /* FiltreAssociatif.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F3A7015853CA1004ED1B7 /* FiltreAssociatif.m */; };
 		B054E6121557D54600E84D8F /* CreationRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = B054E6111557D54600E84D8F /* CreationRuntime.m */; };
 		B06FF2251552A75C00733B84 /* DonneesBus.json in Resources */ = {isa = PBXBuildFile; fileRef = B06FF2241552A75B00733B84 /* DonneesBus.json */; };
 		B06FF2421552ACCB00733B84 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = B06FF22A1552ACCB00733B84 /* NSObject+SBJson.m */; };
@@ -1268,6 +1270,8 @@
 		B04F3A6415853C06004ED1B7 /* filtreAssociatifVertFront@2x.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "filtreAssociatifVertFront@2x.xml"; sourceTree = "<group>"; };
 		B04F3A6915853C15004ED1B7 /* filtreAssociatifVertFront.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = filtreAssociatifVertFront.pvr; sourceTree = "<group>"; };
 		B04F3A6A15853C16004ED1B7 /* filtreAssociatifVertFront.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = filtreAssociatifVertFront.xml; sourceTree = "<group>"; };
+		B04F3A6F15853CA1004ED1B7 /* FiltreAssociatif.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiltreAssociatif.h; sourceTree = "<group>"; };
+		B04F3A7015853CA1004ED1B7 /* FiltreAssociatif.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiltreAssociatif.m; sourceTree = "<group>"; };
 		B054E6101557D54600E84D8F /* CreationRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreationRuntime.h; sourceTree = "<group>"; };
 		B054E6111557D54600E84D8F /* CreationRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreationRuntime.m; sourceTree = "<group>"; };
 		B06FF2241552A75B00733B84 /* DonneesBus.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DonneesBus.json; sourceTree = "<group>"; };
@@ -2587,6 +2591,8 @@
 				B0113DDE1553C06A0005F1AB /* BusManagement.m */,
 				B054E6101557D54600E84D8F /* CreationRuntime.h */,
 				B054E6111557D54600E84D8F /* CreationRuntime.m */,
+				B04F3A6F15853CA1004ED1B7 /* FiltreAssociatif.h */,
+				B04F3A7015853CA1004ED1B7 /* FiltreAssociatif.m */,
 				B04481371563EDEE005BC009 /* FiltreDissociatif.h */,
 				B04481381563EDEF005BC009 /* FiltreDissociatif.m */,
 				B0BB61271574B853001BB2CB /* Jauge.h */,
@@ -3409,6 +3415,7 @@
 				04060C00157B9A4B00CCAB4A /* MainUINavigationControllerViewController.m in Sources */,
 				04BF13481583BD0F00E1DDBC /* TravelItemViewController.m in Sources */,
 				04BF13921585161000E1DDBC /* BagItemUIViewController.m in Sources */,
+				B04F3A7115853CA1004ED1B7 /* FiltreAssociatif.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3562,6 +3569,7 @@
 				04060C01157B9A4B00CCAB4A /* MainUINavigationControllerViewController.m in Sources */,
 				04BF13491583BD0F00E1DDBC /* TravelItemViewController.m in Sources */,
 				04BF13931585161000E1DDBC /* BagItemUIViewController.m in Sources */,
+				B04F3A7215853CA1004ED1B7 /* FiltreAssociatif.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
