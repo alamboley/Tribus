@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:815b85d11955991bfc8ef5db77592848$ -->
+<TextureAtlas imagePath="rougeParticulesJauge.png">
+    <SubTexture name="rougeParticulesJauge/0000" x="89" y="104" width="27" height="46" frameX="-130" frameY="-111" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0001" x="89" y="104" width="27" height="46" frameX="-130" frameY="-111" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0002" x="89" y="104" width="27" height="46" frameX="-130" frameY="-111" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0003" x="89" y="104" width="27" height="46" frameX="-130" frameY="-111" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0004" x="60" y="54" width="27" height="50" frameX="-130" frameY="-109" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0005" x="60" y="54" width="27" height="50" frameX="-130" frameY="-109" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0006" x="60" y="54" width="27" height="50" frameX="-130" frameY="-109" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0007" x="60" y="54" width="27" height="50" frameX="-130" frameY="-109" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0008" x="89" y="2" width="27" height="50" frameX="-130" frameY="-111" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0009" x="89" y="2" width="27" height="50" frameX="-130" frameY="-111" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0010" x="89" y="2" width="27" height="50" frameX="-130" frameY="-111" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0011" x="89" y="2" width="27" height="50" frameX="-130" frameY="-111" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0012" x="2" y="108" width="27" height="44" frameX="-130" frameY="-114" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0013" x="2" y="108" width="27" height="44" frameX="-130" frameY="-114" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0014" x="2" y="108" width="27" height="44" frameX="-130" frameY="-114" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0015" x="2" y="108" width="27" height="44" frameX="-130" frameY="-114" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0016" x="89" y="54" width="27" height="48" frameX="-130" frameY="-109" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0017" x="89" y="54" width="27" height="48" frameX="-130" frameY="-109" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0018" x="89" y="54" width="27" height="48" frameX="-130" frameY="-109" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0019" x="89" y="54" width="27" height="48" frameX="-130" frameY="-109" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0020" x="60" y="2" width="27" height="50" frameX="-130" frameY="-107" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0021" x="60" y="2" width="27" height="50" frameX="-130" frameY="-107" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0022" x="60" y="2" width="27" height="50" frameX="-130" frameY="-107" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0023" x="60" y="2" width="27" height="50" frameX="-130" frameY="-107" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0024" x="2" y="58" width="27" height="48" frameX="-130" frameY="-109" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0025" x="2" y="58" width="27" height="48" frameX="-130" frameY="-109" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0026" x="2" y="58" width="27" height="48" frameX="-130" frameY="-109" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0027" x="2" y="58" width="27" height="48" frameX="-130" frameY="-109" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0028" x="31" y="56" width="27" height="48" frameX="-130" frameY="-109" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0029" x="31" y="56" width="27" height="48" frameX="-130" frameY="-109" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0030" x="31" y="56" width="27" height="48" frameX="-130" frameY="-109" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0031" x="31" y="56" width="27" height="48" frameX="-130" frameY="-109" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0032" x="31" y="106" width="27" height="44" frameX="-130" frameY="-112" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0033" x="31" y="106" width="27" height="44" frameX="-130" frameY="-112" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0034" x="31" y="106" width="27" height="44" frameX="-130" frameY="-112" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0035" x="31" y="106" width="27" height="44" frameX="-130" frameY="-112" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0036" x="31" y="2" width="27" height="52" frameX="-130" frameY="-104" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0037" x="31" y="2" width="27" height="52" frameX="-130" frameY="-104" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0038" x="31" y="2" width="27" height="52" frameX="-130" frameY="-104" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0039" x="31" y="2" width="27" height="52" frameX="-130" frameY="-104" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0040" x="2" y="2" width="27" height="54" frameX="-130" frameY="-101" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0041" x="2" y="2" width="27" height="54" frameX="-130" frameY="-101" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0042" x="2" y="2" width="27" height="54" frameX="-130" frameY="-101" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="rougeParticulesJauge/0043" x="2" y="2" width="27" height="54" frameX="-130" frameY="-101" frameWidth="275" frameHeight="200"/>
+</TextureAtlas>

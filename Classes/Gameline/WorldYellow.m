@@ -31,7 +31,7 @@
     CitrusObject *panneauEnd = [[CitrusObject alloc] initWithName:@"bg" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", hero.x + 1700], @"200", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", nil]] andGraphic:[SPImage imageWithContentsOfFile:@"bonlieu.png"]];
     [self addObject:panneauEnd];
     
-    CitrusObject *fondArrivee = [[CitrusObject alloc] initWithName:@"fondArrivee" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", hero.x + 1800], @"50", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", nil]] andGraphic:[SPImage imageWithContentsOfFile:@"jauneArrivee.png"]];
+    CitrusObject *fondArrivee = [[CitrusObject alloc] initWithName:@"fondArrivee" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", hero.x + 1800], @"50", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", nil]] andGraphic:[SPImage imageWithContentsOfFile:[worldColor stringByAppendingString:@"Arrivee.png"]]];
     [self addObject:fondArrivee];
     
     bus.creerEnnemis = NO;
@@ -42,7 +42,7 @@
     
     [super finNiveau:notification];
     
-    Jauge *jauge = [[Jauge alloc] initWithColor:@"jaune"];
+    Jauge *jauge = [[Jauge alloc] initWithColor:worldColor];
     [self addChild:jauge];
     jauge.x = hero.x + 430;
     jauge.y = 170;
