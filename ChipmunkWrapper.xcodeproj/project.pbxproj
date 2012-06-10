@@ -539,6 +539,10 @@
 		B044812B1563D9D7005BC009 /* rouge1erplan1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B04481291563D9D7005BC009 /* rouge1erplan1@2x.png */; };
 		B044812C1563D9D7005BC009 /* rouge1erplan2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B044812A1563D9D7005BC009 /* rouge1erplan2@2x.png */; };
 		B04481391563EDEF005BC009 /* FiltreDissociatif.m in Sources */ = {isa = PBXBuildFile; fileRef = B04481381563EDEF005BC009 /* FiltreDissociatif.m */; };
+		B04F3A4015851E27004ED1B7 /* rougeArrivee@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B04F3A3F15851E27004ED1B7 /* rougeArrivee@2x.png */; };
+		B04F3A4115851E27004ED1B7 /* rougeArrivee@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B04F3A3F15851E27004ED1B7 /* rougeArrivee@2x.png */; };
+		B04F3A4315851E32004ED1B7 /* rougeArrivee.png in Resources */ = {isa = PBXBuildFile; fileRef = B04F3A4215851E32004ED1B7 /* rougeArrivee.png */; };
+		B04F3A4415851E32004ED1B7 /* rougeArrivee.png in Resources */ = {isa = PBXBuildFile; fileRef = B04F3A4215851E32004ED1B7 /* rougeArrivee.png */; };
 		B054E6121557D54600E84D8F /* CreationRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = B054E6111557D54600E84D8F /* CreationRuntime.m */; };
 		B06FF2251552A75C00733B84 /* DonneesBus.json in Resources */ = {isa = PBXBuildFile; fileRef = B06FF2241552A75B00733B84 /* DonneesBus.json */; };
 		B06FF2421552ACCB00733B84 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = B06FF22A1552ACCB00733B84 /* NSObject+SBJson.m */; };
@@ -1220,6 +1224,8 @@
 		B044812A1563D9D7005BC009 /* rouge1erplan2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rouge1erplan2@2x.png"; sourceTree = "<group>"; };
 		B04481371563EDEE005BC009 /* FiltreDissociatif.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiltreDissociatif.h; sourceTree = "<group>"; };
 		B04481381563EDEF005BC009 /* FiltreDissociatif.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiltreDissociatif.m; sourceTree = "<group>"; };
+		B04F3A3F15851E27004ED1B7 /* rougeArrivee@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rougeArrivee@2x.png"; sourceTree = "<group>"; };
+		B04F3A4215851E32004ED1B7 /* rougeArrivee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rougeArrivee.png; sourceTree = "<group>"; };
 		B054E6101557D54600E84D8F /* CreationRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreationRuntime.h; sourceTree = "<group>"; };
 		B054E6111557D54600E84D8F /* CreationRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreationRuntime.m; sourceTree = "<group>"; };
 		B06FF2241552A75B00733B84 /* DonneesBus.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DonneesBus.json; sourceTree = "<group>"; };
@@ -2217,6 +2223,7 @@
 				B03DE0C1156143FA006AAA5B /* rouge3.png */,
 				B03DE0C2156143FA006AAA5B /* rouge4.png */,
 				B03DE0C3156143FA006AAA5B /* rouge5.png */,
+				B04F3A4215851E32004ED1B7 /* rougeArrivee.png */,
 				B04481211563D9A7005BC009 /* rouge1erplan1.png */,
 				B04481221563D9A7005BC009 /* rouge1erplan2.png */,
 				B07029FA15624E2600833D24 /* rougeSol1.png */,
@@ -2257,6 +2264,7 @@
 				B03DE0CD15614408006AAA5B /* rouge3@2x.png */,
 				B03DE0CE15614408006AAA5B /* rouge4@2x.png */,
 				B03DE0CF15614408006AAA5B /* rouge5@2x.png */,
+				B04F3A3F15851E27004ED1B7 /* rougeArrivee@2x.png */,
 				B04481291563D9D7005BC009 /* rouge1erplan1@2x.png */,
 				B044812A1563D9D7005BC009 /* rouge1erplan2@2x.png */,
 				B07029F215624E1600833D24 /* rougeSol1@2x.png */,
@@ -2887,6 +2895,8 @@
 				B0C95C8C1583D4FA008AF972 /* jauneArrivee@2x.png in Resources */,
 				04BF137015850C9400E1DDBC /* inventaire.json in Resources */,
 				04BF13941585161000E1DDBC /* BagItemUIViewController.xib in Resources */,
+				B04F3A4015851E27004ED1B7 /* rougeArrivee@2x.png in Resources */,
+				B04F3A4315851E32004ED1B7 /* rougeArrivee.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3156,6 +3166,8 @@
 				B0C95C8D1583D4FA008AF972 /* jauneArrivee@2x.png in Resources */,
 				04BF137115850C9400E1DDBC /* inventaire.json in Resources */,
 				04BF13951585161000E1DDBC /* BagItemUIViewController.xib in Resources */,
+				B04F3A4115851E27004ED1B7 /* rougeArrivee@2x.png in Resources */,
+				B04F3A4415851E32004ED1B7 /* rougeArrivee.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
