@@ -42,8 +42,6 @@
         //CitrusObject *firstPlan1 = [[CitrusObject alloc] initWithName:@"firstPlan1" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"0", @"250", @"1.5", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"parallax:", nil]] andGraphic:[SPImage imageWithContentsOfFile:@"rougeSol1.png"]];
         //[self addObject:firstPlan1];
         
-        creationRuntime = [[CreationRuntime alloc] initWithWorld:worldColor];
-        
         animEcranNoir = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"ecranNoir.xml"] andAnimations:[NSArray arrayWithObjects:@"noirDisparition", @"noirExplosion", nil] andFirstAnimation:@"noirExplosion"];
         
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(finNiveau:) name:@"finNiveau" object:nil];
@@ -74,6 +72,8 @@
     
     bus = [[BusManagement alloc] initWithData:@"DonneesBus" andHero:hero];
     [bus start];
+    
+    creationRuntime = [[CreationRuntime alloc] initWithWorld:worldColor];
     [creationRuntime start];
     
     [self setupCamera:hero andOffset:CGPointMake(hero.width / 2 - 80, 0) andBounds:CGRectMake(0, 0, gameWidth, 1000) andEasing:CGPointMake(0.25, 0.05)];
@@ -84,6 +84,9 @@
     // may bug ?
     [bus destroy];
     [creationRuntime destroy];
+    
+    bus = nil;
+    creationRuntime = nil;
     
     animEcranNoir = nil;
     

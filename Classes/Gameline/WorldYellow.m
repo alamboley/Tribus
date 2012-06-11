@@ -7,7 +7,6 @@
 //
 
 #import "WorldYellow.h"
-#import "Jauge.h"
 
 @implementation WorldYellow
 
@@ -46,7 +45,7 @@
     
     [super finNiveau:notification];
     
-    Jauge *jauge = [[Jauge alloc] initWithColor:worldColor];
+    jauge = [[Jauge alloc] initWithColor:worldColor];
     [self addChild:jauge];
     jauge.x = hero.x + 430;
     jauge.y = 170;
@@ -64,6 +63,14 @@
 }
 
 - (void) destroy {
+    
+    [self removeChild:portalRed];
+    [portalRed removeEventListener:@selector(changeLevel:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
+    
+    [self removeChild:jauge];
+    [jauge destroy];
+    
+    portalRed = nil;
     
     [super destroy];
 }

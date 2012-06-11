@@ -45,7 +45,16 @@
         
     }
     
+    [self addEventListener:@selector(ready:) atObject:self forType:SP_EVENT_TYPE_ADDED_TO_STAGE];
+    
     return self;
+}
+
+- (void) ready:(SPEvent*) event  {
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"changeNiveauReady" object:nil];
+    
+    [self removeEventListener:@selector(ready:) atObject:self forType:SP_EVENT_TYPE_ADDED_TO_STAGE];
 }
 
 - (void) destroy {

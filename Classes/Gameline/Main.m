@@ -97,6 +97,12 @@
     }
     
     [self setUpState:game];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeNiveauReady:) name:@"changeNiveauReady" object:nil];
+}
+
+- (void) changeNiveauReady:(NSNotification *) notification {
+    [game play];
 }
 
 @end
