@@ -1,7 +1,7 @@
 [{
  "id":"0",
  "title":"glacier des alpes",
- "description": "Venez déguster différents parfums préparés à base de lait frais entier, de produits venant d'Italie et de fruits de première qualité.",
+ "description": "Venez déguster différents parfums préparés à base de produits venant d'Italie et de fruits de première qualité.",
  "image-url": "coupon_glaces.png",
  "price":{"violet":100}
  },{

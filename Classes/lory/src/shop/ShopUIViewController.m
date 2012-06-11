@@ -76,10 +76,10 @@
     colorUIViewController.view.frame = CGRectMake(x, y, colorUIViewController.view.frame.size.width, colorUIViewController.view.frame.size.height);
 
     [[[self navigationUIViewController] pageTitle] setText:@"échoppe"];
-    [self.view makeToast:@"This is a piece of toast" 
+    /*[self.view makeToast:@"This is a piece of toast" 
                 duration:3.0
                 position:@"top right"
-                   title:@"Toast Title"];
+                   title:@"Toast Title"];*/
 }
 
 - (void)viewDidUnload
