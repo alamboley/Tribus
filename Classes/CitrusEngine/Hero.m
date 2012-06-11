@@ -8,7 +8,6 @@
 
 #import "Hero.h"
 #import "CitrusEngine.h"
-#import "AnimationSequence.h"
 
 @implementation Hero
 
@@ -37,6 +36,10 @@
 - (void) simpleInit {
     
     [body setMoment:INFINITY];
+    
+    bulle = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"bulle.xml"] andAnimations:[NSArray arrayWithObjects:@"bulle", nil] andFirstAnimation:@"bulle"];
+    
+    //[graphic addChild:bulle];
     
     move = TRUE;
     

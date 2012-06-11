@@ -7,6 +7,7 @@
 //
 
 #import "PhysicsObject.h"
+#import "AnimationSequence.h"
 
 @interface Hero : PhysicsObject {
     
@@ -22,6 +23,9 @@
     
     BOOL touchScreen;
     BOOL move;
+    
+    
+    AnimationSequence *bulle;
 }
 
 @property (nonatomic) NSString *animation;

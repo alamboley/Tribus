@@ -74,13 +74,9 @@
     
     bus = [[BusManagement alloc] initWithData:@"DonneesBus" andHero:hero];
     [bus start];
-    
-    [self setupCamera:hero andOffset:CGPointMake(hero.width / 2 - 80, 0) andBounds:CGRectMake(0, 0, gameWidth, 1000) andEasing:CGPointMake(0.25, 0.05)];
-    
-    
-    
     [creationRuntime start];
     
+    [self setupCamera:hero andOffset:CGPointMake(hero.width / 2 - 80, 0) andBounds:CGRectMake(0, 0, gameWidth, 1000) andEasing:CGPointMake(0.25, 0.05)];
 }
 
 - (void) destroy {
