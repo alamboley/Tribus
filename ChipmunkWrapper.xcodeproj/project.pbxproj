@@ -51,16 +51,16 @@
 		0450FA2F158683A700BB9B9C /* m9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA17158683A700BB9B9C /* m9@2x.png */; };
 		0450FA30158683A700BB9B9C /* pouvoir1_parechoc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA18158683A700BB9B9C /* pouvoir1_parechoc@2x.png */; };
 		0450FA31158683A700BB9B9C /* pouvoir1_parechoc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA18158683A700BB9B9C /* pouvoir1_parechoc@2x.png */; };
-		0450FA32158683A700BB9B9C /* pouvoir2_piedsur.@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA19158683A700BB9B9C /* pouvoir2_piedsur.@2x.png */; };
-		0450FA33158683A700BB9B9C /* pouvoir2_piedsur.@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA19158683A700BB9B9C /* pouvoir2_piedsur.@2x.png */; };
-		0450FA34158683A700BB9B9C /* pouvoir3_desembuage.@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA1A158683A700BB9B9C /* pouvoir3_desembuage.@2x.png */; };
-		0450FA35158683A700BB9B9C /* pouvoir3_desembuage.@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA1A158683A700BB9B9C /* pouvoir3_desembuage.@2x.png */; };
-		0450FA36158683A700BB9B9C /* pouvoir4_magnetisme.@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA1B158683A700BB9B9C /* pouvoir4_magnetisme.@2x.png */; };
-		0450FA37158683A700BB9B9C /* pouvoir4_magnetisme.@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA1B158683A700BB9B9C /* pouvoir4_magnetisme.@2x.png */; };
-		0450FA38158683A700BB9B9C /* pouvoir5_directionassiste.@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA1C158683A700BB9B9C /* pouvoir5_directionassiste.@2x.png */; };
-		0450FA39158683A700BB9B9C /* pouvoir5_directionassiste.@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA1C158683A700BB9B9C /* pouvoir5_directionassiste.@2x.png */; };
-		0450FA3A158683A700BB9B9C /* pouvoir6_busmotion.@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA1D158683A700BB9B9C /* pouvoir6_busmotion.@2x.png */; };
-		0450FA3B158683A700BB9B9C /* pouvoir6_busmotion.@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA1D158683A700BB9B9C /* pouvoir6_busmotion.@2x.png */; };
+		0450FA32158683A700BB9B9C /* pouvoir2_piedsur@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA19158683A700BB9B9C /* pouvoir2_piedsur@2x.png */; };
+		0450FA33158683A700BB9B9C /* pouvoir2_piedsur@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA19158683A700BB9B9C /* pouvoir2_piedsur@2x.png */; };
+		0450FA34158683A700BB9B9C /* pouvoir3_desembuage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA1A158683A700BB9B9C /* pouvoir3_desembuage@2x.png */; };
+		0450FA35158683A700BB9B9C /* pouvoir3_desembuage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA1A158683A700BB9B9C /* pouvoir3_desembuage@2x.png */; };
+		0450FA36158683A700BB9B9C /* pouvoir4_magnetisme@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA1B158683A700BB9B9C /* pouvoir4_magnetisme@2x.png */; };
+		0450FA37158683A700BB9B9C /* pouvoir4_magnetisme@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA1B158683A700BB9B9C /* pouvoir4_magnetisme@2x.png */; };
+		0450FA38158683A700BB9B9C /* pouvoir5_directionassiste@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA1C158683A700BB9B9C /* pouvoir5_directionassiste@2x.png */; };
+		0450FA39158683A700BB9B9C /* pouvoir5_directionassiste@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA1C158683A700BB9B9C /* pouvoir5_directionassiste@2x.png */; };
+		0450FA3A158683A700BB9B9C /* pouvoir6_busmotion@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA1D158683A700BB9B9C /* pouvoir6_busmotion@2x.png */; };
+		0450FA3B158683A700BB9B9C /* pouvoir6_busmotion@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA1D158683A700BB9B9C /* pouvoir6_busmotion@2x.png */; };
 		0450FA4B158683D300BB9B9C /* m1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA3C158683D300BB9B9C /* m1.png */; };
 		0450FA4C158683D300BB9B9C /* m1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA3C158683D300BB9B9C /* m1.png */; };
 		0450FA4D158683D300BB9B9C /* m2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA3D158683D300BB9B9C /* m2.png */; };
@@ -81,16 +81,16 @@
 		0450FA5C158683D300BB9B9C /* m9.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA44158683D300BB9B9C /* m9.png */; };
 		0450FA5D158683D300BB9B9C /* pouvoir1_parechoc.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA45158683D300BB9B9C /* pouvoir1_parechoc.png */; };
 		0450FA5E158683D300BB9B9C /* pouvoir1_parechoc.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA45158683D300BB9B9C /* pouvoir1_parechoc.png */; };
-		0450FA5F158683D300BB9B9C /* pouvoir2_piedsur..png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA46158683D300BB9B9C /* pouvoir2_piedsur..png */; };
-		0450FA60158683D300BB9B9C /* pouvoir2_piedsur..png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA46158683D300BB9B9C /* pouvoir2_piedsur..png */; };
-		0450FA61158683D300BB9B9C /* pouvoir3_desembuage..png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA47158683D300BB9B9C /* pouvoir3_desembuage..png */; };
-		0450FA62158683D300BB9B9C /* pouvoir3_desembuage..png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA47158683D300BB9B9C /* pouvoir3_desembuage..png */; };
-		0450FA63158683D300BB9B9C /* pouvoir4_magnetisme..png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA48158683D300BB9B9C /* pouvoir4_magnetisme..png */; };
-		0450FA64158683D300BB9B9C /* pouvoir4_magnetisme..png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA48158683D300BB9B9C /* pouvoir4_magnetisme..png */; };
-		0450FA65158683D300BB9B9C /* pouvoir5_directionassiste..png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA49158683D300BB9B9C /* pouvoir5_directionassiste..png */; };
-		0450FA66158683D300BB9B9C /* pouvoir5_directionassiste..png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA49158683D300BB9B9C /* pouvoir5_directionassiste..png */; };
-		0450FA67158683D300BB9B9C /* pouvoir6_busmotion..png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA4A158683D300BB9B9C /* pouvoir6_busmotion..png */; };
-		0450FA68158683D300BB9B9C /* pouvoir6_busmotion..png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA4A158683D300BB9B9C /* pouvoir6_busmotion..png */; };
+		0450FA5F158683D300BB9B9C /* pouvoir2_piedsur.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA46158683D300BB9B9C /* pouvoir2_piedsur.png */; };
+		0450FA60158683D300BB9B9C /* pouvoir2_piedsur.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA46158683D300BB9B9C /* pouvoir2_piedsur.png */; };
+		0450FA61158683D300BB9B9C /* pouvoir3_desembuage.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA47158683D300BB9B9C /* pouvoir3_desembuage.png */; };
+		0450FA62158683D300BB9B9C /* pouvoir3_desembuage.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA47158683D300BB9B9C /* pouvoir3_desembuage.png */; };
+		0450FA63158683D300BB9B9C /* pouvoir4_magnetisme.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA48158683D300BB9B9C /* pouvoir4_magnetisme.png */; };
+		0450FA64158683D300BB9B9C /* pouvoir4_magnetisme.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA48158683D300BB9B9C /* pouvoir4_magnetisme.png */; };
+		0450FA65158683D300BB9B9C /* pouvoir5_directionassiste.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA49158683D300BB9B9C /* pouvoir5_directionassiste.png */; };
+		0450FA66158683D300BB9B9C /* pouvoir5_directionassiste.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA49158683D300BB9B9C /* pouvoir5_directionassiste.png */; };
+		0450FA67158683D300BB9B9C /* pouvoir6_busmotion.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA4A158683D300BB9B9C /* pouvoir6_busmotion.png */; };
+		0450FA68158683D300BB9B9C /* pouvoir6_busmotion.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA4A158683D300BB9B9C /* pouvoir6_busmotion.png */; };
 		0497E88F15761260005CDC2E /* UILabelCustomFontKohicle25.m in Sources */ = {isa = PBXBuildFile; fileRef = 0497E88E15761260005CDC2E /* UILabelCustomFontKohicle25.m */; };
 		0497E89015761260005CDC2E /* UILabelCustomFontKohicle25.m in Sources */ = {isa = PBXBuildFile; fileRef = 0497E88E15761260005CDC2E /* UILabelCustomFontKohicle25.m */; };
 		0497E89815761631005CDC2E /* UIImage+Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 0497E89715761631005CDC2E /* UIImage+Sprite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -1051,11 +1051,11 @@
 		0450FA16158683A700BB9B9C /* m8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m8@2x.png"; sourceTree = "<group>"; };
 		0450FA17158683A700BB9B9C /* m9@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m9@2x.png"; sourceTree = "<group>"; };
 		0450FA18158683A700BB9B9C /* pouvoir1_parechoc@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir1_parechoc@2x.png"; sourceTree = "<group>"; };
-		0450FA19158683A700BB9B9C /* pouvoir2_piedsur.@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir2_piedsur.@2x.png"; sourceTree = "<group>"; };
-		0450FA1A158683A700BB9B9C /* pouvoir3_desembuage.@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir3_desembuage.@2x.png"; sourceTree = "<group>"; };
-		0450FA1B158683A700BB9B9C /* pouvoir4_magnetisme.@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir4_magnetisme.@2x.png"; sourceTree = "<group>"; };
-		0450FA1C158683A700BB9B9C /* pouvoir5_directionassiste.@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir5_directionassiste.@2x.png"; sourceTree = "<group>"; };
-		0450FA1D158683A700BB9B9C /* pouvoir6_busmotion.@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir6_busmotion.@2x.png"; sourceTree = "<group>"; };
+		0450FA19158683A700BB9B9C /* pouvoir2_piedsur@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir2_piedsur@2x.png"; sourceTree = "<group>"; };
+		0450FA1A158683A700BB9B9C /* pouvoir3_desembuage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir3_desembuage@2x.png"; sourceTree = "<group>"; };
+		0450FA1B158683A700BB9B9C /* pouvoir4_magnetisme@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir4_magnetisme@2x.png"; sourceTree = "<group>"; };
+		0450FA1C158683A700BB9B9C /* pouvoir5_directionassiste@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir5_directionassiste@2x.png"; sourceTree = "<group>"; };
+		0450FA1D158683A700BB9B9C /* pouvoir6_busmotion@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir6_busmotion@2x.png"; sourceTree = "<group>"; };
 		0450FA3C158683D300BB9B9C /* m1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = m1.png; sourceTree = "<group>"; };
 		0450FA3D158683D300BB9B9C /* m2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = m2.png; sourceTree = "<group>"; };
 		0450FA3E158683D300BB9B9C /* m3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = m3.png; sourceTree = "<group>"; };
@@ -1066,11 +1066,11 @@
 		0450FA43158683D300BB9B9C /* m8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = m8.png; sourceTree = "<group>"; };
 		0450FA44158683D300BB9B9C /* m9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = m9.png; sourceTree = "<group>"; };
 		0450FA45158683D300BB9B9C /* pouvoir1_parechoc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pouvoir1_parechoc.png; sourceTree = "<group>"; };
-		0450FA46158683D300BB9B9C /* pouvoir2_piedsur..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pouvoir2_piedsur..png; sourceTree = "<group>"; };
-		0450FA47158683D300BB9B9C /* pouvoir3_desembuage..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pouvoir3_desembuage..png; sourceTree = "<group>"; };
-		0450FA48158683D300BB9B9C /* pouvoir4_magnetisme..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pouvoir4_magnetisme..png; sourceTree = "<group>"; };
-		0450FA49158683D300BB9B9C /* pouvoir5_directionassiste..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pouvoir5_directionassiste..png; sourceTree = "<group>"; };
-		0450FA4A158683D300BB9B9C /* pouvoir6_busmotion..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pouvoir6_busmotion..png; sourceTree = "<group>"; };
+		0450FA46158683D300BB9B9C /* pouvoir2_piedsur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pouvoir2_piedsur.png; sourceTree = "<group>"; };
+		0450FA47158683D300BB9B9C /* pouvoir3_desembuage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pouvoir3_desembuage.png; sourceTree = "<group>"; };
+		0450FA48158683D300BB9B9C /* pouvoir4_magnetisme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pouvoir4_magnetisme.png; sourceTree = "<group>"; };
+		0450FA49158683D300BB9B9C /* pouvoir5_directionassiste.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pouvoir5_directionassiste.png; sourceTree = "<group>"; };
+		0450FA4A158683D300BB9B9C /* pouvoir6_busmotion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pouvoir6_busmotion.png; sourceTree = "<group>"; };
 		0497E88D15761260005CDC2E /* UILabelCustomFontKohicle25.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelCustomFontKohicle25.h; sourceTree = "<group>"; };
 		0497E88E15761260005CDC2E /* UILabelCustomFontKohicle25.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelCustomFontKohicle25.m; sourceTree = "<group>"; };
 		0497E89615761631005CDC2E /* UIImage+Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Sprite.h"; sourceTree = "<group>"; };
@@ -1811,11 +1811,11 @@
 				0450FA43158683D300BB9B9C /* m8.png */,
 				0450FA44158683D300BB9B9C /* m9.png */,
 				0450FA45158683D300BB9B9C /* pouvoir1_parechoc.png */,
-				0450FA46158683D300BB9B9C /* pouvoir2_piedsur..png */,
-				0450FA47158683D300BB9B9C /* pouvoir3_desembuage..png */,
-				0450FA48158683D300BB9B9C /* pouvoir4_magnetisme..png */,
-				0450FA49158683D300BB9B9C /* pouvoir5_directionassiste..png */,
-				0450FA4A158683D300BB9B9C /* pouvoir6_busmotion..png */,
+				0450FA46158683D300BB9B9C /* pouvoir2_piedsur.png */,
+				0450FA47158683D300BB9B9C /* pouvoir3_desembuage.png */,
+				0450FA48158683D300BB9B9C /* pouvoir4_magnetisme.png */,
+				0450FA49158683D300BB9B9C /* pouvoir5_directionassiste.png */,
+				0450FA4A158683D300BB9B9C /* pouvoir6_busmotion.png */,
 				0450F8AA1586275700BB9B9C /* coupons-button-normal.png */,
 				0450F8AB1586275700BB9B9C /* coupons-button-selected.png */,
 				04E3071D1585DA6D00B4B265 /* play-btn.png */,
@@ -2340,11 +2340,11 @@
 				0450FA16158683A700BB9B9C /* m8@2x.png */,
 				0450FA17158683A700BB9B9C /* m9@2x.png */,
 				0450FA18158683A700BB9B9C /* pouvoir1_parechoc@2x.png */,
-				0450FA19158683A700BB9B9C /* pouvoir2_piedsur.@2x.png */,
-				0450FA1A158683A700BB9B9C /* pouvoir3_desembuage.@2x.png */,
-				0450FA1B158683A700BB9B9C /* pouvoir4_magnetisme.@2x.png */,
-				0450FA1C158683A700BB9B9C /* pouvoir5_directionassiste.@2x.png */,
-				0450FA1D158683A700BB9B9C /* pouvoir6_busmotion.@2x.png */,
+				0450FA19158683A700BB9B9C /* pouvoir2_piedsur@2x.png */,
+				0450FA1A158683A700BB9B9C /* pouvoir3_desembuage@2x.png */,
+				0450FA1B158683A700BB9B9C /* pouvoir4_magnetisme@2x.png */,
+				0450FA1C158683A700BB9B9C /* pouvoir5_directionassiste@2x.png */,
+				0450FA1D158683A700BB9B9C /* pouvoir6_busmotion@2x.png */,
 				04E305E41585D9DA00B4B265 /* 1x */,
 				04E306181585D9DA00B4B265 /* back-btn@2x.png */,
 				04E306191585D9DA00B4B265 /* boardillu_motiforange@2x.png */,
@@ -3283,11 +3283,11 @@
 				0450FA2C158683A700BB9B9C /* m8@2x.png in Resources */,
 				0450FA2E158683A700BB9B9C /* m9@2x.png in Resources */,
 				0450FA30158683A700BB9B9C /* pouvoir1_parechoc@2x.png in Resources */,
-				0450FA32158683A700BB9B9C /* pouvoir2_piedsur.@2x.png in Resources */,
-				0450FA34158683A700BB9B9C /* pouvoir3_desembuage.@2x.png in Resources */,
-				0450FA36158683A700BB9B9C /* pouvoir4_magnetisme.@2x.png in Resources */,
-				0450FA38158683A700BB9B9C /* pouvoir5_directionassiste.@2x.png in Resources */,
-				0450FA3A158683A700BB9B9C /* pouvoir6_busmotion.@2x.png in Resources */,
+				0450FA32158683A700BB9B9C /* pouvoir2_piedsur@2x.png in Resources */,
+				0450FA34158683A700BB9B9C /* pouvoir3_desembuage@2x.png in Resources */,
+				0450FA36158683A700BB9B9C /* pouvoir4_magnetisme@2x.png in Resources */,
+				0450FA38158683A700BB9B9C /* pouvoir5_directionassiste@2x.png in Resources */,
+				0450FA3A158683A700BB9B9C /* pouvoir6_busmotion@2x.png in Resources */,
 				0450FA4B158683D300BB9B9C /* m1.png in Resources */,
 				0450FA4D158683D300BB9B9C /* m2.png in Resources */,
 				0450FA4F158683D300BB9B9C /* m3.png in Resources */,
@@ -3298,11 +3298,11 @@
 				0450FA59158683D300BB9B9C /* m8.png in Resources */,
 				0450FA5B158683D300BB9B9C /* m9.png in Resources */,
 				0450FA5D158683D300BB9B9C /* pouvoir1_parechoc.png in Resources */,
-				0450FA5F158683D300BB9B9C /* pouvoir2_piedsur..png in Resources */,
-				0450FA61158683D300BB9B9C /* pouvoir3_desembuage..png in Resources */,
-				0450FA63158683D300BB9B9C /* pouvoir4_magnetisme..png in Resources */,
-				0450FA65158683D300BB9B9C /* pouvoir5_directionassiste..png in Resources */,
-				0450FA67158683D300BB9B9C /* pouvoir6_busmotion..png in Resources */,
+				0450FA5F158683D300BB9B9C /* pouvoir2_piedsur.png in Resources */,
+				0450FA61158683D300BB9B9C /* pouvoir3_desembuage.png in Resources */,
+				0450FA63158683D300BB9B9C /* pouvoir4_magnetisme.png in Resources */,
+				0450FA65158683D300BB9B9C /* pouvoir5_directionassiste.png in Resources */,
+				0450FA67158683D300BB9B9C /* pouvoir6_busmotion.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3616,11 +3616,11 @@
 				0450FA2D158683A700BB9B9C /* m8@2x.png in Resources */,
 				0450FA2F158683A700BB9B9C /* m9@2x.png in Resources */,
 				0450FA31158683A700BB9B9C /* pouvoir1_parechoc@2x.png in Resources */,
-				0450FA33158683A700BB9B9C /* pouvoir2_piedsur.@2x.png in Resources */,
-				0450FA35158683A700BB9B9C /* pouvoir3_desembuage.@2x.png in Resources */,
-				0450FA37158683A700BB9B9C /* pouvoir4_magnetisme.@2x.png in Resources */,
-				0450FA39158683A700BB9B9C /* pouvoir5_directionassiste.@2x.png in Resources */,
-				0450FA3B158683A700BB9B9C /* pouvoir6_busmotion.@2x.png in Resources */,
+				0450FA33158683A700BB9B9C /* pouvoir2_piedsur@2x.png in Resources */,
+				0450FA35158683A700BB9B9C /* pouvoir3_desembuage@2x.png in Resources */,
+				0450FA37158683A700BB9B9C /* pouvoir4_magnetisme@2x.png in Resources */,
+				0450FA39158683A700BB9B9C /* pouvoir5_directionassiste@2x.png in Resources */,
+				0450FA3B158683A700BB9B9C /* pouvoir6_busmotion@2x.png in Resources */,
 				0450FA4C158683D300BB9B9C /* m1.png in Resources */,
 				0450FA4E158683D300BB9B9C /* m2.png in Resources */,
 				0450FA50158683D300BB9B9C /* m3.png in Resources */,
@@ -3631,11 +3631,11 @@
 				0450FA5A158683D300BB9B9C /* m8.png in Resources */,
 				0450FA5C158683D300BB9B9C /* m9.png in Resources */,
 				0450FA5E158683D300BB9B9C /* pouvoir1_parechoc.png in Resources */,
-				0450FA60158683D300BB9B9C /* pouvoir2_piedsur..png in Resources */,
-				0450FA62158683D300BB9B9C /* pouvoir3_desembuage..png in Resources */,
-				0450FA64158683D300BB9B9C /* pouvoir4_magnetisme..png in Resources */,
-				0450FA66158683D300BB9B9C /* pouvoir5_directionassiste..png in Resources */,
-				0450FA68158683D300BB9B9C /* pouvoir6_busmotion..png in Resources */,
+				0450FA60158683D300BB9B9C /* pouvoir2_piedsur.png in Resources */,
+				0450FA62158683D300BB9B9C /* pouvoir3_desembuage.png in Resources */,
+				0450FA64158683D300BB9B9C /* pouvoir4_magnetisme.png in Resources */,
+				0450FA66158683D300BB9B9C /* pouvoir5_directionassiste.png in Resources */,
+				0450FA68158683D300BB9B9C /* pouvoir6_busmotion.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
