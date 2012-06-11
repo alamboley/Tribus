@@ -8,20 +8,6 @@
 
 #import "State.h"
 
-// --- Static variables ----------------------------------------------------------------------------
-
-// --- Static inline methods -----------------------------------------------------------------------
-
-// --- private interface ---------------------------------------------------------------------------
-
-@interface State ()
-
-- (BOOL)disableAccelerometer;
-- (BOOL)disableWindowContainment;
-- (BOOL)disableDefaultTouchHandler;
-
-@end
-
 // --- Class implementation ------------------------------------------------------------------------
 
 #import "SPDebugDraw.h"
@@ -36,16 +22,6 @@
 - (id) init {
     
 	if (self = [super init]) {
-		
-		if (![self disableDefaultTouchHandler]) {
-			//[self addEventListener:@selector(force:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
-		}
-		
-		if (![self disableAccelerometer]) {
-			UIAccelerometer *accelerometer = [UIAccelerometer sharedAccelerometer];
-			accelerometer.updateInterval = 1.0f/30.0f;
-			accelerometer.delegate = self;
-		}
         
         objects = [[NSMutableArray alloc] init];
         garbageObjects = [[NSMutableArray alloc] init];
@@ -101,18 +77,6 @@
 	[debugDraw setVisible:![debugDraw visible]];
 }
 
-- (BOOL)disableAccelerometer {
-	return NO;
-}
-
-- (BOOL)disableWindowContainment {
-	return NO;
-}
-
-- (BOOL)disableDefaultTouchHandler {
-	return NO;
-}
-
 - (void) setupCamera:(PhysicsObject *) target andOffset:(CGPoint) offset andBounds:(CGRect) bounds andEasing:(CGPoint) easing {
     
     cameraTarget = target;
@@ -130,6 +94,9 @@
         CitrusObject *object = [objects objectAtIndex:n];
         [object destroy];
     }
+    
+    
+    [self.stage removeChild:debugDraw];
     
     objects = nil;
     
@@ -187,12 +154,6 @@
 
 - (void) play {
     
-}
-
-- (void) dealloc {
-    
-	UIAccelerometer *accelerometer = [UIAccelerometer sharedAccelerometer];
-	accelerometer.delegate = nil;
 }
 
 @end

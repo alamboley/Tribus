@@ -16,7 +16,7 @@
     
     float gameWidth;
     
-    SPSprite *graphismEcranSoutenance;
+    SPSprite *ecranFumeeContainer;
     
     AnimationSequence *animEcranNoir;
     

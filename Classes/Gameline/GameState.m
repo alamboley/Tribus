@@ -44,6 +44,9 @@
         
         animEcranNoir = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"ecranNoir.xml"] andAnimations:[NSArray arrayWithObjects:@"noirDisparition", @"noirExplosion", nil] andFirstAnimation:@"noirExplosion"];
         
+        ecranFumeeContainer = [[SPSprite alloc] init];
+        [self.stage addChild:ecranFumeeContainer];
+        
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(finNiveau:) name:@"finNiveau" object:nil];
         
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(colorPicked:) name:@"jaune" object:nil];
@@ -92,6 +95,10 @@
     
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     
+    [ecranFumeeContainer removeAllChildren];
+    [self.stage removeChild:ecranFumeeContainer];
+    ecranFumeeContainer = nil;
+    
     [super destroy];
 }
 
@@ -136,7 +143,7 @@
 - (void) baddyManagement:(NSNotification *) notification {
     
     EcranFumee *ecranFumee = [[EcranFumee alloc] initWithAnimationSequence:animEcranNoir];
-    [self.stage addChild:ecranFumee];
+    [ecranFumeeContainer addChild:ecranFumee];
 }
 
 @end

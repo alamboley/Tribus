@@ -1,9 +1,9 @@
 //
-//  Particle.m
-//  ChipmunkWrapper
+// Particle.m
+// ChipmunkWrapper
 //
-//  Created by Aymeric Lamboley on 19/03/12.
-//  Copyright (c) 2012 Sodeso. All rights reserved.
+// Created by Aymeric Lamboley on 19/03/12.
+// Copyright (c) 2012 Sodeso. All rights reserved.
 //
 
 #import "Particle.h"
@@ -11,7 +11,6 @@
 #import "CitrusEngine.h"
 
 @implementation Particle
-@synthesize prise;
 
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params {
     
@@ -22,7 +21,7 @@
     return self;
 }
 
-- (id) initWithName:(NSString *)paramName params:(NSDictionary *)params andGraphic:(SPDisplayObject *)displayObject withWorld:(NSString *)world andAnim:(AnimationSequence *) animParticleTaken {
+- (id) initWithName:(NSString *)paramName params:(NSDictionary *)params andGraphic:(SPDisplayObject *)displayObject withWorld:(NSString *)world {
     
     if (self = [super initWithName:paramName params:params andGraphic:displayObject]) {
         
@@ -44,8 +43,6 @@
             imgFond.x = posX - imgFond.width / 2;
             imgFond.y = posY - imgFond.height / 2;
         }
-        
-        particleTaken = [animParticleTaken copy];
     }
     
     return self;
@@ -55,18 +52,13 @@
     
     [super destroy];
     
-    if (prise) {
+    if ([graphic isKindOfClass:[SXParticleSystem class]]) {
         
-        [self removeChild:particleTaken];
-            
-        
-    } else {
+        [(SXParticleSystem *)graphic stop];
+        [[SPStage mainStage].juggler removeObject:(SXParticleSystem *)graphic];
+    }
     
-        if ([graphic isKindOfClass:[SXParticleSystem class]]) {
-            [(SXParticleSystem *)graphic stop];
-            [[SPStage mainStage].juggler removeObject:(SXParticleSystem *)graphic];
-        }
-        
+    if (imgFond) {
         [self removeChild:imgFond];
     }
 }
@@ -82,8 +74,6 @@
     } else {
         
         if (hero.x - hero.width > body.position.x) {
-            
-            particleTaken = nil;
             
             self.kill = YES;
         }
@@ -101,33 +91,11 @@
 - (void) simpleInit {
     
     [super.space addCollisionHandlerBetween:@"hero" andTypeB:@"particle" target:self begin:@selector(collisionStart: space:) preSolve:NULL postSolve:NULL separate:NULL];
-    
-    prise = FALSE;
-}
-
-- (void) addParticlePrise {
-    
-    [particleTaken changeAnimation:@"particulesRecolte" withLoop:NO];
-    
-    [self addChild:particleTaken];
-    
-    particleTaken.x = posX - particleTaken.width / 2;
-    particleTaken.y = posY - particleTaken.height / 2;
-    
-    [(SXParticleSystem *)graphic stop];
-    [[SPStage mainStage].juggler removeObject:(SXParticleSystem *)graphic];
-    [self removeChild:imgFond];
-    
-    [self removeChild:graphic];
-    
-    prise = true;
 }
 
 - (BOOL) collisionStart:(CMArbiter*) arbiter space:(CMSpace*) space {
     
-    //((CitrusObject *)arbiter.shapeB.body.data).kill = YES;
-    
-    [((Particle *)arbiter.shapeB.body.data) addParticlePrise];
+    ((CitrusObject *)arbiter.shapeB.body.data).kill = YES;
     
     [[NSNotificationCenter defaultCenter] postNotificationName:worldColor object:nil];
     

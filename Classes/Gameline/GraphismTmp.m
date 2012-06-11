@@ -44,7 +44,7 @@
         
     } else {
         
-        if (hero.x - hero.width > (self.posX * self.parallax) + 50) {
+        if (hero.x - hero.width > (self.posX * self.parallax)) {
             self.kill = YES;
         }
     }

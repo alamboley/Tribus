@@ -72,6 +72,10 @@
     
     portalRed = nil;
     
+    imgArrivee = nil;
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    
     [super destroy];
 }
 

@@ -29,6 +29,7 @@
         particleTaken = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"particulesRecolte.xml"] andAnimations:[NSArray arrayWithObjects:@"particulesRecolte", nil] andFirstAnimation:@"particulesRecolte"];
         
         filtreBack = [SPImage imageWithContentsOfFile:@"filtreBack.png"];
+        piegeImg = [SPImage imageWithContentsOfFile:@"piege.png"];
     }
     
     return self;
@@ -42,6 +43,7 @@
     animFiltreVertFrontAsso = nil;
     particleTaken = nil;
     filtreBack = nil;
+    piegeImg = nil;
 }
 
 - (void) start {
@@ -72,7 +74,7 @@
         float positionX = hero.x + 500 + arc4random() % 300;
         float positionY = 50 + arc4random() % 250;
         
-        Particle *particleRandom = [[Particle alloc] initWithName:@"particleRandom" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"20", @"20", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[SXParticleSystem particleSystemWithContentsOfFile:[world stringByAppendingString:@"Particle.pex"]] withWorld:world andAnim:particleTaken];
+        Particle *particleRandom = [[Particle alloc] initWithName:@"particleRandom" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"20", @"20", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[SXParticleSystem particleSystemWithContentsOfFile:[world stringByAppendingString:@"Particle.pex"]] withWorld:world];
         [ce.state addObject:particleRandom];
     }
 }
@@ -86,7 +88,11 @@
     
     if (random > 2) {
         
-        Piege *piege = [[Piege alloc] initWithName:@"piege" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"20", @"100", @"3", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", @"group:", nil]] andGraphic:[SPImage imageWithContentsOfFile:@"piege.png"]];
+        SPImage *monImg = [[SPImage alloc] init];
+        
+        monImg = piegeImg;
+        
+        Piege *piege = [[Piege alloc] initWithName:@"piege" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"20", @"100", @"3", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", @"group:", nil]] andGraphic:monImg];
         [ce.state addObject:piege];
         
     } else {

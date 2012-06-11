@@ -44,8 +44,8 @@
 
 - (void) destroy {
     
-    //    animTaedioAspire = nil;
-    //    animTaedioFumee = nil;
+        animTaedioAspire = nil;
+        animTaedioFumee = nil;
 }
 
 - (void) start {
