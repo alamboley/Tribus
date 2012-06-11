@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GMGridView.h"
 
-@interface BagItemUIViewController : UIViewController
-
+@interface BagItemUIViewController : UIViewController <GMGridViewDataSource, GMGridViewSortingDelegate, GMGridViewTransformationDelegate, GMGridViewActionDelegate>
+{
+    __gm_weak GMGridView *_gmGridView;
+     
+    NSMutableArray *_data;
+    NSMutableArray *_data2;
+    __gm_weak NSMutableArray *_currentData;
+    NSInteger _lastDeleteItemIndexAsked;
+}
 @end
