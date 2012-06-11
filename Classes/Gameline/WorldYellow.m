@@ -20,6 +20,8 @@
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(prochainArret:) name:@"prochainArret" object:nil];
         
         imgArrivee = [SPImage imageWithContentsOfFile:[worldColor stringByAppendingString:@"Arrivee.png"]];
+        
+        portalRed = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"portailRouge.xml"] andAnimations:[NSArray arrayWithObjects:@"portailrouge", nil] andFirstAnimation:@"portailrouge"];
     }
     
     return self;
@@ -49,6 +51,16 @@
     jauge.x = hero.x + 430;
     jauge.y = 170;
     
+    [self addChild:portalRed];
+    portalRed.x = hero.x + 400;
+    portalRed.y = 100;
+    
+    [portalRed addEventListener:@selector(changeLevel:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
+}
+
+- (void) changeLevel:(SPTouchEvent *) event {
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"changeNiveau" object:nil];
 }
 
 - (void) destroy {

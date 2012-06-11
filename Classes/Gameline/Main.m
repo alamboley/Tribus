@@ -54,7 +54,7 @@
         [play addEventListener:@selector(startGame:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
     }
     
-    //[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(finNiveau:) name:@"finNiveau" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeNiveau:) name:@"changeNiveau" object:nil];
     
     return self;
 }
@@ -80,7 +80,7 @@
     [game play];
 }
 
-- (void) finNiveau:(NSNotification *) notification {
+- (void) changeNiveau:(NSNotification *) notification {
     
     if ([startingColor isEqualToString:@"jaune"])
         game = [WorldRed alloc];

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:4d29f54562bb65e94bc0729a7d461c87$ -->
+<TextureAtlas imagePath="portailRouge@2x.png">
+    <SubTexture name="portailrouge/0000" x="152" y="618" width="76" height="270" frameX="-240" frameY="-46" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailrouge/0001" x="152" y="618" width="76" height="270" frameX="-240" frameY="-46" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailrouge/0002" x="152" y="618" width="76" height="270" frameX="-240" frameY="-46" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailrouge/0003" x="152" y="618" width="76" height="270" frameX="-240" frameY="-46" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailrouge/0004" x="186" y="314" width="70" height="268" frameX="-242" frameY="-54" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailrouge/0005" x="186" y="314" width="70" height="268" frameX="-242" frameY="-54" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailrouge/0006" x="186" y="314" width="70" height="268" frameX="-242" frameY="-54" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailrouge/0007" x="186" y="314" width="70" height="268" frameX="-242" frameY="-54" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailrouge/0008" x="80" y="618" width="70" height="310" frameX="-241" frameY="-20" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailrouge/0009" x="80" y="618" width="70" height="310" frameX="-241" frameY="-20" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailrouge/0010" x="80" y="618" width="70" height="310" frameX="-241" frameY="-20" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailrouge/0011" x="80" y="618" width="70" height="310" frameX="-241" frameY="-20" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailrouge/0012" x="202" y="2" width="90" height="310" frameX="-238" frameY="-52" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailrouge/0013" x="202" y="2" width="90" height="310" frameX="-238" frameY="-52" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailrouge/0014" x="202" y="2" width="90" height="310" frameX="-238" frameY="-52" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailrouge/0015" x="202" y="2" width="90" height="310" frameX="-238" frameY="-52" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailrouge/0016" x="2" y="2" width="100" height="310" frameX="-240" frameY="-11" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailrouge/0017" x="2" y="2" width="100" height="310" frameX="-240" frameY="-11" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailrouge/0018" x="2" y="2" width="100" height="310" frameX="-240" frameY="-11" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailrouge/0019" x="2" y="2" width="100" height="310" frameX="-240" frameY="-11" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailrouge/0020" x="104" y="2" width="96" height="294" frameX="-240" frameY="-45" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailrouge/0021" x="104" y="2" width="96" height="294" frameX="-240" frameY="-45" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailrouge/0022" x="104" y="2" width="96" height="294" frameX="-240" frameY="-45" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailrouge/0023" x="104" y="2" width="96" height="294" frameX="-240" frameY="-45" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailrouge/0024" x="104" y="298" width="80" height="318" frameX="-240" frameY="-27" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailrouge/0025" x="104" y="298" width="80" height="318" frameX="-240" frameY="-27" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailrouge/0026" x="104" y="298" width="80" height="318" frameX="-240" frameY="-27" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailrouge/0027" x="104" y="298" width="80" height="318" frameX="-240" frameY="-27" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailrouge/0028" x="2" y="602" width="76" height="306" frameX="-240" frameY="-30" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailrouge/0029" x="2" y="602" width="76" height="306" frameX="-240" frameY="-30" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailrouge/0030" x="2" y="602" width="76" height="306" frameX="-240" frameY="-30" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailrouge/0031" x="2" y="602" width="76" height="306" frameX="-240" frameY="-30" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailrouge/0032" x="2" y="314" width="78" height="286" frameX="-240" frameY="-42" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailrouge/0033" x="2" y="314" width="78" height="286" frameX="-240" frameY="-42" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailrouge/0034" x="2" y="314" width="78" height="286" frameX="-240" frameY="-42" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailrouge/0035" x="2" y="314" width="78" height="286" frameX="-240" frameY="-42" frameWidth="550" frameHeight="400"/>
+</TextureAtlas>

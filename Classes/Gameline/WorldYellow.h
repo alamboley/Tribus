@@ -7,10 +7,13 @@
 //
 
 #import "GameState.h"
+#import "AnimationSequence.h"
 
 @interface WorldYellow : GameState {
     
     SPImage *imgArrivee;
+    
+    AnimationSequence *portalRed;
 }
 
 @end
