@@ -185,6 +185,10 @@
     return nil;
 }
 
+- (void) play {
+    
+}
+
 - (void) dealloc {
     
 	UIAccelerometer *accelerometer = [UIAccelerometer sharedAccelerometer];

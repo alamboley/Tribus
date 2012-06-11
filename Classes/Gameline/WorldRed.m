@@ -1,9 +1,9 @@
 //
-//  WorldRed.m
-//  ChipmunkWrapper
+// WorldRed.m
+// ChipmunkWrapper
 //
-//  Created by Aymeric Lamboley on 01/06/12.
-//  Copyright (c) 2012 Sodeso. All rights reserved.
+// Created by Aymeric Lamboley on 01/06/12.
+// Copyright (c) 2012 Sodeso. All rights reserved.
 //
 
 #import "WorldRed.h"
@@ -15,7 +15,7 @@
     
     worldColor = @"rouge";
     
-	if (self = [super init]) {
+    if (self = [super init]) {
         
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(prochainArret:) name:@"prochainArret" object:nil];
         

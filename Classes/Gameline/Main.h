@@ -14,6 +14,9 @@
     GameState *game;
     BOOL rotate;
     NSString *startingColor;
+    
+    SPImage *imgLoading;
+    SPImage *play;
 }
 
 - (id)initWithWidth:(float)width height:(float)height rotation:(BOOL)rotation andStartingColor:(NSString *) startingColorId;

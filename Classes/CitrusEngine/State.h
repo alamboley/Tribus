@@ -43,6 +43,8 @@
 
 - (id) init;
 
+- (void) play;
+
 - (void) destroy;
 
 - (void) showHideDebugDraw;

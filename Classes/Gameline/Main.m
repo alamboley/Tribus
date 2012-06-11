@@ -37,6 +37,21 @@
         [super setUpState:game];
         
         frameRateTextField.visible = TRUE;
+        
+        imgLoading = [SPImage imageWithContentsOfFile:@"loading-bg.png"];
+        imgLoading.rotation = SP_D2R(90);
+        imgLoading.x = 320;
+        
+        [self.stage addChild:imgLoading];
+        
+        play = [SPImage imageWithContentsOfFile:@"play-btn.png"];
+        play.rotation = SP_D2R(90);
+        play.x = 80;
+        play.y = 180;
+        
+        [self.stage addChild:play];
+        
+        [play addEventListener:@selector(startGame:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
     }
     
     //[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(finNiveau:) name:@"finNiveau" object:nil];
@@ -53,6 +68,16 @@
      }
     
     return self;
+}
+
+- (void) startGame:(SPTouchEvent *) event {
+    
+    [play removeEventListener:@selector(startGame:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
+    
+    [self.stage removeChild:play];
+    [self.stage removeChild:imgLoading];
+    
+    [game play];
 }
 
 - (void) finNiveau:(NSNotification *) notification {
