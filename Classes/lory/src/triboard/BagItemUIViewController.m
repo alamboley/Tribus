@@ -39,14 +39,7 @@
 
 - (CGSize)GMGridView:(GMGridView *)gridView sizeForItemsInInterfaceOrientation:(UIInterfaceOrientation)orientation
 {
-    if (UIInterfaceOrientationIsLandscape(orientation)) 
-    {
-        return CGSizeMake(170, 135);
-    }
-    else
-    {
-        return CGSizeMake(140, 110);
-    }
+    return CGSizeMake(170, 135);
 }
 
 - (GMGridViewCell *)GMGridView:(GMGridView *)gridView cellForItemAtIndex:(NSInteger)index

@@ -23,6 +23,14 @@
 		043B2EAC1576D5CE00C09BBF /* PouvoirExchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 043B2EAA1576D5CE00C09BBF /* PouvoirExchange.m */; };
 		0448AB7F157B86F0000D9A22 /* UILabelCustomFontTwCenMT.m in Sources */ = {isa = PBXBuildFile; fileRef = 0448AB7E157B86F0000D9A22 /* UILabelCustomFontTwCenMT.m */; };
 		0448AB80157B86F0000D9A22 /* UILabelCustomFontTwCenMT.m in Sources */ = {isa = PBXBuildFile; fileRef = 0448AB7E157B86F0000D9A22 /* UILabelCustomFontTwCenMT.m */; };
+		0450F8A61586272E00BB9B9C /* coupons-button-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450F8A41586272E00BB9B9C /* coupons-button-normal@2x.png */; };
+		0450F8A71586272E00BB9B9C /* coupons-button-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450F8A41586272E00BB9B9C /* coupons-button-normal@2x.png */; };
+		0450F8A81586272E00BB9B9C /* coupons-button-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450F8A51586272E00BB9B9C /* coupons-button-selected@2x.png */; };
+		0450F8A91586272E00BB9B9C /* coupons-button-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450F8A51586272E00BB9B9C /* coupons-button-selected@2x.png */; };
+		0450F8AC1586275700BB9B9C /* coupons-button-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450F8AA1586275700BB9B9C /* coupons-button-normal.png */; };
+		0450F8AD1586275700BB9B9C /* coupons-button-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450F8AA1586275700BB9B9C /* coupons-button-normal.png */; };
+		0450F8AE1586275700BB9B9C /* coupons-button-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450F8AB1586275700BB9B9C /* coupons-button-selected.png */; };
+		0450F8AF1586275700BB9B9C /* coupons-button-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450F8AB1586275700BB9B9C /* coupons-button-selected.png */; };
 		0497E88F15761260005CDC2E /* UILabelCustomFontKohicle25.m in Sources */ = {isa = PBXBuildFile; fileRef = 0497E88E15761260005CDC2E /* UILabelCustomFontKohicle25.m */; };
 		0497E89015761260005CDC2E /* UILabelCustomFontKohicle25.m in Sources */ = {isa = PBXBuildFile; fileRef = 0497E88E15761260005CDC2E /* UILabelCustomFontKohicle25.m */; };
 		0497E89815761631005CDC2E /* UIImage+Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 0497E89715761631005CDC2E /* UIImage+Sprite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -961,6 +969,10 @@
 		043B2EAA1576D5CE00C09BBF /* PouvoirExchange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PouvoirExchange.m; sourceTree = "<group>"; };
 		0448AB7D157B86F0000D9A22 /* UILabelCustomFontTwCenMT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelCustomFontTwCenMT.h; sourceTree = "<group>"; };
 		0448AB7E157B86F0000D9A22 /* UILabelCustomFontTwCenMT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelCustomFontTwCenMT.m; sourceTree = "<group>"; };
+		0450F8A41586272E00BB9B9C /* coupons-button-normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coupons-button-normal@2x.png"; sourceTree = "<group>"; };
+		0450F8A51586272E00BB9B9C /* coupons-button-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coupons-button-selected@2x.png"; sourceTree = "<group>"; };
+		0450F8AA1586275700BB9B9C /* coupons-button-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coupons-button-normal.png"; sourceTree = "<group>"; };
+		0450F8AB1586275700BB9B9C /* coupons-button-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coupons-button-selected.png"; sourceTree = "<group>"; };
 		0497E88D15761260005CDC2E /* UILabelCustomFontKohicle25.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelCustomFontKohicle25.h; sourceTree = "<group>"; };
 		0497E88E15761260005CDC2E /* UILabelCustomFontKohicle25.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelCustomFontKohicle25.m; sourceTree = "<group>"; };
 		0497E89615761631005CDC2E /* UIImage+Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Sprite.h"; sourceTree = "<group>"; };
@@ -1687,6 +1699,8 @@
 		04E305E41585D9DA00B4B265 /* 1x */ = {
 			isa = PBXGroup;
 			children = (
+				0450F8AA1586275700BB9B9C /* coupons-button-normal.png */,
+				0450F8AB1586275700BB9B9C /* coupons-button-selected.png */,
 				04E3071D1585DA6D00B4B265 /* play-btn.png */,
 				04E305E51585D9DA00B4B265 /* back-btn.png */,
 				04E305E61585D9DA00B4B265 /* boardillu.png */,
@@ -2216,6 +2230,8 @@
 				04E306241585D9DA00B4B265 /* fond2@2x.png */,
 				04E306251585D9DA00B4B265 /* fond3@2x.png */,
 				04E306261585D9DA00B4B265 /* ile_bleue@2x.png */,
+				0450F8A41586272E00BB9B9C /* coupons-button-normal@2x.png */,
+				0450F8A51586272E00BB9B9C /* coupons-button-selected@2x.png */,
 				04E306271585D9DA00B4B265 /* ile_jaune@2x.png */,
 				04E306281585D9DA00B4B265 /* ile_orange@2x.png */,
 				04E306291585D9DA00B4B265 /* ile_rouge@2x.png */,
@@ -3113,6 +3129,10 @@
 				B03F699D158621BC0087DE0F /* particulesRecolte@2x.xml in Resources */,
 				B03F69A1158621D20087DE0F /* particulesRecolte.pvr in Resources */,
 				B03F69A3158621D20087DE0F /* particulesRecolte.xml in Resources */,
+				0450F8A61586272E00BB9B9C /* coupons-button-normal@2x.png in Resources */,
+				0450F8A81586272E00BB9B9C /* coupons-button-selected@2x.png in Resources */,
+				0450F8AC1586275700BB9B9C /* coupons-button-normal.png in Resources */,
+				0450F8AE1586275700BB9B9C /* coupons-button-selected.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3408,6 +3428,10 @@
 				B03F699E158621BC0087DE0F /* particulesRecolte@2x.xml in Resources */,
 				B03F69A2158621D20087DE0F /* particulesRecolte.pvr in Resources */,
 				B03F69A4158621D20087DE0F /* particulesRecolte.xml in Resources */,
+				0450F8A71586272E00BB9B9C /* coupons-button-normal@2x.png in Resources */,
+				0450F8A91586272E00BB9B9C /* coupons-button-selected@2x.png in Resources */,
+				0450F8AD1586275700BB9B9C /* coupons-button-normal.png in Resources */,
+				0450F8AF1586275700BB9B9C /* coupons-button-selected.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 
 #import "CustomUITabBarController.h"
+#import "Color.h"
 
 @implementation CustomUITabBarController
 
@@ -43,15 +44,25 @@
     self.selectedIndex = 0;
     // Add the same number of buttons as in the tabBar
     for( int i = 0; i < [self.viewControllers count]; i++ ) {
-        UIImage *buttonImageNormal = [UIImage imageNamed:@"main-button-normal.png"];
-        UIImage *buttonImageSelected = [UIImage imageNamed:@"main-button-selected.png"];
-        
         UIButton* aButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        aButton.frame = CGRectMake(5 + i * 110.0, 5.0, buttonImageNormal.size.width,buttonImageNormal.size.height);
+
         UIViewController *item = [self.viewControllers objectAtIndex:i];
+        UIImage *buttonImageNormal;
+        UIImage *buttonImageSelected;
+        
+        if([item.title isEqualToString:@"coupons"]){
+            buttonImageNormal = [UIImage imageNamed:@"coupons-button-selected.png"];
+            buttonImageSelected = [UIImage imageNamed:@"coupons-button-normal.png"];
+            [aButton setTitleColor:[Color colorWithHexString: @"5C461E"] forState:UIControlStateNormal];
+        }else {
+            buttonImageNormal = [UIImage imageNamed:@"main-button-normal.png"];
+            buttonImageSelected = [UIImage imageNamed:@"main-button-selected.png"];
+            [aButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        }
+        
+        aButton.frame = CGRectMake(5 + i * 110.0, 5.0, buttonImageNormal.size.width,buttonImageNormal.size.height);
         
         aButton.titleLabel.font = [UIFont fontWithName:@"TwCenMT-Regular" size:17];
-        [aButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [aButton setBackgroundImage:buttonImageNormal forState:UIControlStateNormal];
         [aButton setBackgroundImage:buttonImageSelected forState:UIControlStateSelected];
         [aButton setTitle:[item.title uppercaseString] forState:UIControlStateNormal];
