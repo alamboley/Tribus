@@ -91,6 +91,42 @@
 		0450FA66158683D300BB9B9C /* pouvoir5_directionassiste.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA49158683D300BB9B9C /* pouvoir5_directionassiste.png */; };
 		0450FA67158683D300BB9B9C /* pouvoir6_busmotion.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA4A158683D300BB9B9C /* pouvoir6_busmotion.png */; };
 		0450FA68158683D300BB9B9C /* pouvoir6_busmotion.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA4A158683D300BB9B9C /* pouvoir6_busmotion.png */; };
+		0450FA6C15869EB400BB9B9C /* coupon_deca@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA6915869EB400BB9B9C /* coupon_deca@2x.png */; };
+		0450FA6D15869EB400BB9B9C /* coupon_deca@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA6915869EB400BB9B9C /* coupon_deca@2x.png */; };
+		0450FA6E15869EB400BB9B9C /* coupon_glaces@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA6A15869EB400BB9B9C /* coupon_glaces@2x.png */; };
+		0450FA6F15869EB400BB9B9C /* coupon_glaces@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA6A15869EB400BB9B9C /* coupon_glaces@2x.png */; };
+		0450FA7015869EB400BB9B9C /* coupon_quick@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA6B15869EB400BB9B9C /* coupon_quick@2x.png */; };
+		0450FA7115869EB400BB9B9C /* coupon_quick@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA6B15869EB400BB9B9C /* coupon_quick@2x.png */; };
+		0450FA7515869ED700BB9B9C /* coupon_deca.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA7215869ED700BB9B9C /* coupon_deca.png */; };
+		0450FA7615869ED700BB9B9C /* coupon_deca.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA7215869ED700BB9B9C /* coupon_deca.png */; };
+		0450FA7715869ED700BB9B9C /* coupon_glaces.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA7315869ED700BB9B9C /* coupon_glaces.png */; };
+		0450FA7815869ED700BB9B9C /* coupon_glaces.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA7315869ED700BB9B9C /* coupon_glaces.png */; };
+		0450FA7915869ED700BB9B9C /* coupon_quick.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA7415869ED700BB9B9C /* coupon_quick.png */; };
+		0450FA7A15869ED700BB9B9C /* coupon_quick.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA7415869ED700BB9B9C /* coupon_quick.png */; };
+		0450FA811586A12200BB9B9C /* pouvoir1_parechoc-item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA7B1586A12200BB9B9C /* pouvoir1_parechoc-item@2x.png */; };
+		0450FA821586A12200BB9B9C /* pouvoir1_parechoc-item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA7B1586A12200BB9B9C /* pouvoir1_parechoc-item@2x.png */; };
+		0450FA831586A12200BB9B9C /* pouvoir2_piedsur-item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA7C1586A12200BB9B9C /* pouvoir2_piedsur-item@2x.png */; };
+		0450FA841586A12200BB9B9C /* pouvoir2_piedsur-item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA7C1586A12200BB9B9C /* pouvoir2_piedsur-item@2x.png */; };
+		0450FA851586A12200BB9B9C /* pouvoir3_desembuage-item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA7D1586A12200BB9B9C /* pouvoir3_desembuage-item@2x.png */; };
+		0450FA861586A12200BB9B9C /* pouvoir3_desembuage-item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA7D1586A12200BB9B9C /* pouvoir3_desembuage-item@2x.png */; };
+		0450FA871586A12200BB9B9C /* pouvoir4_magnetisme-item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA7E1586A12200BB9B9C /* pouvoir4_magnetisme-item@2x.png */; };
+		0450FA881586A12200BB9B9C /* pouvoir4_magnetisme-item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA7E1586A12200BB9B9C /* pouvoir4_magnetisme-item@2x.png */; };
+		0450FA891586A12200BB9B9C /* pouvoir5_directionassiste-item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA7F1586A12200BB9B9C /* pouvoir5_directionassiste-item@2x.png */; };
+		0450FA8A1586A12200BB9B9C /* pouvoir5_directionassiste-item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA7F1586A12200BB9B9C /* pouvoir5_directionassiste-item@2x.png */; };
+		0450FA8B1586A12200BB9B9C /* pouvoir6_busmotion-item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA801586A12200BB9B9C /* pouvoir6_busmotion-item@2x.png */; };
+		0450FA8C1586A12200BB9B9C /* pouvoir6_busmotion-item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA801586A12200BB9B9C /* pouvoir6_busmotion-item@2x.png */; };
+		0450FA931586A13500BB9B9C /* pouvoir1_parechoc-item.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA8D1586A13500BB9B9C /* pouvoir1_parechoc-item.png */; };
+		0450FA941586A13500BB9B9C /* pouvoir1_parechoc-item.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA8D1586A13500BB9B9C /* pouvoir1_parechoc-item.png */; };
+		0450FA951586A13500BB9B9C /* pouvoir2_piedsur-item.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA8E1586A13500BB9B9C /* pouvoir2_piedsur-item.png */; };
+		0450FA961586A13500BB9B9C /* pouvoir2_piedsur-item.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA8E1586A13500BB9B9C /* pouvoir2_piedsur-item.png */; };
+		0450FA971586A13500BB9B9C /* pouvoir3_desembuage-item.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA8F1586A13500BB9B9C /* pouvoir3_desembuage-item.png */; };
+		0450FA981586A13500BB9B9C /* pouvoir3_desembuage-item.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA8F1586A13500BB9B9C /* pouvoir3_desembuage-item.png */; };
+		0450FA991586A13500BB9B9C /* pouvoir4_magnetisme-item.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA901586A13500BB9B9C /* pouvoir4_magnetisme-item.png */; };
+		0450FA9A1586A13500BB9B9C /* pouvoir4_magnetisme-item.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA901586A13500BB9B9C /* pouvoir4_magnetisme-item.png */; };
+		0450FA9B1586A13500BB9B9C /* pouvoir5_directionassiste-item.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA911586A13500BB9B9C /* pouvoir5_directionassiste-item.png */; };
+		0450FA9C1586A13500BB9B9C /* pouvoir5_directionassiste-item.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA911586A13500BB9B9C /* pouvoir5_directionassiste-item.png */; };
+		0450FA9D1586A13500BB9B9C /* pouvoir6_busmotion-item.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA921586A13500BB9B9C /* pouvoir6_busmotion-item.png */; };
+		0450FA9E1586A13500BB9B9C /* pouvoir6_busmotion-item.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA921586A13500BB9B9C /* pouvoir6_busmotion-item.png */; };
 		0497E88F15761260005CDC2E /* UILabelCustomFontKohicle25.m in Sources */ = {isa = PBXBuildFile; fileRef = 0497E88E15761260005CDC2E /* UILabelCustomFontKohicle25.m */; };
 		0497E89015761260005CDC2E /* UILabelCustomFontKohicle25.m in Sources */ = {isa = PBXBuildFile; fileRef = 0497E88E15761260005CDC2E /* UILabelCustomFontKohicle25.m */; };
 		0497E89815761631005CDC2E /* UIImage+Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 0497E89715761631005CDC2E /* UIImage+Sprite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -1071,6 +1107,24 @@
 		0450FA48158683D300BB9B9C /* pouvoir4_magnetisme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pouvoir4_magnetisme.png; sourceTree = "<group>"; };
 		0450FA49158683D300BB9B9C /* pouvoir5_directionassiste.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pouvoir5_directionassiste.png; sourceTree = "<group>"; };
 		0450FA4A158683D300BB9B9C /* pouvoir6_busmotion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pouvoir6_busmotion.png; sourceTree = "<group>"; };
+		0450FA6915869EB400BB9B9C /* coupon_deca@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coupon_deca@2x.png"; sourceTree = "<group>"; };
+		0450FA6A15869EB400BB9B9C /* coupon_glaces@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coupon_glaces@2x.png"; sourceTree = "<group>"; };
+		0450FA6B15869EB400BB9B9C /* coupon_quick@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coupon_quick@2x.png"; sourceTree = "<group>"; };
+		0450FA7215869ED700BB9B9C /* coupon_deca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coupon_deca.png; sourceTree = "<group>"; };
+		0450FA7315869ED700BB9B9C /* coupon_glaces.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coupon_glaces.png; sourceTree = "<group>"; };
+		0450FA7415869ED700BB9B9C /* coupon_quick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coupon_quick.png; sourceTree = "<group>"; };
+		0450FA7B1586A12200BB9B9C /* pouvoir1_parechoc-item@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir1_parechoc-item@2x.png"; sourceTree = "<group>"; };
+		0450FA7C1586A12200BB9B9C /* pouvoir2_piedsur-item@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir2_piedsur-item@2x.png"; sourceTree = "<group>"; };
+		0450FA7D1586A12200BB9B9C /* pouvoir3_desembuage-item@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir3_desembuage-item@2x.png"; sourceTree = "<group>"; };
+		0450FA7E1586A12200BB9B9C /* pouvoir4_magnetisme-item@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir4_magnetisme-item@2x.png"; sourceTree = "<group>"; };
+		0450FA7F1586A12200BB9B9C /* pouvoir5_directionassiste-item@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir5_directionassiste-item@2x.png"; sourceTree = "<group>"; };
+		0450FA801586A12200BB9B9C /* pouvoir6_busmotion-item@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir6_busmotion-item@2x.png"; sourceTree = "<group>"; };
+		0450FA8D1586A13500BB9B9C /* pouvoir1_parechoc-item.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir1_parechoc-item.png"; sourceTree = "<group>"; };
+		0450FA8E1586A13500BB9B9C /* pouvoir2_piedsur-item.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir2_piedsur-item.png"; sourceTree = "<group>"; };
+		0450FA8F1586A13500BB9B9C /* pouvoir3_desembuage-item.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir3_desembuage-item.png"; sourceTree = "<group>"; };
+		0450FA901586A13500BB9B9C /* pouvoir4_magnetisme-item.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir4_magnetisme-item.png"; sourceTree = "<group>"; };
+		0450FA911586A13500BB9B9C /* pouvoir5_directionassiste-item.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir5_directionassiste-item.png"; sourceTree = "<group>"; };
+		0450FA921586A13500BB9B9C /* pouvoir6_busmotion-item.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir6_busmotion-item.png"; sourceTree = "<group>"; };
 		0497E88D15761260005CDC2E /* UILabelCustomFontKohicle25.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelCustomFontKohicle25.h; sourceTree = "<group>"; };
 		0497E88E15761260005CDC2E /* UILabelCustomFontKohicle25.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelCustomFontKohicle25.m; sourceTree = "<group>"; };
 		0497E89615761631005CDC2E /* UIImage+Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Sprite.h"; sourceTree = "<group>"; };
@@ -1801,6 +1855,15 @@
 		04E305E41585D9DA00B4B265 /* 1x */ = {
 			isa = PBXGroup;
 			children = (
+				0450FA8D1586A13500BB9B9C /* pouvoir1_parechoc-item.png */,
+				0450FA8E1586A13500BB9B9C /* pouvoir2_piedsur-item.png */,
+				0450FA8F1586A13500BB9B9C /* pouvoir3_desembuage-item.png */,
+				0450FA901586A13500BB9B9C /* pouvoir4_magnetisme-item.png */,
+				0450FA911586A13500BB9B9C /* pouvoir5_directionassiste-item.png */,
+				0450FA921586A13500BB9B9C /* pouvoir6_busmotion-item.png */,
+				0450FA7215869ED700BB9B9C /* coupon_deca.png */,
+				0450FA7315869ED700BB9B9C /* coupon_glaces.png */,
+				0450FA7415869ED700BB9B9C /* coupon_quick.png */,
 				0450FA3C158683D300BB9B9C /* m1.png */,
 				0450FA3D158683D300BB9B9C /* m2.png */,
 				0450FA3E158683D300BB9B9C /* m3.png */,
@@ -2330,6 +2393,15 @@
 		B002DBFC156C04AC003F5C78 /* app */ = {
 			isa = PBXGroup;
 			children = (
+				0450FA7B1586A12200BB9B9C /* pouvoir1_parechoc-item@2x.png */,
+				0450FA7C1586A12200BB9B9C /* pouvoir2_piedsur-item@2x.png */,
+				0450FA7D1586A12200BB9B9C /* pouvoir3_desembuage-item@2x.png */,
+				0450FA7E1586A12200BB9B9C /* pouvoir4_magnetisme-item@2x.png */,
+				0450FA7F1586A12200BB9B9C /* pouvoir5_directionassiste-item@2x.png */,
+				0450FA801586A12200BB9B9C /* pouvoir6_busmotion-item@2x.png */,
+				0450FA6915869EB400BB9B9C /* coupon_deca@2x.png */,
+				0450FA6A15869EB400BB9B9C /* coupon_glaces@2x.png */,
+				0450FA6B15869EB400BB9B9C /* coupon_quick@2x.png */,
 				0450FA0F158683A700BB9B9C /* m1@2x.png */,
 				0450FA10158683A700BB9B9C /* m2@2x.png */,
 				0450FA11158683A700BB9B9C /* m3@2x.png */,
@@ -3303,6 +3375,24 @@
 				0450FA63158683D300BB9B9C /* pouvoir4_magnetisme.png in Resources */,
 				0450FA65158683D300BB9B9C /* pouvoir5_directionassiste.png in Resources */,
 				0450FA67158683D300BB9B9C /* pouvoir6_busmotion.png in Resources */,
+				0450FA6C15869EB400BB9B9C /* coupon_deca@2x.png in Resources */,
+				0450FA6E15869EB400BB9B9C /* coupon_glaces@2x.png in Resources */,
+				0450FA7015869EB400BB9B9C /* coupon_quick@2x.png in Resources */,
+				0450FA7515869ED700BB9B9C /* coupon_deca.png in Resources */,
+				0450FA7715869ED700BB9B9C /* coupon_glaces.png in Resources */,
+				0450FA7915869ED700BB9B9C /* coupon_quick.png in Resources */,
+				0450FA811586A12200BB9B9C /* pouvoir1_parechoc-item@2x.png in Resources */,
+				0450FA831586A12200BB9B9C /* pouvoir2_piedsur-item@2x.png in Resources */,
+				0450FA851586A12200BB9B9C /* pouvoir3_desembuage-item@2x.png in Resources */,
+				0450FA871586A12200BB9B9C /* pouvoir4_magnetisme-item@2x.png in Resources */,
+				0450FA891586A12200BB9B9C /* pouvoir5_directionassiste-item@2x.png in Resources */,
+				0450FA8B1586A12200BB9B9C /* pouvoir6_busmotion-item@2x.png in Resources */,
+				0450FA931586A13500BB9B9C /* pouvoir1_parechoc-item.png in Resources */,
+				0450FA951586A13500BB9B9C /* pouvoir2_piedsur-item.png in Resources */,
+				0450FA971586A13500BB9B9C /* pouvoir3_desembuage-item.png in Resources */,
+				0450FA991586A13500BB9B9C /* pouvoir4_magnetisme-item.png in Resources */,
+				0450FA9B1586A13500BB9B9C /* pouvoir5_directionassiste-item.png in Resources */,
+				0450FA9D1586A13500BB9B9C /* pouvoir6_busmotion-item.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3636,6 +3726,24 @@
 				0450FA64158683D300BB9B9C /* pouvoir4_magnetisme.png in Resources */,
 				0450FA66158683D300BB9B9C /* pouvoir5_directionassiste.png in Resources */,
 				0450FA68158683D300BB9B9C /* pouvoir6_busmotion.png in Resources */,
+				0450FA6D15869EB400BB9B9C /* coupon_deca@2x.png in Resources */,
+				0450FA6F15869EB400BB9B9C /* coupon_glaces@2x.png in Resources */,
+				0450FA7115869EB400BB9B9C /* coupon_quick@2x.png in Resources */,
+				0450FA7615869ED700BB9B9C /* coupon_deca.png in Resources */,
+				0450FA7815869ED700BB9B9C /* coupon_glaces.png in Resources */,
+				0450FA7A15869ED700BB9B9C /* coupon_quick.png in Resources */,
+				0450FA821586A12200BB9B9C /* pouvoir1_parechoc-item@2x.png in Resources */,
+				0450FA841586A12200BB9B9C /* pouvoir2_piedsur-item@2x.png in Resources */,
+				0450FA861586A12200BB9B9C /* pouvoir3_desembuage-item@2x.png in Resources */,
+				0450FA881586A12200BB9B9C /* pouvoir4_magnetisme-item@2x.png in Resources */,
+				0450FA8A1586A12200BB9B9C /* pouvoir5_directionassiste-item@2x.png in Resources */,
+				0450FA8C1586A12200BB9B9C /* pouvoir6_busmotion-item@2x.png in Resources */,
+				0450FA941586A13500BB9B9C /* pouvoir1_parechoc-item.png in Resources */,
+				0450FA961586A13500BB9B9C /* pouvoir2_piedsur-item.png in Resources */,
+				0450FA981586A13500BB9B9C /* pouvoir3_desembuage-item.png in Resources */,
+				0450FA9A1586A13500BB9B9C /* pouvoir4_magnetisme-item.png in Resources */,
+				0450FA9C1586A13500BB9B9C /* pouvoir5_directionassiste-item.png in Resources */,
+				0450FA9E1586A13500BB9B9C /* pouvoir6_busmotion-item.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

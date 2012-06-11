@@ -2,36 +2,36 @@
   "id":"0",
   "title":"parechoc",
   "description": "Cette protection empèchera les taedios de te faire du mal !",
-  "image-url": "pouvoir1_parechoc.png",
+  "image-url": "pouvoir1_parechoc-item.png",
   "price":{"violet":10}
   },{
   "id":"1",
-  "title":"pied-sûr",
+  "title":"pied-sur",
   "description": "Grâce à un meilleur appui sur ta planche, tu plannes plus longtemps !",
-  "image-url": "pouvoir2_piedsur.png",
+  "image-url": "pouvoir2_piedsur-item.png",
   "price":{"jaune":60}
   },{
   "id":"2",
   "title":"désembuage",
   "description": "Le soleil te prète sa force pour contrer la pollution des taedios !",
-  "image-url": "pouvoir3_desembuage.png",
+  "image-url": "pouvoir3_desembuage-item.png",
   "price":{"vert":14}
   },{
   "id":"3",
   "title":"magnétisme",
   "description": "Les particules sont attirées comme par magie vers ta triboard !",
-  "image-url": "pouvoir4_magnetisme.png",
+  "image-url": "pouvoir4_magnetisme-item.png",
   "price":{"bleu":14}
   },{
   "id":"4",
   "title":"direction assistée",
   "description": "Ce concentré de technologie te permet de mieux maitriser ta triboard !",
-  "image-url": "pouvoir5_directionassiste.png",
+  "image-url": "pouvoir5_directionassiste-item.png",
   "price":{"jaune":60}
   },{
   "id":"5",
   "title":"busmotion",
   "description": "Une faille temporelle te permet de ralentir ta course effrénée !",
-  "image-url": "pouvoir6_busmotion.png",
+  "image-url": "pouvoir6_busmotion-item.png",
   "price":{"jaune":60}
   }]
