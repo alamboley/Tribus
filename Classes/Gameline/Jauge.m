@@ -29,6 +29,8 @@
         fond = [SPImage imageWithTexture:originalTexture];
         fond.pivotX = fond.width / 2;
         fond.pivotY = fond.height / 2;
+        if ([color isEqualToString:@"rouge"])
+            fond.x = 10;
         [jauge addChild:fond];
         
         SPTextureAtlas *atlas = [SPTextureAtlas atlasWithContentsOfFile:[color stringByAppendingString:@"Jauge.xml"]];
@@ -43,7 +45,7 @@
         fondFake = [SPImage imageWithTexture:textureFondFake];
         fondFake.pivotX = fondFake.width / 2;
         if ([color isEqualToString:@"rouge"])
-            fondFake.x = 2;
+            fondFake.x = 7;
         fondFake.y = -fond.height / 2;
         [jauge addChild:fondFake];
         
