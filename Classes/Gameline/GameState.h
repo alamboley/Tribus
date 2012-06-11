@@ -27,6 +27,8 @@
     CreationRuntime *creationRuntime;
 }
 
+- (void) play;
+
 - (void) colorPicked:(NSNotification *) notification;
 
 - (void) finNiveau:(NSNotification *) notification;

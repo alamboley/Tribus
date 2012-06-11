@@ -8,6 +8,9 @@
 
 #import "GameState.h"
 
-@interface WorldRed : GameState
+@interface WorldRed : GameState {
+    
+    SPImage *imgArrivee;
+}
 
 @end
