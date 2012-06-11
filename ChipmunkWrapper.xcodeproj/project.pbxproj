@@ -774,9 +774,9 @@
 		B0BB60DE1574AC14001BB2CB /* NMCustomLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60981574AC14001BB2CB /* NMCustomLabel.m */; };
 		B0BB60DF1574AC14001BB2CB /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB609B1574AC14001BB2CB /* iCarousel.m */; };
 		B0BB60E01574AC14001BB2CB /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB609B1574AC14001BB2CB /* iCarousel.m */; };
-		B0BB60E11574AC14001BB2CB /* PRTween.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB609E1574AC14001BB2CB /* PRTween.m */; };
+		B0BB60E11574AC14001BB2CB /* PRTween.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB609E1574AC14001BB2CB /* PRTween.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B0BB60E21574AC14001BB2CB /* PRTween.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB609E1574AC14001BB2CB /* PRTween.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B0BB60E31574AC14001BB2CB /* PRTweenTimingFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60A01574AC14001BB2CB /* PRTweenTimingFunctions.m */; };
+		B0BB60E31574AC14001BB2CB /* PRTweenTimingFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60A01574AC14001BB2CB /* PRTweenTimingFunctions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B0BB60E41574AC14001BB2CB /* PRTweenTimingFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60A01574AC14001BB2CB /* PRTweenTimingFunctions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B0BB60E51574AC14001BB2CB /* Color.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60A41574AC14001BB2CB /* Color.m */; };
 		B0BB60E61574AC14001BB2CB /* Color.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB60A41574AC14001BB2CB /* Color.m */; };
