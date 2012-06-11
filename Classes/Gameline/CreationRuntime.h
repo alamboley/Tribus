@@ -23,6 +23,8 @@
     
     AnimationSequence *animFiltreVertFrontDiss;
     AnimationSequence *animFiltreVertFrontAsso;
+    AnimationSequence *particleTaken;
+    
     SPImage *filtreBack;
 }
 
