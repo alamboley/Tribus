@@ -169,6 +169,16 @@
 		04BF13951585161000E1DDBC /* BagItemUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BF13911585160F00E1DDBC /* BagItemUIViewController.xib */; };
 		04DC6201157BB58800FD994C /* ok-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04DC6200157BB58800FD994C /* ok-btn@2x.png */; };
 		04DC6202157BB58800FD994C /* ok-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04DC6200157BB58800FD994C /* ok-btn@2x.png */; };
+		04E305CE1585D0F300B4B265 /* GMGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E305C41585D0F300B4B265 /* GMGridView.m */; };
+		04E305CF1585D0F300B4B265 /* GMGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E305C41585D0F300B4B265 /* GMGridView.m */; };
+		04E305D01585D0F300B4B265 /* GMGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E305C71585D0F300B4B265 /* GMGridViewCell.m */; };
+		04E305D11585D0F300B4B265 /* GMGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E305C71585D0F300B4B265 /* GMGridViewCell.m */; };
+		04E305D21585D0F300B4B265 /* GMGridViewLayoutStrategies.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E305C91585D0F300B4B265 /* GMGridViewLayoutStrategies.m */; };
+		04E305D31585D0F300B4B265 /* GMGridViewLayoutStrategies.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E305C91585D0F300B4B265 /* GMGridViewLayoutStrategies.m */; };
+		04E305D41585D0F300B4B265 /* UIGestureRecognizer+GMGridViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E305CB1585D0F300B4B265 /* UIGestureRecognizer+GMGridViewAdditions.m */; };
+		04E305D51585D0F300B4B265 /* UIGestureRecognizer+GMGridViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E305CB1585D0F300B4B265 /* UIGestureRecognizer+GMGridViewAdditions.m */; };
+		04E305D61585D0F300B4B265 /* UIView+GMGridViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E305CD1585D0F300B4B265 /* UIView+GMGridViewAdditions.m */; };
+		04E305D71585D0F300B4B265 /* UIView+GMGridViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E305CD1585D0F300B4B265 /* UIView+GMGridViewAdditions.m */; };
 		04ECFFCC15765350002B4B15 /* pouvoir1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04ECFFC91576534F002B4B15 /* pouvoir1@2x.png */; };
 		04ECFFCD15765350002B4B15 /* pouvoir1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04ECFFC91576534F002B4B15 /* pouvoir1@2x.png */; };
 		04ECFFCE15765350002B4B15 /* pouvoir2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04ECFFCA15765350002B4B15 /* pouvoir2@2x.png */; };
@@ -984,6 +994,18 @@
 		04BF13901585160F00E1DDBC /* BagItemUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BagItemUIViewController.m; sourceTree = "<group>"; };
 		04BF13911585160F00E1DDBC /* BagItemUIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BagItemUIViewController.xib; sourceTree = "<group>"; };
 		04DC6200157BB58800FD994C /* ok-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ok-btn@2x.png"; sourceTree = "<group>"; };
+		04E305C21585D0F300B4B265 /* GMGridView-Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GMGridView-Constants.h"; sourceTree = "<group>"; };
+		04E305C31585D0F300B4B265 /* GMGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMGridView.h; sourceTree = "<group>"; };
+		04E305C41585D0F300B4B265 /* GMGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMGridView.m; sourceTree = "<group>"; };
+		04E305C51585D0F300B4B265 /* GMGridViewCell+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GMGridViewCell+Extended.h"; sourceTree = "<group>"; };
+		04E305C61585D0F300B4B265 /* GMGridViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMGridViewCell.h; sourceTree = "<group>"; };
+		04E305C71585D0F300B4B265 /* GMGridViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMGridViewCell.m; sourceTree = "<group>"; };
+		04E305C81585D0F300B4B265 /* GMGridViewLayoutStrategies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMGridViewLayoutStrategies.h; sourceTree = "<group>"; };
+		04E305C91585D0F300B4B265 /* GMGridViewLayoutStrategies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMGridViewLayoutStrategies.m; sourceTree = "<group>"; };
+		04E305CA1585D0F300B4B265 /* UIGestureRecognizer+GMGridViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+GMGridViewAdditions.h"; sourceTree = "<group>"; };
+		04E305CB1585D0F300B4B265 /* UIGestureRecognizer+GMGridViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+GMGridViewAdditions.m"; sourceTree = "<group>"; };
+		04E305CC1585D0F300B4B265 /* UIView+GMGridViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GMGridViewAdditions.h"; sourceTree = "<group>"; };
+		04E305CD1585D0F300B4B265 /* UIView+GMGridViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GMGridViewAdditions.m"; sourceTree = "<group>"; };
 		04ECFFC91576534F002B4B15 /* pouvoir1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir1@2x.png"; sourceTree = "<group>"; };
 		04ECFFCA15765350002B4B15 /* pouvoir2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir2@2x.png"; sourceTree = "<group>"; };
 		04ECFFCB15765350002B4B15 /* pouvoir3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir3@2x.png"; sourceTree = "<group>"; };
@@ -1644,6 +1666,25 @@
 				0497E89715761631005CDC2E /* UIImage+Sprite.m */,
 			);
 			path = spritesheet;
+			sourceTree = "<group>";
+		};
+		04E305C11585D0F300B4B265 /* gmgrid */ = {
+			isa = PBXGroup;
+			children = (
+				04E305C21585D0F300B4B265 /* GMGridView-Constants.h */,
+				04E305C31585D0F300B4B265 /* GMGridView.h */,
+				04E305C41585D0F300B4B265 /* GMGridView.m */,
+				04E305C51585D0F300B4B265 /* GMGridViewCell+Extended.h */,
+				04E305C61585D0F300B4B265 /* GMGridViewCell.h */,
+				04E305C71585D0F300B4B265 /* GMGridViewCell.m */,
+				04E305C81585D0F300B4B265 /* GMGridViewLayoutStrategies.h */,
+				04E305C91585D0F300B4B265 /* GMGridViewLayoutStrategies.m */,
+				04E305CA1585D0F300B4B265 /* UIGestureRecognizer+GMGridViewAdditions.h */,
+				04E305CB1585D0F300B4B265 /* UIGestureRecognizer+GMGridViewAdditions.m */,
+				04E305CC1585D0F300B4B265 /* UIView+GMGridViewAdditions.h */,
+				04E305CD1585D0F300B4B265 /* UIView+GMGridViewAdditions.m */,
+			);
+			path = gmgrid;
 			sourceTree = "<group>";
 		};
 		080E96DDFE201D6D7F000001 /* Classes */ = {
@@ -2345,6 +2386,7 @@
 		B0BB60951574AC14001BB2CB /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				04E305C11585D0F300B4B265 /* gmgrid */,
 				0401D3271578B2DD000B3534 /* toast */,
 				0497E89515761631005CDC2E /* spritesheet */,
 				B0BB60961574AC14001BB2CB /* custom */,
@@ -3416,6 +3458,11 @@
 				04BF13481583BD0F00E1DDBC /* TravelItemViewController.m in Sources */,
 				04BF13921585161000E1DDBC /* BagItemUIViewController.m in Sources */,
 				B04F3A7115853CA1004ED1B7 /* FiltreAssociatif.m in Sources */,
+				04E305CE1585D0F300B4B265 /* GMGridView.m in Sources */,
+				04E305D01585D0F300B4B265 /* GMGridViewCell.m in Sources */,
+				04E305D21585D0F300B4B265 /* GMGridViewLayoutStrategies.m in Sources */,
+				04E305D41585D0F300B4B265 /* UIGestureRecognizer+GMGridViewAdditions.m in Sources */,
+				04E305D61585D0F300B4B265 /* UIView+GMGridViewAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3570,6 +3617,11 @@
 				04BF13491583BD0F00E1DDBC /* TravelItemViewController.m in Sources */,
 				04BF13931585161000E1DDBC /* BagItemUIViewController.m in Sources */,
 				B04F3A7215853CA1004ED1B7 /* FiltreAssociatif.m in Sources */,
+				04E305CF1585D0F300B4B265 /* GMGridView.m in Sources */,
+				04E305D11585D0F300B4B265 /* GMGridViewCell.m in Sources */,
+				04E305D31585D0F300B4B265 /* GMGridViewLayoutStrategies.m in Sources */,
+				04E305D51585D0F300B4B265 /* UIGestureRecognizer+GMGridViewAdditions.m in Sources */,
+				04E305D71585D0F300B4B265 /* UIView+GMGridViewAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
