@@ -42,6 +42,8 @@
         
         fondFake = [SPImage imageWithTexture:textureFondFake];
         fondFake.pivotX = fondFake.width / 2;
+        if ([color isEqualToString:@"rouge"])
+            fondFake.x = 2;
         fondFake.y = -fond.height / 2;
         [jauge addChild:fondFake];
         
