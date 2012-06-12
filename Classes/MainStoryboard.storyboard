@@ -133,7 +133,7 @@
                                 <rect key="frame" x="48" y="50" width="372" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="boardillu_motifsbleu@2x.png" id="pf3-Ec-Wcz">
+                                    <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" image="boardillu_motifsbleu@2x.png" id="pf3-Ec-Wcz">
                                         <rect key="frame" x="59" y="25" width="252" height="279"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -213,6 +213,7 @@ de couleurs pour booster ses performances !  </string>
                     <connections>
                         <outlet property="gestureOutlet" destination="mKg-t8-lN0" id="e2l-bj-wuX"/>
                         <outlet property="itemsContainer" destination="sSS-Br-eIa" id="ers-MQ-MIL"/>
+                        <outlet property="motifMilieu" destination="pf3-Ec-Wcz" id="Hmu-CT-uUu"/>
                     </connections>
                 </viewController>
                 <swipeGestureRecognizer direction="down" id="mKg-t8-lN0">
@@ -715,97 +716,6 @@ de couleurs pour booster ses performances !  </string>
         <image name="traits@2x.png" width="519" height="268"/>
         <image name="triboard-customization_bg@2x.png" width="787" height="479"/>
     </resources>
-    <classes>
-        <class className="BagUIViewController" superclassName="GenericUIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BagUIViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="itemForTriboardSelected:"/>
-                <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
-                <relationship kind="outlet" name="okButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="CustomUITabBarController" superclassName="UITabBarController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomUITabBarController.h"/>
-        </class>
-        <class className="GameUIViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GameUIViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="sparrowView" candidateClass="SPView"/>
-            </relationships>
-        </class>
-        <class className="GenericUIViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GenericUIViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="viewTitleLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="IslandUIViewController" superclassName="GenericUIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/IslandUIViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
-            </relationships>
-        </class>
-        <class className="MainUINavigationControllerViewController" superclassName="UINavigationController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainUINavigationControllerViewController.h"/>
-        </class>
-        <class className="MainUIViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainUIViewController.h"/>
-        </class>
-        <class className="MissionUIViewController" superclassName="GenericUIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MissionUIViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
-                <relationship kind="outlet" name="uiImageView" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="SPView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SPView.h"/>
-        </class>
-        <class className="ShopUIViewController" superclassName="GenericUIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ShopUIViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
-                <relationship kind="outlet" name="productDetail" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="TravelUIViewController" superclassName="GenericUIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TravelUIViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
-                <relationship kind="outlet" name="uiPickerView" candidateClass="UIPickerView"/>
-            </relationships>
-        </class>
-        <class className="TriboardUIViewController" superclassName="GenericUIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TriboardUIViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="busIncoming:" candidateClass="UIGestureRecognizer"/>
-                <relationship kind="outlet" name="gestureOutlet" candidateClass="UISwipeGestureRecognizer"/>
-                <relationship kind="outlet" name="itemsContainer" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="TribuUIViewController" superclassName="GenericUIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TribuUIViewController.h"/>
-        </class>
-        <class className="UIButtonCustomFontKohicle25" superclassName="UIButton">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIButtonCustomFontKohicle25.h"/>
-        </class>
-        <class className="UIButtonCustomFontTwCenMT" superclassName="UIButton">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIButtonCustomFontTwCenMT.h"/>
-        </class>
-        <class className="UILabelCustomFontKohicle25" superclassName="UILabel">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UILabelCustomFontKohicle25.h"/>
-        </class>
-        <class className="UILabelCustomFontTwCenMT" superclassName="UILabel">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UILabelCustomFontTwCenMT.h"/>
-        </class>
-        <class className="iCarousel" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iCarousel.h"/>
-            <relationships>
-                <relationship kind="outlet" name="dataSource"/>
-                <relationship kind="outlet" name="delegate"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <nil key="statusBar"/>
         <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>

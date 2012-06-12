@@ -189,6 +189,8 @@
 }
 
 - (IBAction)itemForTriboardSelected:(id)sender {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"itemSelectedFromBag" 
+                                                        object:[NSNumber numberWithInt:1]];
     self.tabBarController.selectedIndex = 0;
 }
 @end

@@ -15,5 +15,6 @@
 @property (weak, nonatomic) IBOutlet UIView *itemsContainer;
 @property (nonatomic, retain) NSMutableDictionary *itemDatas;
 @property (nonatomic, retain) ColorUIViewController *colorUIViewController;
+@property (weak, nonatomic) IBOutlet UIImageView *motifMilieu;
 
 @end

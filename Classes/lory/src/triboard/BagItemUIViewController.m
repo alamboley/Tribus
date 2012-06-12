@@ -27,6 +27,39 @@
 
 }
 
+///////////////////////////////////////////////////////////////
+#pragma mark GMGridViewActionDelegate	  	
+//////////////////////////////////////////////////////////////
+
+- (void)GMGridView:(GMGridView *)gridView didTapOnItemAtIndex:(NSInteger)position
+{
+    NSLog(@"Did tap at index %d", position);
+    /*[[NSNotificationCenter defaultCenter] postNotificationName:@"itemSelectedFromBag" 
+                                                        object:[NSNumber numberWithInt:1]];
+    self.tabBarController.selectedIndex = 0;*/
+}
+
+- (void)GMGridViewDidTapOnEmptySpace:(GMGridView *)gridView
+
+{
+    NSLog(@"Tap on empty space");
+}
+
+- (void)GMGridView:(GMGridView *)gridView processDeleteActionForItemAtIndex:(NSInteger)index
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Confirm" message:@"Are you sure you want to delete this item?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Delete", nil];
+    [alert show];
+    _lastDeleteItemIndexAsked = index;
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 1) 
+    {
+        [_currentData removeObjectAtIndex:_lastDeleteItemIndexAsked];
+        [_gmGridView removeObjectAtIndex:_lastDeleteItemIndexAsked withAnimation:GMGridViewItemAnimationFade];
+    }
+}
 
 //////////////////////////////////////////////////////////////
 #pragma mark GMGridViewDataSource

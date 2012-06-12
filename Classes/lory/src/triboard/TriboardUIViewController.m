@@ -17,6 +17,7 @@
 @synthesize gestureOutlet;
 @synthesize itemDatas;
 @synthesize colorUIViewController;
+@synthesize motifMilieu;
 
 - (id)init {
 	if (self = [super init]) {
@@ -24,9 +25,11 @@
 	}
 	return self;
 }
-- (void)awakeFromNib
-{
-
+-(void)awakeFromNib{
+    [[NSNotificationCenter defaultCenter] addObserver:self 
+                                             selector:@selector(itemSelectedFromBag:) 
+                                                 name:@"itemSelectedFromBag" 
+                                               object:nil];
 }
 -(IBAction)busIncoming:(UIGestureRecognizer *)sender{
     [[NSNotificationCenter defaultCenter] postNotificationName:@"busIncoming" object:nil];    
@@ -63,10 +66,6 @@
 {
     [super viewDidLoad];
 
-    [[NSNotificationCenter defaultCenter] addObserver:self 
-                                             selector:@selector(itemFromBagUsed:) 
-                                                 name:@"itemFromBagUsed" 
-                                               object:nil];
     colorUIViewController = [[ColorUIViewController alloc] initWithNibName:@"ColorUIViewController" bundle:nil andType:big];
     [self.view addSubview:colorUIViewController.view];
     CGFloat x = ([self view].bounds.size.height - [colorUIViewController view].bounds.size.width) / 2;
@@ -123,27 +122,15 @@
 }
 
 - (IBAction)itemSelected:(id)sender {
-    //NSLog(@"index %@", self.tabBarController.selectedIndex);
-    int i = 0;
-    /*for (NSDictionary *obj in itemDatas)
-    {
-        NSLog(@"dafuq %@",obj);
-        /*TriboardItemUIViewController *item = [obj objectForKey:@"item"];
-        if(item.button == sender){
-            break;
-        }*/
-        /*i++;
-    }*/
     [[NSNotificationCenter defaultCenter] postNotificationName:@"itemSelectedFromTriboard" 
      object:[NSNumber numberWithInt:[[((UIButton*)sender).titleLabel text] intValue]]];
     self.tabBarController.selectedIndex = 1;
 }
 
-- (void)itemFromBagUsed:(NSNotification *)notification {
+- (void)itemSelectedFromBag:(NSNotification *)notification {
     NSObject *foo;
     foo = [notification object];
-    NSLog(@"Object received : %@",foo);
-    //do something else
+    [motifMilieu setAlpha:1.0];
 }
 -(void)viewDidAppear:(BOOL)animated { 
     [super viewDidAppear:animated];
@@ -159,6 +146,7 @@
     [self setGestureOutlet:nil];
     [self setItemsContainer:nil];
     [self setColorUIViewController:nil];
+    [self setMotifMilieu:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
