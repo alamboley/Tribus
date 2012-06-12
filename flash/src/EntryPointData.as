@@ -1,0 +1,1 @@
+﻿package  {		public class EntryPointData {		public var manual:Boolean;		public var typeOfPoint:String;		public var labelName:String;				public function EntryPointData(manual:Boolean, typeOfPoint:String,labelName) {			this.manual = manual;			this.typeOfPoint = typeOfPoint;			this.labelName = labelName;		}	}	}
