@@ -22,6 +22,7 @@
     
     NSArray *travel;
     
+    NSDate *startTime;
     NSTimer *timer;
     
     int indice;

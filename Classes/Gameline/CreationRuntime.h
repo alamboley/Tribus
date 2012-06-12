@@ -28,7 +28,6 @@
     AnimationSequence *particleTaken;
     
     SPImage *filtreBack;
-    SPImage *piegeImg;
 }
 
 - (id) initWithWorld:(NSString *) worldColor;

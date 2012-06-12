@@ -29,7 +29,6 @@
         particleTaken = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"particulesRecolte.xml"] andAnimations:[NSArray arrayWithObjects:@"particulesRecolte", nil] andFirstAnimation:@"particulesRecolte"];
         
         filtreBack = [SPImage imageWithContentsOfFile:@"filtreBack.png"];
-        piegeImg = [SPImage imageWithContentsOfFile:@"piege.png"];
     }
     
     return self;
@@ -39,11 +38,12 @@
     
     [self stop];
     
+    startTime = nil;
+    
     animFiltreVertFrontDiss = nil;
     animFiltreVertFrontAsso = nil;
     particleTaken = nil;
     filtreBack = nil;
-    piegeImg = nil;
 }
 
 - (void) start {
@@ -83,20 +83,14 @@
 
 - (void) onTickPiege:(NSTimer *) timer {
     
-    //NSLog(@"%f", [startTime timeIntervalSinceNow]);
-    
     int random = arc4random() % 4;
     
     float positionX = hero.x + 500 + arc4random() % 300;
     float positionY = 50 + arc4random() % 250;
     
-    if (random > 2) {
+    if (random > 1 && [startTime timeIntervalSinceNow] < -15) {
         
-        SPImage *monImg = [[SPImage alloc] init];
-        
-        monImg = piegeImg;
-        
-        Piege *piege = [[Piege alloc] initWithName:@"piege" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"20", @"100", @"3", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", @"group:", nil]] andGraphic:monImg];
+        Piege *piege = [[Piege alloc] initWithName:@"piege" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"20", @"100", @"3", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", @"group:", nil]] andGraphic:[SPImage imageWithContentsOfFile:@"piege.png"]];
         [ce.state addObject:piege];
         
     } /*else {
@@ -119,11 +113,11 @@
 
 - (void) onTickDecor:(NSTimer *) timer {
     
-    if ([world isEqualToString:@"jaune"]) {
+    if ([world isEqualToString:@"jaune"] && [startTime timeIntervalSinceNow] < -5) {
         
         int random = arc4random() % 4;
         
-        float positionX = (hero.x + 500 + arc4random() % 300) * 2;
+        float positionX = (hero.x + 500 + arc4random() % 300) * 3;
         
         if (random == 1) {
             

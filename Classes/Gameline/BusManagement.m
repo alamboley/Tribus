@@ -53,6 +53,8 @@
 - (void) start {
     
     timer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(onTick:) userInfo:nil repeats:YES];
+    
+    startTime = [[NSDate alloc] init];
 }
 
 - (void) stop {
@@ -102,12 +104,12 @@
         
         if (arc4random() % 2 > 0) {
             
-            if ([worldColor isEqualToString:@"jaune"]) {
+            if ([worldColor isEqualToString:@"jaune"] && [startTime timeIntervalSinceNow] < -60) {
                 
                 TaedioFumee *taedioFumee = [[TaedioFumee alloc] initWithName:@"taedioFumee" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"120", @"60", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[animTaedioFumee copy]];
                 [ce.state addObject:taedioFumee];
                 
-            } else {
+            } else if ([worldColor isEqualToString:@"rouge"]) {
                 
                 positionY = 270;
                 

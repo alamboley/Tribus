@@ -989,8 +989,6 @@
 		B0C95C8A1583D4ED008AF972 /* jauneArrivee.png in Resources */ = {isa = PBXBuildFile; fileRef = B0C95C881583D4ED008AF972 /* jauneArrivee.png */; };
 		B0C95C8C1583D4FA008AF972 /* jauneArrivee@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0C95C8B1583D4FA008AF972 /* jauneArrivee@2x.png */; };
 		B0C95C8D1583D4FA008AF972 /* jauneArrivee@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0C95C8B1583D4FA008AF972 /* jauneArrivee@2x.png */; };
-		B0CE6B191578A74100C0346B /* FondParallax.m in Sources */ = {isa = PBXBuildFile; fileRef = B0CE6B181578A74100C0346B /* FondParallax.m */; };
-		B0CE6B1A1578A74100C0346B /* FondParallax.m in Sources */ = {isa = PBXBuildFile; fileRef = B0CE6B181578A74100C0346B /* FondParallax.m */; };
 		B0D23C2D157763100014F0DB /* TaedioAspire.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D23C2C157763100014F0DB /* TaedioAspire.m */; };
 		B0D23C2E157763100014F0DB /* TaedioAspire.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D23C2C157763100014F0DB /* TaedioAspire.m */; };
 		B0D23C3115776BBF0014F0DB /* taedioAspire@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D23C2F15776BBF0014F0DB /* taedioAspire@2x.png */; };
@@ -1749,8 +1747,6 @@
 		B0C780D91517A7D70075592B /* icone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icone.png; sourceTree = "<group>"; };
 		B0C95C881583D4ED008AF972 /* jauneArrivee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jauneArrivee.png; sourceTree = "<group>"; };
 		B0C95C8B1583D4FA008AF972 /* jauneArrivee@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jauneArrivee@2x.png"; sourceTree = "<group>"; };
-		B0CE6B171578A74100C0346B /* FondParallax.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FondParallax.h; sourceTree = "<group>"; };
-		B0CE6B181578A74100C0346B /* FondParallax.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FondParallax.m; sourceTree = "<group>"; };
 		B0D23C2B1577630F0014F0DB /* TaedioAspire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaedioAspire.h; sourceTree = "<group>"; };
 		B0D23C2C157763100014F0DB /* TaedioAspire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaedioAspire.m; sourceTree = "<group>"; };
 		B0D23C2F15776BBF0014F0DB /* taedioAspire@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "taedioAspire@2x.png"; sourceTree = "<group>"; };
@@ -2975,8 +2971,6 @@
 				B0B5E46D15764C2800568EFA /* EcranFumee.m */,
 				043B2EA91576D5CE00C09BBF /* PouvoirExchange.h */,
 				043B2EAA1576D5CE00C09BBF /* PouvoirExchange.m */,
-				B0CE6B171578A74100C0346B /* FondParallax.h */,
-				B0CE6B181578A74100C0346B /* FondParallax.m */,
 				B00C46071578BBFC00745D28 /* WorldRed.h */,
 				B00C46081578BBFC00745D28 /* WorldRed.m */,
 				B00C460B1578BC0B00745D28 /* WorldYellow.h */,
@@ -3952,7 +3946,6 @@
 				043B2EAB1576D5CE00C09BBF /* PouvoirExchange.m in Sources */,
 				B0D23C2D157763100014F0DB /* TaedioAspire.m in Sources */,
 				0401D316157773DF000B3534 /* UImage.m in Sources */,
-				B0CE6B191578A74100C0346B /* FondParallax.m in Sources */,
 				0401D32A1578B2DD000B3534 /* Toast+UIView.m in Sources */,
 				B00C46091578BBFC00745D28 /* WorldRed.m in Sources */,
 				B00C460D1578BC0B00745D28 /* WorldYellow.m in Sources */,
@@ -4111,7 +4104,6 @@
 				043B2EAC1576D5CE00C09BBF /* PouvoirExchange.m in Sources */,
 				B0D23C2E157763100014F0DB /* TaedioAspire.m in Sources */,
 				0401D317157773ED000B3534 /* UImage.m in Sources */,
-				B0CE6B1A1578A74100C0346B /* FondParallax.m in Sources */,
 				0401D32B1578B2DD000B3534 /* Toast+UIView.m in Sources */,
 				B00C460A1578BBFC00745D28 /* WorldRed.m in Sources */,
 				B00C460E1578BC0B00745D28 /* WorldYellow.m in Sources */,
