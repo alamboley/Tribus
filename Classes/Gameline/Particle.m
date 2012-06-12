@@ -31,12 +31,11 @@
             [(SXParticleSystem *)graphic start];
             [[SPStage mainStage].juggler addObject:(SXParticleSystem *)graphic];
             
-            if (worldColor == @"jaune") {
+            if ([worldColor isEqualToString:@"jaune"]) {
                 imgFond = [SPImage imageWithContentsOfFile:@"particleFondJaune.png"];
-            } else if (worldColor == @"rouge") {
+            } else if ([worldColor isEqualToString:@"rouge"]) {
                 imgFond = [SPImage imageWithContentsOfFile:@"particleFondRouge.png"];
             }
-            
             
             [self addChild:imgFond atIndex:0];
             

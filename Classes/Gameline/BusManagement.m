@@ -46,8 +46,10 @@
 
 - (void) destroy {
     
-        animTaedioAspire = nil;
-        animTaedioFumee = nil;
+    animTaedioAspire = nil;
+    animTaedioFumee = nil;
+    
+    startTime = nil;
 }
 
 - (void) start {
@@ -109,7 +111,7 @@
                 TaedioFumee *taedioFumee = [[TaedioFumee alloc] initWithName:@"taedioFumee" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"120", @"60", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[animTaedioFumee copy]];
                 [ce.state addObject:taedioFumee];
                 
-            } else if ([worldColor isEqualToString:@"rouge"]) {
+            } else if ([worldColor isEqualToString:@"rouge"] && [startTime timeIntervalSinceNow] < -25) {
                 
                 positionY = 270;
                 

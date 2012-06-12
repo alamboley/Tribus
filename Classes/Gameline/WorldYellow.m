@@ -78,6 +78,7 @@
     [jauge destroy];
     
     portalRed = nil;
+    jauge = nil;
     
     imgArrivee = nil;
     

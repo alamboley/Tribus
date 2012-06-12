@@ -48,6 +48,8 @@
     [[SPStage mainStage].juggler removeObject:animApparition];
     
     [animEcranNoir removeEventListener:@selector(onTouch:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
+    
+    animEcranNoir = nil;
 }
 
 - (void) onTouch:(SPTouchEvent *) event {

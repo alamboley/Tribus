@@ -48,7 +48,7 @@
 
 - (void) start {
     
-    timerParticle = [NSTimer scheduledTimerWithTimeInterval:0.7 target:self selector:@selector(onTickParticle:) userInfo:nil repeats:YES];
+    timerParticle = [NSTimer scheduledTimerWithTimeInterval:[world isEqualToString:@"jaune"] ? 0.7 : 1.5 target:self selector:@selector(onTickParticle:) userInfo:nil repeats:YES];
     timerPiege = [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(onTickPiege:) userInfo:nil repeats:YES];
     timerDecor = [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(onTickDecor:) userInfo:nil repeats:YES];
     

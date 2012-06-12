@@ -15,7 +15,6 @@
 #import "ColorManager.h"
 #import "EcranFumee.h"
 #import "PouvoirExchange.h"
-#import "FondParallax.h"
 
 @implementation GameState
 
@@ -79,7 +78,6 @@
 
 - (void) destroy {
     
-    // may bug ?
     [bus destroy];
     [creationRuntime destroy];
     
