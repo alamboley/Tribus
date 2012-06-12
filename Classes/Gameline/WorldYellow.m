@@ -21,6 +21,8 @@
         imgArrivee = [SPImage imageWithContentsOfFile:[worldColor stringByAppendingString:@"Arrivee.png"]];
         
         portalRed = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"portailRouge.xml"] andAnimations:[NSArray arrayWithObjects:@"portailrouge", nil] andFirstAnimation:@"portailrouge"];
+        
+        pouvoir = [SPImage imageWithContentsOfFile:@"pouvoir1.png"];
     }
     
     return self;
@@ -29,6 +31,11 @@
 - (void) play {
     
     animHero = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"hero.xml"] andAnimations:[NSArray arrayWithObjects:@"base", @"descente", @"haut", @"fin", @"passage_piege", @"saut", @"sol", nil] andFirstAnimation:@"base"];
+    
+    [self.stage addChild:pouvoir];
+    pouvoir.rotation = SP_D2R(90);
+    pouvoir.x = 90;
+    pouvoir.y = 350;
     
     [super play];
 }
@@ -76,6 +83,9 @@
     
     [self removeChild:jauge];
     [jauge destroy];
+    
+    [self.stage removeChild:pouvoir];
+    pouvoir = nil;
     
     portalRed = nil;
     jauge = nil;
