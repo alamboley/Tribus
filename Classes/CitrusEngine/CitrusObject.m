@@ -66,6 +66,7 @@
     
     if (graphic != nil) {
         [self removeChild:graphic];
+        graphic = nil;
     }
     
 }

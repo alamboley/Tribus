@@ -97,6 +97,9 @@
     
     [self removeChild:[mcSequences objectForKey:previousAnimation]];
     [self.stage.juggler removeObject:[mcSequences objectForKey:previousAnimation]];
+    
+    mcSequences = nil;
+    textureAtlas = nil;
 }
 
 - (AnimationSequence *) copy {

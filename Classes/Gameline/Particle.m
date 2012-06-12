@@ -60,6 +60,7 @@
     
     if (imgFond) {
         [self removeChild:imgFond];
+        imgFond = nil;
     }
 }
 
