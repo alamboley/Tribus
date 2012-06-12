@@ -393,12 +393,12 @@ de couleurs pour booster ses performances !  </string>
                                 </accessibility>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="HXl-RN-i4b" customClass="UIButtonCustomFontTwCenMT">
-                                <rect key="frame" x="25" y="132" width="150" height="56"/>
+                                <rect key="frame" x="25" y="168" width="150" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <inset key="contentEdgeInsets" minX="-6" minY="0.0" maxX="0.0" maxY="-4"/>
                                 <state key="normal" title="TRIBOARD" backgroundImage="main-button-big-normal.png">
-                                    <color key="titleColor" red="0.22745098039215686" green="0.12549019607843137" blue="0.035294117647058823" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.1803921568627451" green="0.2627450980392157" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -409,12 +409,12 @@ de couleurs pour booster ses performances !  </string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xmc-T3-pKJ" customClass="UIButtonCustomFontTwCenMT">
-                                <rect key="frame" x="172" y="132" width="150" height="56"/>
+                                <rect key="frame" x="172" y="168" width="150" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <inset key="contentEdgeInsets" minX="-6" minY="0.0" maxX="0.0" maxY="-4"/>
                                 <state key="normal" title="MISSIONS" backgroundImage="main-button-big-normal.png">
-                                    <color key="titleColor" red="0.2274509804" green="0.12549019610000001" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.1803921568627451" green="0.2627450980392157" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -425,12 +425,12 @@ de couleurs pour booster ses performances !  </string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cGl-mf-K3G" customClass="UIButtonCustomFontTwCenMT">
-                                <rect key="frame" x="320" y="132" width="150" height="56"/>
+                                <rect key="frame" x="320" y="168" width="150" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <inset key="contentEdgeInsets" minX="-6" minY="0.0" maxX="0.0" maxY="-4"/>
                                 <state key="normal" title="SHOP" backgroundImage="main-button-big-normal.png">
-                                    <color key="titleColor" red="0.2274509804" green="0.12549019610000001" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.1803921568627451" green="0.2627450980392157" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -440,12 +440,13 @@ de couleurs pour booster ses performances !  </string>
                                     <segue destination="vQD-VQ-q2c" kind="push" id="fRv-e8-gsx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="I1L-rL-D8j" customClass="UIButtonCustomFontKohicle25">
-                                <rect key="frame" x="29" y="273" width="89" height="37"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="I1L-rL-D8j" customClass="UIButtonCustomFontTwCenMT">
+                                <rect key="frame" x="25" y="275" width="87" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                <state key="normal" title="tribu">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <inset key="contentEdgeInsets" minX="-3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="MA TRIBU" backgroundImage="main-button-small-normal@2x.png">
+                                    <color key="titleColor" red="0.1803921568627451" green="0.2627450980392157" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -453,21 +454,6 @@ de couleurs pour booster ses performances !  </string>
                                 </state>
                                 <connections>
                                     <segue destination="9iW-4u-34L" kind="push" id="BdQ-Tu-cJH"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bCa-Pc-t8o">
-                                <rect key="frame" x="364" y="56" width="89" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="trajets">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="pa0-oe-nky" kind="push" id="31l-H5-oOA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mAI-jZ-bGg">
@@ -500,11 +486,12 @@ de couleurs pour booster ses performances !  </string>
                                     <segue destination="eX8-49-Z58" kind="push" identifier="game" id="j9D-qY-XSJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="i6u-zV-zfB">
-                                <rect key="frame" x="399" y="278" width="81" height="37"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="i6u-zV-zfB" customClass="UIButtonCustomFontTwCenMT">
+                                <rect key="frame" x="373" y="275" width="87" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Options">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <inset key="contentEdgeInsets" minX="-3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="INITIATION" backgroundImage="main-button-small-normal@2x.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -513,6 +500,51 @@ de couleurs pour booster ses performances !  </string>
                                 </state>
                                 <connections>
                                     <segue destination="YgA-Ma-fwJ" kind="modal" modalTransitionStyle="crossDissolve" id="wKq-r3-kUW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="prépare ton voyage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="kyz-of-ac2" customClass="UILabelCustomFontKohicle25">
+                                <rect key="frame" x="97" y="125" width="287" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="trajet iut" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="fTs-ib-R3H" customClass="UILabelCustomFontKohicle25">
+                                <rect key="frame" x="354" y="7" width="113" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="prochain bus : 5min" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="1ky-Yq-xAH" customClass="UILabelCustomFontKohicle25">
+                                <rect key="frame" x="247" y="50" width="220" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.9882352941176471" green="0.52549019607843139" blue="0.0078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="arrêt des marquisats" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="AxK-Ua-oAG" customClass="UILabelCustomFontKohicle25">
+                                <rect key="frame" x="209" y="25" width="258" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="L2T-6g-z1I">
+                                <rect key="frame" x="367" y="8" width="25" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="boutonreglages@2x.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="pa0-oe-nky" kind="push" id="bt6-Xz-pH2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -704,10 +736,12 @@ de couleurs pour booster ses performances !  </string>
         <image name="boardillu_motifsbleu@2x.png" width="504" height="559"/>
         <image name="boardillu_motifsjaune1@2x.png" width="504" height="559"/>
         <image name="boardillu_motifsjaune2@2x.png" width="504" height="559"/>
+        <image name="boutonreglages@2x.png" width="50" height="41"/>
         <image name="fond2@2x.png" width="960" height="640"/>
         <image name="fond3@2x.png" width="960" height="640"/>
         <image name="main-bg@2x.jpg" width="960" height="640"/>
         <image name="main-button-big-normal.png" width="150" height="56"/>
+        <image name="main-button-small-normal@2x.png" width="175" height="61"/>
         <image name="ok-btn@2x.png" width="107" height="98"/>
         <image name="power-none@2x.png" width="84" height="84"/>
         <image name="store_pigment_bleu@2x.png" width="56" height="56"/>
@@ -716,12 +750,101 @@ de couleurs pour booster ses performances !  </string>
         <image name="traits@2x.png" width="519" height="268"/>
         <image name="triboard-customization_bg@2x.png" width="787" height="479"/>
     </resources>
+    <classes>
+        <class className="BagUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BagUIViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="itemForTriboardSelected:"/>
+                <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
+                <relationship kind="outlet" name="okButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="CustomUITabBarController" superclassName="UITabBarController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomUITabBarController.h"/>
+        </class>
+        <class className="GameUIViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GameUIViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="sparrowView" candidateClass="SPView"/>
+            </relationships>
+        </class>
+        <class className="GenericUIViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GenericUIViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="viewTitleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="IslandUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IslandUIViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
+            </relationships>
+        </class>
+        <class className="MainUINavigationControllerViewController" superclassName="UINavigationController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainUINavigationControllerViewController.h"/>
+        </class>
+        <class className="MainUIViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainUIViewController.h"/>
+        </class>
+        <class className="MissionUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MissionUIViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
+                <relationship kind="outlet" name="uiImageView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="SPView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SPView.h"/>
+        </class>
+        <class className="ShopUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ShopUIViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
+                <relationship kind="outlet" name="productDetail" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="TravelUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TravelUIViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
+                <relationship kind="outlet" name="uiPickerView" candidateClass="UIPickerView"/>
+            </relationships>
+        </class>
+        <class className="TriboardUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TriboardUIViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="busIncoming:" candidateClass="UIGestureRecognizer"/>
+                <relationship kind="outlet" name="gestureOutlet" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="outlet" name="itemsContainer" candidateClass="UIView"/>
+                <relationship kind="outlet" name="motifMilieu" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="TribuUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TribuUIViewController.h"/>
+        </class>
+        <class className="UIButtonCustomFontTwCenMT" superclassName="UIButton">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIButtonCustomFontTwCenMT.h"/>
+        </class>
+        <class className="UILabelCustomFontKohicle25" superclassName="UILabel">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UILabelCustomFontKohicle25.h"/>
+        </class>
+        <class className="UILabelCustomFontTwCenMT" superclassName="UILabel">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UILabelCustomFontTwCenMT.h"/>
+        </class>
+        <class className="iCarousel" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iCarousel.h"/>
+            <relationships>
+                <relationship kind="outlet" name="dataSource"/>
+                <relationship kind="outlet" name="delegate"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <nil key="statusBar"/>
         <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="AMI-En-7y9"/>
+        <segue reference="j9D-qY-XSJ"/>
     </inferredMetricsTieBreakers>
 </document>
