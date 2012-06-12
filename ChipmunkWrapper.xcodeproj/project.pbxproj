@@ -794,6 +794,14 @@
 		B04F3A7115853CA1004ED1B7 /* FiltreAssociatif.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F3A7015853CA1004ED1B7 /* FiltreAssociatif.m */; };
 		B04F3A7215853CA1004ED1B7 /* FiltreAssociatif.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F3A7015853CA1004ED1B7 /* FiltreAssociatif.m */; };
 		B054E6121557D54600E84D8F /* CreationRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = B054E6111557D54600E84D8F /* CreationRuntime.m */; };
+		B0634C711587804F008A717B /* heroVert@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0634C6F1587804F008A717B /* heroVert@2x.png */; };
+		B0634C721587804F008A717B /* heroVert@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0634C6F1587804F008A717B /* heroVert@2x.png */; };
+		B0634C731587804F008A717B /* heroVert@2x.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0634C701587804F008A717B /* heroVert@2x.xml */; };
+		B0634C741587804F008A717B /* heroVert@2x.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0634C701587804F008A717B /* heroVert@2x.xml */; };
+		B0634C7715878061008A717B /* heroVert.png in Resources */ = {isa = PBXBuildFile; fileRef = B0634C7515878061008A717B /* heroVert.png */; };
+		B0634C7815878061008A717B /* heroVert.png in Resources */ = {isa = PBXBuildFile; fileRef = B0634C7515878061008A717B /* heroVert.png */; };
+		B0634C7915878061008A717B /* heroVert.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0634C7615878061008A717B /* heroVert.xml */; };
+		B0634C7A15878061008A717B /* heroVert.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0634C7615878061008A717B /* heroVert.xml */; };
 		B06FF2251552A75C00733B84 /* DonneesBus.json in Resources */ = {isa = PBXBuildFile; fileRef = B06FF2241552A75B00733B84 /* DonneesBus.json */; };
 		B06FF2421552ACCB00733B84 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = B06FF22A1552ACCB00733B84 /* NSObject+SBJson.m */; };
 		B06FF2431552ACCB00733B84 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B06FF22D1552ACCB00733B84 /* SBJsonParser.m */; };
@@ -1569,6 +1577,10 @@
 		B04F3A7015853CA1004ED1B7 /* FiltreAssociatif.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiltreAssociatif.m; sourceTree = "<group>"; };
 		B054E6101557D54600E84D8F /* CreationRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreationRuntime.h; sourceTree = "<group>"; };
 		B054E6111557D54600E84D8F /* CreationRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreationRuntime.m; sourceTree = "<group>"; };
+		B0634C6F1587804F008A717B /* heroVert@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heroVert@2x.png"; sourceTree = "<group>"; };
+		B0634C701587804F008A717B /* heroVert@2x.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "heroVert@2x.xml"; sourceTree = "<group>"; };
+		B0634C7515878061008A717B /* heroVert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heroVert.png; sourceTree = "<group>"; };
+		B0634C7615878061008A717B /* heroVert.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = heroVert.xml; sourceTree = "<group>"; };
 		B06FF2241552A75B00733B84 /* DonneesBus.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DonneesBus.json; sourceTree = "<group>"; };
 		B06FF2291552ACCB00733B84 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
 		B06FF22A1552ACCB00733B84 /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
@@ -2517,6 +2529,8 @@
 			children = (
 				B08F673715801A7900EE2961 /* hero@2x.png */,
 				B08F673815801A7900EE2961 /* hero@2x.xml */,
+				B0634C6F1587804F008A717B /* heroVert@2x.png */,
+				B0634C701587804F008A717B /* heroVert@2x.xml */,
 				B0D23C2F15776BBF0014F0DB /* taedioAspire@2x.png */,
 				B0D23C3015776BBF0014F0DB /* taedioAspire@2x.xml */,
 				B0DF399E15753DCB00FD0956 /* taedioFumee@2x.png */,
@@ -2546,6 +2560,8 @@
 			children = (
 				B08F673D15801A8800EE2961 /* hero.png */,
 				B08F673E15801A8800EE2961 /* hero.xml */,
+				B0634C7515878061008A717B /* heroVert.png */,
+				B0634C7615878061008A717B /* heroVert.xml */,
 				B0D23C3515776BD50014F0DB /* taedioAspire.png */,
 				B0D23C3615776BD50014F0DB /* taedioAspire.xml */,
 				B0DF399815753DBF00FD0956 /* taedioFumee.png */,
@@ -3423,6 +3439,10 @@
 				04AD35B81586A4D9009AA8E4 /* triboard_pigment_bleu.png in Resources */,
 				04AD35BA1586A4D9009AA8E4 /* triboard_pigment_orange.png in Resources */,
 				04AD35BC1586A4D9009AA8E4 /* triboard_pigment_vert.png in Resources */,
+				B0634C711587804F008A717B /* heroVert@2x.png in Resources */,
+				B0634C731587804F008A717B /* heroVert@2x.xml in Resources */,
+				B0634C7715878061008A717B /* heroVert.png in Resources */,
+				B0634C7915878061008A717B /* heroVert.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3780,6 +3800,10 @@
 				04AD35B91586A4D9009AA8E4 /* triboard_pigment_bleu.png in Resources */,
 				04AD35BB1586A4D9009AA8E4 /* triboard_pigment_orange.png in Resources */,
 				04AD35BD1586A4D9009AA8E4 /* triboard_pigment_vert.png in Resources */,
+				B0634C721587804F008A717B /* heroVert@2x.png in Resources */,
+				B0634C741587804F008A717B /* heroVert@2x.xml in Resources */,
+				B0634C7815878061008A717B /* heroVert.png in Resources */,
+				B0634C7A15878061008A717B /* heroVert.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

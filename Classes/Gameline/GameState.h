@@ -19,6 +19,7 @@
     SPSprite *ecranFumeeContainer;
     
     AnimationSequence *animEcranNoir;
+    AnimationSequence *animHero;
     
     NSString *worldColor;
     

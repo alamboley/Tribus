@@ -16,6 +16,8 @@
     
     CitrusEngine *ce;
     
+    NSString *worldColor;
+    
     Hero *hero;
     
     NSArray *travel;
@@ -32,7 +34,7 @@
 
 @property (nonatomic) BOOL creerEnnemis;
 
-- (id) initWithData:(NSString *) pathForResource andHero:(Hero *) heroParam;
+- (id) initWithData:(NSString *) pathForResource andHero:(Hero *) heroParam andColor:(NSString *)color;
 
 - (void) destroy;
 

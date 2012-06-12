@@ -52,6 +52,8 @@
     timerPiege = [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(onTickPiege:) userInfo:nil repeats:YES];
     timerDecor = [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(onTickDecor:) userInfo:nil repeats:YES];
     
+    startTime = [[NSDate alloc] init];
+    
     hero = [ce.state getObjectByName:@"hero"];
 }
 
@@ -81,6 +83,8 @@
 
 - (void) onTickPiege:(NSTimer *) timer {
     
+    //NSLog(@"%f", [startTime timeIntervalSinceNow]);
+    
     int random = arc4random() % 4;
     
     float positionX = hero.x + 500 + arc4random() % 300;
@@ -95,7 +99,7 @@
         Piege *piege = [[Piege alloc] initWithName:@"piege" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"20", @"100", @"3", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", @"group:", nil]] andGraphic:monImg];
         [ce.state addObject:piege];
         
-    } else {
+    } /*else {
         
         GraphismTmp *filtrefake = [[GraphismTmp alloc] initWithName:@"filtreVert" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX - 235], [NSString stringWithFormat:@"%f", positionY - 180], @"40", @"80", @"1", @"1", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", @"group:", @"parallax:", nil]] andGraphic:filtreBack];
         [ce.state addObject:filtrefake];
@@ -110,7 +114,7 @@
             FiltreAssociatif *filtreAssoVert = [[FiltreAssociatif alloc] initWithName:@"filtreVert" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"40", @"80", @"3", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", @"group:", nil]] andGraphic:[animFiltreVertFrontAsso copy] andColor:@"vert"];
             [ce.state addObject:filtreAssoVert];
         }
-    }
+    }*/
 }
 
 - (void) onTickDecor:(NSTimer *) timer {

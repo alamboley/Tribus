@@ -18,6 +18,8 @@
     NSTimer *timerDecor;
     NSString *world;
     
+    NSDate *startTime;
+    
     CitrusEngine *ce;
     CitrusObject *hero;
     

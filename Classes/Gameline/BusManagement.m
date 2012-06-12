@@ -14,9 +14,11 @@
 @implementation BusManagement
 @synthesize creerEnnemis;
 
-- (id) initWithData:(NSString *) pathForResource andHero:(Hero *) heroParam {
+- (id) initWithData:(NSString *) pathForResource andHero:(Hero *) heroParam andColor:(NSString *)color {
     
     if (self = [super init]) {
+        
+        worldColor = color;
         
         NSString *filePath = [[NSBundle mainBundle] pathForResource:pathForResource ofType:@"json"];
         NSString *fileContent = [[NSString alloc] initWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
@@ -100,15 +102,19 @@
         
         if (arc4random() % 2 > 0) {
             
-            positionY = 270;
+            if ([worldColor isEqualToString:@"jaune"]) {
+                
+                TaedioFumee *taedioFumee = [[TaedioFumee alloc] initWithName:@"taedioFumee" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"120", @"60", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[animTaedioFumee copy]];
+                [ce.state addObject:taedioFumee];
+                
+            } else {
+                
+                positionY = 270;
+                
+                TaedioAspire *taedioAspire = [[TaedioAspire alloc] initWithName:@"taedioAspire" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"60", @"80", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[animTaedioAspire copy]];
+                [ce.state addObject:taedioAspire];
+            }
             
-            TaedioAspire *taedioAspire = [[TaedioAspire alloc] initWithName:@"taedioAspire" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"60", @"80", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[animTaedioAspire copy]];
-            [ce.state addObject:taedioAspire];
-            
-        } else {
-            
-            TaedioFumee *taedioFumee = [[TaedioFumee alloc] initWithName:@"taedioFumee" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"120", @"60", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[animTaedioFumee copy]];
-            [ce.state addObject:taedioFumee];
         }
     }
 }

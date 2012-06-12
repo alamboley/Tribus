@@ -68,12 +68,10 @@
 
 - (void) play {
     
-    AnimationSequence *mc = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"hero.xml"] andAnimations:[NSArray arrayWithObjects:@"base", @"descente", @"haut", @"fin", @"passage_piege", @"saut", @"sol", nil] andFirstAnimation:@"base"];
-    
-    hero = [[Hero alloc] initWithName:@"hero" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"20", @"150", @"40", @"80", @"2", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", @"group:", nil]] andGraphic:mc];
+    hero = [[Hero alloc] initWithName:@"hero" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"20", @"150", @"40", @"80", @"2", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", @"group:", nil]] andGraphic:animHero];
     [self addObject:hero];
     
-    bus = [[BusManagement alloc] initWithData:@"DonneesBus" andHero:hero];
+    bus = [[BusManagement alloc] initWithData:@"DonneesBus" andHero:hero andColor:worldColor];
     [bus start];
     
     creationRuntime = [[CreationRuntime alloc] initWithWorld:worldColor];
@@ -92,6 +90,7 @@
     creationRuntime = nil;
     
     animEcranNoir = nil;
+    animHero = nil;
     
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     
