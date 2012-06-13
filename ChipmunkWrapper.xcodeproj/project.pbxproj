@@ -11,10 +11,6 @@
 		0401D317157773ED000B3534 /* UImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0401D315157773DF000B3534 /* UImage.m */; };
 		0401D32A1578B2DD000B3534 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0401D3291578B2DD000B3534 /* Toast+UIView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0401D32B1578B2DD000B3534 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0401D3291578B2DD000B3534 /* Toast+UIView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		0401D516158876AE007E1E6F /* BagScrollItemUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0401D514158876AE007E1E6F /* BagScrollItemUIViewController.m */; };
-		0401D517158876AE007E1E6F /* BagScrollItemUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0401D514158876AE007E1E6F /* BagScrollItemUIViewController.m */; };
-		0401D518158876AE007E1E6F /* BagScrollItemUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0401D515158876AE007E1E6F /* BagScrollItemUIViewController.xib */; };
-		0401D519158876AE007E1E6F /* BagScrollItemUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0401D515158876AE007E1E6F /* BagScrollItemUIViewController.xib */; };
 		04060C00157B9A4B00CCAB4A /* MainUINavigationControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04060BFF157B9A4B00CCAB4A /* MainUINavigationControllerViewController.m */; };
 		04060C01157B9A4B00CCAB4A /* MainUINavigationControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04060BFF157B9A4B00CCAB4A /* MainUINavigationControllerViewController.m */; };
 		0417F10A1579080E00A48C0F /* NotificationUIViewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0417F1081579080E00A48C0F /* NotificationUIViewControllerViewController.m */; };
@@ -27,6 +23,10 @@
 		043B2EAC1576D5CE00C09BBF /* PouvoirExchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 043B2EAA1576D5CE00C09BBF /* PouvoirExchange.m */; };
 		0448AB7F157B86F0000D9A22 /* UILabelCustomFontTwCenMT.m in Sources */ = {isa = PBXBuildFile; fileRef = 0448AB7E157B86F0000D9A22 /* UILabelCustomFontTwCenMT.m */; };
 		0448AB80157B86F0000D9A22 /* UILabelCustomFontTwCenMT.m in Sources */ = {isa = PBXBuildFile; fileRef = 0448AB7E157B86F0000D9A22 /* UILabelCustomFontTwCenMT.m */; };
+		044AB43415889AE60023869D /* BagScrollItemUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AB43215889AE60023869D /* BagScrollItemUIViewController.m */; };
+		044AB43515889AE60023869D /* BagScrollItemUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AB43215889AE60023869D /* BagScrollItemUIViewController.m */; };
+		044AB43615889AE60023869D /* BagScrollItemUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044AB43315889AE60023869D /* BagScrollItemUIViewController.xib */; };
+		044AB43715889AE60023869D /* BagScrollItemUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044AB43315889AE60023869D /* BagScrollItemUIViewController.xib */; };
 		0450F8A61586272E00BB9B9C /* coupons-button-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450F8A41586272E00BB9B9C /* coupons-button-normal@2x.png */; };
 		0450F8A71586272E00BB9B9C /* coupons-button-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450F8A41586272E00BB9B9C /* coupons-button-normal@2x.png */; };
 		0450F8A81586272E00BB9B9C /* coupons-button-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450F8A51586272E00BB9B9C /* coupons-button-selected@2x.png */; };
@@ -1113,9 +1113,6 @@
 		0401D315157773DF000B3534 /* UImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UImage.m; sourceTree = "<group>"; };
 		0401D3281578B2DD000B3534 /* Toast+UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Toast+UIView.h"; sourceTree = "<group>"; };
 		0401D3291578B2DD000B3534 /* Toast+UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Toast+UIView.m"; sourceTree = "<group>"; };
-		0401D513158876AE007E1E6F /* BagScrollItemUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BagScrollItemUIViewController.h; sourceTree = "<group>"; };
-		0401D514158876AE007E1E6F /* BagScrollItemUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BagScrollItemUIViewController.m; sourceTree = "<group>"; };
-		0401D515158876AE007E1E6F /* BagScrollItemUIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BagScrollItemUIViewController.xib; sourceTree = "<group>"; };
 		04060BFE157B9A4B00CCAB4A /* MainUINavigationControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainUINavigationControllerViewController.h; sourceTree = "<group>"; };
 		04060BFF157B9A4B00CCAB4A /* MainUINavigationControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainUINavigationControllerViewController.m; sourceTree = "<group>"; };
 		0417F1071579080E00A48C0F /* NotificationUIViewControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationUIViewControllerViewController.h; sourceTree = "<group>"; };
@@ -1126,6 +1123,9 @@
 		043B2EAA1576D5CE00C09BBF /* PouvoirExchange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PouvoirExchange.m; sourceTree = "<group>"; };
 		0448AB7D157B86F0000D9A22 /* UILabelCustomFontTwCenMT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelCustomFontTwCenMT.h; sourceTree = "<group>"; };
 		0448AB7E157B86F0000D9A22 /* UILabelCustomFontTwCenMT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelCustomFontTwCenMT.m; sourceTree = "<group>"; };
+		044AB43115889AE60023869D /* BagScrollItemUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BagScrollItemUIViewController.h; sourceTree = "<group>"; };
+		044AB43215889AE60023869D /* BagScrollItemUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BagScrollItemUIViewController.m; sourceTree = "<group>"; };
+		044AB43315889AE60023869D /* BagScrollItemUIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BagScrollItemUIViewController.xib; sourceTree = "<group>"; };
 		0450F8A41586272E00BB9B9C /* coupons-button-normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coupons-button-normal@2x.png"; sourceTree = "<group>"; };
 		0450F8A51586272E00BB9B9C /* coupons-button-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coupons-button-selected@2x.png"; sourceTree = "<group>"; };
 		0450F8AA1586275700BB9B9C /* coupons-button-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coupons-button-normal.png"; sourceTree = "<group>"; };
@@ -2940,6 +2940,9 @@
 		B0BB60CF1574AC14001BB2CB /* triboard */ = {
 			isa = PBXGroup;
 			children = (
+				044AB43115889AE60023869D /* BagScrollItemUIViewController.h */,
+				044AB43215889AE60023869D /* BagScrollItemUIViewController.m */,
+				044AB43315889AE60023869D /* BagScrollItemUIViewController.xib */,
 				B0BB60D01574AC14001BB2CB /* BagUIViewController.h */,
 				B0BB60D11574AC14001BB2CB /* BagUIViewController.m */,
 				B0BB60D21574AC14001BB2CB /* TriboardItemUIViewController.h */,
@@ -2950,9 +2953,6 @@
 				04BF138F1585160E00E1DDBC /* BagItemUIViewController.h */,
 				04BF13901585160F00E1DDBC /* BagItemUIViewController.m */,
 				04BF13911585160F00E1DDBC /* BagItemUIViewController.xib */,
-				0401D513158876AE007E1E6F /* BagScrollItemUIViewController.h */,
-				0401D514158876AE007E1E6F /* BagScrollItemUIViewController.m */,
-				0401D515158876AE007E1E6F /* BagScrollItemUIViewController.xib */,
 			);
 			path = triboard;
 			sourceTree = "<group>";
@@ -3513,18 +3513,11 @@
 				04986E581587F10900BDA341 /* inventaire_fondboard.png in Resources */,
 				04986E5A1587F10900BDA341 /* inventaire_fondpouvoir1.png in Resources */,
 				04986E5C1587F10900BDA341 /* inventaire_fondpouvoir2.png in Resources */,
-<<<<<<< HEAD
-<<<<<<< HEAD
 				B00D1CB515887440007D2D99 /* pouvoir1-ingame@2x.png in Resources */,
 				B00D1CB8158874C5007D2D99 /* pouvoir1-ingame.png in Resources */,
 				B0E527EF158892720037FE79 /* bouton-pause@2x.png in Resources */,
 				B0E527F2158892810037FE79 /* bouton-pause.png in Resources */,
-=======
-				0401D518158876AE007E1E6F /* BagScrollItemUIViewController.xib in Resources */,
->>>>>>> wip
-=======
-				0401D518158876AE007E1E6F /* BagScrollItemUIViewController.xib in Resources */,
->>>>>>> master
+				044AB43615889AE60023869D /* BagScrollItemUIViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3896,18 +3889,11 @@
 				04986E591587F10900BDA341 /* inventaire_fondboard.png in Resources */,
 				04986E5B1587F10900BDA341 /* inventaire_fondpouvoir1.png in Resources */,
 				04986E5D1587F10900BDA341 /* inventaire_fondpouvoir2.png in Resources */,
-<<<<<<< HEAD
-<<<<<<< HEAD
 				B00D1CB615887440007D2D99 /* pouvoir1-ingame@2x.png in Resources */,
 				B00D1CB9158874C5007D2D99 /* pouvoir1-ingame.png in Resources */,
 				B0E527F0158892720037FE79 /* bouton-pause@2x.png in Resources */,
 				B0E527F3158892810037FE79 /* bouton-pause.png in Resources */,
-=======
-				0401D519158876AE007E1E6F /* BagScrollItemUIViewController.xib in Resources */,
->>>>>>> wip
-=======
-				0401D519158876AE007E1E6F /* BagScrollItemUIViewController.xib in Resources */,
->>>>>>> master
+				044AB43715889AE60023869D /* BagScrollItemUIViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4070,7 +4056,7 @@
 				04E305D21585D0F300B4B265 /* GMGridViewLayoutStrategies.m in Sources */,
 				04E305D41585D0F300B4B265 /* UIGestureRecognizer+GMGridViewAdditions.m in Sources */,
 				04E305D61585D0F300B4B265 /* UIView+GMGridViewAdditions.m in Sources */,
-				0401D516158876AE007E1E6F /* BagScrollItemUIViewController.m in Sources */,
+				044AB43415889AE60023869D /* BagScrollItemUIViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4229,7 +4215,7 @@
 				04E305D31585D0F300B4B265 /* GMGridViewLayoutStrategies.m in Sources */,
 				04E305D51585D0F300B4B265 /* UIGestureRecognizer+GMGridViewAdditions.m in Sources */,
 				04E305D71585D0F300B4B265 /* UIView+GMGridViewAdditions.m in Sources */,
-				0401D517158876AE007E1E6F /* BagScrollItemUIViewController.m in Sources */,
+				044AB43515889AE60023869D /* BagScrollItemUIViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
