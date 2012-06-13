@@ -499,7 +499,7 @@ de couleurs pour booster ses performances !  </string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="YgA-Ma-fwJ" kind="modal" modalTransitionStyle="crossDissolve" id="wKq-r3-kUW"/>
+                                    <segue destination="EW2-y3-Gwy" kind="push" id="MTz-1y-m0Z"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="prépare ton voyage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="kyz-of-ac2" customClass="UILabelCustomFontKohicle25">
@@ -730,6 +730,69 @@ de couleurs pour booster ses performances !  </string>
             </objects>
             <point key="canvasLocation" x="2096" y="-1243"/>
         </scene>
+        <!--Initiation View Controller - initiation-->
+        <scene sceneID="nnt-O6-NrM">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aat-LX-rRj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController title="initiation" id="EW2-y3-Gwy" customClass="InitiationViewController" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" id="e8v-kE-VSr">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="rites_fond@2x.jpeg" id="b14-Wr-oS9">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="jkf-EV-Dkf" customClass="iCarousel">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="choisis ton rite de passage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="grQ-hM-xz2" customClass="UILabelCustomFontKohicle25">
+                                        <rect key="frame" x="0.0" y="0.0" width="480" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="tFR-Pe-4Vr" customClass="UILabelCustomFontKohicle25">
+                                        <rect key="frame" x="20" y="267" width="440" height="53"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="EW2-y3-Gwy" id="cEM-Yu-tUB"/>
+                                    <outlet property="delegate" destination="EW2-y3-Gwy" id="pCu-Xo-Ucn"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3US-qI-qMZ">
+                                <rect key="frame" x="420" y="266" width="53" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="ok-btn@2x.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iFv-3T-4Dk"/>
+                    <connections>
+                        <outlet property="icarousel" destination="jkf-EV-Dkf" id="Yzu-kr-hni"/>
+                        <outlet property="titleLabel" destination="tFR-Pe-4Vr" id="U9c-LZ-YXZ"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1410" y="875"/>
+        </scene>
     </scenes>
     <resources>
         <image name="boardillu_motiforange@2x.png" width="577" height="640"/>
@@ -744,6 +807,7 @@ de couleurs pour booster ses performances !  </string>
         <image name="main-button-small-normal@2x.png" width="175" height="61"/>
         <image name="ok-btn@2x.png" width="107" height="98"/>
         <image name="power-none@2x.png" width="84" height="84"/>
+        <image name="rites_fond@2x.jpeg" width="960" height="640"/>
         <image name="store_pigment_bleu@2x.png" width="56" height="56"/>
         <image name="store_pigment_orange@2x.png" width="56" height="56"/>
         <image name="store_pigment_vert@2x.png" width="56" height="56"/>
@@ -772,6 +836,13 @@ de couleurs pour booster ses performances !  </string>
             <source key="sourceIdentifier" type="project" relativePath="./Classes/GenericUIViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="viewTitleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="InitiationViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/InitiationViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="IslandUIViewController" superclassName="GenericUIViewController">
@@ -845,6 +916,6 @@ de couleurs pour booster ses performances !  </string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="j9D-qY-XSJ"/>
+        <segue reference="AMI-En-7y9"/>
     </inferredMetricsTieBreakers>
 </document>

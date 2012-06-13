@@ -399,6 +399,14 @@
 		04E3071C1585DA5D00B4B265 /* play-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E3071A1585DA5D00B4B265 /* play-btn@2x.png */; };
 		04E3071E1585DA6D00B4B265 /* play-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E3071D1585DA6D00B4B265 /* play-btn.png */; };
 		04E3071F1585DA6D00B4B265 /* play-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E3071D1585DA6D00B4B265 /* play-btn.png */; };
+		04FFE8831589421C0021AB6E /* InitiationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FFE8821589421C0021AB6E /* InitiationViewController.m */; };
+		04FFE8841589421C0021AB6E /* InitiationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FFE8821589421C0021AB6E /* InitiationViewController.m */; };
+		04FFE886158942BC0021AB6E /* initiation.json in Resources */ = {isa = PBXBuildFile; fileRef = 04FFE885158942BC0021AB6E /* initiation.json */; };
+		04FFE887158942BC0021AB6E /* initiation.json in Resources */ = {isa = PBXBuildFile; fileRef = 04FFE885158942BC0021AB6E /* initiation.json */; };
+		04FFE88915894A3B0021AB6E /* rites_fond@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04FFE88815894A3B0021AB6E /* rites_fond@2x.jpeg */; };
+		04FFE88A15894A3B0021AB6E /* rites_fond@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04FFE88815894A3B0021AB6E /* rites_fond@2x.jpeg */; };
+		04FFE88C15894A950021AB6E /* rites_fond.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04FFE88B15894A950021AB6E /* rites_fond.jpeg */; };
+		04FFE88D15894A950021AB6E /* rites_fond.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04FFE88B15894A950021AB6E /* rites_fond.jpeg */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
@@ -1325,6 +1333,11 @@
 		04E3064B1585D9DA00B4B265 /* tribus-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tribus-bg@2x.png"; sourceTree = "<group>"; };
 		04E3071A1585DA5D00B4B265 /* play-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-btn@2x.png"; sourceTree = "<group>"; };
 		04E3071D1585DA6D00B4B265 /* play-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-btn.png"; sourceTree = "<group>"; };
+		04FFE8811589421C0021AB6E /* InitiationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitiationViewController.h; sourceTree = "<group>"; };
+		04FFE8821589421C0021AB6E /* InitiationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitiationViewController.m; sourceTree = "<group>"; };
+		04FFE885158942BC0021AB6E /* initiation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = initiation.json; sourceTree = "<group>"; };
+		04FFE88815894A3B0021AB6E /* rites_fond@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rites_fond@2x.jpeg"; sourceTree = "<group>"; };
+		04FFE88B15894A950021AB6E /* rites_fond.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rites_fond.jpeg; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* ChipmunkWrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChipmunkWrapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -1934,6 +1947,7 @@
 		04E305E41585D9DA00B4B265 /* 1x */ = {
 			isa = PBXGroup;
 			children = (
+				04FFE88B15894A950021AB6E /* rites_fond.jpeg */,
 				04986E551587F10900BDA341 /* inventaire_fondboard.png */,
 				04986E561587F10900BDA341 /* inventaire_fondpouvoir1.png */,
 				04986E571587F10900BDA341 /* inventaire_fondpouvoir2.png */,
@@ -2022,6 +2036,15 @@
 				04E306171585D9DA00B4B265 /* tribus-bg.png */,
 			);
 			path = 1x;
+			sourceTree = "<group>";
+		};
+		04FFE880158941A10021AB6E /* initiation */ = {
+			isa = PBXGroup;
+			children = (
+				04FFE8811589421C0021AB6E /* InitiationViewController.h */,
+				04FFE8821589421C0021AB6E /* InitiationViewController.m */,
+			);
+			path = initiation;
 			sourceTree = "<group>";
 		};
 		080E96DDFE201D6D7F000001 /* Classes */ = {
@@ -2472,6 +2495,7 @@
 				0436129F1583A99300140353 /* coupons.json */,
 				04BF13421583BA2A00E1DDBC /* trajets.json */,
 				04BF136F15850C9400E1DDBC /* inventaire.json */,
+				04FFE885158942BC0021AB6E /* initiation.json */,
 			);
 			name = Models;
 			path = ../Models;
@@ -2480,6 +2504,7 @@
 		B002DBFC156C04AC003F5C78 /* app */ = {
 			isa = PBXGroup;
 			children = (
+				04FFE88815894A3B0021AB6E /* rites_fond@2x.jpeg */,
 				04986E4C1587F0E600BDA341 /* inventaire_fondboard@2x.png */,
 				04986E4D1587F0E600BDA341 /* inventaire_fondpouvoir1@2x.png */,
 				04986E4E1587F0E600BDA341 /* inventaire_fondpouvoir2@2x.png */,
@@ -2819,6 +2844,7 @@
 		B0BB60A11574AC14001BB2CB /* src */ = {
 			isa = PBXGroup;
 			children = (
+				04FFE880158941A10021AB6E /* initiation */,
 				B0BB60A21574AC14001BB2CB /* color */,
 				B0BB60AA1574AC14001BB2CB /* game */,
 				B0BB60AD1574AC14001BB2CB /* GenericUIViewController.h */,
@@ -3524,6 +3550,9 @@
 				B0E527EF158892720037FE79 /* bouton-pause@2x.png in Resources */,
 				B0E527F2158892810037FE79 /* bouton-pause.png in Resources */,
 				044AB43615889AE60023869D /* BagScrollItemUIViewController.xib in Resources */,
+				04FFE886158942BC0021AB6E /* initiation.json in Resources */,
+				04FFE88915894A3B0021AB6E /* rites_fond@2x.jpeg in Resources */,
+				04FFE88C15894A950021AB6E /* rites_fond.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3900,6 +3929,9 @@
 				B0E527F0158892720037FE79 /* bouton-pause@2x.png in Resources */,
 				B0E527F3158892810037FE79 /* bouton-pause.png in Resources */,
 				044AB43715889AE60023869D /* BagScrollItemUIViewController.xib in Resources */,
+				04FFE887158942BC0021AB6E /* initiation.json in Resources */,
+				04FFE88A15894A3B0021AB6E /* rites_fond@2x.jpeg in Resources */,
+				04FFE88D15894A950021AB6E /* rites_fond.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4064,6 +4096,7 @@
 				04E305D61585D0F300B4B265 /* UIView+GMGridViewAdditions.m in Sources */,
 				044AB43415889AE60023869D /* BagScrollItemUIViewController.m in Sources */,
 				B02ED43E1588F95B009E3434 /* Stats.m in Sources */,
+				04FFE8831589421C0021AB6E /* InitiationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4224,6 +4257,7 @@
 				04E305D71585D0F300B4B265 /* UIView+GMGridViewAdditions.m in Sources */,
 				044AB43515889AE60023869D /* BagScrollItemUIViewController.m in Sources */,
 				B02ED43F1588F95B009E3434 /* Stats.m in Sources */,
+				04FFE8841589421C0021AB6E /* InitiationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

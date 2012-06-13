@@ -102,9 +102,7 @@
     
     NSMutableDictionary *currentItem = [itemDatas objectForKey:[items objectAtIndex:icarousel.currentItemIndex]];
     islandTitle.text = [currentItem valueForKey:@"title"];
-    islandTitle.textColor = [(Color *)[currentItem valueForKey:@"color"] color];
-    
-    [self.navigationUIViewController.view setHidden:YES];
+    islandTitle.textColor = [(Color *)[currentItem valueForKey:@"color"] color];    
 }
 
 - (void)viewDidUnload
