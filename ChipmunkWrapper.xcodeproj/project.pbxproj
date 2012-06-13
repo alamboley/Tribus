@@ -743,6 +743,8 @@
 		B0113DDF1553C06A0005F1AB /* BusManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = B0113DDE1553C06A0005F1AB /* BusManagement.m */; };
 		B012E3E315148F52008B9157 /* SXNSDataExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B012E3E215148F52008B9157 /* SXNSDataExtensions.m */; };
 		B012E3E615148F8B008B9157 /* SXParticleSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = B012E3E515148F8B008B9157 /* SXParticleSystem.m */; };
+		B02ED43E1588F95B009E3434 /* Stats.m in Sources */ = {isa = PBXBuildFile; fileRef = B02ED43D1588F95B009E3434 /* Stats.m */; };
+		B02ED43F1588F95B009E3434 /* Stats.m in Sources */ = {isa = PBXBuildFile; fileRef = B02ED43D1588F95B009E3434 /* Stats.m */; };
 		B0375B0B150FCE3C005D61BC /* BigPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = B0375B0A150FCE3C005D61BC /* BigPicture.m */; };
 		B03DE0C4156143FA006AAA5B /* rouge_fond.png in Resources */ = {isa = PBXBuildFile; fileRef = B03DE0BE156143FA006AAA5B /* rouge_fond.png */; };
 		B03DE0C5156143FA006AAA5B /* rouge1.png in Resources */ = {isa = PBXBuildFile; fileRef = B03DE0BF156143FA006AAA5B /* rouge1.png */; };
@@ -1566,6 +1568,8 @@
 		B012E3E215148F52008B9157 /* SXNSDataExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SXNSDataExtensions.m; path = SparrowExtensions/SXNSDataExtensions.m; sourceTree = "<group>"; };
 		B012E3E415148F8B008B9157 /* SXParticleSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SXParticleSystem.h; path = SparrowExtensions/SXParticleSystem.h; sourceTree = "<group>"; };
 		B012E3E515148F8B008B9157 /* SXParticleSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SXParticleSystem.m; path = SparrowExtensions/SXParticleSystem.m; sourceTree = "<group>"; };
+		B02ED43C1588F95B009E3434 /* Stats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stats.h; sourceTree = "<group>"; };
+		B02ED43D1588F95B009E3434 /* Stats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stats.m; sourceTree = "<group>"; };
 		B0375B09150FCE3C005D61BC /* BigPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigPicture.h; sourceTree = "<group>"; };
 		B0375B0A150FCE3C005D61BC /* BigPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigPicture.m; sourceTree = "<group>"; };
 		B03DE0BE156143FA006AAA5B /* rouge_fond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rouge_fond.png; sourceTree = "<group>"; };
@@ -3041,6 +3045,8 @@
 				B00C46081578BBFC00745D28 /* WorldRed.m */,
 				B00C460B1578BC0B00745D28 /* WorldYellow.h */,
 				B00C460C1578BC0B00745D28 /* WorldYellow.m */,
+				B02ED43C1588F95B009E3434 /* Stats.h */,
+				B02ED43D1588F95B009E3434 /* Stats.m */,
 			);
 			path = Gameline;
 			sourceTree = "<group>";
@@ -4057,6 +4063,7 @@
 				04E305D41585D0F300B4B265 /* UIGestureRecognizer+GMGridViewAdditions.m in Sources */,
 				04E305D61585D0F300B4B265 /* UIView+GMGridViewAdditions.m in Sources */,
 				044AB43415889AE60023869D /* BagScrollItemUIViewController.m in Sources */,
+				B02ED43E1588F95B009E3434 /* Stats.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4216,6 +4223,7 @@
 				04E305D51585D0F300B4B265 /* UIGestureRecognizer+GMGridViewAdditions.m in Sources */,
 				04E305D71585D0F300B4B265 /* UIView+GMGridViewAdditions.m in Sources */,
 				044AB43515889AE60023869D /* BagScrollItemUIViewController.m in Sources */,
+				B02ED43F1588F95B009E3434 /* Stats.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
