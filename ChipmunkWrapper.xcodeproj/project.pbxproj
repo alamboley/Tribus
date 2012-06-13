@@ -3514,6 +3514,7 @@
 				04986E5A1587F10900BDA341 /* inventaire_fondpouvoir1.png in Resources */,
 				04986E5C1587F10900BDA341 /* inventaire_fondpouvoir2.png in Resources */,
 <<<<<<< HEAD
+<<<<<<< HEAD
 				B00D1CB515887440007D2D99 /* pouvoir1-ingame@2x.png in Resources */,
 				B00D1CB8158874C5007D2D99 /* pouvoir1-ingame.png in Resources */,
 				B0E527EF158892720037FE79 /* bouton-pause@2x.png in Resources */,
@@ -3521,6 +3522,9 @@
 =======
 				0401D518158876AE007E1E6F /* BagScrollItemUIViewController.xib in Resources */,
 >>>>>>> wip
+=======
+				0401D518158876AE007E1E6F /* BagScrollItemUIViewController.xib in Resources */,
+>>>>>>> master
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3893,6 +3897,7 @@
 				04986E5B1587F10900BDA341 /* inventaire_fondpouvoir1.png in Resources */,
 				04986E5D1587F10900BDA341 /* inventaire_fondpouvoir2.png in Resources */,
 <<<<<<< HEAD
+<<<<<<< HEAD
 				B00D1CB615887440007D2D99 /* pouvoir1-ingame@2x.png in Resources */,
 				B00D1CB9158874C5007D2D99 /* pouvoir1-ingame.png in Resources */,
 				B0E527F0158892720037FE79 /* bouton-pause@2x.png in Resources */,
@@ -3900,6 +3905,9 @@
 =======
 				0401D519158876AE007E1E6F /* BagScrollItemUIViewController.xib in Resources */,
 >>>>>>> wip
+=======
+				0401D519158876AE007E1E6F /* BagScrollItemUIViewController.xib in Resources */,
+>>>>>>> master
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
