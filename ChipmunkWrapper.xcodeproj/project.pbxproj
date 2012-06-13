@@ -1032,6 +1032,10 @@
 		B0DF39A115753DCB00FD0956 /* taedioFumee@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0DF399E15753DCB00FD0956 /* taedioFumee@2x.png */; };
 		B0DF39A215753DCB00FD0956 /* taedioFumee@2x.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0DF399F15753DCB00FD0956 /* taedioFumee@2x.xml */; };
 		B0DF39A315753DCB00FD0956 /* taedioFumee@2x.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0DF399F15753DCB00FD0956 /* taedioFumee@2x.xml */; };
+		B0E527EF158892720037FE79 /* bouton-pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0E527EE158892720037FE79 /* bouton-pause@2x.png */; };
+		B0E527F0158892720037FE79 /* bouton-pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0E527EE158892720037FE79 /* bouton-pause@2x.png */; };
+		B0E527F2158892810037FE79 /* bouton-pause.png in Resources */ = {isa = PBXBuildFile; fileRef = B0E527F1158892810037FE79 /* bouton-pause.png */; };
+		B0E527F3158892810037FE79 /* bouton-pause.png in Resources */ = {isa = PBXBuildFile; fileRef = B0E527F1158892810037FE79 /* bouton-pause.png */; };
 		B0EA41A31519D69C0076DAA6 /* particleFondJaune.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EA41A21519D69C0076DAA6 /* particleFondJaune.png */; };
 		B0EA41BF151A34250076DAA6 /* Tw Cen MT Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B0EA41BD151A34250076DAA6 /* Tw Cen MT Bold.ttf */; };
 		B0EA41C0151A34250076DAA6 /* Tw Cen MT.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B0EA41BE151A34250076DAA6 /* Tw Cen MT.ttf */; };
@@ -1794,6 +1798,8 @@
 		B0DF399915753DBF00FD0956 /* taedioFumee.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = taedioFumee.xml; sourceTree = "<group>"; };
 		B0DF399E15753DCB00FD0956 /* taedioFumee@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "taedioFumee@2x.png"; sourceTree = "<group>"; };
 		B0DF399F15753DCB00FD0956 /* taedioFumee@2x.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "taedioFumee@2x.xml"; sourceTree = "<group>"; };
+		B0E527EE158892720037FE79 /* bouton-pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bouton-pause@2x.png"; sourceTree = "<group>"; };
+		B0E527F1158892810037FE79 /* bouton-pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bouton-pause.png"; sourceTree = "<group>"; };
 		B0EA41A21519D69C0076DAA6 /* particleFondJaune.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particleFondJaune.png; sourceTree = "<group>"; };
 		B0EA41BD151A34250076DAA6 /* Tw Cen MT Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tw Cen MT Bold.ttf"; sourceTree = "<group>"; };
 		B0EA41BE151A34250076DAA6 /* Tw Cen MT.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tw Cen MT.ttf"; sourceTree = "<group>"; };
@@ -2670,6 +2676,7 @@
 				B07BA1231518930B0047D9C4 /* portail_bleu.png */,
 				B07BA1241518930B0047D9C4 /* portail_vert.png */,
 				B084F0F915750813008C8899 /* filtreBack.png */,
+				B0E527F1158892810037FE79 /* bouton-pause.png */,
 				B08F671F157FFC7A00EE2961 /* bonlieu.png */,
 				B08F6720157FFC7A00EE2961 /* bonlieu300m.png */,
 				B08F6721157FFC7A00EE2961 /* sommeiller.png */,
@@ -2712,6 +2719,7 @@
 				B07BA1401518940B0047D9C4 /* portail_bleu@2x.png */,
 				B07BA1411518940B0047D9C4 /* portail_vert@2x.png */,
 				B084F0F615750805008C8899 /* filtreBack@2x.png */,
+				B0E527EE158892720037FE79 /* bouton-pause@2x.png */,
 				B08F672B157FFC9600EE2961 /* bonlieu@2x.png */,
 				B08F672C157FFC9600EE2961 /* bonlieu300m@2x.png */,
 				B08F672D157FFC9600EE2961 /* sommeiller@2x.png */,
@@ -3497,6 +3505,8 @@
 				04986E5C1587F10900BDA341 /* inventaire_fondpouvoir2.png in Resources */,
 				B00D1CB515887440007D2D99 /* pouvoir1-ingame@2x.png in Resources */,
 				B00D1CB8158874C5007D2D99 /* pouvoir1-ingame.png in Resources */,
+				B0E527EF158892720037FE79 /* bouton-pause@2x.png in Resources */,
+				B0E527F2158892810037FE79 /* bouton-pause.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3870,6 +3880,8 @@
 				04986E5D1587F10900BDA341 /* inventaire_fondpouvoir2.png in Resources */,
 				B00D1CB615887440007D2D99 /* pouvoir1-ingame@2x.png in Resources */,
 				B00D1CB9158874C5007D2D99 /* pouvoir1-ingame.png in Resources */,
+				B0E527F0158892720037FE79 /* bouton-pause@2x.png in Resources */,
+				B0E527F3158892810037FE79 /* bouton-pause.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

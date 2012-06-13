@@ -18,6 +18,8 @@
     
     SPSprite *ecranFumeeContainer;
     
+    SPImage *autoDrive;
+    
     AnimationSequence *animEcranNoir;
     AnimationSequence *animHero;
     
