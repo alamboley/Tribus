@@ -101,7 +101,7 @@
     // e.g. self.myOutlet = nil;
 }
 -(CGFloat)carouselItemWidth:(iCarousel *)carousel{
-    return 70.0;
+    return 100.0;
 }
 - (NSUInteger)numberOfItemsInCarousel:(iCarousel *)carousel
 {

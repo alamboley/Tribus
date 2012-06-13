@@ -122,8 +122,10 @@
 }
 
 - (IBAction)itemSelected:(id)sender {
+/*    [[NSNotificationCenter defaultCenter] postNotificationName:@"itemSelectedFromTriboard" 
+     object:[NSNumber numberWithInt:[[((UIButton*)sender).titleLabel text] intValue]]];*/
     [[NSNotificationCenter defaultCenter] postNotificationName:@"itemSelectedFromTriboard" 
-     object:[NSNumber numberWithInt:[[((UIButton*)sender).titleLabel text] intValue]]];
+                                                        object:[NSNumber numberWithInt:0]];
     self.tabBarController.selectedIndex = 1;
 }
 

@@ -43,8 +43,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [titleLabel setFont:[UIFont fontWithName:@"TwCenMT-Regular" size:20]];
-    [descLabel setFont:[UIFont fontWithName:@"TwCenMT-Regular" size:17]];
     [okImage setHidden:NO];
     [okImageBg setHidden:NO];
 }

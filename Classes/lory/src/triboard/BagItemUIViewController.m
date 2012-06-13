@@ -7,6 +7,7 @@
 //
 
 #import "BagItemUIViewController.h"
+#import "BagScrollItemUIViewController.h"
 
 @interface BagItemUIViewController ()
 
@@ -72,42 +73,30 @@
 
 - (CGSize)GMGridView:(GMGridView *)gridView sizeForItemsInInterfaceOrientation:(UIInterfaceOrientation)orientation
 {
-    return CGSizeMake(170, 135);
+    return CGSizeMake(320, 80);
 }
 
 - (GMGridViewCell *)GMGridView:(GMGridView *)gridView cellForItemAtIndex:(NSInteger)index
 {
     //NSLog(@"Creating view indx %d", index);
-    
-    CGSize size = [self GMGridView:gridView sizeForItemsInInterfaceOrientation:[[UIApplication sharedApplication] statusBarOrientation]];
-    
+        
     GMGridViewCell *cell = [gridView dequeueReusableCell];
     
     if (!cell) 
     {
         cell = [[GMGridViewCell alloc] init];
-        cell.deleteButtonIcon = [UIImage imageNamed:@"close_x.png"];
-        cell.deleteButtonOffset = CGPointMake(-15, -15);
         
-        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, size.width, size.height)];
-        view.backgroundColor = [UIColor redColor];
-        view.layer.masksToBounds = NO;
-        view.layer.cornerRadius = 8;
+        BagScrollItemUIViewController *vc=[[BagScrollItemUIViewController alloc] initWithNibName:@"BagScrollItemUIViewController" bundle:nil];
+       // [self.view addSubview:vc.view];
         
-        cell.contentView = view;
+        cell.contentView = vc.view;
+        cell.autoresizesSubviews = NO;
+        cell.clipsToBounds = YES;
+        cell.bounds = vc.view.bounds;
+        cell.frame = vc.view.frame;
     }
     
-    [[cell.contentView subviews] makeObjectsPerformSelector:@selector(removeFromSuperview)];
-    
-    UILabel *label = [[UILabel alloc] initWithFrame:cell.contentView.bounds];
-    label.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    label.text = (NSString *)[_currentData objectAtIndex:index];
-    label.textAlignment = UITextAlignmentCenter;
-    label.backgroundColor = [UIColor clearColor];
-    label.textColor = [UIColor blackColor];
-    label.highlightedTextColor = [UIColor whiteColor];
-    label.font = [UIFont boldSystemFontOfSize:20];
-    [cell.contentView addSubview:label];
+   // [[cell.contentView subviews] makeObjectsPerformSelector:@selector(removeFromSuperview)];
     
     return cell;
 }
