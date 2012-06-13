@@ -85,9 +85,9 @@
 
 - (void) destroy {
     
-    /*[self.stage removeChild:autoDrive];
+    [self.stage removeChild:autoDrive];
     [autoDrive removeEventListener:@selector(onAutoDriveTouched:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
-    autoDrive = nil;*/
+    autoDrive = nil;
     
     [bus destroy];
     [creationRuntime destroy];
