@@ -10,4 +10,28 @@
 
 @implementation Stats
 
+static float nbrParticules = 0;
+static float nbrParticulesCaptured = 0;
+
++ (void) initStats {
+    
+    nbrParticules = 0;
+    nbrParticulesCaptured = 0;
+}
+
++ (void) addParticule {
+    
+    nbrParticules++;
+}
+
++ (void) particuleCaptured {
+    
+    nbrParticulesCaptured++;
+}
+
++ (float) pourcentageParticule {
+    
+    return (nbrParticulesCaptured / nbrParticules * 100);
+}
+
 @end

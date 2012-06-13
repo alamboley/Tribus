@@ -7,7 +7,6 @@
 //
 
 #import "WorldRed.h"
-#import "Jauge.h"
 
 @implementation WorldRed
 
@@ -50,11 +49,6 @@
 - (void) finNiveau:(NSNotification *) notification {
     
     [super finNiveau:notification];
-    
-    Jauge *jauge = [[Jauge alloc] initWithColor:worldColor];
-    [self addChild:jauge];
-    jauge.x = hero.x + 430;
-    jauge.y = 170;
 }
 
 - (void) destroy {

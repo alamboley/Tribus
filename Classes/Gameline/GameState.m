@@ -15,6 +15,7 @@
 #import "ColorManager.h"
 #import "EcranFumee.h"
 #import "PouvoirExchange.h"
+#import "Stats.h"
 
 @implementation GameState
 
@@ -104,6 +105,13 @@
     [self.stage removeChild:ecranFumeeContainer];
     ecranFumeeContainer = nil;
     
+    [self removeChild:resultat];
+    resultat = nil;
+    
+    [self removeChild:jauge];
+    [jauge destroy];
+    jauge = nil;
+    
     [super destroy];
 }
 
@@ -127,6 +135,19 @@
 - (void) finNiveau:(NSNotification *) notification {
     
     hero.move = FALSE;
+    
+    jauge = [[Jauge alloc] initWithColor:worldColor andPourcentage:(int)[Stats pourcentageParticule]];
+    [self addChild:jauge];
+    jauge.x = hero.x + 430;
+    jauge.y = 170;
+    
+    resultat = [[SPTextField alloc] initWithText:[NSString stringWithFormat:@"%d", (int)[Stats pourcentageParticule]]];
+    resultat.fontName = @"Kohicle25";
+    resultat.fontSize = 34;
+    [self addChild:resultat];
+    resultat.x = hero.x + 410;
+    resultat.y = 100;
+    resultat.text = [resultat.text stringByAppendingString:@"%"];
 }
 
 - (void) colorPicked:(NSNotification *) notification {

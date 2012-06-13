@@ -13,6 +13,7 @@
 #import "GraphismTmp.h"
 #import "FiltreDissociatif.h"
 #import "FiltreAssociatif.h"
+#import "Stats.h"
 
 @implementation CreationRuntime
 
@@ -29,6 +30,8 @@
         particleTaken = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"particulesRecolte.xml"] andAnimations:[NSArray arrayWithObjects:@"particulesRecolte", nil] andFirstAnimation:@"particulesRecolte"];
         
         filtreBack = [SPImage imageWithContentsOfFile:@"filtreBack.png"];
+        
+        [Stats initStats];
     }
     
     return self;
@@ -78,6 +81,8 @@
         
         Particle *particleRandom = [[Particle alloc] initWithName:@"particleRandom" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"20", @"20", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[SXParticleSystem particleSystemWithContentsOfFile:[world stringByAppendingString:@"Particle.pex"]] withWorld:world];
         [ce.state addObject:particleRandom];
+        
+        [Stats addParticule];
     }
 }
 

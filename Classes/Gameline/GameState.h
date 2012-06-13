@@ -11,6 +11,7 @@
 #import "Hero.h"
 #import "BusManagement.h"
 #import "CreationRuntime.h"
+#import "Jauge.h"
 
 @interface GameState : State {
     
@@ -28,6 +29,9 @@
     Hero *hero;
     BusManagement *bus;
     CreationRuntime *creationRuntime;
+    
+    Jauge *jauge;
+    SPTextField *resultat;
 }
 
 - (void) play;

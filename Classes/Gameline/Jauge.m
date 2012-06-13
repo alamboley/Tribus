@@ -13,13 +13,13 @@
 
 @synthesize niveauBarre;
 
-- (id) initWithColor:(NSString *) worldColor {
+- (id) initWithColor:(NSString *) worldColor andPourcentage:(int) pourcentage {
     
     if (self = [super init]) {
         
         color = worldColor;
         
-        niveauBarre = 0;
+        niveauBarre = pourcentage;
         
         jauge = [[SPSprite alloc] init];
         [self addChild:jauge];
@@ -54,7 +54,17 @@
         jaugeParticle.pivotX = jaugeParticle.width / 2;
         jaugeParticle.pivotY = jaugeParticle.height / 2;
         jaugeParticle.x = 1.5;
-        jaugeParticle.y = -20;
+        
+        if (niveauBarre < 20) {
+            jaugeParticle.y = -10;
+        } else if (niveauBarre < 40) {
+            jaugeParticle.y = -20;
+        } else if (niveauBarre < 60) {
+            jaugeParticle.y = -30;
+        } else {
+            jaugeParticle.y = -40;
+        }
+
         [jauge addChild:jaugeParticle];
         [[SPStage mainStage].juggler addObject:jaugeParticle];
     }

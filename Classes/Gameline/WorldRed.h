@@ -7,6 +7,7 @@
 //
 
 #import "GameState.h"
+#import "Jauge.h"
 
 @interface WorldRed : GameState {
     

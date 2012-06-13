@@ -10,4 +10,9 @@
 
 @interface Stats : NSObject
 
++ (void) initStats;
++ (void) addParticule;
++ (void) particuleCaptured;
++ (float) pourcentageParticule;
+
 @end

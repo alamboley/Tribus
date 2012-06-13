@@ -14,7 +14,6 @@
     
     SPImage *imgArrivee;
     
-    Jauge *jauge;
     AnimationSequence *portalRed;
     
     SPImage *pouvoir;

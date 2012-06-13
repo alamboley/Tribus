@@ -10,6 +10,7 @@
 #import "SXParticleSystem.h"
 #import "CitrusEngine.h"
 #import "Hero.h"
+#import "Stats.h"
 
 @implementation Particle
 
@@ -101,6 +102,7 @@
         ((CitrusObject *)arbiter.shapeB.body.data).kill = YES;
         
         [[NSNotificationCenter defaultCenter] postNotificationName:worldColor object:nil];
+        [Stats particuleCaptured];
     }
     
     return YES;

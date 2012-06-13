@@ -60,11 +60,6 @@
     
     [super finNiveau:notification];
     
-    jauge = [[Jauge alloc] initWithColor:worldColor];
-    [self addChild:jauge];
-    jauge.x = hero.x + 430;
-    jauge.y = 170;
-    
     [self addChild:portalRed];
     portalRed.x = hero.x + 400;
     portalRed.y = 100;
@@ -82,9 +77,6 @@
     [self removeChild:portalRed];
     [portalRed removeEventListener:@selector(changeLevel:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
     
-    [self removeChild:jauge];
-    [jauge destroy];
-    
     if (pouvoir) {
         [self.stage removeChild:pouvoir];
         [pouvoir removeEventListener:@selector(onPowerTouched:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
@@ -92,7 +84,6 @@
     }
     
     portalRed = nil;
-    jauge = nil;
     
     imgArrivee = nil;
     

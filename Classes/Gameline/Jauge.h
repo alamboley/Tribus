@@ -22,7 +22,7 @@
 
 @property int niveauBarre;
 
-- (id) initWithColor:(NSString *) worldColor;
+- (id) initWithColor:(NSString *) worldColor andPourcentage:(int) pourcentage;
 - (void) destroy;
 
 @end
