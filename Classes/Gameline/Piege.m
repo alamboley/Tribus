@@ -93,13 +93,19 @@
 
 - (BOOL) collisionStart:(CMArbiter*) arbiter space:(CMSpace*) space {
     
+    Hero *theHero;
+    
     if ([((CitrusObject *)arbiter.shapeA.body.data).name isEqualToString:@"hero"]) {
-        [((Hero *)arbiter.shapeA.body.data) hurt];
+        theHero = (Hero *)arbiter.shapeA.body.data;
     } else {
-        [((Hero *)arbiter.shapeB.body.data) hurt];
+        theHero = (Hero *)arbiter.shapeB.body.data;
     }
-
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"piege" object:nil];
+    
+    if (!theHero.usingBouclier) {
+        
+        [theHero hurt];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"piege" object:nil];
+    }
     
     return YES;
 }

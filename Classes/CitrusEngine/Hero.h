@@ -24,19 +24,24 @@
     BOOL touchScreen;
     BOOL move;
     
-    
     AnimationSequence *bulle;
+    BOOL usingBouclier;
+    NSTimer *timerBouclier;
 }
 
 @property (nonatomic) NSString *animation;
 @property (nonatomic) CMShape *sensorOnGround;
 @property (nonatomic) float velocityX;
 @property (nonatomic) BOOL move;
+@property (nonatomic) BOOL usingBouclier;
 
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params;
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params andGraphic:(SPDisplayObject *)displayObject;
 - (void) simpleInit;
 
 - (void) hurt;
+
+- (void) startBouclier;
+- (void) endBouclier:(NSTimer *) timer;
 
 @end

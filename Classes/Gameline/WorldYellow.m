@@ -22,7 +22,7 @@
         
         portalRed = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"portailRouge.xml"] andAnimations:[NSArray arrayWithObjects:@"portailrouge", nil] andFirstAnimation:@"portailrouge"];
         
-        pouvoir = [SPImage imageWithContentsOfFile:@"pouvoir1.png"];
+        pouvoir = [SPImage imageWithContentsOfFile:@"pouvoir1-ingame.png"];
     }
     
     return self;
@@ -34,8 +34,9 @@
     
     [self.stage addChild:pouvoir];
     pouvoir.rotation = SP_D2R(90);
-    pouvoir.x = 90;
-    pouvoir.y = 350;
+    pouvoir.x = 50;
+    pouvoir.y = 430;
+    [pouvoir addEventListener:@selector(onPowerTouched:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
     
     [super play];
 }
@@ -84,8 +85,11 @@
     [self removeChild:jauge];
     [jauge destroy];
     
-    [self.stage removeChild:pouvoir];
-    pouvoir = nil;
+    if (pouvoir) {
+        [self.stage removeChild:pouvoir];
+        [pouvoir removeEventListener:@selector(onPowerTouched:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
+        pouvoir = nil;
+    }
     
     portalRed = nil;
     jauge = nil;
@@ -95,6 +99,15 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     
     [super destroy];
+}
+
+- (void) onPowerTouched:(SPTouchEvent *) event {
+    
+    [self.stage removeChild:pouvoir];
+    [pouvoir removeEventListener:@selector(onPowerTouched:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
+    pouvoir = nil;
+    
+    [hero startBouclier];
 }
 
 @end

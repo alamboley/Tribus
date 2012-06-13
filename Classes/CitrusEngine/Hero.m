@@ -11,7 +11,7 @@
 
 @implementation Hero
 
-@synthesize animation, sensorOnGround, velocityX, move;
+@synthesize animation, sensorOnGround, velocityX, move, usingBouclier;
 
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params {
     
@@ -39,7 +39,7 @@
     
     bulle = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"bulle.xml"] andAnimations:[NSArray arrayWithObjects:@"bulle", nil] andFirstAnimation:@"bulle"];
     
-    //[graphic addChild:bulle];
+    usingBouclier = NO;
     
     move = TRUE;
     
@@ -88,6 +88,21 @@
         touchScreen = FALSE;
     }
     
+}
+
+- (void) startBouclier {
+    
+    timerBouclier = [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(endBouclier:) userInfo:nil repeats:NO];
+    
+    usingBouclier = YES;
+    [graphic addChild:bulle];
+}
+
+- (void) endBouclier:(NSTimer *) timer {
+    
+    timerBouclier = nil;
+    usingBouclier = NO;
+    [graphic removeChild:bulle];
 }
 
 - (void) updateAnimation {

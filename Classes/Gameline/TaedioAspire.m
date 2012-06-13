@@ -81,11 +81,14 @@
 
 - (BOOL) collisionStart:(CMArbiter*) arbiter space:(CMSpace*) space {
     
-    [((Hero *)arbiter.shapeA.body.data) hurt];
-    
-    [(AnimationSequence *)((CitrusObject *)arbiter.shapeB.body.data).graphic changeAnimation:@"taedioAspire" withLoop:NO];
-    
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"piege" object:nil];
+    if (!((Hero *)arbiter.shapeA.body.data).usingBouclier) {
+        
+        [((Hero *)arbiter.shapeA.body.data) hurt];
+        
+        [(AnimationSequence *)((CitrusObject *)arbiter.shapeB.body.data).graphic changeAnimation:@"taedioAspire" withLoop:NO];
+        
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"piege" object:nil];
+    }
     
     return YES;
 }

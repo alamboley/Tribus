@@ -732,6 +732,10 @@
 		B00C460A1578BBFC00745D28 /* WorldRed.m in Sources */ = {isa = PBXBuildFile; fileRef = B00C46081578BBFC00745D28 /* WorldRed.m */; };
 		B00C460D1578BC0B00745D28 /* WorldYellow.m in Sources */ = {isa = PBXBuildFile; fileRef = B00C460C1578BC0B00745D28 /* WorldYellow.m */; };
 		B00C460E1578BC0B00745D28 /* WorldYellow.m in Sources */ = {isa = PBXBuildFile; fileRef = B00C460C1578BC0B00745D28 /* WorldYellow.m */; };
+		B00D1CB515887440007D2D99 /* pouvoir1-ingame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B00D1CB415887440007D2D99 /* pouvoir1-ingame@2x.png */; };
+		B00D1CB615887440007D2D99 /* pouvoir1-ingame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B00D1CB415887440007D2D99 /* pouvoir1-ingame@2x.png */; };
+		B00D1CB8158874C5007D2D99 /* pouvoir1-ingame.png in Resources */ = {isa = PBXBuildFile; fileRef = B00D1CB7158874C5007D2D99 /* pouvoir1-ingame.png */; };
+		B00D1CB9158874C5007D2D99 /* pouvoir1-ingame.png in Resources */ = {isa = PBXBuildFile; fileRef = B00D1CB7158874C5007D2D99 /* pouvoir1-ingame.png */; };
 		B0113DDF1553C06A0005F1AB /* BusManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = B0113DDE1553C06A0005F1AB /* BusManagement.m */; };
 		B012E3E315148F52008B9157 /* SXNSDataExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B012E3E215148F52008B9157 /* SXNSDataExtensions.m */; };
 		B012E3E615148F8B008B9157 /* SXParticleSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = B012E3E515148F8B008B9157 /* SXParticleSystem.m */; };
@@ -1543,6 +1547,8 @@
 		B00C46081578BBFC00745D28 /* WorldRed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorldRed.m; sourceTree = "<group>"; };
 		B00C460B1578BC0B00745D28 /* WorldYellow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorldYellow.h; sourceTree = "<group>"; };
 		B00C460C1578BC0B00745D28 /* WorldYellow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorldYellow.m; sourceTree = "<group>"; };
+		B00D1CB415887440007D2D99 /* pouvoir1-ingame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir1-ingame@2x.png"; sourceTree = "<group>"; };
+		B00D1CB7158874C5007D2D99 /* pouvoir1-ingame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir1-ingame.png"; sourceTree = "<group>"; };
 		B0113DDD1553C0690005F1AB /* BusManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusManagement.h; sourceTree = "<group>"; };
 		B0113DDE1553C06A0005F1AB /* BusManagement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusManagement.m; sourceTree = "<group>"; };
 		B012E3E115148F52008B9157 /* SXNSDataExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SXNSDataExtensions.h; path = SparrowExtensions/SXNSDataExtensions.h; sourceTree = "<group>"; };
@@ -2483,6 +2489,8 @@
 				0450FA15158683A700BB9B9C /* m7@2x.png */,
 				0450FA16158683A700BB9B9C /* m8@2x.png */,
 				0450FA17158683A700BB9B9C /* m9@2x.png */,
+				B00D1CB7158874C5007D2D99 /* pouvoir1-ingame.png */,
+				B00D1CB415887440007D2D99 /* pouvoir1-ingame@2x.png */,
 				0450FA18158683A700BB9B9C /* pouvoir1_parechoc@2x.png */,
 				0450FA19158683A700BB9B9C /* pouvoir2_piedsur@2x.png */,
 				0450FA1A158683A700BB9B9C /* pouvoir3_desembuage@2x.png */,
@@ -3487,6 +3495,8 @@
 				04986E581587F10900BDA341 /* inventaire_fondboard.png in Resources */,
 				04986E5A1587F10900BDA341 /* inventaire_fondpouvoir1.png in Resources */,
 				04986E5C1587F10900BDA341 /* inventaire_fondpouvoir2.png in Resources */,
+				B00D1CB515887440007D2D99 /* pouvoir1-ingame@2x.png in Resources */,
+				B00D1CB8158874C5007D2D99 /* pouvoir1-ingame.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3858,6 +3868,8 @@
 				04986E591587F10900BDA341 /* inventaire_fondboard.png in Resources */,
 				04986E5B1587F10900BDA341 /* inventaire_fondpouvoir1.png in Resources */,
 				04986E5D1587F10900BDA341 /* inventaire_fondpouvoir2.png in Resources */,
+				B00D1CB615887440007D2D99 /* pouvoir1-ingame@2x.png in Resources */,
+				B00D1CB9158874C5007D2D99 /* pouvoir1-ingame.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

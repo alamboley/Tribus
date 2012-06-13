@@ -8,6 +8,7 @@
 
 #import "TaedioFumee.h"
 #import "CitrusEngine.h"
+#import "Hero.h"
 
 @implementation TaedioFumee
 
@@ -58,13 +59,17 @@
 
 - (void) simpleInit {
     
-    [super.space addCollisionHandlerBetween:@"hero" andTypeB:@"taedioFumee" target:self begin:@selector(collisionStart) preSolve:NULL postSolve:NULL separate:@selector(collisionEnd)];
+    [super.space addCollisionHandlerBetween:@"hero" andTypeB:@"taedioFumee" target:self begin:@selector(collisionStart:) preSolve:NULL postSolve:NULL separate:@selector(collisionEnd)];
 }
 
-- (void) collisionStart {
+- (BOOL) collisionStart:(CMArbiter*) arbiter space:(CMSpace*) space {
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"ecranFumee" object:nil];
-      
+    if (!((Hero *)arbiter.shapeA.body.data).usingBouclier) {
+        
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"ecranFumee" object:nil];
+    }
+    
+    return YES;
 }
 
 @end
