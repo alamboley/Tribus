@@ -27,6 +27,9 @@
     AnimationSequence *bulle;
     BOOL usingBouclier;
     NSTimer *timerBouclier;
+    
+    BOOL usingAutoDrive;
+    NSTimer *timerAutoDrive;
 }
 
 @property (nonatomic) NSString *animation;
@@ -34,6 +37,7 @@
 @property (nonatomic) float velocityX;
 @property (nonatomic) BOOL move;
 @property (nonatomic) BOOL usingBouclier;
+@property (nonatomic) BOOL usingAutoDrive;
 
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params;
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params andGraphic:(SPDisplayObject *)displayObject;
@@ -43,5 +47,8 @@
 
 - (void) startBouclier;
 - (void) endBouclier:(NSTimer *) timer;
+
+- (void) startAutoDrive;
+- (void) endAutoDrive:(NSTimer *) timer;
 
 @end

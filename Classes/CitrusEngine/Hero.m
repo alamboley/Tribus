@@ -11,7 +11,7 @@
 
 @implementation Hero
 
-@synthesize animation, sensorOnGround, velocityX, move, usingBouclier;
+@synthesize animation, sensorOnGround, velocityX, move, usingBouclier, usingAutoDrive;
 
 - (id) initWithName:(NSString *)paramName params:(NSDictionary *)params {
     
@@ -40,6 +40,7 @@
     bulle = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"bulle.xml"] andAnimations:[NSArray arrayWithObjects:@"bulle", nil] andFirstAnimation:@"bulle"];
     
     usingBouclier = NO;
+    usingAutoDrive = NO;
     
     move = TRUE;
     
@@ -103,6 +104,21 @@
     timerBouclier = nil;
     usingBouclier = NO;
     [graphic removeChild:bulle];
+}
+
+- (void) startAutoDrive {
+    
+    timerAutoDrive = [NSTimer scheduledTimerWithTimeInterval:10 target:self selector:@selector(endAutoDrive:) userInfo:nil repeats:NO];
+    
+    usingAutoDrive = YES;
+    graphic.alpha = 0.5;
+}
+
+- (void) endAutoDrive:(NSTimer *)timer {
+    
+    timerAutoDrive = nil;
+    usingAutoDrive = NO;
+    graphic.alpha = 1;
 }
 
 - (void) updateAnimation {

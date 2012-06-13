@@ -9,6 +9,7 @@
 #import "Particle.h"
 #import "SXParticleSystem.h"
 #import "CitrusEngine.h"
+#import "Hero.h"
 
 @implementation Particle
 
@@ -95,12 +96,14 @@
 
 - (BOOL) collisionStart:(CMArbiter*) arbiter space:(CMSpace*) space {
     
-    ((CitrusObject *)arbiter.shapeB.body.data).kill = YES;
-    
-    [[NSNotificationCenter defaultCenter] postNotificationName:worldColor object:nil];
+    if (!((Hero *)arbiter.shapeA.body.data).usingAutoDrive) {
+        
+        ((CitrusObject *)arbiter.shapeB.body.data).kill = YES;
+        
+        [[NSNotificationCenter defaultCenter] postNotificationName:worldColor object:nil];
+    }
     
     return YES;
-    
 }
 
 @end
