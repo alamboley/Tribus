@@ -38,9 +38,6 @@
         Platform *platformBot = [[Platform alloc] initWithName:@"platform" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", gameWidth / 2], @"320", [NSString stringWithFormat:@"%f", gameWidth], @"10", @"TRUE", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", @"isStatic:", nil]]];
         [self addObject:platformBot];
         
-        autoDrive = [SPImage imageWithContentsOfFile:@"bouton-pause.png"];
-        [autoDrive addEventListener:@selector(onAutoDriveTouched:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
-        
         animEcranNoir = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"ecranNoir.xml"] andAnimations:[NSArray arrayWithObjects:@"noirDisparition", @"noirExplosion", nil] andFirstAnimation:@"noirExplosion"];
         
         ecranFumeeContainer = [[SPSprite alloc] init];
@@ -67,6 +64,8 @@
 
 - (void) play {
     
+    autoDrive = [SPImage imageWithContentsOfFile:@"bouton-pause.png"];
+    [autoDrive addEventListener:@selector(onAutoDriveTouched:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
     [self.stage addChild:autoDrive];
     autoDrive.rotation = SP_D2R(90);
     autoDrive.x = 320;
@@ -86,9 +85,9 @@
 
 - (void) destroy {
     
-    [self.stage removeChild:autoDrive];
+    /*[self.stage removeChild:autoDrive];
     [autoDrive removeEventListener:@selector(onAutoDriveTouched:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
-    autoDrive = nil;
+    autoDrive = nil;*/
     
     [bus destroy];
     [creationRuntime destroy];
