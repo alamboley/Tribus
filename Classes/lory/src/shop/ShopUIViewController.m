@@ -23,15 +23,9 @@
 - (void)awakeFromNib
 {
     self.itemDatas = [[NSMutableDictionary alloc] init];
-    
-    //set up data
-    //your carousel should always be driven by an array of
-    //data of some kind - don't store data in your item views
-    //or the recycling mechanism will destroy your data once
-    //your item views move off-screen
+
     for (NSDictionary *obj in [USave getArrayForJsonPath:self.title])
     {
-        // on peut recuperer les valeurs en utilisant objectForKey à partir du status qui est un NSDictionary
         for (id key in [obj objectForKey:@"price"])
         {
             id value = [[obj objectForKey:@"price"] objectForKey:key];

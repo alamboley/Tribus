@@ -13,10 +13,12 @@
 @end
 
 @implementation BagScrollItemUIViewController
+@synthesize motifImage;
 @synthesize titleLabel;
 @synthesize descLabel;
 @synthesize powerImage;
 @synthesize backgroundImage;
+@synthesize imagePath,desc,type,backgroundPath;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,7 +32,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [titleLabel setText:self.title];
+    [descLabel setText:self.desc];
+    
+    if([self.type isEqualToString:@"pouvoirs"]){
+        backgroundPath = @"inventaire_fondpouvoir2.png";
+        powerImage.image = [UIImage imageNamed:imagePath];
+    }else{
+        backgroundPath = @"inventaire_fondboard.png";
+        motifImage.image = [UIImage imageNamed:imagePath];
+    }
+    
+    backgroundImage.image = [UIImage imageNamed:backgroundPath];
 }
 
 - (void)viewDidUnload
@@ -39,6 +52,7 @@
     [self setTitleLabel:nil];
     [self setPowerImage:nil];
     [self setBackgroundImage:nil];
+    [self setMotifImage:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

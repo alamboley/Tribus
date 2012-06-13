@@ -13,5 +13,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *descLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *powerImage;
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
+@property (nonatomic, retain) NSString *desc;
+@property (nonatomic, retain) NSString *type;
+@property (nonatomic, retain) NSString *imagePath;
+@property (nonatomic, retain) NSString *backgroundPath;
+@property (weak, nonatomic) IBOutlet UIImageView *motifImage;
 
 @end

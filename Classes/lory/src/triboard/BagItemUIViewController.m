@@ -87,6 +87,7 @@
 
        // [self.view addSubview:vc.view];
         BagScrollItemUIViewController *vc= [_data objectAtIndex:index];
+        vc.titleLabel.text = @"trololololo";
         cell.contentView = vc.view;
         cell.autoresizesSubviews = NO;
         cell.clipsToBounds = YES;
@@ -111,12 +112,11 @@
     NSInteger spacing = 5;
     
     _data = [[NSMutableArray alloc] init];
-
-    NSString *name = @"motifs-inventory";
+    NSString *name = self.title;
     
     // Creation du parser
     SBJsonParser *parser = [[SBJsonParser alloc] init];
-    NSString *jsonPath = [[NSBundle mainBundle] pathForResource:[name stringByReplacingOccurrencesOfString:@"-inventory" withString:@""] ofType:@"json"];
+    NSString *jsonPath = [[NSBundle mainBundle] pathForResource:name ofType:@"json"];
     NSData *jsonData = [NSData dataWithContentsOfFile:jsonPath];    
     NSString *json_string = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
     NSArray *res = [parser objectWithString:json_string error:nil];
@@ -124,13 +124,15 @@
     for (NSDictionary *obj in res)
     {
         NSString *itemId = [obj objectForKey:@"id"];
-        if([[USave getItemIdsforType:name] objectForKey:itemId]){
+        if([[USave getItemIdsforType:[self.title stringByAppendingString:@"-inventory"]] objectForKey:itemId]){
             BagScrollItemUIViewController *vc=[[BagScrollItemUIViewController alloc] initWithNibName:@"BagScrollItemUIViewController" bundle:nil];
-            [vc.titleLabel setText:[obj objectForKey:@"title"]];
-            [vc.descLabel setText:[obj objectForKey:@"description"]];
+            vc.type = self.title;
+            vc.title = [obj objectForKey:@"title"];
+            vc.desc = [obj objectForKey:@"description"];
+            vc.imagePath = [obj objectForKey:@"image-url"];
+            NSLog(@"titleLabel : %@",self.title);
             [_data addObject:vc];
         }
-            NSLog(@"obj id : %@", [obj objectForKey:@"description"]);
     }
 
     _currentData = _data;

@@ -51,6 +51,7 @@
                               [[NSArray alloc] initWithObjects:[obj objectForKey:@"id"],[obj objectForKey:@"title"],[obj objectForKey:@"image-url"],[obj objectForKey:@"items"],nil] forKeys:
                               [[NSArray alloc] initWithObjects:@"id", @"title",@"path",@"items",nil]]
                       forKey:[obj objectForKey:@"id"]];
+        //NSLog(@"THE TITLE %@",[obj objectForKey:@"title"]);
     }
     
     [[NSNotificationCenter defaultCenter] addObserver:self 
@@ -127,6 +128,7 @@
     if (view == nil)
     {
         BagItemUIViewController *viewController =[[BagItemUIViewController alloc] initWithNibName:@"BagItemUIViewController" bundle:nil];
+        viewController.title = [currentItem valueForKey:@"title"];
         [currentItem setValue:viewController forKey:@"controller"];
         //viewController.colors = [currentItem objectForKey:@"colors"];
         //viewController.itemId = [currentItem valueForKey:@"id"];
@@ -137,7 +139,6 @@
         //[viewController.titleLabel setText:[currentItem valueForKey:@"title"]];
         //[viewController.descLabel setText:[currentItem valueForKey:@"description"]];
         //[viewController.motifImage setImage:[UIImage imageNamed:[currentItem valueForKey:@"path"]]];
-        viewController.title = self.title;
         
         //NSLog(@"Items for page : %@ %@", self.title,[USave getItemIdsforType:self.title]);
         
