@@ -12,4 +12,5 @@
 + (void)initSettingsDefaults;
 + (void) saveValue:(id) value forItemId:(NSString*) itemId forCategory: (NSString*) category;
 + (NSDictionary*)getItemIdsforType:(NSString*) type;
++ (NSArray*)getArrayForJsonPath:(NSString*) path;
 @end

@@ -8,7 +8,7 @@
 
 #import "ColorManager.h"
 #import "Color.h"
-#import "SBJson.h"
+#import "USave.h"
 
 @implementation ColorManager
 
@@ -22,18 +22,7 @@ static bool inited = NO;
     colorDictionnary = [[NSMutableDictionary alloc] init];
     NSUserDefaults *pref = [NSUserDefaults standardUserDefaults];
     
-    // Creation du parser
-    SBJsonParser *parser = [[SBJsonParser alloc] init];
-    
-    NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"color" ofType:@"json"];
-    NSData *jsonData = [NSData dataWithContentsOfFile:jsonPath];
-    
-    // On récupère le JSON en NSString depuis la réponse
-    NSString *json_string = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-    
-    // on parse la reponse JSON
-    NSArray *res = [parser objectWithString:json_string error:nil];
-    for (NSDictionary *obj in res){
+    for (NSDictionary *obj in [USave getArrayForJsonPath:@"color"]){
         
         Color *color = [[Color alloc] initWithId:[obj valueForKey:@"id"] andCode:[obj valueForKey:@"code"] andLabel:[obj valueForKey:@"label"]];
         

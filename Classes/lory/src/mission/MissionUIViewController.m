@@ -7,7 +7,6 @@
 //
 
 #import "MissionUIViewController.h"
-#import "SBJsonParser.h"
 #import "MissionItemUIViewController.h"
 #import "UIImage+Sprite.h"
 #import "USave.h"
@@ -20,21 +19,9 @@
 
 - (void)awakeFromNib
 {
-    // Creation du parser
-    SBJsonParser *parser = [[SBJsonParser alloc] init];
-    
-    NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"missions" ofType:@"json"];
-    NSData *jsonData = [NSData dataWithContentsOfFile:jsonPath];
-    
-    // On récupère le JSON en NSString depuis la réponse
-    NSString *json_string = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-    
-    // on parse la reponse JSON
-    NSArray *res = [parser objectWithString:json_string error:nil];
-    
     self.itemDatas = [[NSMutableDictionary alloc] init];
     
-    for (NSDictionary *obj in res)
+    for (NSDictionary *obj in [USave getArrayForJsonPath:@"missions"])
     {
         NSNumber *done = [NSNumber numberWithBool:NO];
         if([[[USave getItemIdsforType:self.title] valueForKey:[obj objectForKey:@"id"]] boolValue]){

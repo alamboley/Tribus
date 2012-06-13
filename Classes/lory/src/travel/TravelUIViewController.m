@@ -19,21 +19,9 @@
 
 - (void)awakeFromNib
 {
-    // Creation du parser
-    SBJsonParser *parser = [[SBJsonParser alloc] init];
-    
-    NSString *jsonPath = [[NSBundle mainBundle] pathForResource:self.title ofType:@"json"];
-    NSData *jsonData = [NSData dataWithContentsOfFile:jsonPath];
-    
-    // On récupère le JSON en NSString depuis la réponse
-    NSString *json_string = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-    
-    // on parse la reponse JSON
-    NSArray *res = [parser objectWithString:json_string error:nil];
-    
     self.itemDatas = [[NSMutableDictionary alloc] init];
     
-    for (NSDictionary *obj in res)
+    for (NSDictionary *obj in [USave getArrayForJsonPath:self.title])
     {
         NSNumber *done = [NSNumber numberWithBool:NO];
         if([[obj objectForKey:@"done"] boolValue]){
@@ -46,7 +34,6 @@
         
         //[USave saveItemId:[obj objectForKey:@"id"] forType:self.title];
         //[USave saveValue:[NSNumber numberWithBool:YES] forItemId:[obj objectForKey:@"id"] forCategory:self.title]; // save mission
-        NSLog(@"%@",done);
     }
 }
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

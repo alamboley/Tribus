@@ -22,17 +22,6 @@
 
 - (void)awakeFromNib
 {
-    // Creation du parser
-    SBJsonParser *parser = [[SBJsonParser alloc] init];
-    NSString *jsonPath = [[NSBundle mainBundle] pathForResource:self.title ofType:@"json"];
-    NSData *jsonData = [NSData dataWithContentsOfFile:jsonPath];
-    
-    // On récupère le JSON en NSString depuis la réponse
-    NSString *json_string = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-    
-    // on parse la reponse JSON
-    NSArray *res = [parser objectWithString:json_string error:nil];
-    
     self.itemDatas = [[NSMutableDictionary alloc] init];
     
     //set up data
@@ -40,7 +29,7 @@
     //data of some kind - don't store data in your item views
     //or the recycling mechanism will destroy your data once
     //your item views move off-screen
-    for (NSDictionary *obj in res)
+    for (NSDictionary *obj in [USave getArrayForJsonPath:self.title])
     {
         // on peut recuperer les valeurs en utilisant objectForKey à partir du status qui est un NSDictionary
         for (id key in [obj objectForKey:@"price"])

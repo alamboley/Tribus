@@ -8,7 +8,6 @@
 
 #import "TriboardUIViewController.h"
 #import "USave.h"
-#import "SBJsonParser.h"
 #import "TriboardItemUIViewController.h"
 #import "UImage.h"
 
@@ -72,20 +71,9 @@
     CGFloat y = [self view].bounds.size.width  - 50;
     colorUIViewController.view.frame = CGRectMake(x, y, colorUIViewController.view.frame.size.width, colorUIViewController.view.frame.size.height);
     
-    // Creation du parser
-    SBJsonParser *parser = [[SBJsonParser alloc] init];
-    NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"triboard" ofType:@"json"];
-    NSData *jsonData = [NSData dataWithContentsOfFile:jsonPath];
-    
-    // On récupère le JSON en NSString depuis la réponse
-    NSString *json_string = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-    
-    // on parse la reponse JSON
-    NSArray *res = [parser objectWithString:json_string error:nil];
-    
     self.itemDatas = [[NSMutableDictionary alloc] init];
     
-    for (NSDictionary *obj in res)
+    for (NSDictionary *obj in [USave getArrayForJsonPath:@"triboard"])
     {
         TriboardItemUIViewController *item = [[TriboardItemUIViewController alloc] initWithNibName:@"TriboardItemUIViewController" bundle:nil];
         

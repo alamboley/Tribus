@@ -7,6 +7,7 @@
 //
 
 #import "USave.h"
+#import "SBJsonParser.h"
 
 @implementation USave
 /** Loads user preferences database from Settings.bundle plists. */
@@ -101,5 +102,13 @@
     if([pref dictionaryForKey:type] == nil) items = [[NSDictionary alloc] init];
     else items = [[NSDictionary alloc] initWithDictionary:[pref dictionaryForKey:type]];
     return items;
+}
++ (NSArray*)getArrayForJsonPath:(NSString*) path{
+    SBJsonParser *parser = [[SBJsonParser alloc] init];
+    NSString *jsonPath = [[NSBundle mainBundle] pathForResource:path ofType:@"json"];
+    NSData *jsonData = [NSData dataWithContentsOfFile:jsonPath];    
+    NSString *json_string = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    NSArray *res = [parser objectWithString:json_string error:nil];
+    return res;
 }
 @end

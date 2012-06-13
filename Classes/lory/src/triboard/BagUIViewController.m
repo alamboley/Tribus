@@ -9,8 +9,8 @@
 #import "BagUIViewController.h"
 #import "BagItemUIViewController.h"
 #import "USave.h"
-#import "SBJsonParser.h"
 #import "UImage.h"
+#import "USave.h"
 
 @implementation BagUIViewController
 @synthesize itemDatas;
@@ -39,22 +39,10 @@
 
 - (void)awakeFromNib
 {
-    // Creation du parser
-    SBJsonParser *parser = [[SBJsonParser alloc] init];
-    NSString *jsonPath = [[NSBundle mainBundle] pathForResource:self.title ofType:@"json"];
-    NSData *jsonData = [NSData dataWithContentsOfFile:jsonPath];
-    
-    // On récupère le JSON en NSString depuis la réponse
-    NSString *json_string = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-    
-    // on parse la reponse JSON
-    NSArray *res = [parser objectWithString:json_string error:nil];
-    
     self.itemDatas = [[NSMutableDictionary alloc] init];
     
-    for (NSDictionary *obj in res)
+    for (NSDictionary *obj in [USave getArrayForJsonPath:self.title])
     {
-        // on peut recuperer les valeurs en utilisant objectForKey à partir du status qui est un NSDictionary
         for (id key in [obj objectForKey:@"items"])
         {
             //id value = [[obj objectForKey:@"items"] objectForKey:key];
@@ -63,9 +51,6 @@
                               [[NSArray alloc] initWithObjects:[obj objectForKey:@"id"],[obj objectForKey:@"title"],[obj objectForKey:@"image-url"],[obj objectForKey:@"items"],nil] forKeys:
                               [[NSArray alloc] initWithObjects:@"id", @"title",@"path",@"items",nil]]
                       forKey:[obj objectForKey:@"id"]];
-        
-        /*[[NSNotificationCenter defaultCenter] postNotificationName:@"itemFromBagUsed" 
-         object:[[NSObject alloc] init]];*/
     }
     
     [[NSNotificationCenter defaultCenter] addObserver:self 
