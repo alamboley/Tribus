@@ -135,11 +135,6 @@
     
     //[productDetail removeFromSuperview];
 }
-- (void)carouselDidScroll:(iCarousel *)carousel{
-    
-    NSMutableDictionary *currentItem = [itemDatas objectForKey:[NSString stringWithFormat:@"%d", carousel.currentItemIndex]];
-
-}
 -(CGFloat)carouselItemWidth:(iCarousel *)carousel{
     return 250.0;
 }

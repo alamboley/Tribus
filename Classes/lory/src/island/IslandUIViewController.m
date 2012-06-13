@@ -144,16 +144,6 @@
         }
     }
 }
-
-- (void)carouselDidScroll:(iCarousel *)carousel{
-    
-    //set item label
-    //remember to always set any properties of your carousel item
-    //views outside of the `if (view == nil) {...}` check otherwise
-    //you'll get weird issues with carousel item content appearing
-    //in the wrong place in the carousel
-//    [[NSColor alloc] initWithCIColor:<#(CIColor *)#>]
-}
 -(void) carouselCurrentItemIndexUpdated:(iCarousel *)carousel{
     NSMutableDictionary *currentItem = [itemDatas objectForKey:[items objectAtIndex:carousel.currentItemIndex]];
     islandTitle.text = [currentItem valueForKey:@"title"];
@@ -169,7 +159,12 @@
 
 - (void)carousel:(iCarousel *)carousel didSelectItemAtIndex:(NSInteger)index{
     if(index == carousel.currentItemIndex){
-        //NSLog(@"Island selected : %@",[itemDatas objectAtIndex:index]);
+        if(currentColorId == @"jaune" || currentColorId == @"rouge"){
+            [self performSegueWithIdentifier:@"PushGameViewController" sender:self];
+        }else{
+            UIAlertView *someError = [[UIAlertView alloc] initWithTitle: @"Attention" message: [NSString stringWithFormat:@"Cette île sera bientôt disponible"] delegate: self cancelButtonTitle: @"Ok" otherButtonTitles: nil];
+            [someError show];        
+        }
     }
 }
 
