@@ -8,6 +8,8 @@
 
 #import "BagItemUIViewController.h"
 #import "BagScrollItemUIViewController.h"
+#import "USave.h"
+#import "SBJsonParser.h"
 
 @interface BagItemUIViewController ()
 
@@ -22,10 +24,6 @@
         // Custom initialization
     }
     return self;
-}
--(void)awakeFromNib{
-
-
 }
 
 ///////////////////////////////////////////////////////////////
@@ -86,9 +84,9 @@
     {
         cell = [[GMGridViewCell alloc] init];
         
-        BagScrollItemUIViewController *vc=[[BagScrollItemUIViewController alloc] initWithNibName:@"BagScrollItemUIViewController" bundle:nil];
+
        // [self.view addSubview:vc.view];
-        
+        BagScrollItemUIViewController *vc= [_data objectAtIndex:index];
         cell.contentView = vc.view;
         cell.autoresizesSubviews = NO;
         cell.clipsToBounds = YES;
@@ -110,15 +108,31 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"awakeFromNib");
     NSInteger spacing = 5;
     
     _data = [[NSMutableArray alloc] init];
+
+    NSString *name = @"motifs-inventory";
     
-    for (int i = 0; i < 25; i ++) 
+    // Creation du parser
+    SBJsonParser *parser = [[SBJsonParser alloc] init];
+    NSString *jsonPath = [[NSBundle mainBundle] pathForResource:[name stringByReplacingOccurrencesOfString:@"-inventory" withString:@""] ofType:@"json"];
+    NSData *jsonData = [NSData dataWithContentsOfFile:jsonPath];    
+    NSString *json_string = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    NSArray *res = [parser objectWithString:json_string error:nil];
+    
+    for (NSDictionary *obj in res)
     {
-        [_data addObject:[NSString stringWithFormat:@"A %d", i]];
+        NSString *itemId = [obj objectForKey:@"id"];
+        if([[USave getItemIdsforType:name] objectForKey:itemId]){
+            BagScrollItemUIViewController *vc=[[BagScrollItemUIViewController alloc] initWithNibName:@"BagScrollItemUIViewController" bundle:nil];
+            [vc.titleLabel setText:[obj objectForKey:@"title"]];
+            [vc.descLabel setText:[obj objectForKey:@"description"]];
+            [_data addObject:vc];
+        }
+            NSLog(@"obj id : %@", [obj objectForKey:@"description"]);
     }
+
     _currentData = _data;
     CGRect rect = self.view.bounds;
     rect.size.height -= 80;
@@ -141,6 +155,7 @@
     
     _gmGridView.mainSuperView = self.view;
     _gmGridView.clipsToBounds = YES;
+    
 }
 
 - (void)viewDidUnload

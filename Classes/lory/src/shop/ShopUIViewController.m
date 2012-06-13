@@ -194,6 +194,7 @@
     if (view == nil)
     {
         ShopItemUIController *viewController =[[ShopItemUIController alloc] initWithNibName:@"ShopItemUIController" bundle:nil];
+        viewController.title = self.title;
         [currentItem setValue:viewController forKey:@"controller"];
         viewController.colors = [currentItem objectForKey:@"colors"];
         viewController.itemId = [currentItem valueForKey:@"id"];

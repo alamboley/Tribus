@@ -55,7 +55,6 @@
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
     
-    // Release any cached data, images, etc that aren't in use.
 }
 
 #pragma mark - View lifecycle
@@ -67,7 +66,7 @@
     icarousel.type = iCarouselTypeLinear;
     icarousel.vertical = YES;
     icarousel.viewpointOffset = CGSizeMake(0, 70);
-    UIImage *spriteSheet = [UIImage imageNamed:@"explosion_4_39_128"];
+    /*UIImage *spriteSheet = [UIImage imageNamed:@"explosion_4_39_128"];
 
     NSArray *arrayWithSprites = [spriteSheet spritesWithSpriteSheetImage:spriteSheet 
                                                               spriteSize:CGSizeMake(128, 128)];
@@ -80,7 +79,7 @@
     [self.view makeToast:@"This is a piece of toast with a title. DFJSKSDK dsfk sdfklsghsdkfjhds kdfshkjsdgf hgfdsgjf sfhsdjhf sdgfjsdg dsgkjf shdsf jhsdk fdshds kjfhs" 
                 duration:3.0
                 position:@"top right"
-                   title:@"Toast Title"];
+                   title:@"Toast Title"];*/
 }
 
 

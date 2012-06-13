@@ -27,11 +27,9 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
     }
     return self;
 }
-
 - (void)didReceiveMemoryWarning
 {
     // Releases the view if it doesn't have a superview.
@@ -61,7 +59,7 @@
                 [step3UIView setHidden:NO];
                 
                 [USave saveValue:[NSNumber numberWithBool:YES] forItemId:itemId forCategory:self.title];
-                [USave saveValue:[NSNumber numberWithBool:YES] forItemId:itemId forCategory:@"inventory"];
+                [USave saveValue:[NSNumber numberWithBool:YES] forItemId:itemId forCategory:[self.title stringByAppendingString:@"-inventory"]];
                 step++;
             }
             else {
