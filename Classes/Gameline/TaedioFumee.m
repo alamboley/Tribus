@@ -59,7 +59,7 @@
 
 - (void) simpleInit {
     
-    [super.space addCollisionHandlerBetween:@"hero" andTypeB:@"taedioFumee" target:self begin:@selector(collisionStart:) preSolve:NULL postSolve:NULL separate:@selector(collisionEnd)];
+    [super.space addCollisionHandlerBetween:@"hero" andTypeB:@"taedioFumee" target:self begin:@selector(collisionStart: space:) preSolve:NULL postSolve:NULL separate:NULL];
 }
 
 - (BOOL) collisionStart:(CMArbiter*) arbiter space:(CMSpace*) space {

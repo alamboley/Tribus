@@ -108,7 +108,7 @@
 
 - (void) startAutoDrive {
     
-    timerAutoDrive = [NSTimer scheduledTimerWithTimeInterval:10 target:self selector:@selector(endAutoDrive:) userInfo:nil repeats:NO];
+    timerAutoDrive = [NSTimer scheduledTimerWithTimeInterval:15 target:self selector:@selector(endAutoDrive:) userInfo:nil repeats:NO];
     
     usingAutoDrive = YES;
     graphic.alpha = 0.5;
