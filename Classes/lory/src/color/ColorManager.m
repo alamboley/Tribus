@@ -98,6 +98,12 @@ static bool inited = NO;
         compl1 = @"jaune";
         compl2 = @"bleu";
     }
+    NSLog(@"%@", colorId);
+    if ([colorId isEqualToString:@"orange"]) {
+        NSLog(@"ok");
+        compl1 = @"jaune";
+        compl2 = @"rouge";
+    }
     
     if ([ColorManager removePoints:removePoints forColorId:compl1] && [ColorManager removePoints:removePoints forColorId:compl2]) {
         [ColorManager addPoints:addPoints forColorId:colorId];

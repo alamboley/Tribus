@@ -23,8 +23,8 @@
     CitrusEngine *ce;
     CitrusObject *hero;
     
-    AnimationSequence *animFiltreVertFrontDiss;
-    AnimationSequence *animFiltreVertFrontAsso;
+    AnimationSequence *animFiltreAssoOrangeFront;
+    AnimationSequence *animFiltreAssoOrangeBack;
     AnimationSequence *particleTaken;
     
     SPImage *filtreBack;

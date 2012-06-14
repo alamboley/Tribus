@@ -24,8 +24,8 @@
         ce = [CitrusEngine getInstance];
         world = worldColor;
         
-        animFiltreVertFrontDiss = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"filtreDissociatifVertFront.xml"] andAnimations:[NSArray arrayWithObjects:@"filtre", nil] andFirstAnimation:@"filtre"];
-        animFiltreVertFrontAsso = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"filtreAssociatifVertFront.xml"] andAnimations:[NSArray arrayWithObjects:@"filtre", nil] andFirstAnimation:@"filtre"];
+        animFiltreAssoOrangeBack = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"filtreAssociatifOrangeBack.xml"] andAnimations:[NSArray arrayWithObjects:@"filtre", nil] andFirstAnimation:@"filtre"];
+        animFiltreAssoOrangeFront = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"filtreAssociatifOrangeFront.xml"] andAnimations:[NSArray arrayWithObjects:@"filtre", nil] andFirstAnimation:@"filtre"];
         
         particleTaken = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"particulesRecolte.xml"] andAnimations:[NSArray arrayWithObjects:@"particulesRecolte", nil] andFirstAnimation:@"particulesRecolte"];
         
@@ -43,8 +43,8 @@
     
     startTime = nil;
     
-    animFiltreVertFrontDiss = nil;
-    animFiltreVertFrontAsso = nil;
+    animFiltreAssoOrangeBack = nil;
+    animFiltreAssoOrangeFront = nil;
     particleTaken = nil;
     filtreBack = nil;
 }
@@ -98,22 +98,16 @@
         Piege *piege = [[Piege alloc] initWithName:@"piege" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"20", @"100", @"3", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", @"group:", nil]] andGraphic:[SPImage imageWithContentsOfFile:@"piege.png"]];
         [ce.state addObject:piege];
         
-    } /*else {
+    }
+    
+    if ([world isEqualToString:@"rouge"] && ([startTime timeIntervalSinceNow] > -75 && [startTime timeIntervalSinceNow] < -70)) {
         
-        GraphismTmp *filtrefake = [[GraphismTmp alloc] initWithName:@"filtreVert" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX - 235], [NSString stringWithFormat:@"%f", positionY - 180], @"40", @"80", @"1", @"1", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", @"group:", @"parallax:", nil]] andGraphic:filtreBack];
+        Sensor *filtrefake = [[Sensor alloc] initWithName:@"filtreOrangeFake" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"40", @"80", @"1", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", @"group:", nil]] andGraphic:[animFiltreAssoOrangeBack copy]];
         [ce.state addObject:filtrefake];
         
-        if (random > 1) {
-            
-            FiltreDissociatif *filtreDissVert = [[FiltreDissociatif alloc] initWithName:@"filtreVert" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"40", @"80", @"3", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", @"group:", nil]] andGraphic:[animFiltreVertFrontDiss copy] andColor:@"vert"];
-            [ce.state addObject:filtreDissVert];
-            
-        } else {
-            
-            FiltreAssociatif *filtreAssoVert = [[FiltreAssociatif alloc] initWithName:@"filtreVert" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"40", @"80", @"3", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", @"group:", nil]] andGraphic:[animFiltreVertFrontAsso copy] andColor:@"vert"];
-            [ce.state addObject:filtreAssoVert];
-        }
-    }*/
+        FiltreAssociatif *filtreAssoOrange = [[FiltreAssociatif alloc] initWithName:@"filtreOrange" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"40", @"80", @"3", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", @"group:", nil]] andGraphic:[animFiltreAssoOrangeFront copy] andColor:@"orange"];
+        [ce.state addObject:filtreAssoOrange];
+    }
 }
 
 - (void) onTickDecor:(NSTimer *) timer {
