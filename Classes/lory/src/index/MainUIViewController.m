@@ -11,6 +11,7 @@
 #import "ColorManager.h"
 
 @implementation MainUIViewController
+@synthesize nextBusUILabel;
 @synthesize colorUIViewController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -61,7 +62,9 @@
      addObserver:self
      selector:@selector(startGameHandler:)
      name:@"startGame"
-     object:nil ];
+     object:nil];
+    
+    minutesLeft = 5;
 }
 -(void)startGameHandler: (NSNotification *) notification{
     [self performSegueWithIdentifier:@"island" sender:self];    
@@ -72,6 +75,7 @@
     [colorUIViewController.view removeFromSuperview];
     [self setColorUIViewController:nil];
     notif = nil;
+    [self setNextBusUILabel:nil];
     [super viewDidUnload];
 
     // Release any retained subviews of the main view.
@@ -80,6 +84,7 @@
 -(void)viewDidAppear:(BOOL)animated { 
     [super viewDidAppear:animated];
     [colorUIViewController viewDidAppear:YES];
+    [nextBusUILabel setText:[NSString stringWithFormat:@"Prochain bus dans : %d min" , minutesLeft--]];
 }
 
 -(void)viewDidDisappear:(BOOL)animated { 

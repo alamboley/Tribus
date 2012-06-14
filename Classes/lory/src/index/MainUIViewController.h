@@ -13,7 +13,9 @@
 
 @interface MainUIViewController : UIViewController{
     NotificationUIViewControllerViewController *notif;
+    int minutesLeft;
 }
+@property (weak, nonatomic) IBOutlet UILabel *nextBusUILabel;
 @property (nonatomic, retain) ColorUIViewController *colorUIViewController;
 
 @end
