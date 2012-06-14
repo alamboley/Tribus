@@ -31,9 +31,11 @@
             id value = [[obj objectForKey:@"price"] objectForKey:key];
             //NSLog(@"%@ : %@", key, value);
         }
+        NSString *level = [obj objectForKey:@"level"] != nil ? [obj objectForKey:@"level"] : @"none";
+        
         [itemDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
-         [[NSArray alloc] initWithObjects:[obj objectForKey:@"id"],[obj objectForKey:@"title"], [obj objectForKey:@"description"],[obj objectForKey:@"image-url"],[obj objectForKey:@"price"],nil] forKeys:
-         [[NSArray alloc] initWithObjects:@"id", @"title", @"description",@"path",@"colors",nil]]
+         [[NSArray alloc] initWithObjects:[obj objectForKey:@"id"],[obj objectForKey:@"title"],level, [obj objectForKey:@"description"],[obj objectForKey:@"image-url"],[obj objectForKey:@"price"],nil] forKeys:
+         [[NSArray alloc] initWithObjects:@"id", @"title", @"level", @"description",@"path",@"colors",nil]]
          forKey:[obj objectForKey:@"id"]];
     }
 
@@ -176,6 +178,7 @@
         [currentItem setValue:viewController forKey:@"controller"];
         viewController.colors = [currentItem objectForKey:@"colors"];
         viewController.itemId = [currentItem valueForKey:@"id"];
+        viewController.level = [currentItem valueForKey:@"level"];
         viewController.bought = [[USave getItemIdsforType:self.title] valueForKey:viewController.itemId];
         
         view = viewController.view;

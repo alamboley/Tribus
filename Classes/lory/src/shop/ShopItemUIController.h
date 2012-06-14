@@ -21,7 +21,10 @@
 @property (retain, nonatomic) NSDictionary *colors;
 @property (retain, nonatomic) NSString *colorsId;
 @property (retain, nonatomic) NSString *itemId;
+@property (retain, nonatomic) NSString *level;
 @property (retain, nonatomic) NSNumber *bought;
+@property (weak, nonatomic) IBOutlet UILabel *levelLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *levelBg;
 
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *priceImage;

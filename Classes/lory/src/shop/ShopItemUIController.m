@@ -11,6 +11,8 @@
 #import "USave.h"
 
 @implementation ShopItemUIController
+@synthesize levelLabel;
+@synthesize levelBg;
 @synthesize priceLabel;
 @synthesize priceImage;
 @synthesize step1UIView;
@@ -21,7 +23,7 @@
 @synthesize descLabel;
 @synthesize motifImage;
 @synthesize buyButton;
-@synthesize colors,colorsId,itemId,bought;
+@synthesize colors,colorsId,itemId,bought,level;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -84,6 +86,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    if(![level isEqualToString:@"none"]){
+        [levelBg setHidden:YES];
+        [levelLabel setHidden:YES];
+    }else{
+        [levelLabel setText:[@"NIVEAU " stringByAppendingString:level]];        
+    }
+        
     //[titleLabel setFont:[UIFont fontWithName:@"Kohicle25" size:35]];
     //[descLabel setFont:[UIFont fontWithName:@"TwCenMT-Regular" size:15]];
     //[buyButton.titleLabel setFont:[UIFont fontWithName:@"TwCenMT-Regular" size:13]];
@@ -122,6 +131,8 @@
     [self setStep1UIView:nil];
     [self setStep2UIView:nil];
     [self setStep3UIView:nil];
+    [self setLevelLabel:nil];
+    [self setLevelBg:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

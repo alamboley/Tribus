@@ -3,59 +3,69 @@
  "title":"initiatique",
  "description": "une bonne base sans aucun doute \n x2.",
  "image-url": "m1.png",
+ "level": "1",
  "price":{"violet":10}
  },{
  "id":"1",
  "title":"force tranquille",
  "description": "la maitrise de soi est la voie vers la victoire.",
  "image-url": "m2.png",
+ "level": "1",
  "price":{"orange":60}
  },{
  "id":"2",
  "title":"brutal",
  "description": "D'une puissance phénoménale, il attire les pigments.",
  "image-url": "m3.png",
+ "level": "1",
  "price":{"vert":14}
  },{
  "id":"3",
  "title":"ligne du soleil levant",
  "description": "À la lumière du jour, les pigments s'amassent.",
  "image-url": "m4.png",
+ "level": "1",
  "price":{"bleu":14}
  },{
  "id":"4",
  "title":"shaman",
  "description": "Sage et expérimenté, il canalise l'énergie des alentours.",
  "image-url": "m5.png",
+ "level": "1",
  "price":{"jaune":60}
  },{
  "id":"5",
  "title":"pierre brillante",
  "description": "Ce qui se ressemble s'assemble.",
  "image-url": "m6.png",
+ "level": "1",
  "price":{"rouge":5}
  },{
  "id":"5",
  "title":"sage",
  "description": "L'homme sage et avisé tire profit de ce qui l'entoure",
  "image-url": "m6.png",
+ "level": "1",
  "price":{"rouge":5}
  },{
  "id":"6",
  "title":"illusioniste",
  "description": "Duper les ennemis est sa spécialitée",
  "image-url": "m7.png",
+ "level": "1",
  "price":{"vert":60}
  },{
  "id":"7",
  "title":"duo coloré",
  "description": "Pack des 2 motifs brillants",
  "image-url": "m8.png",
+ "level": "1",
  "price":{"orange":60}
  },{
  "id":"8",
  "title":"guerrier pacifiste",
  "description": "La maîtrise de soi est la voie vers la victoire",
  "image-url": "m9.png",
+ "level": "1",
  "price":{"bleu":60}
  }]
