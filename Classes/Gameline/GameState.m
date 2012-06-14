@@ -53,11 +53,6 @@
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(colorPicked:) name:@"filtreAssociatif" object:nil];
         
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(baddyManagement:) name:@"ecranFumee" object:nil];
-        
-        /*PouvoirExchange *pv = [[PouvoirExchange alloc]initWithImage:@"pouvoir1.png"];
-         [self addChild:pv];
-         [pv start];
-         [pv addEventListener:@selector(onPowerTouched:) atObject:self forType:SP_EVENT_TYPE_TOUCH];*/
     }
     
     return self;
@@ -118,18 +113,6 @@
 - (void) onAutoDriveTouched:(SPTouchEvent *) event {
     
     [hero startAutoDrive];
-}
-
-- (void) onPowerTouched:(SPTouchEvent *) event {
-    
-    [event stopPropagation];
-    
-    SPTouch *touch = [[event touchesWithTarget:self andPhase:SPTouchPhaseBegan] anyObject];
-    
-    if (touch) {
-        //[pv destroy];
-        //[pv removeEventListener:@selector(onPowerTouched:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
-    }
 }
 
 - (void) finNiveau:(NSNotification *) notification {

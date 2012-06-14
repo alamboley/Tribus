@@ -17,7 +17,7 @@
     return self;
 }
 - (void) start{
-    timer = [NSTimer scheduledTimerWithTimeInterval:0.001
+    timer = [NSTimer scheduledTimerWithTimeInterval:0.003
                                              target:self
                                            selector:@selector(timerAction)
                                            userInfo:nil

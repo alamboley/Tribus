@@ -7,11 +7,14 @@
 //
 
 #import "GameState.h"
-#import "Jauge.h"
+#import "PouvoirExchange.h"
 
 @interface WorldRed : GameState {
     
     SPImage *imgArrivee;
+    NSTimer *timerRecupPouvoir;
+    
+    PouvoirExchange *pouvoirExchange;
 }
 
 @end
