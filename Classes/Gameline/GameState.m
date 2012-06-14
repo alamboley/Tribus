@@ -120,14 +120,14 @@
     
     jauge = [[Jauge alloc] initWithColor:worldColor andPourcentage:(int)[Stats pourcentageParticule]];
     [self addChild:jauge];
-    jauge.x = hero.x + 430;
+    jauge.x = hero.x + 415;
     jauge.y = 170;
     
     resultat = [[SPTextField alloc] initWithText:[NSString stringWithFormat:@"%d", (int)[Stats pourcentageParticule]]];
     resultat.fontName = @"Kohicle25";
     resultat.fontSize = 34;
     [self addChild:resultat];
-    resultat.x = hero.x + 410;
+    resultat.x = hero.x + 395;
     resultat.y = 100;
     resultat.text = [resultat.text stringByAppendingString:@"%"];
 }

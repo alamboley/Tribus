@@ -8,6 +8,7 @@
 
 #import "CitrusEngine.h"
 #import "GameState.h"
+#import "AnimationSequence.h"
 
 @interface Main : CitrusEngine {
     
@@ -16,6 +17,7 @@
     NSString *startingColor;
     
     SPImage *imgLoading;
+    AnimationSequence *loading;
     SPImage *play;
 }
 

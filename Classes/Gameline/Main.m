@@ -36,7 +36,7 @@
         
         [super setUpState:game];
         
-        frameRateTextField.visible = TRUE;
+        //frameRateTextField.visible = TRUE;
         
         imgLoading = [SPImage imageWithContentsOfFile:@"loading-bg.png"];
         imgLoading.rotation = SP_D2R(90);
@@ -44,14 +44,18 @@
         
         [self.stage addChild:imgLoading];
         
+        loading = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"loader.xml"] andAnimations:[NSArray arrayWithObject:@"loader"] andFirstAnimation:@"loader"];
+        loading.x = 0;
+        loading.y = 100;
+        
+        [self.stage addChild:loading];
+        
         play = [SPImage imageWithContentsOfFile:@"play-btn.png"];
         play.rotation = SP_D2R(90);
         play.x = 80;
         play.y = 180;
         
-        [self.stage addChild:play];
-        
-        [play addEventListener:@selector(startGame:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
+        [NSTimer scheduledTimerWithTimeInterval:4 target:self selector:@selector(showPlayButton:) userInfo:nil repeats:NO];
     }
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeNiveau:) name:@"changeNiveau" object:nil];
@@ -68,6 +72,16 @@
      }
     
     return self;
+}
+
+- (void) showPlayButton:(NSTimer *) timer {
+    
+    [self.stage addChild:play];
+    
+    [play addEventListener:@selector(startGame:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
+    
+    [self.stage removeChild:loading];
+    loading = nil;
 }
 
 - (void) startGame:(SPTouchEvent *) event {

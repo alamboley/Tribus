@@ -48,11 +48,11 @@
     CitrusObject *panneau = [[CitrusObject alloc] initWithName:@"bg" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", hero.x + 500], @"200", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", nil]] andGraphic:[SPImage imageWithContentsOfFile:@"bonlieu300m.png"]];
     [self addObject:panneau];
     
+    CitrusObject *fondArrivee = [[CitrusObject alloc] initWithName:@"fondArrivee" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", hero.x + 1750], @"50", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", nil]] andGraphic:imgArrivee];
+    [self addObject:fondArrivee];
+    
     CitrusObject *panneauEnd = [[CitrusObject alloc] initWithName:@"bg" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", hero.x + 1700], @"200", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", nil]] andGraphic:[SPImage imageWithContentsOfFile:@"bonlieu.png"]];
     [self addObject:panneauEnd];
-    
-    CitrusObject *fondArrivee = [[CitrusObject alloc] initWithName:@"fondArrivee" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", hero.x + 1700], @"50", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", nil]] andGraphic:imgArrivee];
-    [self addObject:fondArrivee];
     
     bus.creerEnnemis = NO;
     [creationRuntime stop];
@@ -63,12 +63,12 @@
     [super finNiveau:notification];
     
     [self addChild:portalRed];
-    portalRed.x = hero.x + 400;
+    portalRed.x = hero.x + 430;
     portalRed.y = 150;
     
     [self addChild:portalGreen];
-    portalGreen.x = hero.x + 400;
-    portalGreen.y = 50;
+    portalGreen.x = hero.x + 430;
+    portalGreen.y = 10;
     
     [portalRed addEventListener:@selector(changeLevel:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
 }
