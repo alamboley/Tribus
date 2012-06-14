@@ -27,7 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    UIImage *spriteSheet = [UIImage imageNamed:@"loader.png"];
+    UIImage *spriteSheet = [UIImage imageNamed:@"loader-.png"];
     
     NSArray *arrayWithSprites = [spriteSheet spritesWithSpriteSheetImage:spriteSheet 
                                                               spriteSize:CGSizeMake(60, 60)];

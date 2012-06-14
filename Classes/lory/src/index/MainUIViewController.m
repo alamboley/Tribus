@@ -53,7 +53,7 @@
     [super viewDidLoad];
     LandingPageUIViewController *landing = [[LandingPageUIViewController alloc] initWithNibName:@"LandingPageUIViewController" bundle:nil];
     
-    [self.view addSubview:landing.view];
+    //[self.view addSubview:landing.view];
     
     colorUIViewController = [[ColorUIViewController alloc] initWithNibName:@"ColorUIViewController" bundle:nil andType:big];
     [self.view addSubview:colorUIViewController.view];

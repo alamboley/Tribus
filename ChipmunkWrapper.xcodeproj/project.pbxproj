@@ -143,10 +143,10 @@
 		0460E9C8158A8EA7006CC0C7 /* landing-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0460E9C6158A8EA7006CC0C7 /* landing-bg.png */; };
 		0460E9CA158A8EB0006CC0C7 /* landing-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0460E9C9158A8EB0006CC0C7 /* landing-bg@2x.png */; };
 		0460E9CB158A8EB0006CC0C7 /* landing-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0460E9C9158A8EB0006CC0C7 /* landing-bg@2x.png */; };
-		0460E9E3158A9545006CC0C7 /* loading-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0460E9E2158A9545006CC0C7 /* loading-bg@2x.png */; };
-		0460E9E4158A9545006CC0C7 /* loading-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0460E9E2158A9545006CC0C7 /* loading-bg@2x.png */; };
 		0460E9E6158A9556006CC0C7 /* loaderNoTrim.png in Resources */ = {isa = PBXBuildFile; fileRef = 0460E9E5158A9556006CC0C7 /* loaderNoTrim.png */; };
 		0460E9E7158A9556006CC0C7 /* loaderNoTrim.png in Resources */ = {isa = PBXBuildFile; fileRef = 0460E9E5158A9556006CC0C7 /* loaderNoTrim.png */; };
+		0460E9E9158A9635006CC0C7 /* loaderNoTrim@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0460E9E8158A9635006CC0C7 /* loaderNoTrim@2x.png */; };
+		0460E9EA158A9635006CC0C7 /* loaderNoTrim@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0460E9E8158A9635006CC0C7 /* loaderNoTrim@2x.png */; };
 		0478C629158A2700006782EF /* rite1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0478C625158A2700006782EF /* rite1@2x.png */; };
 		0478C62A158A2700006782EF /* rite1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0478C625158A2700006782EF /* rite1@2x.png */; };
 		0478C62B158A2700006782EF /* rite2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0478C626158A2700006782EF /* rite2@2x.png */; };
@@ -1257,8 +1257,8 @@
 		0460E9C3158A8E46006CC0C7 /* loader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loader.png; sourceTree = "<group>"; };
 		0460E9C6158A8EA7006CC0C7 /* landing-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "landing-bg.png"; sourceTree = "<group>"; };
 		0460E9C9158A8EB0006CC0C7 /* landing-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "landing-bg@2x.png"; sourceTree = "<group>"; };
-		0460E9E2158A9545006CC0C7 /* loading-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loading-bg@2x.png"; sourceTree = "<group>"; };
 		0460E9E5158A9556006CC0C7 /* loaderNoTrim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loaderNoTrim.png; sourceTree = "<group>"; };
+		0460E9E8158A9635006CC0C7 /* loaderNoTrim@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loaderNoTrim@2x.png"; sourceTree = "<group>"; };
 		0478C625158A2700006782EF /* rite1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rite1@2x.png"; sourceTree = "<group>"; };
 		0478C626158A2700006782EF /* rite2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rite2@2x.png"; sourceTree = "<group>"; };
 		0478C627158A2700006782EF /* rite3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rite3@2x.png"; sourceTree = "<group>"; };
@@ -2616,7 +2616,7 @@
 		B002DBFC156C04AC003F5C78 /* app */ = {
 			isa = PBXGroup;
 			children = (
-				0460E9E2158A9545006CC0C7 /* loading-bg@2x.png */,
+				0460E9E8158A9635006CC0C7 /* loaderNoTrim@2x.png */,
 				0460E9C9158A8EB0006CC0C7 /* landing-bg@2x.png */,
 				0460E9C0158A8E18006CC0C7 /* loader@2x.png */,
 				B043596E158A93BE00C04571 /* loader@2x.xml */,
@@ -3715,8 +3715,8 @@
 				B0435975158A93FC00C04571 /* portailVert@2x.xml in Resources */,
 				B0435979158A941C00C04571 /* portailVert.png in Resources */,
 				B043597B158A941C00C04571 /* portailVert.xml in Resources */,
-				0460E9E3158A9545006CC0C7 /* loading-bg@2x.png in Resources */,
 				0460E9E6158A9556006CC0C7 /* loaderNoTrim.png in Resources */,
+				0460E9E9158A9635006CC0C7 /* loaderNoTrim@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4124,8 +4124,8 @@
 				B0435976158A93FC00C04571 /* portailVert@2x.xml in Resources */,
 				B043597A158A941C00C04571 /* portailVert.png in Resources */,
 				B043597C158A941C00C04571 /* portailVert.xml in Resources */,
-				0460E9E4158A9545006CC0C7 /* loading-bg@2x.png in Resources */,
 				0460E9E7158A9556006CC0C7 /* loaderNoTrim.png in Resources */,
+				0460E9EA158A9635006CC0C7 /* loaderNoTrim@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
