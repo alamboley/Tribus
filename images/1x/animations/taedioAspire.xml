@@ -3,36 +3,21 @@
 <!-- $TexturePacker:SmartUpdate:b6ed99a9326f645c5d36c80c44b28814$ -->
 <TextureAtlas imagePath="taedioAspire.png">
     <SubTexture name="taedioAspire/0000" x="184" y="394" width="78" height="80" frameX="-29" frameY="-20" frameWidth="138" frameHeight="100"/>
-    <SubTexture name="taedioAspire/0001" x="184" y="394" width="78" height="80" frameX="-29" frameY="-20" frameWidth="138" frameHeight="100"/>
     <SubTexture name="taedioAspire/0002" x="184" y="394" width="78" height="80" frameX="-29" frameY="-20" frameWidth="138" frameHeight="100"/>
     <SubTexture name="taedioAspire/0003" x="226" y="104" width="110" height="86" frameX="0" frameY="-14" frameWidth="138" frameHeight="100"/>
-    <SubTexture name="taedioAspire/0004" x="226" y="104" width="110" height="86" frameX="0" frameY="-14" frameWidth="138" frameHeight="100"/>
-    <SubTexture name="taedioAspire/0005" x="114" y="104" width="110" height="86" frameX="0" frameY="-14" frameWidth="138" frameHeight="100"/>
     <SubTexture name="taedioAspire/0006" x="114" y="104" width="110" height="86" frameX="0" frameY="-14" frameWidth="138" frameHeight="100"/>
     <SubTexture name="taedioAspire/0007" x="330" y="206" width="106" height="100" frameX="0" frameY="0" frameWidth="138" frameHeight="100"/>
-    <SubTexture name="taedioAspire/0008" x="330" y="206" width="106" height="100" frameX="0" frameY="0" frameWidth="138" frameHeight="100"/>
     <SubTexture name="taedioAspire/0009" x="222" y="192" width="106" height="100" frameX="0" frameY="0" frameWidth="138" frameHeight="100"/>
-    <SubTexture name="taedioAspire/0010" x="222" y="192" width="106" height="100" frameX="0" frameY="0" frameWidth="138" frameHeight="100"/>
     <SubTexture name="taedioAspire/0011" x="2" y="410" width="110" height="100" frameX="0" frameY="0" frameWidth="138" frameHeight="100"/>
-    <SubTexture name="taedioAspire/0012" x="2" y="410" width="110" height="100" frameX="0" frameY="0" frameWidth="138" frameHeight="100"/>
-    <SubTexture name="taedioAspire/0013" x="2" y="308" width="110" height="100" frameX="0" frameY="0" frameWidth="138" frameHeight="100"/>
     <SubTexture name="taedioAspire/0014" x="2" y="308" width="110" height="100" frameX="0" frameY="0" frameWidth="138" frameHeight="100"/>
-    <SubTexture name="taedioAspire/0015" x="2" y="206" width="110" height="100" frameX="0" frameY="0" frameWidth="138" frameHeight="100"/>
     <SubTexture name="taedioAspire/0016" x="2" y="206" width="110" height="100" frameX="0" frameY="0" frameWidth="138" frameHeight="100"/>
-    <SubTexture name="taedioAspire/0017" x="2" y="104" width="110" height="100" frameX="0" frameY="0" frameWidth="138" frameHeight="100"/>
     <SubTexture name="taedioAspire/0018" x="2" y="104" width="110" height="100" frameX="0" frameY="0" frameWidth="138" frameHeight="100"/>
-    <SubTexture name="taedioAspire/0019" x="338" y="2" width="110" height="100" frameX="0" frameY="0" frameWidth="138" frameHeight="100"/>
     <SubTexture name="taedioAspire/0020" x="338" y="2" width="110" height="100" frameX="0" frameY="0" frameWidth="138" frameHeight="100"/>
-    <SubTexture name="taedioAspire/0021" x="226" y="2" width="110" height="100" frameX="0" frameY="0" frameWidth="138" frameHeight="100"/>
     <SubTexture name="taedioAspire/0022" x="226" y="2" width="110" height="100" frameX="0" frameY="0" frameWidth="138" frameHeight="100"/>
     <SubTexture name="taedioAspire/0023" x="114" y="2" width="110" height="100" frameX="0" frameY="0" frameWidth="138" frameHeight="100"/>
-    <SubTexture name="taedioAspire/0024" x="114" y="2" width="110" height="100" frameX="0" frameY="0" frameWidth="138" frameHeight="100"/>
     <SubTexture name="taedioAspire/0025" x="2" y="2" width="110" height="100" frameX="0" frameY="0" frameWidth="138" frameHeight="100"/>
-    <SubTexture name="taedioAspire/0026" x="2" y="2" width="110" height="100" frameX="0" frameY="0" frameWidth="138" frameHeight="100"/>
-    <SubTexture name="taedioAspire/0027" x="114" y="192" width="106" height="100" frameX="0" frameY="0" frameWidth="138" frameHeight="100"/>
     <SubTexture name="taedioAspire/0028" x="114" y="192" width="106" height="100" frameX="0" frameY="0" frameWidth="138" frameHeight="100"/>
     <SubTexture name="taedioAspire/0029" x="338" y="104" width="106" height="100" frameX="0" frameY="0" frameWidth="138" frameHeight="100"/>
-    <SubTexture name="taedioAspire/0030" x="338" y="104" width="106" height="100" frameX="0" frameY="0" frameWidth="138" frameHeight="100"/>
     <SubTexture name="taedioBase/0000" x="438" y="300" width="70" height="92" frameX="-31" frameY="-8" frameWidth="138" frameHeight="100"/>
     <SubTexture name="taedioBase/0001" x="438" y="300" width="70" height="92" frameX="-31" frameY="-8" frameWidth="138" frameHeight="100"/>
     <SubTexture name="taedioBase/0002" x="438" y="300" width="70" height="92" frameX="-31" frameY="-8" frameWidth="138" frameHeight="100"/>

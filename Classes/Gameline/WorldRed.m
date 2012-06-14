@@ -40,7 +40,7 @@
     pouvoirExchange = [[PouvoirExchange alloc]initWithImage:@"pouvoir1.png"];
     [self addChild:pouvoirExchange];
     [pouvoirExchange start];
-    pouvoirExchange.x = hero.x + 400;
+    pouvoirExchange.x = hero.x + 450;
     [pouvoirExchange addEventListener:@selector(onPowerTouched:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
     
     [timerRecupPouvoir invalidate];
@@ -73,7 +73,7 @@
     CitrusObject *panneauEnd = [[CitrusObject alloc] initWithName:@"bg" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", hero.x + 1700], @"200", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", nil]] andGraphic:[SPImage imageWithContentsOfFile:@"sommeiller.png"]];
     [self addObject:panneauEnd];
     
-    CitrusObject *fondArrivee = [[CitrusObject alloc] initWithName:@"fondArrivee" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", hero.x + 1800], @"50", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", nil]] andGraphic:imgArrivee];
+    CitrusObject *fondArrivee = [[CitrusObject alloc] initWithName:@"fondArrivee" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", hero.x + 1700], @"50", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", nil]] andGraphic:imgArrivee];
     [self addObject:fondArrivee];
     
     bus.creerEnnemis = NO;
