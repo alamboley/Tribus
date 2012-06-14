@@ -1029,14 +1029,6 @@
 		B0C95C8D1583D4FA008AF972 /* jauneArrivee@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0C95C8B1583D4FA008AF972 /* jauneArrivee@2x.png */; };
 		B0D23C2D157763100014F0DB /* TaedioAspire.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D23C2C157763100014F0DB /* TaedioAspire.m */; };
 		B0D23C2E157763100014F0DB /* TaedioAspire.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D23C2C157763100014F0DB /* TaedioAspire.m */; };
-		B0D23C3115776BBF0014F0DB /* taedioAspire@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D23C2F15776BBF0014F0DB /* taedioAspire@2x.png */; };
-		B0D23C3215776BBF0014F0DB /* taedioAspire@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D23C2F15776BBF0014F0DB /* taedioAspire@2x.png */; };
-		B0D23C3315776BBF0014F0DB /* taedioAspire@2x.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0D23C3015776BBF0014F0DB /* taedioAspire@2x.xml */; };
-		B0D23C3415776BBF0014F0DB /* taedioAspire@2x.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0D23C3015776BBF0014F0DB /* taedioAspire@2x.xml */; };
-		B0D23C3715776BD50014F0DB /* taedioAspire.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D23C3515776BD50014F0DB /* taedioAspire.png */; };
-		B0D23C3815776BD50014F0DB /* taedioAspire.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D23C3515776BD50014F0DB /* taedioAspire.png */; };
-		B0D23C3915776BD50014F0DB /* taedioAspire.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0D23C3615776BD50014F0DB /* taedioAspire.xml */; };
-		B0D23C3A15776BD50014F0DB /* taedioAspire.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0D23C3615776BD50014F0DB /* taedioAspire.xml */; };
 		B0D4EDFC14FD7714008366B6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D4EDFB14FD7714008366B6 /* libz.dylib */; };
 		B0DF399A15753DBF00FD0956 /* taedioFumee.png in Resources */ = {isa = PBXBuildFile; fileRef = B0DF399815753DBF00FD0956 /* taedioFumee.png */; };
 		B0DF399B15753DBF00FD0956 /* taedioFumee.png in Resources */ = {isa = PBXBuildFile; fileRef = B0DF399815753DBF00FD0956 /* taedioFumee.png */; };
@@ -1081,6 +1073,14 @@
 		B0EEB08A15061547009AD303 /* flash.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EEB08915061547009AD303 /* flash.png */; };
 		B0EEB09115063D0B009AD303 /* AnimationSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EEB09015063D0B009AD303 /* AnimationSequence.m */; };
 		B0F2003E1545D05F0030C190 /* DonneesAleatoires.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0F2003D1545D05F0030C190 /* DonneesAleatoires.plist */; };
+		B0FF8A6B1589CFD4000698A2 /* taedioAspire.png in Resources */ = {isa = PBXBuildFile; fileRef = B0FF8A691589CFD4000698A2 /* taedioAspire.png */; };
+		B0FF8A6C1589CFD4000698A2 /* taedioAspire.png in Resources */ = {isa = PBXBuildFile; fileRef = B0FF8A691589CFD4000698A2 /* taedioAspire.png */; };
+		B0FF8A6D1589CFD4000698A2 /* taedioAspire.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0FF8A6A1589CFD4000698A2 /* taedioAspire.xml */; };
+		B0FF8A6E1589CFD4000698A2 /* taedioAspire.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0FF8A6A1589CFD4000698A2 /* taedioAspire.xml */; };
+		B0FF8A711589CFE2000698A2 /* taedioAspire@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0FF8A6F1589CFE2000698A2 /* taedioAspire@2x.png */; };
+		B0FF8A721589CFE2000698A2 /* taedioAspire@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0FF8A6F1589CFE2000698A2 /* taedioAspire@2x.png */; };
+		B0FF8A731589CFE2000698A2 /* taedioAspire@2x.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0FF8A701589CFE2000698A2 /* taedioAspire@2x.xml */; };
+		B0FF8A741589CFE2000698A2 /* taedioAspire@2x.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0FF8A701589CFE2000698A2 /* taedioAspire@2x.xml */; };
 		C8011547157584F400F279CC /* UIButtonCustomFontKohicle25.m in Sources */ = {isa = PBXBuildFile; fileRef = C8011546157584F300F279CC /* UIButtonCustomFontKohicle25.m */; };
 		C8011548157584F400F279CC /* UIButtonCustomFontKohicle25.m in Sources */ = {isa = PBXBuildFile; fileRef = C8011546157584F300F279CC /* UIButtonCustomFontKohicle25.m */; };
 		C801154B1575873A00F279CC /* UIButtonCustomFontTwCenMT.m in Sources */ = {isa = PBXBuildFile; fileRef = C801154A1575873A00F279CC /* UIButtonCustomFontTwCenMT.m */; };
@@ -1813,10 +1813,6 @@
 		B0C95C8B1583D4FA008AF972 /* jauneArrivee@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jauneArrivee@2x.png"; sourceTree = "<group>"; };
 		B0D23C2B1577630F0014F0DB /* TaedioAspire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaedioAspire.h; sourceTree = "<group>"; };
 		B0D23C2C157763100014F0DB /* TaedioAspire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaedioAspire.m; sourceTree = "<group>"; };
-		B0D23C2F15776BBF0014F0DB /* taedioAspire@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "taedioAspire@2x.png"; sourceTree = "<group>"; };
-		B0D23C3015776BBF0014F0DB /* taedioAspire@2x.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "taedioAspire@2x.xml"; sourceTree = "<group>"; };
-		B0D23C3515776BD50014F0DB /* taedioAspire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = taedioAspire.png; sourceTree = "<group>"; };
-		B0D23C3615776BD50014F0DB /* taedioAspire.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = taedioAspire.xml; sourceTree = "<group>"; };
 		B0D4EDFB14FD7714008366B6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		B0DF399815753DBF00FD0956 /* taedioFumee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = taedioFumee.png; sourceTree = "<group>"; };
 		B0DF399915753DBF00FD0956 /* taedioFumee.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = taedioFumee.xml; sourceTree = "<group>"; };
@@ -1847,6 +1843,10 @@
 		B0EEB08F15063D0B009AD303 /* AnimationSequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationSequence.h; sourceTree = "<group>"; };
 		B0EEB09015063D0B009AD303 /* AnimationSequence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationSequence.m; sourceTree = "<group>"; };
 		B0F2003D1545D05F0030C190 /* DonneesAleatoires.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DonneesAleatoires.plist; sourceTree = "<group>"; };
+		B0FF8A691589CFD4000698A2 /* taedioAspire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = taedioAspire.png; sourceTree = "<group>"; };
+		B0FF8A6A1589CFD4000698A2 /* taedioAspire.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = taedioAspire.xml; sourceTree = "<group>"; };
+		B0FF8A6F1589CFE2000698A2 /* taedioAspire@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "taedioAspire@2x.png"; sourceTree = "<group>"; };
+		B0FF8A701589CFE2000698A2 /* taedioAspire@2x.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "taedioAspire@2x.xml"; sourceTree = "<group>"; };
 		C8011545157584F300F279CC /* UIButtonCustomFontKohicle25.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIButtonCustomFontKohicle25.h; sourceTree = "<group>"; };
 		C8011546157584F300F279CC /* UIButtonCustomFontKohicle25.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIButtonCustomFontKohicle25.m; sourceTree = "<group>"; };
 		C80115491575873A00F279CC /* UIButtonCustomFontTwCenMT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIButtonCustomFontTwCenMT.h; sourceTree = "<group>"; };
@@ -2617,8 +2617,8 @@
 				B08F673815801A7900EE2961 /* hero@2x.xml */,
 				B0634C6F1587804F008A717B /* heroVert@2x.png */,
 				B0634C701587804F008A717B /* heroVert@2x.xml */,
-				B0D23C2F15776BBF0014F0DB /* taedioAspire@2x.png */,
-				B0D23C3015776BBF0014F0DB /* taedioAspire@2x.xml */,
+				B0FF8A6F1589CFE2000698A2 /* taedioAspire@2x.png */,
+				B0FF8A701589CFE2000698A2 /* taedioAspire@2x.xml */,
 				B0DF399E15753DCB00FD0956 /* taedioFumee@2x.png */,
 				B0DF399F15753DCB00FD0956 /* taedioFumee@2x.xml */,
 				B04F3A6315853C05004ED1B7 /* filtreAssociatifVertFront@2x.pvr */,
@@ -2648,8 +2648,8 @@
 				B08F673E15801A8800EE2961 /* hero.xml */,
 				B0634C7515878061008A717B /* heroVert.png */,
 				B0634C7615878061008A717B /* heroVert.xml */,
-				B0D23C3515776BD50014F0DB /* taedioAspire.png */,
-				B0D23C3615776BD50014F0DB /* taedioAspire.xml */,
+				B0FF8A691589CFD4000698A2 /* taedioAspire.png */,
+				B0FF8A6A1589CFD4000698A2 /* taedioAspire.xml */,
 				B0DF399815753DBF00FD0956 /* taedioFumee.png */,
 				B0DF399915753DBF00FD0956 /* taedioFumee.xml */,
 				B04F3A6915853C15004ED1B7 /* filtreAssociatifVertFront.pvr */,
@@ -3304,10 +3304,6 @@
 				B0DF39A215753DCB00FD0956 /* taedioFumee@2x.xml in Resources */,
 				B0B5E4681576449400568EFA /* ecranNoir.xml in Resources */,
 				B0B5E46A1576449400568EFA /* ecranNoir.png in Resources */,
-				B0D23C3115776BBF0014F0DB /* taedioAspire@2x.png in Resources */,
-				B0D23C3315776BBF0014F0DB /* taedioAspire@2x.xml in Resources */,
-				B0D23C3715776BD50014F0DB /* taedioAspire.png in Resources */,
-				B0D23C3915776BD50014F0DB /* taedioAspire.xml in Resources */,
 				0417F10C1579080E00A48C0F /* NotificationUIViewControllerViewController.xib in Resources */,
 				B0B6704F157D365200799F43 /* jaune1@2x.png in Resources */,
 				B0B67051157D365200799F43 /* jaune1b@2x.png in Resources */,
@@ -3553,6 +3549,10 @@
 				04FFE886158942BC0021AB6E /* initiation.json in Resources */,
 				04FFE88915894A3B0021AB6E /* rites_fond@2x.jpeg in Resources */,
 				04FFE88C15894A950021AB6E /* rites_fond.jpeg in Resources */,
+				B0FF8A6B1589CFD4000698A2 /* taedioAspire.png in Resources */,
+				B0FF8A6D1589CFD4000698A2 /* taedioAspire.xml in Resources */,
+				B0FF8A711589CFE2000698A2 /* taedioAspire@2x.png in Resources */,
+				B0FF8A731589CFE2000698A2 /* taedioAspire@2x.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3683,10 +3683,6 @@
 				B0DF39A315753DCB00FD0956 /* taedioFumee@2x.xml in Resources */,
 				B0B5E4691576449400568EFA /* ecranNoir.xml in Resources */,
 				B0B5E46B1576449400568EFA /* ecranNoir.png in Resources */,
-				B0D23C3215776BBF0014F0DB /* taedioAspire@2x.png in Resources */,
-				B0D23C3415776BBF0014F0DB /* taedioAspire@2x.xml in Resources */,
-				B0D23C3815776BD50014F0DB /* taedioAspire.png in Resources */,
-				B0D23C3A15776BD50014F0DB /* taedioAspire.xml in Resources */,
 				0417F10D1579080E00A48C0F /* NotificationUIViewControllerViewController.xib in Resources */,
 				B0B67050157D365200799F43 /* jaune1@2x.png in Resources */,
 				B0B67052157D365200799F43 /* jaune1b@2x.png in Resources */,
@@ -3932,6 +3928,10 @@
 				04FFE887158942BC0021AB6E /* initiation.json in Resources */,
 				04FFE88A15894A3B0021AB6E /* rites_fond@2x.jpeg in Resources */,
 				04FFE88D15894A950021AB6E /* rites_fond.jpeg in Resources */,
+				B0FF8A6C1589CFD4000698A2 /* taedioAspire.png in Resources */,
+				B0FF8A6E1589CFD4000698A2 /* taedioAspire.xml in Resources */,
+				B0FF8A721589CFE2000698A2 /* taedioAspire@2x.png in Resources */,
+				B0FF8A741589CFE2000698A2 /* taedioAspire@2x.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
