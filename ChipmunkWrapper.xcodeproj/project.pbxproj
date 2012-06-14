@@ -13,6 +13,22 @@
 		0401D32B1578B2DD000B3534 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0401D3291578B2DD000B3534 /* Toast+UIView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		04060C00157B9A4B00CCAB4A /* MainUINavigationControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04060BFF157B9A4B00CCAB4A /* MainUINavigationControllerViewController.m */; };
 		04060C01157B9A4B00CCAB4A /* MainUINavigationControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04060BFF157B9A4B00CCAB4A /* MainUINavigationControllerViewController.m */; };
+		04067F721589C38F0056D8CF /* rite1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04067F6E1589C38F0056D8CF /* rite1@2x.png */; };
+		04067F731589C38F0056D8CF /* rite1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04067F6E1589C38F0056D8CF /* rite1@2x.png */; };
+		04067F741589C38F0056D8CF /* rite2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04067F6F1589C38F0056D8CF /* rite2@2x.png */; };
+		04067F751589C38F0056D8CF /* rite2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04067F6F1589C38F0056D8CF /* rite2@2x.png */; };
+		04067F761589C38F0056D8CF /* rite3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04067F701589C38F0056D8CF /* rite3@2x.png */; };
+		04067F771589C38F0056D8CF /* rite3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04067F701589C38F0056D8CF /* rite3@2x.png */; };
+		04067F781589C38F0056D8CF /* rite4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04067F711589C38F0056D8CF /* rite4@2x.png */; };
+		04067F791589C38F0056D8CF /* rite4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04067F711589C38F0056D8CF /* rite4@2x.png */; };
+		04067F7E1589C3AA0056D8CF /* rite1.png in Resources */ = {isa = PBXBuildFile; fileRef = 04067F7A1589C3AA0056D8CF /* rite1.png */; };
+		04067F7F1589C3AA0056D8CF /* rite1.png in Resources */ = {isa = PBXBuildFile; fileRef = 04067F7A1589C3AA0056D8CF /* rite1.png */; };
+		04067F801589C3AA0056D8CF /* rite2.png in Resources */ = {isa = PBXBuildFile; fileRef = 04067F7B1589C3AA0056D8CF /* rite2.png */; };
+		04067F811589C3AA0056D8CF /* rite2.png in Resources */ = {isa = PBXBuildFile; fileRef = 04067F7B1589C3AA0056D8CF /* rite2.png */; };
+		04067F821589C3AA0056D8CF /* rite3.png in Resources */ = {isa = PBXBuildFile; fileRef = 04067F7C1589C3AA0056D8CF /* rite3.png */; };
+		04067F831589C3AA0056D8CF /* rite3.png in Resources */ = {isa = PBXBuildFile; fileRef = 04067F7C1589C3AA0056D8CF /* rite3.png */; };
+		04067F841589C3AA0056D8CF /* rite4.png in Resources */ = {isa = PBXBuildFile; fileRef = 04067F7D1589C3AA0056D8CF /* rite4.png */; };
+		04067F851589C3AA0056D8CF /* rite4.png in Resources */ = {isa = PBXBuildFile; fileRef = 04067F7D1589C3AA0056D8CF /* rite4.png */; };
 		0417F10A1579080E00A48C0F /* NotificationUIViewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0417F1081579080E00A48C0F /* NotificationUIViewControllerViewController.m */; };
 		0417F10B1579080E00A48C0F /* NotificationUIViewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0417F1081579080E00A48C0F /* NotificationUIViewControllerViewController.m */; };
 		0417F10C1579080E00A48C0F /* NotificationUIViewControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0417F1091579080E00A48C0F /* NotificationUIViewControllerViewController.xib */; };
@@ -1125,6 +1141,14 @@
 		0401D3291578B2DD000B3534 /* Toast+UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Toast+UIView.m"; sourceTree = "<group>"; };
 		04060BFE157B9A4B00CCAB4A /* MainUINavigationControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainUINavigationControllerViewController.h; sourceTree = "<group>"; };
 		04060BFF157B9A4B00CCAB4A /* MainUINavigationControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainUINavigationControllerViewController.m; sourceTree = "<group>"; };
+		04067F6E1589C38F0056D8CF /* rite1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rite1@2x.png"; sourceTree = "<group>"; };
+		04067F6F1589C38F0056D8CF /* rite2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rite2@2x.png"; sourceTree = "<group>"; };
+		04067F701589C38F0056D8CF /* rite3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rite3@2x.png"; sourceTree = "<group>"; };
+		04067F711589C38F0056D8CF /* rite4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rite4@2x.png"; sourceTree = "<group>"; };
+		04067F7A1589C3AA0056D8CF /* rite1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rite1.png; sourceTree = "<group>"; };
+		04067F7B1589C3AA0056D8CF /* rite2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rite2.png; sourceTree = "<group>"; };
+		04067F7C1589C3AA0056D8CF /* rite3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rite3.png; sourceTree = "<group>"; };
+		04067F7D1589C3AA0056D8CF /* rite4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rite4.png; sourceTree = "<group>"; };
 		0417F1071579080E00A48C0F /* NotificationUIViewControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationUIViewControllerViewController.h; sourceTree = "<group>"; };
 		0417F1081579080E00A48C0F /* NotificationUIViewControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationUIViewControllerViewController.m; sourceTree = "<group>"; };
 		0417F1091579080E00A48C0F /* NotificationUIViewControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationUIViewControllerViewController.xib; sourceTree = "<group>"; };
@@ -1947,6 +1971,10 @@
 		04E305E41585D9DA00B4B265 /* 1x */ = {
 			isa = PBXGroup;
 			children = (
+				04067F7A1589C3AA0056D8CF /* rite1.png */,
+				04067F7B1589C3AA0056D8CF /* rite2.png */,
+				04067F7C1589C3AA0056D8CF /* rite3.png */,
+				04067F7D1589C3AA0056D8CF /* rite4.png */,
 				04FFE88B15894A950021AB6E /* rites_fond.jpeg */,
 				04986E551587F10900BDA341 /* inventaire_fondboard.png */,
 				04986E561587F10900BDA341 /* inventaire_fondpouvoir1.png */,
@@ -2504,6 +2532,10 @@
 		B002DBFC156C04AC003F5C78 /* app */ = {
 			isa = PBXGroup;
 			children = (
+				04067F6E1589C38F0056D8CF /* rite1@2x.png */,
+				04067F6F1589C38F0056D8CF /* rite2@2x.png */,
+				04067F701589C38F0056D8CF /* rite3@2x.png */,
+				04067F711589C38F0056D8CF /* rite4@2x.png */,
 				04FFE88815894A3B0021AB6E /* rites_fond@2x.jpeg */,
 				04986E4C1587F0E600BDA341 /* inventaire_fondboard@2x.png */,
 				04986E4D1587F0E600BDA341 /* inventaire_fondpouvoir1@2x.png */,
@@ -3553,6 +3585,14 @@
 				B0FF8A6D1589CFD4000698A2 /* taedioAspire.xml in Resources */,
 				B0FF8A711589CFE2000698A2 /* taedioAspire@2x.png in Resources */,
 				B0FF8A731589CFE2000698A2 /* taedioAspire@2x.xml in Resources */,
+				04067F721589C38F0056D8CF /* rite1@2x.png in Resources */,
+				04067F741589C38F0056D8CF /* rite2@2x.png in Resources */,
+				04067F761589C38F0056D8CF /* rite3@2x.png in Resources */,
+				04067F781589C38F0056D8CF /* rite4@2x.png in Resources */,
+				04067F7E1589C3AA0056D8CF /* rite1.png in Resources */,
+				04067F801589C3AA0056D8CF /* rite2.png in Resources */,
+				04067F821589C3AA0056D8CF /* rite3.png in Resources */,
+				04067F841589C3AA0056D8CF /* rite4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3932,6 +3972,14 @@
 				B0FF8A6E1589CFD4000698A2 /* taedioAspire.xml in Resources */,
 				B0FF8A721589CFE2000698A2 /* taedioAspire@2x.png in Resources */,
 				B0FF8A741589CFE2000698A2 /* taedioAspire@2x.xml in Resources */,
+				04067F731589C38F0056D8CF /* rite1@2x.png in Resources */,
+				04067F751589C38F0056D8CF /* rite2@2x.png in Resources */,
+				04067F771589C38F0056D8CF /* rite3@2x.png in Resources */,
+				04067F791589C38F0056D8CF /* rite4@2x.png in Resources */,
+				04067F7F1589C3AA0056D8CF /* rite1.png in Resources */,
+				04067F811589C3AA0056D8CF /* rite2.png in Resources */,
+				04067F831589C3AA0056D8CF /* rite3.png in Resources */,
+				04067F851589C3AA0056D8CF /* rite4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
