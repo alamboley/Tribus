@@ -46,21 +46,21 @@
  "description": "L'homme sage et avisé tire profit de ce qui l'entoure",
  "image-url": "m6.png",
  "level": "1",
- "price":{"rouge":5}
+ "price":{"violet":5}
  },{
  "id":"6",
  "title":"illusioniste",
  "description": "Duper les ennemis est sa spécialitée",
  "image-url": "m7.png",
  "level": "1",
- "price":{"vert":60}
+ "price":{"bleu":20}
  },{
  "id":"7",
  "title":"duo coloré",
  "description": "Pack des 2 motifs brillants",
  "image-url": "m8.png",
  "level": "4",
- "price":{"jaune":60}
+ "price":{"jaune":40}
  },{
  "id":"8",
  "title":"guerrier pacifiste",

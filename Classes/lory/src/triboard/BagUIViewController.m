@@ -45,7 +45,10 @@
     {
         for (id key in [obj objectForKey:@"items"])
         {
+            //[USave saveValue:[NSNumber numberWithBool:YES] forItemId:(NSString*)obj forCategory:[obj objectForKey:@"title"]];
+            [USave saveValue:[NSNumber numberWithBool:YES] forItemId:(NSString*)key forCategory:[[obj objectForKey:@"title"] stringByAppendingString:@"-inventory"]];
             //id value = [[obj objectForKey:@"items"] objectForKey:key];
+            NSLog(@"key %@",key);
         }
         [itemDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
                               [[NSArray alloc] initWithObjects:[obj objectForKey:@"id"],[obj objectForKey:@"title"],[obj objectForKey:@"image-url"],[obj objectForKey:@"items"],nil] forKeys:

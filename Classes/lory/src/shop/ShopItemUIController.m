@@ -43,6 +43,7 @@
 - (IBAction)buyAction:(id)sender {
     [self switchStep:step];
 }
+
 - (void) switchStep:(int)theStep{
     switch (theStep) {
         case 0:
