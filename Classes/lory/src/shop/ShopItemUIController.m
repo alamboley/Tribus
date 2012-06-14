@@ -86,7 +86,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    if(![level isEqualToString:@"none"]){
+    if([level isEqualToString:@"none"]){
         [levelBg setHidden:YES];
         [levelLabel setHidden:YES];
     }else{

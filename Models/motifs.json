@@ -18,21 +18,21 @@
  "description": "D'une puissance phénoménale, il attire les pigments.",
  "image-url": "m3.png",
  "level": "1",
- "price":{"vert":14}
+ "price":{"rouge":14}
  },{
  "id":"3",
  "title":"ligne du soleil levant",
  "description": "À la lumière du jour, les pigments s'amassent.",
  "image-url": "m4.png",
  "level": "1",
- "price":{"bleu":14}
+ "price":{"orange":14}
  },{
  "id":"4",
  "title":"shaman",
  "description": "Sage et expérimenté, il canalise l'énergie des alentours.",
  "image-url": "m5.png",
  "level": "1",
- "price":{"jaune":60}
+ "price":{"vert":60}
  },{
  "id":"5",
  "title":"pierre brillante",
@@ -59,8 +59,8 @@
  "title":"duo coloré",
  "description": "Pack des 2 motifs brillants",
  "image-url": "m8.png",
- "level": "1",
- "price":{"orange":60}
+ "level": "4",
+ "price":{"jaune":60}
  },{
  "id":"8",
  "title":"guerrier pacifiste",

@@ -19,11 +19,6 @@
 
 - (void)awakeFromNib
 {
-    //set up data
-    //your carousel should always be driven by an array of
-    //data of some kind - don't store data in your item views
-    //or the recycling mechanism will destroy your data once
-    //your item views move off-screen
     self.items = [NSMutableArray arrayWithObjects:
                   @"red",
                   @"green",
@@ -101,8 +96,10 @@
     NSMutableDictionary *currentItem = [itemDatas objectForKey:[items objectAtIndex:icarousel.currentItemIndex]];
     islandTitle.text = [currentItem valueForKey:@"title"];
     islandTitle.textColor = [(Color *)[currentItem valueForKey:@"color"] color];
+    currentColorId = [(Color *)[currentItem valueForKey:@"color"] colorId];
     
     [navigationUIViewController setTitle:@""];
+    
 }
 
 - (void)viewDidUnload
