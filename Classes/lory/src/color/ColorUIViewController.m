@@ -109,7 +109,15 @@
         [textFields setObject:textField forKey:color.colorId];
     }
 }
-
+- (void) resetPointsHandler: (NSNotification *) notification{
+    textFields = [[NSMutableDictionary alloc] init];
+    for (id key in [ColorManager getColors]) {
+        Color *color = [[ColorManager getColors] objectForKey:key];
+        UILabel * tf = [textFields valueForKey:color.colorId];
+        [tf setText:[color.colorValue stringValue]];
+        [textFields setObject:tf forKey:color.colorId];
+    }
+}
 - (void)viewDidUnload
 {
     
@@ -135,6 +143,11 @@
      selector:@selector(changedPointsHandler:)
      name:@"removedPoints"
      object:nil ];
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self
+     selector:@selector(resetPointsHandler:)
+     name:@"updatedPoints"
+     object:nil ];
 }
 
 -(void)viewDidDisappear:(BOOL)animated { 
@@ -146,6 +159,10 @@
     [[NSNotificationCenter defaultCenter]
      removeObserver:self
      name:@"removedPoints"
+     object:nil ];
+    [[NSNotificationCenter defaultCenter]
+     removeObserver:self
+     name:@"updatedPoints"
      object:nil ];
 }
 

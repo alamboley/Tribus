@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ColorManager : NSObject
-
++ (void) updatePointsForColorIds:(NSDictionary*) pointsForColorIds;
 + (void) addPoints:(int) points forColorId:(NSString*) colorId;
 + (BOOL) removePoints:(int) points forColorId:(NSString*) colorId;
 + (void) filterDissociateForColorId:(NSString*) colorId;
