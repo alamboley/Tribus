@@ -31,7 +31,7 @@
     self.itemDatas = [[NSMutableDictionary alloc] init];
     
     [itemDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
-                          [[NSArray alloc] initWithObjects:[[Color alloc]  initWithId:@"rouge" andCode:@"0x8D5D2E" andLabel:@"Rouge"], @"ile_rouge.png",@"<b>Tneera</b>, l'île fumante",nil] forKeys:
+                          [[NSArray alloc] initWithObjects:[[Color alloc]  initWithId:@"rouge" andCode:@"0xAD2304" andLabel:@"Rouge"], @"ile_rouge.png",@"<b>Tneera</b>, l'île fumante",nil] forKeys:
                           [[NSArray alloc] initWithObjects:@"color", @"path",@"title",nil]]
                   forKey:[items objectAtIndex:0]];
     

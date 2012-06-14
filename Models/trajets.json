@@ -1,16 +1,16 @@
 [{
  "id":"0",
  "title":"trajet lycee",
- "description": "Carnot - Seynod (Ligne 2)",
+ "description": "Marquisats - Bertollet (Ligne 6)",
  "done": 1
  },{
  "id":"1",
  "title":"trajet escalade",
- "description": "Marquisats - Barral (Ligne 5)",
+ "description": "Bertollet - Bel air (Ligne 5)",
  "done": 0
  },{
  "id":"2",
- "title":"trajet marine",
+ "title":"trajet mattias",
  "description": "Marquisats - Courier (Ligne 6)",
  "done": 0
  }]
