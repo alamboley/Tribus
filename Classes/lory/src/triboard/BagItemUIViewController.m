@@ -71,7 +71,7 @@
 
 - (CGSize)GMGridView:(GMGridView *)gridView sizeForItemsInInterfaceOrientation:(UIInterfaceOrientation)orientation
 {
-    return CGSizeMake(320, 80);
+    return CGSizeMake(320, 75);
 }
 
 - (GMGridViewCell *)GMGridView:(GMGridView *)gridView cellForItemAtIndex:(NSInteger)index
@@ -87,7 +87,6 @@
 
        // [self.view addSubview:vc.view];
         BagScrollItemUIViewController *vc= [_data objectAtIndex:index];
-        vc.titleLabel.text = @"trololololo";
         cell.contentView = vc.view;
         cell.autoresizesSubviews = NO;
         cell.clipsToBounds = YES;
@@ -147,11 +146,11 @@
     gmGridView.backgroundColor = [UIColor clearColor];
     [self.view addSubview:gmGridView];
     _gmGridView = gmGridView;
-    
-    _gmGridView.style = GMGridViewStyleSwap;
+
+    //_gmGridView.style = GMGridViewStyleSwap;
     _gmGridView.itemSpacing = spacing;
-    _gmGridView.minEdgeInsets = UIEdgeInsetsMake(spacing, spacing, spacing, spacing);
-    _gmGridView.centerGrid = YES;
+    //_gmGridView.minEdgeInsets = UIEdgeInsetsMake(spacing, spacing, spacing, spacing);
+    _gmGridView.centerGrid = NO;
     _gmGridView.actionDelegate = self;
     _gmGridView.dataSource = self;
     

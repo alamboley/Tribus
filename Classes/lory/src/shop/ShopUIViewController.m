@@ -48,7 +48,7 @@
     
     //configure carousel
     icarousel.type = iCarouselTypeRotary;
-    icarousel.bounceDistance = 0.5;
+    icarousel.bounceDistance = 0.2;
 
     
     colorUIViewController = [[ColorUIViewController alloc] initWithNibName:@"ColorUIViewController" bundle:nil andType:big];

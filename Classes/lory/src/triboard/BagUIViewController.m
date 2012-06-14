@@ -109,7 +109,6 @@
     return NO;
 }
 - (void)carouselDidScroll:(iCarousel *)carousel{
-    NSMutableDictionary *currentItem = [itemDatas objectForKey:[NSString stringWithFormat:@"%d", carousel.currentItemIndex]];
     [okButton setHidden:YES];
 }
 -(CGFloat)carouselItemWidth:(iCarousel *)carousel{

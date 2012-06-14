@@ -43,7 +43,7 @@
     {
         case iCarouselTranformOptionArc:
         {
-            return 2 * M_PI * 0.4;
+            return 2 * M_PI * 0.3;
         }
         case iCarouselTranformOptionRadius:
         {
@@ -68,12 +68,15 @@
     //return the total number of items in the carousel
     return [itemDatas count];
 }
-
+-(CGFloat)carouselItemWidth:(iCarousel *)carousel{
+    return 250.0;
+}
 - (UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSUInteger)index reusingView:(UIView *)view
 {    
-    NSMutableDictionary *currentItem = [itemDatas objectForKey:[NSString stringWithFormat:@"%d",carousel.currentItemIndex]];
+    NSMutableDictionary *currentItem = [itemDatas objectForKey:[NSString stringWithFormat:@"%d",index]];
     if (view == nil)
     {
+        NSLog(@"%@ path",[currentItem valueForKey:@"path"]);
         view = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[currentItem valueForKey:@"path"]]];
         view.layer.doubleSided = NO; //prevent back side of view from showing
     }
@@ -84,11 +87,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //configure carousel
     icarousel.type = iCarouselTypeRotary;
-    icarousel.bounceDistance = 0.5;
+    icarousel.viewpointOffset = CGSizeMake(0, -10);
+    icarousel.bounceDistance = 0.1;
+
     NSMutableDictionary *currentItem = [itemDatas objectForKey:[NSString stringWithFormat:@"%d",icarousel.currentItemIndex]];
-    titleLabel.text = [currentItem valueForKey:@"title"];    
+    titleLabel.text = [currentItem valueForKey:@"title"];
+
+    [navigationUIViewController setTitle:@""];
 }
 
 - (void)viewDidUnload

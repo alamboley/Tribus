@@ -110,11 +110,6 @@
         [self.navigationItem setTitle: self.title];
     }
 }
-// User tapped on an item...
-- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
-{
-    NSLog(@"ESSAI");
-}
 
 - (void)viewDidUnload
 {

@@ -69,6 +69,7 @@
 {
     [colorUIViewController.view removeFromSuperview];
     [self setColorUIViewController:nil];
+    notif = nil;
     [super viewDidUnload];
 
     // Release any retained subviews of the main view.

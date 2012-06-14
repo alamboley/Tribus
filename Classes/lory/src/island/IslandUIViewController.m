@@ -94,15 +94,15 @@
     islandTitle = [[NMCustomLabel alloc] initWithFrame:CGRectMake(0, height - 50, width, 100)];
     islandTitle.ctTextAlignment = kCTCenterTextAlignment;
     [islandTitle setBackgroundColor:[UIColor clearColor]];
-//    islandTitle.textAlignment = UITextAlignmentCenter;
-    //[islandTitle setTextAlignment:UITextAlignmentCenter];
     islandTitle.font = [UIFont fontWithName:@"Kohicle25" size:25];
     islandTitle.fontBold = [UIFont fontWithName:@"Kohicle25" size:40];
     [self.view addSubview:islandTitle];
     
     NSMutableDictionary *currentItem = [itemDatas objectForKey:[items objectAtIndex:icarousel.currentItemIndex]];
     islandTitle.text = [currentItem valueForKey:@"title"];
-    islandTitle.textColor = [(Color *)[currentItem valueForKey:@"color"] color];    
+    islandTitle.textColor = [(Color *)[currentItem valueForKey:@"color"] color];
+    
+    [navigationUIViewController setTitle:@""];
 }
 
 - (void)viewDidUnload

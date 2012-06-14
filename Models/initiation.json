@@ -1,17 +1,17 @@
 [{
  "id":"0",
  "title":"rite d'initiation",
- "image-url": "ile_orange.png"
+ "image-url": "rite1.png"
  },{
  "id":"1",
- "title":"rite du chaman",
- "image-url": "ile_orange.png"
+ "title":"rite du savant",
+ "image-url": "rite2.png"
  },{
  "id":"2",
- "title":"rite du sage",
- "image-url": "ile_orange.png"
+ "title":"rite du patriarche",
+ "image-url": "rite3.png"
  },{
  "id":"3",
  "title":"rite du guerrier",
- "image-url": "ile_orange.png"
+ "image-url": "rite4.png"
  }]
