@@ -9,6 +9,7 @@
 #import "MainUIViewController.h"
 #import "PRTween.h"
 #import "ColorManager.h"
+#import "LandingPageUIViewController.h"
 
 @implementation MainUIViewController
 @synthesize nextBusUILabel;
@@ -50,6 +51,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    LandingPageUIViewController *landing = [[LandingPageUIViewController alloc] initWithNibName:@"LandingPageUIViewController" bundle:nil];
+    
+    [self.view addSubview:landing.view];
+    
     colorUIViewController = [[ColorUIViewController alloc] initWithNibName:@"ColorUIViewController" bundle:nil andType:big];
     [self.view addSubview:colorUIViewController.view];
     

@@ -13,6 +13,7 @@
 @end
 
 @implementation LandingPageUIViewController
+@synthesize uiImageView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,16 +27,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    UIImage *spriteSheet = [UIImage imageNamed:@"loader"];
+    UIImage *spriteSheet = [UIImage imageNamed:@"loader.png"];
     
     NSArray *arrayWithSprites = [spriteSheet spritesWithSpriteSheetImage:spriteSheet 
                                                               spriteSize:CGSizeMake(65, 65)];
-    [self.uiImageView setAnimationImages:arrayWithSprites];
-    float animationDuration = [self.uiImageView.animationImages count] * 0.010; // 100ms per frame
+    [uiImageView setAnimationImages:arrayWithSprites];
+    float animationDuration = [uiImageView.animationImages count] * 0.010; // 100ms per frame
     
-    [self.uiImageView setAnimationRepeatCount:0];
-    [self.uiImageView setAnimationDuration:animationDuration]; 
-    [self.uiImageView startAnimating];
+    [uiImageView setAnimationRepeatCount:0];
+    [uiImageView setAnimationDuration:animationDuration]; 
+    [uiImageView startAnimating];
     // Do any additional setup after loading the view from its nib.
 }
 
