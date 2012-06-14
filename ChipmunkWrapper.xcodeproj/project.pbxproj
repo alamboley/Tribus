@@ -131,6 +131,10 @@
 		0450FA9C1586A13500BB9B9C /* pouvoir5_directionassiste-item.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA911586A13500BB9B9C /* pouvoir5_directionassiste-item.png */; };
 		0450FA9D1586A13500BB9B9C /* pouvoir6_busmotion-item.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA921586A13500BB9B9C /* pouvoir6_busmotion-item.png */; };
 		0450FA9E1586A13500BB9B9C /* pouvoir6_busmotion-item.png in Resources */ = {isa = PBXBuildFile; fileRef = 0450FA921586A13500BB9B9C /* pouvoir6_busmotion-item.png */; };
+		0460E9BC158A84D3006CC0C7 /* LandingPageUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460E9BA158A84D3006CC0C7 /* LandingPageUIViewController.m */; };
+		0460E9BD158A84D3006CC0C7 /* LandingPageUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460E9BA158A84D3006CC0C7 /* LandingPageUIViewController.m */; };
+		0460E9BE158A84D3006CC0C7 /* LandingPageUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0460E9BB158A84D3006CC0C7 /* LandingPageUIViewController.xib */; };
+		0460E9BF158A84D3006CC0C7 /* LandingPageUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0460E9BB158A84D3006CC0C7 /* LandingPageUIViewController.xib */; };
 		0478C629158A2700006782EF /* rite1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0478C625158A2700006782EF /* rite1@2x.png */; };
 		0478C62A158A2700006782EF /* rite1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0478C625158A2700006782EF /* rite1@2x.png */; };
 		0478C62B158A2700006782EF /* rite2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0478C626158A2700006782EF /* rite2@2x.png */; };
@@ -1222,6 +1226,9 @@
 		0450FA901586A13500BB9B9C /* pouvoir4_magnetisme-item.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir4_magnetisme-item.png"; sourceTree = "<group>"; };
 		0450FA911586A13500BB9B9C /* pouvoir5_directionassiste-item.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir5_directionassiste-item.png"; sourceTree = "<group>"; };
 		0450FA921586A13500BB9B9C /* pouvoir6_busmotion-item.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir6_busmotion-item.png"; sourceTree = "<group>"; };
+		0460E9B9158A84D3006CC0C7 /* LandingPageUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingPageUIViewController.h; sourceTree = "<group>"; };
+		0460E9BA158A84D3006CC0C7 /* LandingPageUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingPageUIViewController.m; sourceTree = "<group>"; };
+		0460E9BB158A84D3006CC0C7 /* LandingPageUIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LandingPageUIViewController.xib; sourceTree = "<group>"; };
 		0478C625158A2700006782EF /* rite1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rite1@2x.png"; sourceTree = "<group>"; };
 		0478C626158A2700006782EF /* rite2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rite2@2x.png"; sourceTree = "<group>"; };
 		0478C627158A2700006782EF /* rite3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rite3@2x.png"; sourceTree = "<group>"; };
@@ -1965,6 +1972,16 @@
 				0417F1091579080E00A48C0F /* NotificationUIViewControllerViewController.xib */,
 			);
 			path = notification;
+			sourceTree = "<group>";
+		};
+		0460E9B8158A84AF006CC0C7 /* landing */ = {
+			isa = PBXGroup;
+			children = (
+				0460E9B9158A84D3006CC0C7 /* LandingPageUIViewController.h */,
+				0460E9BA158A84D3006CC0C7 /* LandingPageUIViewController.m */,
+				0460E9BB158A84D3006CC0C7 /* LandingPageUIViewController.xib */,
+			);
+			path = landing;
 			sourceTree = "<group>";
 		};
 		0497E89515761631005CDC2E /* spritesheet */ = {
@@ -2912,6 +2929,7 @@
 		B0BB60A11574AC14001BB2CB /* src */ = {
 			isa = PBXGroup;
 			children = (
+				0460E9B8158A84AF006CC0C7 /* landing */,
 				04FFE880158941A10021AB6E /* initiation */,
 				B0BB60A21574AC14001BB2CB /* color */,
 				B0BB60AA1574AC14001BB2CB /* game */,
@@ -3638,6 +3656,7 @@
 				0478C637158A2719006782EF /* rite2.png in Resources */,
 				0478C639158A2719006782EF /* rite3.png in Resources */,
 				0478C63B158A2719006782EF /* rite4.png in Resources */,
+				0460E9BE158A84D3006CC0C7 /* LandingPageUIViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4034,6 +4053,7 @@
 				0478C638158A2719006782EF /* rite2.png in Resources */,
 				0478C63A158A2719006782EF /* rite3.png in Resources */,
 				0478C63C158A2719006782EF /* rite4.png in Resources */,
+				0460E9BF158A84D3006CC0C7 /* LandingPageUIViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4199,6 +4219,7 @@
 				044AB43415889AE60023869D /* BagScrollItemUIViewController.m in Sources */,
 				B02ED43E1588F95B009E3434 /* Stats.m in Sources */,
 				04FFE8831589421C0021AB6E /* InitiationViewController.m in Sources */,
+				0460E9BC158A84D3006CC0C7 /* LandingPageUIViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4360,6 +4381,7 @@
 				044AB43515889AE60023869D /* BagScrollItemUIViewController.m in Sources */,
 				B02ED43F1588F95B009E3434 /* Stats.m in Sources */,
 				04FFE8841589421C0021AB6E /* InitiationViewController.m in Sources */,
+				0460E9BD158A84D3006CC0C7 /* LandingPageUIViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
