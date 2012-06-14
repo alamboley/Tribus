@@ -27,12 +27,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    UIImage *spriteSheet = [UIImage imageNamed:@"loader-.png"];
+    UIImage *spriteSheet = [UIImage imageNamed:@"loaderNoTrim.png"];
     
     NSArray *arrayWithSprites = [spriteSheet spritesWithSpriteSheetImage:spriteSheet 
-                                                              spriteSize:CGSizeMake(60, 60)];
+                                                              spriteSize:CGSizeMake(60.875, 60.875)];
     [uiImageView setAnimationImages:arrayWithSprites];
-    float animationDuration = [uiImageView.animationImages count] * 0.1; // 100ms per frame
+    float animationDuration = [uiImageView.animationImages count] * 0.06; // 100ms per frame
     
     [uiImageView setAnimationRepeatCount:0];
     [uiImageView setAnimationDuration:animationDuration]; 
