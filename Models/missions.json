@@ -1,11 +1,11 @@
  [{
   "id":"0",
   "title":"Mission du jour",
-  "description": "Eviter 10 pièges",
+  "description": "75 pigments jaunes à récolter",
   "done": 1
   },{
   "id":"1",
   "title":"Mission de la semaine",
-  "description": "Ramasser 300 pigments jaunes",
+  "description": "250 pigments bleus à récolter",
   "done": 0
   }]

@@ -14,7 +14,7 @@
  "id":"jaune",
  "code":"0x8D5D2E",
  "label":"Jaune",
- "defaultValue":35,
+ "defaultValue":70,
  "order":0
  },{
  "id":"rouge",
@@ -26,7 +26,7 @@
  "id":"bleu",
  "code":"0x3B4444",
  "label":"Bleu",
- "defaultValue":1,
+ "defaultValue":110,
  "order":1
  },{
  "id":"violet",

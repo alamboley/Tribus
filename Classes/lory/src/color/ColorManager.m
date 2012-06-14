@@ -55,7 +55,22 @@ static bool inited = NO;
     
     [ColorManager saveColorId:colorId];
 }
-
+/*
++ (void) valueForPoint:(int) points forColorId:(NSString*) colorId{
+    Color *color = [colorDictionnary valueForKey:colorId];
+    color.colorValue = [NSNumber numberWithInt:(color.colorValue.integerValue + points)];
+    
+    // DISPATCH l'event addedPoints avec les objets color et points en paramètre
+    NSDictionary* dict = [NSDictionary dictionaryWithObjectsAndKeys:
+                          color, @"color", [[NSNumber alloc] initWithInt:points], @"points", nil];
+    [[NSNotificationCenter defaultCenter]
+     postNotificationName:@"addedPoints"
+     object:self
+     userInfo:dict];
+    
+    [ColorManager saveColorId:colorId];
+}
+*/
 + (BOOL) removePoints:(int) points forColorId:(NSString*) colorId{
     Color *color = [colorDictionnary valueForKey:colorId];
     int oldValue = color.colorValue.integerValue;
