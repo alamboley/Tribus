@@ -33,11 +33,10 @@
 {
     [super viewDidLoad];
     [titleLabel setText:self.title];
-    [descLabel setText:self.desc];
-    
     if([self.type isEqualToString:@"pouvoirs"]){
-        backgroundPath = @"inventaire_fondpouvoir2.png";
+        backgroundPath = @"inventaire_fondpouvoir1.png";
         powerImage.image = [UIImage imageNamed:imagePath];
+        [descLabel setText:self.desc];
     }else{
         backgroundPath = @"inventaire_fondboard.png";
         motifImage.image = [UIImage imageNamed:imagePath];

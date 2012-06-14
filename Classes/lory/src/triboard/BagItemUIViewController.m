@@ -129,7 +129,6 @@
             vc.title = [obj objectForKey:@"title"];
             vc.desc = [obj objectForKey:@"description"];
             vc.imagePath = [obj objectForKey:@"image-url"];
-            NSLog(@"titleLabel : %@",self.title);
             [_data addObject:vc];
         }
     }

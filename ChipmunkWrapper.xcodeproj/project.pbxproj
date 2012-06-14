@@ -179,6 +179,8 @@
 		04BF13931585161000E1DDBC /* BagItemUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF13901585160F00E1DDBC /* BagItemUIViewController.m */; };
 		04BF13941585161000E1DDBC /* BagItemUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BF13911585160F00E1DDBC /* BagItemUIViewController.xib */; };
 		04BF13951585161000E1DDBC /* BagItemUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BF13911585160F00E1DDBC /* BagItemUIViewController.xib */; };
+		04C3EFF51589E7F6009A769D /* lvl-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04C3EFF41589E7F5009A769D /* lvl-btn@2x.png */; };
+		04C3EFF61589E7F6009A769D /* lvl-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04C3EFF41589E7F5009A769D /* lvl-btn@2x.png */; };
 		04E305CE1585D0F300B4B265 /* GMGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E305C41585D0F300B4B265 /* GMGridView.m */; };
 		04E305CF1585D0F300B4B265 /* GMGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E305C41585D0F300B4B265 /* GMGridView.m */; };
 		04E305D01585D0F300B4B265 /* GMGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E305C71585D0F300B4B265 /* GMGridViewCell.m */; };
@@ -1216,6 +1218,7 @@
 		04BF138F1585160E00E1DDBC /* BagItemUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BagItemUIViewController.h; sourceTree = "<group>"; };
 		04BF13901585160F00E1DDBC /* BagItemUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BagItemUIViewController.m; sourceTree = "<group>"; };
 		04BF13911585160F00E1DDBC /* BagItemUIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BagItemUIViewController.xib; sourceTree = "<group>"; };
+		04C3EFF41589E7F5009A769D /* lvl-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lvl-btn@2x.png"; sourceTree = "<group>"; };
 		04E305C21585D0F300B4B265 /* GMGridView-Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GMGridView-Constants.h"; sourceTree = "<group>"; };
 		04E305C31585D0F300B4B265 /* GMGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMGridView.h; sourceTree = "<group>"; };
 		04E305C41585D0F300B4B265 /* GMGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMGridView.m; sourceTree = "<group>"; };
@@ -2504,6 +2507,7 @@
 		B002DBFC156C04AC003F5C78 /* app */ = {
 			isa = PBXGroup;
 			children = (
+				04C3EFF41589E7F5009A769D /* lvl-btn@2x.png */,
 				04FFE88815894A3B0021AB6E /* rites_fond@2x.jpeg */,
 				04986E4C1587F0E600BDA341 /* inventaire_fondboard@2x.png */,
 				04986E4D1587F0E600BDA341 /* inventaire_fondpouvoir1@2x.png */,
@@ -3553,6 +3557,7 @@
 				B0FF8A6D1589CFD4000698A2 /* taedioAspire.xml in Resources */,
 				B0FF8A711589CFE2000698A2 /* taedioAspire@2x.png in Resources */,
 				B0FF8A731589CFE2000698A2 /* taedioAspire@2x.xml in Resources */,
+				04C3EFF51589E7F6009A769D /* lvl-btn@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3932,6 +3937,7 @@
 				B0FF8A6E1589CFD4000698A2 /* taedioAspire.xml in Resources */,
 				B0FF8A721589CFE2000698A2 /* taedioAspire@2x.png in Resources */,
 				B0FF8A741589CFE2000698A2 /* taedioAspire@2x.xml in Resources */,
+				04C3EFF61589E7F6009A769D /* lvl-btn@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
