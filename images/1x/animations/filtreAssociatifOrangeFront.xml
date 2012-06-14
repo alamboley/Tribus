@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:97ef89c1e44efd4a5e5b7f2b202d3f68$ -->
+<TextureAtlas imagePath="filtreAssociatifOrangeFront.pvr">
+    <SubTexture name="filtreAssociatifOrangeFront/0000" x="233" y="732" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeFront/0001" x="233" y="732" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeFront/0002" x="233" y="586" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeFront/0003" x="233" y="586" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeFront/0004" x="233" y="440" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeFront/0005" x="233" y="440" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeFront/0006" x="695" y="294" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeFront/0007" x="695" y="294" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeFront/0008" x="464" y="294" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeFront/0009" x="464" y="294" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeFront/0010" x="233" y="294" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeFront/0011" x="233" y="294" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeFront/0012" x="2" y="878" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeFront/0013" x="2" y="878" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeFront/0014" x="2" y="732" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeFront/0015" x="2" y="732" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeFront/0016" x="2" y="586" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeFront/0017" x="2" y="586" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeFront/0018" x="2" y="440" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeFront/0019" x="2" y="440" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeFront/0020" x="2" y="294" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeFront/0021" x="2" y="294" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeFront/0022" x="695" y="148" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeFront/0023" x="695" y="148" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeFront/0024" x="464" y="148" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeFront/0025" x="464" y="148" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeFront/0026" x="233" y="148" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeFront/0027" x="233" y="148" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeFront/0028" x="2" y="148" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeFront/0029" x="2" y="148" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeFront/0030" x="695" y="2" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeFront/0031" x="695" y="2" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeFront/0032" x="464" y="2" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeFront/0033" x="464" y="2" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeFront/0034" x="233" y="2" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeFront/0035" x="233" y="2" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeFront/0036" x="2" y="2" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeFront/0037" x="2" y="2" width="229" height="144" frameX="-25" frameY="-56" frameWidth="275" frameHeight="200"/>
+</TextureAtlas>

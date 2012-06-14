@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:b153016f37faae654cf2f0f976538c76$ -->
+<TextureAtlas imagePath="filtreAssociatifOrangeBack.pvr">
+    <SubTexture name="filtreAssociatifOrangeBack/0000" x="683" y="392" width="225" height="128" frameX="-28" frameY="-62" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeBack/0001" x="683" y="392" width="225" height="128" frameX="-28" frameY="-62" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeBack/0002" x="2" y="2" width="225" height="130" frameX="-28" frameY="-63" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeBack/0003" x="2" y="2" width="225" height="130" frameX="-28" frameY="-63" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeBack/0004" x="456" y="392" width="225" height="128" frameX="-28" frameY="-62" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeBack/0005" x="456" y="392" width="225" height="128" frameX="-28" frameY="-62" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeBack/0006" x="229" y="392" width="225" height="128" frameX="-28" frameY="-62" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeBack/0007" x="229" y="392" width="225" height="128" frameX="-28" frameY="-62" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeBack/0008" x="2" y="784" width="225" height="128" frameX="-28" frameY="-62" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeBack/0009" x="2" y="784" width="225" height="128" frameX="-28" frameY="-62" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeBack/0010" x="2" y="654" width="225" height="128" frameX="-28" frameY="-62" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeBack/0011" x="2" y="654" width="225" height="128" frameX="-28" frameY="-62" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeBack/0012" x="2" y="524" width="225" height="128" frameX="-28" frameY="-62" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeBack/0013" x="2" y="524" width="225" height="128" frameX="-28" frameY="-62" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeBack/0014" x="2" y="394" width="225" height="128" frameX="-28" frameY="-62" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeBack/0015" x="2" y="394" width="225" height="128" frameX="-28" frameY="-62" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeBack/0016" x="683" y="262" width="225" height="128" frameX="-28" frameY="-62" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeBack/0017" x="683" y="262" width="225" height="128" frameX="-28" frameY="-62" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeBack/0018" x="456" y="262" width="225" height="128" frameX="-28" frameY="-62" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeBack/0019" x="456" y="262" width="225" height="128" frameX="-28" frameY="-62" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeBack/0020" x="2" y="264" width="225" height="128" frameX="-28" frameY="-62" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeBack/0021" x="2" y="264" width="225" height="128" frameX="-28" frameY="-62" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeBack/0022" x="229" y="262" width="225" height="128" frameX="-28" frameY="-62" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeBack/0023" x="229" y="262" width="225" height="128" frameX="-28" frameY="-62" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeBack/0024" x="683" y="132" width="225" height="128" frameX="-28" frameY="-62" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeBack/0025" x="683" y="132" width="225" height="128" frameX="-28" frameY="-62" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeBack/0026" x="456" y="132" width="225" height="128" frameX="-28" frameY="-62" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeBack/0027" x="456" y="132" width="225" height="128" frameX="-28" frameY="-62" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeBack/0028" x="2" y="134" width="225" height="128" frameX="-28" frameY="-63" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeBack/0029" x="2" y="134" width="225" height="128" frameX="-28" frameY="-63" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeBack/0030" x="229" y="132" width="225" height="128" frameX="-28" frameY="-62" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeBack/0031" x="229" y="132" width="225" height="128" frameX="-28" frameY="-62" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeBack/0032" x="683" y="2" width="225" height="128" frameX="-28" frameY="-62" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeBack/0033" x="683" y="2" width="225" height="128" frameX="-28" frameY="-62" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeBack/0034" x="456" y="2" width="225" height="128" frameX="-28" frameY="-62" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeBack/0035" x="456" y="2" width="225" height="128" frameX="-28" frameY="-62" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeBack/0036" x="229" y="2" width="225" height="128" frameX="-28" frameY="-62" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="filtreAssociatifOrangeBack/0037" x="229" y="2" width="225" height="128" frameX="-28" frameY="-62" frameWidth="275" frameHeight="200"/>
+</TextureAtlas>
