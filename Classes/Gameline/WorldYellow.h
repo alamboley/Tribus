@@ -15,6 +15,7 @@
     SPImage *imgArrivee;
     
     AnimationSequence *portalRed;
+    AnimationSequence *portalGreen;
     
     SPImage *pouvoir;
 }

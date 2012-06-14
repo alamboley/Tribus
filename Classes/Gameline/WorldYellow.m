@@ -22,6 +22,8 @@
         
         portalRed = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"portailRouge.xml"] andAnimations:[NSArray arrayWithObjects:@"portailrouge", nil] andFirstAnimation:@"portailrouge"];
         
+        portalGreen = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"portailVert.xml"] andAnimations:[NSArray arrayWithObjects:@"portailvert", nil] andFirstAnimation:@"portailvert"];
+        
         pouvoir = [SPImage imageWithContentsOfFile:@"pouvoir1-ingame.png"];
     }
     
@@ -62,7 +64,11 @@
     
     [self addChild:portalRed];
     portalRed.x = hero.x + 400;
-    portalRed.y = 100;
+    portalRed.y = 150;
+    
+    [self addChild:portalGreen];
+    portalGreen.x = hero.x + 400;
+    portalGreen.y = 50;
     
     [portalRed addEventListener:@selector(changeLevel:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
 }
@@ -76,6 +82,7 @@
     
     [self removeChild:portalRed];
     [portalRed removeEventListener:@selector(changeLevel:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
+    [self removeChild:portalGreen];
     
     if (pouvoir) {
         [self.stage removeChild:pouvoir];
@@ -84,6 +91,7 @@
     }
     
     portalRed = nil;
+    portalGreen = nil;
     
     imgArrivee = nil;
     
