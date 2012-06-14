@@ -10,4 +10,5 @@
 
 @interface NavigationUIViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *pageTitle;
+@property (weak, nonatomic) IBOutlet UIButton *backButton;
 @end

@@ -99,7 +99,8 @@
     currentColorId = [(Color *)[currentItem valueForKey:@"color"] colorId];
     
     [navigationUIViewController setTitle:@""];
-    [viewBackButton setHidden:YES];
+    [navigationUIViewController.backButton setHidden:YES];
+    //[viewBackButton setHidden:YES];
 }
 
 - (void)viewDidUnload

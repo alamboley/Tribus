@@ -10,6 +10,7 @@
 
 @implementation NavigationUIViewController
 @synthesize pageTitle;
+@synthesize backButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -49,6 +50,7 @@
 - (void)viewDidUnload
 {
     [self setPageTitle:nil];
+    [self setBackButton:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
