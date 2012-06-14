@@ -30,9 +30,9 @@
     UIImage *spriteSheet = [UIImage imageNamed:@"loader.png"];
     
     NSArray *arrayWithSprites = [spriteSheet spritesWithSpriteSheetImage:spriteSheet 
-                                                              spriteSize:CGSizeMake(65, 65)];
+                                                              spriteSize:CGSizeMake(60, 60)];
     [uiImageView setAnimationImages:arrayWithSprites];
-    float animationDuration = [uiImageView.animationImages count] * 0.010; // 100ms per frame
+    float animationDuration = [uiImageView.animationImages count] * 0.1; // 100ms per frame
     
     [uiImageView setAnimationRepeatCount:0];
     [uiImageView setAnimationDuration:animationDuration]; 
