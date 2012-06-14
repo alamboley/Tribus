@@ -812,6 +812,18 @@
 		B0435967158A904700C04571 /* pouvoir1-ingame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0435965158A904700C04571 /* pouvoir1-ingame@2x.png */; };
 		B0435969158A905000C04571 /* pouvoir1-ingame.png in Resources */ = {isa = PBXBuildFile; fileRef = B0435968158A905000C04571 /* pouvoir1-ingame.png */; };
 		B043596A158A905000C04571 /* pouvoir1-ingame.png in Resources */ = {isa = PBXBuildFile; fileRef = B0435968158A905000C04571 /* pouvoir1-ingame.png */; };
+		B043596C158A93A400C04571 /* loader.xml in Resources */ = {isa = PBXBuildFile; fileRef = B043596B158A93A400C04571 /* loader.xml */; };
+		B043596D158A93A400C04571 /* loader.xml in Resources */ = {isa = PBXBuildFile; fileRef = B043596B158A93A400C04571 /* loader.xml */; };
+		B043596F158A93BE00C04571 /* loader@2x.xml in Resources */ = {isa = PBXBuildFile; fileRef = B043596E158A93BE00C04571 /* loader@2x.xml */; };
+		B0435970158A93BE00C04571 /* loader@2x.xml in Resources */ = {isa = PBXBuildFile; fileRef = B043596E158A93BE00C04571 /* loader@2x.xml */; };
+		B0435973158A93FC00C04571 /* portailVert@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0435971158A93FC00C04571 /* portailVert@2x.png */; };
+		B0435974158A93FC00C04571 /* portailVert@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0435971158A93FC00C04571 /* portailVert@2x.png */; };
+		B0435975158A93FC00C04571 /* portailVert@2x.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0435972158A93FC00C04571 /* portailVert@2x.xml */; };
+		B0435976158A93FC00C04571 /* portailVert@2x.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0435972158A93FC00C04571 /* portailVert@2x.xml */; };
+		B0435979158A941C00C04571 /* portailVert.png in Resources */ = {isa = PBXBuildFile; fileRef = B0435977158A941C00C04571 /* portailVert.png */; };
+		B043597A158A941C00C04571 /* portailVert.png in Resources */ = {isa = PBXBuildFile; fileRef = B0435977158A941C00C04571 /* portailVert.png */; };
+		B043597B158A941C00C04571 /* portailVert.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0435978158A941C00C04571 /* portailVert.xml */; };
+		B043597C158A941C00C04571 /* portailVert.xml in Resources */ = {isa = PBXBuildFile; fileRef = B0435978158A941C00C04571 /* portailVert.xml */; };
 		B04481111563D3B4005BC009 /* jaune_fond.png in Resources */ = {isa = PBXBuildFile; fileRef = B044810D1563D3B4005BC009 /* jaune_fond.png */; };
 		B044811C1563D3CC005BC009 /* jaune_fond@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B04481181563D3CC005BC009 /* jaune_fond@2x.png */; };
 		B044811F1563D999005BC009 /* jaune1erplan1.png in Resources */ = {isa = PBXBuildFile; fileRef = B044811D1563D999005BC009 /* jaune1erplan1.png */; };
@@ -1667,6 +1679,12 @@
 		B03F69A0158621D20087DE0F /* particulesRecolte.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = particulesRecolte.xml; sourceTree = "<group>"; };
 		B0435965158A904700C04571 /* pouvoir1-ingame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir1-ingame@2x.png"; sourceTree = "<group>"; };
 		B0435968158A905000C04571 /* pouvoir1-ingame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pouvoir1-ingame.png"; sourceTree = "<group>"; };
+		B043596B158A93A400C04571 /* loader.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = loader.xml; sourceTree = "<group>"; };
+		B043596E158A93BE00C04571 /* loader@2x.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "loader@2x.xml"; sourceTree = "<group>"; };
+		B0435971158A93FC00C04571 /* portailVert@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "portailVert@2x.png"; sourceTree = "<group>"; };
+		B0435972158A93FC00C04571 /* portailVert@2x.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "portailVert@2x.xml"; sourceTree = "<group>"; };
+		B0435977158A941C00C04571 /* portailVert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = portailVert.png; sourceTree = "<group>"; };
+		B0435978158A941C00C04571 /* portailVert.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = portailVert.xml; sourceTree = "<group>"; };
 		B044810D1563D3B4005BC009 /* jaune_fond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jaune_fond.png; sourceTree = "<group>"; };
 		B04481181563D3CC005BC009 /* jaune_fond@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jaune_fond@2x.png"; sourceTree = "<group>"; };
 		B044811D1563D999005BC009 /* jaune1erplan1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jaune1erplan1.png; sourceTree = "<group>"; };
@@ -2029,6 +2047,7 @@
 			children = (
 				0460E9C6158A8EA7006CC0C7 /* landing-bg.png */,
 				0460E9C3158A8E46006CC0C7 /* loader.png */,
+				B043596B158A93A400C04571 /* loader.xml */,
 				0478C631158A2719006782EF /* rite1.png */,
 				0478C632158A2719006782EF /* rite2.png */,
 				0478C633158A2719006782EF /* rite3.png */,
@@ -2592,6 +2611,7 @@
 			children = (
 				0460E9C9158A8EB0006CC0C7 /* landing-bg@2x.png */,
 				0460E9C0158A8E18006CC0C7 /* loader@2x.png */,
+				B043596E158A93BE00C04571 /* loader@2x.xml */,
 				0478C625158A2700006782EF /* rite1@2x.png */,
 				0478C626158A2700006782EF /* rite2@2x.png */,
 				0478C627158A2700006782EF /* rite3@2x.png */,
@@ -2732,6 +2752,8 @@
 				B04F3A5A158523E1004ED1B7 /* rougeParticulesJauge@2x.xml */,
 				B04DEBB91586324A005A4684 /* portailRouge@2x.png */,
 				B04DEBBA1586324A005A4684 /* portailRouge@2x.xml */,
+				B0435971158A93FC00C04571 /* portailVert@2x.png */,
+				B0435972158A93FC00C04571 /* portailVert@2x.xml */,
 				B04DEBB315862F1B005A4684 /* particulesRecolte@2x.pvr */,
 				B04DEBB415862F1B005A4684 /* particulesRecolte@2x.xml */,
 			);
@@ -2769,6 +2791,8 @@
 				B03F69A0158621D20087DE0F /* particulesRecolte.xml */,
 				B04DEBBF15863259005A4684 /* portailRouge.png */,
 				B04DEBC015863259005A4684 /* portailRouge.xml */,
+				B0435977158A941C00C04571 /* portailVert.png */,
+				B0435978158A941C00C04571 /* portailVert.xml */,
 			);
 			path = animations;
 			sourceTree = "<group>";
@@ -3677,6 +3701,12 @@
 				0460E9CA158A8EB0006CC0C7 /* landing-bg@2x.png in Resources */,
 				B0435966158A904700C04571 /* pouvoir1-ingame@2x.png in Resources */,
 				B0435969158A905000C04571 /* pouvoir1-ingame.png in Resources */,
+				B043596C158A93A400C04571 /* loader.xml in Resources */,
+				B043596F158A93BE00C04571 /* loader@2x.xml in Resources */,
+				B0435973158A93FC00C04571 /* portailVert@2x.png in Resources */,
+				B0435975158A93FC00C04571 /* portailVert@2x.xml in Resources */,
+				B0435979158A941C00C04571 /* portailVert.png in Resources */,
+				B043597B158A941C00C04571 /* portailVert.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4078,6 +4108,12 @@
 				0460E9CB158A8EB0006CC0C7 /* landing-bg@2x.png in Resources */,
 				B0435967158A904700C04571 /* pouvoir1-ingame@2x.png in Resources */,
 				B043596A158A905000C04571 /* pouvoir1-ingame.png in Resources */,
+				B043596D158A93A400C04571 /* loader.xml in Resources */,
+				B0435970158A93BE00C04571 /* loader@2x.xml in Resources */,
+				B0435974158A93FC00C04571 /* portailVert@2x.png in Resources */,
+				B0435976158A93FC00C04571 /* portailVert@2x.xml in Resources */,
+				B043597A158A941C00C04571 /* portailVert.png in Resources */,
+				B043597C158A941C00C04571 /* portailVert.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

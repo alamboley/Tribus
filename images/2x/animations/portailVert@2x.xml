@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:322533ecfd4fed660c36d56030507491$ -->
+<TextureAtlas imagePath="portailVert@2x.png">
+    <SubTexture name="portailvert/0000" x="2" y="602" width="76" height="306" frameX="-234" frameY="-28" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailvert/0001" x="2" y="602" width="76" height="306" frameX="-234" frameY="-28" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailvert/0002" x="2" y="602" width="76" height="306" frameX="-234" frameY="-28" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailvert/0003" x="2" y="602" width="76" height="306" frameX="-234" frameY="-28" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailvert/0004" x="2" y="314" width="78" height="286" frameX="-234" frameY="-40" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailvert/0005" x="2" y="314" width="78" height="286" frameX="-234" frameY="-40" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailvert/0006" x="2" y="314" width="78" height="286" frameX="-234" frameY="-40" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailvert/0007" x="2" y="314" width="78" height="286" frameX="-234" frameY="-40" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailvert/0008" x="152" y="618" width="76" height="270" frameX="-234" frameY="-44" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailvert/0009" x="152" y="618" width="76" height="270" frameX="-234" frameY="-44" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailvert/0010" x="152" y="618" width="76" height="270" frameX="-234" frameY="-44" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailvert/0011" x="152" y="618" width="76" height="270" frameX="-234" frameY="-44" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailvert/0012" x="186" y="314" width="70" height="268" frameX="-236" frameY="-52" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailvert/0013" x="186" y="314" width="70" height="268" frameX="-236" frameY="-52" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailvert/0014" x="186" y="314" width="70" height="268" frameX="-236" frameY="-52" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailvert/0015" x="186" y="314" width="70" height="268" frameX="-236" frameY="-52" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailvert/0016" x="80" y="618" width="70" height="310" frameX="-235" frameY="-18" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailvert/0017" x="80" y="618" width="70" height="310" frameX="-235" frameY="-18" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailvert/0018" x="80" y="618" width="70" height="310" frameX="-235" frameY="-18" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailvert/0019" x="80" y="618" width="70" height="310" frameX="-235" frameY="-18" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailvert/0020" x="202" y="2" width="90" height="310" frameX="-232" frameY="-50" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailvert/0021" x="202" y="2" width="90" height="310" frameX="-232" frameY="-50" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailvert/0022" x="202" y="2" width="90" height="310" frameX="-232" frameY="-50" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailvert/0023" x="202" y="2" width="90" height="310" frameX="-232" frameY="-50" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailvert/0024" x="2" y="2" width="100" height="310" frameX="-234" frameY="-9" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailvert/0025" x="2" y="2" width="100" height="310" frameX="-234" frameY="-9" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailvert/0026" x="2" y="2" width="100" height="310" frameX="-234" frameY="-9" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailvert/0027" x="2" y="2" width="100" height="310" frameX="-234" frameY="-9" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailvert/0028" x="104" y="2" width="96" height="294" frameX="-234" frameY="-43" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailvert/0029" x="104" y="2" width="96" height="294" frameX="-234" frameY="-43" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailvert/0030" x="104" y="2" width="96" height="294" frameX="-234" frameY="-43" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailvert/0031" x="104" y="2" width="96" height="294" frameX="-234" frameY="-43" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailvert/0032" x="104" y="298" width="80" height="318" frameX="-234" frameY="-25" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailvert/0033" x="104" y="298" width="80" height="318" frameX="-234" frameY="-25" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailvert/0034" x="104" y="298" width="80" height="318" frameX="-234" frameY="-25" frameWidth="550" frameHeight="400"/>
+    <SubTexture name="portailvert/0035" x="104" y="298" width="80" height="318" frameX="-234" frameY="-25" frameWidth="550" frameHeight="400"/>
+</TextureAtlas>
