@@ -81,7 +81,9 @@
 
 - (BOOL) collisionStart:(CMArbiter*) arbiter space:(CMSpace*) space {
     
-    if (!((Hero *)arbiter.shapeA.body.data).usingBouclier || !((Hero *)arbiter.shapeA.body.data).usingAutoDrive) {
+    if (((Hero *)arbiter.shapeA.body.data).usingBouclier || ((Hero *)arbiter.shapeA.body.data).usingAutoDrive) {
+        
+    } else {
         
         [((Hero *)arbiter.shapeA.body.data) hurt];
         

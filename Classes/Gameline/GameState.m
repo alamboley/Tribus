@@ -27,8 +27,7 @@
         
         gameWidth = 500680;
         
-        [self showHideDebugDraw];
-        [self showHideDebugDraw];
+        //[self showHideDebugDraw];
         
         CitrusObject *parallaxe1 = [[CitrusObject alloc] initWithName:@"bg" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"0", @"0", @"0.025", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"parallax:", nil]] andGraphic:[SPImage imageWithContentsOfFile:[worldColor stringByAppendingString:@"_fond.png"]]];
         [self addObject:parallaxe1];

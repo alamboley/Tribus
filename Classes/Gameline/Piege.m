@@ -101,8 +101,9 @@
         theHero = (Hero *)arbiter.shapeB.body.data;
     }
     
-    if (!theHero.usingBouclier || !theHero.usingAutoDrive) {
+    if (theHero.usingBouclier || theHero.usingAutoDrive) {
         
+    } else {
         [theHero hurt];
         [[NSNotificationCenter defaultCenter] postNotificationName:@"piege" object:nil];
     }

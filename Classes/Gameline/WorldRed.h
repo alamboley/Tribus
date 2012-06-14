@@ -15,6 +15,7 @@
     NSTimer *timerRecupPouvoir;
     
     PouvoirExchange *pouvoirExchange;
+    SPImage *pouvoir;
 }
 
 @end

@@ -19,6 +19,8 @@
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(prochainArret:) name:@"prochainArret" object:nil];
         
         imgArrivee = [SPImage imageWithContentsOfFile:[worldColor stringByAppendingString:@"Arrivee.png"]];
+        
+        pouvoir = [SPImage imageWithContentsOfFile:@"pouvoir1-ingame.png"];
     }
     
     return self;
@@ -28,18 +30,17 @@
     
     animHero = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"heroVert.xml"] andAnimations:[NSArray arrayWithObjects:@"base", @"descente", @"haut", @"fin", @"passage_piege", @"saut", @"sol", nil] andFirstAnimation:@"base"];
     
-    timerRecupPouvoir = [NSTimer timerWithTimeInterval:2 target:self selector:@selector(apparitionPouvoir:) userInfo:nil repeats:YES];
+    timerRecupPouvoir = [NSTimer scheduledTimerWithTimeInterval:40 target:self selector:@selector(apparitionPouvoir:) userInfo:nil repeats:NO];
     
     [super play];
-    
-    NSLog(@"1");
 }
 
 - (void) apparitionPouvoir:(NSTimer *) timer {
-    NSLog(@"2");    
-    pouvoirExchange = [[PouvoirExchange alloc]initWithImage:@"pouvoir1-ingame.png"];
+    
+    pouvoirExchange = [[PouvoirExchange alloc]initWithImage:@"pouvoir1.png"];
     [self addChild:pouvoirExchange];
     [pouvoirExchange start];
+    pouvoirExchange.x = hero.x + 400;
     [pouvoirExchange addEventListener:@selector(onPowerTouched:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
     
     [timerRecupPouvoir invalidate];
@@ -53,8 +54,14 @@
     SPTouch *touch = [[event touchesWithTarget:self andPhase:SPTouchPhaseBegan] anyObject];
     
     if (touch) {
-        //[pv destroy];
-        //[pv removeEventListener:@selector(onPowerTouched:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
+        [pouvoirExchange destroy];
+        [pouvoirExchange removeEventListener:@selector(onPowerTouched:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
+        
+        [self.stage addChild:pouvoir];
+        pouvoir.rotation = SP_D2R(90);
+        pouvoir.x = 50;
+        pouvoir.y = 430;
+        [pouvoir addEventListener:@selector(onPowerUsed:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
     }
 }
 
@@ -80,7 +87,22 @@
 
 - (void) destroy {
     
+    if (pouvoir) {
+        [self.stage removeChild:pouvoir];
+        [pouvoir removeEventListener:@selector(onPowerTouched:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
+        pouvoir = nil;
+    }
+    
     [super destroy];
+}
+
+- (void) onPowerUsed:(SPTouchEvent *) event {
+    
+    [self.stage removeChild:pouvoir];
+    [pouvoir removeEventListener:@selector(onPowerUsed:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
+    pouvoir = nil;
+    
+    [hero startBouclier];
 }
 
 @end
