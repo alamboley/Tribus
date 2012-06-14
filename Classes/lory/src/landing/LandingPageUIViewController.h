@@ -10,5 +10,5 @@
 
 @interface LandingPageUIViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIImageView *uiImageView;
-
+@property (weak, nonatomic) IBOutlet SPView *sparrowView;
 @end

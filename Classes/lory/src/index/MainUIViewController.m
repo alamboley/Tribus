@@ -51,9 +51,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    LandingPageUIViewController *landing = [[LandingPageUIViewController alloc] initWithNibName:@"LandingPageUIViewController" bundle:nil];
-    
-    //[self.view addSubview:landing.view];
     
     colorUIViewController = [[ColorUIViewController alloc] initWithNibName:@"ColorUIViewController" bundle:nil andType:big];
     [self.view addSubview:colorUIViewController.view];
@@ -70,6 +67,11 @@
      object:nil];
     
     minutesLeft = 5;
+    
+    LandingPageUIViewController *landing = [[LandingPageUIViewController alloc] initWithNibName:@"LandingPageUIViewController" bundle:nil];
+    
+    [self.view addSubview:landing.view];
+
 }
 -(void)startGameHandler: (NSNotification *) notification{
     [self performSegueWithIdentifier:@"island" sender:self];    
