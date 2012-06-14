@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface LandingPageUIViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIImageView *uiImageView;
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "LandingPageUIViewController.h"
-
+#import "UIImage+Sprite.h"
 @interface LandingPageUIViewController ()
 
 @end
@@ -26,6 +26,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    UIImage *spriteSheet = [UIImage imageNamed:@"loader"];
+    
+    NSArray *arrayWithSprites = [spriteSheet spritesWithSpriteSheetImage:spriteSheet 
+                                                              spriteSize:CGSizeMake(65, 65)];
+    [self.uiImageView setAnimationImages:arrayWithSprites];
+    float animationDuration = [self.uiImageView.animationImages count] * 0.010; // 100ms per frame
+    
+    [self.uiImageView setAnimationRepeatCount:0];
+    [self.uiImageView setAnimationDuration:animationDuration]; 
+    [self.uiImageView startAnimating];
     // Do any additional setup after loading the view from its nib.
 }
 
