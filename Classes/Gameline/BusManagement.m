@@ -104,6 +104,12 @@
         float positionX = hero.x + 500 + arc4random() % 300;
         float positionY = 50 + arc4random() % 250;
         
+        if ([worldColor isEqualToString:@"jaune"] && ([startTime timeIntervalSinceNow] < -60 && [startTime timeIntervalSinceNow] > -65)) {
+            
+            TaedioFumee *taedioFumeeSur = [[TaedioFumee alloc] initWithName:@"taedioFumee" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"120", @"60", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", nil]] andGraphic:[animTaedioFumee copy]];
+            [ce.state addObject:taedioFumeeSur];
+        }
+        
         if (arc4random() % 2 > 0) {
             
             if ([worldColor isEqualToString:@"jaune"] && [startTime timeIntervalSinceNow] < -60) {

@@ -21,12 +21,12 @@
         
         [ColorManager updatePointsForColorIds:
          [[NSDictionary alloc] initWithObjectsAndKeys:
-          [NSNumber numberWithInt:10],@"jaune",
-          [NSNumber numberWithInt:10],@"bleu",
-          [NSNumber numberWithInt:10],@"rouge",
-          [NSNumber numberWithInt:10],@"violet",
-          [NSNumber numberWithInt:10],@"vert",
-          [NSNumber numberWithInt:10],@"orange", nil]];
+          [NSNumber numberWithInt:131],@"jaune",
+          [NSNumber numberWithInt:20],@"bleu",
+          [NSNumber numberWithInt:50],@"rouge",
+          [NSNumber numberWithInt:37],@"violet",
+          [NSNumber numberWithInt:12],@"vert",
+          [NSNumber numberWithInt:24],@"orange", nil]];
         
         imgArrivee = [SPImage imageWithContentsOfFile:[worldColor stringByAppendingString:@"Arrivee.png"]];
         

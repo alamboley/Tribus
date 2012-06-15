@@ -43,6 +43,7 @@
     [sparrowView start];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(afficherScore:) name:@"afficherScore" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changerPositionScore:) name:@"changerPositionScore" object:nil];
 }
 
 - (void) afficherScore:(NSNotification *) notification {
@@ -53,6 +54,11 @@
     CGFloat x = 280;
     CGFloat y = 0;
     colorUIViewController.view.frame = CGRectMake(x, y, colorUIViewController.view.frame.size.width, colorUIViewController.view.frame.size.height);
+}
+
+- (void) changerPositionScore:(NSNotification *) notification {
+    
+    colorUIViewController.view.frame = CGRectMake(150, 150, colorUIViewController.view.frame.size.width, colorUIViewController.view.frame.size.height);
 }
 
 - (void)viewDidUnload

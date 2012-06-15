@@ -118,6 +118,8 @@
     
     hero.move = FALSE;
     
+    //[[NSNotificationCenter defaultCenter] postNotificationName:@"changerPositionScore" object:nil];
+    
     jauge = [[Jauge alloc] initWithColor:worldColor andPourcentage:(int)[Stats pourcentageParticule]];
     [self addChild:jauge];
     jauge.x = hero.x + 415;

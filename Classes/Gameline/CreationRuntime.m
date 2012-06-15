@@ -100,7 +100,7 @@
         
     }
     
-    if ([world isEqualToString:@"rouge"] && ([startTime timeIntervalSinceNow] > -75 && [startTime timeIntervalSinceNow] < -70)) {
+    if ([world isEqualToString:@"rouge"] && ([startTime timeIntervalSinceNow] > -85 && [startTime timeIntervalSinceNow] < -80)) {
         
         Sensor *filtrefake = [[Sensor alloc] initWithName:@"filtreOrangeFake" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"40", @"80", @"1", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", @"group:", nil]] andGraphic:[animFiltreAssoOrangeBack copy]];
         [ce.state addObject:filtrefake];

@@ -2,3 +2,5 @@
 *.xcuserstate
 *.xcscheme
 .DS_Store
+
+flash/bin/DonneesBus.json
