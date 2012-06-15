@@ -92,6 +92,8 @@
     [self.stage removeChild:imgLoading];
     
     [game play];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"afficherScore" object:nil];
 }
 
 - (void) changeNiveau:(NSNotification *) notification {

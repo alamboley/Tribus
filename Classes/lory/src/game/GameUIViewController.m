@@ -42,6 +42,11 @@
     sparrowView.frameRate = SPARROW_FRAMERATE_ACTIVE;
     [sparrowView start];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(afficherScore:) name:@"afficherScore" object:nil];
+}
+
+- (void) afficherScore:(NSNotification *) notification {
+    
     colorUIViewController = [[ColorUIViewController alloc] initWithNibName:@"ColorUIViewController" bundle:nil andType:big];
     [self.view addSubview:colorUIViewController.view];
     colorUIViewController.view.layer.transform = CATransform3DMakeRotation(M_PI * 0.5, 0, 0.0, 1.0);

@@ -68,7 +68,7 @@
     
     minutesLeft = 5;
     
-    LandingPageUIViewController *landing = [[LandingPageUIViewController alloc] initWithNibName:@"LandingPageUIViewController" bundle:nil];
+    //LandingPageUIViewController *landing = [[LandingPageUIViewController alloc] initWithNibName:@"LandingPageUIViewController" bundle:nil];
     
     //[self.view addSubview:landing.view];
 
