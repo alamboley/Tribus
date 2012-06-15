@@ -32,10 +32,10 @@
 
 - (void)GMGridView:(GMGridView *)gridView didTapOnItemAtIndex:(NSInteger)position
 {
-    NSLog(@"Did tap at index %d", position);
-    /*[[NSNotificationCenter defaultCenter] postNotificationName:@"itemSelectedFromBag" 
-                                                        object:[NSNumber numberWithInt:1]];
-    self.tabBarController.selectedIndex = 0;*/
+    BagScrollItemUIViewController *vc = [_data objectAtIndex:position];
+    NSLog(@"Did tap at index %@", [NSNumber numberWithInt:vc.view.tag]);
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"itemSelectedFromBag" 
+                                                        object:[NSNumber numberWithInt:vc.view.tag]];
 }
 
 - (void)GMGridViewDidTapOnEmptySpace:(GMGridView *)gridView
@@ -129,6 +129,7 @@
             vc.title = [obj objectForKey:@"title"];
             vc.desc = [obj objectForKey:@"description"];
             vc.imagePath = [obj objectForKey:@"image-url"];
+            vc.view.tag = [itemId intValue];
             [_data addObject:vc];
         }
     }

@@ -12,7 +12,7 @@
 #import "UImage.h"
 
 @implementation TriboardUIViewController
-@synthesize itemsContainer;
+@synthesize itemsContainer,itemIdSelected;
 @synthesize gestureOutlet;
 @synthesize itemDatas;
 @synthesize colorUIViewController;
@@ -101,6 +101,7 @@
             [item.button setImage:[UIImage imageNamed:@"store_pigment_none@2x.png"] forState:UIControlStateNormal];
         }
         [item.button addTarget:self action:@selector(itemSelected:) forControlEvents:UIControlEventTouchUpInside];
+        
     }
     
     for (NSDictionary *obj in [USave getItemIdsforType:@"inventory"])
@@ -109,9 +110,21 @@
     }
 }
 
+-(void) changeCurrentItem:(NSString*) itemId{
+    
+}
+
 - (IBAction)itemSelected:(id)sender {
 /*    [[NSNotificationCenter defaultCenter] postNotificationName:@"itemSelectedFromTriboard" 
      object:[NSNumber numberWithInt:[[((UIButton*)sender).titleLabel text] intValue]]];*/
+    for (NSString *obj in self.itemDatas) {
+        NSDictionary *item = [self.itemDatas valueForKey:obj];
+        TriboardItemUIViewController *vc = [item valueForKey:@"item"];
+
+        if(vc.button == sender){
+            itemIdSelected = obj;
+        }
+    }
     [[NSNotificationCenter defaultCenter] postNotificationName:@"itemSelectedFromTriboard" 
                                                         object:[NSNumber numberWithInt:0]];
     self.tabBarController.selectedIndex = 1;
@@ -120,6 +133,15 @@
 - (void)itemSelectedFromBag:(NSNotification *)notification {
     NSObject *foo;
     foo = [notification object];
+    TriboardItemUIViewController *vc = [[itemDatas valueForKey:itemIdSelected] valueForKey:@"item"];
+    for (NSDictionary *obj in [USave getArrayForJsonPath:@"motifs"]){
+        if([[NSString stringWithFormat:@"%@",foo] isEqualToString:[obj valueForKey:@"id"]]){
+            [vc.button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"store_pigment_%@@2x.png",[obj valueForKey:@"color"]]] forState:UIControlStateNormal];            
+        }
+
+    }
+
+
     [motifMilieu setAlpha:1.0];
 }
 -(void)viewDidAppear:(BOOL)animated { 

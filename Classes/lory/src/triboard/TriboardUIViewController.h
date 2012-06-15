@@ -14,6 +14,7 @@
 -(IBAction)busIncoming:(UIGestureRecognizer *)sender;
 @property (weak, nonatomic) IBOutlet UIView *itemsContainer;
 @property (nonatomic, retain) NSMutableDictionary *itemDatas;
+@property (nonatomic, retain) NSString *itemIdSelected;
 @property (nonatomic, retain) ColorUIViewController *colorUIViewController;
 @property (weak, nonatomic) IBOutlet UIImageView *motifMilieu;
 

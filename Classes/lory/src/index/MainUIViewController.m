@@ -68,9 +68,15 @@
     
     minutesLeft = 5;
     
+<<<<<<< HEAD
     //LandingPageUIViewController *landing = [[LandingPageUIViewController alloc] initWithNibName:@"LandingPageUIViewController" bundle:nil];
     
     //[self.view addSubview:landing.view];
+=======
+    /*LandingPageUIViewController *landing = [[LandingPageUIViewController alloc] initWithNibName:@"LandingPageUIViewController" bundle:nil];
+    
+    [self.view addSubview:landing.view];*/
+>>>>>>> triboard selection half-work
 
 }
 -(void)startGameHandler: (NSNotification *) notification{

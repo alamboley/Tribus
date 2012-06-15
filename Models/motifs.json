@@ -4,6 +4,7 @@
  "description": "une bonne base sans aucun doute \n x2.",
  "image-url": "m1.png",
  "level": "1",
+ "color": "violet",
  "price":{"violet":10}
  },{
  "id":"1",
@@ -11,6 +12,7 @@
  "description": "la maitrise de soi est la voie vers la victoire.",
  "image-url": "m2.png",
  "level": "1",
+ "color": "orange",
  "price":{"orange":60}
  },{
  "id":"2",
@@ -18,6 +20,7 @@
  "description": "D'une puissance phénoménale, il attire les pigments.",
  "image-url": "m3.png",
  "level": "1",
+ "color": "rouge",
  "price":{"rouge":14}
  },{
  "id":"3",
@@ -25,6 +28,7 @@
  "description": "À la lumière du jour, les pigments s'amassent.",
  "image-url": "m4.png",
  "level": "1",
+ "color": "orange",
  "price":{"orange":14}
  },{
  "id":"4",
@@ -32,6 +36,7 @@
  "description": "Sage et expérimenté, il canalise l'énergie des alentours.",
  "image-url": "m5.png",
  "level": "1",
+ "color": "vert",
  "price":{"vert":60}
  },{
  "id":"5",
@@ -39,6 +44,7 @@
  "description": "Ce qui se ressemble s'assemble.",
  "image-url": "m6.png",
  "level": "1",
+ "color": "rouge",
  "price":{"rouge":5}
  },{
  "id":"5",
@@ -46,6 +52,7 @@
  "description": "L'homme sage et avisé tire profit de ce qui l'entoure",
  "image-url": "m6.png",
  "level": "1",
+ "color": "violet",
  "price":{"violet":5}
  },{
  "id":"6",
@@ -53,6 +60,7 @@
  "description": "Duper les ennemis est sa spécialitée",
  "image-url": "m7.png",
  "level": "1",
+ "color": "bleu",
  "price":{"bleu":20}
  },{
  "id":"7",
@@ -60,6 +68,7 @@
  "description": "Pack des 2 motifs brillants",
  "image-url": "m8.png",
  "level": "4",
+ "color": "jaune",
  "price":{"jaune":40}
  },{
  "id":"8",
@@ -67,5 +76,6 @@
  "description": "La maîtrise de soi est la voie vers la victoire",
  "image-url": "m9.png",
  "level": "1",
+ "color": "bleu",
  "price":{"bleu":60}
  }]
