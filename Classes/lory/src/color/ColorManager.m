@@ -57,18 +57,19 @@ static bool inited = NO;
 }
 
 + (void) updatePointsForColorIds:(NSDictionary*) pointsForColorIds{
-    for (NSNumber* key in pointsForColorIds) {
-        NSString *colorId = (NSString*)key;
-        NSNumber *points = (NSNumber *)[pointsForColorIds objectForKey:colorId];
-        Color *color = [colorDictionnary valueForKey:(NSString*)colorId];
+    for (NSString* key in pointsForColorIds) {
+        
+        NSNumber *points = (NSNumber *)[pointsForColorIds objectForKey:key];
+        
+        Color *color = [colorDictionnary valueForKey:(NSString*)key];
         color.colorValue = points;
+        [colorDictionnary setValue:color forKey:key];
         
         // DISPATCH l'event updatedPoints
         [[NSNotificationCenter defaultCenter]
          postNotificationName:@"updatedPoints"
          object:self];
-        
-        [ColorManager saveColorId:colorId];        
+        [ColorManager saveColorId:key];
     }
 }
 

@@ -110,7 +110,7 @@
     }
 }
 - (void) resetPointsHandler: (NSNotification *) notification{
-    textFields = [[NSMutableDictionary alloc] init];
+
     for (id key in [ColorManager getColors]) {
         Color *color = [[ColorManager getColors] objectForKey:key];
         UILabel * tf = [textFields valueForKey:color.colorId];
