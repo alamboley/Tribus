@@ -64,14 +64,22 @@
  "price":{"bleu":20}
  },{
  "id":"7",
- "title":"duo coloré",
- "description": "Pack des 2 motifs brillants",
+ "title":"les jumelles (1)",
+ "description": "On ne la sépare pas de sa soeur",
  "image-url": "m8.png",
  "level": "4",
  "color": "jaune",
  "price":{"jaune":40}
  },{
  "id":"8",
+ "title":"les jumelles (2)",
+ "description": "On ne la sépare pas de sa soeur",
+ "image-url": "m8.png",
+ "level": "4",
+ "color": "jaune",
+ "price":{"jaune":40}
+ },{
+ "id":"9",
  "title":"guerrier pacifiste",
  "description": "La maîtrise de soi est la voie vers la victoire",
  "image-url": "m9.png",

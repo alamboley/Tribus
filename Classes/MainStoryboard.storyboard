@@ -129,32 +129,36 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="perso@2x.png" id="4ZJ-NH-yjK">
+                                <rect key="frame" x="108" y="68" width="252" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <view contentMode="scaleToFill" id="Zsd-Hp-Tu7">
                                 <rect key="frame" x="48" y="50" width="372" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" id="pf3-Ec-Wcz">
-                                        <rect key="frame" x="64" y="41" width="248" height="175"/>
+                                        <rect key="frame" x="60" y="17" width="252" height="300"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="Sax-F0-3vM">
-                                        <rect key="frame" x="64" y="41" width="248" height="175"/>
+                                        <rect key="frame" x="60" y="17" width="252" height="300"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="yc2-Tg-aqy">
-                                        <rect key="frame" x="64" y="41" width="248" height="175"/>
+                                        <rect key="frame" x="60" y="17" width="252" height="300"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="2oO-sI-Oh4">
-                                        <rect key="frame" x="64" y="41" width="248" height="175"/>
+                                        <rect key="frame" x="60" y="17" width="252" height="300"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="C87-DR-TrV">
-                                        <rect key="frame" x="64" y="41" width="248" height="175"/>
+                                        <rect key="frame" x="60" y="17" width="252" height="300"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="m8i-rn-sEk">
-                                        <rect key="frame" x="64" y="41" width="248" height="175"/>
+                                        <rect key="frame" x="60" y="17" width="252" height="300"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -165,7 +169,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="f41-wd-3aJ">
-                                        <rect key="frame" x="77" y="43" width="37" height="37"/>
+                                        <rect key="frame" x="355" y="43" width="37" height="37"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="1i8-kG-God">
@@ -177,7 +181,7 @@
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="4ig-m3-H8P">
-                                        <rect key="frame" x="355" y="46" width="37" height="37"/>
+                                        <rect key="frame" x="76" y="46" width="37" height="37"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="YHE-9A-fjO">
@@ -818,6 +822,7 @@ de couleurs pour booster ses performances !  </string>
         <image name="main-button-big-normal.png" width="150" height="56"/>
         <image name="main-button-small-normal@2x.png" width="175" height="61"/>
         <image name="ok-btn@2x.png" width="107" height="98"/>
+        <image name="perso@2x.png" width="504" height="559"/>
         <image name="power-none@2x.png" width="84" height="84"/>
         <image name="rites_fond@2x.jpeg" width="960" height="640"/>
         <image name="traits@2x.png" width="519" height="268"/>
