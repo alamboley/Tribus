@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ColorUIViewController.h"
 @interface CustomUITabBarController : UITabBarController <UITabBarControllerDelegate>
 @property (nonatomic, retain) NSMutableArray *buttons;
+@property (nonatomic, retain) ColorUIViewController *colorUIViewController;
 
 @end

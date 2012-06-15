@@ -18,7 +18,6 @@
 @synthesize productDetail;
 @synthesize icarousel;
 @synthesize itemDatas;
-@synthesize colorUIViewController;
 
 - (void)awakeFromNib
 {
@@ -51,15 +50,6 @@
     //configure carousel
     icarousel.type = iCarouselTypeRotary;
     icarousel.bounceDistance = 0.2;
-
-    
-    colorUIViewController = [[ColorUIViewController alloc] initWithNibName:@"ColorUIViewController" bundle:nil andType:big];
-    [self.view addSubview:colorUIViewController.view];
-    
-    CGFloat x = ([self view].bounds.size.height - [colorUIViewController view].bounds.size.width) / 2;
-    CGFloat y = [self view].bounds.size.width  - 50;
-    colorUIViewController.view.frame = CGRectMake(x, y, colorUIViewController.view.frame.size.width, colorUIViewController.view.frame.size.height);
-
     [[[self navigationUIViewController] pageTitle] setText:@"échoppe"];
     /*[self.view makeToast:@"This is a piece of toast" 
                 duration:3.0
@@ -76,15 +66,12 @@
     icarousel = nil;
     [itemDatas removeAllObjects];
     itemDatas = nil;
-    
-    [self setColorUIViewController:nil];
-    
+        
     [self setProductDetail:nil];
     [super viewDidUnload];
 }
 -(void)viewDidAppear:(BOOL)animated { 
     [super viewDidAppear:animated];
-    [colorUIViewController viewDidAppear:YES];
     
     [[NSNotificationCenter defaultCenter]
      addObserver:self
@@ -95,7 +82,6 @@
 
 -(void)viewDidDisappear:(BOOL)animated { 
     [super viewDidDisappear:animated];
-    [colorUIViewController viewDidDisappear:YES];
     
     [[NSNotificationCenter defaultCenter]
      removeObserver:self

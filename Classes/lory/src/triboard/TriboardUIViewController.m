@@ -14,8 +14,8 @@
 @implementation TriboardUIViewController
 @synthesize itemsContainer,itemIdSelected;
 @synthesize gestureOutlet;
+@synthesize motifsContainer;
 @synthesize itemDatas;
-@synthesize colorUIViewController;
 @synthesize motifMilieu;
 
 - (id)init {
@@ -64,12 +64,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    colorUIViewController = [[ColorUIViewController alloc] initWithNibName:@"ColorUIViewController" bundle:nil andType:big];
-    [self.view addSubview:colorUIViewController.view];
-    CGFloat x = ([self view].bounds.size.height - [colorUIViewController view].bounds.size.width) / 2;
-    CGFloat y = [self view].bounds.size.width  - 50;
-    colorUIViewController.view.frame = CGRectMake(x, y, colorUIViewController.view.frame.size.width, colorUIViewController.view.frame.size.height);
     
     self.itemDatas = [[NSMutableDictionary alloc] init];
     
@@ -110,10 +104,6 @@
     }
 }
 
--(void) changeCurrentItem:(NSString*) itemId{
-    
-}
-
 - (IBAction)itemSelected:(id)sender {
 /*    [[NSNotificationCenter defaultCenter] postNotificationName:@"itemSelectedFromTriboard" 
      object:[NSNumber numberWithInt:[[((UIButton*)sender).titleLabel text] intValue]]];*/
@@ -133,32 +123,31 @@
 - (void)itemSelectedFromBag:(NSNotification *)notification {
     NSObject *foo;
     foo = [notification object];
+    int i = 0;
+    UIImageView *view;
     TriboardItemUIViewController *vc = [[itemDatas valueForKey:itemIdSelected] valueForKey:@"item"];
     for (NSDictionary *obj in [USave getArrayForJsonPath:@"motifs"]){
         if([[NSString stringWithFormat:@"%@",foo] isEqualToString:[obj valueForKey:@"id"]]){
-            [vc.button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"store_pigment_%@@2x.png",[obj valueForKey:@"color"]]] forState:UIControlStateNormal];            
+            [vc.button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"store_pigment_%@@2x.png",[obj valueForKey:@"color"]]] forState:UIControlStateNormal];
+            view = [[motifsContainer subviews] objectAtIndex:i];
+            [view setImage:[UIImage imageNamed:@"store_pigment_none@2x.png"]];
         }
-
+        i++;
     }
-
-
-    [motifMilieu setAlpha:1.0];
 }
 -(void)viewDidAppear:(BOOL)animated { 
     [super viewDidAppear:animated];
-    [colorUIViewController viewDidAppear:YES];
 }
 
 -(void)viewDidDisappear:(BOOL)animated { 
     [super viewDidDisappear:animated];
-    [colorUIViewController viewDidDisappear:YES];
 }
 - (void)viewDidUnload
 {
     [self setGestureOutlet:nil];
     [self setItemsContainer:nil];
-    [self setColorUIViewController:nil];
     [self setMotifMilieu:nil];
+    [self setMotifsContainer:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

@@ -133,20 +133,28 @@
                                 <rect key="frame" x="48" y="50" width="372" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" image="boardillu_motifsbleu@2x.png" id="pf3-Ec-Wcz">
-                                        <rect key="frame" x="59" y="25" width="252" height="279"/>
+                                    <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" id="pf3-Ec-Wcz">
+                                        <rect key="frame" x="64" y="41" width="248" height="175"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="boardillu_motifsjaune2@2x.png" id="Sax-F0-3vM">
-                                        <rect key="frame" x="59" y="25" width="252" height="279"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="Sax-F0-3vM">
+                                        <rect key="frame" x="64" y="41" width="248" height="175"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="boardillu_motifsjaune1@2x.png" id="yc2-Tg-aqy">
-                                        <rect key="frame" x="59" y="25" width="252" height="279"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="yc2-Tg-aqy">
+                                        <rect key="frame" x="64" y="41" width="248" height="175"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="boardillu_motiforange@2x.png" id="2oO-sI-Oh4">
-                                        <rect key="frame" x="59" y="25" width="252" height="279"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="2oO-sI-Oh4">
+                                        <rect key="frame" x="64" y="41" width="248" height="175"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="C87-DR-TrV">
+                                        <rect key="frame" x="64" y="41" width="248" height="175"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="m8i-rn-sEk">
+                                        <rect key="frame" x="64" y="41" width="248" height="175"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -214,6 +222,7 @@ de couleurs pour booster ses performances !  </string>
                         <outlet property="gestureOutlet" destination="mKg-t8-lN0" id="e2l-bj-wuX"/>
                         <outlet property="itemsContainer" destination="sSS-Br-eIa" id="ers-MQ-MIL"/>
                         <outlet property="motifMilieu" destination="pf3-Ec-Wcz" id="Hmu-CT-uUu"/>
+                        <outlet property="motifsContainer" destination="Zsd-Hp-Tu7" id="i6U-Dq-KSj"/>
                     </connections>
                 </viewController>
                 <swipeGestureRecognizer direction="down" id="mKg-t8-lN0">
@@ -640,8 +649,8 @@ de couleurs pour booster ses performances !  </string>
                         <autoresizingMask key="autoresizingMask"/>
                     </tabBar>
                     <connections>
-                        <segue destination="XAb-BW-iNc" kind="relationship" relationship="viewControllers" id="mJi-a2-zmS"/>
-                        <segue destination="8wW-hU-t5F" kind="relationship" relationship="viewControllers" id="Jzx-zZ-gh6"/>
+                        <segue destination="XAb-BW-iNc" kind="relationship" relationship="viewControllers" id="paf-9P-RJw"/>
+                        <segue destination="8wW-hU-t5F" kind="relationship" relationship="viewControllers" id="Fac-iO-fm7"/>
                     </connections>
                 </tabBarController>
             </objects>
@@ -802,10 +811,6 @@ de couleurs pour booster ses performances !  </string>
         </scene>
     </scenes>
     <resources>
-        <image name="boardillu_motiforange@2x.png" width="577" height="640"/>
-        <image name="boardillu_motifsbleu@2x.png" width="504" height="559"/>
-        <image name="boardillu_motifsjaune1@2x.png" width="504" height="559"/>
-        <image name="boardillu_motifsjaune2@2x.png" width="504" height="559"/>
         <image name="boutonreglages@2x.png" width="50" height="41"/>
         <image name="fond2@2x.png" width="960" height="640"/>
         <image name="fond3@2x.png" width="960" height="640"/>
@@ -895,6 +900,7 @@ de couleurs pour booster ses performances !  </string>
                 <relationship kind="outlet" name="gestureOutlet" candidateClass="UISwipeGestureRecognizer"/>
                 <relationship kind="outlet" name="itemsContainer" candidateClass="UIView"/>
                 <relationship kind="outlet" name="motifMilieu" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="motifsContainer" candidateClass="UIView"/>
             </relationships>
         </class>
         <class className="TribuUIViewController" superclassName="GenericUIViewController">

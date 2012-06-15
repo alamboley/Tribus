@@ -7,15 +7,14 @@
 //
 
 #import "GenericUIViewController.h"
-#import "ColorUIViewController.h"
 
 @interface TriboardUIViewController : GenericUIViewController
 @property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *gestureOutlet;
 -(IBAction)busIncoming:(UIGestureRecognizer *)sender;
 @property (weak, nonatomic) IBOutlet UIView *itemsContainer;
+@property (weak, nonatomic) IBOutlet UIView *motifsContainer;
 @property (nonatomic, retain) NSMutableDictionary *itemDatas;
 @property (nonatomic, retain) NSString *itemIdSelected;
-@property (nonatomic, retain) ColorUIViewController *colorUIViewController;
 @property (weak, nonatomic) IBOutlet UIImageView *motifMilieu;
 
 @end

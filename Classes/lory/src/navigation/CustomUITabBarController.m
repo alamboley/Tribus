@@ -10,7 +10,7 @@
 #import "Color.h"
 
 @implementation CustomUITabBarController
-
+@synthesize colorUIViewController;
 @synthesize buttons;
 
 #pragma mark - View lifecycle
@@ -29,6 +29,13 @@
 {
     [super viewDidLoad];
     self.delegate = self;
+    colorUIViewController = [[ColorUIViewController alloc] initWithNibName:@"ColorUIViewController" bundle:nil andType:big];
+    [self.view addSubview:colorUIViewController.view];
+    [self.view addSubview:colorUIViewController.bigColorView];
+    CGFloat x = ([self view].bounds.size.height - [colorUIViewController view].bounds.size.width) / 2;
+    CGFloat y = [self view].bounds.size.width  - 50;
+    colorUIViewController.view.frame = CGRectMake(x, y, colorUIViewController.view.frame.size.width, colorUIViewController.view.frame.size.height);
+    
     buttons = [NSMutableArray arrayWithObjects:nil];
     
     // Remove the tabBar
@@ -115,9 +122,19 @@
 {
     [buttons removeAllObjects];
     [self setButtons:nil];
-    
+    [self setColorUIViewController:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+}
+
+-(void)viewDidAppear:(BOOL)animated { 
+    [super viewDidAppear:animated];
+    [colorUIViewController viewDidAppear:YES];
+}
+
+-(void)viewDidDisappear:(BOOL)animated { 
+    [super viewDidDisappear:animated];
+    [colorUIViewController viewDidDisappear:YES];
 }
 @end

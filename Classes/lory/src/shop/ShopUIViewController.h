@@ -15,7 +15,6 @@
 @property (weak, nonatomic) IBOutlet UIView *productDetail;
 @property (weak, nonatomic) IBOutlet iCarousel *icarousel;
 @property (nonatomic, retain) NSMutableDictionary *itemDatas;
-@property (nonatomic, retain) ColorUIViewController *colorUIViewController;
 
 
 @end

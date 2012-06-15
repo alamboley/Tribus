@@ -91,7 +91,7 @@
             currentView = self.view;
             break;
     }
-    [currentView setHidden:NO];
+    //[currentView setHidden:NO];
     //[self.view setCenter:[currentView center]];
 }
 - (void) initializeTextfields{
@@ -120,7 +120,7 @@
 }
 - (void)viewDidUnload
 {
-    
+    [self viewDidDisappear:NO];
     [[self textFields] removeAllObjects];
     [self setTextFields:nil];
     [[self currentView] removeFromSuperview];
@@ -152,7 +152,7 @@
 
 -(void)viewDidDisappear:(BOOL)animated { 
     [super viewDidDisappear:animated];
-    [[NSNotificationCenter defaultCenter]
+    /*[[NSNotificationCenter defaultCenter]
      removeObserver:self
      name:@"addedPoints"
      object:nil ];
@@ -163,7 +163,7 @@
     [[NSNotificationCenter defaultCenter]
      removeObserver:self
      name:@"updatedPoints"
-     object:nil ];
+     object:nil ];*/
 }
 
 @end
