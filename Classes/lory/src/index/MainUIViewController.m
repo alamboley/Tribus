@@ -70,7 +70,7 @@
     
     LandingPageUIViewController *landing = [[LandingPageUIViewController alloc] initWithNibName:@"LandingPageUIViewController" bundle:nil];
     
-    [self.view addSubview:landing.view];
+    //[self.view addSubview:landing.view];
 
 }
 -(void)startGameHandler: (NSNotification *) notification{

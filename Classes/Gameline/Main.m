@@ -44,9 +44,9 @@
         
         [self.stage addChild:imgLoading];
         
-        loading = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"loader2.xml"] andAnimations:[NSArray arrayWithObject:@"loader"] andFirstAnimation:@"loader"];
-        loading.x = 0;
-        loading.y = 180;
+        loading = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"loader3.xml"] andAnimations:[NSArray arrayWithObject:@"loader"] andFirstAnimation:@"loader"];
+        loading.x = 20;
+        loading.y = 215;
         
         [self.stage addChild:loading];
         

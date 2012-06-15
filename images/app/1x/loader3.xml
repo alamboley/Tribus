@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:95d583c21da09968467619e8523eea2f$ -->
+<TextureAtlas imagePath="loader3.png">
+    <SubTexture name="loader3/0000" x="63" y="374" width="59" height="60" frameX="-2" frameY="-1" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="loader3/0002" x="124" y="372" width="59" height="60" frameX="-1" frameY="-1" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="loader3/0004" x="2" y="2" width="63" height="62" frameX="0" frameY="0" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="loader3/0006" x="185" y="372" width="59" height="58" frameX="-2" frameY="-2" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="loader3/0008" x="191" y="188" width="61" height="58" frameX="0" frameY="-2" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="loader3/0011" x="191" y="126" width="61" height="60" frameX="0" frameY="-1" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="loader3/0013" x="187" y="310" width="59" height="60" frameX="-1" frameY="-1" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="loader3/0015" x="2" y="314" width="59" height="60" frameX="-2" frameY="-1" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="loader3/0016" x="63" y="312" width="59" height="60" frameX="-1" frameY="-1" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="loader3/0018" x="128" y="126" width="61" height="60" frameX="0" frameY="-1" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="loader3/0021" x="2" y="128" width="61" height="60" frameX="0" frameY="-1" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="loader3/0022" x="2" y="250" width="59" height="62" frameX="-2" frameY="0" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="loader3/0024" x="128" y="188" width="61" height="58" frameX="0" frameY="-2" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="loader3/0025" x="65" y="126" width="61" height="60" frameX="0" frameY="-1" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="loader3/0027" x="193" y="64" width="61" height="60" frameX="0" frameY="-1" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="loader3/0029" x="124" y="434" width="57" height="60" frameX="-2" frameY="-1" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="loader3/0031" x="185" y="432" width="57" height="62" frameX="-3" frameY="0" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="loader3/0033" x="130" y="64" width="61" height="60" frameX="0" frameY="-1" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="loader3/0035" x="2" y="190" width="61" height="58" frameX="0" frameY="-2" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="loader3/0037" x="126" y="310" width="59" height="60" frameX="-1" frameY="-1" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="loader3/0039" x="65" y="188" width="61" height="58" frameX="0" frameY="-2" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="loader3/0041" x="187" y="248" width="59" height="60" frameX="-1" frameY="-1" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="loader3/0043" x="126" y="248" width="59" height="60" frameX="-2" frameY="-1" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="loader3/0046" x="2" y="66" width="61" height="60" frameX="0" frameY="-1" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="loader3/0048" x="67" y="64" width="61" height="60" frameX="0" frameY="-1" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="loader3/0050" x="193" y="2" width="61" height="60" frameX="0" frameY="-1" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="loader3/0052" x="2" y="376" width="59" height="58" frameX="-1" frameY="-2" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="loader3/0054" x="130" y="2" width="61" height="60" frameX="0" frameY="-1" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="loader3/0056" x="67" y="2" width="61" height="60" frameX="-1" frameY="-1" frameWidth="275" frameHeight="200"/>
+    <SubTexture name="loader3/0058" x="65" y="248" width="59" height="62" frameX="-2" frameY="0" frameWidth="275" frameHeight="200"/>
+</TextureAtlas>
