@@ -17,6 +17,13 @@
 @synthesize itemDatas;
 @synthesize icarousel;
 @synthesize travelDetail;
+@synthesize departureName;
+@synthesize arrivalName;
+@synthesize departureLine;
+@synthesize arrivalLine;
+@synthesize travelName;
+@synthesize departureBtn;
+@synthesize arrivalBtn;
 
 - (void)awakeFromNib
 {
@@ -28,9 +35,10 @@
         if([[obj objectForKey:@"done"] boolValue]){
             done = [NSNumber numberWithBool:YES];
         }
+        NSString *desc = [NSString stringWithFormat:@"%@ - %@ (Ligne %@)",[obj objectForKey:@"departure"],[obj objectForKey:@"arrival"],[obj objectForKey:@"line"]];
         [itemDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
-                              [[NSArray alloc] initWithObjects:[obj objectForKey:@"title"], [obj objectForKey:@"description"], done,nil] forKeys:
-                              [[NSArray alloc] initWithObjects:@"title", @"description", @"done", nil]]
+                              [[NSArray alloc] initWithObjects:[obj objectForKey:@"title"],[obj objectForKey:@"departure"],[obj objectForKey:@"arrival"],[obj objectForKey:@"line"], desc, done,nil] forKeys:
+                              [[NSArray alloc] initWithObjects:@"title", @"departure",@"arrival",@"line",@"description", @"done", nil]]
                       forKey:[obj objectForKey:@"id"]];
         
         //[USave saveItemId:[obj objectForKey:@"id"] forType:self.title];
@@ -55,7 +63,13 @@
         
         [UIView setAnimationTransition: UIViewAnimationTransitionFlipFromRight forView:carousel.currentItemView cache:YES];
         [UIView setAnimationTransition: UIViewAnimationTransitionFlipFromRight forView:travelDetail cache:YES];
-
+        NSMutableDictionary *datas = [itemDatas objectForKey:[NSString stringWithFormat:@"%d",index]];
+        [travelName setText:[datas valueForKey:@"title"]];
+        [travelName setFont:[UIFont fontWithName:@"Kohicle25" size:travelName.font.pointSize]];
+        [departureLine setText:[NSString stringWithFormat:@"Ligne %@",[datas valueForKey:@"line"]]];
+        [arrivalLine setText:[NSString stringWithFormat:@"Ligne %@",[datas valueForKey:@"line"]]];
+        [departureName setText:[datas valueForKey:@"departure"]];
+        [arrivalName setText:[datas valueForKey:@"arrival"]];
         [travelDetail setHidden:NO];
         
         /*[travelDetail removeFromSuperview];
@@ -108,7 +122,7 @@
 #pragma mark picker view methods
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView;
 {
-    return 1;
+    return 2;
 }
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
@@ -124,9 +138,19 @@
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
 {
-    return @"Row Name";
+    NSString *val = @"";
+    if(component == 0){
+        val = [NSString stringWithFormat:@"Ligne %d",row + 1];
+    }else {
+        val = [NSString stringWithFormat:@"lolllll %d",row];
+    }
+    return val;
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return NO;
+}
 
 #pragma mark - View lifecycle
 
@@ -146,6 +170,27 @@
     icarousel.vertical = YES;
     //icarousel.viewpointOffset = CGSizeMake(0, 70);
     [travelDetail setHidden:YES];
+    travelName.delegate = self;
+    
+    actionSheet = [[UIActionSheet alloc] initWithTitle:nil 
+                                                             delegate:nil
+                                                    cancelButtonTitle:nil
+                                               destructiveButtonTitle:nil
+                                                    otherButtonTitles:nil];
+    
+    [actionSheet setActionSheetStyle:UIActionSheetStyleBlackTranslucent];
+    
+    UISegmentedControl *closeButton = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObject:@"Close"]];
+    closeButton.momentary = YES; 
+    closeButton.frame = CGRectMake(410.0f, 7.0f, 50.0f, 30.0f);
+    closeButton.segmentedControlStyle = UISegmentedControlStyleBar;
+    closeButton.tintColor = [UIColor blackColor];
+    [closeButton addTarget:self action:@selector(dismissActionSheet:) forControlEvents:UIControlEventValueChanged];
+    [actionSheet addSubview:closeButton];
+    [actionSheet showInView:[self.navigationController view]];
+    [actionSheet setBounds:CGRectMake(0, 0, 480, 480)];
+    [actionSheet addSubview:uiPickerView];
+    [actionSheet dismissWithClickedButtonIndex:0 animated:NO];
 }
 
 
@@ -153,9 +198,23 @@
 {
     [self setUiPickerView:nil];
     [self setTravelDetail:nil];
+    [self setDepartureName:nil];
+    [self setArrivalName:nil];
+    [self setDepartureLine:nil];
+    [self setArrivalLine:nil];
+    [self setDepartureBtn:nil];
+    [self setArrivalBtn:nil];
+    [self setTravelName:nil];
+    actionSheet = nil;
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
 }
 
+- (IBAction)showPickerView:(id)sender {
+    [actionSheet showInView:[self.navigationController view]];
+    [actionSheet setBounds:CGRectMake(0, 0, 480, 480)];
+}
+- (IBAction)dismissActionSheet:(id)sender {
+    [actionSheet dismissWithClickedButtonIndex:0 animated:YES];
+    [actionSheet removeFromSuperview];
+}
 @end

@@ -310,27 +310,146 @@ de couleurs pour booster ses performances !  </string>
                                     <outlet property="delegate" destination="pa0-oe-nky" id="WOo-qo-RwO"/>
                                 </connections>
                             </view>
-                            <pickerView alpha="0.0" contentMode="scaleToFill" id="ush-Iu-Efg">
-                                <rect key="frame" x="0.0" y="104" width="480" height="216"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LSI-ji-WeE">
+                                <rect key="frame" x="419" y="264" width="53" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="ok-btn@2x.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" id="o4a-qk-2ic">
+                                <rect key="frame" x="39" y="65" width="401" height="217"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="travel-modified-item-bg@2x.png" id="xLm-ai-NAp">
+                                        <rect key="frame" x="0.0" y="0.0" width="401" height="217"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="tipiicon@2x.png" id="TBt-8j-5zB">
+                                        <rect key="frame" x="330" y="15" width="20" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="geolocicon@2x.png" id="Hv2-fu-hPi">
+                                        <rect key="frame" x="247" y="56" width="38" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="geolocicon@2x.png" id="YeR-5h-g0B">
+                                        <rect key="frame" x="247" y="101" width="38" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="frequenceicon@2x.png" id="Kvh-It-U4O">
+                                        <rect key="frame" x="42" y="137" width="18" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="zW4-Kb-Psh" customClass="UILabelCustomFontTwCenMT">
+                                        <rect key="frame" x="282" y="54" width="77" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="4OC-Fw-fmT" customClass="UILabelCustomFontTwCenMT">
+                                        <rect key="frame" x="282" y="69" width="77" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="ZcO-f5-pAw" customClass="UILabelCustomFontTwCenMT">
+                                        <rect key="frame" x="282" y="114" width="77" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="79x-D7-I9i" customClass="UILabelCustomFontTwCenMT">
+                                        <rect key="frame" x="282" y="97" width="77" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Départ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="POW-74-FrH" customClass="UILabelCustomFontTwCenMT">
+                                        <rect key="frame" x="42" y="61" width="100" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Arrivée" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="pLJ-sd-Xco" customClass="UILabelCustomFontTwCenMT">
+                                        <rect key="frame" x="42" y="106" width="100" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Opb-r8-9wp">
+                                        <rect key="frame" x="40" y="53" width="319" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showPickerView:" destination="pa0-oe-nky" eventType="touchUpInside" id="AJ2-N0-mkG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eHo-tt-PWZ">
+                                        <rect key="frame" x="40" y="98" width="319" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showPickerView:" destination="pa0-oe-nky" eventType="touchUpInside" id="CcL-6V-Atx"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nom du voyage" adjustsFontSizeToFit="NO" minimumFontSize="17" id="HS2-so-v5L">
+                                        <rect key="frame" x="38" y="13" width="265" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <pickerView contentMode="scaleToFill" id="ush-Iu-Efg">
+                                <rect key="frame" x="0.0" y="40" width="480" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <outlet property="dataSource" destination="pa0-oe-nky" id="kLp-kn-8an"/>
                                     <outlet property="delegate" destination="pa0-oe-nky" id="816-hs-eXv"/>
                                 </connections>
                             </pickerView>
-                            <view contentMode="scaleToFill" id="o4a-qk-2ic">
-                                <rect key="frame" x="120" y="80" width="240" height="160"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="f8T-RL-Krx"/>
                     <connections>
+                        <outlet property="arrivalBtn" destination="eHo-tt-PWZ" id="vRT-zz-kVP"/>
+                        <outlet property="arrivalLine" destination="ZcO-f5-pAw" id="gf7-GB-tOu"/>
+                        <outlet property="arrivalName" destination="79x-D7-I9i" id="80v-Vx-oPW"/>
+                        <outlet property="departureBtn" destination="Opb-r8-9wp" id="YGx-3o-aTy"/>
+                        <outlet property="departureLine" destination="4OC-Fw-fmT" id="gc9-KK-msB"/>
+                        <outlet property="departureName" destination="zW4-Kb-Psh" id="Dcg-te-01z"/>
                         <outlet property="icarousel" destination="CRy-il-CaA" id="TJz-7E-WOr"/>
                         <outlet property="travelDetail" destination="o4a-qk-2ic" id="bJZ-j6-MfQ"/>
+                        <outlet property="travelName" destination="HS2-so-v5L" id="K6a-8X-nsS"/>
                         <outlet property="uiPickerView" destination="ush-Iu-Efg" id="EJd-oR-e0D"/>
                     </connections>
                 </viewController>
@@ -909,6 +1028,8 @@ de couleurs pour booster ses performances !  </string>
         <image name="boutonsuivant@2x.png" width="107" height="98"/>
         <image name="fond2@2x.png" width="960" height="640"/>
         <image name="fond3@2x.png" width="960" height="640"/>
+        <image name="frequenceicon@2x.png" width="36" height="45"/>
+        <image name="geolocicon@2x.png" width="77" height="64"/>
         <image name="main-bg@2x.jpg" width="960" height="640"/>
         <image name="main-button-big-normal.png" width="150" height="56"/>
         <image name="main-button-small-normal@2x.png" width="175" height="61"/>
@@ -916,9 +1037,121 @@ de couleurs pour booster ses performances !  </string>
         <image name="perso@2x.png" width="504" height="559"/>
         <image name="power-none@2x.png" width="84" height="84"/>
         <image name="rites_fond@2x.jpeg" width="960" height="640"/>
+        <image name="tipiicon@2x.png" width="41" height="63"/>
         <image name="traits@2x.png" width="519" height="268"/>
+        <image name="travel-modified-item-bg@2x.png" width="802" height="434"/>
         <image name="triboard-customization_bg@2x.png" width="787" height="479"/>
     </resources>
+    <classes>
+        <class className="BagUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BagUIViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="itemForTriboardSelected:"/>
+                <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
+                <relationship kind="outlet" name="okButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="CustomUITabBarController" superclassName="UITabBarController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomUITabBarController.h"/>
+        </class>
+        <class className="GameUIViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GameUIViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="nextButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="sparrowView" candidateClass="SPView"/>
+            </relationships>
+        </class>
+        <class className="GenericUIViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GenericUIViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="viewTitleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="InitiationViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/InitiationViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="IslandUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IslandUIViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
+            </relationships>
+        </class>
+        <class className="MainUINavigationControllerViewController" superclassName="UINavigationController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainUINavigationControllerViewController.h"/>
+        </class>
+        <class className="MainUIViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainUIViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="nextBusUILabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="MissionUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MissionUIViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
+                <relationship kind="outlet" name="uiImageView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="SPView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SPView.h"/>
+        </class>
+        <class className="ShopUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ShopUIViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
+                <relationship kind="outlet" name="productDetail" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="TravelUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TravelUIViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="showPickerView:"/>
+                <relationship kind="outlet" name="arrivalBtn" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="arrivalLine" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="arrivalName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="departureBtn" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="departureLine" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="departureName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
+                <relationship kind="outlet" name="travelDetail" candidateClass="UIView"/>
+                <relationship kind="outlet" name="travelName" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="uiPickerView" candidateClass="UIPickerView"/>
+            </relationships>
+        </class>
+        <class className="TriboardUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TriboardUIViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="busIncoming:" candidateClass="UIGestureRecognizer"/>
+                <relationship kind="outlet" name="gestureOutlet" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="outlet" name="itemsContainer" candidateClass="UIView"/>
+                <relationship kind="outlet" name="motifMilieu" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="motifsContainer" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="TribuUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TribuUIViewController.h"/>
+        </class>
+        <class className="UIButtonCustomFontTwCenMT" superclassName="UIButton">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIButtonCustomFontTwCenMT.h"/>
+        </class>
+        <class className="UILabelCustomFontKohicle25" superclassName="UILabel">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UILabelCustomFontKohicle25.h"/>
+        </class>
+        <class className="UILabelCustomFontTwCenMT" superclassName="UILabel">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UILabelCustomFontTwCenMT.h"/>
+        </class>
+        <class className="iCarousel" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iCarousel.h"/>
+            <relationships>
+                <relationship kind="outlet" name="dataSource"/>
+                <relationship kind="outlet" name="delegate"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <nil key="statusBar"/>
         <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>

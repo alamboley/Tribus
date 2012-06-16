@@ -1,16 +1,22 @@
 [{
  "id":"0",
  "title":"trajet lycee",
- "description": "Marquisats - Bertollet (Ligne 6)",
+ "departure":"Marquisats",
+ "arrival":"Bertollet",
+ "line":"6",
  "done": 1
  },{
  "id":"1",
  "title":"trajet escalade",
- "description": "Bertollet - Bel air (Ligne 5)",
+ "departure":"Marquisats",
+ "arrival":"Bel air",
+ "line":"6",
  "done": 0
  },{
  "id":"2",
  "title":"trajet mattias",
- "description": "Marquisats - Courier (Ligne 6)",
+ "departure":"Marquisats",
+ "arrival":"Courier",
+ "line":"6",
  "done": 0
  }]
