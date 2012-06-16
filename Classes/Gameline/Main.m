@@ -124,4 +124,11 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:@"afficherScore" object:nil];
 }
 
+- (void) destroy {
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    
+    [super destroy];
+}
+
 @end

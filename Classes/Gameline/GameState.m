@@ -126,7 +126,7 @@
     
     score = [[Couleurs alloc] init];
     score.x = hero.x + 285;
-    score.y = 70;
+    score.y = 75;
     [self addChild:score];
     
     jauge = [[Jauge alloc] initWithColor:worldColor andPourcentage:(int)[Stats pourcentageParticule]];

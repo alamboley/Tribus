@@ -16,8 +16,6 @@
     
     PouvoirExchange *pouvoirExchange;
     SPImage *pouvoir;
-    
-    SPImage *btnSuivant;
 }
 
 @end

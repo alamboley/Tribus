@@ -84,5 +84,12 @@ static CitrusEngine *instance;
     
 }
 
+- (void) destroy {
+    
+    [self removeEventListener:@selector(step:) atObject:self forType:SP_EVENT_TYPE_ENTER_FRAME];
+    
+    [state destroy];
+}
+
 
 @end

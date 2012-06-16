@@ -28,4 +28,6 @@
 
 - (void) setUpState:(State *)theNewState;
 
+- (void) destroy;
+
 @end

@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "ColorUIViewController.h"
+#import "Main.h"
 
 @interface GameUIViewController : UIViewController {
+    
+    Main *game;
     
     ColorUIViewController *colorUIViewController;
 }

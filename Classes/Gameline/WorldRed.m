@@ -31,8 +31,6 @@
         imgArrivee = [SPImage imageWithContentsOfFile:[worldColor stringByAppendingString:@"Arrivee.png"]];
         
         pouvoir = [SPImage imageWithContentsOfFile:@"pouvoir1-ingame.png"];
-        
-        btnSuivant = [SPImage imageWithContentsOfFile:@"boutonsuivant.png"];
     }
     
     return self;
@@ -94,15 +92,9 @@
 
 - (void) finNiveau:(NSNotification *) notification {
     
-    [self addChild:btnSuivant];
-    btnSuivant.x = hero.x + 445;
-    btnSuivant.y = 240;
+    [super finNiveau:notification];
     
     [[NSNotificationCenter defaultCenter] postNotificationName:@"endGame" object:nil];
-    
-    [btnSuivant addEventListener:@selector(dispatchEndGame:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
-    
-    [super finNiveau:notification];
 }
 
 - (void) destroy {
@@ -123,17 +115,6 @@
     pouvoir = nil;
     
     [hero startBouclier];
-}
-
--(void) dispatchEndGame:(SPTouchEvent *) event {
-    
-    [event stopPropagation];
-    
-    [self removeChild:btnSuivant];
-    [btnSuivant removeEventListener:@selector(dispatchEndGame:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
-    btnSuivant = nil;
-    
-    //[[NSNotificationCenter defaultCenter] postNotificationName:@"endGame" object:nil];
 }
 
 @end

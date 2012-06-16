@@ -7,7 +7,6 @@
 //
 
 #import "GameUIViewController.h"
-#import "Main.h"
 
 #define RADIANS(degrees) ((degrees * M_PI) / 180.0)
 
@@ -40,7 +39,7 @@
     if(startingColorId == nil) startingColorId = @"jaune";
     
     [SPStage setSupportHighResolutions:YES];
-    Main *game = [[Main alloc] initWithWidth:320 height:480 rotation:YES andStartingColor:startingColorId];        
+    game = [[Main alloc] initWithWidth:320 height:480 rotation:YES andStartingColor:startingColorId];        
     sparrowView.stage = game;
     sparrowView.frameRate = SPARROW_FRAMERATE_ACTIVE;
     [sparrowView start];
@@ -86,6 +85,13 @@
 }
 
 -(void)viewDidDisappear:(BOOL)animated { 
+    
+    [game destroy];
+    game = nil;
+    
+    [sparrowView stop];
+    sparrowView = nil;
+    
     [super viewDidDisappear:animated];
     [colorUIViewController viewDidDisappear:YES];
 }
