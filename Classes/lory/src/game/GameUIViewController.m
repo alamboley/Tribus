@@ -44,6 +44,7 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(afficherScore:) name:@"afficherScore" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changerPositionScore:) name:@"changerPositionScore" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(gotoMissionPage:) name:@"endGame" object:nil];
 }
 
 - (void) afficherScore:(NSNotification *) notification {
@@ -80,7 +81,7 @@
 {
     return (interfaceOrientation == UIInterfaceOrientationLandscapeLeft || interfaceOrientation == UIInterfaceOrientationLandscapeRight);
 }
-- (IBAction)gotoMissions:(id)sender{
+- (void) gotoMissionPage:(NSNotification *) notification {
     [self performSegueWithIdentifier:@"PushMissionViewController" sender:self];
 }
 
