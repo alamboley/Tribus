@@ -818,6 +818,10 @@
 		B00C460A1578BBFC00745D28 /* WorldRed.m in Sources */ = {isa = PBXBuildFile; fileRef = B00C46081578BBFC00745D28 /* WorldRed.m */; };
 		B00C460D1578BC0B00745D28 /* WorldYellow.m in Sources */ = {isa = PBXBuildFile; fileRef = B00C460C1578BC0B00745D28 /* WorldYellow.m */; };
 		B00C460E1578BC0B00745D28 /* WorldYellow.m in Sources */ = {isa = PBXBuildFile; fileRef = B00C460C1578BC0B00745D28 /* WorldYellow.m */; };
+		B00DC91F158CD95E005D0647 /* boutonsuivant.png in Resources */ = {isa = PBXBuildFile; fileRef = B00DC91E158CD95E005D0647 /* boutonsuivant.png */; };
+		B00DC920158CD95E005D0647 /* boutonsuivant.png in Resources */ = {isa = PBXBuildFile; fileRef = B00DC91E158CD95E005D0647 /* boutonsuivant.png */; };
+		B00DC922158CD96B005D0647 /* boutonsuivant@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B00DC921158CD96B005D0647 /* boutonsuivant@2x.png */; };
+		B00DC923158CD96B005D0647 /* boutonsuivant@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B00DC921158CD96B005D0647 /* boutonsuivant@2x.png */; };
 		B0113DDF1553C06A0005F1AB /* BusManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = B0113DDE1553C06A0005F1AB /* BusManagement.m */; };
 		B012E3E315148F52008B9157 /* SXNSDataExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B012E3E215148F52008B9157 /* SXNSDataExtensions.m */; };
 		B012E3E615148F8B008B9157 /* SXParticleSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = B012E3E515148F8B008B9157 /* SXParticleSystem.m */; };
@@ -1725,6 +1729,8 @@
 		B00C46081578BBFC00745D28 /* WorldRed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorldRed.m; sourceTree = "<group>"; };
 		B00C460B1578BC0B00745D28 /* WorldYellow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorldYellow.h; sourceTree = "<group>"; };
 		B00C460C1578BC0B00745D28 /* WorldYellow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorldYellow.m; sourceTree = "<group>"; };
+		B00DC91E158CD95E005D0647 /* boutonsuivant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boutonsuivant.png; sourceTree = "<group>"; };
+		B00DC921158CD96B005D0647 /* boutonsuivant@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boutonsuivant@2x.png"; sourceTree = "<group>"; };
 		B0113DDD1553C0690005F1AB /* BusManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusManagement.h; sourceTree = "<group>"; };
 		B0113DDE1553C06A0005F1AB /* BusManagement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusManagement.m; sourceTree = "<group>"; };
 		B012E3E115148F52008B9157 /* SXNSDataExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SXNSDataExtensions.h; path = SparrowExtensions/SXNSDataExtensions.h; sourceTree = "<group>"; };
@@ -2946,6 +2952,7 @@
 			children = (
 				B044812E1563E1B7005BC009 /* animations */,
 				B07BA1221518930B0047D9C4 /* piege.png */,
+				B00DC91E158CD95E005D0647 /* boutonsuivant.png */,
 				B07BA1231518930B0047D9C4 /* portail_bleu.png */,
 				B07BA1241518930B0047D9C4 /* portail_vert.png */,
 				B084F0F915750813008C8899 /* filtreBack.png */,
@@ -2989,6 +2996,7 @@
 			children = (
 				B044812D1563E185005BC009 /* animations */,
 				B07BA13F1518940B0047D9C4 /* piege@2x.png */,
+				B00DC921158CD96B005D0647 /* boutonsuivant@2x.png */,
 				B07BA1401518940B0047D9C4 /* portail_bleu@2x.png */,
 				B07BA1411518940B0047D9C4 /* portail_vert@2x.png */,
 				B084F0F615750805008C8899 /* filtreBack@2x.png */,
@@ -3847,6 +3855,8 @@
 				040AF70F158BF5A0008F77F3 /* triboard-item-9.png in Resources */,
 				04BF02B7158BFC5A00D5BEC3 /* perso@2x.png in Resources */,
 				04BF02BA158BFC7800D5BEC3 /* perso.png in Resources */,
+				B00DC91F158CD95E005D0647 /* boutonsuivant.png in Resources */,
+				B00DC922158CD96B005D0647 /* boutonsuivant@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4282,6 +4292,8 @@
 				040AF710158BF5A0008F77F3 /* triboard-item-9.png in Resources */,
 				04BF02B8158BFC5A00D5BEC3 /* perso@2x.png in Resources */,
 				04BF02BB158BFC7800D5BEC3 /* perso.png in Resources */,
+				B00DC920158CD95E005D0647 /* boutonsuivant.png in Resources */,
+				B00DC923158CD96B005D0647 /* boutonsuivant@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
