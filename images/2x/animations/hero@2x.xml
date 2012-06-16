@@ -95,26 +95,9 @@
     <SubTexture name="haut/0003" x="228" y="766" width="220" height="164" frameX="-166" frameY="-125" frameWidth="550" frameHeight="400"/>
     <SubTexture name="haut/0004" x="228" y="766" width="220" height="164" frameX="-166" frameY="-125" frameWidth="550" frameHeight="400"/>
     <SubTexture name="passage_piege/0000" x="448" y="220" width="222" height="134" frameX="-166" frameY="-157" frameWidth="550" frameHeight="400"/>
-    <SubTexture name="passage_piege/0001" x="448" y="220" width="222" height="134" frameX="-166" frameY="-157" frameWidth="550" frameHeight="400"/>
-    <SubTexture name="passage_piege/0002" x="448" y="220" width="222" height="134" frameX="-166" frameY="-157" frameWidth="550" frameHeight="400"/>
-    <SubTexture name="passage_piege/0003" x="448" y="220" width="222" height="134" frameX="-166" frameY="-157" frameWidth="550" frameHeight="400"/>
-    <SubTexture name="passage_piege/0004" x="444" y="356" width="222" height="162" frameX="-166" frameY="-130" frameWidth="550" frameHeight="400"/>
-    <SubTexture name="passage_piege/0005" x="444" y="356" width="222" height="162" frameX="-166" frameY="-130" frameWidth="550" frameHeight="400"/>
-    <SubTexture name="passage_piege/0006" x="444" y="356" width="222" height="162" frameX="-166" frameY="-130" frameWidth="550" frameHeight="400"/>
     <SubTexture name="passage_piege/0007" x="444" y="356" width="222" height="162" frameX="-166" frameY="-130" frameWidth="550" frameHeight="400"/>
-    <SubTexture name="passage_piege/0008" x="444" y="520" width="222" height="154" frameX="-167" frameY="-140" frameWidth="550" frameHeight="400"/>
-    <SubTexture name="passage_piege/0009" x="444" y="520" width="222" height="154" frameX="-167" frameY="-140" frameWidth="550" frameHeight="400"/>
-    <SubTexture name="passage_piege/0010" x="444" y="520" width="222" height="154" frameX="-167" frameY="-140" frameWidth="550" frameHeight="400"/>
     <SubTexture name="passage_piege/0011" x="444" y="520" width="222" height="154" frameX="-167" frameY="-140" frameWidth="550" frameHeight="400"/>
-    <SubTexture name="passage_piege/0012" x="672" y="312" width="220" height="148" frameX="-168" frameY="-144" frameWidth="550" frameHeight="400"/>
-    <SubTexture name="passage_piege/0013" x="672" y="312" width="220" height="148" frameX="-168" frameY="-144" frameWidth="550" frameHeight="400"/>
-    <SubTexture name="passage_piege/0014" x="672" y="312" width="220" height="148" frameX="-168" frameY="-144" frameWidth="550" frameHeight="400"/>
-    <SubTexture name="passage_piege/0015" x="672" y="312" width="220" height="148" frameX="-168" frameY="-144" frameWidth="550" frameHeight="400"/>
     <SubTexture name="passage_piege/0016" x="672" y="312" width="220" height="148" frameX="-168" frameY="-144" frameWidth="550" frameHeight="400"/>
-    <SubTexture name="passage_piege/0017" x="670" y="890" width="220" height="110" frameX="-168" frameY="-182" frameWidth="550" frameHeight="400"/>
-    <SubTexture name="passage_piege/0018" x="670" y="890" width="220" height="110" frameX="-168" frameY="-182" frameWidth="550" frameHeight="400"/>
-    <SubTexture name="passage_piege/0019" x="670" y="890" width="220" height="110" frameX="-168" frameY="-182" frameWidth="550" frameHeight="400"/>
-    <SubTexture name="passage_piege/0020" x="670" y="890" width="220" height="110" frameX="-168" frameY="-182" frameWidth="550" frameHeight="400"/>
     <SubTexture name="passage_piege/0021" x="670" y="890" width="220" height="110" frameX="-168" frameY="-182" frameWidth="550" frameHeight="400"/>
     <SubTexture name="saut/0000" x="2" y="868" width="224" height="154" frameX="-189" frameY="-162" frameWidth="550" frameHeight="400"/>
     <SubTexture name="saut/0001" x="2" y="868" width="224" height="154" frameX="-189" frameY="-162" frameWidth="550" frameHeight="400"/>

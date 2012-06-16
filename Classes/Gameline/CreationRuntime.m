@@ -93,13 +93,6 @@
     float positionX = hero.x + 500 + arc4random() % 300;
     float positionY = 50 + arc4random() % 250;
     
-    if (random > 1 && [startTime timeIntervalSinceNow] < -15) {
-        
-        Piege *piege = [[Piege alloc] initWithName:@"piege" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"20", @"100", @"3", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", @"group:", nil]] andGraphic:[SPImage imageWithContentsOfFile:@"piege.png"]];
-        [ce.state addObject:piege];
-        
-    }
-    
     if ([world isEqualToString:@"rouge"] && ([startTime timeIntervalSinceNow] > -85 && [startTime timeIntervalSinceNow] < -80)) {
         
         Sensor *filtrefake = [[Sensor alloc] initWithName:@"filtreOrangeFake" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"40", @"80", @"1", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", @"group:", nil]] andGraphic:[animFiltreAssoOrangeBack copy]];
@@ -107,6 +100,12 @@
         
         FiltreAssociatif *filtreAssoOrange = [[FiltreAssociatif alloc] initWithName:@"filtreOrange" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"40", @"80", @"3", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", @"group:", nil]] andGraphic:[animFiltreAssoOrangeFront copy] andColor:@"orange"];
         [ce.state addObject:filtreAssoOrange];
+        
+    } else if (random > 1 && [startTime timeIntervalSinceNow] < -15) {
+        
+        Piege *piege = [[Piege alloc] initWithName:@"piege" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", positionX], [NSString stringWithFormat:@"%f", positionY], @"20", @"100", @"3", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", @"group:", nil]] andGraphic:[SPImage imageWithContentsOfFile:@"piege.png"]];
+        [ce.state addObject:piege];
+        
     }
 }
 
