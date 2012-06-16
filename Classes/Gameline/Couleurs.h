@@ -8,9 +8,11 @@
 
 #import "CitrusObject.h"
 
-@interface Couleurs : CitrusObject {
+@interface Couleurs : SPSprite {
 
+    SPImage *graphic;
     SPTextField *tfBleu, *tfRouge, *tfJaune, *tfVert, *tfOrange, *tfViolet;
 }
+- (void) destroy;
 
 @end

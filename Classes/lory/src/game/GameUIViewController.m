@@ -59,7 +59,7 @@
 
 - (void) changerPositionScore:(NSNotification *) notification {
     
-    colorUIViewController.view.frame = CGRectMake(150, 150, colorUIViewController.view.frame.size.width, colorUIViewController.view.frame.size.height);
+    colorUIViewController.view.frame = CGRectMake(-100, -100, colorUIViewController.view.frame.size.width, colorUIViewController.view.frame.size.height);
 }
 
 - (void)viewDidUnload

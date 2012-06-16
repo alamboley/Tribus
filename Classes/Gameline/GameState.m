@@ -75,9 +75,6 @@
     creationRuntime = [[CreationRuntime alloc] initWithWorld:worldColor];
     [creationRuntime start];
     
-    score = [[Couleurs alloc] initWithName:@"score" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%f", hero.x + 0], [NSString stringWithFormat:@"%f", 10], nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", nil]] andGraphic:[SPImage imageWithContentsOfFile:@"colors_big.png"]];
-    [self addObject:score];
-    
     [self setupCamera:hero andOffset:CGPointMake(hero.width / 2 - 80, 0) andBounds:CGRectMake(0, 0, gameWidth, 1000) andEasing:CGPointMake(0.25, 0.05)];
 }
 
@@ -109,6 +106,10 @@
     [jauge destroy];
     jauge = nil;
     
+    [self removeChild:score];
+    [score destroy];
+    score = nil;
+    
     [super destroy];
 }
 
@@ -121,21 +122,24 @@
     
     hero.move = FALSE;
     
-    //[[NSNotificationCenter defaultCenter] postNotificationName:@"changerPositionScore" object:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"changerPositionScore" object:nil];
     
-    
+    score = [[Couleurs alloc] init];
+    score.x = hero.x + 285;
+    score.y = 70;
+    [self addChild:score];
     
     jauge = [[Jauge alloc] initWithColor:worldColor andPourcentage:(int)[Stats pourcentageParticule]];
     [self addChild:jauge];
     jauge.x = hero.x + 415;
-    jauge.y = 170;
+    jauge.y = 190;
     
     resultat = [[SPTextField alloc] initWithText:[NSString stringWithFormat:@"%d", (int)[Stats pourcentageParticule]]];
     resultat.fontName = @"Kohicle25";
     resultat.fontSize = 34;
     [self addChild:resultat];
     resultat.x = hero.x + 395;
-    resultat.y = 100;
+    resultat.y = 120;
     resultat.text = [resultat.text stringByAppendingString:@"%"];
 }
 

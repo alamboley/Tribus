@@ -96,7 +96,9 @@
     
     [self addChild:btnSuivant];
     btnSuivant.x = hero.x + 445;
-    btnSuivant.y = 230;
+    btnSuivant.y = 240;
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"endGame" object:nil];
     
     [btnSuivant addEventListener:@selector(dispatchEndGame:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
     
@@ -131,7 +133,7 @@
     [btnSuivant removeEventListener:@selector(dispatchEndGame:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
     btnSuivant = nil;
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"endGame" object:nil];
+    //[[NSNotificationCenter defaultCenter] postNotificationName:@"endGame" object:nil];
 }
 
 @end

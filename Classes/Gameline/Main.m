@@ -118,7 +118,10 @@
 }
 
 - (void) changeNiveauReady:(NSNotification *) notification {
+    
     [game play];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"afficherScore" object:nil];
 }
 
 @end
