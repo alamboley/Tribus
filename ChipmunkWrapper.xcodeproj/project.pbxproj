@@ -65,6 +65,10 @@
 		040F597E158D1236003492BE /* triboard_pigment_rouge.png in Resources */ = {isa = PBXBuildFile; fileRef = 040F5979158D1236003492BE /* triboard_pigment_rouge.png */; };
 		040F597F158D1236003492BE /* triboard_pigment_violet.png in Resources */ = {isa = PBXBuildFile; fileRef = 040F597A158D1236003492BE /* triboard_pigment_violet.png */; };
 		040F5980158D1236003492BE /* triboard_pigment_violet.png in Resources */ = {isa = PBXBuildFile; fileRef = 040F597A158D1236003492BE /* triboard_pigment_violet.png */; };
+		040F5982158D1507003492BE /* m10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 040F5981158D1507003492BE /* m10@2x.png */; };
+		040F5983158D1507003492BE /* m10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 040F5981158D1507003492BE /* m10@2x.png */; };
+		040F5988158D1578003492BE /* m10.png in Resources */ = {isa = PBXBuildFile; fileRef = 040F5987158D1578003492BE /* m10.png */; };
+		040F5989158D1578003492BE /* m10.png in Resources */ = {isa = PBXBuildFile; fileRef = 040F5987158D1578003492BE /* m10.png */; };
 		0417F10A1579080E00A48C0F /* NotificationUIViewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0417F1081579080E00A48C0F /* NotificationUIViewControllerViewController.m */; };
 		0417F10B1579080E00A48C0F /* NotificationUIViewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0417F1081579080E00A48C0F /* NotificationUIViewControllerViewController.m */; };
 		0417F10C1579080E00A48C0F /* NotificationUIViewControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0417F1091579080E00A48C0F /* NotificationUIViewControllerViewController.xib */; };
@@ -1283,6 +1287,8 @@
 		040F5978158D1236003492BE /* triboard_pigment_jaune.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triboard_pigment_jaune.png; sourceTree = "<group>"; };
 		040F5979158D1236003492BE /* triboard_pigment_rouge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triboard_pigment_rouge.png; sourceTree = "<group>"; };
 		040F597A158D1236003492BE /* triboard_pigment_violet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triboard_pigment_violet.png; sourceTree = "<group>"; };
+		040F5981158D1507003492BE /* m10@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m10@2x.png"; sourceTree = "<group>"; };
+		040F5987158D1578003492BE /* m10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = m10.png; sourceTree = "<group>"; };
 		0417F1071579080E00A48C0F /* NotificationUIViewControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationUIViewControllerViewController.h; sourceTree = "<group>"; };
 		0417F1081579080E00A48C0F /* NotificationUIViewControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationUIViewControllerViewController.m; sourceTree = "<group>"; };
 		0417F1091579080E00A48C0F /* NotificationUIViewControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationUIViewControllerViewController.xib; sourceTree = "<group>"; };
@@ -2210,6 +2216,7 @@
 				0450FA42158683D300BB9B9C /* m7.png */,
 				0450FA43158683D300BB9B9C /* m8.png */,
 				0450FA44158683D300BB9B9C /* m9.png */,
+				040F5987158D1578003492BE /* m10.png */,
 				0450FA45158683D300BB9B9C /* pouvoir1_parechoc.png */,
 				0450FA46158683D300BB9B9C /* pouvoir2_piedsur.png */,
 				0450FA47158683D300BB9B9C /* pouvoir3_desembuage.png */,
@@ -2791,6 +2798,7 @@
 				0450FA15158683A700BB9B9C /* m7@2x.png */,
 				0450FA16158683A700BB9B9C /* m8@2x.png */,
 				0450FA17158683A700BB9B9C /* m9@2x.png */,
+				040F5981158D1507003492BE /* m10@2x.png */,
 				B0435968158A905000C04571 /* pouvoir1-ingame.png */,
 				B0435965158A904700C04571 /* pouvoir1-ingame@2x.png */,
 				0450FA18158683A700BB9B9C /* pouvoir1_parechoc@2x.png */,
@@ -3893,6 +3901,8 @@
 				040F597B158D1236003492BE /* triboard_pigment_jaune.png in Resources */,
 				040F597D158D1236003492BE /* triboard_pigment_rouge.png in Resources */,
 				040F597F158D1236003492BE /* triboard_pigment_violet.png in Resources */,
+				040F5982158D1507003492BE /* m10@2x.png in Resources */,
+				040F5988158D1578003492BE /* m10.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4336,6 +4346,8 @@
 				040F597C158D1236003492BE /* triboard_pigment_jaune.png in Resources */,
 				040F597E158D1236003492BE /* triboard_pigment_rouge.png in Resources */,
 				040F5980158D1236003492BE /* triboard_pigment_violet.png in Resources */,
+				040F5983158D1507003492BE /* m10@2x.png in Resources */,
+				040F5989158D1578003492BE /* m10.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
