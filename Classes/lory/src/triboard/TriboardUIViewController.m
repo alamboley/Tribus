@@ -66,7 +66,6 @@
     [super viewDidLoad];
     
     self.itemDatas = [[NSMutableDictionary alloc] init];
-    int i = 0;
     for (NSDictionary *obj in [USave getArrayForJsonPath:@"triboard"])
     {
         TriboardItemUIViewController *item = [[TriboardItemUIViewController alloc] initWithNibName:@"TriboardItemUIViewController" bundle:nil];
@@ -88,8 +87,15 @@
         item.view.frame = view.frame;
         
         [item.button setTitle:(NSString*)[obj objectForKey:@"id"] forState:UIControlStateNormal];
-        if((NSString *)[obj objectForKey:@"itemId"] == @"none"){
-            [item.button setImage:[UIImage imageNamed:@"store_pigment_none@2x.png"] forState:UIControlStateNormal];
+        if(![(NSString *)[obj objectForKey:@"itemId"] isEqualToString: @"none"]){
+            for (NSDictionary *obj2 in [USave getArrayForJsonPath:@"motifs"]){
+                if([[NSString stringWithFormat:@"%@",[obj objectForKey:@"itemId"]] isEqualToString:[obj2 valueForKey:@"id"]]){
+                    NSLog(@"%@",obj2);
+                    [item.button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"triboard_pigment_%@@2x.png",[obj2 valueForKey:@"color"]]] forState:UIControlStateNormal];
+                    view = [[motifsContainer subviews] objectAtIndex:i];
+                    [view setImage:[UIImage imageNamed:[NSString stringWithFormat:@"triboard-item-%@.png",[obj2 valueForKey:@"id"]]]];
+                }
+            }
         }else {
             [item.button setImage:[UIImage imageNamed:@"store_pigment_none@2x.png"] forState:UIControlStateNormal];
         }

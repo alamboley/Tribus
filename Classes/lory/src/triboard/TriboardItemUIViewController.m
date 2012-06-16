@@ -25,6 +25,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [button setTitleColor:[UIColor colorWithRed:0.3 green:0.6 blue:0.9 alpha:0] forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor colorWithRed:0.3 green:0.6 blue:0.9 alpha:0] forState:UIControlStateHighlighted];
     // Do any additional setup after loading the view from its nib.
 }
 

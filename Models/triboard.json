@@ -1,7 +1,7 @@
  [{
   "id":"0",
   "title":"emplacement 0",
-  "itemId":"1"
+  "itemId":"none"
   },{
   "id":"1",
   "title":"emplacement 1",
@@ -17,7 +17,7 @@
   },{
   "id":"4",
   "title":"emplacement 4",
-  "itemId":"none"
+  "itemId":"6"
   },{
   "id":"5",
   "title":"emplacement 5",
