@@ -9,12 +9,14 @@
 #import "GameUIViewController.h"
 #import "Main.h"
 
+#define RADIANS(degrees) ((degrees * M_PI) / 180.0)
 
 @interface GameUIViewController ()
 
 @end
 
 @implementation GameUIViewController
+@synthesize nextButton;
 @synthesize sparrowView,startingColorId;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -33,6 +35,7 @@
     self.view.autoresizingMask = sparrowView.autoresizingMask = UIViewAutoresizingNone;
     
     self.view.layer.transform = CATransform3DMakeRotation(-M_PI * 0.5, 0, 0.0, 1.0);
+    //self.nextButton.layer.transform = CATransform3DMakeRotation(-M_PI * 0.5, 0, 0.0, 1.0);
     
     if(startingColorId == nil) startingColorId = @"jaune";
     
@@ -44,7 +47,15 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(afficherScore:) name:@"afficherScore" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changerPositionScore:) name:@"changerPositionScore" object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(gotoMissionPage:) name:@"endGame" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(endGame:) name:@"endGame" object:nil];
+    
+    [self.view bringSubviewToFront:nextButton];
+    nextButton.transform = CGAffineTransformRotate(CGAffineTransformIdentity, RADIANS(90.0));
+    CGRect theFrame = nextButton.frame;
+    theFrame.origin.x = 5.0;
+    theFrame.origin.y = 420;
+    nextButton.frame = theFrame;
+    [nextButton setHidden:YES];
 }
 
 - (void) afficherScore:(NSNotification *) notification {
@@ -65,6 +76,7 @@
 - (void)viewDidUnload
 {
     [self setSparrowView:nil];
+    [self setNextButton:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -81,8 +93,8 @@
 {
     return (interfaceOrientation == UIInterfaceOrientationLandscapeLeft || interfaceOrientation == UIInterfaceOrientationLandscapeRight);
 }
-- (void) gotoMissionPage:(NSNotification *) notification {
-    [self performSegueWithIdentifier:@"PushMissionViewController" sender:self];
+- (void) endGame:(NSNotification *) notification {
+    [nextButton setHidden:NO];
 }
 
 @end

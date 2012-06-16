@@ -15,5 +15,6 @@
 }
 @property (weak, nonatomic) IBOutlet SPView *sparrowView;
 @property (nonatomic, retain) NSString *startingColorId;
+@property (weak, nonatomic) IBOutlet UIButton *nextButton;
 
 @end

@@ -35,7 +35,8 @@
 // BACK BUTTON
 
 - (IBAction)goBackInStack:(id)sender {
-    [[self navigationController] popViewControllerAnimated:YES];
+//    [[self navigationController] popViewControllerAnimated:YES];
+    [[self navigationController] popToRootViewControllerAnimated:YES];
     [self dismissModalViewControllerAnimated:YES];
 }
 /*
