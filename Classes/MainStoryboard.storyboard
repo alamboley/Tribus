@@ -318,6 +318,11 @@ de couleurs pour booster ses performances !  </string>
                                     <outlet property="delegate" destination="pa0-oe-nky" id="816-hs-eXv"/>
                                 </connections>
                             </pickerView>
+                            <view contentMode="scaleToFill" id="o4a-qk-2ic">
+                                <rect key="frame" x="120" y="80" width="240" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -325,6 +330,7 @@ de couleurs pour booster ses performances !  </string>
                     <navigationItem key="navigationItem" id="f8T-RL-Krx"/>
                     <connections>
                         <outlet property="icarousel" destination="CRy-il-CaA" id="TJz-7E-WOr"/>
+                        <outlet property="travelDetail" destination="o4a-qk-2ic" id="bJZ-j6-MfQ"/>
                         <outlet property="uiPickerView" destination="ush-Iu-Efg" id="EJd-oR-e0D"/>
                     </connections>
                 </viewController>

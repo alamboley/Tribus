@@ -16,6 +16,7 @@
 @synthesize uiPickerView;
 @synthesize itemDatas;
 @synthesize icarousel;
+@synthesize travelDetail;
 
 - (void)awakeFromNib
 {
@@ -47,21 +48,24 @@
 - (void)carousel:(iCarousel *)carousel didSelectItemAtIndex:(NSInteger)index{
     
     // now add animation
-   /* [UIView beginAnimations:@"View Flip" context:nil];
-     [UIView setAnimationDuration:0.5];
-     [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
-     if(index == carousel.currentItemIndex){
-     
-     [UIView setAnimationTransition: UIViewAnimationTransitionFlipFromRight 
-     forView:carousel.currentItemView cache:YES];
-     
-     [travelDetail removeFromSuperview];
-     [carousel.currentItemView addSubview:self.productDetail];
-     [travelDetail setHidden:NO];
-     [travelDetail setFrame:carousel.currentItemView.frame];
-     } else {
-     }
-     [UIView commitAnimations];*/
+    [UIView beginAnimations:@"View Flip" context:nil];
+    [UIView setAnimationDuration:0.5];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+    if(index == carousel.currentItemIndex){
+        
+        [UIView setAnimationTransition: UIViewAnimationTransitionFlipFromRight forView:carousel.currentItemView cache:YES];
+        [UIView setAnimationTransition: UIViewAnimationTransitionFlipFromRight forView:travelDetail cache:YES];
+
+        [travelDetail setHidden:NO];
+        
+        /*[travelDetail removeFromSuperview];
+        CGRect frame = carousel.currentItemView.frame;
+        frame.size = travelDetail.frame.size;
+        [carousel.currentItemView addSubview:self.travelDetail];
+        [travelDetail setFrame:frame];*/
+    } else {
+    }
+    [UIView commitAnimations];
 }
 - (void)didReceiveMemoryWarning
 {
@@ -141,12 +145,14 @@
     icarousel.type = iCarouselTypeLinear;
     icarousel.vertical = YES;
     //icarousel.viewpointOffset = CGSizeMake(0, 70);
+    [travelDetail setHidden:YES];
 }
 
 
 - (void)viewDidUnload
 {
     [self setUiPickerView:nil];
+    [self setTravelDetail:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

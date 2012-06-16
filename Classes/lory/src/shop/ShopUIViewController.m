@@ -134,22 +134,7 @@
 
 - (void)carousel:(iCarousel *)carousel didSelectItemAtIndex:(NSInteger)index{
     
-    // now add animation
-    /*[UIView beginAnimations:@"View Flip" context:nil];
-    [UIView setAnimationDuration:0.5];
-    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
-    if(index == carousel.currentItemIndex){
-        
-        [UIView setAnimationTransition: UIViewAnimationTransitionFlipFromRight 
-                                   forView:carousel.currentItemView cache:YES];
-            
-        [productDetail removeFromSuperview];
-        [carousel.currentItemView addSubview:self.productDetail];
-        [productDetail setHidden:NO];
-        [productDetail setFrame:carousel.currentItemView.frame];
-    } else {
-    }
-    [UIView commitAnimations];*/
+
 }
 
 - (UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSUInteger)index reusingView:(UIView *)view
