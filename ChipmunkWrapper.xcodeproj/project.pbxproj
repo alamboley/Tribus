@@ -53,6 +53,18 @@
 		040AF70E158BF5A0008F77F3 /* triboard-item-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 040AF6FB158BF5A0008F77F3 /* triboard-item-8.png */; };
 		040AF70F158BF5A0008F77F3 /* triboard-item-9.png in Resources */ = {isa = PBXBuildFile; fileRef = 040AF6FC158BF5A0008F77F3 /* triboard-item-9.png */; };
 		040AF710158BF5A0008F77F3 /* triboard-item-9.png in Resources */ = {isa = PBXBuildFile; fileRef = 040AF6FC158BF5A0008F77F3 /* triboard-item-9.png */; };
+		040F5972158D11F2003492BE /* triboard_pigment_jaune@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 040F596F158D11F2003492BE /* triboard_pigment_jaune@2x.png */; };
+		040F5973158D11F2003492BE /* triboard_pigment_jaune@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 040F596F158D11F2003492BE /* triboard_pigment_jaune@2x.png */; };
+		040F5974158D11F2003492BE /* triboard_pigment_rouge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 040F5970158D11F2003492BE /* triboard_pigment_rouge@2x.png */; };
+		040F5975158D11F2003492BE /* triboard_pigment_rouge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 040F5970158D11F2003492BE /* triboard_pigment_rouge@2x.png */; };
+		040F5976158D11F2003492BE /* triboard_pigment_violet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 040F5971158D11F2003492BE /* triboard_pigment_violet@2x.png */; };
+		040F5977158D11F2003492BE /* triboard_pigment_violet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 040F5971158D11F2003492BE /* triboard_pigment_violet@2x.png */; };
+		040F597B158D1236003492BE /* triboard_pigment_jaune.png in Resources */ = {isa = PBXBuildFile; fileRef = 040F5978158D1236003492BE /* triboard_pigment_jaune.png */; };
+		040F597C158D1236003492BE /* triboard_pigment_jaune.png in Resources */ = {isa = PBXBuildFile; fileRef = 040F5978158D1236003492BE /* triboard_pigment_jaune.png */; };
+		040F597D158D1236003492BE /* triboard_pigment_rouge.png in Resources */ = {isa = PBXBuildFile; fileRef = 040F5979158D1236003492BE /* triboard_pigment_rouge.png */; };
+		040F597E158D1236003492BE /* triboard_pigment_rouge.png in Resources */ = {isa = PBXBuildFile; fileRef = 040F5979158D1236003492BE /* triboard_pigment_rouge.png */; };
+		040F597F158D1236003492BE /* triboard_pigment_violet.png in Resources */ = {isa = PBXBuildFile; fileRef = 040F597A158D1236003492BE /* triboard_pigment_violet.png */; };
+		040F5980158D1236003492BE /* triboard_pigment_violet.png in Resources */ = {isa = PBXBuildFile; fileRef = 040F597A158D1236003492BE /* triboard_pigment_violet.png */; };
 		0417F10A1579080E00A48C0F /* NotificationUIViewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0417F1081579080E00A48C0F /* NotificationUIViewControllerViewController.m */; };
 		0417F10B1579080E00A48C0F /* NotificationUIViewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0417F1081579080E00A48C0F /* NotificationUIViewControllerViewController.m */; };
 		0417F10C1579080E00A48C0F /* NotificationUIViewControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0417F1091579080E00A48C0F /* NotificationUIViewControllerViewController.xib */; };
@@ -1265,6 +1277,12 @@
 		040AF6FA158BF5A0008F77F3 /* triboard-item-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "triboard-item-7.png"; sourceTree = "<group>"; };
 		040AF6FB158BF5A0008F77F3 /* triboard-item-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "triboard-item-8.png"; sourceTree = "<group>"; };
 		040AF6FC158BF5A0008F77F3 /* triboard-item-9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "triboard-item-9.png"; sourceTree = "<group>"; };
+		040F596F158D11F2003492BE /* triboard_pigment_jaune@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "triboard_pigment_jaune@2x.png"; sourceTree = "<group>"; };
+		040F5970158D11F2003492BE /* triboard_pigment_rouge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "triboard_pigment_rouge@2x.png"; sourceTree = "<group>"; };
+		040F5971158D11F2003492BE /* triboard_pigment_violet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "triboard_pigment_violet@2x.png"; sourceTree = "<group>"; };
+		040F5978158D1236003492BE /* triboard_pigment_jaune.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triboard_pigment_jaune.png; sourceTree = "<group>"; };
+		040F5979158D1236003492BE /* triboard_pigment_rouge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triboard_pigment_rouge.png; sourceTree = "<group>"; };
+		040F597A158D1236003492BE /* triboard_pigment_violet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triboard_pigment_violet.png; sourceTree = "<group>"; };
 		0417F1071579080E00A48C0F /* NotificationUIViewControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationUIViewControllerViewController.h; sourceTree = "<group>"; };
 		0417F1081579080E00A48C0F /* NotificationUIViewControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationUIViewControllerViewController.m; sourceTree = "<group>"; };
 		0417F1091579080E00A48C0F /* NotificationUIViewControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationUIViewControllerViewController.xib; sourceTree = "<group>"; };
@@ -2168,6 +2186,9 @@
 				04986E571587F10900BDA341 /* inventaire_fondpouvoir2.png */,
 				04986E491587EA3600BDA341 /* boutonreglages.png */,
 				04986E431587E52600BDA341 /* main-button-small-normal.png */,
+				040F5978158D1236003492BE /* triboard_pigment_jaune.png */,
+				040F5979158D1236003492BE /* triboard_pigment_rouge.png */,
+				040F597A158D1236003492BE /* triboard_pigment_violet.png */,
 				04AD35B51586A4D9009AA8E4 /* triboard_pigment_bleu.png */,
 				04AD35B61586A4D9009AA8E4 /* triboard_pigment_orange.png */,
 				04AD35B71586A4D9009AA8E4 /* triboard_pigment_vert.png */,
@@ -2746,6 +2767,9 @@
 				04986E4E1587F0E600BDA341 /* inventaire_fondpouvoir2@2x.png */,
 				04986E461587E9FB00BDA341 /* boutonreglages@2x.png */,
 				04986E401587E4AA00BDA341 /* main-button-small-normal@2x.png */,
+				040F596F158D11F2003492BE /* triboard_pigment_jaune@2x.png */,
+				040F5970158D11F2003492BE /* triboard_pigment_rouge@2x.png */,
+				040F5971158D11F2003492BE /* triboard_pigment_violet@2x.png */,
 				04AD35AC1586A4C4009AA8E4 /* triboard_pigment_bleu@2x.png */,
 				04AD35AD1586A4C4009AA8E4 /* triboard_pigment_orange@2x.png */,
 				04AD35AE1586A4C4009AA8E4 /* triboard_pigment_vert@2x.png */,
@@ -3863,6 +3887,12 @@
 				04BF02BA158BFC7800D5BEC3 /* perso.png in Resources */,
 				B00DC91F158CD95E005D0647 /* boutonsuivant.png in Resources */,
 				B00DC922158CD96B005D0647 /* boutonsuivant@2x.png in Resources */,
+				040F5972158D11F2003492BE /* triboard_pigment_jaune@2x.png in Resources */,
+				040F5974158D11F2003492BE /* triboard_pigment_rouge@2x.png in Resources */,
+				040F5976158D11F2003492BE /* triboard_pigment_violet@2x.png in Resources */,
+				040F597B158D1236003492BE /* triboard_pigment_jaune.png in Resources */,
+				040F597D158D1236003492BE /* triboard_pigment_rouge.png in Resources */,
+				040F597F158D1236003492BE /* triboard_pigment_violet.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4300,6 +4330,12 @@
 				04BF02BB158BFC7800D5BEC3 /* perso.png in Resources */,
 				B00DC920158CD95E005D0647 /* boutonsuivant.png in Resources */,
 				B00DC923158CD96B005D0647 /* boutonsuivant@2x.png in Resources */,
+				040F5973158D11F2003492BE /* triboard_pigment_jaune@2x.png in Resources */,
+				040F5975158D11F2003492BE /* triboard_pigment_rouge@2x.png in Resources */,
+				040F5977158D11F2003492BE /* triboard_pigment_violet@2x.png in Resources */,
+				040F597C158D1236003492BE /* triboard_pigment_jaune.png in Resources */,
+				040F597E158D1236003492BE /* triboard_pigment_rouge.png in Resources */,
+				040F5980158D1236003492BE /* triboard_pigment_violet.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
