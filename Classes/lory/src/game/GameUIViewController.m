@@ -80,5 +80,8 @@
 {
     return (interfaceOrientation == UIInterfaceOrientationLandscapeLeft || interfaceOrientation == UIInterfaceOrientationLandscapeRight);
 }
+- (IBAction)gotoMissions:(id)sender{
+    [self performSegueWithIdentifier:@"PushMissionViewController" sender:self];
+}
 
 @end
