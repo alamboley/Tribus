@@ -31,18 +31,19 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.view.autoresizingMask = sparrowView.autoresizingMask = UIViewAutoresizingNone;
     
     self.view.layer.transform = CATransform3DMakeRotation(-M_PI * 0.5, 0, 0.0, 1.0);
     //self.nextButton.layer.transform = CATransform3DMakeRotation(-M_PI * 0.5, 0, 0.0, 1.0);
     
     if(startingColorId == nil) startingColorId = @"jaune";
     
-    [SPStage setSupportHighResolutions:YES];
-    game = [[Main alloc] initWithWidth:320 height:480 rotation:YES andStartingColor:startingColorId];        
+    game = [[Main alloc] initWithWidth:320 height:480 rotation:YES andStartingColor:startingColorId];
     sparrowView.stage = game;
     sparrowView.frameRate = SPARROW_FRAMERATE_ACTIVE;
     [sparrowView start];
+    
+    self.view.autoresizingMask = sparrowView.autoresizingMask = UIViewAutoresizingNone;
+    [SPStage setSupportHighResolutions:YES];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(afficherScore:) name:@"afficherScore" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changerPositionScore:) name:@"changerPositionScore" object:nil];
