@@ -822,6 +822,8 @@
 		B00DC920158CD95E005D0647 /* boutonsuivant.png in Resources */ = {isa = PBXBuildFile; fileRef = B00DC91E158CD95E005D0647 /* boutonsuivant.png */; };
 		B00DC922158CD96B005D0647 /* boutonsuivant@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B00DC921158CD96B005D0647 /* boutonsuivant@2x.png */; };
 		B00DC923158CD96B005D0647 /* boutonsuivant@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B00DC921158CD96B005D0647 /* boutonsuivant@2x.png */; };
+		B00DC926158CE6AE005D0647 /* Couleurs.m in Sources */ = {isa = PBXBuildFile; fileRef = B00DC925158CE6AE005D0647 /* Couleurs.m */; };
+		B00DC927158CE6AE005D0647 /* Couleurs.m in Sources */ = {isa = PBXBuildFile; fileRef = B00DC925158CE6AE005D0647 /* Couleurs.m */; };
 		B0113DDF1553C06A0005F1AB /* BusManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = B0113DDE1553C06A0005F1AB /* BusManagement.m */; };
 		B012E3E315148F52008B9157 /* SXNSDataExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B012E3E215148F52008B9157 /* SXNSDataExtensions.m */; };
 		B012E3E615148F8B008B9157 /* SXParticleSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = B012E3E515148F8B008B9157 /* SXParticleSystem.m */; };
@@ -1731,6 +1733,8 @@
 		B00C460C1578BC0B00745D28 /* WorldYellow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorldYellow.m; sourceTree = "<group>"; };
 		B00DC91E158CD95E005D0647 /* boutonsuivant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boutonsuivant.png; sourceTree = "<group>"; };
 		B00DC921158CD96B005D0647 /* boutonsuivant@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boutonsuivant@2x.png"; sourceTree = "<group>"; };
+		B00DC924158CE6AE005D0647 /* Couleurs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Couleurs.h; sourceTree = "<group>"; };
+		B00DC925158CE6AE005D0647 /* Couleurs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Couleurs.m; sourceTree = "<group>"; };
 		B0113DDD1553C0690005F1AB /* BusManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusManagement.h; sourceTree = "<group>"; };
 		B0113DDE1553C06A0005F1AB /* BusManagement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusManagement.m; sourceTree = "<group>"; };
 		B012E3E115148F52008B9157 /* SXNSDataExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SXNSDataExtensions.h; path = SparrowExtensions/SXNSDataExtensions.h; sourceTree = "<group>"; };
@@ -3319,6 +3323,8 @@
 				B00C460C1578BC0B00745D28 /* WorldYellow.m */,
 				B02ED43C1588F95B009E3434 /* Stats.h */,
 				B02ED43D1588F95B009E3434 /* Stats.m */,
+				B00DC924158CE6AE005D0647 /* Couleurs.h */,
+				B00DC925158CE6AE005D0647 /* Couleurs.m */,
 			);
 			path = Gameline;
 			sourceTree = "<group>";
@@ -4460,6 +4466,7 @@
 				B02ED43E1588F95B009E3434 /* Stats.m in Sources */,
 				04FFE8831589421C0021AB6E /* InitiationViewController.m in Sources */,
 				0460E9BC158A84D3006CC0C7 /* LandingPageUIViewController.m in Sources */,
+				B00DC926158CE6AE005D0647 /* Couleurs.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4622,6 +4629,7 @@
 				B02ED43F1588F95B009E3434 /* Stats.m in Sources */,
 				04FFE8841589421C0021AB6E /* InitiationViewController.m in Sources */,
 				0460E9BD158A84D3006CC0C7 /* LandingPageUIViewController.m in Sources */,
+				B00DC927158CE6AE005D0647 /* Couleurs.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

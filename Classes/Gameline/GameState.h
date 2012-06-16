@@ -12,6 +12,7 @@
 #import "BusManagement.h"
 #import "CreationRuntime.h"
 #import "Jauge.h"
+#import "Couleurs.h"
 
 @interface GameState : State {
     
@@ -32,6 +33,8 @@
     
     Jauge *jauge;
     SPTextField *resultat;
+    
+    Couleurs *score;
 }
 
 - (void) play;
