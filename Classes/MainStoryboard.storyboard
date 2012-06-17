@@ -6,28 +6,13 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="979-NE-RVG">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gN7-w4-kTt" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="w4g-Zo-mRQ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zAX-AK-toR">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    </view>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="730" y="-1586"/>
-        </scene>
-        <!--TribuUI View Controller - tribu-->
+        <!--MapUI View Controller - carte-->
         <scene sceneID="lSd-3V-eaC">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kvq-tt-vOQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController title="tribu" id="9iW-4u-34L" customClass="TribuUIViewController" sceneMemberID="viewController">
+                <viewController title="carte" id="9iW-4u-34L" customClass="MapUIViewController" sceneMemberID="viewController">
                     <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="RSw-7P-XaZ">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="271"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="fond2@2x.png" id="WF5-s3-eX4">
@@ -38,12 +23,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="xyJ-M3-ceo"/>
                     <navigationItem key="navigationItem" title="Title" id="aOZ-Ps-yzu">
                         <barButtonItem key="backBarButtonItem" title="Back" id="8h7-6o-TlM"/>
                     </navigationItem>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1390" y="-1272"/>
+            <point key="canvasLocation" x="2096" y="-1284"/>
         </scene>
         <!--MissionUI View Controller - en cours-->
         <scene sceneID="zqm-Sy-PtI">
@@ -90,7 +76,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="2096" y="-1673"/>
+            <point key="canvasLocation" x="2096" y="-833"/>
         </scene>
         <!--ShopUI View Controller - pouvoirs-->
         <scene sceneID="LJn-CL-h9w">
@@ -562,7 +548,7 @@ de couleurs pour booster ses performances !  </string>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1390" y="-1725"/>
+            <point key="canvasLocation" x="1410" y="1313"/>
         </scene>
         <!--MainUI View Controller-->
         <scene sceneID="5">
@@ -641,7 +627,7 @@ de couleurs pour booster ses performances !  </string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="9iW-4u-34L" kind="push" id="BdQ-Tu-cJH"/>
+                                    <segue destination="0EZ-IJ-VgA" kind="push" id="5ve-NX-QsS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mAI-jZ-bGg">
@@ -713,7 +699,7 @@ de couleurs pour booster ses performances !  </string>
                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="arrêt des marquisats" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="AxK-Ua-oAG" customClass="UILabelCustomFontKohicle25">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="arrêt les marquisats" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="AxK-Ua-oAG" customClass="UILabelCustomFontKohicle25">
                                 <rect key="frame" x="209" y="26" width="258" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -905,7 +891,7 @@ de couleurs pour booster ses performances !  </string>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="2090" y="-821"/>
+            <point key="canvasLocation" x="3114" y="-393"/>
         </scene>
         <!--ShopUI View Controller - coupons-->
         <scene sceneID="aY9-SM-vQL">
@@ -940,7 +926,7 @@ de couleurs pour booster ses performances !  </string>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="2096" y="-1243"/>
+            <point key="canvasLocation" x="2612" y="-393"/>
         </scene>
         <!--Initiation View Controller - initiation-->
         <scene sceneID="nnt-O6-NrM">
@@ -1069,7 +1055,77 @@ de couleurs pour booster ses performances !  </string>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="2636" y="-1673"/>
+            <point key="canvasLocation" x="2612" y="-833"/>
+        </scene>
+        <!--TribuUI View Controller - classement-->
+        <scene sceneID="cO7-F3-SeR">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hVN-7n-6Hu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController title="classement" id="Vbk-KM-EKG" customClass="TribuUIViewController" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="PAM-do-zxW">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="271"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="fond2@2x.png" id="Qse-44-Ev4">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="HTD-mg-3Sj"/>
+                    <navigationItem key="navigationItem" title="Title" id="VIs-DP-dmY">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Ccm-WF-je0"/>
+                    </navigationItem>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2612" y="-1284"/>
+        </scene>
+        <!--PlayersUI View Controller - joueurs-->
+        <scene sceneID="Apt-qa-1Td">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q9B-vM-ict" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController title="joueurs" id="Ev1-Az-74W" customClass="PlayersUIViewController" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="yJx-ao-Hmy">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="271"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="fond2@2x.png" id="9Jg-Yr-z8c">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="DJU-Oz-CTy"/>
+                    <navigationItem key="navigationItem" title="Title" id="wdp-oZ-ZWV">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="0BV-fd-eLa"/>
+                    </navigationItem>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="3128" y="-1284"/>
+        </scene>
+        <!--CustomUI Tab Bar Controller-->
+        <scene sceneID="iE5-qA-pA6">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="upo-D2-qCy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tabBarController id="0EZ-IJ-VgA" customClass="CustomUITabBarController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Uoi-Rg-mhV"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="ikm-xC-9K6">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9iW-4u-34L" kind="relationship" relationship="viewControllers" id="09m-Bp-6oc"/>
+                        <segue destination="Vbk-KM-EKG" kind="relationship" relationship="viewControllers" id="eOg-gy-qMM"/>
+                        <segue destination="Ev1-Az-74W" kind="relationship" relationship="viewControllers" id="nR2-60-qRE"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="1390" y="-1279"/>
         </scene>
     </scenes>
     <resources>
@@ -1142,12 +1198,18 @@ de couleurs pour booster ses performances !  </string>
                 <relationship kind="outlet" name="nextBusUILabel" candidateClass="UILabel"/>
             </relationships>
         </class>
+        <class className="MapUIViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MapUIViewController.h"/>
+        </class>
         <class className="MissionUIViewController" superclassName="GenericUIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MissionUIViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
                 <relationship kind="outlet" name="uiImageView" candidateClass="UIImageView"/>
             </relationships>
+        </class>
+        <class className="PlayersUIViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PlayersUIViewController.h"/>
         </class>
         <class className="SPView" superclassName="UIView">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SPView.h"/>

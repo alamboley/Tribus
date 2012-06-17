@@ -64,7 +64,7 @@
         }else {
             buttonImageNormal = [UIImage imageNamed:@"main-button-normal.png"];
             buttonImageSelected = [UIImage imageNamed:@"main-button-selected.png"];
-            [aButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+            [aButton setTitleColor:[Color colorWithHexString: @"2f4243"] forState:UIControlStateNormal];
         }
         
         aButton.frame = CGRectMake(5 + i * 110.0, 5.0, buttonImageNormal.size.width,buttonImageNormal.size.height);

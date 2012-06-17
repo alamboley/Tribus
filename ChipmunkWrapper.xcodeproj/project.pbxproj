@@ -305,6 +305,10 @@
 		04BF13951585161000E1DDBC /* BagItemUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BF13911585160F00E1DDBC /* BagItemUIViewController.xib */; };
 		04C3EFF51589E7F6009A769D /* lvl-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04C3EFF41589E7F5009A769D /* lvl-btn@2x.png */; };
 		04C3EFF61589E7F6009A769D /* lvl-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04C3EFF41589E7F5009A769D /* lvl-btn@2x.png */; };
+		04DA8523158E3BD5000E7237 /* ClassementUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DA8522158E3BD5000E7237 /* ClassementUIViewController.m */; };
+		04DA8524158E3BD5000E7237 /* ClassementUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DA8522158E3BD5000E7237 /* ClassementUIViewController.m */; };
+		04DA8527158E3BE4000E7237 /* PlayersUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DA8526158E3BE4000E7237 /* PlayersUIViewController.m */; };
+		04DA8528158E3BE4000E7237 /* PlayersUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DA8526158E3BE4000E7237 /* PlayersUIViewController.m */; };
 		04E305CE1585D0F300B4B265 /* GMGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E305C41585D0F300B4B265 /* GMGridView.m */; };
 		04E305CF1585D0F300B4B265 /* GMGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E305C41585D0F300B4B265 /* GMGridView.m */; };
 		04E305D01585D0F300B4B265 /* GMGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E305C71585D0F300B4B265 /* GMGridViewCell.m */; };
@@ -1450,6 +1454,10 @@
 		04BF13901585160F00E1DDBC /* BagItemUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BagItemUIViewController.m; sourceTree = "<group>"; };
 		04BF13911585160F00E1DDBC /* BagItemUIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BagItemUIViewController.xib; sourceTree = "<group>"; };
 		04C3EFF41589E7F5009A769D /* lvl-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lvl-btn@2x.png"; sourceTree = "<group>"; };
+		04DA8521158E3BD5000E7237 /* ClassementUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassementUIViewController.h; sourceTree = "<group>"; };
+		04DA8522158E3BD5000E7237 /* ClassementUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassementUIViewController.m; sourceTree = "<group>"; };
+		04DA8525158E3BE4000E7237 /* PlayersUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayersUIViewController.h; sourceTree = "<group>"; };
+		04DA8526158E3BE4000E7237 /* PlayersUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayersUIViewController.m; sourceTree = "<group>"; };
 		04E305C21585D0F300B4B265 /* GMGridView-Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GMGridView-Constants.h"; sourceTree = "<group>"; };
 		04E305C31585D0F300B4B265 /* GMGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMGridView.h; sourceTree = "<group>"; };
 		04E305C41585D0F300B4B265 /* GMGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMGridView.m; sourceTree = "<group>"; };
@@ -3344,6 +3352,10 @@
 				B0BB60D91574AC14001BB2CB /* TribuUIViewController.m */,
 				04F8E018158E038200D2A61E /* MapUIViewController.h */,
 				04F8E019158E038200D2A61E /* MapUIViewController.m */,
+				04DA8521158E3BD5000E7237 /* ClassementUIViewController.h */,
+				04DA8522158E3BD5000E7237 /* ClassementUIViewController.m */,
+				04DA8525158E3BE4000E7237 /* PlayersUIViewController.h */,
+				04DA8526158E3BE4000E7237 /* PlayersUIViewController.m */,
 			);
 			path = tribu;
 			sourceTree = "<group>";
@@ -4618,6 +4630,8 @@
 				0460E9BC158A84D3006CC0C7 /* LandingPageUIViewController.m in Sources */,
 				B00DC926158CE6AE005D0647 /* Couleurs.m in Sources */,
 				04F8E01A158E038200D2A61E /* MapUIViewController.m in Sources */,
+				04DA8523158E3BD5000E7237 /* ClassementUIViewController.m in Sources */,
+				04DA8527158E3BE4000E7237 /* PlayersUIViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4782,6 +4796,8 @@
 				0460E9BD158A84D3006CC0C7 /* LandingPageUIViewController.m in Sources */,
 				B00DC927158CE6AE005D0647 /* Couleurs.m in Sources */,
 				04F8E01B158E038200D2A61E /* MapUIViewController.m in Sources */,
+				04DA8524158E3BD5000E7237 /* ClassementUIViewController.m in Sources */,
+				04DA8528158E3BE4000E7237 /* PlayersUIViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
