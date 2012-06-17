@@ -122,7 +122,7 @@
         [viewController.titleLabel setText:[(NSString *)[currentItem valueForKey:@"title"] uppercaseString]];
         [viewController.descLabel setText:[currentItem valueForKey:@"description"]];
         
-        if(![[currentItem valueForKey:@"done"] boolValue])
+        if([[currentItem valueForKey:@"done"] boolValue])
             [viewController displayDone];
         
         view.layer.doubleSided = NO; //prevent back side of view from showing
@@ -206,7 +206,7 @@
     [super viewDidLoad];
     icarousel.type = iCarouselTypeLinear;
     icarousel.vertical = YES;
-    icarousel.viewpointOffset = CGSizeMake(-10, -10);
+    icarousel.viewpointOffset = CGSizeMake(0, -10);
     [travelDetail setHidden:YES];
     travelName.delegate = self;
     

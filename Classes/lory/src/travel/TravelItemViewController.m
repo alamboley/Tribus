@@ -16,6 +16,7 @@
 @synthesize titleLabel;
 @synthesize descLabel;
 @synthesize okImage;
+@synthesize bgImage;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,7 +29,8 @@
 
 - (void)displayDone
 {
-    [okImage setHidden:YES];
+    [bgImage setImage:[UIImage imageNamed:@"travel-item-selected.png"]];
+    [okImage setHidden:NO];
 }
 
 - (void)viewDidLoad
@@ -42,6 +44,7 @@
     [self setTitleLabel:nil];
     [self setDescLabel:nil];
     [self setOkImage:nil];
+    [self setBgImage:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

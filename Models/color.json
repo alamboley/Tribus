@@ -14,7 +14,7 @@
  "id":"jaune",
  "code":"0x8D5D2E",
  "label":"Jaune",
- "defaultValue":80,
+ "defaultValue":21,
  "order":0
  },{
  "id":"rouge",

@@ -6,8 +6,8 @@
 //  Copyright (c) 2012 Sodeso. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "GenericUIViewController.h"
 
-@interface ClassementUIViewController : UIViewController
+@interface ClassementUIViewController : GenericUIViewController
 
 @end

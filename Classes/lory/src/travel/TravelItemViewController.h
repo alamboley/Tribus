@@ -12,6 +12,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *descLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *okImage;
+@property (weak, nonatomic) IBOutlet UIImageView *bgImage;
 - (void)displayDone;
 
 @end
