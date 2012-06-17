@@ -95,6 +95,8 @@
 		040F59AE158D1F6A003492BE /* geolocicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 040F59A3158D1F6A003492BE /* geolocicon.png */; };
 		040F59AF158D1F6A003492BE /* tipiicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 040F59A4158D1F6A003492BE /* tipiicon.png */; };
 		040F59B0158D1F6A003492BE /* tipiicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 040F59A4158D1F6A003492BE /* tipiicon.png */; };
+		04102D19158D4EB900DFDABC /* lignes.json in Resources */ = {isa = PBXBuildFile; fileRef = 04102D18158D4EB900DFDABC /* lignes.json */; };
+		04102D1A158D4EB900DFDABC /* lignes.json in Resources */ = {isa = PBXBuildFile; fileRef = 04102D18158D4EB900DFDABC /* lignes.json */; };
 		0417F10A1579080E00A48C0F /* NotificationUIViewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0417F1081579080E00A48C0F /* NotificationUIViewControllerViewController.m */; };
 		0417F10B1579080E00A48C0F /* NotificationUIViewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0417F1081579080E00A48C0F /* NotificationUIViewControllerViewController.m */; };
 		0417F10C1579080E00A48C0F /* NotificationUIViewControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0417F1091579080E00A48C0F /* NotificationUIViewControllerViewController.xib */; };
@@ -1328,6 +1330,7 @@
 		040F59A2158D1F6A003492BE /* frequenceicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frequenceicon.png; sourceTree = "<group>"; };
 		040F59A3158D1F6A003492BE /* geolocicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = geolocicon.png; sourceTree = "<group>"; };
 		040F59A4158D1F6A003492BE /* tipiicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tipiicon.png; sourceTree = "<group>"; };
+		04102D18158D4EB900DFDABC /* lignes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lignes.json; sourceTree = "<group>"; };
 		0417F1071579080E00A48C0F /* NotificationUIViewControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationUIViewControllerViewController.h; sourceTree = "<group>"; };
 		0417F1081579080E00A48C0F /* NotificationUIViewControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationUIViewControllerViewController.m; sourceTree = "<group>"; };
 		0417F1091579080E00A48C0F /* NotificationUIViewControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationUIViewControllerViewController.xib; sourceTree = "<group>"; };
@@ -2783,6 +2786,7 @@
 				04BF13421583BA2A00E1DDBC /* trajets.json */,
 				04BF136F15850C9400E1DDBC /* inventaire.json */,
 				04FFE885158942BC0021AB6E /* initiation.json */,
+				04102D18158D4EB900DFDABC /* lignes.json */,
 			);
 			name = Models;
 			path = ../Models;
@@ -3968,6 +3972,7 @@
 				040F59AB158D1F6A003492BE /* frequenceicon.png in Resources */,
 				040F59AD158D1F6A003492BE /* geolocicon.png in Resources */,
 				040F59AF158D1F6A003492BE /* tipiicon.png in Resources */,
+				04102D19158D4EB900DFDABC /* lignes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4426,6 +4431,7 @@
 				040F59AC158D1F6A003492BE /* frequenceicon.png in Resources */,
 				040F59AE158D1F6A003492BE /* geolocicon.png in Resources */,
 				040F59B0158D1F6A003492BE /* tipiicon.png in Resources */,
+				04102D1A158D4EB900DFDABC /* lignes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

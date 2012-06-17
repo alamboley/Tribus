@@ -11,9 +11,12 @@
 
 @interface TravelUIViewController : GenericUIViewController<UITextFieldDelegate>{
     UIActionSheet *actionSheet;
+    int currentLine;
+    id currentEditedObject;
 }
 @property (weak, nonatomic) IBOutlet UIPickerView *uiPickerView;
 @property (nonatomic, retain) NSMutableDictionary *itemDatas;
+@property (nonatomic, retain) NSMutableDictionary *arretDatas;
 @property (weak, nonatomic) IBOutlet iCarousel *icarousel;
 @property (weak, nonatomic) IBOutlet UIView *travelDetail;
 @property (weak, nonatomic) IBOutlet UILabel *departureName;

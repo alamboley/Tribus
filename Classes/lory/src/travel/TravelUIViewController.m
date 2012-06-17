@@ -14,7 +14,7 @@
 
 @implementation TravelUIViewController
 @synthesize uiPickerView;
-@synthesize itemDatas;
+@synthesize itemDatas,arretDatas;
 @synthesize icarousel;
 @synthesize travelDetail;
 @synthesize departureName;
@@ -44,6 +44,22 @@
         //[USave saveItemId:[obj objectForKey:@"id"] forType:self.title];
         //[USave saveValue:[NSNumber numberWithBool:YES] forItemId:[obj objectForKey:@"id"] forCategory:self.title]; // save mission
     }
+    self.arretDatas = [[NSMutableDictionary alloc] init];
+    for (NSDictionary *obj in [USave getArrayForJsonPath:@"lignes"])
+    {
+        NSMutableArray *arrets = [[NSMutableArray alloc] init];
+        for (NSDictionary *val in [obj objectForKey:@"arrets"])
+        {
+            [arrets addObject:val];
+        }
+        [arretDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
+                               [[NSArray alloc] initWithObjects:[obj objectForKey:@"id"],arrets,nil] forKeys:
+                              [[NSArray alloc] initWithObjects:@"id", @"items",nil]]
+                      forKey:[obj objectForKey:@"id"]];
+        //NSLog(@"THE TITLE %@",[obj objectForKey:@"title"]);
+    }
+    
+    currentLine = 0;
 }
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -66,8 +82,9 @@
         NSMutableDictionary *datas = [itemDatas objectForKey:[NSString stringWithFormat:@"%d",index]];
         [travelName setText:[datas valueForKey:@"title"]];
         [travelName setFont:[UIFont fontWithName:@"Kohicle25" size:travelName.font.pointSize]];
-        [departureLine setText:[NSString stringWithFormat:@"Ligne %@",[datas valueForKey:@"line"]]];
-        [arrivalLine setText:[NSString stringWithFormat:@"Ligne %@",[datas valueForKey:@"line"]]];
+        int line = [[datas valueForKey:@"line"] intValue] + 1;
+        [departureLine setText:[NSString stringWithFormat:@"Ligne %d",line]];
+        [arrivalLine setText:[NSString stringWithFormat:@"Ligne %d",line]];
         [departureName setText:[datas valueForKey:@"departure"]];
         [arrivalName setText:[datas valueForKey:@"arrival"]];
         [travelDetail setHidden:NO];
@@ -127,22 +144,47 @@
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
-    NSLog(@"%d", row);
-
+    NSString *val = @"";
+    if(component == 0){
+        currentLine = row;
+        [pickerView reloadComponent:1];
+    }
+    
+    val = [[[arretDatas valueForKey:[NSString stringWithFormat:@"%d",currentLine]] objectForKey:@"items"] objectAtIndex:row];
+    
+    if(currentEditedObject == departureBtn){
+        [departureName setText:[val lowercaseString]];
+    }else if (currentEditedObject == arrivalBtn) {
+        [arrivalName setText:[val lowercaseString]];
+    }
+    
+    int ligne = [[[arretDatas objectForKey:[NSString stringWithFormat:@"%d",currentLine]] valueForKey:@"id"] intValue];
+    val = [NSString stringWithFormat:@"Ligne %d",ligne+1];
+    if(currentEditedObject == departureBtn){
+        [departureLine setText:val];
+    }else if (currentEditedObject == arrivalBtn) {
+        [arrivalLine setText:val];
+    }
 }
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component;
 {
-    return 5;
+    if(component == 0){
+        return arretDatas.count;
+    }else {
+        return [[[arretDatas objectForKey:[NSString stringWithFormat:@"%d",currentLine]] objectForKey:@"items"] count];        
+    }
+    //return arretDatas.count;
 }
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
 {
     NSString *val = @"";
     if(component == 0){
-        val = [NSString stringWithFormat:@"Ligne %d",row + 1];
+        int ligne = [[[arretDatas objectForKey:[NSString stringWithFormat:@"%d",row]] valueForKey:@"id"] intValue];
+        val = [NSString stringWithFormat:@"Ligne %d",ligne+1];
     }else {
-        val = [NSString stringWithFormat:@"lolllll %d",row];
+        val = [[[arretDatas valueForKey:[NSString stringWithFormat:@"%d",currentLine]] objectForKey:@"items"] objectAtIndex:row];
     }
     return val;
 }
@@ -180,7 +222,7 @@
     
     [actionSheet setActionSheetStyle:UIActionSheetStyleBlackTranslucent];
     
-    UISegmentedControl *closeButton = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObject:@"Close"]];
+    UISegmentedControl *closeButton = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObject:@"ok"]];
     closeButton.momentary = YES; 
     closeButton.frame = CGRectMake(410.0f, 7.0f, 50.0f, 30.0f);
     closeButton.segmentedControlStyle = UISegmentedControlStyleBar;
@@ -210,8 +252,27 @@
 }
 
 - (IBAction)showPickerView:(id)sender {
+    currentEditedObject = sender;
     [actionSheet showInView:[self.navigationController view]];
     [actionSheet setBounds:CGRectMake(0, 0, 480, 480)];
+
+    NSMutableDictionary *itemData = [itemDatas objectForKey:[NSString stringWithFormat:@"%d",icarousel.currentItemIndex]];
+    NSMutableDictionary *arretData = [arretDatas objectForKey:[NSString stringWithFormat:@"%d",icarousel.currentItemIndex]];
+    int i = 0;
+    for (NSString *s in [arretData objectForKey:@"items"]) {
+        if(currentEditedObject == departureBtn){
+            if([[s lowercaseString] isEqualToString:[departureName.text lowercaseString]])
+                break;
+        }else if (currentEditedObject == arrivalBtn) {
+            if([[s lowercaseString] isEqualToString:[arrivalName.text lowercaseString]])
+                break;
+        }
+        i++;
+    }
+    NSLog(@"%d",i);
+    [uiPickerView selectRow:[[itemData valueForKey:@"line"] intValue] inComponent:0 animated:YES];
+    [uiPickerView selectRow:i inComponent:1 animated:YES];
+    [uiPickerView reloadAllComponents];
 }
 - (IBAction)dismissActionSheet:(id)sender {
     [actionSheet dismissWithClickedButtonIndex:0 animated:YES];
