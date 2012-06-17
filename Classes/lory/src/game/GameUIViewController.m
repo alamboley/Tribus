@@ -56,16 +56,16 @@
     theFrame.origin.y = 420;
     nextButton.frame = theFrame;
     [nextButton setHidden:YES];
-}
-
-- (void) afficherScore:(NSNotification *) notification {
     
     colorUIViewController = [[ColorUIViewController alloc] initWithNibName:@"ColorUIViewController" bundle:nil andType:big];
     [self.view addSubview:colorUIViewController.view];
     colorUIViewController.view.layer.transform = CATransform3DMakeRotation(M_PI * 0.5, 0, 0.0, 1.0);
-    CGFloat x = 280;
-    CGFloat y = 0;
-    colorUIViewController.view.frame = CGRectMake(x, y, colorUIViewController.view.frame.size.width, colorUIViewController.view.frame.size.height);
+    colorUIViewController.view.frame = CGRectMake(-100, -100, colorUIViewController.view.frame.size.width, colorUIViewController.view.frame.size.height);
+}
+
+- (void) afficherScore:(NSNotification *) notification {
+    
+    colorUIViewController.view.frame = CGRectMake(280, 0, colorUIViewController.view.frame.size.width, colorUIViewController.view.frame.size.height);
 }
 
 - (void) changerPositionScore:(NSNotification *) notification {

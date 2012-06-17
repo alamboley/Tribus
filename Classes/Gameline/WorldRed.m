@@ -26,7 +26,7 @@
           [NSNumber numberWithInt:50],@"rouge",
           [NSNumber numberWithInt:37],@"violet",
           [NSNumber numberWithInt:12],@"vert",
-          [NSNumber numberWithInt:24],@"orange", nil]];
+          [NSNumber numberWithInt:117],@"orange", nil]];
         
         imgArrivee = [SPImage imageWithContentsOfFile:[worldColor stringByAppendingString:@"Arrivee.png"]];
         
@@ -69,8 +69,8 @@
         
         [self.stage addChild:pouvoir];
         pouvoir.rotation = SP_D2R(90);
-        pouvoir.x = 50;
-        pouvoir.y = 430;
+        pouvoir.x = 55;
+        pouvoir.y = 425;
         [pouvoir addEventListener:@selector(onPowerUsed:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
     }
 }

@@ -64,8 +64,8 @@
     [autoDrive addEventListener:@selector(onAutoDriveTouched:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
     [self.stage addChild:autoDrive];
     autoDrive.rotation = SP_D2R(90);
-    autoDrive.x = 320;
-    autoDrive.y = 430;
+    autoDrive.x = 315;
+    autoDrive.y = 425;
     
     hero = [[Hero alloc] initWithName:@"hero" params:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"20", @"150", @"40", @"80", @"2", nil] forKeys:[NSArray arrayWithObjects:@"x:", @"y:", @"width:", @"height:", @"group:", nil]] andGraphic:animHero];
     [self addObject:hero];

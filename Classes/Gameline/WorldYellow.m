@@ -36,8 +36,8 @@
     
     [self.stage addChild:pouvoir];
     pouvoir.rotation = SP_D2R(90);
-    pouvoir.x = 50;
-    pouvoir.y = 430;
+    pouvoir.x = 55;
+    pouvoir.y = 425;
     [pouvoir addEventListener:@selector(onPowerTouched:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
     
     [super play];
