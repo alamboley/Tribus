@@ -114,6 +114,15 @@
     [score destroy];
     score = nil;
     
+    if (tf1 && tf2) {
+        
+        [self.stage removeChild:tf1];
+        [self.stage removeChild:tf2];
+        
+        tf1 = nil;
+        tf2 = nil;
+    }
+    
     [super destroy];
 }
 
@@ -171,6 +180,32 @@
     } else if ([notification.name isEqualToString:@"filtreAssociatif"]) {
         
         [ColorManager filterAssociateForColorId:[[notification userInfo] valueForKey:@"colorId"]];
+        
+        tf1 = [SPTextField textFieldWithText:@"MISSION RÉUSSIE !"];
+        tf2 = [SPTextField textFieldWithText:@"125 pigments orange à récolter"];
+        tf1.width = 300;
+        tf2.width = 300;
+        tf1.fontName = tf2.fontName = @"Tw Cen MT";
+        tf1.fontSize = 25;
+        tf2.fontSize = 15;
+        
+        [self.stage addChild:tf1];
+        [self.stage addChild:tf2];
+        tf1.rotation = tf2.rotation = SP_D2R(90);
+        tf1.x = 370;
+        tf1.y = 170;
+        tf2.x = 350;
+        tf2.y = 170;
+        
+        SPTween *tween1 = [SPTween tweenWithTarget:tf1 time:1];
+        tween1.delay = 2;
+        [tween1 animateProperty:@"alpha" targetValue:0];
+        [[SPStage mainStage].juggler addObject:tween1];
+        
+        SPTween *tween2 = [SPTween tweenWithTarget:tf2 time:1];
+        tween2.delay = 2.3;
+        [tween2 animateProperty:@"alpha" targetValue:0];
+        [[SPStage mainStage].juggler addObject:tween2];
         
     } else {
         

@@ -36,6 +36,9 @@
     
     Couleurs *score;
     SPTextField *scoreTf;
+    
+    SPTextField *tf1;
+    SPTextField *tf2;
 }
 
 - (void) play;
