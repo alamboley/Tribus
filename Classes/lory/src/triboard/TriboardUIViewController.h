@@ -16,5 +16,6 @@
 @property (nonatomic, retain) NSMutableDictionary *itemDatas;
 @property (nonatomic, retain) NSString *itemIdSelected;
 @property (weak, nonatomic) IBOutlet UIImageView *motifMilieu;
-
+@property (weak, nonatomic) IBOutlet UIButton *pouvoirBtn;
+- (IBAction)itemSelected:(id)sender;
 @end

@@ -17,6 +17,7 @@
 @synthesize motifsContainer;
 @synthesize itemDatas;
 @synthesize motifMilieu;
+@synthesize pouvoirBtn;
 
 - (id)init {
 	if (self = [super init]) {
@@ -111,17 +112,24 @@
 - (IBAction)itemSelected:(id)sender {
 /*    [[NSNotificationCenter defaultCenter] postNotificationName:@"itemSelectedFromTriboard" 
      object:[NSNumber numberWithInt:[[((UIButton*)sender).titleLabel text] intValue]]];*/
-    for (NSString *obj in self.itemDatas) {
-        NSDictionary *item = [self.itemDatas valueForKey:obj];
-        TriboardItemUIViewController *vc = [item valueForKey:@"item"];
-
-        if(vc.button == sender){
-            itemIdSelected = obj;
+    if(sender == pouvoirBtn){
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"itemSelectedFromTriboard" 
+                                                            object:[NSNumber numberWithInt:2]];
+        self.tabBarController.selectedIndex = 1;
+    }else {
+        for (NSString *obj in self.itemDatas) {
+            NSDictionary *item = [self.itemDatas valueForKey:obj];
+            TriboardItemUIViewController *vc = [item valueForKey:@"item"];
+            
+            if(vc.button == sender){
+                itemIdSelected = obj;
+            }
         }
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"itemSelectedFromTriboard" 
+                                                            object:[NSNumber numberWithInt:0]];
+        self.tabBarController.selectedIndex = 1;        
     }
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"itemSelectedFromTriboard" 
-                                                        object:[NSNumber numberWithInt:0]];
-    self.tabBarController.selectedIndex = 1;
+
 }
 
 - (void)itemSelectedFromBag:(NSNotification *)notification {
@@ -150,6 +158,7 @@
     [self setItemsContainer:nil];
     [self setMotifMilieu:nil];
     [self setMotifsContainer:nil];
+    [self setPouvoirBtn:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
