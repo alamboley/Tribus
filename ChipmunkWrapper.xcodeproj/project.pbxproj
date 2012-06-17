@@ -521,6 +521,8 @@
 		04E3071C1585DA5D00B4B265 /* play-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E3071A1585DA5D00B4B265 /* play-btn@2x.png */; };
 		04E3071E1585DA6D00B4B265 /* play-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E3071D1585DA6D00B4B265 /* play-btn.png */; };
 		04E3071F1585DA6D00B4B265 /* play-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E3071D1585DA6D00B4B265 /* play-btn.png */; };
+		04F8E01A158E038200D2A61E /* MapUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F8E019158E038200D2A61E /* MapUIViewController.m */; };
+		04F8E01B158E038200D2A61E /* MapUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F8E019158E038200D2A61E /* MapUIViewController.m */; };
 		04FFE8831589421C0021AB6E /* InitiationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FFE8821589421C0021AB6E /* InitiationViewController.m */; };
 		04FFE8841589421C0021AB6E /* InitiationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FFE8821589421C0021AB6E /* InitiationViewController.m */; };
 		04FFE886158942BC0021AB6E /* initiation.json in Resources */ = {isa = PBXBuildFile; fileRef = 04FFE885158942BC0021AB6E /* initiation.json */; };
@@ -1563,6 +1565,8 @@
 		04E3064B1585D9DA00B4B265 /* tribus-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tribus-bg@2x.png"; sourceTree = "<group>"; };
 		04E3071A1585DA5D00B4B265 /* play-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-btn@2x.png"; sourceTree = "<group>"; };
 		04E3071D1585DA6D00B4B265 /* play-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-btn.png"; sourceTree = "<group>"; };
+		04F8E018158E038200D2A61E /* MapUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapUIViewController.h; sourceTree = "<group>"; };
+		04F8E019158E038200D2A61E /* MapUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapUIViewController.m; sourceTree = "<group>"; };
 		04FFE8811589421C0021AB6E /* InitiationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitiationViewController.h; sourceTree = "<group>"; };
 		04FFE8821589421C0021AB6E /* InitiationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitiationViewController.m; sourceTree = "<group>"; };
 		04FFE885158942BC0021AB6E /* initiation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = initiation.json; sourceTree = "<group>"; };
@@ -3338,6 +3342,8 @@
 			children = (
 				B0BB60D81574AC14001BB2CB /* TribuUIViewController.h */,
 				B0BB60D91574AC14001BB2CB /* TribuUIViewController.m */,
+				04F8E018158E038200D2A61E /* MapUIViewController.h */,
+				04F8E019158E038200D2A61E /* MapUIViewController.m */,
 			);
 			path = tribu;
 			sourceTree = "<group>";
@@ -4611,6 +4617,7 @@
 				04FFE8831589421C0021AB6E /* InitiationViewController.m in Sources */,
 				0460E9BC158A84D3006CC0C7 /* LandingPageUIViewController.m in Sources */,
 				B00DC926158CE6AE005D0647 /* Couleurs.m in Sources */,
+				04F8E01A158E038200D2A61E /* MapUIViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4774,6 +4781,7 @@
 				04FFE8841589421C0021AB6E /* InitiationViewController.m in Sources */,
 				0460E9BD158A84D3006CC0C7 /* LandingPageUIViewController.m in Sources */,
 				B00DC927158CE6AE005D0647 /* Couleurs.m in Sources */,
+				04F8E01B158E038200D2A61E /* MapUIViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

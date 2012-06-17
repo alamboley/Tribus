@@ -6,6 +6,21 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="979-NE-RVG">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gN7-w4-kTt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="w4g-Zo-mRQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zAX-AK-toR">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="730" y="-1586"/>
+        </scene>
         <!--TribuUI View Controller - tribu-->
         <scene sceneID="lSd-3V-eaC">
             <objects>
@@ -1198,7 +1213,7 @@ de couleurs pour booster ses performances !  </string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="AMI-En-7y9"/>
-        <segue reference="gGx-tg-bW5"/>
+        <segue reference="j9D-qY-XSJ"/>
+        <segue reference="BI7-og-z9U"/>
     </inferredMetricsTieBreakers>
 </document>

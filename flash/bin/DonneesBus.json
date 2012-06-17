@@ -1,34 +1,22 @@
 { "travel" : [ 
 
     { 
-      "time" : 1,
-      "type" : "menuPoint",
+      "labelName":"pauline_usecase"
+    },
+    { 
+      "labelName":"pauline_preparation"
+    },
+    { 
+      "labelName":"pauline_monte",
+      "nextDelay" : 1
+    },
+    { 
       "labelName":"deboutBus",
-      "manual" : true
+      "nextDelay" : 4
     },
     { 
-      "time" : 10,
-      "type" : "menuPoint",
       "labelName":"assisBus",
-      "manual" : false
-    },
-    { 
-      "time" : 10,
-      "type" : "menuPoint",
-      "labelName":"stopBus",
-      "manual" : false
-    },
-    { 
-      "time" : 10,
-      "type" : "menuPoint",
-      "labelName":"deboutBus",
-      "manual" : false
-    },
-    { 
-      "time" : 10,
-      "type" : "menuPoint",
-      "labelName":"assisBus",
-      "manual" : false
+      "nextDelay" : 3
     }
 
 ] }
