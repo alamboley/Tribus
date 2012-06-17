@@ -72,7 +72,8 @@
     
     NSDictionary *arretBus = [travel objectAtIndex:indice];
     
-    NSDictionary *arretBusEnAvance = [travel objectAtIndex:indice + 5];   
+    NSDictionary *arretBusEnAvance = [travel objectAtIndex:indice + 5];
+    NSDictionary *arretProche = [travel objectAtIndex:indice + 3];
     
     if ([[arretBus objectForKey:@"type"] isEqualToString:@"abribus"]) {
         
@@ -83,6 +84,10 @@
     
     if ([[arretBusEnAvance objectForKey:@"type"] isEqualToString:@"abribus"]) {
         [[NSNotificationCenter defaultCenter] postNotificationName:@"prochainArret" object:nil];
+    }
+    
+    if ([[arretProche objectForKey:@"type"] isEqualToString:@"abribus"]) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"arretProche" object:nil];
     }
     
     if (35 + 12 * [[travelFirstElement objectForKey:@"speed"]floatValue] - hero.velocityX < 0) {

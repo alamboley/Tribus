@@ -45,6 +45,7 @@
         [self.stage addChild:ecranFumeeContainer];
         
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(finNiveau:) name:@"finNiveau" object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(arretProche:) name:@"arretProche" object:nil];
         
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(colorPicked:) name:@"jaune" object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(colorPicked:) name:@"rouge" object:nil];
@@ -133,8 +134,6 @@
 
 - (void) prochainArret:(NSNotification *) notification {
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"changerPositionScore" object:nil];
-    
     scoreTf = [[SPTextField alloc] initWithText:@"Score du Monde"];
     scoreTf.fontName = @"Kohicle25";
     scoreTf.fontSize = 36;
@@ -160,6 +159,10 @@
     resultat.x = hero.x + 1915;
     resultat.y = 160;
     resultat.text = [resultat.text stringByAppendingString:@"%"];
+}
+
+- (void) arretProche:(NSNotification *) notification {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"changerPositionScore" object:nil];
 }
 
 - (void) finNiveau:(NSNotification *) notification {
