@@ -35,6 +35,7 @@
     SPTextField *resultat;
     
     Couleurs *score;
+    SPTextField *scoreTf;
 }
 
 - (void) play;

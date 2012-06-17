@@ -107,6 +107,9 @@
     [jauge destroy];
     jauge = nil;
     
+    [self removeChild:scoreTf];
+    scoreTf = nil;
+    
     [self removeChild:score];
     [score destroy];
     score = nil;
@@ -125,22 +128,30 @@
     
     [[NSNotificationCenter defaultCenter] postNotificationName:@"changerPositionScore" object:nil];
     
+    scoreTf = [[SPTextField alloc] initWithText:@"Score du Monde"];
+    scoreTf.fontName = @"Kohicle25";
+    scoreTf.fontSize = 36;
+    scoreTf.width = 160;
+    [self addChild:scoreTf];
+    scoreTf.x = hero.x + 320;
+    scoreTf.y = 30;
+    
     score = [[Couleurs alloc] init];
-    score.x = hero.x + 285;
-    score.y = 75;
+    score.x = hero.x + 280;
+    score.y = 105;
     [self addChild:score];
     
     jauge = [[Jauge alloc] initWithColor:worldColor andPourcentage:(int)[Stats pourcentageParticule]];
     [self addChild:jauge];
     jauge.x = hero.x + 415;
-    jauge.y = 190;
+    jauge.y = 220;
     
     resultat = [[SPTextField alloc] initWithText:[NSString stringWithFormat:@"%d", (int)[Stats pourcentageParticule]]];
     resultat.fontName = @"Kohicle25";
     resultat.fontSize = 34;
     [self addChild:resultat];
-    resultat.x = hero.x + 395;
-    resultat.y = 120;
+    resultat.x = hero.x + 320;
+    resultat.y = 160;
     resultat.text = [resultat.text stringByAppendingString:@"%"];
 }
 
