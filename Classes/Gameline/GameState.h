@@ -42,6 +42,7 @@
 
 - (void) colorPicked:(NSNotification *) notification;
 
+- (void) prochainArret:(NSNotification *) notification;
 - (void) finNiveau:(NSNotification *) notification;
 
 @end

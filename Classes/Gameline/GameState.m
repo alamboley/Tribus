@@ -122,9 +122,7 @@
     [hero startAutoDrive];
 }
 
-- (void) finNiveau:(NSNotification *) notification {
-    
-    hero.move = FALSE;
+- (void) prochainArret:(NSNotification *) notification {
     
     [[NSNotificationCenter defaultCenter] postNotificationName:@"changerPositionScore" object:nil];
     
@@ -133,26 +131,31 @@
     scoreTf.fontSize = 36;
     scoreTf.width = 160;
     [self addChild:scoreTf];
-    scoreTf.x = hero.x + 320;
+    scoreTf.x = hero.x + 1870;
     scoreTf.y = 30;
     
     score = [[Couleurs alloc] init];
-    score.x = hero.x + 280;
+    score.x = hero.x + 1830;
     score.y = 105;
     [self addChild:score];
     
     jauge = [[Jauge alloc] initWithColor:worldColor andPourcentage:(int)[Stats pourcentageParticule]];
     [self addChild:jauge];
-    jauge.x = hero.x + 415;
+    jauge.x = hero.x + 1935;
     jauge.y = 220;
     
     resultat = [[SPTextField alloc] initWithText:[NSString stringWithFormat:@"%d", (int)[Stats pourcentageParticule]]];
     resultat.fontName = @"Kohicle25";
     resultat.fontSize = 34;
     [self addChild:resultat];
-    resultat.x = hero.x + 320;
+    resultat.x = hero.x + 1915;
     resultat.y = 160;
     resultat.text = [resultat.text stringByAppendingString:@"%"];
+}
+
+- (void) finNiveau:(NSNotification *) notification {
+    
+    hero.move = FALSE;
 }
 
 - (void) colorPicked:(NSNotification *) notification {

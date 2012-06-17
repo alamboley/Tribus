@@ -56,6 +56,8 @@
     
     bus.creerEnnemis = NO;
     [creationRuntime stop];
+    
+    [super prochainArret:notification];
 }
 
 - (void) finNiveau:(NSNotification *) notification {
