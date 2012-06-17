@@ -101,6 +101,10 @@
 		0417F10B1579080E00A48C0F /* NotificationUIViewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0417F1081579080E00A48C0F /* NotificationUIViewControllerViewController.m */; };
 		0417F10C1579080E00A48C0F /* NotificationUIViewControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0417F1091579080E00A48C0F /* NotificationUIViewControllerViewController.xib */; };
 		0417F10D1579080E00A48C0F /* NotificationUIViewControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0417F1091579080E00A48C0F /* NotificationUIViewControllerViewController.xib */; };
+		0422881C158DF5AB00E91CD4 /* btn-hover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0422881B158DF5AB00E91CD4 /* btn-hover@2x.png */; };
+		0422881D158DF5AB00E91CD4 /* btn-hover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0422881B158DF5AB00E91CD4 /* btn-hover@2x.png */; };
+		04228822158DF79200E91CD4 /* btn-hover.png in Resources */ = {isa = PBXBuildFile; fileRef = 04228821158DF79200E91CD4 /* btn-hover.png */; };
+		04228823158DF79200E91CD4 /* btn-hover.png in Resources */ = {isa = PBXBuildFile; fileRef = 04228821158DF79200E91CD4 /* btn-hover.png */; };
 		043612A01583A99300140353 /* coupons.json in Resources */ = {isa = PBXBuildFile; fileRef = 0436129F1583A99300140353 /* coupons.json */; };
 		043612A11583A99300140353 /* coupons.json in Resources */ = {isa = PBXBuildFile; fileRef = 0436129F1583A99300140353 /* coupons.json */; };
 		043B2EAB1576D5CE00C09BBF /* PouvoirExchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 043B2EAA1576D5CE00C09BBF /* PouvoirExchange.m */; };
@@ -1334,6 +1338,8 @@
 		0417F1071579080E00A48C0F /* NotificationUIViewControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationUIViewControllerViewController.h; sourceTree = "<group>"; };
 		0417F1081579080E00A48C0F /* NotificationUIViewControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationUIViewControllerViewController.m; sourceTree = "<group>"; };
 		0417F1091579080E00A48C0F /* NotificationUIViewControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationUIViewControllerViewController.xib; sourceTree = "<group>"; };
+		0422881B158DF5AB00E91CD4 /* btn-hover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-hover@2x.png"; sourceTree = "<group>"; };
+		04228821158DF79200E91CD4 /* btn-hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-hover.png"; sourceTree = "<group>"; };
 		0436129F1583A99300140353 /* coupons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = coupons.json; sourceTree = "<group>"; };
 		043B2EA91576D5CE00C09BBF /* PouvoirExchange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PouvoirExchange.h; sourceTree = "<group>"; };
 		043B2EAA1576D5CE00C09BBF /* PouvoirExchange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PouvoirExchange.m; sourceTree = "<group>"; };
@@ -2205,6 +2211,7 @@
 		04E305E41585D9DA00B4B265 /* 1x */ = {
 			isa = PBXGroup;
 			children = (
+				04228821158DF79200E91CD4 /* btn-hover.png */,
 				040F599F158D1F69003492BE /* fleche1.png */,
 				040F59A0158D1F69003492BE /* fleche2.png */,
 				040F59A1158D1F6A003492BE /* fleche3.png */,
@@ -2795,6 +2802,7 @@
 		B002DBFC156C04AC003F5C78 /* app */ = {
 			isa = PBXGroup;
 			children = (
+				0422881B158DF5AB00E91CD4 /* btn-hover@2x.png */,
 				040F598D158D1F0A003492BE /* fleche1@2x.png */,
 				040F598E158D1F0B003492BE /* fleche2@2x.png */,
 				040F598F158D1F0C003492BE /* fleche3@2x.png */,
@@ -3973,6 +3981,8 @@
 				040F59AD158D1F6A003492BE /* geolocicon.png in Resources */,
 				040F59AF158D1F6A003492BE /* tipiicon.png in Resources */,
 				04102D19158D4EB900DFDABC /* lignes.json in Resources */,
+				0422881C158DF5AB00E91CD4 /* btn-hover@2x.png in Resources */,
+				04228822158DF79200E91CD4 /* btn-hover.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4432,6 +4442,8 @@
 				040F59AE158D1F6A003492BE /* geolocicon.png in Resources */,
 				040F59B0158D1F6A003492BE /* tipiicon.png in Resources */,
 				04102D1A158D4EB900DFDABC /* lignes.json in Resources */,
+				0422881D158DF5AB00E91CD4 /* btn-hover@2x.png in Resources */,
+				04228823158DF79200E91CD4 /* btn-hover.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

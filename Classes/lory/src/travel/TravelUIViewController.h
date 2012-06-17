@@ -24,7 +24,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *departureLine;
 @property (weak, nonatomic) IBOutlet UILabel *arrivalLine;
 @property (weak, nonatomic) IBOutlet UITextField *travelName;
+@property (weak, nonatomic) IBOutlet UILabel *frequency;
 @property (weak, nonatomic) IBOutlet UIButton *departureBtn;
 @property (weak, nonatomic) IBOutlet UIButton *arrivalBtn;
 - (IBAction)showPickerView:(id)sender;
+- (IBAction)validateTravel:(id)sender;
 @end

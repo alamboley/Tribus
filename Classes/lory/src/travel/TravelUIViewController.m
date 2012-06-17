@@ -22,6 +22,7 @@
 @synthesize departureLine;
 @synthesize arrivalLine;
 @synthesize travelName;
+@synthesize frequency;
 @synthesize departureBtn;
 @synthesize arrivalBtn;
 
@@ -35,10 +36,10 @@
         if([[obj objectForKey:@"done"] boolValue]){
             done = [NSNumber numberWithBool:YES];
         }
-        NSString *desc = [NSString stringWithFormat:@"%@ - %@ (Ligne %@)",[obj objectForKey:@"departure"],[obj objectForKey:@"arrival"],[obj objectForKey:@"line"]];
+        NSString *desc = [NSString stringWithFormat:@"%@ - %@ (Ligne %d)",[obj objectForKey:@"departure"],[obj objectForKey:@"arrival"],[[obj objectForKey:@"line"] intValue] + 1];
         [itemDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
-                              [[NSArray alloc] initWithObjects:[obj objectForKey:@"title"],[obj objectForKey:@"departure"],[obj objectForKey:@"arrival"],[obj objectForKey:@"line"], desc, done,nil] forKeys:
-                              [[NSArray alloc] initWithObjects:@"title", @"departure",@"arrival",@"line",@"description", @"done", nil]]
+                              [[NSArray alloc] initWithObjects:[obj objectForKey:@"title"],[obj objectForKey:@"departure"],[obj objectForKey:@"arrival"],[obj objectForKey:@"line"], desc, [obj objectForKey:@"frequency"], done,nil] forKeys:
+                              [[NSArray alloc] initWithObjects:@"title", @"departure",@"arrival",@"line",@"description", @"frequency", @"done", nil]]
                       forKey:[obj objectForKey:@"id"]];
         
         //[USave saveItemId:[obj objectForKey:@"id"] forType:self.title];
@@ -72,12 +73,11 @@
 - (void)carousel:(iCarousel *)carousel didSelectItemAtIndex:(NSInteger)index{
     
     // now add animation
-    [UIView beginAnimations:@"View Flip" context:nil];
-    [UIView setAnimationDuration:0.5];
-    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
     if(index == carousel.currentItemIndex){
+        [UIView beginAnimations:@"View Flip" context:nil];
+        [UIView setAnimationDuration:0.5];
+        [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
         
-        [UIView setAnimationTransition: UIViewAnimationTransitionFlipFromRight forView:carousel.currentItemView cache:YES];
         [UIView setAnimationTransition: UIViewAnimationTransitionFlipFromRight forView:travelDetail cache:YES];
         NSMutableDictionary *datas = [itemDatas objectForKey:[NSString stringWithFormat:@"%d",index]];
         [travelName setText:[datas valueForKey:@"title"]];
@@ -87,16 +87,12 @@
         [arrivalLine setText:[NSString stringWithFormat:@"Ligne %d",line]];
         [departureName setText:[datas valueForKey:@"departure"]];
         [arrivalName setText:[datas valueForKey:@"arrival"]];
+        [frequency setText:[datas valueForKey:@"frequency"]];
         [travelDetail setHidden:NO];
         
-        /*[travelDetail removeFromSuperview];
-        CGRect frame = carousel.currentItemView.frame;
-        frame.size = travelDetail.frame.size;
-        [carousel.currentItemView addSubview:self.travelDetail];
-        [travelDetail setFrame:frame];*/
+        [UIView commitAnimations];
     } else {
     }
-    [UIView commitAnimations];
 }
 - (void)didReceiveMemoryWarning
 {
@@ -210,7 +206,7 @@
     [super viewDidLoad];
     icarousel.type = iCarouselTypeLinear;
     icarousel.vertical = YES;
-    //icarousel.viewpointOffset = CGSizeMake(0, 70);
+    icarousel.viewpointOffset = CGSizeMake(-10, -10);
     [travelDetail setHidden:YES];
     travelName.delegate = self;
     
@@ -248,6 +244,7 @@
     [self setArrivalBtn:nil];
     [self setTravelName:nil];
     actionSheet = nil;
+    [self setFrequency:nil];
     [super viewDidUnload];
 }
 
@@ -255,9 +252,12 @@
     currentEditedObject = sender;
     [actionSheet showInView:[self.navigationController view]];
     [actionSheet setBounds:CGRectMake(0, 0, 480, 480)];
-
+    NSMutableDictionary *datas = [itemDatas objectForKey:[NSString stringWithFormat:@"%d",icarousel.currentItemIndex]];
+    int line = [[datas valueForKey:@"line"] intValue];
+    NSLog(@"line selected %d",line);
+    currentLine = line;
     NSMutableDictionary *itemData = [itemDatas objectForKey:[NSString stringWithFormat:@"%d",icarousel.currentItemIndex]];
-    NSMutableDictionary *arretData = [arretDatas objectForKey:[NSString stringWithFormat:@"%d",icarousel.currentItemIndex]];
+    NSMutableDictionary *arretData = [arretDatas objectForKey:[NSString stringWithFormat:@"%d",line]];
     int i = 0;
     for (NSString *s in [arretData objectForKey:@"items"]) {
         if(currentEditedObject == departureBtn){
@@ -269,11 +269,23 @@
         }
         i++;
     }
-    NSLog(@"%d",i);
-    [uiPickerView selectRow:[[itemData valueForKey:@"line"] intValue] inComponent:0 animated:YES];
-    [uiPickerView selectRow:i inComponent:1 animated:YES];
+    [uiPickerView selectRow:[[itemData valueForKey:@"line"] intValue] inComponent:0 animated:NO];
     [uiPickerView reloadAllComponents];
+    [uiPickerView selectRow:i inComponent:1 animated:YES];
 }
+
+- (IBAction)validateTravel:(id)sender {
+    // now add animation
+    [UIView beginAnimations:@"View Flip" context:nil];
+    [UIView setAnimationDuration:0.5];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];  
+    
+    [UIView setAnimationTransition: UIViewAnimationTransitionFlipFromRight forView:travelDetail cache:YES];
+    [travelDetail setHidden:YES];
+
+    [UIView commitAnimations];
+}
+
 - (IBAction)dismissActionSheet:(id)sender {
     [actionSheet dismissWithClickedButtonIndex:0 animated:YES];
     [actionSheet removeFromSuperview];

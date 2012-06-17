@@ -3,20 +3,23 @@
  "title":"trajet lycee",
  "departure":"Marquisats",
  "arrival":"Bertollet",
- "line":"0",
+ "line":"5",
+ "frequency":"Lun-Ven",
  "done": 1
  },{
  "id":"1",
  "title":"trajet escalade",
  "departure":"Marquisats",
  "arrival":"Bel air",
- "line":"6",
+ "line":"5",
+ "frequency":"Mercredi",
  "done": 0
  },{
  "id":"2",
  "title":"trajet mattias",
  "departure":"Marquisats",
  "arrival":"Courier",
- "line":"6",
+ "frequency":"Mar, Jeu",
+ "line":"5",
  "done": 0
  }]

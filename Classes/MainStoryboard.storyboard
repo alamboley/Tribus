@@ -321,6 +321,9 @@ de couleurs pour booster ses performances !  </string>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="validateTravel:" destination="pa0-oe-nky" eventType="touchUpInside" id="ID8-BA-Pjr"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" id="o4a-qk-2ic">
                                 <rect key="frame" x="39" y="65" width="401" height="217"/>
@@ -331,15 +334,15 @@ de couleurs pour booster ses performances !  </string>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="tipiicon@2x.png" id="TBt-8j-5zB">
-                                        <rect key="frame" x="330" y="15" width="20" height="31"/>
+                                        <rect key="frame" x="327" y="15" width="20" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="geolocicon@2x.png" id="Hv2-fu-hPi">
-                                        <rect key="frame" x="247" y="56" width="38" height="32"/>
+                                        <rect key="frame" x="237" y="56" width="38" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="geolocicon@2x.png" id="YeR-5h-g0B">
-                                        <rect key="frame" x="247" y="101" width="38" height="32"/>
+                                        <rect key="frame" x="237" y="101" width="38" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="frequenceicon@2x.png" id="Kvh-It-U4O">
@@ -347,28 +350,28 @@ de couleurs pour booster ses performances !  </string>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="zW4-Kb-Psh" customClass="UILabelCustomFontTwCenMT">
-                                        <rect key="frame" x="282" y="54" width="77" height="21"/>
+                                        <rect key="frame" x="272" y="54" width="77" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="4OC-Fw-fmT" customClass="UILabelCustomFontTwCenMT">
-                                        <rect key="frame" x="282" y="69" width="77" height="21"/>
+                                        <rect key="frame" x="272" y="69" width="77" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.42745098039215684" green="0.396078431372549" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="ZcO-f5-pAw" customClass="UILabelCustomFontTwCenMT">
-                                        <rect key="frame" x="282" y="114" width="77" height="21"/>
+                                        <rect key="frame" x="272" y="114" width="77" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.42745098039215684" green="0.396078431372549" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="79x-D7-I9i" customClass="UILabelCustomFontTwCenMT">
-                                        <rect key="frame" x="282" y="97" width="77" height="21"/>
+                                        <rect key="frame" x="272" y="97" width="77" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -378,40 +381,40 @@ de couleurs pour booster ses performances !  </string>
                                         <rect key="frame" x="42" y="61" width="100" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.42745098039215684" green="0.396078431372549" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Arrivée" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="pLJ-sd-Xco" customClass="UILabelCustomFontTwCenMT">
                                         <rect key="frame" x="42" y="106" width="100" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.42745098039215684" green="0.396078431372549" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Opb-r8-9wp">
-                                        <rect key="frame" x="40" y="53" width="319" height="37"/>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Opb-r8-9wp">
+                                        <rect key="frame" x="40" y="53" width="327" height="37"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <state key="highlighted">
+                                        <state key="highlighted" backgroundImage="btn-hover@2x.png">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <action selector="showPickerView:" destination="pa0-oe-nky" eventType="touchUpInside" id="AJ2-N0-mkG"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eHo-tt-PWZ">
-                                        <rect key="frame" x="40" y="98" width="319" height="37"/>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eHo-tt-PWZ">
+                                        <rect key="frame" x="40" y="98" width="327" height="37"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <state key="highlighted">
+                                        <state key="highlighted" backgroundImage="btn-hover@2x.png">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -419,11 +422,41 @@ de couleurs pour booster ses performances !  </string>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nom du voyage" adjustsFontSizeToFit="NO" minimumFontSize="17" id="HS2-so-v5L">
-                                        <rect key="frame" x="38" y="13" width="265" height="46"/>
+                                        <rect key="frame" x="38" y="13" width="328" height="46"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="fleche1@2x.png" id="tHq-gV-W1K">
+                                        <rect key="frame" x="360" y="25" width="7" height="12"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="fleche2@2x.png" id="2Rw-4a-IRE">
+                                        <rect key="frame" x="360" y="69" width="6" height="9"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="fleche2@2x.png" id="pWR-1u-NaL">
+                                        <rect key="frame" x="360" y="112" width="6" height="9"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="fleche3@2x.png" id="oTO-od-Lxy">
+                                        <rect key="frame" x="360" y="146" width="6" height="9"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Fréquence" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="NC2-Dw-Hmv" customClass="UILabelCustomFontTwCenMT">
+                                        <rect key="frame" x="68" y="138" width="82" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Lun-Ven" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="TzY-se-Snh" customClass="UILabelCustomFontTwCenMT">
+                                        <rect key="frame" x="267" y="138" width="82" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
@@ -447,6 +480,7 @@ de couleurs pour booster ses performances !  </string>
                         <outlet property="departureBtn" destination="Opb-r8-9wp" id="YGx-3o-aTy"/>
                         <outlet property="departureLine" destination="4OC-Fw-fmT" id="gc9-KK-msB"/>
                         <outlet property="departureName" destination="zW4-Kb-Psh" id="Dcg-te-01z"/>
+                        <outlet property="frequency" destination="TzY-se-Snh" id="gke-ud-6zW"/>
                         <outlet property="icarousel" destination="CRy-il-CaA" id="TJz-7E-WOr"/>
                         <outlet property="travelDetail" destination="o4a-qk-2ic" id="bJZ-j6-MfQ"/>
                         <outlet property="travelName" destination="HS2-so-v5L" id="K6a-8X-nsS"/>
@@ -1026,6 +1060,10 @@ de couleurs pour booster ses performances !  </string>
     <resources>
         <image name="boutonreglages@2x.png" width="50" height="41"/>
         <image name="boutonsuivant@2x.png" width="107" height="98"/>
+        <image name="btn-hover@2x.png" width="2" height="2"/>
+        <image name="fleche1@2x.png" width="14" height="24"/>
+        <image name="fleche2@2x.png" width="11" height="18"/>
+        <image name="fleche3@2x.png" width="11" height="18"/>
         <image name="fond2@2x.png" width="960" height="640"/>
         <image name="fond3@2x.png" width="960" height="640"/>
         <image name="frequenceicon@2x.png" width="36" height="45"/>
@@ -1110,12 +1148,14 @@ de couleurs pour booster ses performances !  </string>
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TravelUIViewController.h"/>
             <relationships>
                 <relationship kind="action" name="showPickerView:"/>
+                <relationship kind="action" name="validateTravel:"/>
                 <relationship kind="outlet" name="arrivalBtn" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="arrivalLine" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="arrivalName" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="departureBtn" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="departureLine" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="departureName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="frequency" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
                 <relationship kind="outlet" name="travelDetail" candidateClass="UIView"/>
                 <relationship kind="outlet" name="travelName" candidateClass="UITextField"/>
