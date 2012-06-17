@@ -95,7 +95,7 @@
 -(void)viewDidAppear:(BOOL)animated { 
     [super viewDidAppear:animated];
     [colorUIViewController viewDidAppear:YES];
-    [nextBusUILabel setText:[NSString stringWithFormat:@"Prochain bus dans : %d min" , minutesLeft--]];
+    [nextBusUILabel setText:[NSString stringWithFormat:@"Prochain bus dans : %d min" , minutesLeft >1 ? minutesLeft-- : 1]];
 }
 
 -(void)viewDidDisappear:(BOOL)animated { 
