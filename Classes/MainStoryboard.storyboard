@@ -15,9 +15,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="271"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="fond2@2x.png" id="WF5-s3-eX4">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="tribu-bg.png" id="WF5-s3-eX4">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="carte.png" id="hjF-WO-l6p">
+                                <rect key="frame" x="50" y="50" width="393" height="239"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -210,10 +214,21 @@ de couleurs pour booster ses performances !  </string>
                                 <rect key="frame" x="114" y="109" width="245" height="134"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="power-none@2x.png" id="41f-mn-sJK">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="power-shield.png" id="41f-mn-sJK">
                                 <rect key="frame" x="429" y="265" width="42" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="jauge_niveau.png" id="9Xb-pI-ZNf">
+                                <rect key="frame" x="200" y="240" width="153" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="NIVEAU 6" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="luA-37-LlC" customClass="UILabelCustomFontTwCenMT">
+                                <rect key="frame" x="211" y="240" width="87" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -1066,9 +1081,17 @@ de couleurs pour booster ses performances !  </string>
                         <rect key="frame" x="0.0" y="0.0" width="480" height="271"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="fond2@2x.png" id="Qse-44-Ev4">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="tribu-bg.png" id="Qse-44-Ev4">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="cadre.png" id="dRf-1Z-n6d">
+                                <rect key="frame" x="50" y="50" width="393" height="239"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="classement_tribu.png" id="gkj-z0-eAA">
+                                <rect key="frame" x="67" y="57" width="341" height="201"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -1091,9 +1114,17 @@ de couleurs pour booster ses performances !  </string>
                         <rect key="frame" x="0.0" y="0.0" width="480" height="271"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="fond2@2x.png" id="9Jg-Yr-z8c">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="tribu-bg.png" id="9Jg-Yr-z8c">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="cadre.png" id="VTZ-Us-g5x">
+                                <rect key="frame" x="50" y="50" width="393" height="239"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="classement_joueurs.png" id="rkv-u7-4HU">
+                                <rect key="frame" x="69" y="60" width="339" height="194"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -1132,6 +1163,10 @@ de couleurs pour booster ses performances !  </string>
         <image name="boutonreglages@2x.png" width="50" height="41"/>
         <image name="boutonsuivant@2x.png" width="107" height="98"/>
         <image name="btn-hover@2x.png" width="2" height="2"/>
+        <image name="cadre.png" width="393" height="239"/>
+        <image name="carte.png" width="393" height="239"/>
+        <image name="classement_joueurs.png" width="339" height="194"/>
+        <image name="classement_tribu.png" width="341" height="201"/>
         <image name="fleche1@2x.png" width="14" height="24"/>
         <image name="fleche2@2x.png" width="11" height="18"/>
         <image name="fleche3@2x.png" width="11" height="18"/>
@@ -1139,17 +1174,19 @@ de couleurs pour booster ses performances !  </string>
         <image name="fond3@2x.png" width="960" height="640"/>
         <image name="frequenceicon@2x.png" width="36" height="45"/>
         <image name="geolocicon@2x.png" width="77" height="64"/>
+        <image name="jauge_niveau.png" width="153" height="23"/>
         <image name="main-bg@2x.jpg" width="960" height="640"/>
         <image name="main-button-big-normal.png" width="150" height="56"/>
         <image name="main-button-small-normal@2x.png" width="175" height="61"/>
         <image name="ok-btn@2x.png" width="107" height="98"/>
         <image name="perso@2x.png" width="504" height="559"/>
-        <image name="power-none@2x.png" width="84" height="84"/>
+        <image name="power-shield.png" width="43" height="43"/>
         <image name="rites_fond@2x.jpeg" width="960" height="640"/>
         <image name="tipiicon@2x.png" width="41" height="63"/>
         <image name="traits@2x.png" width="519" height="268"/>
         <image name="travel-modified-item-bg@2x.png" width="802" height="434"/>
         <image name="triboard-customization_bg@2x.png" width="787" height="479"/>
+        <image name="tribu-bg.png" width="480" height="320"/>
     </resources>
     <classes>
         <class className="BagUIViewController" superclassName="GenericUIViewController">
@@ -1198,7 +1235,7 @@ de couleurs pour booster ses performances !  </string>
                 <relationship kind="outlet" name="nextBusUILabel" candidateClass="UILabel"/>
             </relationships>
         </class>
-        <class className="MapUIViewController" superclassName="UIViewController">
+        <class className="MapUIViewController" superclassName="GenericUIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MapUIViewController.h"/>
         </class>
         <class className="MissionUIViewController" superclassName="GenericUIViewController">
@@ -1208,7 +1245,7 @@ de couleurs pour booster ses performances !  </string>
                 <relationship kind="outlet" name="uiImageView" candidateClass="UIImageView"/>
             </relationships>
         </class>
-        <class className="PlayersUIViewController" superclassName="UIViewController">
+        <class className="PlayersUIViewController" superclassName="GenericUIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PlayersUIViewController.h"/>
         </class>
         <class className="SPView" superclassName="UIView">
