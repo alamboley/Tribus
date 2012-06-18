@@ -24,6 +24,7 @@
     
     AnimationSequence *animEcranNoir;
     AnimationSequence *animHero;
+    AnimationSequence *particleTaken;
     
     NSString *worldColor;
     
@@ -34,6 +35,7 @@
     Jauge *jauge;
     SPTextField *resultat;
     
+    Couleurs *scoreEnHaut;
     Couleurs *score;
     SPTextField *scoreTf;
     

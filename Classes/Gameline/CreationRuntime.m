@@ -27,8 +27,6 @@
         animFiltreAssoOrangeBack = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"filtreAssociatifOrangeBack.xml"] andAnimations:[NSArray arrayWithObjects:@"filtre", nil] andFirstAnimation:@"filtre"];
         animFiltreAssoOrangeFront = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"filtreAssociatifOrangeFront.xml"] andAnimations:[NSArray arrayWithObjects:@"filtre", nil] andFirstAnimation:@"filtre"];
         
-        particleTaken = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"particulesMulti.xml"] andAnimations:[NSArray arrayWithObjects:@"rougeParticulesRecolte", @"jauneParticulesRecolte", nil] andFirstAnimation:[worldColor stringByAppendingString:@"ParticulesRecolte"]];
-        
         filtreBack = [SPImage imageWithContentsOfFile:@"filtreBack.png"];
         
         [Stats initStats];
@@ -45,7 +43,6 @@
     
     animFiltreAssoOrangeBack = nil;
     animFiltreAssoOrangeFront = nil;
-    particleTaken = nil;
     filtreBack = nil;
 }
 

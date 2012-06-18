@@ -58,7 +58,7 @@
     [nextButton setHidden:YES];
     
     colorUIViewController = [[ColorUIViewController alloc] initWithNibName:@"ColorUIViewController" bundle:nil andType:big];
-    [self.view addSubview:colorUIViewController.view];
+    //[self.view addSubview:colorUIViewController.view];
     colorUIViewController.view.layer.transform = CATransform3DMakeRotation(M_PI * 0.5, 0, 0.0, 1.0);
     colorUIViewController.view.frame = CGRectMake(-100, -100, colorUIViewController.view.frame.size.width, colorUIViewController.view.frame.size.height);
 }

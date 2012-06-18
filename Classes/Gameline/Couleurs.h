@@ -14,5 +14,6 @@
     SPTextField *tfBleu, *tfRouge, *tfJaune, *tfVert, *tfOrange, *tfViolet;
 }
 - (void) destroy;
+- (void) update;
 
 @end

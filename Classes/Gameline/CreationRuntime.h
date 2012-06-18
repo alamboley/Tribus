@@ -25,7 +25,6 @@
     
     AnimationSequence *animFiltreAssoOrangeFront;
     AnimationSequence *animFiltreAssoOrangeBack;
-    AnimationSequence *particleTaken;
     
     SPImage *filtreBack;
 }

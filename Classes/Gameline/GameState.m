@@ -41,6 +41,8 @@
         
         animEcranNoir = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"ecranNoir.xml"] andAnimations:[NSArray arrayWithObjects:@"noirDisparition", @"noirExplosion", nil] andFirstAnimation:@"noirExplosion"];
         
+        scoreEnHaut = [[Couleurs alloc] init];
+        
         ecranFumeeContainer = [[SPSprite alloc] init];
         [self.stage addChild:ecranFumeeContainer];
         
@@ -78,6 +80,22 @@
     [creationRuntime start];
     
     [self setupCamera:hero andOffset:CGPointMake(hero.width / 2 - 80, 0) andBounds:CGRectMake(0, 0, gameWidth, 1000) andEasing:CGPointMake(0.25, 0.05)];
+    
+    [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(stageReady:) userInfo:nil repeats:NO];
+}
+
+- (void) stageReady:(NSTimer *) timer {
+
+    [self.stage addChild:scoreEnHaut];
+    scoreEnHaut.rotation = SP_D2R(90);
+    scoreEnHaut.x = 320;
+    
+    particleTaken = [[AnimationSequence alloc] initWithTextureAtlas:[SPTextureAtlas atlasWithContentsOfFile:@"particulesMulti.xml"] andAnimations:[NSArray arrayWithObjects:@"rougeParticulesRecolte", @"jauneParticulesRecolte", nil] andFirstAnimation:[worldColor stringByAppendingString:@"ParticulesRecolte"]];
+    
+    [self.stage addChild:particleTaken];
+    [particleTaken changeAnimation:[worldColor stringByAppendingString:@"ParticulesRecolte"] withLoop:NO];
+    particleTaken.x = 170;
+    particleTaken.y = [worldColor isEqualToString:@"jaune"] ? -90 : -10;
 }
 
 - (void) destroy {
@@ -85,6 +103,9 @@
     [self.stage removeChild:autoDrive];
     [autoDrive removeEventListener:@selector(onAutoDriveTouched:) atObject:self forType:SP_EVENT_TYPE_TOUCH];
     autoDrive = nil;
+    
+    [self.stage removeChild:particleTaken];
+    particleTaken = nil;
     
     [bus destroy];
     [creationRuntime destroy];
@@ -163,6 +184,10 @@
 
 - (void) arretProche:(NSNotification *) notification {
     [[NSNotificationCenter defaultCenter] postNotificationName:@"changerPositionScore" object:nil];
+    
+    [self.stage removeChild:scoreEnHaut];
+    [scoreEnHaut destroy];
+    scoreEnHaut = nil;
 }
 
 - (void) finNiveau:(NSNotification *) notification {
@@ -213,8 +238,10 @@
     } else {
         
         [ColorManager addPoints:1 forColorId:notification.name];
+        [particleTaken changeAnimation:[worldColor stringByAppendingString:@"ParticulesRecolte"] withLoop:NO];
     }
     
+    [scoreEnHaut update];
 }
 
 - (void) baddyManagement:(NSNotification *) notification {
