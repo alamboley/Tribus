@@ -27,7 +27,7 @@
 {
     notif = [[NotificationUIViewControllerViewController alloc] initWithNibName:@"NotificationUIViewControllerViewController" bundle:nil];
     CGRect frame = [notif.view frame];
-    frame.origin.x = 370.0f;
+    frame.origin.x = 350.0f;
     frame.origin.y -= 50.0f;
     [notif.view setFrame:frame];
     [self.view addSubview:notif.view];

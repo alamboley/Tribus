@@ -38,11 +38,6 @@
     // e.g. self.myOutlet = nil;
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-
 - (IBAction)busIsComing:(id)sender {
     [self.view setHidden:YES];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"startGame" object:nil];
