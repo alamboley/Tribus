@@ -15,6 +15,7 @@
     NotificationUIViewControllerViewController *notif;
     int minutesLeft;
 }
+@property (weak, nonatomic) IBOutlet UIImageView *notifMissions;
 @property (weak, nonatomic) IBOutlet UILabel *nextBusUILabel;
 @property (nonatomic, retain) ColorUIViewController *colorUIViewController;
 

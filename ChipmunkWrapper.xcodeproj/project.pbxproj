@@ -551,6 +551,10 @@
 		04E3071C1585DA5D00B4B265 /* play-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E3071A1585DA5D00B4B265 /* play-btn@2x.png */; };
 		04E3071E1585DA6D00B4B265 /* play-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E3071D1585DA6D00B4B265 /* play-btn.png */; };
 		04E3071F1585DA6D00B4B265 /* play-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E3071D1585DA6D00B4B265 /* play-btn.png */; };
+		04E898B6158FEFD700ED839F /* notif_new@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E898B5158FEFD700ED839F /* notif_new@2x.png */; };
+		04E898B7158FEFD700ED839F /* notif_new@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E898B5158FEFD700ED839F /* notif_new@2x.png */; };
+		04E898B9158FEFFD00ED839F /* notif_new.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E898B8158FEFFD00ED839F /* notif_new.png */; };
+		04E898BA158FEFFD00ED839F /* notif_new.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E898B8158FEFFD00ED839F /* notif_new.png */; };
 		04F3DB3F158EA5BE001A42A8 /* mission-after-done-0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F3DB3D158EA5BE001A42A8 /* mission-after-done-0@2x.png */; };
 		04F3DB40158EA5BE001A42A8 /* mission-after-done-0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F3DB3D158EA5BE001A42A8 /* mission-after-done-0@2x.png */; };
 		04F3DB41158EA5BE001A42A8 /* mission-after-done-1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F3DB3E158EA5BE001A42A8 /* mission-after-done-1@2x.png */; };
@@ -1643,6 +1647,8 @@
 		04E3064B1585D9DA00B4B265 /* tribus-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tribus-bg@2x.png"; sourceTree = "<group>"; };
 		04E3071A1585DA5D00B4B265 /* play-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-btn@2x.png"; sourceTree = "<group>"; };
 		04E3071D1585DA6D00B4B265 /* play-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-btn.png"; sourceTree = "<group>"; };
+		04E898B5158FEFD700ED839F /* notif_new@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "notif_new@2x.png"; sourceTree = "<group>"; };
+		04E898B8158FEFFD00ED839F /* notif_new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notif_new.png; sourceTree = "<group>"; };
 		04F3DB3D158EA5BE001A42A8 /* mission-after-done-0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mission-after-done-0@2x.png"; sourceTree = "<group>"; };
 		04F3DB3E158EA5BE001A42A8 /* mission-after-done-1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mission-after-done-1@2x.png"; sourceTree = "<group>"; };
 		04F3DB43158EA5D3001A42A8 /* mission-after-done-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mission-after-done-0.png"; sourceTree = "<group>"; };
@@ -2308,6 +2314,7 @@
 		04E305E41585D9DA00B4B265 /* 1x */ = {
 			isa = PBXGroup;
 			children = (
+				04E898B8158FEFFD00ED839F /* notif_new.png */,
 				04F3DB4C158EA9B1001A42A8 /* mission-after.png */,
 				04F3DB43158EA5D3001A42A8 /* mission-after-done-0.png */,
 				04F3DB44158EA5D3001A42A8 /* mission-after-done-1.png */,
@@ -2911,6 +2918,7 @@
 		B002DBFC156C04AC003F5C78 /* app */ = {
 			isa = PBXGroup;
 			children = (
+				04E898B5158FEFD700ED839F /* notif_new@2x.png */,
 				04F3DB49158EA99C001A42A8 /* mission-after@2x.png */,
 				04F3DB3D158EA5BE001A42A8 /* mission-after-done-0@2x.png */,
 				04F3DB3E158EA5BE001A42A8 /* mission-after-done-1@2x.png */,
@@ -4142,6 +4150,8 @@
 				B0E065D4158F102B004A629C /* particulesMulti.xml in Resources */,
 				B0E065D8158F103E004A629C /* particulesMulti@2x.pvr in Resources */,
 				B0E065DA158F103E004A629C /* particulesMulti@2x.xml in Resources */,
+				04E898B6158FEFD700ED839F /* notif_new@2x.png in Resources */,
+				04E898B9158FEFFD00ED839F /* notif_new.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4630,6 +4640,8 @@
 				B0E065D5158F102B004A629C /* particulesMulti.xml in Resources */,
 				B0E065D9158F103E004A629C /* particulesMulti@2x.pvr in Resources */,
 				B0E065DB158F103E004A629C /* particulesMulti@2x.xml in Resources */,
+				04E898B7158FEFD700ED839F /* notif_new@2x.png in Resources */,
+				04E898BA158FEFFD00ED839F /* notif_new.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

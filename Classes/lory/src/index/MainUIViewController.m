@@ -10,8 +10,10 @@
 #import "PRTween.h"
 #import "ColorManager.h"
 #import "LandingPageUIViewController.h"
+#import "USave.h"
 
 @implementation MainUIViewController
+@synthesize notifMissions;
 @synthesize nextBusUILabel;
 @synthesize colorUIViewController;
 
@@ -75,6 +77,11 @@
     /*LandingPageUIViewController *landing = [[LandingPageUIViewController alloc] initWithNibName:@"LandingPageUIViewController" bundle:nil];
     
     [self.view addSubview:landing.view];*/
+    if ([USave getItemIdsforType:@"main"] != nil && [[USave getItemIdsforType:@"main"] objectForKey:@"notifmission"] != nil) {
+        [notifMissions setHidden:YES];
+            } else {                
+                [USave saveValue:[NSNumber numberWithBool:YES] forItemId:@"notifmission" forCategory:@"main"];
+                    }
 
 }
 -(void)startGameHandler: (NSNotification *) notification{
@@ -87,6 +94,7 @@
     [self setColorUIViewController:nil];
     notif = nil;
     [self setNextBusUILabel:nil];
+    [self setNotifMissions:nil];
     [super viewDidUnload];
 
     // Release any retained subviews of the main view.
@@ -101,6 +109,7 @@
 -(void)viewDidDisappear:(BOOL)animated { 
     [super viewDidDisappear:animated];
     [colorUIViewController viewDidDisappear:YES];
+    [notifMissions setHidden:YES];
 }
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
