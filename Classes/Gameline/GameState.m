@@ -94,7 +94,8 @@
     
     [self.stage addChild:particleTaken];
     [particleTaken changeAnimation:[worldColor stringByAppendingString:@"ParticulesRecolte"] withLoop:NO];
-    particleTaken.x = 170;
+    particleTaken.alpha = 0;
+    particleTaken.x = 180;
     particleTaken.y = [worldColor isEqualToString:@"jaune"] ? -90 : -10;
 }
 
@@ -238,6 +239,7 @@
     } else {
         
         [ColorManager addPoints:1 forColorId:notification.name];
+        particleTaken.alpha = 1;
         [particleTaken changeAnimation:[worldColor stringByAppendingString:@"ParticulesRecolte"] withLoop:NO];
     }
     
