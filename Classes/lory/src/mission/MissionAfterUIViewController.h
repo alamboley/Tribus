@@ -9,5 +9,8 @@
 #import "GenericUIViewController.h"
 
 @interface MissionAfterUIViewController : GenericUIViewController
+@property (weak, nonatomic) IBOutlet UIImageView *bonusView;
+- (IBAction)displayBonus:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *buttonView;
 
 @end

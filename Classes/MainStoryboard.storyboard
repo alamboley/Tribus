@@ -790,7 +790,7 @@ de couleurs pour booster ses performances !  </string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="pth-3O-NJe" kind="push" id="gGx-tg-bW5"/>
+                                    <segue destination="ldL-gP-B3F" kind="push" id="olL-Lp-jpg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -805,6 +805,59 @@ de couleurs pour booster ses performances !  </string>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="238" y="173.5"/>
+        </scene>
+        <!--Mission AfterUI View Controller - missions-->
+        <scene sceneID="mq6-jq-NJ4">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dK3-rD-cgc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController title="missions" id="ldL-gP-B3F" customClass="MissionAfterUIViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nnS-Nj-V58">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="fond2@2x.png" id="OPd-Qi-WVB">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="mission-item-ok-bg.png" id="baf-kp-f7q">
+                                <rect key="frame" x="20" y="23" width="444" height="122"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="I2q-sx-gVW">
+                                <rect key="frame" x="47" y="75" width="387" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="mission-after-done-0.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="displayBonus:" destination="ldL-gP-B3F" eventType="touchUpInside" id="bGk-fw-WBa"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="mission-after-done-1.png" id="IQS-ej-9KZ">
+                                <rect key="frame" x="47" y="75" width="387" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="mission-after.png" id="F0P-jf-uqt">
+                                <rect key="frame" x="46" y="179" width="387" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="i7E-g6-YNm"/>
+                    <connections>
+                        <outlet property="bonusView" destination="IQS-ej-9KZ" id="fQn-h4-TwU"/>
+                        <outlet property="buttonView" destination="I2q-sx-gVW" id="8D4-mF-C3x"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="239" y="591"/>
         </scene>
         <!--GenericUI View Controller-->
         <scene sceneID="PMz-zN-O98">
@@ -1189,6 +1242,10 @@ de couleurs pour booster ses performances !  </string>
         <image name="main-bg@2x.jpg" width="960" height="640"/>
         <image name="main-button-big-normal.png" width="150" height="56"/>
         <image name="main-button-small-normal@2x.png" width="175" height="61"/>
+        <image name="mission-after-done-0.png" width="387" height="118"/>
+        <image name="mission-after-done-1.png" width="387" height="118"/>
+        <image name="mission-after.png" width="387" height="118"/>
+        <image name="mission-item-ok-bg.png" width="444" height="122"/>
         <image name="ok-btn@2x.png" width="107" height="98"/>
         <image name="perso@2x.png" width="504" height="559"/>
         <image name="power-shield.png" width="43" height="43"/>
@@ -1199,6 +1256,134 @@ de couleurs pour booster ses performances !  </string>
         <image name="triboard-customization_bg@2x.png" width="787" height="479"/>
         <image name="tribu-bg.png" width="480" height="320"/>
     </resources>
+    <classes>
+        <class className="BagUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BagUIViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="itemForTriboardSelected:"/>
+                <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
+                <relationship kind="outlet" name="okButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="CustomUITabBarController" superclassName="UITabBarController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomUITabBarController.h"/>
+        </class>
+        <class className="GameUIViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GameUIViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="nextButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="sparrowView" candidateClass="SPView"/>
+            </relationships>
+        </class>
+        <class className="GenericUIViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GenericUIViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="viewTitleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="InitiationViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/InitiationViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="IslandUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IslandUIViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
+            </relationships>
+        </class>
+        <class className="MainUINavigationControllerViewController" superclassName="UINavigationController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainUINavigationControllerViewController.h"/>
+        </class>
+        <class className="MainUIViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainUIViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="nextBusUILabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="MapUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MapUIViewController.h"/>
+        </class>
+        <class className="MissionAfterUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MissionAfterUIViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="displayBonus:"/>
+                <relationship kind="outlet" name="bonusView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="buttonView" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="MissionUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MissionUIViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
+                <relationship kind="outlet" name="uiImageView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="PlayersUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PlayersUIViewController.h"/>
+        </class>
+        <class className="SPView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SPView.h"/>
+        </class>
+        <class className="ShopUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ShopUIViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
+                <relationship kind="outlet" name="productDetail" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="TravelUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TravelUIViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="showPickerView:"/>
+                <relationship kind="action" name="validateTravel:"/>
+                <relationship kind="outlet" name="arrivalBtn" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="arrivalLine" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="arrivalName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="departureBtn" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="departureLine" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="departureName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="frequency" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
+                <relationship kind="outlet" name="travelDetail" candidateClass="UIView"/>
+                <relationship kind="outlet" name="travelName" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="uiPickerView" candidateClass="UIPickerView"/>
+            </relationships>
+        </class>
+        <class className="TriboardUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TriboardUIViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="busIncoming:" candidateClass="UIGestureRecognizer"/>
+                <relationship kind="action" name="itemSelected:"/>
+                <relationship kind="outlet" name="gestureOutlet" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="outlet" name="itemsContainer" candidateClass="UIView"/>
+                <relationship kind="outlet" name="motifMilieu" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="motifsContainer" candidateClass="UIView"/>
+                <relationship kind="outlet" name="pouvoirBtn" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="TribuUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TribuUIViewController.h"/>
+        </class>
+        <class className="UIButtonCustomFontTwCenMT" superclassName="UIButton">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIButtonCustomFontTwCenMT.h"/>
+        </class>
+        <class className="UILabelCustomFontKohicle25" superclassName="UILabel">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UILabelCustomFontKohicle25.h"/>
+        </class>
+        <class className="UILabelCustomFontTwCenMT" superclassName="UILabel">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UILabelCustomFontTwCenMT.h"/>
+        </class>
+        <class className="iCarousel" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iCarousel.h"/>
+            <relationships>
+                <relationship kind="outlet" name="dataSource"/>
+                <relationship kind="outlet" name="delegate"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <nil key="statusBar"/>
         <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>
@@ -1206,6 +1391,5 @@ de couleurs pour booster ses performances !  </string>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="j9D-qY-XSJ"/>
-        <segue reference="gGx-tg-bW5"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -275,7 +275,6 @@
 }
 
 - (IBAction)validateTravel:(id)sender {
-    // now add animation
     [UIView beginAnimations:@"View Flip" context:nil];
     [UIView setAnimationDuration:0.5];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];  

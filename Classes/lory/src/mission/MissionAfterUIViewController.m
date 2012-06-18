@@ -13,6 +13,8 @@
 @end
 
 @implementation MissionAfterUIViewController
+@synthesize buttonView;
+@synthesize bonusView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,13 +33,29 @@
 
 - (void)viewDidUnload
 {
+    [self setBonusView:nil];
+    [self setButtonView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+- (IBAction)displayBonus:(id)sender {
+    [UIView beginAnimations:@"View Flip" context:nil];
+    [UIView setAnimationDuration:0.5];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];  
+    
+    [UIView setAnimationTransition: UIViewAnimationTransitionFlipFromRight forView:buttonView cache:YES];
+    [buttonView setHidden:YES];
+    
+    [UIView commitAnimations];
+    
+    [UIView beginAnimations:@"View Flip" context:nil];
+    [UIView setAnimationDuration:0.5];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];  
+    
+    [UIView setAnimationTransition: UIViewAnimationTransitionFlipFromRight forView:bonusView cache:YES];
+    [bonusView setHidden:NO];
+    
+    [UIView commitAnimations];
 }
-
 @end
