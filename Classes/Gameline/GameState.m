@@ -239,7 +239,7 @@
     } else {
         
         if ([worldColor isEqualToString:@"jaune"]) {
-            [ColorManager addPoints:3 forColorId:notification.name];
+            [ColorManager addPoints:2 forColorId:notification.name];
         } else {
             [ColorManager addPoints:5 forColorId:notification.name];
         }
