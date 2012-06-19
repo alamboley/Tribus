@@ -238,7 +238,12 @@
         
     } else {
         
-        [ColorManager addPoints:1 forColorId:notification.name];
+        if ([worldColor isEqualToString:@"jaune"]) {
+            [ColorManager addPoints:3 forColorId:notification.name];
+        } else {
+            [ColorManager addPoints:5 forColorId:notification.name];
+        }
+        
         particleTaken.alpha = 1;
         [particleTaken changeAnimation:[worldColor stringByAppendingString:@"ParticulesRecolte"] withLoop:NO];
     }
