@@ -50,7 +50,7 @@
     //configure carousel
     icarousel.type = iCarouselTypeRotary;
     icarousel.bounceDistance = 0.2;
-    [[[self navigationUIViewController] pageTitle] setText:@"échoppe"];
+    [[[self navigationUIViewController] pageTitle] setText:@"shop"];
     /*[self.view makeToast:@"This is a piece of toast" 
                 duration:3.0
                 position:@"top right"
